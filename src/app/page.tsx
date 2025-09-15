@@ -5,6 +5,7 @@ import Lifestyle from '@/components/sections/lifestyle';
 import InstagramFeed from '@/components/sections/instagram-feed';
 import Contact from '@/components/sections/contact';
 import Footer from '@/components/layout/footer';
+import ProductCategories from '@/components/sections/product-categories';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <About />
         <Lifestyle />
+        <ProductCategories />
         <InstagramFeed />
         <Contact />
       </main>

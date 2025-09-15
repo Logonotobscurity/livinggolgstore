@@ -127,6 +127,34 @@
       "description": "Living room with a smart ceiling fan.",
       "imageUrl": "https://picsum.photos/seed/smart-fan/800/600",
       "imageHint": "smart fan"
+    },
+    {
+      "id": "lighting-ceiling",
+      "title": "CEILING",
+      "description": "Modern ceiling lighting.",
+      "imageUrl": "https://picsum.photos/seed/ceiling-light/285/285",
+      "imageHint": "ceiling light"
+    },
+    {
+      "id": "lighting-wall",
+      "title": "WALL",
+      "description": "Elegant wall lighting.",
+      "imageUrl": "https://picsum.photos/seed/wall-light/285/285",
+      "imageHint": "wall sconce"
+    },
+    {
+      "id": "lighting-table",
+      "title": "TABLE",
+      "description": "Stylish table lamps.",
+      "imageUrl": "https://picsum.photos/seed/table-lamp/285/285",
+      "imageHint": "table lamp"
+    },
+    {
+      "id": "lighting-floor",
+      "title": "FLOOR",
+      "description": "Contemporary floor lamps.",
+      "imageUrl": "https://picsum.photos/seed/floor-lamp/285/285",
+      "imageHint": "floor lamp"
     }
   ]
 }
