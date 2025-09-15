@@ -50,6 +50,7 @@ export default function Lifestyle() {
                       category={category}
                       animationDelay={`${index * 0.1}s`}
                       className="w-full"
+                      imageClassName="w-full h-full p-2 sm:p-6"
                     />
                 </CarouselItem>
             ))}
