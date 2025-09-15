@@ -44,7 +44,12 @@ export default function TabletopPage() {
           <div className="container mx-auto px-6 max-w-7xl">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-12">
               {tabletopProducts.map((product, index) => (
-                <CategoryCard key={product.id} category={product} animationDelay={`${index * 0.05}s`} />
+                <CategoryCard 
+                  key={product.id} 
+                  category={product} 
+                  animationDelay={`${index * 0.05}s`}
+                  imageClassName="w-full h-full p-2 sm:p-6"
+                />
               ))}
             </div>
           </div>
