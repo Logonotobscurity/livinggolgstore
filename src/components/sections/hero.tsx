@@ -4,7 +4,7 @@ import { SunBanner } from '@/components/sun-banner';
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
+    <section className="relative w-full h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
         <SunBanner />
       </div>
@@ -14,10 +14,10 @@ export default function Hero() {
             <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-4">
                 FOR THOSE WHO SEEK
             </p>
-            <h1 className="font-headline text-7xl font-bold leading-tight text-white mb-10 text-shadow-lg">
+            <h1 className="font-headline text-5xl md:text-7xl font-bold leading-tight text-white mb-10 text-shadow-lg">
                 RARE, UNUSUAL, AND EXQUISITE FINDS
             </h1>
-            <Button asChild size="lg" className="bg-primary text-black hover:bg-yellow-600">
+            <Button asChild size="lg" className="bg-primary text-black hover:bg-yellow-600 text-sm md:text-base">
               <Link href="#">
                 Shop Living Gold Finds
               </Link>

@@ -10,10 +10,10 @@ export default function Footer() {
   const paymentIcons = PlaceHolderImages.filter(img => img.id.startsWith('payment-'));
 
   return (
-    <footer className="bg-black text-white pt-24 pb-8">
+    <footer className="bg-black text-white pt-16 md:pt-24 pb-8">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16">
-          <div className="lg:col-span-1 max-w-sm">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-16 mb-16">
+          <div className="md:col-span-2 lg:col-span-1 max-w-sm">
             <h3 className="text-lg font-bold mb-6">
               Join our community and enjoy 10% off your first Living Gold order
             </h3>
@@ -72,11 +72,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-secondary pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-          <p className="text-xs text-gray-400 mb-4 md:mb-0">
+        <div className="border-t border-secondary pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6">
+          <p className="text-xs text-gray-400 order-2 md:order-1">
             &copy; {currentYear} Living Gold. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 order-1 md:order-2">
             {paymentIcons.map(icon => (
               <Image 
                 key={icon.id}

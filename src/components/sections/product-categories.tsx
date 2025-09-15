@@ -12,21 +12,21 @@ export default function ProductCategories() {
   const categories = PlaceHolderImages.filter(img => productCategories.includes(img.id));
 
   return (
-    <section className="py-24 md:py-32 bg-background">
+    <section className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12 md:mb-20">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold text-foreground">
+          <h2 className="font-headline text-3xl md:text-5xl font-bold text-foreground">
             Explore Our Products
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16 max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 md:gap-x-8 gap-y-8 md:gap-y-16 max-w-7xl mx-auto">
           {categories.map((category, index) => (
             <CategoryCard
               key={category.id}
               category={category}
-              animationDelay={`${index * 0.1}s`}
-              className="w-full max-w-[400px] mx-auto"
-              imageClassName="w-full h-full p-6"
+              animationDelay={`${index * 0.05}s`}
+              className="w-full"
+              imageClassName="w-full h-full p-2 sm:p-6"
             />
           ))}
         </div>

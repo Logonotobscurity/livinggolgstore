@@ -30,12 +30,12 @@ export default function Lifestyle() {
           <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-10">
             SHOP BY CATEGORY
           </p>
-          <h2 className="font-headline text-4xl md:text-7xl font-light uppercase text-white relative pb-6">
+          <h2 className="font-headline text-3xl md:text-5xl lg:text-7xl font-light uppercase text-white relative pb-6">
             ONE PIECE CAN INFORM AN ENTIRE HOME
              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-20 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent"></span>
           </h2>
         </div>
-        <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
+        <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-10">
           {categories.map((category, index) => (
             <CategoryCard
               key={category.id}
@@ -45,7 +45,7 @@ export default function Lifestyle() {
             />
           ))}
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden -mx-6">
             <Carousel
                 opts={{
                 align: 'start',

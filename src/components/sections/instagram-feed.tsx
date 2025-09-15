@@ -7,17 +7,17 @@ export default function InstagramFeed() {
   const instaPosts = PlaceHolderImages.filter(img => img.id.startsWith('insta-'));
 
   return (
-    <section id="portfolio" className="bg-black text-white py-32">
+    <section id="portfolio" className="bg-black text-white py-20 md:py-32">
       <div className="container mx-auto px-6 max-w-7xl">
-        <div className="text-center mb-16">
-          <h2 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary mb-8">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight text-primary mb-8">
             @LIVINGGOLDINTERIORS
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-base leading-normal">
             Follow us on Instagram to be the first to see our latest finds, decorative accessories, design ideas and projects.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 max-w-7xl mx-auto">
           {instaPosts.slice(0, 8).map((post) => (
             <Link href="#" key={post.id} className="group relative aspect-square block rounded-lg overflow-hidden">
               <Image
