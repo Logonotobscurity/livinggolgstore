@@ -294,27 +294,30 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
 
+.socials-card ul li.social-item:hover:nth-child(4) span {
+  background-color: #000;
+}
+
+
 .socials-card ul li .social-svg {
   transition: 0.5s;
   width: 30px;
   height: 30px;
-  fill: #666;
+  fill: hsl(var(--primary));
 }
 
-.socials-card ul li:hover .social-svg {
-  fill: #fff;
+.socials-card ul li .svg {
+  transition: 0.5s;
+  width: 30px;
+  height: 30px;
+  fill: hsl(var(--primary));
 }
 
-.socials-card ul li:nth-child(1):hover .social-svg {
-  fill: #fff;
-}
-.socials-card ul li:nth-child(2):hover .social-svg {
-  fill: #fff;
-}
-.socials-card ul li:nth-child(3):hover .social-svg {
-  fill: #fff;
-}
 
+.socials-card ul li:hover .social-svg,
+.socials-card ul li:hover .svg {
+  fill: #fff;
+}
 
 .socials-card ul li .social-text {
   position: absolute;
@@ -328,16 +331,17 @@
   opacity: 0;
   font-size: 13px;
   transition: 0.5s;
+  transform: translateY(10px);
 }
 
 .socials-card ul li:hover .social-text {
   opacity: 1;
+  transform: translateY(0);
 }
 
 .socials-card ul li span:nth-child(1) {
   z-index: 3;
   transform: scale(0);
-  background-color: var(--primary);
   opacity: 0;
 }
 
@@ -357,7 +361,6 @@
 .socials-card ul li span:nth-child(2) {
   z-index: 2;
   transform: scale(0);
-  background-color: var(--primary);
   opacity: 0;
 }
 
@@ -377,7 +380,6 @@
 .socials-card ul li span:nth-child(3) {
   z-index: 1;
   transform: scale(0);
-  background-color: var(--primary);
   opacity: 0;
 }
 
