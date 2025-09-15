@@ -3,158 +3,178 @@
     {
       "id": "hero-image",
       "description": "A stunning and luxurious modern living room with gold accents.",
-      "imageUrl": "https://picsum.photos/seed/hero/1920/600",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/hero",
       "imageHint": "luxury interior"
     },
     {
       "id": "about-image",
       "description": "A close-up of a designer sketching an interior design plan.",
-      "imageUrl": "https://picsum.photos/seed/about/800/1000",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/about",
       "imageHint": "interior design sketch"
     },
     {
       "id": "lifestyle-decorative-objects",
       "title": "Decorative Objects",
       "description": "Elegant decorative objects.",
-      "imageUrl": "https://picsum.photos/seed/deco-objects/150/150",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/lifestyle/deco-objects",
       "imageHint": "ceramic vase"
     },
     {
       "id": "lifestyle-vases-pots",
       "title": "Vases & Pots",
       "description": "Modern vases and pots.",
-      "imageUrl": "https://picsum.photos/seed/vases/150/150",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/lifestyle/vases",
       "imageHint": "ceramic pot"
     },
     {
       "id": "lifestyle-bowls-trays",
       "title": "BOWLS & TRAYS",
       "description": "Elegant bowls and trays.",
-      "imageUrl": "https://picsum.photos/seed/bowls/150/150",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/lifestyle/bowls",
       "imageHint": "decorative bowl"
     },
     {
       "id": "lifestyle-candles-matches",
       "title": "CANDLES & MATCHES",
       "description": "Luxury candles and matches.",
-      "imageUrl": "https://picsum.photos/seed/candles/150/150",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/lifestyle/candles",
       "imageHint": "scented candle"
     },
     {
       "id": "lifestyle-gifts",
       "title": "GIFTS",
       "description": "Curated gift items.",
-      "imageUrl": "https://picsum.photos/seed/gifts/150/150",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/lifestyle/gifts",
       "imageHint": "luxury gift"
     },
     {
       "id": "lifestyle-barware",
       "title": "BARWARE",
       "description": "Sophisticated barware.",
-      "imageUrl": "https://picsum.photos/seed/barware/150/150",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/lifestyle/barware",
       "imageHint": "cocktail glass"
     },
     {
       "id": "lifestyle-diffusers",
       "title": "DIFFUSERS",
       "description": "Aromatic diffusers.",
-      "imageUrl": "https://picsum.photos/seed/diffusers/180/150",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/lifestyle/diffusers",
       "imageHint": "reed diffuser"
     },
     {
       "id": "lifestyle-pillows-throws",
       "title": "PILLOWS & THROWS",
       "description": "Comfortable pillows and throws.",
-      "imageUrl": "https://picsum.photos/seed/pillows/180/150",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/lifestyle/pillows",
       "imageHint": "velvet pillow"
     },
     {
       "id": "insta-1",
       "description": "Instagram post 1",
-      "imageUrl": "https://picsum.photos/seed/insta1/500/500",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/instagram/insta1",
       "imageHint": "modern kitchen"
     },
     {
       "id": "insta-2",
       "description": "Instagram post 2",
-      "imageUrl": "https://picsum.photos/seed/insta2/500/500",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/instagram/insta2",
       "imageHint": "elegant bedroom"
     },
     {
       "id": "insta-3",
       "description": "Instagram post 3",
-      "imageUrl": "https://picsum.photos/seed/insta3/500/500",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/instagram/insta3",
       "imageHint": "gold decor"
     },
     {
       "id": "insta-4",
       "description": "Instagram post 4",
-      "imageUrl": "https://picsum.photos/seed/insta4/500/500",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/instagram/insta4",
       "imageHint": "chic bathroom"
     },
     {
       "id": "insta-5",
       "description": "Instagram post 5",
-      "imageUrl": "https://picsum.photos/seed/insta5/500/500",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/instagram/insta5",
       "imageHint": "velvet sofa"
     },
     {
       "id": "insta-6",
       "description": "Instagram post 6",
-      "imageUrl": "https://picsum.photos/seed/insta6/500/500",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/instagram/insta6",
       "imageHint": "marble table"
     },
     {
       "id": "insta-7",
       "description": "Instagram post 7",
-      "imageUrl": "https://picsum.photos/seed/insta7/500/500",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/instagram/insta7",
       "imageHint": "art deco lamp"
     },
     {
       "id": "insta-8",
       "description": "Instagram post 8",
-      "imageUrl": "https://picsum.photos/seed/insta8/500/500",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/instagram/insta8",
       "imageHint": "luxury interior"
     },
     {
       "id": "design-inspiration-1",
       "description": "Bathroom with architectural lighting.",
-      "imageUrl": "https://picsum.photos/seed/bathroom-lighting/800/600",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/inspiration/bathroom-lighting",
       "imageHint": "architectural lighting"
     },
     {
       "id": "design-inspiration-2",
       "description": "Living room with a smart ceiling fan.",
-      "imageUrl": "https://picsum.photos/seed/smart-fan/800/600",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/inspiration/smart-fan",
       "imageHint": "smart fan"
     },
     {
       "id": "lighting-ceiling",
       "title": "CEILING",
       "description": "Modern ceiling lighting.",
-      "imageUrl": "https://picsum.photos/seed/ceiling-light/285/285",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/products/ceiling-light",
       "imageHint": "ceiling light"
     },
     {
       "id": "lighting-wall",
       "title": "WALL",
       "description": "Elegant wall lighting.",
-      "imageUrl": "https://picsum.photos/seed/wall-light/285/285",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/products/wall-light",
       "imageHint": "wall sconce"
     },
     {
       "id": "lighting-table",
       "title": "TABLE",
       "description": "Stylish table lamps.",
-      "imageUrl": "https://picsum.photos/seed/table-lamp/285/285",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/products/table-lamp",
       "imageHint": "table lamp"
     },
     {
       "id": "lighting-floor",
       "title": "FLOOR",
       "description": "Contemporary floor lamps.",
-      "imageUrl": "https://picsum.photos/seed/floor-lamp/285/285",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/products/floor-lamp",
       "imageHint": "floor lamp"
+    },
+    {
+      "id": "payment-visa",
+      "description": "Visa",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/payment/visa"
+    },
+    {
+      "id": "payment-mastercard",
+      "description": "Mastercard",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/payment/mastercard"
+    },
+    {
+      "id": "payment-paypal",
+      "description": "PayPal",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/payment/paypal"
+    },
+    {
+      "id": "payment-klarna",
+      "description": "Klarna",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/payment/klarna"
     }
   ]
 }

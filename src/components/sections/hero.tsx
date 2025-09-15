@@ -14,7 +14,7 @@ export default function Hero() {
             <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-4">
                 FOR THOSE WHO SEEK
             </p>
-            <h1 className="font-headline text-7xl font-bold leading-tight text-white mb-10">
+            <h1 className="font-headline text-7xl font-bold leading-tight text-white mb-10 text-shadow-lg">
                 RARE, UNUSUAL, AND EXQUISITE FINDS
             </h1>
             <Button asChild size="lg" className="h-auto bg-primary text-black font-semibold text-base py-3 px-8 rounded-full hover:bg-yellow-600 transition-all duration-300 shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 transform hover:-translate-y-0.5">

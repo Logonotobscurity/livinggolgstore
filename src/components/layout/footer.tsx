@@ -3,9 +3,11 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const paymentIcons = PlaceHolderImages.filter(img => img.id.startsWith('payment-'));
 
   return (
     <footer className="bg-black text-white pt-24 pb-8">
@@ -75,10 +77,16 @@ export default function Footer() {
             &copy; {currentYear} Living Gold. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <Image src="https://picsum.photos/seed/visa/32/20" alt="Visa" width="32" height="20" className="opacity-70 hover:opacity-100" />
-            <Image src="https://picsum.photos/seed/mastercard/32/20" alt="Mastercard" width="32" height="20" className="opacity-70 hover:opacity-100" />
-            <Image src="https://picsum.photos/seed/paypal/32/20" alt="PayPal" width="32" height="20" className="opacity-70 hover:opacity-100" />
-            <Image src="https://picsum.photos/seed/klarna/32/20" alt="Klarna" width="32" height="20" className="opacity-70 hover:opacity-100" />
+            {paymentIcons.map(icon => (
+              <Image 
+                key={icon.id}
+                src={icon.imageUrl} 
+                alt={icon.description} 
+                width="32" 
+                height="20" 
+                className="opacity-70 hover:opacity-100" 
+              />
+            ))}
           </div>
         </div>
       </div>
