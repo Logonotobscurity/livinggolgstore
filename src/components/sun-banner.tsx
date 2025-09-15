@@ -79,7 +79,8 @@ export function SunBanner() {
             <div id="curved-corner-topleft"></div>
             </div>
         </div>
-        </div>
+
+      </div>
     </div>
   );
 }
