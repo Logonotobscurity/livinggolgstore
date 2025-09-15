@@ -6,6 +6,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  CarouselProgress,
 } from '@/components/ui/carousel';
 
 export default function Lifestyle() {
@@ -55,6 +56,7 @@ export default function Lifestyle() {
             </CarouselContent>
             <CarouselPrevious className="hidden md:flex" />
             <CarouselNext className="hidden md:flex" />
+            <CarouselProgress />
         </Carousel>
       </div>
     </section>

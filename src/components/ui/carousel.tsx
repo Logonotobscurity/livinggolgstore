@@ -28,6 +28,7 @@ type CarouselContextProps = {
   scrollNext: () => void
   canScrollPrev: boolean
   canScrollNext: boolean
+  scrollProgress: number
 } & CarouselProps
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null)
@@ -67,6 +68,7 @@ const Carousel = React.forwardRef<
     )
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
     const [canScrollNext, setCanScrollNext] = React.useState(false)
+    const [scrollProgress, setScrollProgress] = React.useState(0);
 
     const onSelect = React.useCallback((api: CarouselApi) => {
       if (!api) {
@@ -76,6 +78,12 @@ const Carousel = React.forwardRef<
       setCanScrollPrev(api.canScrollPrev())
       setCanScrollNext(api.canScrollNext())
     }, [])
+
+    const onScroll = React.useCallback((api: CarouselApi) => {
+      if (!api) return;
+      const progress = Math.max(0, Math.min(1, api.scrollProgress()));
+      setScrollProgress(progress * 100);
+    }, []);
 
     const scrollPrev = React.useCallback(() => {
       api?.scrollPrev()
@@ -112,13 +120,17 @@ const Carousel = React.forwardRef<
       }
 
       onSelect(api)
+      onScroll(api);
       api.on("reInit", onSelect)
+      api.on("reInit", onScroll);
       api.on("select", onSelect)
+      api.on("scroll", onScroll);
 
       return () => {
         api?.off("select", onSelect)
+        api?.off("scroll", onScroll);
       }
-    }, [api, onSelect])
+    }, [api, onSelect, onScroll])
 
     return (
       <CarouselContext.Provider
@@ -132,6 +144,7 @@ const Carousel = React.forwardRef<
           scrollNext,
           canScrollPrev,
           canScrollNext,
+          scrollProgress
         }}
       >
         <div
@@ -252,6 +265,55 @@ const CarouselNext = React.forwardRef<
 })
 CarouselNext.displayName = "CarouselNext"
 
+const CarouselProgress = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => {
+  const { api } = useCarousel();
+  const [scrollSnaps, setScrollSnaps] = React.useState<number[]>([]);
+  const [progress, setProgress] = React.useState(0);
+
+  const onInit = React.useCallback((api: CarouselApi) => {
+    if (!api) return;
+    setScrollSnaps(api.scrollSnapList());
+  }, []);
+
+  const onScroll = React.useCallback((api: CarouselApi) => {
+    if (!api) return;
+    const scrollProgress = api.scrollProgress();
+    const snaps = api.scrollSnapList();
+    const snapCount = Math.max(1, snaps.length - 1);
+    setProgress(scrollProgress * (1 - 1 / snaps.length));
+  }, []);
+
+  React.useEffect(() => {
+    if (!api) return;
+    onInit(api);
+    onScroll(api);
+    api.on("reInit", onInit);
+    api.on("reInit", onScroll);
+    api.on("scroll", onScroll);
+  }, [api, onInit, onScroll]);
+
+  const indicatorWidth = `${(1 / scrollSnaps.length) * 100}%`;
+  const indicatorTransform = `translateX(${progress * 100}%)`;
+
+  return (
+    <div
+      ref={ref}
+      className={cn("slider__status-bar", className)}
+      {...props}
+    >
+      <div
+        className="slider__status-indicator"
+        style={{ width: indicatorWidth, transform: indicatorTransform }}
+      />
+    </div>
+  );
+});
+CarouselProgress.displayName = "CarouselProgress";
+
+
 export {
   type CarouselApi,
   Carousel,
@@ -259,4 +321,5 @@ export {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
+  CarouselProgress,
 }

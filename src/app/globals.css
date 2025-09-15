@@ -198,3 +198,11 @@
   opacity: 0.6;
   transform: translate(10px, -10px);
 }
+
+.slider__status-bar {
+    @apply relative h-1 w-full max-w-[200px] mx-auto mt-8 bg-primary/20 overflow-hidden rounded-full;
+  }
+  
+  .slider__status-indicator {
+    @apply absolute top-0 left-0 h-full bg-primary transition-transform duration-300 ease-in-out;
+  }
