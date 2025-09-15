@@ -1,3 +1,64 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "A stunning and luxurious modern living room with gold accents.",
+      "imageUrl": "https://picsum.photos/seed/hero/1920/1080",
+      "imageHint": "luxury living-room"
+    },
+    {
+      "id": "about-image",
+      "description": "A close-up of a designer sketching an interior design plan.",
+      "imageUrl": "https://picsum.photos/seed/about/800/1000",
+      "imageHint": "interior design sketch"
+    },
+    {
+      "id": "insta-1",
+      "description": "Instagram post 1",
+      "imageUrl": "https://picsum.photos/seed/insta1/500/500",
+      "imageHint": "modern kitchen"
+    },
+    {
+      "id": "insta-2",
+      "description": "Instagram post 2",
+      "imageUrl": "https://picsum.photos/seed/insta2/500/500",
+      "imageHint": "elegant bedroom"
+    },
+    {
+      "id": "insta-3",
+      "description": "Instagram post 3",
+      "imageUrl": "https://picsum.photos/seed/insta3/500/500",
+      "imageHint": "gold decor"
+    },
+    {
+      "id": "insta-4",
+      "description": "Instagram post 4",
+      "imageUrl": "https://picsum.photos/seed/insta4/500/500",
+      "imageHint": "chic bathroom"
+    },
+    {
+      "id": "insta-5",
+      "description": "Instagram post 5",
+      "imageUrl": "https://picsum.photos/seed/insta5/500/500",
+      "imageHint": "velvet sofa"
+    },
+    {
+      "id": "insta-6",
+      "description": "Instagram post 6",
+      "imageUrl": "https://picsum.photos/seed/insta6/500/500",
+      "imageHint": "marble table"
+    },
+    {
+      "id": "insta-7",
+      "description": "Instagram post 7",
+      "imageUrl": "https://picsum.photos/seed/insta7/500/500",
+      "imageHint": "art deco lamp"
+    },
+    {
+      "id": "insta-8",
+      "description": "Instagram post 8",
+      "imageUrl": "https://picsum.photos/seed/insta8/500/500",
+      "imageHint": "luxury interior"
+    }
+  ]
 }
