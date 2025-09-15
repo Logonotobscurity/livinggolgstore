@@ -19,7 +19,7 @@ export default function ProductCategories() {
             Explore Our Products
           </h2>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 md:gap-x-8 gap-y-8 md:gap-y-16 max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4 md:gap-x-8 gap-y-8 md:gap-y-16 max-w-7xl mx-auto">
           {categories.map((category, index) => (
             <CategoryCard
               key={category.id}

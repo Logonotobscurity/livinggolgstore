@@ -39,8 +39,8 @@ export function CategoryCard({
             <Image
               src={category.imageUrl}
               alt={category.description}
-              width={150}
-              height={150}
+              width={300}
+              height={300}
               className={cn(
                 'product-image object-contain transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] filter drop-shadow-md group-hover:scale-105 group-hover:[transform:scale(1.05)_rotateY(5deg)] group-hover:drop-shadow-lg',
                 imageClassName ?? 'w-3/4 h-3/4'
