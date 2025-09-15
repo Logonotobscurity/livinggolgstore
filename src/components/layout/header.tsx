@@ -5,14 +5,14 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 export default function Header() {
   const navLinks = [
-    { href: '#', label: 'LIVING GOLD FINDS' },
-    { href: '#', label: 'FURNISHINGS' },
-    { href: '#', label: 'LIGHTING' },
+    { href: '/products/living-gold-finds', label: 'LIVING GOLD FINDS' },
+    { href: '/products/furnishings', label: 'FURNISHINGS' },
+    { href: '/products/lighting', label: 'LIGHTING' },
     { href: '/products/tabletop', label: 'TABLETOP' },
-    { href: '#', label: 'WALL DECOR' },
-    { href: '#', label: 'ACCESSORIES' },
-    { href: '#', label: 'CANDLELIGHT & APOTHECARY' },
-    { href: '#', label: 'SALE', className: 'text-red-500' },
+    { href: '/products/wall-decor', label: 'WALL DECOR' },
+    { href: '/products/accessories', label: 'ACCESSORIES' },
+    { href: '/products/candlelight-apothecary', label: 'CANDLELIGHT & APOTHECARY' },
+    { href: '/products/sale', label: 'SALE', className: 'text-red-500' },
   ];
 
   return (

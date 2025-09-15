@@ -265,6 +265,363 @@
     },
     {
       "id": "tabletop-16", "slug": "glass-water-pitcher", "title": "GLASS WATER PITCHER", "description": "An elegant water pitcher.", "imageUrl": "https://picsum.photos/seed/t16/500/500", "imageHint": "water pitcher", "price": "85.00"
+    },
+    {
+      "id": "living-gold-finds-hero", "slug": "living-gold-finds-hero", "description": "Hero image for Living Gold Finds.", "imageUrl": "https://picsum.photos/seed/lgfHero/1600/400", "imageHint": "curated finds"
+    },
+    {
+      "id": "living-gold-finds-1", "slug": "lgf-item-1", "title": "LGF Item 1", "description": "Description for LGF item 1", "imageUrl": "https://picsum.photos/seed/lgf1/500/500", "imageHint": "finds one", "price": "100.00"
+    },
+    {
+      "id": "living-gold-finds-2", "slug": "lgf-item-2", "title": "LGF Item 2", "description": "Description for LGF item 2", "imageUrl": "https://picsum.photos/seed/lgf2/500/500", "imageHint": "finds two", "price": "110.00"
+    },
+    {
+      "id": "living-gold-finds-3", "slug": "lgf-item-3", "title": "LGF Item 3", "description": "Description for LGF item 3", "imageUrl": "https://picsum.photos/seed/lgf3/500/500", "imageHint": "finds three", "price": "120.00"
+    },
+    {
+      "id": "living-gold-finds-4", "slug": "lgf-item-4", "title": "LGF Item 4", "description": "Description for LGF item 4", "imageUrl": "https://picsum.photos/seed/lgf4/500/500", "imageHint": "finds four", "price": "130.00"
+    },
+    {
+      "id": "living-gold-finds-5", "slug": "lgf-item-5", "title": "LGF Item 5", "description": "Description for LGF item 5", "imageUrl": "https://picsum.photos/seed/lgf5/500/500", "imageHint": "finds five", "price": "140.00"
+    },
+    {
+      "id": "living-gold-finds-6", "slug": "lgf-item-6", "title": "LGF Item 6", "description": "Description for LGF item 6", "imageUrl": "https://picsum.photos/seed/lgf6/500/500", "imageHint": "finds six", "price": "150.00"
+    },
+    {
+      "id": "living-gold-finds-7", "slug": "lgf-item-7", "title": "LGF Item 7", "description": "Description for LGF item 7", "imageUrl": "https://picsum.photos/seed/lgf7/500/500", "imageHint": "finds seven", "price": "160.00"
+    },
+    {
+      "id": "living-gold-finds-8", "slug": "lgf-item-8", "title": "LGF Item 8", "description": "Description for LGF item 8", "imageUrl": "https://picsum.photos/seed/lgf8/500/500", "imageHint": "finds eight", "price": "170.00"
+    },
+    {
+      "id": "living-gold-finds-9", "slug": "lgf-item-9", "title": "LGF Item 9", "description": "Description for LGF item 9", "imageUrl": "https://picsum.photos/seed/lgf9/500/500", "imageHint": "finds nine", "price": "180.00"
+    },
+    {
+      "id": "living-gold-finds-10", "slug": "lgf-item-10", "title": "LGF Item 10", "description": "Description for LGF item 10", "imageUrl": "https://picsum.photos/seed/lgf10/500/500", "imageHint": "finds ten", "price": "190.00"
+    },
+    {
+      "id": "living-gold-finds-11", "slug": "lgf-item-11", "title": "LGF Item 11", "description": "Description for LGF item 11", "imageUrl": "https://picsum.photos/seed/lgf11/500/500", "imageHint": "finds eleven", "price": "200.00"
+    },
+    {
+      "id": "living-gold-finds-12", "slug": "lgf-item-12", "title": "LGF Item 12", "description": "Description for LGF item 12", "imageUrl": "https://picsum.photos/seed/lgf12/500/500", "imageHint": "finds twelve", "price": "210.00"
+    },
+    {
+      "id": "living-gold-finds-13", "slug": "lgf-item-13", "title": "LGF Item 13", "description": "Description for LGF item 13", "imageUrl": "https://picsum.photos/seed/lgf13/500/500", "imageHint": "finds thirteen", "price": "220.00"
+    },
+    {
+      "id": "living-gold-finds-14", "slug": "lgf-item-14", "title": "LGF Item 14", "description": "Description for LGF item 14", "imageUrl": "https://picsum.photos/seed/lgf14/500/500", "imageHint": "finds fourteen", "price": "230.00"
+    },
+    {
+      "id": "living-gold-finds-15", "slug": "lgf-item-15", "title": "LGF Item 15", "description": "Description for LGF item 15", "imageUrl": "https://picsum.photos/seed/lgf15/500/500", "imageHint": "finds fifteen", "price": "240.00"
+    },
+    {
+      "id": "living-gold-finds-16", "slug": "lgf-item-16", "title": "LGF Item 16", "description": "Description for LGF item 16", "imageUrl": "https://picsum.photos/seed/lgf16/500/500", "imageHint": "finds sixteen", "price": "250.00"
+    },
+    {
+      "id": "furnishings-hero", "slug": "furnishings-hero", "description": "Hero image for Furnishings.", "imageUrl": "https://picsum.photos/seed/furnishingsHero/1600/400", "imageHint": "luxury furniture"
+    },
+    {
+      "id": "furnishings-1", "slug": "furnishings-item-1", "title": "Furnishings Item 1", "description": "Description for Furnishings item 1", "imageUrl": "https://picsum.photos/seed/furnishings1/500/500", "imageHint": "sofa", "price": "100.00"
+    },
+    {
+      "id": "furnishings-2", "slug": "furnishings-item-2", "title": "Furnishings Item 2", "description": "Description for Furnishings item 2", "imageUrl": "https://picsum.photos/seed/furnishings2/500/500", "imageHint": "chair", "price": "110.00"
+    },
+    {
+      "id": "furnishings-3", "slug": "furnishings-item-3", "title": "Furnishings Item 3", "description": "Description for Furnishings item 3", "imageUrl": "https://picsum.photos/seed/furnishings3/500/500", "imageHint": "table", "price": "120.00"
+    },
+    {
+      "id": "furnishings-4", "slug": "furnishings-item-4", "title": "Furnishings Item 4", "description": "Description for Furnishings item 4", "imageUrl": "https://picsum.photos/seed/furnishings4/500/500", "imageHint": "bed", "price": "130.00"
+    },
+    {
+      "id": "furnishings-5", "slug": "furnishings-item-5", "title": "Furnishings Item 5", "description": "Description for Furnishings item 5", "imageUrl": "https://picsum.photos/seed/furnishings5/500/500", "imageHint": "desk", "price": "140.00"
+    },
+    {
+      "id": "furnishings-6", "slug": "furnishings-item-6", "title": "Furnishings Item 6", "description": "Description for Furnishings item 6", "imageUrl": "https://picsum.photos/seed/furnishings6/500/500", "imageHint": "bookcase", "price": "150.00"
+    },
+    {
+      "id": "furnishings-7", "slug": "furnishings-item-7", "title": "Furnishings Item 7", "description": "Description for Furnishings item 7", "imageUrl": "https://picsum.photos/seed/furnishings7/500/500", "imageHint": "ottoman", "price": "160.00"
+    },
+    {
+      "id": "furnishings-8", "slug": "furnishings-item-8", "title": "Furnishings Item 8", "description": "Description for Furnishings item 8", "imageUrl": "https://picsum.photos/seed/furnishings8/500/500", "imageHint": "stool", "price": "170.00"
+    },
+    {
+      "id": "furnishings-9", "slug": "furnishings-item-9", "title": "Furnishings Item 9", "description": "Description for Furnishings item 9", "imageUrl": "https://picsum.photos/seed/furnishings9/500/500", "imageHint": "bench", "price": "180.00"
+    },
+    {
+      "id": "furnishings-10", "slug": "furnishings-item-10", "title": "Furnishings Item 10", "description": "Description for Furnishings item 10", "imageUrl": "https://picsum.photos/seed/furnishings10/500/500", "imageHint": "console", "price": "190.00"
+    },
+    {
+      "id": "furnishings-11", "slug": "furnishings-item-11", "title": "Furnishings Item 11", "description": "Description for Furnishings item 11", "imageUrl": "https://picsum.photos/seed/furnishings11/500/500", "imageHint": "sideboard", "price": "200.00"
+    },
+    {
+      "id": "furnishings-12", "slug": "furnishings-item-12", "title": "Furnishings Item 12", "description": "Description for Furnishings item 12", "imageUrl": "https://picsum.photos/seed/furnishings12/500/500", "imageHint": "cabinet", "price": "210.00"
+    },
+    {
+      "id": "furnishings-13", "slug": "furnishings-item-13", "title": "Furnishings Item 13", "description": "Description for Furnishings item 13", "imageUrl": "https://picsum.photos/seed/furnishings13/500/500", "imageHint": "dresser", "price": "220.00"
+    },
+    {
+      "id": "furnishings-14", "slug": "furnishings-item-14", "title": "Furnishings Item 14", "description": "Description for Furnishings item 14", "imageUrl": "https://picsum.photos/seed/furnishings14/500/500", "imageHint": "nightstand", "price": "230.00"
+    },
+    {
+      "id": "furnishings-15", "slug": "furnishings-item-15", "title": "Furnishings Item 15", "description": "Description for Furnishings item 15", "imageUrl": "https://picsum.photos/seed/furnishings15/500/500", "imageHint": "wardrobe", "price": "240.00"
+    },
+    {
+      "id": "furnishings-16", "slug": "furnishings-item-16", "title": "Furnishings Item 16", "description": "Description for Furnishings item 16", "imageUrl": "https://picsum.photos/seed/furnishings16/500/500", "imageHint": "screen", "price": "250.00"
+    },
+    {
+      "id": "lighting-hero", "slug": "lighting-hero", "description": "Hero image for Lighting.", "imageUrl": "https://picsum.photos/seed/lightingHero/1600/400", "imageHint": "designer lighting"
+    },
+    {
+      "id": "lighting-1", "slug": "lighting-item-1", "title": "Lighting Item 1", "description": "Description for Lighting item 1", "imageUrl": "https://picsum.photos/seed/lighting1/500/500", "imageHint": "pendant light", "price": "100.00"
+    },
+    {
+      "id": "lighting-2", "slug": "lighting-item-2", "title": "Lighting Item 2", "description": "Description for Lighting item 2", "imageUrl": "https://picsum.photos/seed/lighting2/500/500", "imageHint": "chandelier", "price": "110.00"
+    },
+    {
+      "id": "lighting-3", "slug": "lighting-item-3", "title": "Lighting Item 3", "description": "Description for Lighting item 3", "imageUrl": "https://picsum.photos/seed/lighting3/500/500", "imageHint": "sconce", "price": "120.00"
+    },
+    {
+      "id": "lighting-4", "slug": "lighting-item-4", "title": "Lighting Item 4", "description": "Description for Lighting item 4", "imageUrl": "https://picsum.photos/seed/lighting4/500/500", "imageHint": "lamp", "price": "130.00"
+    },
+    {
+      "id": "lighting-5", "slug": "lighting-item-5", "title": "Lighting Item 5", "description": "Description for Lighting item 5", "imageUrl": "https://picsum.photos/seed/lighting5/500/500", "imageHint": "floor lamp", "price": "140.00"
+    },
+    {
+      "id": "lighting-6", "slug": "lighting-item-6", "title": "Lighting Item 6", "description": "Description for Lighting item 6", "imageUrl": "https://picsum.photos/seed/lighting6/500/500", "imageHint": "table lamp", "price": "150.00"
+    },
+    {
+      "id": "lighting-7", "slug": "lighting-item-7", "title": "Lighting Item 7", "description": "Description for Lighting item 7", "imageUrl": "https://picsum.photos/seed/lighting7/500/500", "imageHint": "desk lamp", "price": "160.00"
+    },
+    {
+      "id": "lighting-8", "slug": "lighting-item-8", "title": "Lighting Item 8", "description": "Description for Lighting item 8", "imageUrl": "https://picsum.photos/seed/lighting8/500/500", "imageHint": "track light", "price": "170.00"
+    },
+    {
+      "id": "lighting-9", "slug": "lighting-item-9", "title": "Lighting Item 9", "description": "Description for Lighting item 9", "imageUrl": "https://picsum.photos/seed/lighting9/500/500", "imageHint": "recessed light", "price": "180.00"
+    },
+    {
+      "id": "lighting-10", "slug": "lighting-item-10", "title": "Lighting Item 10", "description": "Description for Lighting item 10", "imageUrl": "https://picsum.photos/seed/lighting10/500/500", "imageHint": "outdoor light", "price": "190.00"
+    },
+    {
+      "id": "lighting-11", "slug": "lighting-item-11", "title": "Lighting Item 11", "description": "Description for Lighting item 11", "imageUrl": "https://picsum.photos/seed/lighting11/500/500", "imageHint": "landscape light", "price": "200.00"
+    },
+    {
+      "id": "lighting-12", "slug": "lighting-item-12", "title": "Lighting Item 12", "description": "Description for Lighting item 12", "imageUrl": "https://picsum.photos/seed/lighting12/500/500", "imageHint": "string light", "price": "210.00"
+    },
+    {
+      "id": "lighting-13", "slug": "lighting-item-13", "title": "Lighting Item 13", "description": "Description for Lighting item 13", "imageUrl": "https://picsum.photos/seed/lighting13/500/500", "imageHint": "led strip", "price": "220.00"
+    },
+    {
+      "id": "lighting-14", "slug": "lighting-item-14", "title": "Lighting Item 14", "description": "Description for Lighting item 14", "imageUrl": "https://picsum.photos/seed/lighting14/500/500", "imageHint": "smart bulb", "price": "230.00"
+    },
+    {
+      "id": "lighting-15", "slug": "lighting-item-15", "title": "Lighting Item 15", "description": "Description for Lighting item 15", "imageUrl": "https://picsum.photos/seed/lighting15/500/500", "imageHint": "dimmer", "price": "240.00"
+    },
+    {
+      "id": "lighting-16", "slug": "lighting-item-16", "title": "Lighting Item 16", "description": "Description for Lighting item 16", "imageUrl": "https://picsum.photos/seed/lighting16/500/500", "imageHint": "switch", "price": "250.00"
+    },
+    {
+      "id": "wall-decor-hero", "slug": "wall-decor-hero", "description": "Hero image for Wall Decor.", "imageUrl": "https://picsum.photos/seed/wallDecorHero/1600/400", "imageHint": "art gallery"
+    },
+    {
+      "id": "wall-decor-1", "slug": "wall-decor-item-1", "title": "Wall Decor Item 1", "description": "Description for Wall Decor item 1", "imageUrl": "https://picsum.photos/seed/walldecor1/500/500", "imageHint": "painting", "price": "100.00"
+    },
+    {
+      "id": "wall-decor-2", "slug": "wall-decor-item-2", "title": "Wall Decor Item 2", "description": "Description for Wall Decor item 2", "imageUrl": "https://picsum.photos/seed/walldecor2/500/500", "imageHint": "print", "price": "110.00"
+    },
+    {
+      "id": "wall-decor-3", "slug": "wall-decor-item-3", "title": "Wall Decor Item 3", "description": "Description for Wall Decor item 3", "imageUrl": "https://picsum.photos/seed/walldecor3/500/500", "imageHint": "photograph", "price": "120.00"
+    },
+    {
+      "id": "wall-decor-4", "slug": "wall-decor-item-4", "title": "Wall Decor Item 4", "description": "Description for Wall Decor item 4", "imageUrl": "https://picsum.photos/seed/walldecor4/500/500", "imageHint": "poster", "price": "130.00"
+    },
+    {
+      "id": "wall-decor-5", "slug": "wall-decor-item-5", "title": "Wall Decor Item 5", "description": "Description for Wall Decor item 5", "imageUrl": "https://picsum.photos/seed/walldecor5/500/500", "imageHint": "tapestry", "price": "140.00"
+    },
+    {
+      "id": "wall-decor-6", "slug": "wall-decor-item-6", "title": "Wall Decor Item 6", "description": "Description for Wall Decor item 6", "imageUrl": "https://picsum.photos/seed/walldecor6/500/500", "imageHint": "mural", "price": "150.00"
+    },
+    {
+      "id": "wall-decor-7", "slug": "wall-decor-item-7", "title": "Wall Decor Item 7", "description": "Description for Wall Decor item 7", "imageUrl": "https://picsum.photos/seed/walldecor7/500/500", "imageHint": "decal", "price": "160.00"
+    },
+    {
+      "id": "wall-decor-8", "slug": "wall-decor-item-8", "title": "Wall Decor Item 8", "description": "Description for Wall Decor item 8", "imageUrl": "https://picsum.photos/seed/walldecor8/500/500", "imageHint": "mirror", "price": "170.00"
+    },
+    {
+      "id": "wall-decor-9", "slug": "wall-decor-item-9", "title": "Wall Decor Item 9", "description": "Description for Wall Decor item 9", "imageUrl": "https://picsum.photos/seed/walldecor9/500/500", "imageHint": "shelf", "price": "180.00"
+    },
+    {
+      "id": "wall-decor-10", "slug": "wall-decor-item-10", "title": "Wall Decor Item 10", "description": "Description for Wall Decor item 10", "imageUrl": "https://picsum.photos/seed/walldecor10/500/500", "imageHint": "clock", "price": "190.00"
+    },
+    {
+      "id": "wall-decor-11", "slug": "wall-decor-item-11", "title": "Wall Decor Item 11", "description": "Description for Wall Decor item 11", "imageUrl": "https://picsum.photos/seed/walldecor11/500/500", "imageHint": "sconce", "price": "200.00"
+    },
+    {
+      "id": "wall-decor-12", "slug": "wall-decor-item-12", "title": "Wall Decor Item 12", "description": "Description for Wall Decor item 12", "imageUrl": "https://picsum.photos/seed/walldecor12/500/500", "imageHint": "plate", "price": "210.00"
+    },
+    {
+      "id": "wall-decor-13", "slug": "wall-decor-item-13", "title": "Wall Decor Item 13", "description": "Description for Wall Decor item 13", "imageUrl": "https://picsum.photos/seed/walldecor13/500/500", "imageHint": "basket", "price": "220.00"
+    },
+    {
+      "id": "wall-decor-14", "slug": "wall-decor-item-14", "title": "Wall Decor Item 14", "description": "Description for Wall Decor item 14", "imageUrl": "https://picsum.photos/seed/walldecor14/500/500", "imageHint": "macrame", "price": "230.00"
+    },
+    {
+      "id": "wall-decor-15", "slug": "wall-decor-item-15", "title": "Wall Decor Item 15", "description": "Description for Wall Decor item 15", "imageUrl": "https://picsum.photos/seed/walldecor15/500/500", "imageHint": "frame", "price": "240.00"
+    },
+    {
+      "id": "wall-decor-16", "slug": "wall-decor-item-16", "title": "Wall Decor Item 16", "description": "Description for Wall Decor item 16", "imageUrl": "https://picsum.photos/seed/walldecor16/500/500", "imageHint": "art", "price": "250.00"
+    },
+    {
+      "id": "accessories-hero", "slug": "accessories-hero", "description": "Hero image for Accessories.", "imageUrl": "https://picsum.photos/seed/accessoriesHero/1600/400", "imageHint": "fashion accessories"
+    },
+    {
+      "id": "accessories-1", "slug": "accessories-item-1", "title": "Accessories Item 1", "description": "Description for Accessories item 1", "imageUrl": "https://picsum.photos/seed/accessories1/500/500", "imageHint": "scarf", "price": "100.00"
+    },
+    {
+      "id": "accessories-2", "slug": "accessories-item-2", "title": "Accessories Item 2", "description": "Description for Accessories item 2", "imageUrl": "https://picsum.photos/seed/accessories2/500/500", "imageHint": "hat", "price": "110.00"
+    },
+    {
+      "id": "accessories-3", "slug": "accessories-item-3", "title": "Accessories Item 3", "description": "Description for Accessories item 3", "imageUrl": "https://picsum.photos/seed/accessories3/500/500", "imageHint": "gloves", "price": "120.00"
+    },
+    {
+      "id": "accessories-4", "slug": "accessories-item-4", "title": "Accessories Item 4", "description": "Description for Accessories item 4", "imageUrl": "https://picsum.photos/seed/accessories4/500/500", "imageHint": "belt", "price": "130.00"
+    },
+    {
+      "id": "accessories-5", "slug": "accessories-item-5", "title": "Accessories Item 5", "description": "Description for Accessories item 5", "imageUrl": "https://picsum.photos/seed/accessories5/500/500", "imageHint": "sunglasses", "price": "140.00"
+    },
+    {
+      "id": "accessories-6", "slug": "accessories-item-6", "title": "Accessories Item 6", "description": "Description for Accessories item 6", "imageUrl": "https://picsum.photos/seed/accessories6/500/500", "imageHint": "watch", "price": "150.00"
+    },
+    {
+      "id": "accessories-7", "slug": "accessories-item-7", "title": "Accessories Item 7", "description": "Description for Accessories item 7", "imageUrl": "https://picsum.photos/seed/accessories7/500/500", "imageHint": "jewelry", "price": "160.00"
+    },
+    {
+      "id": "accessories-8", "slug": "accessories-item-8", "title": "Accessories Item 8", "description": "Description for Accessories item 8", "imageUrl": "https://picsum.photos/seed/accessories8/500/500", "imageHint": "bag", "price": "170.00"
+    },
+    {
+      "id": "accessories-9", "slug": "accessories-item-9", "title": "Accessories Item 9", "description": "Description for Accessories item 9", "imageUrl": "https://picsum.photos/seed/accessories9/500/500", "imageHint": "wallet", "price": "180.00"
+    },
+    {
+      "id": "accessories-10", "slug": "accessories-item-10", "title": "Accessories Item 10", "description": "Description for Accessories item 10", "imageUrl": "https://picsum.photos/seed/accessories10/500/500", "imageHint": "keychain", "price": "190.00"
+    },
+    {
+      "id": "accessories-11", "slug": "accessories-item-11", "title": "Accessories Item 11", "description": "Description for Accessories item 11", "imageUrl": "https://picsum.photos/seed/accessories11/500/500", "imageHint": "phone case", "price": "200.00"
+    },
+    {
+      "id": "accessories-12", "slug": "accessories-item-12", "title": "Accessories Item 12", "description": "Description for Accessories item 12", "imageUrl": "https://picsum.photos/seed/accessories12/500/500", "imageHint": "umbrella", "price": "210.00"
+    },
+    {
+      "id": "accessories-13", "slug": "accessories-item-13", "title": "Accessories Item 13", "description": "Description for Accessories item 13", "imageUrl": "https://picsum.photos/seed/accessories13/500/500", "imageHint": "hair tie", "price": "220.00"
+    },
+    {
+      "id": "accessories-14", "slug": "accessories-item-14", "title": "Accessories Item 14", "description": "Description for Accessories item 14", "imageUrl": "https://picsum.photos/seed/accessories14/500/500", "imageHint": "headband", "price": "230.00"
+    },
+    {
+      "id": "accessories-15", "slug": "accessories-item-15", "title": "Accessories Item 15", "description": "Description for Accessories item 15", "imageUrl": "https://picsum.photos/seed/accessories15/500/500", "imageHint": "earrings", "price": "240.00"
+    },
+    {
+      "id": "accessories-16", "slug": "accessories-item-16", "title": "Accessories Item 16", "description": "Description for Accessories item 16", "imageUrl": "https://picsum.photos/seed/accessories16/500/500", "imageHint": "necklace", "price": "250.00"
+    },
+    {
+      "id": "candlelight-apothecary-hero", "slug": "candlelight-apothecary-hero", "description": "Hero for Candlelight & Apothecary.", "imageUrl": "https://picsum.photos/seed/caHero/1600/400", "imageHint": "apothecary shelf"
+    },
+    {
+      "id": "candlelight-apothecary-1", "slug": "ca-item-1", "title": "C&A Item 1", "description": "Description for C&A item 1", "imageUrl": "https://picsum.photos/seed/ca1/500/500", "imageHint": "candle", "price": "100.00"
+    },
+    {
+      "id": "candlelight-apothecary-2", "slug": "ca-item-2", "title": "C&A Item 2", "description": "Description for C&A item 2", "imageUrl": "https://picsum.photos/seed/ca2/500/500", "imageHint": "soap", "price": "110.00"
+    },
+    {
+      "id": "candlelight-apothecary-3", "slug": "ca-item-3", "title": "C&A Item 3", "description": "Description for C&A item 3", "imageUrl": "https://picsum.photos/seed/ca3/500/500", "imageHint": "lotion", "price": "120.00"
+    },
+    {
+      "id": "candlelight-apothecary-4", "slug": "ca-item-4", "title": "C&A Item 4", "description": "Description for C&A item 4", "imageUrl": "https://picsum.photos/seed/ca4/500/500", "imageHint": "oil", "price": "130.00"
+    },
+    {
+      "id": "candlelight-apothecary-5", "slug": "ca-item-5", "title": "C&A Item 5", "description": "Description for C&A item 5", "imageUrl": "https://picsum.photos/seed/ca5/500/500", "imageHint": "bath bomb", "price": "140.00"
+    },
+    {
+      "id": "candlelight-apothecary-6", "slug": "ca-item-6", "title": "C&A Item 6", "description": "Description for C&A item 6", "imageUrl": "https://picsum.photos/seed/ca6/500/500", "imageHint": "salt scrub", "price": "150.00"
+    },
+    {
+      "id": "candlelight-apothecary-7", "slug": "ca-item-7", "title": "C&A Item 7", "description": "Description for C&A item 7", "imageUrl": "https://picsum.photos/seed/ca7/500/500", "imageHint": "perfume", "price": "160.00"
+    },
+    {
+      "id": "candlelight-apothecary-8", "slug": "ca-item-8", "title": "C&A Item 8", "description": "Description for C&A item 8", "imageUrl": "https://picsum.photos/seed/ca8/500/500", "imageHint": "incense", "price": "170.00"
+    },
+    {
+      "id": "candlelight-apothecary-9", "slug": "ca-item-9", "title": "C&A Item 9", "description": "Description for C&A item 9", "imageUrl": "https://picsum.photos/seed/ca9/500/500", "imageHint": "diffuser", "price": "180.00"
+    },
+    {
+      "id": "candlelight-apothecary-10", "slug": "ca-item-10", "title": "C&A Item 10", "description": "Description for C&A item 10", "imageUrl": "https://picsum.photos/seed/ca10/500/500", "imageHint": "potpourri", "price": "190.00"
+    },
+    {
+      "id": "candlelight-apothecary-11", "slug": "ca-item-11", "title": "C&A Item 11", "description": "Description for C&A item 11", "imageUrl": "https://picsum.photos/seed/ca11/500/500", "imageHint": "sachet", "price": "200.00"
+    },
+    {
+      "id": "candlelight-apothecary-12", "slug": "ca-item-12", "title": "C&A Item 12", "description": "Description for C&A item 12", "imageUrl": "https://picsum.photos/seed/ca12/500/500", "imageHint": "tincture", "price": "210.00"
+    },
+    {
+      "id": "candlelight-apothecary-13", "slug": "ca-item-13", "title": "C&A Item 13", "description": "Description for C&A item 13", "imageUrl": "https://picsum.photos/seed/ca13/500/500", "imageHint": "herb", "price": "220.00"
+    },
+    {
+      "id": "candlelight-apothecary-14", "slug": "ca-item-14", "title": "C&A Item 14", "description": "Description for C&A item 14", "imageUrl": "https://picsum.photos/seed/ca14/500/500", "imageHint": "elixir", "price": "230.00"
+    },
+    {
+      "id": "candlelight-apothecary-15", "slug": "ca-item-15", "title": "C&A Item 15", "description": "Description for C&A item 15", "imageUrl": "https://picsum.photos/seed/ca15/500/500", "imageHint": "potion", "price": "240.00"
+    },
+    {
+      "id": "candlelight-apothecary-16", "slug": "ca-item-16", "title": "C&A Item 16", "description": "Description for C&A item 16", "imageUrl": "https://picsum.photos/seed/ca16/500/500", "imageHint": "remedy", "price": "250.00"
+    },
+    {
+      "id": "sale-hero", "slug": "sale-hero", "description": "Hero image for Sale.", "imageUrl": "https://picsum.photos/seed/saleHero/1600/400", "imageHint": "sale sign"
+    },
+    {
+      "id": "sale-1", "slug": "sale-item-1", "title": "Sale Item 1", "description": "Description for Sale item 1", "imageUrl": "https://picsum.photos/seed/sale1/500/500", "imageHint": "sale tag", "price": "100.00"
+    },
+    {
+      "id": "sale-2", "slug": "sale-item-2", "title": "Sale Item 2", "description": "Description for Sale item 2", "imageUrl": "https://picsum.photos/seed/sale2/500/500", "imageHint": "discount", "price": "110.00"
+    },
+    {
+      "id": "sale-3", "slug": "sale-item-3", "title": "Sale Item 3", "description": "Description for Sale item 3", "imageUrl": "https://picsum.photos/seed/sale3/500/500", "imageHint": "clearance", "price": "120.00"
+    },
+    {
+      "id": "sale-4", "slug": "sale-item-4", "title": "Sale Item 4", "description": "Description for Sale item 4", "imageUrl": "https://picsum.photos/seed/sale4/500/500", "imageHint": "offer", "price": "130.00"
+    },
+    {
+      "id": "sale-5", "slug": "sale-item-5", "title": "Sale Item 5", "description": "Description for Sale item 5", "imageUrl": "https://picsum.photos/seed/sale5/500/500", "imageHint": "bargain", "price": "140.00"
+    },
+    {
+      "id": "sale-6", "slug": "sale-item-6", "title": "Sale Item 6", "description": "Description for Sale item 6", "imageUrl": "https://picsum.photos/seed/sale6/500/500", "imageHint": "deal", "price": "150.00"
+    },
+    {
+      "id": "sale-7", "slug": "sale-item-7", "title": "Sale Item 7", "description": "Description for Sale item 7", "imageUrl": "https://picsum.photos/seed/sale7/500/500", "imageHint": "special", "price": "160.00"
+    },
+    {
+      "id": "sale-8", "slug": "sale-item-8", "title": "Sale Item 8", "description": "Description for Sale item 8", "imageUrl": "https://picsum.photos/seed/sale8/500/500", "imageHint": "promotion", "price": "170.00"
+    },
+    {
+      "id": "sale-9", "slug": "sale-item-9", "title": "Sale Item 9", "description": "Description for Sale item 9", "imageUrl": "https://picsum.photos/seed/sale9/500/500", "imageHint": "reduction", "price": "180.00"
+    },
+    {
+      "id": "sale-10", "slug": "sale-item-10", "title": "Sale Item 10", "description": "Description for Sale item 10", "imageUrl": "https://picsum.photos/seed/sale10/500/500", "imageHint": "markdown", "price": "190.00"
+    },
+    {
+      "id": "sale-11", "slug": "sale-item-11", "title": "Sale Item 11", "description": "Description for Sale item 11", "imageUrl": "https://picsum.photos/seed/sale11/500/500", "imageHint": "savings", "price": "200.00"
+    },
+    {
+      "id": "sale-12", "slug": "sale-item-12", "title": "Sale Item 12", "description": "Description for Sale item 12", "imageUrl": "https://picsum.photos/seed/sale12/500/500", "imageHint": "steal", "price": "210.00"
+    },
+    {
+      "id": "sale-13", "slug": "sale-item-13", "title": "Sale Item 13", "description": "Description for Sale item 13", "imageUrl": "https://picsum.photos/seed/sale13/500/500", "imageHint": "bargain", "price": "220.00"
+    },
+    {
+      "id": "sale-14", "slug": "sale-item-14", "title": "Sale Item 14", "description": "Description for Sale item 14", "imageUrl": "https://picsum.photos/seed/sale14/500/500", "imageHint": "deal", "price": "230.00"
+    },
+    {
+      "id": "sale-15", "slug": "sale-item-15", "title": "Sale Item 15", "description": "Description for Sale item 15", "imageUrl": "https://picsum.photos/seed/sale15/500/500", "imageHint": "special", "price": "240.00"
+    },
+    {
+      "id": "sale-16", "slug": "sale-item-16", "title": "Sale Item 16", "description": "Description for Sale item 16", "imageUrl": "https://picsum.photos/seed/sale16/500/500", "imageHint": "promotion", "price": "250.00"
     }
   ]
 }
