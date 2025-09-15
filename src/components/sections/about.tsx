@@ -10,17 +10,29 @@ const testimonials = [
   {
     body: "Anytime I'm looking for magic, I know to look to Living Gold. Heather Smith and her team consistently source the globe and return with only the finest luxury pieces.",
   },
+  {
+    body: "Living Gold's collection is a treasure trove of unique finds. I always discover something extraordinary that elevates my design projects to the next level. Truly a designer's dream.",
+  },
+  {
+    body: 'The quality and craftsmanship of the pieces from Living Gold are unparalleled. Each item tells a story and brings a sense of history and soul into the home.',
+  },
+  {
+    body: "From grand chandeliers to the smallest decorative objects, Living Gold's curation is impeccable. It's my first stop for sourcing items that make a statement.",
+  },
 ];
 
 const TestimonialCard = ({ body }: { body: string }) => {
   return (
-    <blockquote className="bg-black/50 border border-primary rounded-lg p-8 md:p-12 w-[350px] md:w-[450px] shrink-0">
+    <blockquote className="bg-black/50 border border-primary rounded-lg p-6 md:p-8 w-[90vw] max-w-[450px] shrink-0">
       <p className="text-sm italic leading-normal">"{body}"</p>
     </blockquote>
   );
 };
 
 export default function About() {
+  const firstColumn = testimonials.slice(0, 3);
+  const secondColumn = testimonials.slice(3, 6);
+
   return (
     <section className="bg-secondary text-white py-20 md:py-32 overflow-hidden">
       <div className="container mx-auto px-6 max-w-7xl">
@@ -45,14 +57,32 @@ export default function About() {
           </h2>
         </div>
       </div>
-      <div className="relative h-[400px]">
-        <Marquee pauseOnHover vertical className="[--gap:2rem] h-full" repeat={2}>
-          {testimonials.map((testimonial, i) => (
-            <TestimonialCard key={i} body={testimonial.body} />
-          ))}
-        </Marquee>
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-secondary to-transparent"></div>
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-secondary to-transparent"></div>
+      <div className="relative flex h-[450px] w-full flex-row items-center justify-center overflow-hidden">
+        {/* Mobile View: Single Column Marquee */}
+        <div className="md:hidden">
+          <Marquee pauseOnHover vertical className="[--duration:60s] [--gap:1rem]">
+            {testimonials.map((testimonial, i) => (
+              <TestimonialCard key={i} body={testimonial.body} />
+            ))}
+          </Marquee>
+        </div>
+
+        {/* Desktop View: Multi-Column Marquee */}
+        <div className="hidden md:flex flex-row justify-center gap-4">
+          <Marquee pauseOnHover vertical reverse className="[--duration:40s] [--gap:1rem]">
+            {firstColumn.map((testimonial, i) => (
+              <TestimonialCard key={`col1-${i}`} body={testimonial.body} />
+            ))}
+          </Marquee>
+          <Marquee pauseOnHover vertical className="[--duration:50s] [--gap:1rem]">
+            {secondColumn.map((testimonial, i) => (
+              <TestimonialCard key={`col2-${i}`} body={testimonial.body} />
+            ))}
+          </Marquee>
+        </div>
+        
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-secondary to-transparent"></div>
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-secondary to-transparent"></div>
       </div>
     </section>
   );
