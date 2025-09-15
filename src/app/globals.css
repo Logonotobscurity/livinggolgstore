@@ -263,3 +263,183 @@
     @apply absolute top-0 left-0 h-full bg-primary transition-transform duration-300 ease-in-out;
   }
 
+  body.cms-page-body .with-breadcrumb .breadcrumb-wrapper .breadcrumb {
+    background-color: #191414;
+    padding: 30px 0 20px;
+    border-top: 1px solid #37372e;
+  }
+  
+  body.cms-page-body .with-breadcrumb .breadcrumb-wrapper .breadcrumb ul > li {
+    letter-spacing: 0.5px;
+  }
+  
+  body.cms-page-body .with-breadcrumb .breadcrumb-wrapper .breadcrumb ul > li:not(:last-of-type)::after {
+    padding-left: 6px;
+  }
+  
+  .cms-page .default-content-wrapper {
+    margin-bottom: 64px;
+  }
+  
+  .cms-page .default-content-wrapper p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  
+  .cms-page .default-content-wrapper img {
+    display: block;
+    width: 100%;
+  }
+  
+  .cms-page .text-wrapper {
+    padding: 0 20px;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto 40px;
+  }
+  
+  .cms-page .text-wrapper:last-of-type {
+    margin: 0 auto 30px;
+  }
+  
+  .cms-page .text-wrapper:has(.intro-text) {
+    margin-bottom: 16px;
+  }
+  
+  .cms-page .text-wrapper:has(.mb-24) {
+    margin: 0 auto 24px;
+  }
+  
+  .cms-page .text-wrapper:has(.address-section), .cms-page .text-wrapper:has(.address-section) + .text-wrapper {
+    margin-bottom: 32px;
+  }
+  
+  .cms-page .text-wrapper p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  .cms-page .text-wrapper .intro-text p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 24px;
+  }
+  
+  .cms-page .text-wrapper .left-border p {
+    padding-left: 20px;
+  }
+  
+  .cms-page .text-wrapper .align-left p:last-of-type {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  
+  .cms-page .text-wrapper .align-left h1 {
+    font-size: 48px;
+    line-height: 58px;
+    margin-top: 16px;
+    margin-bottom: 64px;
+  }
+  
+  .cms-page .text-wrapper .align-left strong {
+    font-weight: 500;
+  }
+  
+  .cms-page .text-wrapper .left-border {
+    border-left: 1px solid #454545;
+  }
+  
+  .cms-page .text-wrapper .left-border h2 {
+    padding-left: 20px;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: var(--body-font-family);
+    text-align: left;
+  }
+  
+  .cms-page .text-wrapper .section-divider {
+    border: 1px solid #E3E3E3;
+    margin: 40px 0;
+  }
+  
+  .cms-page .text-wrapper .text.block p + p {
+    margin-top: 8px;
+  }
+  
+  .cms-page .text-wrapper h3,
+  .cms-page .text-wrapper .align-left #press-contact {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 16px;
+    text-align: left;
+  }
+  
+  /* Mobile Responsive */
+  @media screen and (max-width: 768px) {
+    body.cms-page-body .cms-page {
+      padding: 0;
+    }
+  
+    body.cms-page-body .with-breadcrumb .breadcrumb-wrapper,
+    .cms-page .default-content-wrapper p:last-of-type {
+      display: none;
+    }
+  
+    body.cms-page-body .cms-page .default-content-wrapper {
+      margin-bottom: 32px
+    }
+  
+    .cms-page .text-wrapper:has(.mb-32), .cms-page .text-wrapper:has(.section-divider) {
+      margin-bottom: 32px;
+    }
+  
+    .cms-page .text-wrapper:has(.address-section) {
+      margin-bottom: 24px;
+    }
+  
+    body.cms-page-body .cms-page .text-wrapper {
+      max-width: 343px;
+      padding: 0;
+    }
+    
+    .cms-page .text-wrapper:has(.address-section) + .text-wrapper {
+      margin-bottom: 24px;
+    }
+  
+    .cms-page .text-wrapper .section-divider {
+      margin: 0;
+    }
+  
+    .cms-page .text-wrapper .align-left h1 {
+      font-size: 36px;
+      line-height: 44px;
+      margin-bottom: 32px;
+    }
+  
+    .cms-page .text-wrapper .left-border h2 {
+      font-size: 20px;
+      line-height: 28px;
+      padding-left: 16px;
+    }
+  
+    .cms-page .text-wrapper .left-border p {
+      padding-left: 16px;
+    }
+  
+    .cms-page .default-content-wrapper img {
+      height: 255px;
+    }
+  }
+  
+  @media (min-width: 1024px), print {
+    .page-wrapper {
+      border-top: 4px solid #e3e3e3
+    }
+  }
+
+
