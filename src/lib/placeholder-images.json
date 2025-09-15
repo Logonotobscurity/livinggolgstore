@@ -210,6 +210,61 @@
       "slug": "payment-klarna",
       "description": "Klarna",
       "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/payment/klarna"
+    },
+    {
+      "id": "tabletop-hero",
+      "slug": "tabletop-hero",
+      "description": "An elegant dining table set for a luxurious meal.",
+      "imageUrl": "https://picsum.photos/seed/tabletopHero/1600/400",
+      "imageHint": "dining table"
+    },
+    {
+      "id": "tabletop-1", "slug": "large-abaca-napkin-holder", "title": "LARGE ABACA NAPKIN HOLDER", "description": "Stylish napkin holder.", "imageUrl": "https://picsum.photos/seed/t1/500/500", "imageHint": "napkin holder", "price": "38.00"
+    },
+    {
+      "id": "tabletop-2", "slug": "jacob-zion-cup", "title": "JACOB ZION CUP", "description": "A unique cup.", "imageUrl": "https://picsum.photos/seed/t2/500/500", "imageHint": "glass cup", "price": "FROM 40.00"
+    },
+    {
+      "id": "tabletop-3", "slug": "joseph-zion-short-cup", "title": "JOSEPH ZION SHORT CUP", "description": "A short cup.", "imageUrl": "https://picsum.photos/seed/t3/500/500", "imageHint": "short glass", "price": "FROM 35.00"
+    },
+    {
+      "id": "tabletop-4", "slug": "crowned-coasters", "title": "CROWNED COASTERS", "description": "Elegant coasters.", "imageUrl": "https://picsum.photos/seed/t4/500/500", "imageHint": "modern coasters", "price": "44.00"
+    },
+    {
+      "id": "tabletop-5", "slug": "gold-rimmed-plate", "title": "GOLD-RIMMED PLATE", "description": "Plate with gold rim.", "imageUrl": "https://picsum.photos/seed/t5/500/500", "imageHint": "dinner plate", "price": "65.00"
+    },
+    {
+      "id": "tabletop-6", "slug": "marble-serving-tray", "title": "MARBLE SERVING TRAY", "description": "Elegant serving tray.", "imageUrl": "https://picsum.photos/seed/t6/500/500", "imageHint": "serving tray", "price": "120.00"
+    },
+    {
+      "id": "tabletop-7", "slug": "linen-tablecloth", "title": "LINEN TABLECLOTH", "description": "High-quality tablecloth.", "imageUrl": "https://picsum.photos/seed/t7/500/500", "imageHint": "linen tablecloth", "price": "95.00"
+    },
+    {
+      "id": "tabletop-8", "slug": "crystal-decanter", "title": "CRYSTAL DECANTER", "description": "For your finest spirits.", "imageUrl": "https://picsum.photos/seed/t8/500/500", "imageHint": "crystal decanter", "price": "150.00"
+    },
+    {
+      "id": "tabletop-9", "slug": "silver-cutlery-set", "title": "SILVER CUTLERY SET", "description": "24-piece cutlery set.", "imageUrl": "https://picsum.photos/seed/t9/500/500", "imageHint": "silver cutlery", "price": "250.00"
+    },
+    {
+      "id": "tabletop-10", "slug": "porcelain-soup-bowl", "title": "PORCELAIN SOUP BOWL", "description": "A delicate soup bowl.", "imageUrl": "https://picsum.photos/seed/t10/500/500", "imageHint": "soup bowl", "price": "45.00"
+    },
+    {
+      "id": "tabletop-11", "slug": "ceramic-salt-pepper-shakers", "title": "CERAMIC SHAKERS", "description": "Salt and pepper shakers.", "imageUrl": "https://picsum.photos/seed/t11/500/500", "imageHint": "salt pepper", "price": "30.00"
+    },
+    {
+      "id": "tabletop-12", "slug": "champagne-flutes-set-of-4", "title": "CHAMPAGNE FLUTES (SET OF 4)", "description": "Celebrate in style.", "imageUrl": "https://picsum.photos/seed/t12/500/500", "imageHint": "champagne flutes", "price": "180.00"
+    },
+    {
+      "id": "tabletop-13", "slug": "wooden-salad-bowl", "title": "WOODEN SALAD BOWL", "description": "A large salad bowl.", "imageUrl": "https://picsum.photos/seed/t13/500/500", "imageHint": "salad bowl", "price": "75.00"
+    },
+    {
+      "id": "tabletop-14", "slug": "slate-cheese-board", "title": "SLATE CHEESE BOARD", "description": "For cheese lovers.", "imageUrl": "https://picsum.photos/seed/t14/500/500", "imageHint": "cheese board", "price": "55.00"
+    },
+    {
+      "id": "tabletop-15", "slug": "copper-mule-mugs", "title": "COPPER MULE MUGS (SET OF 2)", "description": "Classic mule mugs.", "imageUrl": "https://picsum.photos/seed/t15/500/500", "imageHint": "copper mugs", "price": "60.00"
+    },
+    {
+      "id": "tabletop-16", "slug": "glass-water-pitcher", "title": "GLASS WATER PITCHER", "description": "An elegant water pitcher.", "imageUrl": "https://picsum.photos/seed/t16/500/500", "imageHint": "water pitcher", "price": "85.00"
     }
   ]
 }

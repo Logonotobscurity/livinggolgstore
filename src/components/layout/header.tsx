@@ -8,7 +8,7 @@ export default function Header() {
     { href: '#', label: 'LIVING GOLD FINDS' },
     { href: '#', label: 'FURNISHINGS' },
     { href: '#', label: 'LIGHTING' },
-    { href: '#', label: 'TABLETOP' },
+    { href: '/products/tabletop', label: 'TABLETOP' },
     { href: '#', label: 'WALL DECOR' },
     { href: '#', label: 'ACCESSORIES' },
     { href: '#', label: 'CANDLELIGHT & APOTHECARY' },
