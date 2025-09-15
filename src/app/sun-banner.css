@@ -139,3 +139,21 @@
   top: 60px;
   animation: twinkling 2s infinite;
 }
+#star-8 {
+  position: absolute;
+  left: 320px;
+  top: -20px;
+  animation: twinkling 2.5s infinite;
+}
+#star-9 {
+  position: absolute;
+  left: 150px;
+  top: 320px;
+  animation: twinkling 3.5s infinite;
+}
+#star-10 {
+  position: absolute;
+  left: -50px;
+  top: 150px;
+  animation: twinkling 2.8s infinite;
+}

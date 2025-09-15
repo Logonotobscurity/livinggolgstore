@@ -79,6 +79,36 @@ export function SunBanner() {
             <div id="curved-corner-topleft"></div>
             </div>
         </div>
+         <div id="star-8">
+            <div className="curved-corner-star">
+            <div id="curved-corner-bottomright"></div>
+            <div id="curved-corner-bottomleft"></div>
+            </div>
+            <div className="curved-corner-star">
+            <div id="curved-corner-topright"></div>
+            <div id="curved-corner-topleft"></div>
+            </div>
+        </div>
+         <div id="star-9">
+            <div className="curved-corner-star">
+            <div id="curved-corner-bottomright"></div>
+            <div id="curved-corner-bottomleft"></div>
+            </div>
+            <div className="curved-corner-star">
+            <div id="curved-corner-topright"></div>
+            <div id="curved-corner-topleft"></div>
+            </div>
+        </div>
+         <div id="star-10">
+            <div className="curved-corner-star">
+            <div id="curved-corner-bottomright"></div>
+            <div id="curved-corner-bottomleft"></div>
+            </div>
+            <div className="curved-corner-star">
+            <div id="curved-corner-topright"></div>
+            <div id="curved-corner-topleft"></div>
+            </div>
+        </div>
 
       </div>
     </div>
