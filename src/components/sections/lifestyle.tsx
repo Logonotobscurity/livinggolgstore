@@ -37,6 +37,7 @@ export default function Lifestyle() {
               imageHint={category.imageHint}
               alt={category.description}
               animationDelay={`${index * 0.1}s`}
+              className="w-full max-w-[200px] mx-auto"
             />
           ))}
         </div>

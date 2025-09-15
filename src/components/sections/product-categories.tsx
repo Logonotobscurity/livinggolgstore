@@ -19,7 +19,7 @@ export default function ProductCategories() {
             Explore Our Products
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16 max-w-6xl mx-auto">
           {categories.map((category, index) => (
             <CategoryCard
               key={category.id}
@@ -28,7 +28,7 @@ export default function ProductCategories() {
               imageHint={category.imageHint}
               alt={category.description}
               animationDelay={`${index * 0.1}s`}
-              className="w-full max-w-[285px] mx-auto"
+              className="w-full max-w-[320px] mx-auto"
             />
           ))}
         </div>
