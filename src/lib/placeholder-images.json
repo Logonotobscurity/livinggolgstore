@@ -13,31 +13,45 @@
       "imageHint": "interior design sketch"
     },
     {
+      "id": "lifestyle-decorative-objects",
+      "title": "Decorative Objects",
+      "description": "Elegant decorative objects.",
+      "imageUrl": "https://picsum.photos/seed/deco-objects/150/150",
+      "imageHint": "ceramic vase"
+    },
+    {
+      "id": "lifestyle-vases-pots",
+      "title": "Vases & Pots",
+      "description": "Modern vases and pots.",
+      "imageUrl": "https://picsum.photos/seed/vases/150/150",
+      "imageHint": "ceramic pot"
+    },
+    {
       "id": "lifestyle-bowls-trays",
       "title": "BOWLS & TRAYS",
       "description": "Elegant bowls and trays.",
-      "imageUrl": "https://picsum.photos/seed/bowls/180/150",
+      "imageUrl": "https://picsum.photos/seed/bowls/150/150",
       "imageHint": "decorative bowl"
     },
     {
       "id": "lifestyle-candles-matches",
       "title": "CANDLES & MATCHES",
       "description": "Luxury candles and matches.",
-      "imageUrl": "https://picsum.photos/seed/candles/180/150",
+      "imageUrl": "https://picsum.photos/seed/candles/150/150",
       "imageHint": "scented candle"
     },
     {
       "id": "lifestyle-gifts",
       "title": "GIFTS",
       "description": "Curated gift items.",
-      "imageUrl": "https://picsum.photos/seed/gifts/180/150",
+      "imageUrl": "https://picsum.photos/seed/gifts/150/150",
       "imageHint": "luxury gift"
     },
     {
       "id": "lifestyle-barware",
       "title": "BARWARE",
       "description": "Sophisticated barware.",
-      "imageUrl": "https://picsum.photos/seed/barware/180/150",
+      "imageUrl": "https://picsum.photos/seed/barware/150/150",
       "imageHint": "cocktail glass"
     },
     {
@@ -101,6 +115,18 @@
       "description": "Instagram post 8",
       "imageUrl": "https://picsum.photos/seed/insta8/500/500",
       "imageHint": "luxury interior"
+    },
+    {
+      "id": "design-inspiration-1",
+      "description": "Bathroom with architectural lighting.",
+      "imageUrl": "https://picsum.photos/seed/bathroom-lighting/800/600",
+      "imageHint": "architectural lighting"
+    },
+    {
+      "id": "design-inspiration-2",
+      "description": "Living room with a smart ceiling fan.",
+      "imageUrl": "https://picsum.photos/seed/smart-fan/800/600",
+      "imageHint": "smart fan"
     }
   ]
 }

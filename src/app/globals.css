@@ -66,3 +66,22 @@
       @apply origin-bottom-left scale-x-100;
   }
 }
+
+@layer utilities {
+  .text-shadow-md {
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .text-shadow-lg {
+    text-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  .border-3 {
+    border-width: 3px;
+  }
+}
+
+@keyframes revealCard {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
