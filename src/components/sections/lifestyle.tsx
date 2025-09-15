@@ -1,5 +1,12 @@
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CategoryCard } from '@/components/category-card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 
 export default function Lifestyle() {
   const lifestyleCategories = [
@@ -28,7 +35,7 @@ export default function Lifestyle() {
              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-20 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent"></span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
+        <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
           {categories.map((category, index) => (
             <CategoryCard
               key={category.id}
@@ -37,9 +44,37 @@ export default function Lifestyle() {
               imageHint={category.imageHint}
               alt={category.description}
               animationDelay={`${index * 0.1}s`}
-              className="w-full max-w-[250px] mx-auto"
+              className="w-full max-w-[300px] mx-auto"
             />
           ))}
+        </div>
+        <div className="md:hidden">
+            <Carousel
+                opts={{
+                align: 'start',
+                loop: true,
+                }}
+                className="w-full max-w-sm mx-auto"
+            >
+                <CarouselContent>
+                {categories.map((category, index) => (
+                    <CarouselItem key={index} className="basis-1/2">
+                        <div className="p-1">
+                            <CategoryCard
+                            title={category.title!}
+                            imageUrl={category.imageUrl}
+                            imageHint={category.imageHint}
+                            alt={category.description}
+                            animationDelay={`${index * 0.1}s`}
+                            className="w-full"
+                            />
+                        </div>
+                    </CarouselItem>
+                ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+            </Carousel>
         </div>
       </div>
     </section>
