@@ -31,9 +31,6 @@ export default function Header() {
           </div>
           
           <div className="flex items-center space-x-4">
-            <Button variant="outline" className="h-auto px-4 py-2 text-sm rounded-full border-primary text-primary hover:bg-primary hover:text-black transition-all duration-300">
-              Join Our Trade Program
-            </Button>
             <Button variant="ghost" size="icon" aria-label="Account">
               <User className="h-6 w-6" />
             </Button>
