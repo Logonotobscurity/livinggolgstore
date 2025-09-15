@@ -3,8 +3,8 @@
     {
       "id": "hero-image",
       "description": "A stunning and luxurious modern living room with gold accents.",
-      "imageUrl": "https://picsum.photos/seed/hero/1920/1080",
-      "imageHint": "luxury living-room"
+      "imageUrl": "https://picsum.photos/seed/hero/1920/600",
+      "imageHint": "luxury interior"
     },
     {
       "id": "about-image",

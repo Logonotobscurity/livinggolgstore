@@ -1,36 +1,33 @@
-import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function About() {
-  const aboutImage = PlaceHolderImages.find(img => img.id === 'about-image');
-
   return (
-    <section id="about" className="bg-secondary">
-      <div className="container mx-auto py-28 px-6">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
-          <div className="relative aspect-[4/5] rounded-lg overflow-hidden shadow-2xl">
-            {aboutImage && (
-              <Image
-                src={aboutImage.imageUrl}
-                alt={aboutImage.description}
-                fill
-                className="object-cover"
-                data-ai-hint={aboutImage.imageHint}
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            )}
-          </div>
-          <div className="flex flex-col justify-center">
-            <h2 className="font-headline text-4xl md:text-5xl tracking-tight">
-              The Art of Living
-            </h2>
-            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              At Living Gold, we believe that true luxury lies in the details. Our design philosophy is centered around creating harmonious spaces that reflect your personality and lifestyle. We source the finest materials and collaborate with skilled artisans to bring a vision of sophisticated comfort to life.
+    <section className="bg-secondary text-white py-32">
+      <div className="container mx-auto px-6 max-w-7xl">
+        <div className="text-center mb-24">
+            <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-6">
+                CURATORS OF THE UNEXPECTED
             </p>
-            <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-              From initial concept to final installation, our dedicated team ensures a seamless and inspiring journey, transforming your house into a home with a golden touch.
+            <p className="text-lg max-w-3xl mx-auto leading-loose">
+                An invaluable resource for customers in Charlotte, NC and across the country. Living Gold is a retail showroom, interior design firm and e-commerce site focused on offering a selection of curated antiques, accessories and exclusive lines.
             </p>
-          </div>
+        </div>
+
+        <div className="text-center mb-16">
+            <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-4">WHAT OTHERS SAY</p>
+            <h2 className="font-headline text-5xl font-bold">EVERY HOME TELLS A STORY</h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-12">
+          <blockquote className="bg-black/50 border border-primary rounded-lg p-12">
+            <p className="text-sm italic leading-normal">"Heather Smith of Charlotte's own Living Gold combines stylish and mature expertise with Modern and Bohemian elements. Living Gold remains my decades-long go-to for finds and inspiration."</p>
+          </blockquote>
+          <blockquote className="bg-black/50 border border-primary rounded-lg p-12">
+            <p className="text-sm italic leading-normal">"I have had the privilege of working with Heather Smith of Living Gold for many years. A legacy of exceptional client service, community support, and great taste in an ever-changing world of interior design."</p>
+          </blockquote>
+          <blockquote className="bg-black/50 border border-primary rounded-lg p-12">
+            <p className="text-sm italic leading-normal">"Anytime I'm looking for magic, I know to look to Living Gold. Heather Smith and her team consistently source the globe and return with only the finest luxury pieces."</p>
+          </blockquote>
         </div>
       </div>
     </section>

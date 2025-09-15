@@ -2,13 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-image');
 
   return (
-    <section className="relative w-full h-[75vh] min-h-[600px] max-h-[900px] overflow-hidden">
+    <section className="relative w-full h-[600px] flex items-center">
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
@@ -19,19 +18,21 @@ export default function Hero() {
           priority
         />
       )}
-      <div className="absolute inset-0 bg-black/60" />
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-        <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl tracking-tight">
-          Designing a Golden Age
-        </h1>
-        <p className="mt-4 max-w-2xl text-lg md:text-xl text-foreground/80">
-          We craft bespoke interiors that blend timeless elegance with modern luxury, creating spaces that are not just lived in, but treasured.
-        </p>
-        <Button asChild size="lg" className="mt-8 transition-all duration-300 ease-in-out hover:brightness-110 active:scale-95">
-          <Link href="#contact">
-            Start Your Project <ArrowRight className="ml-2" />
-          </Link>
-        </Button>
+      <div className="absolute inset-0 bg-black/40" />
+      <div className="relative z-10 container mx-auto px-6">
+        <div className="max-w-3xl pl-28">
+            <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-4">
+                FOR THOSE WHO SEEK
+            </p>
+            <h1 className="font-headline text-7xl font-bold leading-tight text-white mb-10">
+                RARE, UNUSUAL, AND EXQUISITE FINDS
+            </h1>
+            <Button asChild size="lg" className="h-auto bg-primary text-black font-semibold text-base py-3 px-8 rounded-full hover:bg-yellow-600 transition-all duration-300 shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 transform hover:-translate-y-0.5">
+              <Link href="#">
+                Shop Living Gold Finds
+              </Link>
+            </Button>
+        </div>
       </div>
     </section>
   );
