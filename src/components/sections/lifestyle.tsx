@@ -53,27 +53,24 @@ export default function Lifestyle() {
                 opts={{
                 align: 'start',
                 loop: true,
+                dragFree: true,
                 }}
-                className="w-full max-w-sm mx-auto"
+                className="w-full"
             >
-                <CarouselContent>
+                <CarouselContent className="-ml-4">
                 {categories.map((category, index) => (
-                    <CarouselItem key={index} className="basis-1/2">
-                        <div className="p-1">
-                            <CategoryCard
-                            title={category.title!}
-                            imageUrl={category.imageUrl}
-                            imageHint={category.imageHint}
-                            alt={category.description}
-                            animationDelay={`${index * 0.1}s`}
-                            className="w-full"
-                            />
-                        </div>
+                    <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 pl-4">
+                        <CategoryCard
+                        title={category.title!}
+                        imageUrl={category.imageUrl}
+                        imageHint={category.imageHint}
+                        alt={category.description}
+                        animationDelay={`${index * 0.1}s`}
+                        className="w-full"
+                        />
                     </CarouselItem>
                 ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
             </Carousel>
         </div>
       </div>
