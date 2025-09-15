@@ -149,6 +149,13 @@
       "imageHint": "smart fan"
     },
     {
+      "id": "lightscape-outdoor",
+      "slug": "lightscape-outdoor",
+      "description": "Beautifully lit outdoor patio area at dusk.",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/inspiration/outdoor-collection",
+      "imageHint": "outdoor lighting"
+    },
+    {
       "id": "lighting-ceiling",
       "slug": "ceiling-lighting",
       "title": "CEILING",

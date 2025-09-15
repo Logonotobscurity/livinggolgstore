@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 
 export default function Lightscapes() {
   const lightscapeImage = PlaceHolderImages.find(
-    (img) => img.id === 'design-inspiration-1'
+    (img) => img.id === 'lightscape-outdoor'
   );
 
   if (!lightscapeImage) return null;

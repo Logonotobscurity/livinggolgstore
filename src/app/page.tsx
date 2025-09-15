@@ -14,8 +14,8 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
-        <Lightscapes />
         <ProductCategories />
+        <Lightscapes />
         <Lifestyle />
         <About />
         <InstagramFeed />
