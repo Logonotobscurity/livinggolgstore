@@ -1,26 +1,16 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
+import { SunBanner } from '@/components/sun-banner';
 
 export default function Hero() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-image');
-
   return (
-    <section className="relative w-full h-[600px] flex items-center">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          className="object-cover"
-          data-ai-hint={heroImage.imageHint}
-          priority
-        />
-      )}
+    <section className="relative w-full h-[600px] flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0">
+        <SunBanner />
+      </div>
       <div className="absolute inset-0 bg-black/40" />
       <div className="relative z-10 container mx-auto px-6">
-        <div className="max-w-3xl pl-28">
+        <div className="max-w-3xl text-center mx-auto">
             <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-4">
                 FOR THOSE WHO SEEK
             </p>
