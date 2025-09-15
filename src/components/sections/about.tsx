@@ -36,11 +36,11 @@ export default function About() {
   return (
     <section className="bg-secondary text-white py-20 md:py-32 overflow-hidden">
       <div className="container mx-auto px-6 max-w-7xl">
-        <div className="text-center mb-16 md:mb-24">
-          <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-6">
+        <div className="text-center md:text-left mb-16 md:mb-24">
+          <p className="text-base md:text-lg font-medium tracking-[0.2em] uppercase text-primary mb-6">
             CURATORS OF THE UNEXPECTED
           </p>
-          <p className="text-base md:text-lg max-w-3xl mx-auto leading-loose">
+          <p className="text-xl md:text-2xl max-w-4xl mx-auto md:mx-0 leading-loose">
             An invaluable resource for customers in Charlotte, NC and across the
             country. Living Gold is a retail showroom, interior design firm and
             e-commerce site focused on offering a selection of curated antiques,
