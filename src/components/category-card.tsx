@@ -35,7 +35,7 @@ export function CategoryCard({
         aria-label={`Browse ${category.title} collection`}
       >
         <div className="product-frame w-full aspect-square border-3 border-gray-700/50 bg-transparent flex justify-center items-center mb-4 md:mb-8 p-2 md:p-4 relative overflow-hidden backdrop-blur-sm transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:border-primary group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.2),0_0_0_1px_rgba(201,169,97,0.2),inset_0_1px_0_rgba(255,255,255,0.1)]">
-          <div className="inner-frame w-full h-full bg-gradient-to-br from-white to-neutral-100 flex justify-center items-center rounded-sm relative overflow-hidden shadow-inner">
+          <div className="inner-frame w-full h-full bg-transparent flex justify-center items-center rounded-sm relative overflow-hidden">
             <Image
               src={category.imageUrl}
               alt={category.description}
