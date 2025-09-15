@@ -17,7 +17,7 @@ export default function Hero() {
             <h1 className="font-headline text-7xl font-bold leading-tight text-white mb-10 text-shadow-lg">
                 RARE, UNUSUAL, AND EXQUISITE FINDS
             </h1>
-            <Button asChild size="lg" className="h-auto bg-primary text-black font-semibold text-base py-3 px-8 rounded-full hover:bg-yellow-600 transition-all duration-300 shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 transform hover:-translate-y-0.5">
+            <Button asChild size="lg" className="bg-primary text-black hover:bg-yellow-600">
               <Link href="#">
                 Shop Living Gold Finds
               </Link>
