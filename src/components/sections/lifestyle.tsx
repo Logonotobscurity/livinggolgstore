@@ -39,10 +39,7 @@ export default function Lifestyle() {
           {categories.map((category, index) => (
             <CategoryCard
               key={category.id}
-              title={category.title!}
-              imageUrl={category.imageUrl}
-              imageHint={category.imageHint}
-              alt={category.description}
+              category={category}
               animationDelay={`${index * 0.1}s`}
               className="w-full max-w-[300px] mx-auto"
             />
@@ -61,12 +58,9 @@ export default function Lifestyle() {
                 {categories.map((category, index) => (
                     <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 pl-4">
                         <CategoryCard
-                        title={category.title!}
-                        imageUrl={category.imageUrl}
-                        imageHint={category.imageHint}
-                        alt={category.description}
-                        animationDelay={`${index * 0.1}s`}
-                        className="w-full"
+                          category={category}
+                          animationDelay={`${index * 0.1}s`}
+                          className="w-full"
                         />
                     </CarouselItem>
                 ))}

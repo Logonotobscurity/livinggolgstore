@@ -23,12 +23,10 @@ export default function ProductCategories() {
           {categories.map((category, index) => (
             <CategoryCard
               key={category.id}
-              title={category.title!}
-              imageUrl={category.imageUrl}
-              imageHint={category.imageHint}
-              alt={category.description}
+              category={category}
               animationDelay={`${index * 0.1}s`}
               className="w-full max-w-[400px] mx-auto"
+              imageClassName="w-full h-full p-6"
             />
           ))}
         </div>
