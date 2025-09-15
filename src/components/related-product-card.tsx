@@ -23,7 +23,7 @@ export function RelatedProductCard({ product, className }: RelatedProductCardPro
   return (
     <div className={cn("text-left", className)}>
       <Link href={`/products/${product.slug}`} className="group block">
-        <div className="w-full aspect-square bg-white border border-primary/50 p-6 flex items-center justify-center transition-colors duration-300 group-hover:border-primary">
+        <div className="w-full aspect-square bg-transparent border border-primary/20 p-6 flex items-center justify-center transition-colors duration-300 group-hover:border-primary">
           <Image
             src={product.imageUrl}
             alt={product.description}
