@@ -19,7 +19,7 @@ export function CategoryCard({
   return (
     <div
       className={cn(
-        'product-card text-center transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] [transform-style:preserve-3d] opacity-0 translate-y-10',
+        'product-card text-center transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] [transform-style:preserve-3d]',
         className
       )}
       style={{
