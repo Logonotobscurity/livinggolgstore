@@ -35,38 +35,27 @@ export default function Lifestyle() {
              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-20 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent"></span>
           </h2>
         </div>
-        <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-10">
-          {categories.map((category, index) => (
-            <CategoryCard
-              key={category.id}
-              category={category}
-              animationDelay={`${index * 0.1}s`}
-              className="w-full max-w-[300px] mx-auto"
-            />
-          ))}
-        </div>
-        <div className="md:hidden -mx-6">
-            <Carousel
-                opts={{
-                align: 'start',
-                loop: true,
-                dragFree: true,
-                }}
-                className="w-full"
-            >
-                <CarouselContent className="-ml-4">
-                {categories.map((category, index) => (
-                    <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 pl-4">
-                        <CategoryCard
-                          category={category}
-                          animationDelay={`${index * 0.1}s`}
-                          className="w-full"
-                        />
-                    </CarouselItem>
-                ))}
-                </CarouselContent>
-            </Carousel>
-        </div>
+        <Carousel
+            opts={{
+            align: 'start',
+            loop: true,
+            }}
+            className="w-full"
+        >
+            <CarouselContent className="-ml-4">
+            {categories.map((category, index) => (
+                <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6 pl-4">
+                    <CategoryCard
+                      category={category}
+                      animationDelay={`${index * 0.1}s`}
+                      className="w-full"
+                    />
+                </CarouselItem>
+            ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
+        </Carousel>
       </div>
     </section>
   );
