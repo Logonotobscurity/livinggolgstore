@@ -10,11 +10,9 @@ export default function AboutPage() {
   return (
     <CmsLayout breadcrumb={breadcrumb}>
       <div className="cms-page text-white">
-        <div className="text-wrapper align-left">
-          <div className="intro-text">
-            <p>Curators of the Unexpected</p>
-          </div>
-          <h1>About Us</h1>
+        <div className="text-wrapper text-center mb-16">
+          <h1 className="mb-4">About Us</h1>
+          <p className="text-lg">We have an eye for the exceptional and a soft spot for the elusive.</p>
         </div>
 
         <div className="default-content-wrapper">

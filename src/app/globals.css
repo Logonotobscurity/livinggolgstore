@@ -305,10 +305,6 @@
     margin: 0 auto 30px;
   }
   
-  .cms-page .text-wrapper:has(.intro-text) {
-    margin-bottom: 16px;
-  }
-  
   .cms-page .text-wrapper:has(.mb-24) {
     margin: 0 auto 24px;
   }
@@ -322,14 +318,6 @@
     line-height: 22px;
   }
   
-  .cms-page .text-wrapper .intro-text p {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    line-height: 24px;
-  }
-  
   .cms-page .text-wrapper .left-border p {
     padding-left: 20px;
   }
@@ -338,8 +326,8 @@
     font-size: 14px;
     line-height: 22px;
   }
-  
-  .cms-page .text-wrapper .align-left h1 {
+
+  .cms-page h1, .cms-page .text-wrapper .align-left h1 {
     font-size: 48px;
     line-height: 58px;
     margin-top: 16px;
@@ -415,7 +403,7 @@
       margin: 0;
     }
   
-    .cms-page .text-wrapper .align-left h1 {
+    .cms-page h1, .cms-page .text-wrapper .align-left h1 {
       font-size: 36px;
       line-height: 44px;
       margin-bottom: 32px;
@@ -441,5 +429,6 @@
       border-top: 4px solid #e3e3e3
     }
   }
+
 
 
