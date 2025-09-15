@@ -14,7 +14,7 @@ export default function Lightscapes() {
     <section className="bg-background text-foreground">
       <div className="container mx-auto max-w-7xl px-0 sm:px-6">
         <div className="grid md:grid-cols-2 items-center">
-          <div className="py-12 px-6 md:py-20 md:px-16 lg:px-24 text-center md:text-left">
+          <div className="order-2 md:order-1 py-12 px-6 md:py-20 md:px-16 lg:px-24 text-center md:text-left">
             <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">
               Lightscapes
             </h2>
@@ -24,15 +24,11 @@ export default function Lightscapes() {
               the harmony between elegant aesthetics and outdoor space, where
               the creations come to life in natural light.
             </p>
-            <Button
-              asChild
-              size="lg"
-              className="bg-primary text-black hover:bg-yellow-600"
-            >
+            <Button asChild size="lg" showIcon>
               <Link href="#">The Out Door Collection</Link>
             </Button>
           </div>
-          <div className="relative w-full h-[400px] md:h-[600px]">
+          <div className="order-1 md:order-2 relative w-full h-[400px] md:h-[600px]">
             <Image
               src={lightscapeImage.imageUrl}
               alt={lightscapeImage.description}

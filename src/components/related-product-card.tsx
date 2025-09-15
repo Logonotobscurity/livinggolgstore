@@ -39,7 +39,7 @@ export function RelatedProductCard({ product, className }: RelatedProductCardPro
           <h3 className="font-headline text-base uppercase tracking-wider text-white">
             {product.title}
           </h3>
-          <Button variant="outline" className="mt-4 w-full border-gray-600 text-gray-400 hover:bg-primary hover:text-black hover:border-primary">
+          <Button variant="outline" className="mt-4 w-full" showIcon>
             View product
           </Button>
         </div>

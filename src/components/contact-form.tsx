@@ -118,8 +118,9 @@ export function ContactForm() {
           />
           <Button
             type="submit"
-            className="w-32 mx-auto flex justify-center bg-primary text-black rounded-sm hover:bg-yellow-600"
+            className="w-40 mx-auto"
             disabled={isPending}
+            showIcon
           >
             {isPending ? (
               <Loader2 className="h-4 w-4 animate-spin" />
