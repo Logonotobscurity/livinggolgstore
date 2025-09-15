@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Footer from '@/components/layout/footer';
 import Header from '@/components/layout/header';
-import { TabletopProductCard } from '@/components/tabletop-product-card';
+import { CategoryCard } from '@/components/category-card';
 import { ChevronRight } from 'lucide-react';
 
 export default function TabletopPage() {
@@ -43,8 +43,8 @@ export default function TabletopPage() {
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-6 max-w-7xl">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-12">
-              {tabletopProducts.map((product) => (
-                <TabletopProductCard key={product.id} product={product} />
+              {tabletopProducts.map((product, index) => (
+                <CategoryCard key={product.id} category={product} animationDelay={`${index * 0.05}s`} />
               ))}
             </div>
           </div>
