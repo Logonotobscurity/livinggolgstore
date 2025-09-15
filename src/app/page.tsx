@@ -14,8 +14,8 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <ProductCategories />
-        <About />
         <Lifestyle />
+        <About />
         <InstagramFeed />
         <Contact />
       </main>
