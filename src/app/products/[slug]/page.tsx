@@ -1,11 +1,11 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
-import { PlaceHolderImages, ImagePlaceholder } from '@/lib/placeholder-images';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
-import { Heart, Share2, Star } from 'lucide-react';
+import { Heart, Star } from 'lucide-react';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
-import Link from 'next/link';
+import { CategoryCard } from '@/components/category-card';
 
 export async function generateStaticParams() {
   return PlaceHolderImages.map((product) => ({
@@ -74,14 +74,13 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
         <div className="mt-20 md:mt-24">
             <h2 className="font-headline text-2xl md:text-3xl font-bold text-center mb-12">You Might Also Like</h2>
             <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
-                {relatedProducts.map(related => (
-                     <Link href={`/products/${related.slug}`} key={related.id} className="group text-center">
-                         <div className="bg-gray-100 dark:bg-secondary p-4 md:p-6 rounded-lg mb-4 aspect-square">
-                            <Image src={related.imageUrl} alt={related.description} width={300} height={300} className="object-contain w-full h-full mx-auto group-hover:scale-105 transition-transform" />
-                         </div>
-                         <h3 className="font-semibold text-base md:text-lg">{related.title}</h3>
-                         <p className="text-primary">$179.99</p>
-                     </Link>
+                {relatedProducts.map((related, index) => (
+                     <CategoryCard 
+                       key={related.id} 
+                       category={related}
+                       animationDelay={`${index * 0.05}s`}
+                       imageClassName="w-full h-full p-2 sm:p-6"
+                     />
                 ))}
             </div>
         </div>
