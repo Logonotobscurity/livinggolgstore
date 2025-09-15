@@ -45,14 +45,14 @@ export default function About() {
           </h2>
         </div>
       </div>
-      <div className="relative">
-        <Marquee pauseOnHover className="[--gap:2rem]">
+      <div className="relative h-[400px]">
+        <Marquee pauseOnHover vertical className="[--gap:2rem] h-full" repeat={2}>
           {testimonials.map((testimonial, i) => (
             <TestimonialCard key={i} body={testimonial.body} />
           ))}
         </Marquee>
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-secondary to-transparent"></div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-secondary to-transparent"></div>
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-secondary to-transparent"></div>
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-secondary to-transparent"></div>
       </div>
     </section>
   );
