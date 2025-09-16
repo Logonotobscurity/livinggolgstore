@@ -134,6 +134,11 @@
     transition: transform 0.3s ease-in-out 0.1s;
     transform: translate(0);
   }
+
+  .section-divider {
+    @apply w-20 h-px mx-auto my-16 bg-gradient-to-r from-transparent via-primary to-transparent;
+    box-shadow: 0 0 10px 1px hsl(var(--primary) / 0.5);
+  }
 }
 
 .slider__status-bar {
@@ -231,9 +236,12 @@
     text-align: left;
   }
   
-  .cms-page .text-wrapper .section-divider {
-    border: 1px solid #E3E3E3;
+  .cms-page .text-wrapper .section-divider.in-page {
+    border-color: #E3E3E3;
     margin: 40px 0;
+    width: 100%;
+    box-shadow: none;
+    background: #E3E3E3;
   }
   
   .cms-page .text-wrapper .text.block p + p {
@@ -280,7 +288,7 @@
       margin-bottom: 24px;
     }
   
-    .cms-page .text-wrapper .section-divider {
+    .cms-page .text-wrapper .section-divider.in-page {
       margin: 0;
     }
   
