@@ -11,33 +11,34 @@ export default function Lightscapes() {
   if (!lightscapeImage) return null;
 
   return (
-    <section className="bg-background text-foreground py-20 md:py-32">
-      <div className="container mx-auto max-w-7xl px-0 sm:px-6">
-        <div className="relative w-full h-[500px] md:h-[600px]">
-          <Image
-            src={lightscapeImage.imageUrl}
-            alt={lightscapeImage.description}
-            fill
-            className="object-cover"
-            sizes="100vw"
-            data-ai-hint={lightscapeImage.imageHint}
-          />
-          <div className="absolute inset-0 bg-black/30" />
-          <div className="absolute inset-0 flex items-center justify-center md:justify-start">
-            <div className="bg-black/50 backdrop-blur-sm text-white p-8 md:p-12 rounded-lg max-w-md md:ml-12 lg:ml-24 text-center md:text-left">
-              <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">
-                Lightscapes
-              </h2>
-              <p className="text-base md:text-lg leading-relaxed mb-8">
-                The Outdoor collection is the result of a strong dialogue between
-                environment and architecture. This new lighting concept conveys
-                the harmony between elegant aesthetics and outdoor space, where
-                the creations come to life in natural light.
-              </p>
-              <Button asChild size="lg" showIcon>
-                <Link href="/products/outdoor-lighting">The Outdoor Collection</Link>
-              </Button>
-            </div>
+    <section className="bg-black text-white">
+      <div className="container mx-auto max-w-none px-0">
+        <div className="grid md:grid-cols-2 min-h-[600px]">
+           <div className="flex flex-col justify-center p-8 md:p-12 lg:p-24 bg-secondary">
+             <div className="max-w-md mx-auto">
+                <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">
+                    Lightscapes
+                </h2>
+                <p className="text-base md:text-lg leading-relaxed mb-8 text-gray-300">
+                    The Outdoor collection is the result of a strong dialogue between
+                    environment and architecture. This new lighting concept conveys
+                    the harmony between elegant aesthetics and outdoor space, where
+                    the creations come to life in natural light.
+                </p>
+                <Button asChild size="lg" showIcon>
+                    <Link href="/products/outdoor-lighting">The Outdoor Collection</Link>
+                </Button>
+             </div>
+           </div>
+           <div className="relative w-full min-h-[400px] md:min-h-0">
+            <Image
+                src={lightscapeImage.imageUrl}
+                alt={lightscapeImage.description}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                data-ai-hint={lightscapeImage.imageHint}
+            />
           </div>
         </div>
       </div>
