@@ -19,7 +19,7 @@
       "slug": "decorative-objects",
       "title": "Decorative Objects",
       "description": "Elegant decorative objects.",
-      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw63ba4ca6/In_Vitro.png?sw=100&bgcolor=FFFFFF00",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1757903641/IMG_2093_jlpuzs.webp",
       "imageHint": "ceramic vase"
     },
     {
@@ -27,7 +27,7 @@
       "slug": "vases-and-pots",
       "title": "Vases & Pots",
       "description": "Modern vases and pots.",
-      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw0f01605f/thumbnail_bellhop-glass.jpg?sw=100&bgcolor=FFFFFF",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1757903639/IMG_2095_udclds.webp",
       "imageHint": "ceramic pot"
     },
     {
@@ -35,7 +35,7 @@
       "slug": "bowls-and-trays",
       "title": "BOWLS & TRAYS",
       "description": "Elegant bowls and trays.",
-      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwd6474888/7Ua2XdZwee.jpg?sw=100&bgcolor=FFFFFF",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1757903639/IMG_2097_r2ijiw.webp",
       "imageHint": "decorative bowl"
     },
     {
@@ -43,7 +43,7 @@
       "slug": "candles-and-matches",
       "title": "CANDLES & MATCHES",
       "description": "Luxury candles and matches.",
-      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw265dcf5a/thumbnail_spareparts.jpg?sw=100&bgcolor=FFFFFF",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1757903640/IMG_2102_vhvdyv.webp",
       "imageHint": "scented candle"
     },
     {
@@ -51,7 +51,7 @@
       "slug": "gifts",
       "title": "GIFTS",
       "description": "Curated gift items.",
-      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw55f25104/thumbnail_bonjour.jpg?sw=100&bgcolor=FFFFFF",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1757903640/IMG_2100_tf3qye.webp",
       "imageHint": "luxury gift"
     },
     {
@@ -59,7 +59,7 @@
       "slug": "barware",
       "title": "BARWARE",
       "description": "Sophisticated barware.",
-      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwcf195b8d/Voce%20di%20men%C3%B9%20-%20Gift%20Guide.png?sw=100&bgcolor=FFFFFF00",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1757903643/IMG_2105_usdpou.webp",
       "imageHint": "cocktail glass"
     },
     {
@@ -152,7 +152,7 @@
       "id": "lightscape-outdoor",
       "slug": "lightscape-outdoor",
       "description": "Beautifully lit outdoor patio area at dusk.",
-      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw15e5a836/thumbnail_room_outdoor.jpg?sw=100&bgcolor=FFFFFF",
+      "imageUrl": "https://picsum.photos/seed/lightscape/800/600",
       "imageHint": "outdoor lighting"
     },
     {
@@ -160,7 +160,7 @@
       "slug": "ceiling-lighting",
       "title": "CEILING",
       "description": "Modern ceiling lighting.",
-      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwb827a46b/thumbnail_ceiling.jpg?sw=100&bgcolor=FFFFFF",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1757903641/IMG_2093_jlpuzs.webp",
       "imageHint": "ceiling light"
     },
     {
@@ -168,7 +168,7 @@
       "slug": "wall-lighting",
       "title": "WALL",
       "description": "Elegant wall lighting.",
-      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw7cbbee8f/thumbnail_wall_ic.jpg?sw=100&bgcolor=FFFFFF",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1757903639/IMG_2095_udclds.webp",
       "imageHint": "wall sconce"
     },
     {
@@ -184,7 +184,7 @@
       "slug": "floor-lighting",
       "title": "FLOOR",
       "description": "Contemporary floor lamps.",
-      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwf950381e/Flos%20toio.jpg?sw=480&bgcolor=FFFFFF",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1757903640/IMG_2102_vhvdyv.webp",
       "imageHint": "floor lamp"
     },
     {
@@ -222,7 +222,8 @@
       "id": "tabletop-1", "slug": "large-abaca-napkin-holder", "title": "LARGE ABACA NAPKIN HOLDER", "description": "Stylish napkin holder.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw9ed77ba4/oH3fCDNw.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "napkin holder", "price": "38.00"
     },
     {
-      "id": "tabletop-2", "slug": "jacob-zion-cup", "title": "JACOB ZION CUP", "description": "A unique cup.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw5a5ce7c1/HzLhtxfA.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "glass cup", "price": "FROM 40.00"
+      "id": "tabletop-2", "slug": "jacob-zion-cup", "title": "JACOB ZION CUP", "description": "A unique cup.",
+      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw5a5ce7c1/HzLhtxfA.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "glass cup", "price": "FROM 40.00"
     },
     {
       "id": "tabletop-3", "slug": "joseph-zion-short-cup", "title": "JOSEPH ZION SHORT CUP", "description": "A short cup.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwba34431e/Pvy-a6Pg.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "short glass", "price": "FROM 35.00"
