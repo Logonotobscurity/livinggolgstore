@@ -1,96 +1,9 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Search, User, ShoppingCart, Menu, ChevronDown, Lightbulb, Lamp, LampWallUp, LampCeiling } from 'lucide-react';
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
-import { cn } from '@/lib/utils';
-import React from 'react';
-
-const navLinks = [
-  {
-    title: "Ceiling Lights",
-    href: "/products/lighting",
-    icon: LampCeiling,
-    sublinks: [
-      { title: "Chandeliers", href: "/products/chandeliers-pendants", description: "Statement pieces for any room.", icon: Lightbulb },
-      { title: "Pendant Lights", href: "/products/chandeliers-pendants", description: "Focused light, elegant form.", icon: Lightbulb },
-      { title: "Flush & Semi-Flushmounts", href: "/products/ceiling-fans-with-lights", description: "For rooms with lower ceilings.", icon: Lightbulb },
-      { title: "Linear Suspension", href: "/products/linear-suspension", description: "Modern, sleek, and stylish.", icon: Lightbulb },
-      { title: "Recessed Lighting", href: "/products/recessed-track-lighting", description: "Clean, built-in illumination.", icon: Lightbulb },
-      { title: "Track & Monorail", href: "/products/recessed-track-lighting", description: "Flexible and adjustable lighting.", icon: Lightbulb },
-    ]
-  },
-  {
-    title: "Wall Lights",
-    href: "/products/wall-sconces-vanity-lights",
-    icon: LampWallUp,
-    sublinks: [
-      { title: "Wall Sconces", href: "/products/wall-sconces-vanity-lights", description: "Accent and ambient lighting.", icon: Lightbulb },
-      { title: "Bath & Vanity Lights", href: "/products/wall-sconces-vanity-lights", description: "Perfect for grooming and makeup.", icon: Lightbulb },
-      { title: "Picture Lights", href: "/products/specialty-lighting", description: "Highlight your favorite artwork.", icon: Lightbulb },
-      { title: "Undercabinet Lights", href: "/products/specialty-lighting", description: "Task lighting for your kitchen.", icon: Lightbulb },
-      { title: "Lighted Mirrors", href: "/products/specialty-lighting", description: "Combine form and function.", icon: Lightbulb },
-    ]
-  },
-  {
-    title: "Lamps",
-    href: "/products/table-lamps-portable-lights",
-    icon: Lamp,
-    sublinks: [
-      { title: "Floor Lamps", href: "/products/floor-lamps", description: "Versatile and stylish.", icon: Lightbulb },
-      { title: "Table Lamps", href: "/products/table-lamps-portable-lights", description: "For work and reading.", icon: Lightbulb },
-      { title: "Desk Lamps", href: "/products/table-lamps-portable-lights", description: "Focused light for your workspace.", icon: Lightbulb },
-      { title: "Cordless Lamps", href: "/products/table-lamps-portable-lights", description: "Portable and convenient.", icon: Lightbulb },
-    ]
-  },
-  { title: "Accessories", href: "/products/accessories" },
-  { title: "Outdoor", href: "/products/outdoor-lighting" },
-  { title: "Room", href: "/products/room-settings" },
-];
-
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a"> & { icon: React.ElementType }
->(({ className, title, children, icon: Icon, ...props }, ref) => {
-  return (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <div className="flex items-center gap-x-2">
-            <Icon className="h-4 w-4 text-primary" />
-            <div className="text-sm font-medium leading-none">{title}</div>
-          </div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground pl-6">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  )
-})
-ListItem.displayName = "ListItem"
-
+import { Search, User, ShoppingCart, Menu } from 'lucide-react';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import NavMenu from './nav-menu';
+import MobileNavMenu from './mobile-nav-menu';
 
 export default function Header() {
   return (
@@ -134,44 +47,8 @@ export default function Header() {
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="bg-black w-3/4 p-6">
-                <SheetHeader>
-                  <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
-                </SheetHeader>
-                <div className="pt-10">
-                  <Accordion type="multiple" className="w-full">
-                    {navLinks.map((link) => (
-                      <div key={link.title}>
-                        {link.sublinks ? (
-                          <AccordionItem value={link.title} className="border-b-secondary/50">
-                            <AccordionTrigger className="text-lg font-medium tracking-wider uppercase hover:text-primary transition-colors hover:no-underline">
-                              {link.title}
-                            </AccordionTrigger>
-                            <AccordionContent>
-                              <ul className="flex flex-col space-y-4 pl-4 pt-2">
-                                <li>
-                                  <Link href={link.href} className="hover:text-primary transition-colors">All {link.title}</Link>
-                                </li>
-                                {link.sublinks.map((sublink) => (
-                                  <li key={sublink.title}>
-                                    <Link href={sublink.href} className="hover:text-primary transition-colors">{sublink.title}</Link>
-                                  </li>
-                                ))}
-                              </ul>
-                            </AccordionContent>
-                          </AccordionItem>
-                        ) : (
-                          <Link
-                            href={link.href ?? '#'}
-                            className={`flex items-center text-lg font-medium tracking-wider uppercase hover:text-primary transition-colors py-4 border-b border-b-secondary/50`}
-                          >
-                            {link.title}
-                          </Link>
-                        )}
-                      </div>
-                    ))}
-                  </Accordion>
-                </div>
+              <SheetContent side="left" className="bg-black w-3/4 p-0">
+                <MobileNavMenu />
               </SheetContent>
             </Sheet>
           </div>
@@ -204,53 +81,8 @@ export default function Header() {
         </div>
       </div>
 
-       <nav className="hidden md:flex justify-center items-center h-14">
-        <NavigationMenu>
-          <NavigationMenuList>
-            {navLinks.map(link => (
-              <NavigationMenuItem key={link.title}>
-                {link.sublinks ? (
-                  <>
-                    <NavigationMenuTrigger>
-                      {link.title}
-                    </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                        <li className="row-span-3">
-                          <NavigationMenuLink asChild>
-                            <a
-                              className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                              href={link.href}
-                            >
-                              <link.icon className="h-6 w-6 text-primary" />
-                              <div className="mb-2 mt-4 text-lg font-medium">
-                                {link.title}
-                              </div>
-                              <p className="text-sm leading-tight text-muted-foreground">
-                                Explore all {link.title.toLowerCase()}.
-                              </p>
-                            </a>
-                          </NavigationMenuLink>
-                        </li>
-                        {link.sublinks.map(sublink => (
-                          <ListItem key={sublink.title} href={sublink.href} title={sublink.title} icon={sublink.icon}>
-                            {sublink.description}
-                          </ListItem>
-                        ))}
-                      </ul>
-                    </NavigationMenuContent>
-                  </>
-                ) : (
-                  <Link href={link.href!} legacyBehavior passHref>
-                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                      {link.title}
-                    </NavigationMenuLink>
-                  </Link>
-                )}
-              </NavigationMenuItem>
-            ))}
-          </NavigationMenuList>
-        </NavigationMenu>
+      <nav className="hidden md:flex justify-center items-center h-14">
+        <NavMenu />
       </nav>
     </header>
   );
