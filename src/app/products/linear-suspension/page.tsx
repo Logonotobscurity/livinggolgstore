@@ -34,7 +34,7 @@ export default function LinearSuspensionPage() {
                 <span className="text-gray-300">Linear Suspension</span>
               </nav>
               <h1 className="font-headline text-5xl md:text-7xl font-bold">
-                LINEAR SUSPENSION
+                LINEAR SUSPension
               </h1>
             </div>
           </section>
