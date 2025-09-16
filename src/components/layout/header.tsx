@@ -1,7 +1,13 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Search, User, ShoppingCart, Menu, ChevronDown, Lightbulb, Lamp, WallLamp, CeilingLight, Component } from 'lucide-react';
+import { Search, User, ShoppingCart, Menu, ChevronDown, Lightbulb, Lamp, LampWallUp, LampCeiling } from 'lucide-react';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -18,7 +24,7 @@ const navLinks = [
   {
     title: "Ceiling Lights",
     href: "/products/lighting",
-    icon: CeilingLight,
+    icon: LampCeiling,
     sublinks: [
       { title: "Chandeliers", href: "/products/chandeliers-pendants", description: "Statement pieces for any room.", icon: Lightbulb },
       { title: "Pendant Lights", href: "/products/chandeliers-pendants", description: "Focused light, elegant form.", icon: Lightbulb },
@@ -31,7 +37,7 @@ const navLinks = [
   {
     title: "Wall Lights",
     href: "/products/wall-sconces-vanity-lights",
-    icon: WallLamp,
+    icon: LampWallUp,
     sublinks: [
       { title: "Wall Sconces", href: "/products/wall-sconces-vanity-lights", description: "Accent and ambient lighting.", icon: Lightbulb },
       { title: "Bath & Vanity Lights", href: "/products/wall-sconces-vanity-lights", description: "Perfect for grooming and makeup.", icon: Lightbulb },
@@ -132,17 +138,40 @@ export default function Header() {
                 <SheetHeader>
                   <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
                 </SheetHeader>
-                <nav className="flex flex-col space-y-6 pt-10">
-                  {navLinks.map((link) => (
-                    <Link
-                      key={link.title}
-                      href={link.href ?? '#'}
-                      className={`text-lg font-medium tracking-wider uppercase hover:text-primary transition-colors`}
-                    >
-                      {link.title}
-                    </Link>
-                  ))}
-                </nav>
+                <div className="pt-10">
+                  <Accordion type="multiple" className="w-full">
+                    {navLinks.map((link) => (
+                      <div key={link.title}>
+                        {link.sublinks ? (
+                          <AccordionItem value={link.title} className="border-b-secondary/50">
+                            <AccordionTrigger className="text-lg font-medium tracking-wider uppercase hover:text-primary transition-colors hover:no-underline">
+                              {link.title}
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              <ul className="flex flex-col space-y-4 pl-4 pt-2">
+                                <li>
+                                  <Link href={link.href} className="hover:text-primary transition-colors">All {link.title}</Link>
+                                </li>
+                                {link.sublinks.map((sublink) => (
+                                  <li key={sublink.title}>
+                                    <Link href={sublink.href} className="hover:text-primary transition-colors">{sublink.title}</Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            </AccordionContent>
+                          </AccordionItem>
+                        ) : (
+                          <Link
+                            href={link.href ?? '#'}
+                            className={`flex items-center text-lg font-medium tracking-wider uppercase hover:text-primary transition-colors py-4 border-b border-b-secondary/50`}
+                          >
+                            {link.title}
+                          </Link>
+                        )}
+                      </div>
+                    ))}
+                  </Accordion>
+                </div>
               </SheetContent>
             </Sheet>
           </div>
@@ -212,7 +241,7 @@ export default function Header() {
                     </NavigationMenuContent>
                   </>
                 ) : (
-                  <Link href={link.href!} legacyBehavior passHref>
+                  <Link href={link.href!} passHref legacyBehavior>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                       {link.title}
                     </NavigationMenuLink>

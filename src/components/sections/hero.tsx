@@ -18,7 +18,7 @@ export default function Hero() {
                 RARE, UNUSUAL, AND EXQUISITE FINDS
             </h1>
             <Button asChild size="lg" showIcon>
-              <Link href="#">
+              <Link href="/products/living-gold-finds">
                 Shop Living Gold Finds
               </Link>
             </Button>
