@@ -133,21 +133,21 @@ export default function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/products/accessories" legacyBehavior passHref>
+          <Link href="/products/accessories" passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Accessories
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
          <NavigationMenuItem>
-          <Link href="/products/outdoor-lighting" legacyBehavior passHref>
+          <Link href="/products/outdoor-lighting" passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Outdoor
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
          <NavigationMenuItem>
-          <Link href="/products/room-settings" legacyBehavior passHref>
+          <Link href="/products/room-settings" passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Room
             </NavigationMenuLink>
