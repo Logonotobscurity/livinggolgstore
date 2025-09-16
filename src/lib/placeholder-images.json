@@ -591,7 +591,104 @@
       "description": "Sophisticated barware.",
       "imageUrl": "https://images.lumens.com/is/image/Lumens/LPLP86927_alt68?$Lumens.com-PRP-large$",
       "imageHint": "cocktail glass"
+    },
+    {
+      "id": "payment-visa",
+      "slug": "visa",
+      "title": "Visa",
+      "description": "Visa payment method",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/payment/visa",
+      "imageHint": "visa card"
+    },
+    {
+      "id": "payment-mastercard",
+      "slug": "mastercard",
+      "title": "Mastercard",
+      "description": "Mastercard payment method",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/payment/mastercard",
+      "imageHint": "mastercard card"
+    },
+    {
+      "id": "payment-paypal",
+      "slug": "paypal",
+      "title": "PayPal",
+      "description": "PayPal payment method",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/payment/paypal",
+      "imageHint": "paypal logo"
+    },
+    {
+      "id": "payment-klarna",
+      "slug": "klarna",
+      "title": "Klarna",
+      "description": "Klarna payment method",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/payment/klarna",
+      "imageHint": "klarna logo"
+    },
+    {
+      "id": "insta-1",
+      "slug": "insta-1",
+      "title": "Insta 1",
+      "description": "Instagram post 1",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/uu126021_alt09?$Lumens.com-PRP-large$",
+      "imageHint": "modern kitchen"
+    },
+    {
+      "id": "insta-2",
+      "slug": "insta-2",
+      "title": "Insta 2",
+      "description": "Instagram post 2",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/OLUY16717_alt28?$Lumens.com-PRP-large$",
+      "imageHint": "elegant bedroom"
+    },
+    {
+      "id": "insta-3",
+      "slug": "insta-3",
+      "title": "Insta 3",
+      "description": "Instagram post 3",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/DHDP555443?$Lumens.com-PRP-large$",
+      "imageHint": "gold decor"
+    },
+    {
+      "id": "insta-4",
+      "slug": "insta-4",
+      "title": "Insta 4",
+      "description": "Instagram post 4",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/fj3zn55b5skg99k4rxv53n3/BDI_ModicaMobileFilePedestal_App2-188x188-site.png?auto=webp&format=png",
+      "imageHint": "chic bathroom"
+    },
+    {
+      "id": "insta-5",
+      "slug": "insta-5",
+      "title": "Insta 5",
+      "description": "Instagram post 5",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/4hvx2ssn4pmw6sm8kjvbhkq/Astro_Lighting-Ascoli_Track_Light-Matte_Black-3-1286117-188x188-site.png?auto=webp&format=png",
+      "imageHint": "velvet sofa"
+    },
+    {
+      "id": "insta-6",
+      "slug": "insta-6",
+      "title": "Insta 6",
+      "description": "Instagram post 6",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5rc7s94bh8j3f3kmrp4jxb7/Kuzco_Lighting_Parker_LED_Flushmount-188x188-site.png?auto=webp&format=png",
+      "imageHint": "marble table"
+    },
+    {
+      "id": "insta-7",
+      "slug": "insta-7",
+      "title": "Insta 7",
+      "description": "Instagram post 7",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/pr9pf75ktvfksm5jxbmf5c4/Buster_Punch_5W_A-Type_Gold_LED_Bulb_on-188x188-site.png?auto=webp&format=png",
+      "imageHint": "art deco lamp"
+    },
+    {
+      "id": "insta-8",
+      "slug": "insta-8",
+      "title": "Insta 8",
+      "description": "Instagram post 8",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/wrmfn4r52rqx5rxbnn9w9wj/LU_May_2024_Huxe_Bath_Bars_Kasson_LED_Vanity_Light_site-188x188-site.png?auto=webp&format=png",
+      "imageHint": "luxury interior"
     }
   ]
 }
 
+    
