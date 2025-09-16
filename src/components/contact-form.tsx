@@ -120,7 +120,7 @@ export function ContactForm() {
             type="submit"
             className="w-40 mx-auto"
             disabled={isPending}
-            showIcon
+            showIcon={!isPending}
           >
             {isPending ? (
               <Loader2 className="h-4 w-4 animate-spin" />
