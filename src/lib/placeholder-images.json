@@ -1,452 +1,548 @@
+
 {
   "placeholderImages": [
     {
       "id": "chandeliers-pendants-1",
-      "slug": "kuzco-lighting-corda",
-      "title": "Kuzco Lighting CORDA",
-      "description": "Kuzco Lighting CORDA PD39307-BKOP-UNV",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/bgsbrf9xvk65n6tfm94pbvc/Kuzco_Lighting_CORDA_PD39307-BKOP-UNV-188x188-site.png",
-      "imageHint": "pendant light"
+      "slug": "roll-and-hill-modo-chandelier",
+      "title": "Roll & Hill Modo 3 Sided Chandelier",
+      "description": "Roll & Hill Modo 3 Sided Chandelier in Black with Smoke glass.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/nqmq8crfg7m5pgth8x42f/RollAndHill_Modo3SidedChandelier_BlackSmoke-188x188-site.png",
+      "imageHint": "modern chandelier"
     },
     {
       "id": "chandeliers-pendants-2",
-      "slug": "hubbardton-forge-snaps",
-      "title": "Hubbardton Forge SNAPS",
-      "description": "Hubbardton Forge SNAPS Large LED Pendant",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/4h7b697hgn2wf5x39ptx5ns/Hubbardton_Forge_SNAPS_Large_LED_Pendant_white-brass_02-188x188-site.png",
-      "imageHint": "pendant light"
+      "slug": "visual-comfort-spur-chandelier",
+      "title": "Visual Comfort Modern Spur LED Chandelier",
+      "description": "Visual Comfort Modern Spur LED Chandelier in black.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/h8jbphghqrkfhsm2pcfhhp/Visual_Comfort_Modern_Spur_LED_Chandelier_black-188x188-site.png",
+      "imageHint": "LED chandelier"
     },
     {
       "id": "chandeliers-pendants-3",
-      "slug": "corbett-lighting-nephele",
-      "title": "Corbett Lighting Nephele",
-      "description": "Corbett Lighting Nephele LED Linear Suspension",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/6cnhgn4zj3mgtgjx2k8hkm4/Corbett_Lighting_Nephele_LED_Linear_Suspension-188x188-site.png",
-      "imageHint": "linear suspension"
+      "slug": "101-copenhagen-stingray-chandelier",
+      "title": "101 Copenhagen Stingray Chandelier",
+      "description": "101 Copenhagen Stingray Chandelier, an artistic centerpiece.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/tqnz28f38ggmf9w8bw8fx8bq/101_Copenhagen_Stingray_Chandelier-188x188-site.png",
+      "imageHint": "artistic chandelier"
     },
     {
       "id": "chandeliers-pendants-4",
-      "slug": "hinkley-nash-pendant",
-      "title": "Hinkley Nash Pendant",
-      "description": "Hinkley Nash Pendant",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/sv79s9ss27nmp6gqh9gz45/Hinkley_Nash_Pendant-188x188-site.png",
-      "imageHint": "pendant light"
+      "slug": "luceplan-j-us-chandelier",
+      "title": "Luceplan J-US LED Chandelier",
+      "description": "Luceplan J-US LED Chandelier with 18 arms.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/s6cpn65wm6n6r34tjxx9hkns/Luceplan-J-US_LED_Chandelier-black-18arms-188x188-site.png",
+      "imageHint": "large chandelier"
     },
     {
       "id": "chandeliers-pendants-5",
-      "slug": "lzf-link-suspension",
-      "title": "LZF Link Suspension",
-      "description": "LZF Link Suspension",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/wfp35gxhtc2jbxvzgb78gzg8/LZF_LinkSuspension_App3-188x188-site.png",
-      "imageHint": "suspension light"
-    },
-    {
-      "id": "chandeliers-pendants-6",
-      "slug": "flos-ic-s-pendant",
-      "title": "FLOS IC S Pendant",
-      "description": "FLOS IC S Pendant Light",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5fxfzp6w7986sg4gnq9q7j/FLOS_IC_S_Pendant_Light-188x188-site.png",
-      "imageHint": "pendant light"
-    },
-    {
-      "id": "chandeliers-pendants-7",
-      "slug": "cerno-lenis-linear",
-      "title": "Cerno Lenis Linear",
-      "description": "Cerno Lenis Linear Suspension",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/fj7sw4ff8xcwx434sgw3378/Cerno_LenisLinearSuspension_App_HighRes-188x188-site.png",
-      "imageHint": "linear suspension"
-    },
-    {
-      "id": "chandeliers-pendants-8",
-      "slug": "modern-forms-sydney",
-      "title": "Modern Forms Sydney",
-      "description": "Modern Forms Sydney LED Linear Suspension",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/kqc5trp7c9pp5xxtrnbr2b/Modern_Forms_Sydney_LED_Linear_Suspension-188x188-site.png",
-      "imageHint": "linear suspension"
-    },
-    {
-      "id": "chandeliers-pendants-9",
-      "slug": "101-copenhagen-stingray",
-      "title": "101 Copenhagen Stingray",
-      "description": "101 Copenhagen Stingray Chandelier",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/tqnz28f38ggmf9w8bw8fx8bq/101_Copenhagen_Stingray_Chandelier-188x188-site.png",
-      "imageHint": "chandelier"
-    },
-    {
-      "id": "chandeliers-pendants-10",
-      "slug": "studio-m-gusto",
-      "title": "Studio M Gusto",
-      "description": "Studio M Gusto LED Linear Suspension",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/2xft985pj78bqgsc6n2jqv/Studio_M_Gusto_LED_Linear_Suspension-188x188-site.png",
-      "imageHint": "linear suspension"
-    },
-    {
-      "id": "chandeliers-pendants-11",
-      "slug": "matthew-mccormick-cascadia",
-      "title": "Matthew McCormick Cascadia",
-      "description": "Matthew McCormick Studio Cascadia LED Mini Pendant",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/9w58ts9jw9rgn9mhn87qw3xj/Matthew_McCormick_Studio_Cascadia_LED_Mini_Pendant-188x188-site.png",
-      "imageHint": "mini pendant"
-    },
-    {
-      "id": "chandeliers-pendants-12",
-      "slug": "studio-m-megalith",
-      "title": "Studio M Megalith",
-      "description": "Studio M Megalith Pendant Dichroic Glass",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/nxmr5kh9zb3n3gvffw6z4g/Studio-M-Megalith-Pendant-Dichroic-Glass-188x188-site.png",
-      "imageHint": "pendant light"
-    },
-    {
-      "id": "chandeliers-pendants-13",
-      "slug": "tob-beckham-chandelier",
-      "title": "TOB by Thomas O'Brien Beckham",
-      "description": "TOB by Thomas O'Brien Beckham Classic Chandelier",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/ct6btqqjpk3hxq6fctqnsb/TOB_by_Thomas_OBrien_Beckham_Classic_Chandelier-188x188-site.png",
-      "imageHint": "classic chandelier"
-    },
-    {
-      "id": "chandeliers-pendants-14",
-      "slug": "visual-comfort-spur",
-      "title": "Visual Comfort Modern Spur",
-      "description": "Visual Comfort Modern Spur LED Chandelier",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/h8jbphghqrkfhsm2pcfhhp/Visual_Comfort_Modern_Spur_LED_Chandelier_black-188x188-site.png",
-      "imageHint": "led chandelier"
-    },
-    {
-      "id": "chandeliers-pendants-15",
-      "slug": "karman-leda-suspension",
-      "title": "Karman Leda Suspension",
-      "description": "Karman Leda LED 3-Light Linear Suspension",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/kgmpwt586hjhbm76zgnphng/Karman_Leda_LED_3-Light_Linear_Suspension-188x188-site.png",
-      "imageHint": "linear suspension"
-    },
-    {
-      "id": "chandeliers-pendants-16",
-      "slug": "lodes-cono-di-luce",
-      "title": "LODES Cono di Luce",
-      "description": "LODES Cono di Luce LED Mini Pendant",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/nfqz66w4b2mcjk5nvkwjpwf/LODES_Cono_di_Luce_LED_Mini_Pendant_small_gold-188x188-site.png",
-      "imageHint": "mini pendant"
-    },
-    {
-      "id": "chandeliers-pendants-17",
-      "slug": "luceplan-j-us-chandelier",
-      "title": "Luceplan J-US Chandelier",
-      "description": "Luceplan J-US LED Chandelier",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/s6cpn65wm6n6r34tjxx9hkns/Luceplan-J-US_LED_Chandelier-black-18arms-188x188-site.png",
-      "imageHint": "led chandelier"
-    },
-    {
-      "id": "chandeliers-pendants-18",
-      "slug": "roll-and-hill-modo",
-      "title": "Roll & Hill Modo",
-      "description": "Roll & Hill Modo 3 Sided Chandelier",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/nqmq8crfg7m5pgth8x42f/RollAndHill_Modo3SidedChandelier_BlackSmoke-188x188-site.png",
-      "imageHint": "chandelier"
-    },
-    {
-      "id": "chandeliers-pendants-19",
-      "slug": "louis-poulsen-ph-5",
-      "title": "Louis Poulsen PH 5",
-      "description": "Louis Poulsen PH 5 Pendant Light",
+      "slug": "louis-poulsen-ph-5-pendant",
+      "title": "Louis Poulsen PH 5 Pendant Light",
+      "description": "Louis Poulsen PH 5 Pendant Light in Monochrome Black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/373gv5qp4w645g4f34rr873/Louis_Poulsen-PH_5_Pendant_Light-Monochrome_Black-Standard-5741934854-188x188-site.png",
       "imageHint": "pendant light"
     },
     {
-      "id": "chandeliers-pendants-20",
-      "slug": "lodes-random-stick",
-      "title": "LODES Random Stick",
-      "description": "LODES Random Stick LED Linear Suspension",
+      "id": "chandeliers-pendants-6",
+      "slug": "lodes-random-stick-suspension",
+      "title": "LODES Random Stick LED Linear Suspension",
+      "description": "LODES Random Stick LED Linear Suspension in Black Chrome.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/jp8h9n9sj8f8bsm99pph58wc/LODES-Random_Stick_LED_Linear_Suspension-Black_Chrome-Small-23420M-188x188-site.png",
       "imageHint": "linear suspension"
     },
     {
+      "id": "chandeliers-pendants-7",
+      "slug": "matthew-mccormick-cascadia-pendant",
+      "title": "Matthew McCormick Cascadia LED Mini Pendant",
+      "description": "Matthew McCormick Studio Cascadia LED Mini Pendant.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/9w58ts9jw9rgn9mhn87qw3xj/Matthew_McCormick_Studio_Cascadia_LED_Mini_Pendant-188x188-site.png",
+      "imageHint": "mini pendant"
+    },
+    {
+      "id": "chandeliers-pendants-8",
+      "slug": "hubbardton-forge-snaps-pendant",
+      "title": "Hubbardton Forge SNAPS Large LED Pendant",
+      "description": "Hubbardton Forge SNAPS Large LED Pendant in white and brass.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/4h7b697hgn2wf5x39ptx5ns/Hubbardton_Forge_SNAPS_Large_LED_Pendant_white-brass_02-188x188-site.png",
+      "imageHint": "LED pendant"
+    },
+    {
+      "id": "chandeliers-pendants-9",
+      "slug": "kuzco-kona-outdoor-pendant",
+      "title": "Kuzco Kona Outdoor Pendant",
+      "description": "Kuzco Lighting Kona Outdoor Pendant.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/p8jb2rhz9mkrf8h5jzf4nnsh/Kuzco_Lighting-Kona_Outdoor_Pendant-EP56913-BKOP-188x188-site.png",
+      "imageHint": "outdoor pendant"
+    },
+    {
+      "id": "chandeliers-pendants-10",
+      "slug": "lodes-cono-di-luce-pendant",
+      "title": "LODES Cono di Luce LED Mini Pendant",
+      "description": "LODES Cono di Luce LED Mini Pendant in small gold.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/nfqz66w4b2mcjk5nvkwjpwf/LODES_Cono_di_Luce_LED_Mini_Pendant_small_gold-188x188-site.png",
+      "imageHint": "gold pendant"
+    },
+    {
+      "id": "chandeliers-pendants-11",
+      "slug": "flos-ic-s-pendant",
+      "title": "FLOS IC S Pendant Light",
+      "description": "FLOS IC S Pendant Light, a modern classic.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5fxfzp6w7986sg4gnq9q7j/FLOS_IC_S_Pendant_Light-188x188-site.png",
+      "imageHint": "modern pendant"
+    },
+    {
       "id": "table-lamps-1",
-      "slug": "audo-copenhagen-column",
-      "title": "Audo Copenhagen Column",
-      "description": "Audo Copenhagen Column Rechargeable Table Lamp",
+      "slug": "audo-copenhagen-column-lamp",
+      "title": "Audo Copenhagen Column Rechargeable Table Lamp",
+      "description": "Audo Copenhagen Column Rechargeable Table Lamp.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/cxssgz78c9t4jgtrvpgrgvn8/Audo_Copenhagen_Column_Rechargeable_Table_Lamp-188x188-site.png",
-      "imageHint": "table lamp"
+      "imageHint": "rechargeable lamp"
     },
     {
       "id": "table-lamps-2",
-      "slug": "flos-gatto",
-      "title": "FLOS Gatto",
-      "description": "FLOS Gatto Table Lamp",
+      "slug": "flos-gatto-table-lamp",
+      "title": "FLOS Gatto Table Lamp",
+      "description": "FLOS Gatto Table Lamp, an iconic design.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/kvmwcxrsxzrhcnpbx4vj8wv/FLOS_Gatto_Table_Lamp-188x188-site.png",
-      "imageHint": "table lamp"
+      "imageHint": "iconic lamp"
     },
     {
       "id": "table-lamps-3",
-      "slug": "ferm-living-oyster",
-      "title": "Ferm LIVING Oyster",
-      "description": "Ferm LIVING Oyster Table Lamp",
+      "slug": "ferm-living-oyster-lamp",
+      "title": "Ferm LIVING Oyster Table Lamp",
+      "description": "Ferm LIVING Oyster Table Lamp with a unique design.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/trrrc5njhr752h8xt93qqs4m/Ferm_LIVING_Oyster_Table_Lamp-188x188-site.png",
-      "imageHint": "table lamp"
+      "imageHint": "oyster lamp"
     },
     {
       "id": "table-lamps-4",
-      "slug": "gubi-multi-lite",
-      "title": "GUBI Multi-Lite",
-      "description": "GUBI Multi-Lite Rechargeable LED Table Lamp",
+      "slug": "gubi-multi-lite-lamp",
+      "title": "GUBI Multi-Lite Rechargeable LED Table Lamp",
+      "description": "GUBI Multi-Lite Rechargeable LED Table Lamp in Black & Brass.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/8xt8tkqk5zt76q2ht3mcsgc/GUBI-Multi-Lite_Rechargeable_LED_Table_Lamp-Black_Brass-10131556-188x188-site.png",
-      "imageHint": "table lamp"
+      "imageHint": "LED lamp"
     },
     {
       "id": "table-lamps-5",
-      "slug": "santa-cole-cestita",
-      "title": "Santa & Cole Cestita",
-      "description": "Santa & Cole Cestita Alubat LED Outdoor Table Lamp",
+      "slug": "santa-cole-cestita-alubat-lamp",
+      "title": "Santa & Cole Cestita Alubat LED Outdoor Table Lamp",
+      "description": "Santa & Cole Cestita Alubat LED Outdoor Table Lamp in Black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/nfj94s95h43kwgf782c8pt/Santa_Cole-Cestita_Alubat_LED_Outdoor_Table_Lamp-Black-CESTF01-188x188-site.png",
       "imageHint": "outdoor lamp"
     },
     {
       "id": "table-lamps-6",
-      "slug": "houe-light-no1",
-      "title": "Houe Light No.1",
-      "description": "Houe Light No.1 Portable Outdoor Lamp",
+      "slug": "houe-light-no1-lamp",
+      "title": "Houe Light No.1 Portable Outdoor Lamp",
+      "description": "Houe Light No.1 Portable Outdoor Lamp in black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/v8qvnffjsb2rmt9862vgz/Houe_Light_No1_Portable_Outdoor_Lamp_black-188x188-site.png",
-      "imageHint": "outdoor lamp"
+      "imageHint": "portable lamp"
     },
     {
       "id": "table-lamps-7",
-      "slug": "koncept-guy-led",
-      "title": "Koncept Guy LED",
-      "description": "Koncept Guy LED Table Lamp",
+      "slug": "koncept-guy-led-lamp",
+      "title": "Koncept Guy LED Table Lamp",
+      "description": "Koncept Guy LED Table Lamp in black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/xfjf7swvngp4mjmhrsvw6fbr/Koncept_Guy_LED_Table_Lamp_black-188x188-site.png",
-      "imageHint": "table lamp"
+      "imageHint": "desk lamp"
     },
     {
       "id": "table-lamps-8",
-      "slug": "louis-poulsen-njp",
-      "title": "Louis Poulsen NJP",
-      "description": "Louis Poulsen NJP LED Task Lamp",
+      "slug": "louis-poulsen-njp-task-lamp",
+      "title": "Louis Poulsen NJP LED Task Lamp",
+      "description": "Louis Poulsen NJP LED Task Lamp in Black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/jmsws9mrfnqs2x6mqx7g96vx/Louis_Poulsen-NJP_LED_Task_Lamp-Black-10000133058-188x188-site.png",
       "imageHint": "task lamp"
     },
     {
       "id": "table-lamps-9",
-      "slug": "marset-dipping-light",
-      "title": "Marset Dipping Light",
-      "description": "Marset Dipping Light LED Portable Table Lamp",
+      "slug": "marset-dipping-light-lamp",
+      "title": "Marset Dipping Light LED Portable Table Lamp",
+      "description": "Marset Dipping Light LED Portable Table Lamp in blue.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/h9q3hp838tj67cngw7sg48/Marset_Dipping_Light_LED_Portable_Table_Lamp_blue-188x188-site.png",
-      "imageHint": "portable lamp"
+      "imageHint": "colorful lamp"
     },
     {
       "id": "wall-sconces-1",
       "slug": "marset-caramel-sconce",
-      "title": "Marset Caramel Sconce",
-      "description": "Marset Caramel LED Wall Sconce with Disk",
+      "title": "Marset Caramel LED Wall Sconce",
+      "description": "Marset Caramel LED Wall Sconce with Disk.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/k53jns4m7bvcw5k9f579j75w/Marset-Caramel_LED_Wall_Sconce_with_Disk-188x188-site.png",
       "imageHint": "wall sconce"
     },
     {
       "id": "wall-sconces-2",
-      "slug": "huxe-kasson-vanity",
-      "title": "Huxe Kasson Vanity",
-      "description": "Huxe Kasson LED Vanity Light",
+      "slug": "huxe-kasson-vanity-light",
+      "title": "Huxe Kasson LED Vanity Light",
+      "description": "Huxe Kasson LED Vanity Light.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/wrmfn4r52rqx5rxbnn9w9wj/LU_May_2024_Huxe_Bath_Bars_Kasson_LED_Vanity_Light_site-188x188-site.png",
       "imageHint": "vanity light"
     },
     {
       "id": "wall-sconces-3",
-      "slug": "hinkley-trigo-vanity",
-      "title": "Hinkley Trigo Vanity",
-      "description": "Hinkley Trigo LED Vanity Light",
+      "slug": "hinkley-trigo-vanity-light",
+      "title": "Hinkley Trigo LED Vanity Light",
+      "description": "Hinkley Trigo LED Vanity Light in black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/gf3g5b75c9qhmfprss7rhpb/Hinkley_Trigo_LED_Vanity_Light_black-small-188x188-site.png",
-      "imageHint": "vanity light"
+      "imageHint": "bathroom light"
     },
     {
       "id": "wall-sconces-4",
-      "slug": "visual-comfort-kenyon",
-      "title": "Visual Comfort Studio Kenyon",
-      "description": "Visual Comfort Studio Kenyon Picture Light",
+      "slug": "visual-comfort-kenyon-picture-light",
+      "title": "Visual Comfort Studio Kenyon Picture Light",
+      "description": "Visual Comfort Studio Kenyon Picture Light in Aged Iron.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/9zm8f4h3nf8h8jqrp44qwn9/Visual_Comfort_Studio-Kenyon_Picture_Light-Aged_Iron-Small-CW1181AI-188x188-site.png",
       "imageHint": "picture light"
     },
     {
       "id": "wall-sconces-5",
-      "slug": "flos-ic-outdoor",
-      "title": "FLOS IC Outdoor",
-      "description": "FLOS IC Outdoor Wall Sconce",
+      "slug": "flos-ic-outdoor-sconce",
+      "title": "FLOS IC Outdoor Wall Sconce",
+      "description": "FLOS IC Outdoor Wall Sconce in black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/vf26f7sw8jt8pq57kpqxkm/FLOS_IC_Outdoor_Wall_Sconce_black-188x188-site.png",
       "imageHint": "outdoor sconce"
     },
     {
       "id": "wall-sconces-6",
-      "slug": "alder-ore-faraday",
-      "title": "Alder & Ore Faraday",
-      "description": "Alder & Ore Faraday Outdoor Wall Sconce",
+      "slug": "alder-ore-faraday-sconce",
+      "title": "Alder & Ore Faraday Outdoor Wall Sconce",
+      "description": "Alder & Ore Faraday Outdoor Wall Sconce in black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/556sqzt6rjw3bk9t3sprh8h7/Alder_Ore-Faraday_Outdoor_Wall_Sconce-black-GPL2607092-188x188-site.png",
-      "imageHint": "outdoor sconce"
+      "imageHint": "outdoor wall light"
     },
     {
       "id": "wall-sconces-7",
-      "slug": "in-common-with-arundel",
-      "title": "In Common With Arundel",
-      "description": "In Common With Arundel Mushroom Outdoor Wall Flushmount",
+      "slug": "in-common-with-arundel-flushmount",
+      "title": "In Common With Arundel Mushroom Outdoor Wall Flushmount",
+      "description": "In Common With Arundel Mushroom Outdoor Wall Flushmount in Black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/k66p5kngtwr5vqn5rbw323/In_Common_With-Arundel_Mushroom_Outdoor_Wall_Flushmount-Black-188x188-site.png",
-      "imageHint": "outdoor flushmount"
+      "imageHint": "flushmount"
     },
     {
       "id": "outdoor-lighting-1",
-      "slug": "estiluz-bols-floor",
-      "title": "Estiluz Bols Floor Lamp",
-      "description": "Estiluz Bols Outdoor LED Tall Floor Lamp",
+      "slug": "estiluz-bols-floor-lamp",
+      "title": "Estiluz Bols Outdoor LED Tall Floor Lamp",
+      "description": "Estiluz Bols Outdoor LED Tall Floor Lamp.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/t7q75k3578tgt393zpxmgt6/Estiluz-Bols_Outdoor_LED_Tall_Floor_Lamp-040279672X-188x188-site.png",
       "imageHint": "outdoor floor lamp"
     },
     {
       "id": "outdoor-lighting-2",
-      "slug": "kuzco-kona-pendant",
-      "title": "Kuzco Kona Pendant",
-      "description": "Kuzco Lighting Kona Outdoor Pendant",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/p8jb2rhz9mkrf8h5jzf4nnsh/Kuzco_Lighting-Kona_Outdoor_Pendant-EP56913-BKOP-188x188-site.png",
-      "imageHint": "outdoor pendant"
-    },
-    {
-      "id": "outdoor-lighting-3",
-      "slug": "kuzco-copenhagen-chandelier",
-      "title": "Kuzco Copenhagen Chandelier",
-      "description": "Kuzco Lighting Copenhagen LED Outdoor 3 Tier Chandelier",
+      "slug": "kuzco-copenhagen-outdoor-chandelier",
+      "title": "Kuzco Lighting Copenhagen LED Outdoor 3 Tier Chandelier",
+      "description": "Kuzco Lighting Copenhagen LED Outdoor 3 Tier Chandelier.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/hmrm3wh3stxrgq7cq6hshsrq/KuzcoLighting_CopenhagenLEDOutdoor3TierChandelier-188x188-site.png",
       "imageHint": "outdoor chandelier"
     },
     {
-      "id": "outdoor-lighting-4",
-      "slug": "hinkley-atlantis-path",
-      "title": "Hinkley Atlantis Path Light",
-      "description": "Hinkley Atlantis LED Path Light",
+      "id": "outdoor-lighting-3",
+      "slug": "hinkley-atlantis-path-light",
+      "title": "Hinkley Atlantis LED Path Light",
+      "description": "Hinkley Atlantis LED Path Light in Satin Black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/2t99qpp7wtw4spbbkcf6rbs3/Hinkley-Atlantis_LED_Path_Light-Satin_Black-22_Inch-1518SK-LL-188x188-site.png",
       "imageHint": "path light"
     },
     {
       "id": "ceiling-lights-1",
       "slug": "kuzco-parker-flushmount",
-      "title": "Kuzco Parker Flushmount",
-      "description": "Kuzco Lighting Parker LED Flushmount",
+      "title": "Kuzco Lighting Parker LED Flushmount",
+      "description": "Kuzco Lighting Parker LED Flushmount.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5rc7s94bh8j3f3kmrp4jxb7/Kuzco_Lighting_Parker_LED_Flushmount-188x188-site.png",
-      "imageHint": "flushmount light"
+      "imageHint": "LED flushmount"
     },
     {
       "id": "ceiling-lights-2",
       "slug": "astro-taiko-flushmount",
-      "title": "Astro Taiko Flushmount",
-      "description": "Astro Lighting Taiko 400 Flushmount",
+      "title": "Astro Lighting Taiko 400 Flushmount",
+      "description": "Astro Lighting Taiko 400 Flushmount in Matte Black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/vk9mqfq8cjqb6kk78cgcght/Astro_Lighting-Taiko_400_Flushmount-Matte_Black-1456004-188x188-site.png",
-      "imageHint": "flushmount light"
+      "imageHint": "black flushmount"
     },
     {
       "id": "floor-lamps-1",
-      "slug": "foscarini-twiggy-floor",
+      "slug": "foscarini-twiggy-floor-lamp",
       "title": "Foscarini Twiggy Floor Lamp",
-      "description": "Foscarini Twiggy Floor Lamp",
+      "description": "Foscarini Twiggy Floor Lamp in Black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/r89ghgmqmftc8fbxqk7gv6/Foscarini_TwiggyFloorLamp_Black-188x188-site.png",
-      "imageHint": "floor lamp"
+      "imageHint": "arc floor lamp"
+    },
+    {
+      "id": "floor-lamps-2",
+      "slug": "fanimation-arden-floor-fan",
+      "title": "Fanimation Fans Arden Floor Fan",
+      "description": "Fanimation Fans Arden Floor Fan.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/g6h92g4wfbxvgjx2hj8v4c7/Fanimation_Fans-Arden_Floor_Fan-FP8014OB-188x188-site.png",
+      "imageHint": "floor fan"
     },
     {
       "id": "ceiling-fans-1",
-      "slug": "hinkley-swell-fan",
-      "title": "Hinkley Swell Fan",
-      "description": "Hinkley Swell Flush Illuminated LED Ceiling Fan",
+      "slug": "hinkley-swell-ceiling-fan",
+      "title": "Hinkley Swell Flush Illuminated LED Ceiling Fan",
+      "description": "Hinkley Swell Flush Illuminated LED Ceiling Fan in black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/39vkh8gsv63gcfn44kg7xkn/Hinkley_Swell_Flush_Illuminated_LED_Ceiling_Fan_black-188x188-site.png",
-      "imageHint": "ceiling fan"
+      "imageHint": "ceiling fan light"
     },
     {
       "id": "ceiling-fans-2",
-      "slug": "kichler-fit-fan",
-      "title": "Kichler Fit Fan",
-      "description": "Kichler Fit LED Ceiling Fan",
+      "slug": "kichler-fit-ceiling-fan",
+      "title": "Kichler Fit LED Ceiling Fan",
+      "description": "Kichler Fit LED Ceiling Fan in Satin Black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/97kzcf7x3vvhjbw9cn6fxmpm/Kichler-Fit_LED_Ceiling_Fan-Satin_Black-310254SBK-188x188-site.png",
-      "imageHint": "ceiling fan"
+      "imageHint": "modern ceiling fan"
     },
     {
       "id": "ceiling-fans-3",
-      "slug": "minka-aire-roto",
-      "title": "Minka Aire Fans Roto",
-      "description": "Minka Aire Fans Roto Ceiling Fan",
+      "slug": "minka-aire-roto-ceiling-fan",
+      "title": "Minka Aire Fans Roto Ceiling Fan",
+      "description": "Minka Aire Fans Roto Ceiling Fan in Coal.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/zrwkw6vh85jj5t8n96j6r/Minka_Aire_Fans-Roto_Ceiling_Fan-Coal-188x188-site.png",
-      "imageHint": "ceiling fan"
+      "imageHint": "industrial fan"
     },
     {
       "id": "ceiling-fans-4",
-      "slug": "hinkley-sculpt-fan",
-      "title": "Hinkley Sculpt Fan",
-      "description": "Hinkley Sculpt LED Ceiling Fan",
+      "slug": "hinkley-sculpt-ceiling-fan",
+      "title": "Hinkley Sculpt LED Ceiling Fan",
+      "description": "Hinkley Sculpt LED Ceiling Fan in Matte Black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/r7rtcqbc9w9kn24fmqhxsjn/Hinkley-Sculpt_LED_Ceiling_Fan-Matte_Black-188x188-site.png",
-      "imageHint": "ceiling fan"
+      "imageHint": "sleek ceiling fan"
     },
     {
       "id": "ceiling-fans-5",
-      "slug": "modern-fan-co-icair",
-      "title": "Modern Fan Company ICAir",
-      "description": "Modern Fan Company ICAir 3 Ceiling Fan",
+      "slug": "modern-fan-co-icair-ceiling-fan",
+      "title": "Modern Fan Company ICAir 3 Ceiling Fan",
+      "description": "Modern Fan Company ICAir 3 Ceiling Fan in Dark.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/ptr3phrx58n6j82x9wxmk84/Modern_Fan_Company-ICAir_3_Ceiling_Fan-Dark-188x188-site.png",
-      "imageHint": "ceiling fan"
+      "imageHint": "wood ceiling fan"
     },
     {
       "id": "ceiling-fans-6",
-      "slug": "modern-forms-axis",
-      "title": "Modern Forms Axis",
-      "description": "Modern Forms Axis LED Flushmount Smart Fan",
+      "slug": "modern-forms-axis-smart-fan",
+      "title": "Modern Forms Axis LED Flushmount Smart Fan",
+      "description": "Modern Forms Axis LED Flushmount Smart Fan in Matte Black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/3v5nq8jqvffszbgwc8zhvwp/Modern_Forms-Axis_LED_Flushmount_Smart_Fan-Matte_Black-188x188-site.png",
       "imageHint": "smart fan"
     },
     {
       "id": "ceiling-fans-7",
-      "slug": "atlas-fan-co-eliza",
-      "title": "Atlas Fan Company Eliza",
-      "description": "Atlas Fan Company Eliza-H Flushmount Ceiling Fan",
+      "slug": "atlas-fan-co-eliza-h-fan",
+      "title": "Atlas Fan Company Eliza-H Flushmount Ceiling Fan",
+      "description": "Atlas Fan Company Eliza-H Flushmount Ceiling Fan.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/rf6xbf6nbj8ztpp8c4vp4rrz/Atlas_Fan_Company_Eliza-H_Flushmount_Ceiling_Fan-188x188-site.png",
-      "imageHint": "ceiling fan"
+      "imageHint": "minimalist fan"
     },
     {
       "id": "ceiling-fans-8",
-      "slug": "big-ass-fans-haiku",
-      "title": "Big Ass Fans Haiku",
-      "description": "Big Ass Fans Haiku Coastal Marine Grade Outdoor Ceiling Fan",
+      "slug": "big-ass-fans-haiku-outdoor-fan",
+      "title": "Big Ass Fans Haiku Coastal Marine Grade Outdoor Ceiling Fan",
+      "description": "Big Ass Fans Haiku Coastal Marine Grade Outdoor Ceiling Fan in Matte Black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/hxck3wr674x78zm437bbxf6g/Big_Ass_Fans-Haiku_Coastal_Marine_Grade_Outdoor_Ceiling_Fan-Matte_Black-188x188-site.png",
       "imageHint": "outdoor fan"
     },
     {
       "id": "ceiling-fans-9",
-      "slug": "modernforms-morpheus",
-      "title": "ModernForms Morpheus",
-      "description": "ModernForms Morpheus Ceiling Fan",
+      "slug": "modernforms-morpheus-ceiling-fan",
+      "title": "ModernForms Morpheus Ceiling Fan",
+      "description": "ModernForms Morpheus Ceiling Fan.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/85nr4cbs9sphgcb84h9p4wg/ModernForms_MorpheusCeilingFan-188x188-site.png",
-      "imageHint": "ceiling fan"
+      "imageHint": "contemporary fan"
     },
     {
       "id": "specialty-lighting-1",
-      "slug": "buster-punch-bulb",
-      "title": "Buster + Punch Bulb",
-      "description": "Buster + Punch 5W A-Type Gold LED Bulb",
+      "slug": "buster-punch-led-bulb",
+      "title": "Buster + Punch 5W A-Type Gold LED Bulb",
+      "description": "Buster + Punch 5W A-Type Gold LED Bulb, turned on.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/pr9pf75ktvfksm5jxbmf5c4/Buster_Punch_5W_A-Type_Gold_LED_Bulb_on-188x188-site.png",
-      "imageHint": "led bulb"
+      "imageHint": "gold bulb"
+    },
+    {
+      "id": "specialty-lighting-2",
+      "slug": "buster-punch-dimmer",
+      "title": "Buster + Punch 1-Gang Dimmer",
+      "description": "Buster + Punch 1-Gang Dimmer in Black.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/tctm69tvrq9wb8jb9j7bxst4/Buster_Punch-1-Gang_Dimmer-Black-NDK-024350-188x188-site.png",
+      "imageHint": "dimmer switch"
+    },
+    {
+      "id": "specialty-lighting-3",
+      "slug": "buster-punch-duplex-outlet",
+      "title": "Buster + Punch 1-Gang Duplex Outlet",
+      "description": "Buster + Punch 1-Gang Duplex Outlet in Black.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/npskwhrvsznqs6n5nctsrrnf/Buster_Punch-1-Gang_Duplex_Outlet-Black-NSK-023419-188x188-site.png",
+      "imageHint": "duplex outlet"
+    },
+    {
+      "id": "specialty-lighting-4",
+      "slug": "huxe-fabria-led-mirror",
+      "title": "Huxe Fabria LED Mirror",
+      "description": "Huxe Fabria LED Mirror in Black.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/j8gwgvqxj9wcxr5fkm5kns3g/Huxe-Fabria_LED_Mirror-Black-188x188-site.png",
+      "imageHint": "LED mirror"
     },
     {
       "id": "recessed-lighting-1",
-      "slug": "wac-lighting-ocularc",
-      "title": "WAC Lighting Ocularc",
-      "description": "WAC Lighting Ocularc 3-Inch LED Round Adjustable Trim",
+      "slug": "wac-lighting-ocularc-trim",
+      "title": "WAC Lighting Ocularc 3-Inch LED Round Adjustable Trim",
+      "description": "WAC Lighting Ocularc 3-Inch LED Round Adjustable Trim in Black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5h58rscb8fm8hnwb54kk7h8/WAC_Lighting-Ocularc_3-Inch_LED_Round_Adjustable_Trim-Black-188x188-site.png",
       "imageHint": "recessed trim"
     },
     {
       "id": "recessed-lighting-2",
-      "slug": "wac-lighting-edge-lit",
-      "title": "WAC Lighting Edge-Lit",
-      "description": "WAC Lighting Edge Lit LED HR-LED90 Button Light",
+      "slug": "wac-lighting-edge-lit-button-light",
+      "title": "WAC Lighting Edge-Lit LED HR-LED90 Button Light",
+      "description": "WAC Lighting Edge-Lit LED HR-LED90 Button Light in Black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/k9q77k5swzhz3btgqfbfrtq/WAC_Lighting-Edge_Lit_LED_HR-LED90_Button_Light-Black-188x188-site.png",
       "imageHint": "button light"
     },
     {
       "id": "recessed-lighting-3",
-      "slug": "astro-ascoli-track",
-      "title": "Astro Ascoli Track Light",
-      "description": "Astro Lighting Ascoli Track Light",
+      "slug": "astro-ascoli-track-light",
+      "title": "Astro Lighting Ascoli Track Light",
+      "description": "Astro Lighting Ascoli Track Light in Matte Black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/4hvx2ssn4pmw6sm8kjvbhkq/Astro_Lighting-Ascoli_Track_Light-Matte_Black-3-1286117-188x188-site.png",
       "imageHint": "track light"
+    },
+    {
+      "id": "accessories-1",
+      "slug": "fanimation-downrod",
+      "title": "Fanimation Wet Listed Downrod",
+      "description": "Fanimation Wet Listed Downrod.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/kccpf4kq2zjfkfvg8s5ng/Fanimation_Wet_Listed_Downrod-188x188-site.png",
+      "imageHint": "fan downrod"
+    },
+    {
+      "id": "accessories-2",
+      "slug": "casablanca-remote",
+      "title": "Casablanca Handheld Remote",
+      "description": "Casablanca Fan Company Casablanca Handheld Remote.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/gsjgpc4s87ttjxnsg5x4hm9v/Casablanca_Fan_Company_Casablanca_Handheld_Remote-188x188-site.png",
+      "imageHint": "fan remote"
+    },
+    {
+      "id": "accessories-3",
+      "slug": "hunter-desk-fan",
+      "title": "Hunter Fans Classic D12 Portable Desk Fan",
+      "description": "Hunter Fans Classic D12 Portable Desk Fan in black.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/v5rj6zw37v395n4tt4xfr7q/Hunter_Fans-Classic_D12_Portable_Desk_Fan-black-97314-188x188-site.png",
+      "imageHint": "desk fan"
+    },
+    {
+      "id": "accessories-4",
+      "slug": "aero-pure-exhaust-fan",
+      "title": "Aero Pure Slim Fit Round Profile Quiet Bathroom Exhaust Fan",
+      "description": "Aero Pure Slim Fit Round Profile Quiet Bathroom Exhaust Fan in Farm House Black.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/skvm6gv4mzfwr4j5c9nwpv/Aero_Pure-Slim_Fit_Round_Profile_Quiet_Bathroom_Exhaust_Fan-Farm_House_Black-188x188-site.png",
+      "imageHint": "exhaust fan"
+    },
+    {
+      "id": "accessories-hero",
+      "slug": "accessories",
+      "title": "Accessories",
+      "description": "A collection of lighting accessories.",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/LPLP86927_alt68?$Lumens.com-PRP-large$",
+      "imageHint": "lighting accessories"
+    },
+    {
+      "id": "linear-suspension-hero",
+      "slug": "linear-suspension",
+      "title": "Linear Suspension",
+      "description": "A collection of linear suspension lighting.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/6cnhgn4zj3mgtgjx2k8hkm4/Corbett_Lighting_Nephele_LED_Linear_Suspension-188x188-site.png",
+      "imageHint": "linear lighting"
+    },
+    {
+      "id": "room-settings-hero",
+      "slug": "room-settings",
+      "title": "Room Settings",
+      "description": "A collection of lifestyle images featuring our lighting.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5jc5nh7c766xpf3gqxrqbn3/LU_August_2024_Louis_Poulsen_Living_Room-site-480x400.png",
+      "imageHint": "living room"
+    },
+    {
+      "id": "room-settings-1",
+      "slug": "living-room-pendant",
+      "title": "Living Room with Louis Poulsen Pendant",
+      "description": "Living Room with Louis Poulsen Pendant",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5jc5nh7c766xpf3gqxrqbn3/LU_August_2024_Louis_Poulsen_Living_Room-site-480x400.png",
+      "imageHint": "living room"
+    },
+    {
+      "id": "room-settings-2",
+      "slug": "innovator-wesley-moon",
+      "title": "Innovator Wesley Moon Frame",
+      "description": "Innovator Wesley Moon Frame",
+      "imageUrl": "https://img.lumens.com/9JWOMRAM/at/77g4hj8mtcwpkk6k7r24gbxn/LU_May_2024_Innovator_Wesley_Moon_Frame4_site-1650x1920-Site-3Wide.png",
+      "imageHint": "modern interior"
+    },
+    {
+      "id": "room-settings-3",
+      "slug": "kitchen-pendant",
+      "title": "Kitchen with Louis Poulsen Pendant",
+      "description": "Kitchen with Louis Poulsen Pendant",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/9hsj9ht3kkmnxfnx8f9n6598/LU_August_2024_Louis_Poulsen_Kitchen_Wide_Crop-site-188x188-site.png",
+      "imageHint": "kitchen lighting"
+    },
+    {
+      "id": "room-settings-4",
+      "slug": "kitchen-common-with",
+      "title": "Kitchen In Common With",
+      "description": "Kitchen with In Common With lighting",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/45rjbg4m6r3cn4fp73n2sxp/LU_September_2024_In_Common_With_Kitchen-site-188x188-site.png",
+      "imageHint": "kitchen lighting"
+    },
+    {
+      "id": "room-settings-5",
+      "slug": "design-house-kitchen",
+      "title": "Design House Kitchen",
+      "description": "Lumens Design House Kitchen",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/rbhft5vg97ffpsfv7pkggcwm/LU_March_2024_-_Lumens_Design_House_-_Kitchen_site-188x188-site.png",
+      "imageHint": "kitchen design"
+    },
+    {
+      "id": "room-settings-6",
+      "slug": "bed-bath-consumer",
+      "title": "Bed & Bath",
+      "description": "Lumens 2023 Bed & Bath Consumer",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/7vn5s5v9m9sw5krq9fn33qx4/Lumens_2023_Bed_Bath_Consumer_Bath_3q__site-188x188-site.png",
+      "imageHint": "bathroom design"
+    },
+    {
+      "id": "lighting-ceiling",
+      "slug": "ceiling-lights",
+      "title": "Ceiling Lighting",
+      "description": "Modern ceiling lighting.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/hmrm3wh3stxrgq7cq6hshsrq/KuzcoLighting_CopenhagenLEDOutdoor3TierChandelier-188x188-site.png?auto=webp&format=png",
+      "imageHint": "ceiling light"
+    },
+    {
+      "id": "lighting-wall",
+      "slug": "wall-sconces-vanity-lights",
+      "title": "Wall Lighting",
+      "description": "Elegant wall lighting.",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/products/wall-light",
+      "imageHint": "wall sconce"
+    },
+    {
+      "id": "lighting-table",
+      "slug": "table-lamps-portable-lights",
+      "title": "Table Lamps",
+      "description": "Stylish table lamps.",
+      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw55034b33/homepage/Hero_/Hero_desk_invitro.jpg?sw=768&bgcolor=FFFFFF",
+      "imageHint": "table lamp"
+    },
+    {
+      "id": "lighting-floor",
+      "slug": "floor-lamps",
+      "title": "Floor Lamps",
+      "description": "Contemporary floor lamps.",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/products/floor-lamp",
+      "imageHint": "floor lamp"
+    },
+    {
+      "id": "lightscape-outdoor",
+      "slug": "lightscape-outdoor",
+      "description": "Beautifully lit outdoor patio area at dusk.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/p8jb2rhz9mkrf8h5jzf4nnsh/Kuzco_Lighting-Kona_Outdoor_Pendant-EP56913-BKOP-188x188-site.png?auto=webp&format=png",
+      "imageHint": "outdoor lighting"
     },
     {
       "id": "lifestyle-decorative-objects",
@@ -495,163 +591,7 @@
       "description": "Sophisticated barware.",
       "imageUrl": "https://images.lumens.com/is/image/Lumens/LPLP86927_alt68?$Lumens.com-PRP-large$",
       "imageHint": "cocktail glass"
-    },
-    {
-      "id": "room-settings-1",
-      "slug": "living-room-pendant",
-      "title": "Living Room Pendant",
-      "description": "Living Room with Louis Poulsen Pendant",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5jc5nh7c766xpf3gqxrqbn3/LU_August_2024_Louis_Poulsen_Living_Room-site-480x400.png",
-      "imageHint": "living room"
-    },
-    {
-      "id": "room-settings-2",
-      "slug": "innovator-wesley-moon",
-      "title": "Innovator Wesley Moon",
-      "description": "Innovator Wesley Moon Frame",
-      "imageUrl": "https://img.lumens.com/9JWOMRAM/at/77g4hj8mtcwpkk6k7r24gbxn/LU_May_2024_Innovator_Wesley_Moon_Frame4_site-1650x1920-Site-3Wide.png",
-      "imageHint": "modern interior"
-    },
-    {
-      "id": "room-settings-3",
-      "slug": "kitchen-pendant",
-      "title": "Kitchen Pendant",
-      "description": "Kitchen with Louis Poulsen Pendant",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/9hsj9ht3kkmnxfnx8f9n6598/LU_August_2024_Louis_Poulsen_Kitchen_Wide_Crop-site-188x188-site.png",
-      "imageHint": "kitchen lighting"
-    },
-    {
-      "id": "room-settings-4",
-      "slug": "kitchen-common-with",
-      "title": "Kitchen In Common With",
-      "description": "Kitchen with In Common With lighting",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/45rjbg4m6r3cn4fp73n2sxp/LU_September_2024_In_Common_With_Kitchen-site-188x188-site.png",
-      "imageHint": "kitchen lighting"
-    },
-    {
-      "id": "room-settings-5",
-      "slug": "design-house-kitchen",
-      "title": "Design House Kitchen",
-      "description": "Lumens Design House Kitchen",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/rbhft5vg97ffpsfv7pkggcwm/LU_March_2024_-_Lumens_Design_House_-_Kitchen_site-188x188-site.png",
-      "imageHint": "kitchen design"
-    },
-    {
-      "id": "room-settings-6",
-      "slug": "bed-bath-consumer",
-      "title": "Bed & Bath",
-      "description": "Lumens 2023 Bed & Bath Consumer",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/7vn5s5v9m9sw5krq9fn33qx4/Lumens_2023_Bed_Bath_Consumer_Bath_3q__site-188x188-site.png",
-      "imageHint": "bathroom design"
-    },
-    {
-      "id": "hero-image",
-      "slug": "hero-image",
-      "description": "A stunning and luxurious modern living room with gold accents.",
-      "imageUrl": "https://img.lumens.com/9JWOMRAM/at/77g4hj8mtcwpkk6k7r24gbxn/LU_May_2024_Innovator_Wesley_Moon_Frame4_site-1650x1920-Site-3Wide.png?format=pjpg&auto=webp&optimize=medium&width=400",
-      "imageHint": "luxury interior"
-    },
-    {
-      "id": "about-image",
-      "slug": "about-image",
-      "description": "A close-up of a designer sketching an interior design plan.",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/CRNP566762?$Lumens.com-PRP-large$",
-      "imageHint": "interior design sketch"
-    },
-    {
-      "id": "insta-1",
-      "slug": "insta-1",
-      "description": "Instagram post 1",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/uu126021_alt09?$Lumens.com-PRP-large$",
-      "imageHint": "modern kitchen"
-    },
-    {
-      "id": "insta-2",
-      "slug": "insta-2",
-      "description": "Instagram post 2",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/STIY30555_alt182?$Lumens.com-PRP-large$",
-      "imageHint": "elegant bedroom"
-    },
-    {
-      "id": "insta-3",
-      "slug": "insta-3",
-      "description": "Instagram post 3",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/DHDP555443?$Lumens.com-PRP-large$",
-      "imageHint": "gold decor"
-    },
-    {
-      "id": "insta-4",
-      "slug": "insta-4",
-      "description": "Instagram post 4",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/FNTP297774_alt12?$Lumens.com-PRP-large$",
-      "imageHint": "chic bathroom"
-    },
-    {
-      "id": "insta-5",
-      "slug": "insta-5",
-      "description": "Instagram post 5",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/LPLP566847?$Lumens.com-PRP-large$",
-      "imageHint": "velvet sofa"
-    },
-    {
-      "id": "insta-6",
-      "slug": "insta-6",
-      "description": "Instagram post 6",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/CRNP416205?$Lumens.com-PRP-large$",
-      "imageHint": "marble table"
-    },
-    {
-      "id": "insta-7",
-      "slug": "insta-7",
-      "description": "Instagram post 7",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/MUUP525080_alt07?$Lumens.com-PRP-large$",
-      "imageHint": "art deco lamp"
-    },
-    {
-      "id": "insta-8",
-      "slug": "insta-8",
-      "description": "Instagram post 8",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/KCPP551335?$Lumens.com-PRP-large$",
-      "imageHint": "luxury interior"
-    },
-    {
-      "id": "lightscape-outdoor",
-      "slug": "lightscape-outdoor",
-      "description": "Beautifully lit outdoor patio area at dusk.",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/p8jb2rhz9mkrf8h5jzf4nnsh/Kuzco_Lighting-Kona_Outdoor_Pendant-EP56913-BKOP-188x188-site.png?auto=webp&format=png",
-      "imageHint": "outdoor lighting"
-    },
-    {
-      "id": "lighting-ceiling",
-      "slug": "ceiling-lights",
-      "title": "Ceiling Lighting",
-      "description": "Modern ceiling lighting.",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/hmrm3wh3stxrgq7cq6hshsrq/KuzcoLighting_CopenhagenLEDOutdoor3TierChandelier-188x188-site.png?auto=webp&format=png",
-      "imageHint": "ceiling light"
-    },
-    {
-      "id": "lighting-wall",
-      "slug": "wall-sconces-vanity-lights",
-      "title": "Wall Lighting",
-      "description": "Elegant wall lighting.",
-      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/products/wall-light",
-      "imageHint": "wall sconce"
-    },
-    {
-      "id": "lighting-table",
-      "slug": "table-lamps-portable-lights",
-      "title": "Table Lamps",
-      "description": "Stylish table lamps.",
-      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw55034b33/homepage/Hero_/Hero_desk_invitro.jpg?sw=768&bgcolor=FFFFFF",
-      "imageHint": "table lamp"
-    },
-    {
-      "id": "lighting-floor",
-      "slug": "floor-lamps",
-      "title": "Floor Lamps",
-      "description": "Contemporary floor lamps.",
-      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/products/floor-lamp",
-      "imageHint": "floor lamp"
     }
   ]
 }
+
