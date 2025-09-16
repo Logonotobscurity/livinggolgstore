@@ -163,7 +163,7 @@
     },
     {
       "id": "wall-sconces-1",
-      "slug": "marset-caramel-sconce",
+      "slug": "wall-sconces-vanity-lights",
       "title": "Marset Caramel LED Wall Sconce",
       "description": "Marset Caramel LED Wall Sconce with Disk.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/k53jns4m7bvcw5k9f579j75w/Marset-Caramel_LED_Wall_Sconce_with_Disk-188x188-site.png",
@@ -259,7 +259,7 @@
     },
     {
       "id": "floor-lamps-1",
-      "slug": "foscarini-twiggy-floor-lamp",
+      "slug": "floor-lamps",
       "title": "Foscarini Twiggy Floor Lamp",
       "description": "Foscarini Twiggy Floor Lamp in Black.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/r89ghgmqmftc8fbxqk7gv6/Foscarini_TwiggyFloorLamp_Black-188x188-site.png",
@@ -539,9 +539,9 @@
     },
     {
       "id": "lightscape-outdoor",
-      "slug": "lightscape-outdoor",
+      "slug": "outdoor-lighting",
       "description": "Beautifully lit outdoor patio area at dusk.",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/n47q3n3k74s6m76kfb8vqpqg/LU_July_2024_Outdoor_1_3a-site-2400x1200.jpg",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/uu126021_alt09?$Lumens.com-PRP-large$",
       "imageHint": "outdoor lighting"
     },
     {
@@ -597,7 +597,7 @@
       "slug": "visa",
       "title": "Visa",
       "description": "Visa payment method",
-      "imageUrl": "https://picsum.photos/seed/visa/32/20",
+      "imageUrl": "https://picsum.photos/seed/visa/64/40",
       "imageHint": "visa card"
     },
     {
@@ -605,7 +605,7 @@
       "slug": "mastercard",
       "title": "Mastercard",
       "description": "Mastercard payment method",
-      "imageUrl": "https://picsum.photos/seed/mastercard/32/20",
+      "imageUrl": "https://picsum.photos/seed/mastercard/64/40",
       "imageHint": "mastercard card"
     },
     {
@@ -613,7 +613,7 @@
       "slug": "paypal",
       "title": "PayPal",
       "description": "PayPal payment method",
-      "imageUrl": "https://picsum.photos/seed/paypal/32/20",
+      "imageUrl": "https://picsum.photos/seed/paypal/64/40",
       "imageHint": "paypal logo"
     },
     {
@@ -621,7 +621,7 @@
       "slug": "klarna",
       "title": "Klarna",
       "description": "Klarna payment method",
-      "imageUrl": "https://picsum.photos/seed/klarna/32/20",
+      "imageUrl": "https://picsum.photos/seed/klarna/64/40",
       "imageHint": "klarna logo"
     },
     {
