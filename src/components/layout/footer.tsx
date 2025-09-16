@@ -42,7 +42,7 @@ export default function Footer() {
               <li><Link href="#" className="hover:text-primary">Help Center & FAQs</Link></li>
               <li><Link href="#" className="hover:text-primary">Delivery & Returns</Link></li>
               <li><Link href="#" className="hover:text-primary">Store Locator</Link></li>
-              <li><Link href="#" className="hover:text-primary">Contact Us</Link></li>
+              <li><Link href="/contact" className="hover:text-primary">Contact Us</Link></li>
               <li><Link href="#" className="hover:text-primary">GB | EN</Link></li>
             </ul>
           </div>
@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-secondary pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6">
+        <div className="border-t border-primary/30 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6">
           <p className="text-xs text-gray-400 order-2 md:order-1">
             &copy; {currentYear} Living Gold. All rights reserved.
           </p>
@@ -82,8 +82,8 @@ export default function Footer() {
                 key={icon.id}
                 src={icon.imageUrl} 
                 alt={icon.description} 
-                width="32" 
-                height="20" 
+                width={32} 
+                height={20}
                 className="opacity-70 hover:opacity-100" 
               />
             ))}
