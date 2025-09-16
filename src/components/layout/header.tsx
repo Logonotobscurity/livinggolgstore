@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Search, User, ShoppingCart, Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import NavMenu from './nav-menu';
 import MobileNavMenu from './mobile-nav-menu';
+import { Icons } from '@/components/icons';
 
 export default function Header() {
   return (
@@ -44,7 +44,7 @@ export default function Header() {
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" aria-label="Menu">
-                  <Menu className="h-6 w-6" />
+                  <Icons.menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
               <SheetContent side="left" className="bg-black w-3/4 p-0">
@@ -64,14 +64,14 @@ export default function Header() {
 
           <div className="flex items-center space-x-2 md:space-x-4">
             <Button variant="ghost" size="icon" aria-label="Search" className="hidden sm:inline-flex">
-              <Search className="h-6 w-6" />
+              <Icons.search className="h-6 w-6" />
             </Button>
             <Button variant="ghost" size="icon" aria-label="Account">
-              <User className="h-6 w-6" />
+              <Icons.user className="h-6 w-6" />
             </Button>
             <div className="relative">
               <Button variant="ghost" size="icon" aria-label="Cart">
-                <ShoppingCart className="h-6 w-6" />
+                <Icons.shoppingCart className="h-6 w-6" />
               </Button>
               <span className="absolute -top-1 -right-1 bg-primary text-black text-xs rounded-full h-4 w-4 flex items-center justify-center">
                 0
