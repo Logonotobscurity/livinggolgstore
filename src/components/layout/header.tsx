@@ -13,24 +13,24 @@ export default function Header() {
           <p className="font-light hidden md:block">
             Explore one-of-a-kind items from around the world
           </p>
-          <nav className="flex items-center space-x-2">
+          <nav className="flex items-center space-x-4">
             <Link
               href="/about"
-              className="hover:text-primary transition-colors"
+              className="link-underline hover:text-primary transition-colors"
             >
               About
             </Link>
             <span className="text-gray-500">|</span>
             <Link
               href="/design-studio"
-              className="hover:text-primary transition-colors"
+              className="link-underline hover:text-primary transition-colors"
             >
               Design Studio
             </Link>
             <span className="text-gray-500">|</span>
             <Link
               href="/contact"
-              className="hover:text-primary transition-colors"
+              className="link-underline hover:text-primary transition-colors"
             >
               Contact
             </Link>
@@ -63,17 +63,17 @@ export default function Header() {
           </div>
 
           <div className="flex items-center space-x-2 md:space-x-4">
-            <Button variant="ghost" size="icon" aria-label="Search" className="hidden sm:inline-flex">
+            <button aria-label="Search" className="hidden sm:inline-flex p-2 rounded-full hover:bg-accent transition-colors">
               <Icons.search className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" aria-label="Account">
+            </button>
+            <button aria-label="Account" className="p-2 rounded-full hover:bg-accent transition-colors">
               <Icons.user className="h-6 w-6" />
-            </Button>
+            </button>
             <div className="relative">
-              <Button variant="ghost" size="icon" aria-label="Cart">
+              <button aria-label="Cart" className="p-2 rounded-full hover:bg-accent transition-colors">
                 <Icons.shoppingCart className="h-6 w-6" />
-              </Button>
-              <span className="absolute -top-1 -right-1 bg-primary text-black text-xs rounded-full h-4 w-4 flex items-center justify-center">
+              </button>
+              <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs rounded-full h-4 w-4 flex items-center justify-center">
                 0
               </span>
             </div>
