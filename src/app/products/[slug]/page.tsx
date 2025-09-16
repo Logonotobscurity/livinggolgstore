@@ -54,9 +54,9 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
             <p className="text-3xl md:text-4xl font-bold text-primary mb-8">$199.99</p>
 
-            <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
-                <Button size="lg" className="w-full sm:w-auto flex-grow" showIcon>Add to Cart</Button>
-                <Button size="lg" variant="outline" className="w-full sm:w-auto">
+            <div className="flex items-center gap-4 mb-8">
+                <Button size="lg" className="flex-grow" showIcon>Add to Cart</Button>
+                <Button size="lg" variant="outline" className="w-auto aspect-square p-0">
                     <Heart className="w-6 h-6" />
                 </Button>
             </div>

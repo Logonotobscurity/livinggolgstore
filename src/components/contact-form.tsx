@@ -116,18 +116,19 @@ export function ContactForm() {
               </FormItem>
             )}
           />
-          <Button
-            type="submit"
-            className="w-40 mx-auto"
-            disabled={isPending}
-            showIcon={!isPending}
-          >
-            {isPending ? (
-              <Loader2 className="h-4 w-4 animate-spin" />
-            ) : (
-              'Submit'
-            )}
-          </Button>
+          <div className="flex justify-center">
+            <Button
+              type="submit"
+              disabled={isPending}
+              showIcon={!isPending}
+            >
+              {isPending ? (
+                <Loader2 className="h-4 w-4 animate-spin" />
+              ) : (
+                'Submit'
+              )}
+            </Button>
+          </div>
         </form>
       </Form>
     </div>
