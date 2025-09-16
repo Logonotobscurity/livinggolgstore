@@ -241,7 +241,7 @@ export default function Header() {
                     </NavigationMenuContent>
                   </>
                 ) : (
-                  <Link href={link.href!} passHref legacyBehavior>
+                  <Link href={link.href!} legacyBehavior passHref>
                     <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                       {link.title}
                     </NavigationMenuLink>
