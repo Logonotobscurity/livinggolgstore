@@ -11,7 +11,7 @@ export default function Lightscapes() {
   if (!lightscapeImage) return null;
 
   return (
-    <section className="bg-black text-white">
+    <section className="bg-black text-white py-20 md:py-32">
       <div className="container mx-auto max-w-none px-0">
         <div className="grid md:grid-cols-2 min-h-[600px]">
            <div className="flex flex-col justify-center p-8 md:p-12 lg:p-24 bg-secondary">
@@ -25,7 +25,7 @@ export default function Lightscapes() {
                     the harmony between elegant aesthetics and outdoor space, where
                     the creations come to life in natural light.
                 </p>
-                <Button asChild size="lg" showIcon>
+                <Button asChild size="lg" variant="outline" showIcon>
                     <Link href="/products/outdoor-lighting">The Outdoor Collection</Link>
                 </Button>
              </div>
