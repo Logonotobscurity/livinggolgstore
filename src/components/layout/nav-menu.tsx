@@ -133,21 +133,21 @@ export default function NavMenu() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/products/accessories" passHref>
+          <Link href="/products/accessories" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Accessories
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
          <NavigationMenuItem>
-          <Link href="/products/outdoor-lighting" passHref>
+          <Link href="/products/outdoor-lighting" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Outdoor
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
          <NavigationMenuItem>
-          <Link href="/products/room-settings" passHref>
+          <Link href="/products/room-settings" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Room
             </NavigationMenuLink>
@@ -161,22 +161,24 @@ export default function NavMenu() {
 const ListItem = React.forwardRef<
   React.ElementRef<'a'>,
   React.ComponentPropsWithoutRef<'a'>
->(({ className, title, children, ...props }, ref) => {
+>(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
       <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none flex items-center">
-            {children} {title}
-          </div>
-        </a>
+        <Link href={href || ''} legacyBehavior passHref>
+          <a
+            ref={ref}
+            className={cn(
+              'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
+              className
+            )}
+            {...props}
+          >
+            <div className="text-sm font-medium leading-none flex items-center">
+              {children} {title}
+            </div>
+          </a>
+        </Link>
       </NavigationMenuLink>
     </li>
   );
