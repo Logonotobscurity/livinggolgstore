@@ -1,0 +1,52 @@
+.menu-icon-wrapper {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon-checkbox {
+    display: none;
+}
+
+.menu-icon {
+    position: relative;
+    width: 28px;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon::before {
+    transform: translateY(-8px);
+}
+
+.menu-icon::after {
+    transform: translateY(8px);
+}
+
+.menu-icon-checkbox:checked + .menu-icon-wrapper > .menu-icon {
+    transform: rotate(45deg);
+}
+
+.menu-icon-checkbox:checked + .menu-icon-wrapper > .menu-icon::before {
+    transform: rotate(0) translateY(0);
+    opacity: 0;
+}
+
+.menu-icon-checkbox:checked + .menu-icon-wrapper > .menu-icon::after {
+    transform: rotate(-90deg) translateX(-8px) translateY(-8px);
+}

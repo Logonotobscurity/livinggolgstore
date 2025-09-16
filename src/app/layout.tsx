@@ -3,6 +3,7 @@ import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 import './sun-banner.css';
 import './socials.css';
+import './new-menu-icon.css';
 
 export const metadata: Metadata = {
   title: 'About Living Gold — Luxury Lighting & Chandeliers (Nigeria)',

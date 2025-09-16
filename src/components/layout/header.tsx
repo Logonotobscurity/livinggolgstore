@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import NavMenu from './nav-menu';
 import MobileNavMenu from './mobile-nav-menu';
 import { Icons } from '@/components/icons';
+import { NewMenuIcon } from '../new-menu-icon';
 
 export default function Header() {
   return (
@@ -43,9 +43,9 @@ export default function Header() {
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                <Button size="icon" aria-label="Menu">
-                  <Icons.menu className="h-6 w-6" />
-                </Button>
+                <button aria-label="Open menu">
+                  <NewMenuIcon />
+                </button>
               </SheetTrigger>
               <SheetContent side="left" className="bg-black w-3/4 p-0">
                 <MobileNavMenu />
