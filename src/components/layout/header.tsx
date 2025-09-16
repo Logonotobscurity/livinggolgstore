@@ -23,14 +23,14 @@ export default function Header() {
             <span className="text-gray-500">|</span>
             <Link
               href="/design-studio"
-              className="link-underline hover:text-primary transition-colors"
+              className="link-underline hovertext-primary transition-colors"
             >
               Design Studio
             </Link>
             <span className="text-gray-500">|</span>
             <Link
               href="/contact"
-              className="link-underline hover:text-primary transition-colors"
+              className="link-underline hovertext-primary transition-colors"
             >
               Contact
             </Link>
@@ -67,9 +67,9 @@ export default function Header() {
               <Icons.search className="h-6 w-6" />
             </button>
             <div className="relative">
-              <button aria-label="Cart" className="p-2 rounded-full hover:bg-accent transition-colors">
+              <Link href="/cart" aria-label="Cart" className="p-2 rounded-full hover:bg-accent transition-colors block">
                 <Icons.shoppingCart className="h-6 w-6" />
-              </button>
+              </Link>
               <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs rounded-full h-4 w-4 flex items-center justify-center">
                 0
               </span>
