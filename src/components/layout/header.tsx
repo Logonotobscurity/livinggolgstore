@@ -43,7 +43,7 @@ export default function Header() {
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                <button aria-label="Open menu">
+                <button aria-label="Open menu" className="menu-icon-wrapper">
                   <NewMenuIcon />
                 </button>
               </SheetTrigger>
