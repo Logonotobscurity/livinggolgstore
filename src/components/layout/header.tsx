@@ -66,9 +66,6 @@ export default function Header() {
             <button aria-label="Search" className="hidden sm:inline-flex p-2 rounded-full hover:bg-accent transition-colors">
               <Icons.search className="h-6 w-6" />
             </button>
-            <button aria-label="Account" className="p-2 rounded-full hover:bg-accent transition-colors">
-              <Icons.user className="h-6 w-6" />
-            </button>
             <div className="relative">
               <button aria-label="Cart" className="p-2 rounded-full hover:bg-accent transition-colors">
                 <Icons.shoppingCart className="h-6 w-6" />
@@ -81,9 +78,18 @@ export default function Header() {
         </div>
       </div>
 
-      <nav className="hidden md:flex justify-center items-center h-14">
-        <NavMenu />
-      </nav>
+      <div className="hidden md:block border-b border-primary/30">
+        <div className="container mx-auto px-6 flex justify-center items-center h-14 relative max-w-7xl">
+          <div className="flex-grow flex justify-center">
+            <NavMenu />
+          </div>
+          <div className="absolute right-6">
+             <button aria-label="Account" className="p-2 rounded-full hover:bg-accent transition-colors">
+              <Icons.user className="h-6 w-6" />
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
   );
 }
