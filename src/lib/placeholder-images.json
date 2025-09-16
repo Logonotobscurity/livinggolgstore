@@ -449,92 +449,52 @@
       "imageHint": "track light"
     },
     {
-      "id": "lifestyle-1",
-      "slug": "luxury-candles",
-      "title": "Luxury Candles",
+      "id": "lifestyle-decorative-objects",
+      "slug": "decorative-objects",
+      "title": "Decorative Objects",
+      "description": "Elegant decorative objects.",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/LPLP86927_alt68?$Lumens.com-PRP-large$",
+      "imageHint": "ceramic vase"
+    },
+    {
+      "id": "lifestyle-vases-pots",
+      "slug": "vases-and-pots",
+      "title": "Vases & Pots",
+      "description": "Modern vases and pots.",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/DCEP432198_alt09?$Lumens.com-PRP-large$",
+      "imageHint": "ceramic pot"
+    },
+    {
+      "id": "lifestyle-bowls-trays",
+      "slug": "bowls-and-trays",
+      "title": "BOWLS & TRAYS",
+      "description": "Elegant bowls and trays.",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/KCPP551335?$Lumens.com-PRP-large$",
+      "imageHint": "decorative bowl"
+    },
+    {
+      "id": "lifestyle-candles-matches",
+      "slug": "candles-and-matches",
+      "title": "CANDLES & MATCHES",
       "description": "Luxury candles and matches.",
       "imageUrl": "https://images.lumens.com/is/image/Lumens/LFLP568571?$Lumens.com-PRP-large$",
       "imageHint": "scented candle"
     },
     {
-      "id": "lifestyle-2",
-      "slug": "moooi-paper-chandelier",
-      "title": "Moooi Paper Chandelier",
-      "description": "Moooi Paper Chandelier",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/MOOP443653?$Lumens.com-PRP-large$",
-      "imageHint": "paper chandelier"
-    },
-    {
-      "id": "lifestyle-3",
-      "slug": "decor-walther-box",
-      "title": "Decor Walther Box",
-      "description": "Decor Walther Box Kleenex Box Cover",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/DCEP295819?$Lumens.com-PRP-large$",
-      "imageHint": "box cover"
-    },
-    {
-      "id": "lifestyle-4",
-      "slug": "tdx-velvet-pillow",
-      "title": "TDX Velvet Pillow",
-      "description": "TDX Velvet Pillow",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/TDXP565442?$Lumens.com-PRP-large$",
-      "imageHint": "velvet pillow"
-    },
-    {
-      "id": "lifestyle-5",
-      "slug": "decor-walther-pot",
-      "title": "Decor Walther Pot",
-      "description": "Decor Walther DW 411 Pot",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/DCEP432198_alt09?$Lumens.com-PRP-large$",
-      "imageHint": "ceramic pot"
-    },
-    {
-      "id": "lifestyle-6",
-      "slug": "homenature-selenite",
-      "title": "Homenature Selenite",
-      "description": "Homenature Selenite Votive",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/HBFP568926?$Lumens.com-PRP-large$",
-      "imageHint": "votive"
-    },
-    {
-      "id": "lifestyle-7",
-      "slug": "lObjet-apothecary",
-      "title": "L'Objet Apothecary",
-      "description": "L'Objet Haas Mojave Apothecary",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/LPLP86927_alt68?$Lumens.com-PRP-large$",
-      "imageHint": "apothecary"
-    },
-    {
-      "id": "lifestyle-8",
-      "slug": "alessi-juicy-salif",
-      "title": "Alessi Juicy Salif",
-      "description": "Alessi Juicy Salif",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/uu18363?$Lumens.com-PRP-large$",
-      "imageHint": "juicer"
-    },
-    {
-      "id": "lifestyle-9",
-      "slug": "cire-trudon-regio",
-      "title": "Cire Trudon Reggio",
-      "description": "Cire Trudon Reggio Scented Candle",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/CRNP566762?$Lumens.com-PRP-large$",
-      "imageHint": "scented candle"
-    },
-    {
-      "id": "lifestyle-10",
-      "slug": "design-house-stockholm",
-      "title": "Design House Stockholm",
-      "description": "Design House Stockholm Air Cabinet",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/DHDP555443?$Lumens.com-PRP-large$",
-      "imageHint": "cabinet"
-    },
-    {
-      "id": "lifestyle-11",
-      "slug": "skultuna-kin-votive",
-      "title": "Skultuna Kin Votive",
-      "description": "Skultuna Kin Votive Set",
+      "id": "lifestyle-gifts",
+      "slug": "gifts",
+      "title": "GIFTS",
+      "description": "Curated gift items.",
       "imageUrl": "https://images.lumens.com/is/image/Lumens/SACP564122?$Lumens.com-PRP-large$",
-      "imageHint": "votive set"
+      "imageHint": "luxury gift"
+    },
+    {
+      "id": "lifestyle-barware",
+      "slug": "barware",
+      "title": "BARWARE",
+      "description": "Sophisticated barware.",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/LPLP86927_alt68?$Lumens.com-PRP-large$",
+      "imageHint": "cocktail glass"
     },
     {
       "id": "room-settings-1",
@@ -660,6 +620,38 @@
       "description": "Beautifully lit outdoor patio area at dusk.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/p8jb2rhz9mkrf8h5jzf4nnsh/Kuzco_Lighting-Kona_Outdoor_Pendant-EP56913-BKOP-188x188-site.png?auto=webp&format=png",
       "imageHint": "outdoor lighting"
+    },
+    {
+      "id": "lighting-ceiling",
+      "slug": "ceiling-lights",
+      "title": "Ceiling Lighting",
+      "description": "Modern ceiling lighting.",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/hmrm3wh3stxrgq7cq6hshsrq/KuzcoLighting_CopenhagenLEDOutdoor3TierChandelier-188x188-site.png?auto=webp&format=png",
+      "imageHint": "ceiling light"
+    },
+    {
+      "id": "lighting-wall",
+      "slug": "wall-sconces-vanity-lights",
+      "title": "Wall Lighting",
+      "description": "Elegant wall lighting.",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/products/wall-light",
+      "imageHint": "wall sconce"
+    },
+    {
+      "id": "lighting-table",
+      "slug": "table-lamps-portable-lights",
+      "title": "Table Lamps",
+      "description": "Stylish table lamps.",
+      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw55034b33/homepage/Hero_/Hero_desk_invitro.jpg?sw=768&bgcolor=FFFFFF",
+      "imageHint": "table lamp"
+    },
+    {
+      "id": "lighting-floor",
+      "slug": "floor-lamps",
+      "title": "Floor Lamps",
+      "description": "Contemporary floor lamps.",
+      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/products/floor-lamp",
+      "imageHint": "floor lamp"
     }
   ]
 }
