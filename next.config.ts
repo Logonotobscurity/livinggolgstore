@@ -39,7 +39,19 @@ const nextConfig: NextConfig = {
         hostname: 'flos.com',
         port: '',
         pathname: '/**',
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.lumens.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.lumens.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
