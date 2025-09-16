@@ -38,7 +38,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="border-b border-secondary">
+      <div className="border-b border-primary/30">
         <div className="container mx-auto px-6 h-20 flex justify-between items-center max-w-7xl">
           <div className="md:hidden">
             <Sheet>
