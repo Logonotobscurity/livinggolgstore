@@ -17,8 +17,8 @@ export default function Hero() {
             <h1 className="font-headline text-5xl md:text-7xl font-bold leading-tight text-white mb-10 text-shadow-lg">
                 RARE, UNUSUAL, AND EXQUISITE FINDS
             </h1>
-            <Button asChild size="lg" variant="outline" showIcon>
-              <Link href="/products/living-gold-finds">
+            <Button asChild size="lg" showIcon>
+              <Link href="/products/room-settings">
                 Shop Living Gold Finds
               </Link>
             </Button>
