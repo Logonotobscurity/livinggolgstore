@@ -8,7 +8,7 @@ import { ChevronRight } from 'lucide-react';
 
 export default function OutdoorLightingPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('outdoor-lighting-'));
-  const heroImage = PlaceHolderImages.find(p => p.id === 'outdoor-lighting-hero');
+  const heroImage = PlaceHolderImages.find(p => p.id === 'lightscape-outdoor');
 
   return (
     <div className="flex flex-col min-h-screen bg-[#1a1a1a] text-white">

@@ -6,9 +6,9 @@ import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { ChevronRight } from 'lucide-react';
 
-export default function RecessedTrackLightingPage() {
-  const products = PlaceHolderImages.filter(p => p.id.startsWith('recessed-lighting-'));
-  const heroImage = products[0];
+export default function CeilingLightsPage() {
+  const products = PlaceHolderImages.filter(p => p.id.startsWith('ceiling-lights-'));
+  const heroImage = PlaceHolderImages.find(p => p.id === 'room-settings-5');
 
   return (
     <div className="flex flex-col min-h-screen bg-[#1a1a1a] text-white">
@@ -31,10 +31,10 @@ export default function RecessedTrackLightingPage() {
                 <ChevronRight className="h-4 w-4 mx-1" />
                 <span className="text-gray-400">Collections</span>
                 <ChevronRight className="h-4 w-4 mx-1" />
-                <span className="text-gray-300">Recessed & Accent Lighting</span>
+                <span className="text-gray-300">Ceiling Lights</span>
               </nav>
-              <h1 className="font-headline text-4xl md:text-6xl font-bold">
-                RECESSED & ACCENT LIGHTING
+              <h1 className="font-headline text-5xl md:text-7xl font-bold">
+                CEILING LIGHTS & FLUSHMOUNTS
               </h1>
             </div>
           </section>

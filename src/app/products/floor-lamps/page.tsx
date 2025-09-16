@@ -8,7 +8,7 @@ import { ChevronRight } from 'lucide-react';
 
 export default function FloorLampsPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('floor-lamps-'));
-  const heroImage = PlaceHolderImages.find(p => p.id === 'floor-lamps-hero');
+  const heroImage = products[0];
 
   return (
     <div className="flex flex-col min-h-screen bg-[#1a1a1a] text-white">

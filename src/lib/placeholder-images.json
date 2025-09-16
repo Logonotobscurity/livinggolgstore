@@ -1,6 +1,590 @@
 {
   "placeholderImages": [
     {
+      "id": "chandeliers-pendants-1",
+      "slug": "kuzco-lighting-corda",
+      "title": "Kuzco Lighting CORDA",
+      "description": "Kuzco Lighting CORDA PD39307-BKOP-UNV",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/bgsbrf9xvk65n6tfm94pbvc/Kuzco_Lighting_CORDA_PD39307-BKOP-UNV-188x188-site.png",
+      "imageHint": "pendant light"
+    },
+    {
+      "id": "chandeliers-pendants-2",
+      "slug": "hubbardton-forge-snaps",
+      "title": "Hubbardton Forge SNAPS",
+      "description": "Hubbardton Forge SNAPS Large LED Pendant",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/4h7b697hgn2wf5x39ptx5ns/Hubbardton_Forge_SNAPS_Large_LED_Pendant_white-brass_02-188x188-site.png",
+      "imageHint": "pendant light"
+    },
+    {
+      "id": "chandeliers-pendants-3",
+      "slug": "corbett-lighting-nephele",
+      "title": "Corbett Lighting Nephele",
+      "description": "Corbett Lighting Nephele LED Linear Suspension",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/6cnhgn4zj3mgtgjx2k8hkm4/Corbett_Lighting_Nephele_LED_Linear_Suspension-188x188-site.png",
+      "imageHint": "linear suspension"
+    },
+    {
+      "id": "chandeliers-pendants-4",
+      "slug": "hinkley-nash-pendant",
+      "title": "Hinkley Nash Pendant",
+      "description": "Hinkley Nash Pendant",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/sv79s9ss27nmp6gqh9gz45/Hinkley_Nash_Pendant-188x188-site.png",
+      "imageHint": "pendant light"
+    },
+    {
+      "id": "chandeliers-pendants-5",
+      "slug": "lzf-link-suspension",
+      "title": "LZF Link Suspension",
+      "description": "LZF Link Suspension",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/wfp35gxhtc2jbxvzgb78gzg8/LZF_LinkSuspension_App3-188x188-site.png",
+      "imageHint": "suspension light"
+    },
+    {
+      "id": "chandeliers-pendants-6",
+      "slug": "flos-ic-s-pendant",
+      "title": "FLOS IC S Pendant",
+      "description": "FLOS IC S Pendant Light",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5fxfzp6w7986sg4gnq9q7j/FLOS_IC_S_Pendant_Light-188x188-site.png",
+      "imageHint": "pendant light"
+    },
+    {
+      "id": "chandeliers-pendants-7",
+      "slug": "cerno-lenis-linear",
+      "title": "Cerno Lenis Linear",
+      "description": "Cerno Lenis Linear Suspension",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/fj7sw4ff8xcwx434sgw3378/Cerno_LenisLinearSuspension_App_HighRes-188x188-site.png",
+      "imageHint": "linear suspension"
+    },
+    {
+      "id": "chandeliers-pendants-8",
+      "slug": "modern-forms-sydney",
+      "title": "Modern Forms Sydney",
+      "description": "Modern Forms Sydney LED Linear Suspension",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/kqc5trp7c9pp5xxtrnbr2b/Modern_Forms_Sydney_LED_Linear_Suspension-188x188-site.png",
+      "imageHint": "linear suspension"
+    },
+    {
+      "id": "chandeliers-pendants-9",
+      "slug": "101-copenhagen-stingray",
+      "title": "101 Copenhagen Stingray",
+      "description": "101 Copenhagen Stingray Chandelier",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/tqnz28f38ggmf9w8bw8fx8bq/101_Copenhagen_Stingray_Chandelier-188x188-site.png",
+      "imageHint": "chandelier"
+    },
+    {
+      "id": "chandeliers-pendants-10",
+      "slug": "studio-m-gusto",
+      "title": "Studio M Gusto",
+      "description": "Studio M Gusto LED Linear Suspension",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/2xft985pj78bqgsc6n2jqv/Studio_M_Gusto_LED_Linear_Suspension-188x188-site.png",
+      "imageHint": "linear suspension"
+    },
+    {
+      "id": "chandeliers-pendants-11",
+      "slug": "matthew-mccormick-cascadia",
+      "title": "Matthew McCormick Cascadia",
+      "description": "Matthew McCormick Studio Cascadia LED Mini Pendant",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/9w58ts9jw9rgn9mhn87qw3xj/Matthew_McCormick_Studio_Cascadia_LED_Mini_Pendant-188x188-site.png",
+      "imageHint": "mini pendant"
+    },
+    {
+      "id": "chandeliers-pendants-12",
+      "slug": "studio-m-megalith",
+      "title": "Studio M Megalith",
+      "description": "Studio M Megalith Pendant Dichroic Glass",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/nxmr5kh9zb3n3gvffw6z4g/Studio-M-Megalith-Pendant-Dichroic-Glass-188x188-site.png",
+      "imageHint": "pendant light"
+    },
+    {
+      "id": "chandeliers-pendants-13",
+      "slug": "tob-beckham-chandelier",
+      "title": "TOB by Thomas O'Brien Beckham",
+      "description": "TOB by Thomas O'Brien Beckham Classic Chandelier",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/ct6btqqjpk3hxq6fctqnsb/TOB_by_Thomas_OBrien_Beckham_Classic_Chandelier-188x188-site.png",
+      "imageHint": "classic chandelier"
+    },
+    {
+      "id": "chandeliers-pendants-14",
+      "slug": "visual-comfort-spur",
+      "title": "Visual Comfort Modern Spur",
+      "description": "Visual Comfort Modern Spur LED Chandelier",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/h8jbphghqrkfhsm2pcfhhp/Visual_Comfort_Modern_Spur_LED_Chandelier_black-188x188-site.png",
+      "imageHint": "led chandelier"
+    },
+    {
+      "id": "chandeliers-pendants-15",
+      "slug": "karman-leda-suspension",
+      "title": "Karman Leda Suspension",
+      "description": "Karman Leda LED 3-Light Linear Suspension",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/kgmpwt586hjhbm76zgnphng/Karman_Leda_LED_3-Light_Linear_Suspension-188x188-site.png",
+      "imageHint": "linear suspension"
+    },
+    {
+      "id": "chandeliers-pendants-16",
+      "slug": "lodes-cono-di-luce",
+      "title": "LODES Cono di Luce",
+      "description": "LODES Cono di Luce LED Mini Pendant",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/nfqz66w4b2mcjk5nvkwjpwf/LODES_Cono_di_Luce_LED_Mini_Pendant_small_gold-188x188-site.png",
+      "imageHint": "mini pendant"
+    },
+    {
+      "id": "chandeliers-pendants-17",
+      "slug": "luceplan-j-us-chandelier",
+      "title": "Luceplan J-US Chandelier",
+      "description": "Luceplan J-US LED Chandelier",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/s6cpn65wm6n6r34tjxx9hkns/Luceplan-J-US_LED_Chandelier-black-18arms-188x188-site.png",
+      "imageHint": "led chandelier"
+    },
+    {
+      "id": "chandeliers-pendants-18",
+      "slug": "roll-and-hill-modo",
+      "title": "Roll & Hill Modo",
+      "description": "Roll & Hill Modo 3 Sided Chandelier",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/nqmq8crfg7m5pgth8x42f/RollAndHill_Modo3SidedChandelier_BlackSmoke-188x188-site.png",
+      "imageHint": "chandelier"
+    },
+    {
+      "id": "chandeliers-pendants-19",
+      "slug": "louis-poulsen-ph-5",
+      "title": "Louis Poulsen PH 5",
+      "description": "Louis Poulsen PH 5 Pendant Light",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/373gv5qp4w645g4f34rr873/Louis_Poulsen-PH_5_Pendant_Light-Monochrome_Black-Standard-5741934854-188x188-site.png",
+      "imageHint": "pendant light"
+    },
+    {
+      "id": "chandeliers-pendants-20",
+      "slug": "lodes-random-stick",
+      "title": "LODES Random Stick",
+      "description": "LODES Random Stick LED Linear Suspension",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/jp8h9n9sj8f8bsm99pph58wc/LODES-Random_Stick_LED_Linear_Suspension-Black_Chrome-Small-23420M-188x188-site.png",
+      "imageHint": "linear suspension"
+    },
+    {
+      "id": "table-lamps-1",
+      "slug": "audo-copenhagen-column",
+      "title": "Audo Copenhagen Column",
+      "description": "Audo Copenhagen Column Rechargeable Table Lamp",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/cxssgz78c9t4jgtrvpgrgvn8/Audo_Copenhagen_Column_Rechargeable_Table_Lamp-188x188-site.png",
+      "imageHint": "table lamp"
+    },
+    {
+      "id": "table-lamps-2",
+      "slug": "flos-gatto",
+      "title": "FLOS Gatto",
+      "description": "FLOS Gatto Table Lamp",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/kvmwcxrsxzrhcnpbx4vj8wv/FLOS_Gatto_Table_Lamp-188x188-site.png",
+      "imageHint": "table lamp"
+    },
+    {
+      "id": "table-lamps-3",
+      "slug": "ferm-living-oyster",
+      "title": "Ferm LIVING Oyster",
+      "description": "Ferm LIVING Oyster Table Lamp",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/trrrc5njhr752h8xt93qqs4m/Ferm_LIVING_Oyster_Table_Lamp-188x188-site.png",
+      "imageHint": "table lamp"
+    },
+    {
+      "id": "table-lamps-4",
+      "slug": "gubi-multi-lite",
+      "title": "GUBI Multi-Lite",
+      "description": "GUBI Multi-Lite Rechargeable LED Table Lamp",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/8xt8tkqk5zt76q2ht3mcsgc/GUBI-Multi-Lite_Rechargeable_LED_Table_Lamp-Black_Brass-10131556-188x188-site.png",
+      "imageHint": "table lamp"
+    },
+    {
+      "id": "table-lamps-5",
+      "slug": "santa-cole-cestita",
+      "title": "Santa & Cole Cestita",
+      "description": "Santa & Cole Cestita Alubat LED Outdoor Table Lamp",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/nfj94s95h43kwgf782c8pt/Santa_Cole-Cestita_Alubat_LED_Outdoor_Table_Lamp-Black-CESTF01-188x188-site.png",
+      "imageHint": "outdoor lamp"
+    },
+    {
+      "id": "table-lamps-6",
+      "slug": "houe-light-no1",
+      "title": "Houe Light No.1",
+      "description": "Houe Light No.1 Portable Outdoor Lamp",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/v8qvnffjsb2rmt9862vgz/Houe_Light_No1_Portable_Outdoor_Lamp_black-188x188-site.png",
+      "imageHint": "outdoor lamp"
+    },
+    {
+      "id": "table-lamps-7",
+      "slug": "koncept-guy-led",
+      "title": "Koncept Guy LED",
+      "description": "Koncept Guy LED Table Lamp",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/xfjf7swvngp4mjmhrsvw6fbr/Koncept_Guy_LED_Table_Lamp_black-188x188-site.png",
+      "imageHint": "table lamp"
+    },
+    {
+      "id": "table-lamps-8",
+      "slug": "louis-poulsen-njp",
+      "title": "Louis Poulsen NJP",
+      "description": "Louis Poulsen NJP LED Task Lamp",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/jmsws9mrfnqs2x6mqx7g96vx/Louis_Poulsen-NJP_LED_Task_Lamp-Black-10000133058-188x188-site.png",
+      "imageHint": "task lamp"
+    },
+    {
+      "id": "table-lamps-9",
+      "slug": "marset-dipping-light",
+      "title": "Marset Dipping Light",
+      "description": "Marset Dipping Light LED Portable Table Lamp",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/h9q3hp838tj67cngw7sg48/Marset_Dipping_Light_LED_Portable_Table_Lamp_blue-188x188-site.png",
+      "imageHint": "portable lamp"
+    },
+    {
+      "id": "wall-sconces-1",
+      "slug": "marset-caramel-sconce",
+      "title": "Marset Caramel Sconce",
+      "description": "Marset Caramel LED Wall Sconce with Disk",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/k53jns4m7bvcw5k9f579j75w/Marset-Caramel_LED_Wall_Sconce_with_Disk-188x188-site.png",
+      "imageHint": "wall sconce"
+    },
+    {
+      "id": "wall-sconces-2",
+      "slug": "huxe-kasson-vanity",
+      "title": "Huxe Kasson Vanity",
+      "description": "Huxe Kasson LED Vanity Light",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/wrmfn4r52rqx5rxbnn9w9wj/LU_May_2024_Huxe_Bath_Bars_Kasson_LED_Vanity_Light_site-188x188-site.png",
+      "imageHint": "vanity light"
+    },
+    {
+      "id": "wall-sconces-3",
+      "slug": "hinkley-trigo-vanity",
+      "title": "Hinkley Trigo Vanity",
+      "description": "Hinkley Trigo LED Vanity Light",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/gf3g5b75c9qhmfprss7rhpb/Hinkley_Trigo_LED_Vanity_Light_black-small-188x188-site.png",
+      "imageHint": "vanity light"
+    },
+    {
+      "id": "wall-sconces-4",
+      "slug": "visual-comfort-kenyon",
+      "title": "Visual Comfort Studio Kenyon",
+      "description": "Visual Comfort Studio Kenyon Picture Light",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/9zm8f4h3nf8h8jqrp44qwn9/Visual_Comfort_Studio-Kenyon_Picture_Light-Aged_Iron-Small-CW1181AI-188x188-site.png",
+      "imageHint": "picture light"
+    },
+    {
+      "id": "wall-sconces-5",
+      "slug": "flos-ic-outdoor",
+      "title": "FLOS IC Outdoor",
+      "description": "FLOS IC Outdoor Wall Sconce",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/vf26f7sw8jt8pq57kpqxkm/FLOS_IC_Outdoor_Wall_Sconce_black-188x188-site.png",
+      "imageHint": "outdoor sconce"
+    },
+    {
+      "id": "wall-sconces-6",
+      "slug": "alder-ore-faraday",
+      "title": "Alder & Ore Faraday",
+      "description": "Alder & Ore Faraday Outdoor Wall Sconce",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/556sqzt6rjw3bk9t3sprh8h7/Alder_Ore-Faraday_Outdoor_Wall_Sconce-black-GPL2607092-188x188-site.png",
+      "imageHint": "outdoor sconce"
+    },
+    {
+      "id": "wall-sconces-7",
+      "slug": "in-common-with-arundel",
+      "title": "In Common With Arundel",
+      "description": "In Common With Arundel Mushroom Outdoor Wall Flushmount",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/k66p5kngtwr5vqn5rbw323/In_Common_With-Arundel_Mushroom_Outdoor_Wall_Flushmount-Black-188x188-site.png",
+      "imageHint": "outdoor flushmount"
+    },
+    {
+      "id": "outdoor-lighting-1",
+      "slug": "estiluz-bols-floor",
+      "title": "Estiluz Bols Floor Lamp",
+      "description": "Estiluz Bols Outdoor LED Tall Floor Lamp",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/t7q75k3578tgt393zpxmgt6/Estiluz-Bols_Outdoor_LED_Tall_Floor_Lamp-040279672X-188x188-site.png",
+      "imageHint": "outdoor floor lamp"
+    },
+    {
+      "id": "outdoor-lighting-2",
+      "slug": "kuzco-kona-pendant",
+      "title": "Kuzco Kona Pendant",
+      "description": "Kuzco Lighting Kona Outdoor Pendant",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/p8jb2rhz9mkrf8h5jzf4nnsh/Kuzco_Lighting-Kona_Outdoor_Pendant-EP56913-BKOP-188x188-site.png",
+      "imageHint": "outdoor pendant"
+    },
+    {
+      "id": "outdoor-lighting-3",
+      "slug": "kuzco-copenhagen-chandelier",
+      "title": "Kuzco Copenhagen Chandelier",
+      "description": "Kuzco Lighting Copenhagen LED Outdoor 3 Tier Chandelier",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/hmrm3wh3stxrgq7cq6hshsrq/KuzcoLighting_CopenhagenLEDOutdoor3TierChandelier-188x188-site.png",
+      "imageHint": "outdoor chandelier"
+    },
+    {
+      "id": "outdoor-lighting-4",
+      "slug": "hinkley-atlantis-path",
+      "title": "Hinkley Atlantis Path Light",
+      "description": "Hinkley Atlantis LED Path Light",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/2t99qpp7wtw4spbbkcf6rbs3/Hinkley-Atlantis_LED_Path_Light-Satin_Black-22_Inch-1518SK-LL-188x188-site.png",
+      "imageHint": "path light"
+    },
+    {
+      "id": "ceiling-lights-1",
+      "slug": "kuzco-parker-flushmount",
+      "title": "Kuzco Parker Flushmount",
+      "description": "Kuzco Lighting Parker LED Flushmount",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5rc7s94bh8j3f3kmrp4jxb7/Kuzco_Lighting_Parker_LED_Flushmount-188x188-site.png",
+      "imageHint": "flushmount light"
+    },
+    {
+      "id": "ceiling-lights-2",
+      "slug": "astro-taiko-flushmount",
+      "title": "Astro Taiko Flushmount",
+      "description": "Astro Lighting Taiko 400 Flushmount",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/vk9mqfq8cjqb6kk78cgcght/Astro_Lighting-Taiko_400_Flushmount-Matte_Black-1456004-188x188-site.png",
+      "imageHint": "flushmount light"
+    },
+    {
+      "id": "floor-lamps-1",
+      "slug": "foscarini-twiggy-floor",
+      "title": "Foscarini Twiggy Floor Lamp",
+      "description": "Foscarini Twiggy Floor Lamp",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/r89ghgmqmftc8fbxqk7gv6/Foscarini_TwiggyFloorLamp_Black-188x188-site.png",
+      "imageHint": "floor lamp"
+    },
+    {
+      "id": "ceiling-fans-1",
+      "slug": "hinkley-swell-fan",
+      "title": "Hinkley Swell Fan",
+      "description": "Hinkley Swell Flush Illuminated LED Ceiling Fan",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/39vkh8gsv63gcfn44kg7xkn/Hinkley_Swell_Flush_Illuminated_LED_Ceiling_Fan_black-188x188-site.png",
+      "imageHint": "ceiling fan"
+    },
+    {
+      "id": "ceiling-fans-2",
+      "slug": "kichler-fit-fan",
+      "title": "Kichler Fit Fan",
+      "description": "Kichler Fit LED Ceiling Fan",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/97kzcf7x3vvhjbw9cn6fxmpm/Kichler-Fit_LED_Ceiling_Fan-Satin_Black-310254SBK-188x188-site.png",
+      "imageHint": "ceiling fan"
+    },
+    {
+      "id": "ceiling-fans-3",
+      "slug": "minka-aire-roto",
+      "title": "Minka Aire Fans Roto",
+      "description": "Minka Aire Fans Roto Ceiling Fan",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/zrwkw6vh85jj5t8n96j6r/Minka_Aire_Fans-Roto_Ceiling_Fan-Coal-188x188-site.png",
+      "imageHint": "ceiling fan"
+    },
+    {
+      "id": "ceiling-fans-4",
+      "slug": "hinkley-sculpt-fan",
+      "title": "Hinkley Sculpt Fan",
+      "description": "Hinkley Sculpt LED Ceiling Fan",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/r7rtcqbc9w9kn24fmqhxsjn/Hinkley-Sculpt_LED_Ceiling_Fan-Matte_Black-188x188-site.png",
+      "imageHint": "ceiling fan"
+    },
+    {
+      "id": "ceiling-fans-5",
+      "slug": "modern-fan-co-icair",
+      "title": "Modern Fan Company ICAir",
+      "description": "Modern Fan Company ICAir 3 Ceiling Fan",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/ptr3phrx58n6j82x9wxmk84/Modern_Fan_Company-ICAir_3_Ceiling_Fan-Dark-188x188-site.png",
+      "imageHint": "ceiling fan"
+    },
+    {
+      "id": "ceiling-fans-6",
+      "slug": "modern-forms-axis",
+      "title": "Modern Forms Axis",
+      "description": "Modern Forms Axis LED Flushmount Smart Fan",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/3v5nq8jqvffszbgwc8zhvwp/Modern_Forms-Axis_LED_Flushmount_Smart_Fan-Matte_Black-188x188-site.png",
+      "imageHint": "smart fan"
+    },
+    {
+      "id": "ceiling-fans-7",
+      "slug": "atlas-fan-co-eliza",
+      "title": "Atlas Fan Company Eliza",
+      "description": "Atlas Fan Company Eliza-H Flushmount Ceiling Fan",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/rf6xbf6nbj8ztpp8c4vp4rrz/Atlas_Fan_Company_Eliza-H_Flushmount_Ceiling_Fan-188x188-site.png",
+      "imageHint": "ceiling fan"
+    },
+    {
+      "id": "ceiling-fans-8",
+      "slug": "big-ass-fans-haiku",
+      "title": "Big Ass Fans Haiku",
+      "description": "Big Ass Fans Haiku Coastal Marine Grade Outdoor Ceiling Fan",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/hxck3wr674x78zm437bbxf6g/Big_Ass_Fans-Haiku_Coastal_Marine_Grade_Outdoor_Ceiling_Fan-Matte_Black-188x188-site.png",
+      "imageHint": "outdoor fan"
+    },
+    {
+      "id": "ceiling-fans-9",
+      "slug": "modernforms-morpheus",
+      "title": "ModernForms Morpheus",
+      "description": "ModernForms Morpheus Ceiling Fan",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/85nr4cbs9sphgcb84h9p4wg/ModernForms_MorpheusCeilingFan-188x188-site.png",
+      "imageHint": "ceiling fan"
+    },
+    {
+      "id": "specialty-lighting-1",
+      "slug": "buster-punch-bulb",
+      "title": "Buster + Punch Bulb",
+      "description": "Buster + Punch 5W A-Type Gold LED Bulb",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/pr9pf75ktvfksm5jxbmf5c4/Buster_Punch_5W_A-Type_Gold_LED_Bulb_on-188x188-site.png",
+      "imageHint": "led bulb"
+    },
+    {
+      "id": "recessed-lighting-1",
+      "slug": "wac-lighting-ocularc",
+      "title": "WAC Lighting Ocularc",
+      "description": "WAC Lighting Ocularc 3-Inch LED Round Adjustable Trim",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5h58rscb8fm8hnwb54kk7h8/WAC_Lighting-Ocularc_3-Inch_LED_Round_Adjustable_Trim-Black-188x188-site.png",
+      "imageHint": "recessed trim"
+    },
+    {
+      "id": "recessed-lighting-2",
+      "slug": "wac-lighting-edge-lit",
+      "title": "WAC Lighting Edge-Lit",
+      "description": "WAC Lighting Edge Lit LED HR-LED90 Button Light",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/k9q77k5swzhz3btgqfbfrtq/WAC_Lighting-Edge_Lit_LED_HR-LED90_Button_Light-Black-188x188-site.png",
+      "imageHint": "button light"
+    },
+    {
+      "id": "recessed-lighting-3",
+      "slug": "astro-ascoli-track",
+      "title": "Astro Ascoli Track Light",
+      "description": "Astro Lighting Ascoli Track Light",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/4hvx2ssn4pmw6sm8kjvbhkq/Astro_Lighting-Ascoli_Track_Light-Matte_Black-3-1286117-188x188-site.png",
+      "imageHint": "track light"
+    },
+    {
+      "id": "lifestyle-1",
+      "slug": "luxury-candles",
+      "title": "Luxury Candles",
+      "description": "Luxury candles and matches.",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/LFLP568571?$Lumens.com-PRP-large$",
+      "imageHint": "scented candle"
+    },
+    {
+      "id": "lifestyle-2",
+      "slug": "moooi-paper-chandelier",
+      "title": "Moooi Paper Chandelier",
+      "description": "Moooi Paper Chandelier",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/MOOP443653?$Lumens.com-PRP-large$",
+      "imageHint": "paper chandelier"
+    },
+    {
+      "id": "lifestyle-3",
+      "slug": "decor-walther-box",
+      "title": "Decor Walther Box",
+      "description": "Decor Walther Box Kleenex Box Cover",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/DCEP295819?$Lumens.com-PRP-large$",
+      "imageHint": "box cover"
+    },
+    {
+      "id": "lifestyle-4",
+      "slug": "tdx-velvet-pillow",
+      "title": "TDX Velvet Pillow",
+      "description": "TDX Velvet Pillow",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/TDXP565442?$Lumens.com-PRP-large$",
+      "imageHint": "velvet pillow"
+    },
+    {
+      "id": "lifestyle-5",
+      "slug": "decor-walther-pot",
+      "title": "Decor Walther Pot",
+      "description": "Decor Walther DW 411 Pot",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/DCEP432198_alt09?$Lumens.com-PRP-large$",
+      "imageHint": "ceramic pot"
+    },
+    {
+      "id": "lifestyle-6",
+      "slug": "homenature-selenite",
+      "title": "Homenature Selenite",
+      "description": "Homenature Selenite Votive",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/HBFP568926?$Lumens.com-PRP-large$",
+      "imageHint": "votive"
+    },
+    {
+      "id": "lifestyle-7",
+      "slug": "lObjet-apothecary",
+      "title": "L'Objet Apothecary",
+      "description": "L'Objet Haas Mojave Apothecary",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/LPLP86927_alt68?$Lumens.com-PRP-large$",
+      "imageHint": "apothecary"
+    },
+    {
+      "id": "lifestyle-8",
+      "slug": "alessi-juicy-salif",
+      "title": "Alessi Juicy Salif",
+      "description": "Alessi Juicy Salif",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/uu18363?$Lumens.com-PRP-large$",
+      "imageHint": "juicer"
+    },
+    {
+      "id": "lifestyle-9",
+      "slug": "cire-trudon-regio",
+      "title": "Cire Trudon Reggio",
+      "description": "Cire Trudon Reggio Scented Candle",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/CRNP566762?$Lumens.com-PRP-large$",
+      "imageHint": "scented candle"
+    },
+    {
+      "id": "lifestyle-10",
+      "slug": "design-house-stockholm",
+      "title": "Design House Stockholm",
+      "description": "Design House Stockholm Air Cabinet",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/DHDP555443?$Lumens.com-PRP-large$",
+      "imageHint": "cabinet"
+    },
+    {
+      "id": "lifestyle-11",
+      "slug": "skultuna-kin-votive",
+      "title": "Skultuna Kin Votive",
+      "description": "Skultuna Kin Votive Set",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/SACP564122?$Lumens.com-PRP-large$",
+      "imageHint": "votive set"
+    },
+    {
+      "id": "room-settings-1",
+      "slug": "living-room-pendant",
+      "title": "Living Room Pendant",
+      "description": "Living Room with Louis Poulsen Pendant",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5jc5nh7c766xpf3gqxrqbn3/LU_August_2024_Louis_Poulsen_Living_Room-site-480x400.png",
+      "imageHint": "living room"
+    },
+    {
+      "id": "room-settings-2",
+      "slug": "innovator-wesley-moon",
+      "title": "Innovator Wesley Moon",
+      "description": "Innovator Wesley Moon Frame",
+      "imageUrl": "https://img.lumens.com/9JWOMRAM/at/77g4hj8mtcwpkk6k7r24gbxn/LU_May_2024_Innovator_Wesley_Moon_Frame4_site-1650x1920-Site-3Wide.png",
+      "imageHint": "modern interior"
+    },
+    {
+      "id": "room-settings-3",
+      "slug": "kitchen-pendant",
+      "title": "Kitchen Pendant",
+      "description": "Kitchen with Louis Poulsen Pendant",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/9hsj9ht3kkmnxfnx8f9n6598/LU_August_2024_Louis_Poulsen_Kitchen_Wide_Crop-site-188x188-site.png",
+      "imageHint": "kitchen lighting"
+    },
+    {
+      "id": "room-settings-4",
+      "slug": "kitchen-common-with",
+      "title": "Kitchen In Common With",
+      "description": "Kitchen with In Common With lighting",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/45rjbg4m6r3cn4fp73n2sxp/LU_September_2024_In_Common_With_Kitchen-site-188x188-site.png",
+      "imageHint": "kitchen lighting"
+    },
+    {
+      "id": "room-settings-5",
+      "slug": "design-house-kitchen",
+      "title": "Design House Kitchen",
+      "description": "Lumens Design House Kitchen",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/rbhft5vg97ffpsfv7pkggcwm/LU_March_2024_-_Lumens_Design_House_-_Kitchen_site-188x188-site.png",
+      "imageHint": "kitchen design"
+    },
+    {
+      "id": "room-settings-6",
+      "slug": "bed-bath-consumer",
+      "title": "Bed & Bath",
+      "description": "Lumens 2023 Bed & Bath Consumer",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/7vn5s5v9m9sw5krq9fn33qx4/Lumens_2023_Bed_Bath_Consumer_Bath_3q__site-188x188-site.png",
+      "imageHint": "bathroom design"
+    },
+    {
       "id": "hero-image",
       "slug": "hero-image",
       "description": "A stunning and luxurious modern living room with gold accents.",
@@ -15,70 +599,6 @@
       "imageHint": "interior design sketch"
     },
     {
-      "id": "lifestyle-decorative-objects",
-      "slug": "decorative-objects",
-      "title": "Decorative Objects",
-      "description": "Elegant decorative objects.",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/LPLP86927_alt68?$Lumens.com-PRP-large$",
-      "imageHint": "ceramic vase"
-    },
-    {
-      "id": "lifestyle-vases-pots",
-      "slug": "vases-and-pots",
-      "title": "Vases & Pots",
-      "description": "Modern vases and pots.",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/DCEP432198_alt09?$Lumens.com-PRP-large$",
-      "imageHint": "ceramic pot"
-    },
-    {
-      "id": "lifestyle-bowls-trays",
-      "slug": "bowls-and-trays",
-      "title": "BOWLS & TRAYS",
-      "description": "Elegant bowls and trays.",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/KCPP551335?$Lumens.com-PRP-large$",
-      "imageHint": "decorative bowl"
-    },
-    {
-      "id": "lifestyle-candles-matches",
-      "slug": "candles-and-matches",
-      "title": "CANDLES & MATCHES",
-      "description": "Luxury candles and matches.",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/LFLP568571?$Lumens.com-PRP-large$",
-      "imageHint": "scented candle"
-    },
-    {
-      "id": "lifestyle-gifts",
-      "slug": "gifts",
-      "title": "GIFTS",
-      "description": "Curated gift items.",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/SACP564122?$Lumens.com-PRP-large$",
-      "imageHint": "luxury gift"
-    },
-    {
-      "id": "lifestyle-barware",
-      "slug": "barware",
-      "title": "BARWARE",
-      "description": "Sophisticated barware.",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/LPLP86927_alt68?$Lumens.com-PRP-large$",
-      "imageHint": "cocktail glass"
-    },
-    {
-      "id": "lifestyle-diffusers",
-      "slug": "diffusers",
-      "title": "DIFFUSERS",
-      "description": "Aromatic diffusers.",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/GUBP444068?$Lumens.com-PRP-large$",
-      "imageHint": "reed diffuser"
-    },
-    {
-      "id": "lifestyle-pillows-throws",
-      "slug": "pillows-and-throws",
-      "title": "PILLOWS & THROWS",
-      "description": "Comfortable pillows and throws.",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/TDXP565442?$Lumens.com-PRP-large$",
-      "imageHint": "velvet pillow"
-    },
-    {
       "id": "insta-1",
       "slug": "insta-1",
       "description": "Instagram post 1",
@@ -89,7 +609,7 @@
       "id": "insta-2",
       "slug": "insta-2",
       "description": "Instagram post 2",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/OLUY16717_alt28?$Lumens.com-PRP-large$",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/STIY30555_alt182?$Lumens.com-PRP-large$",
       "imageHint": "elegant bedroom"
     },
     {
@@ -103,50 +623,36 @@
       "id": "insta-4",
       "slug": "insta-4",
       "description": "Instagram post 4",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/fj3zn55b5skg99k4rxv53n3/BDI_ModicaMobileFilePedestal_App2-188x188-site.png?auto=webp&format=png",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/FNTP297774_alt12?$Lumens.com-PRP-large$",
       "imageHint": "chic bathroom"
     },
     {
       "id": "insta-5",
       "slug": "insta-5",
       "description": "Instagram post 5",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/4hvx2ssn4pmw6sm8kjvbhkq/Astro_Lighting-Ascoli_Track_Light-Matte_Black-3-1286117-188x188-site.png?auto=webp&format=png",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/LPLP566847?$Lumens.com-PRP-large$",
       "imageHint": "velvet sofa"
     },
     {
       "id": "insta-6",
       "slug": "insta-6",
       "description": "Instagram post 6",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5rc7s94bh8j3f3kmrp4jxb7/Kuzco_Lighting_Parker_LED_Flushmount-188x188-site.png?auto=webp&format=png",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/CRNP416205?$Lumens.com-PRP-large$",
       "imageHint": "marble table"
     },
     {
       "id": "insta-7",
       "slug": "insta-7",
       "description": "Instagram post 7",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/pr9pf75ktvfksm5jxbmf5c4/Buster_Punch_5W_A-Type_Gold_LED_Bulb_on-188x188-site.png?auto=webp&format=png",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/MUUP525080_alt07?$Lumens.com-PRP-large$",
       "imageHint": "art deco lamp"
     },
     {
       "id": "insta-8",
       "slug": "insta-8",
       "description": "Instagram post 8",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/wrmfn4r52rqx5rxbnn9w9wj/LU_May_2024_Huxe_Bath_Bars_Kasson_LED_Vanity_Light_site-188x188-site.png?auto=webp&format=png",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/KCPP551335?$Lumens.com-PRP-large$",
       "imageHint": "luxury interior"
-    },
-    {
-      "id": "design-inspiration-1",
-      "slug": "design-inspiration-1",
-      "description": "Bathroom with architectural lighting.",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/q45v9t8mkgm6vhrfhz6stg/Classic_Home-Malo_Bench-53002015-188x188-site.png?auto=webp&format=png",
-      "imageHint": "architectural lighting"
-    },
-    {
-      "id": "design-inspiration-2",
-      "slug": "design-inspiration-2",
-      "description": "Living room with a smart ceiling fan.",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/nvsp9vwbtt8rfc4p5cqzc5sn/Blu_Dot-Filing_Cabinet_No_1-Black-188x188-site.png?auto=webp&format=png",
-      "imageHint": "smart fan"
     },
     {
       "id": "lightscape-outdoor",
@@ -154,475 +660,6 @@
       "description": "Beautifully lit outdoor patio area at dusk.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/p8jb2rhz9mkrf8h5jzf4nnsh/Kuzco_Lighting-Kona_Outdoor_Pendant-EP56913-BKOP-188x188-site.png?auto=webp&format=png",
       "imageHint": "outdoor lighting"
-    },
-    {
-      "id": "lighting-ceiling",
-      "slug": "ceiling-lighting",
-      "title": "CEILING",
-      "description": "Modern ceiling lighting.",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/hmrm3wh3stxrgq7cq6hshsrq/KuzcoLighting_CopenhagenLEDOutdoor3TierChandelier-188x188-site.png?auto=webp&format=png",
-      "imageHint": "ceiling light"
-    },
-    {
-      "id": "lighting-wall",
-      "slug": "wall-lighting",
-      "title": "WALL",
-      "description": "Elegant wall lighting.",
-      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/products/wall-light",
-      "imageHint": "wall sconce"
-    },
-    {
-      "id": "lighting-table",
-      "slug": "table-lighting",
-      "title": "TABLE",
-      "description": "Stylish table lamps.",
-      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw55034b33/homepage/Hero_/Hero_desk_invitro.jpg?sw=768&bgcolor=FFFFFF",
-      "imageHint": "table lamp"
-    },
-    {
-      "id": "lighting-floor",
-      "slug": "floor-lighting",
-      "title": "FLOOR",
-      "description": "Contemporary floor lamps.",
-      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/products/floor-lamp",
-      "imageHint": "floor lamp"
-    },
-    {
-      "id": "payment-visa",
-      "slug": "payment-visa",
-      "description": "Visa",
-      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/payment/visa"
-    },
-    {
-      "id": "payment-mastercard",
-      "slug": "payment-mastercard",
-      "description": "Mastercard",
-      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/payment/mastercard"
-    },
-    {
-      "id": "payment-paypal",
-      "slug": "payment-paypal",
-      "description": "PayPal",
-      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/payment/paypal"
-    },
-    {
-      "id": "payment-klarna",
-      "slug": "payment-klarna",
-      "description": "Klarna",
-      "imageUrl": "https://res.cloudinary.com/duloxzewn/image/upload/v1/living-gold/payment/klarna"
-    },
-    {
-      "id": "tabletop-hero",
-      "slug": "tabletop-hero",
-      "description": "An elegant dining table set for a luxurious meal.",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/LPLP86927_alt68?$Lumens.com-PRP-large$",
-      "imageHint": "dining table"
-    },
-    {
-      "id": "tabletop-1", "slug": "large-abaca-napkin-holder", "title": "LARGE ABACA NAPKIN HOLDER", "description": "Stylish napkin holder.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw9ed77ba4/oH3fCDNw.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "napkin holder", "price": "38.00"
-    },
-    {
-      "id": "tabletop-2", "slug": "jacob-zion-cup", "title": "JACOB ZION CUP", "description": "A unique cup.",
-      "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw5a5ce7c1/HzLhtxfA.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "glass cup", "price": "FROM 40.00"
-    },
-    {
-      "id": "tabletop-3", "slug": "joseph-zion-short-cup", "title": "JOSEPH ZION SHORT CUP", "description": "A short cup.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwba34431e/Pvy-a6Pg.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "short glass", "price": "FROM 35.00"
-    },
-    {
-      "id": "tabletop-4", "slug": "crowned-coasters", "title": "CROWNED COASTERS", "description": "Elegant coasters.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwe2ec5e3d/thumbnail_ding.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "modern coasters", "price": "44.00"
-    },
-    {
-      "id": "tabletop-5", "slug": "gold-rimmed-plate", "title": "GOLD-RIMMED PLATE", "description": "Plate with gold rim.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw9d892ab3/thumbnail_kitchen.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "dinner plate", "price": "65.00"
-    },
-    {
-      "id": "tabletop-6", "slug": "marble-serving-tray", "title": "MARBLE SERVING TRAY", "description": "Elegant serving tray.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwca54d1c7/thumbnail_workspace.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "serving tray", "price": "120.00"
-    },
-    {
-      "id": "tabletop-7", "slug": "linen-tablecloth", "title": "LINEN TABLECLOTH", "description": "High-quality tablecloth.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwc29ae62c/homepage/Slider/hp_slider_snoopy.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "linen tablecloth", "price": "95.00"
-    },
-    {
-      "id": "tabletop-8", "slug": "crystal-decanter", "title": "CRYSTAL DECANTER", "description": "For your finest spirits.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwcac8892d/homepage/clp-floor-mobile.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "crystal decanter", "price": "150.00"
-    },
-    {
-      "id": "tabletop-9", "slug": "silver-cutlery-set", "title": "SILVER CUTLERY SET", "description": "24-piece cutlery set.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw6b6ae718/homepage/Slider/hp_slider_gatto.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "silver cutlery", "price": "250.00"
-    },
-    {
-      "id": "tabletop-10", "slug": "porcelain-soup-bowl", "title": "PORCELAIN SOUP BOWL", "description": "A delicate soup bowl.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw9c94168c/homepage/Slider/slider_selection_bon_j_unplugged.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "soup bowl", "price": "45.00"
-    },
-    {
-      "id": "tabletop-11", "slug": "ceramic-salt-pepper-shakers", "title": "CERAMIC SHAKERS", "description": "Salt and pepper shakers.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwb7bc667a/homepage/Slider%20Big/slider_big_living.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "salt pepper", "price": "30.00"
-    },
-    {
-      "id": "tabletop-12", "slug": "champagne-flutes-set-of-4", "title": "CHAMPAGNE FLUTES (SET OF 4)", "description": "Celebrate in style.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw4b610aca/homepage/Slider%20Big/slider_big_chasen.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "champagne flutes", "price": "180.00"
-    },
-    {
-      "id": "tabletop-13", "slug": "wooden-salad-bowl", "title": "WOODEN SALAD BOWL", "description": "A large salad bowl.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwc877d7db/homepage/Slider%20Big/slider_big_kitchen.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "salad bowl", "price": "75.00"
-    },
-    {
-      "id": "tabletop-14", "slug": "slate-cheese-board", "title": "SLATE CHEESE BOARD", "description": "For cheese lovers.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwbce579ee/homepage/Slider%20Big/slider_big_studio_2.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "cheese board", "price": "55.00"
-    },
-    {
-      "id": "tabletop-15", "slug": "copper-mule-mugs", "title": "COPPER MULE MUGS (SET OF 2)", "description": "Classic mule mugs.", "imageUrl": "https://flos.com/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwc5d4c9ea/country_selector_taccia.jpg", "imageHint": "copper mugs", "price": "60.00"
-    },
-    {
-      "id": "tabletop-16", "slug": "glass-water-pitcher", "title": "GLASS WATER PITCHER", "description": "An elegant water pitcher.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw700a9232/homepage/Slider/slider_SELECTION-2.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "water pitcher", "price": "85.00"
-    },
-    {
-      "id": "living-gold-finds-hero", "slug": "living-gold-finds-hero", "description": "Hero image for Living Gold Finds.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwec270fdf/homepage/Slider/slider_SELECTION.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "curated finds"
-    },
-    {
-      "id": "living-gold-finds-1", "slug": "lgf-item-1", "title": "LGF Item 1", "description": "Description for LGF item 1", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwb6255b3f/homepage/Slider/slider_SELECTION-4.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "finds one", "price": "100.00"
-    },
-    {
-      "id": "living-gold-finds-2", "slug": "lgf-item-2", "title": "LGF Item 2", "description": "Description for LGF item 2", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dweb542b36/homepage/Slider/slider_SELECTION-3.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "finds two", "price": "110.00"
-    },
-    {
-      "id": "living-gold-finds-3", "slug": "lgf-item-3", "title": "LGF Item 3", "description": "Description for LGF item 3", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw2766e427/homepage/Slider/slider_SELECTION-5.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "finds three", "price": "120.00"
-    },
-    {
-      "id": "living-gold-finds-4", "slug": "lgf-item-4", "title": "LGF Item 4", "description": "Description for LGF item 4", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw27e09636/homepage/Slider/slider_SELECTION-1.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "finds four", "price": "130.00"
-    },
-    {
-      "id": "living-gold-finds-5", "slug": "lgf-item-5", "title": "LGF Item 5", "description": "Description for LGF item 5", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw18c44a88/homepage/Hero_/Hero_HP_d_bonjour.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "finds five", "price": "140.00"
-    },
-    {
-      "id": "living-gold-finds-6", "slug": "lgf-item-6", "title": "LGF Item 6", "description": "Description for LGF item 6", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw9d231c85/homepage/Slider%20Big/slider_big_ceramique.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "finds six", "price": "150.00"
-    },
-    {
-      "id": "living-gold-finds-7", "slug": "lgf-item-7", "title": "LGF Item 7", "description": "Description for LGF item 7", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw162a2189/homepage/Slider%20Big/slider_big_bellhop-glass.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "finds seven", "price": "160.00"
-    },
-    {
-      "id": "living-gold-finds-8", "slug": "lgf-item-8", "title": "LGF Item 8", "description": "Description for LGF item 8", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw32e69c6b/homepage/Slider%20Big/slider_big_snoopy_blu.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "finds eight", "price": "170.00"
-    },
-    {
-      "id": "living-gold-finds-9", "slug": "lgf-item-9", "title": "LGF Item 9", "description": "Description for LGF item 9", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwe92b490b/homepage/Editorial%20Block/slider_editorial_MAYDAY.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "finds nine", "price": "180.00"
-    },
-    {
-      "id": "living-gold-finds-10", "slug": "lgf-item-10", "title": "LGF Item 10", "description": "Description for LGF item 10", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw85d2c96c/homepage/clp-pendant-mobile-ok.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "finds ten", "price": "190.00"
-    },
-    {
-      "id": "living-gold-finds-11", "slug": "lgf-item-11", "title": "LGF Item 11", "description": "Description for LGF item 11", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw44e2c0c6/homepage/clp-ceiling-wall-mobile-ok.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "finds eleven", "price": "200.00"
-    },
-    {
-      "id": "living-gold-finds-12", "slug": "lgf-item-12", "title": "LGF Item 12", "description": "Description for LGF item 12", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwc29ae62c/homepage/Slider/hp_slider_snoopy.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "finds twelve", "price": "210.00"
-    },
-    {
-      "id": "living-gold-finds-13", "slug": "lgf-item-13", "title": "LGF Item 13", "description": "Description for LGF item 13", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwcac8892d/homepage/clp-floor-mobile.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "finds thirteen", "price": "220.00"
-    },
-    {
-      "id": "living-gold-finds-14", "slug": "lgf-item-14", "title": "LGF Item 14", "description": "Description for LGF item 14", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw6b6ae718/homepage/Slider/hp_slider_gatto.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "finds fourteen", "price": "230.00"
-    },
-    {
-      "id": "living-gold-finds-15", "slug": "lgf-item-15", "title": "LGF Item 15", "description": "Description for LGF item 15", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw9c94168c/homepage/Slider/slider_selection_bon_j_unplugged.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "finds fifteen", "price": "240.00"
-    },
-    {
-      "id": "living-gold-finds-16", "slug": "lgf-item-16", "title": "LGF Item 16", "description": "Description for LGF item 16", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwb7bc667a/homepage/Slider%20Big/slider_big_living.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "finds sixteen", "price": "250.00"
-    },
-    {
-      "id": "furnishings-hero", "slug": "furnishings-hero", "description": "Hero image for Furnishings.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwf38b158f/homepage/Slider%20Big/slider_big_bedroom2.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "luxury furniture"
-    },
-    {
-      "id": "furnishings-1", "slug": "furnishings-item-1", "title": "Furnishings Item 1", "description": "Description for Furnishings item 1", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw9ed77ba4/oH3fCDNw.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "sofa", "price": "100.00"
-    },
-    {
-      "id": "furnishings-2", "slug": "furnishings-item-2", "title": "Furnishings Item 2", "description": "Description for Furnishings item 2", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw5a5ce7c1/HzLhtxfA.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "chair", "price": "110.00"
-    },
-    {
-      "id": "furnishings-3", "slug": "furnishings-item-3", "title": "Furnishings Item 3", "description": "Description for Furnishings item 3", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwba34431e/Pvy-a6Pg.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "table", "price": "120.00"
-    },
-    {
-      "id": "furnishings-4", "slug": "furnishings-item-4", "title": "Furnishings Item 4", "description": "Description for Furnishings item 4", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw7cbbee8f/thumbnail_wall_ic.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "bed", "price": "130.00"
-    },
-    {
-      "id": "furnishings-5", "slug": "furnishings-item-5", "title": "Furnishings Item 5", "description": "Description for Furnishings item 5", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwb827a46b/thumbnail_ceiling.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "desk", "price": "140.00"
-    },
-    {
-      "id": "furnishings-6", "slug": "furnishings-item-6", "title": "Furnishings Item 6", "description": "Description for Furnishings item 6", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwa35664f8/thumbnail_bellhop_portable.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "bookcase", "price": "150.00"
-    },
-    {
-      "id": "furnishings-7", "slug": "furnishings-item-7", "title": "Furnishings Item 7", "description": "Description for Furnishings item 7", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw63ba4ca6/In_Vitro.png?sw=100&bgcolor=FFFFFF00", "imageHint": "ottoman", "price": "160.00"
-    },
-    {
-      "id": "furnishings-8", "slug": "furnishings-item-8", "title": "Furnishings Item 8", "description": "Description for Furnishings item 8", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw0f01605f/thumbnail_bellhop-glass.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "stool", "price": "170.00"
-    },
-    {
-      "id": "furnishings-9", "slug": "furnishings-item-9", "title": "Furnishings Item 9", "description": "Description for Furnishings item 9", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwd6474888/7Ua2XdZwee.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "bench", "price": "180.00"
-    },
-    {
-      "id": "furnishings-10", "slug": "furnishings-item-10", "title": "Furnishings Item 10", "description": "Description for Furnishings item 10", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw265dcf5a/thumbnail_spareparts.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "console", "price": "190.00"
-    },
-    {
-      "id": "furnishings-11", "slug": "furnishings-item-11", "title": "Furnishings Item 11", "description": "Description for Furnishings item 11", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw55f25104/thumbnail_bonjour.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "sideboard", "price": "200.00"
-    },
-    {
-      "id": "furnishings-12", "slug": "furnishings-item-12", "title": "Furnishings Item 12", "description": "Description for Furnishings item 12", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwcf195b8d/Voce%20di%20men%C3%B9%20-%20Gift%20Guide.png?sw=100&bgcolor=FFFFFF00", "imageHint": "cabinet", "price": "210.00"
-    },
-    {
-      "id": "furnishings-13", "slug": "furnishings-item-13", "title": "Furnishings Item 13", "description": "Description for Furnishings item 13", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw4279a944/MicrosoftTeams-image%20(23).png?sw=480&bgcolor=FFFFFF00", "imageHint": "dresser", "price": "220.00"
-    },
-    {
-      "id": "furnishings-14", "slug": "furnishings-item-14", "title": "Furnishings Item 14", "description": "Description for Furnishings item 14", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw0dc637f0/rooms-living-room-flos-entrance-mobile_02.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "nightstand", "price": "230.00"
-    },
-    {
-      "id": "furnishings-15", "slug": "furnishings-item-15", "title": "Furnishings Item 15", "description": "Description for Furnishings item 15", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw9e40832d/thumbnail_bedroom.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "wardrobe", "price": "240.00"
-    },
-    {
-      "id": "furnishings-16", "slug": "furnishings-item-16", "title": "Furnishings Item 16", "description": "Description for Furnishings item 16", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwe2ec5e3d/thumbnail_ding.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "screen", "price": "250.00"
-    },
-    {
-      "id": "lighting-hero", "slug": "lighting-hero", "description": "Hero image for Lighting.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw18c44a88/homepage/Hero_/Hero_HP_d_bonjour.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "designer lighting"
-    },
-    {
-      "id": "lighting-1", "slug": "lighting-item-1", "title": "Lighting Item 1", "description": "Description for Lighting item 1", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw9d231c85/homepage/Slider%20Big/slider_big_ceramique.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "pendant light", "price": "100.00"
-    },
-    {
-      "id": "lighting-2", "slug": "lighting-item-2", "title": "Lighting Item 2", "description": "Description for Lighting item 2", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw162a2189/homepage/Slider%20Big/slider_big_bellhop-glass.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "chandelier", "price": "110.00"
-    },
-    {
-      "id": "lighting-3", "slug": "lighting-item-3", "title": "Lighting Item 3", "description": "Description for Lighting item 3", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw32e69c6b/homepage/Slider%20Big/slider_big_snoopy_blu.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "sconce", "price": "120.00"
-    },
-    {
-      "id": "lighting-4", "slug": "lighting-item-4", "title": "Lighting Item 4", "description": "Description for Lighting item 4", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwe92b490b/homepage/Editorial%20Block/slider_editorial_MAYDAY.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "lamp", "price": "130.00"
-    },
-    {
-      "id": "lighting-5", "slug": "lighting-item-5", "title": "Lighting Item 5", "description": "Description for Lighting item 5", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw85d2c96c/homepage/clp-pendant-mobile-ok.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "floor lamp", "price": "140.00"
-    },
-    {
-      "id": "lighting-6", "slug": "lighting-item-6", "title": "Lighting Item 6", "description": "Description for Lighting item 6", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw44e2c0c6/homepage/clp-ceiling-wall-mobile-ok.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "table lamp", "price": "150.00"
-    },
-    {
-      "id": "lighting-7", "slug": "lighting-item-7", "title": "Lighting Item 7", "description": "Description for Lighting item 7", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw9ed77ba4/oH3fCDNw.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "desk lamp", "price": "160.00"
-    },
-    {
-      "id": "lighting-8", "slug": "lighting-item-8", "title": "Lighting Item 8", "description": "Description for Lighting item 8", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw5a5ce7c1/HzLhtxfA.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "track light", "price": "170.00"
-    },
-    {
-      "id": "lighting-9", "slug": "lighting-item-9", "title": "Lighting Item 9", "description": "Description for Lighting item 9", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwba34431e/Pvy-a6Pg.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "recessed light", "price": "180.00"
-    },
-    {
-      "id": "lighting-10", "slug": "lighting-item-10", "title": "Lighting Item 10", "description": "Description for Lighting item 10", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw7cbbee8f/thumbnail_wall_ic.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "outdoor light", "price": "190.00"
-    },
-    {
-      "id": "lighting-11", "slug": "lighting-item-11", "title": "Lighting Item 11", "description": "Description for Lighting item 11", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwb827a46b/thumbnail_ceiling.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "landscape light", "price": "200.00"
-    },
-    {
-      "id": "lighting-12", "slug": "lighting-item-12", "title": "Lighting Item 12", "description": "Description for Lighting item 12", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwa35664f8/thumbnail_bellhop_portable.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "string light", "price": "210.00"
-    },
-    {
-      "id": "lighting-13", "slug": "lighting-item-13", "title": "Lighting Item 13", "description": "Description for Lighting item 13", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw63ba4ca6/In_Vitro.png?sw=100&bgcolor=FFFFFF00", "imageHint": "led strip", "price": "220.00"
-    },
-    {
-      "id": "lighting-14", "slug": "lighting-item-14", "title": "Lighting Item 14", "description": "Description for Lighting item 14", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw0f01605f/thumbnail_bellhop-glass.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "smart bulb", "price": "230.00"
-    },
-    {
-      "id": "lighting-15", "slug": "lighting-item-15", "title": "Lighting Item 15", "description": "Description for Lighting item 15", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwd6474888/7Ua2XdZwee.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "dimmer", "price": "240.00"
-    },
-    {
-      "id": "lighting-16", "slug": "lighting-item-16", "title": "Lighting Item 16", "description": "Description for Lighting item 16", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw265dcf5a/thumbnail_spareparts.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "switch", "price": "250.00"
-    },
-    {
-      "id": "wall-decor-hero", "slug": "wall-decor-hero", "description": "Hero image for Wall Decor.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw55f25104/thumbnail_bonjour.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "art gallery"
-    },
-    {
-      "id": "wall-decor-1", "slug": "wall-decor-item-1", "title": "Wall Decor Item 1", "description": "Description for Wall Decor item 1", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwcf195b8d/Voce%20di%20men%C3%B9%20-%20Gift%20Guide.png?sw=100&bgcolor=FFFFFF00", "imageHint": "painting", "price": "100.00"
-    },
-    {
-      "id": "wall-decor-2", "slug": "wall-decor-item-2", "title": "Wall Decor Item 2", "description": "Description for Wall Decor item 2", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw4279a944/MicrosoftTeams-image%20(23).png?sw=480&bgcolor=FFFFFF00", "imageHint": "print", "price": "110.00"
-    },
-    {
-      "id": "wall-decor-3", "slug": "wall-decor-item-3", "title": "Wall Decor Item 3", "description": "Description for Wall Decor item 3", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw0dc637f0/rooms-living-room-flos-entrance-mobile_02.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "photograph", "price": "120.00"
-    },
-    {
-      "id": "wall-decor-4", "slug": "wall-decor-item-4", "title": "Wall Decor Item 4", "description": "Description for Wall Decor item 4", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw9e40832d/thumbnail_bedroom.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "poster", "price": "130.00"
-    },
-    {
-      "id": "wall-decor-5", "slug": "wall-decor-item-5", "title": "Wall Decor Item 5", "description": "Description for Wall Decor item 5", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwe2ec5e3d/thumbnail_ding.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "tapestry", "price": "140.00"
-    },
-    {
-      "id": "wall-decor-6", "slug": "wall-decor-item-6", "title": "Wall Decor Item 6", "description": "Description for Wall Decor item 6", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw9d892ab3/thumbnail_kitchen.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "mural", "price": "150.00"
-    },
-    {
-      "id": "wall-decor-7", "slug": "wall-decor-item-7", "title": "Wall Decor Item 7", "description": "Description for Wall Decor item 7", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwca54d1c7/thumbnail_workspace.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "decal", "price": "160.00"
-    },
-    {
-      "id": "wall-decor-8", "slug": "wall-decor-item-8", "title": "Wall Decor Item 8", "description": "Description for Wall Decor item 8", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw15e5a836/thumbnail_room_outdoor.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "mirror", "price": "170.00"
-    },
-    {
-      "id": "wall-decor-9", "slug": "wall-decor-item-9", "title": "Wall Decor Item 9", "description": "Description for Wall Decor item 9", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwf950381e/Flos%20toio.jpg?sw=480&bgcolor=FFFFFF", "imageHint": "shelf", "price": "180.00"
-    },
-    {
-      "id": "wall-decor-10", "slug": "wall-decor-item-10", "title": "Wall Decor Item 10", "description": "Description for Wall Decor item 10", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw55034b33/homepage/Hero_/Hero_desk_invitro.jpg?sw=1920&bgcolor=FFFFFF", "imageHint": "clock", "price": "190.00"
-    },
-    {
-      "id": "wall-decor-11", "slug": "wall-decor-item-11", "title": "Wall Decor Item 11", "description": "Description for Wall Decor item 11", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw9ed77ba4/oH3fCDNw.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "sconce", "price": "200.00"
-    },
-    {
-      "id": "wall-decor-12", "slug": "wall-decor-item-12", "title": "Wall Decor Item 12", "description": "Description for Wall Decor item 12", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw5a5ce7c1/HzLhtxfA.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "plate", "price": "210.00"
-    },
-    {
-      "id": "wall-decor-13", "slug": "wall-decor-item-13", "title": "Wall Decor Item 13", "description": "Description for Wall Decor item 13", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwba34431e/Pvy-a6Pg.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "basket", "price": "220.00"
-    },
-    {
-      "id": "wall-decor-14", "slug": "wall-decor-item-14", "title": "Wall Decor Item 14", "description": "Description for Wall Decor item 14", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw7cbbee8f/thumbnail_wall_ic.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "macrame", "price": "230.00"
-    },
-    {
-      "id": "wall-decor-15", "slug": "wall-decor-item-15", "title": "Wall Decor Item 15", "description": "Description for Wall Decor item 15", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwb827a46b/thumbnail_ceiling.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "frame", "price": "240.00"
-    },
-    {
-      "id": "wall-decor-16", "slug": "wall-decor-item-16", "title": "Wall Decor Item 16", "description": "Description for Wall Decor item 16", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwa35664f8/thumbnail_bellhop_portable.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "art", "price": "250.00"
-    },
-    {
-      "id": "accessories-hero", "slug": "accessories-hero", "description": "Hero image for Accessories.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw63ba4ca6/In_Vitro.png?sw=100&bgcolor=FFFFFF00", "imageHint": "fashion accessories"
-    },
-    {
-      "id": "accessories-1", "slug": "accessories-item-1", "title": "Accessories Item 1", "description": "Description for Accessories item 1", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw0f01605f/thumbnail_bellhop-glass.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "scarf", "price": "100.00"
-    },
-    {
-      "id": "accessories-2", "slug": "accessories-item-2", "title": "Accessories Item 2", "description": "Description for Accessories item 2", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwd6474888/7Ua2XdZwee.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "hat", "price": "110.00"
-    },
-    {
-      "id": "accessories-3", "slug": "accessories-item-3", "title": "Accessories Item 3", "description": "Description for Accessories item 3", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw265dcf5a/thumbnail_spareparts.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "gloves", "price": "120.00"
-    },
-    {
-      "id": "accessories-4", "slug": "accessories-item-4", "title": "Accessories Item 4", "description": "Description for Accessories item 4", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw55f25104/thumbnail_bonjour.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "belt", "price": "130.00"
-    },
-    {
-      "id": "accessories-5", "slug": "accessories-item-5", "title": "Accessories Item 5", "description": "Description for Accessories item 5", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwcf195b8d/Voce%20di%20men%C3%B9%20-%20Gift%20Guide.png?sw=100&bgcolor=FFFFFF00", "imageHint": "sunglasses", "price": "140.00"
-    },
-    {
-      "id": "accessories-6", "slug": "accessories-item-6", "title": "Accessories Item 6", "description": "Description for Accessories item 6", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw4279a944/MicrosoftTeams-image%20(23).png?sw=480&bgcolor=FFFFFF00", "imageHint": "watch", "price": "150.00"
-    },
-    {
-      "id": "accessories-7", "slug": "accessories-item-7", "title": "Accessories Item 7", "description": "Description for Accessories item 7", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw0dc637f0/rooms-living-room-flos-entrance-mobile_02.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "jewelry", "price": "160.00"
-    },
-    {
-      "id": "accessories-8", "slug": "accessories-item-8", "title": "Accessories Item 8", "description": "Description for Accessories item 8", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw9e40832d/thumbnail_bedroom.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "bag", "price": "170.00"
-    },
-    {
-      "id": "accessories-9", "slug": "accessories-item-9", "title": "Accessories Item 9", "description": "Description for Accessories item 9", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwe2ec5e3d/thumbnail_ding.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "wallet", "price": "180.00"
-    },
-    {
-      "id": "accessories-10", "slug": "accessories-item-10", "title": "Accessories Item 10", "description": "Description for Accessories item 10", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw9d892ab3/thumbnail_kitchen.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "keychain", "price": "190.00"
-    },
-    {
-      "id": "accessories-11", "slug": "accessories-item-11", "title": "Accessories Item 11", "description": "Description for Accessories item 11", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwca54d1c7/thumbnail_workspace.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "phone case", "price": "200.00"
-    },
-    {
-      "id": "accessories-12", "slug": "accessories-item-12", "title": "Accessories Item 12", "description": "Description for Accessories item 12", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw15e5a836/thumbnail_room_outdoor.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "umbrella", "price": "210.00"
-    },
-    {
-      "id": "accessories-13", "slug": "accessories-item-13", "title": "Accessories Item 13", "description": "Description for Accessories item 13", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwf950381e/Flos%20toio.jpg?sw=480&bgcolor=FFFFFF", "imageHint": "hair tie", "price": "220.00"
-    },
-    {
-      "id": "accessories-14", "slug": "accessories-item-14", "title": "Accessories Item 14", "description": "Description for Accessories item 14", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw55034b33/homepage/Hero_/Hero_desk_invitro.jpg?sw=1920&bgcolor=FFFFFF", "imageHint": "headband", "price": "230.00"
-    },
-    {
-      "id": "accessories-15", "slug": "accessories-item-15", "title": "Accessories Item 15", "description": "Description for Accessories item 15", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw700a9232/homepage/Slider/slider_SELECTION-2.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "earrings", "price": "240.00"
-    },
-    {
-      "id": "accessories-16", "slug": "accessories-item-16", "title": "Accessories Item 16", "description": "Description for Accessories item 16", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwec270fdf/homepage/Slider/slider_SELECTION.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "necklace", "price": "250.00"
-    },
-    {
-      "id": "candlelight-apothecary-hero", "slug": "candlelight-apothecary-hero", "description": "Hero for Candlelight & Apothecary.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwb6255b3f/homepage/Slider/slider_SELECTION-4.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "apothecary shelf"
-    },
-    {
-      "id": "candlelight-apothecary-1", "slug": "ca-item-1", "title": "C&A Item 1", "description": "Description for C&A item 1", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dweb542b36/homepage/Slider/slider_SELECTION-3.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "candle", "price": "100.00"
-    },
-    {
-      "id": "candlelight-apothecary-2", "slug": "ca-item-2", "title": "C&A Item 2", "description": "Description for C&A item 2", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw2766e427/homepage/Slider/slider_SELECTION-5.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "soap", "price": "110.00"
-    },
-    {
-      "id": "candlelight-apothecary-3", "slug": "ca-item-3", "title": "C&A Item 3", "description": "Description for C&A item 3", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw27e09636/homepage/Slider/slider_SELECTION-1.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "lotion", "price": "120.00"
-    },
-    {
-      "id": "candlelight-apothecary-4", "slug": "ca-item-4", "title": "C&A Item 4", "description": "Description for C&A item 4", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw9ed77ba4/oH3fCDNw.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "oil", "price": "130.00"
-    },
-    {
-      "id": "candlelight-apothecary-5", "slug": "ca-item-5", "title": "C&A Item 5", "description": "Description for C&A item 5", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw5a5ce7c1/HzLhtxfA.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "bath bomb", "price": "140.00"
-    },
-    {
-      "id": "candlelight-apothecary-6", "slug": "ca-item-6", "title": "C&A Item 6", "description": "Description for C&A item 6", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwba34431e/Pvy-a6Pg.jpeg?sw=100&bgcolor=FFFFFF", "imageHint": "salt scrub", "price": "150.00"
-    },
-    {
-      "id": "candlelight-apothecary-7", "slug": "ca-item-7", "title": "C&A Item 7", "description": "Description for C&A item 7", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw7cbbee8f/thumbnail_wall_ic.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "perfume", "price": "160.00"
-    },
-    {
-      "id": "candlelight-apothecary-8", "slug": "ca-item-8", "title": "C&A Item 8", "description": "Description for C&A item 8", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwb827a46b/thumbnail_ceiling.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "incense", "price": "170.00"
-    },
-    {
-      "id": "candlelight-apothecary-9", "slug": "ca-item-9", "title": "C&A Item 9", "description": "Description for C&A item 9", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwa35664f8/thumbnail_bellhop_portable.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "diffuser", "price": "180.00"
-    },
-    {
-      "id": "candlelight-apothecary-10", "slug": "ca-item-10", "title": "C&A Item 10", "description": "Description for C&A item 10", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw63ba4ca6/In_Vitro.png?sw=100&bgcolor=FFFFFF00", "imageHint": "potpourri", "price": "190.00"
-    },
-    {
-      "id": "candlelight-apothecary-11", "slug": "ca-item-11", "title": "C&A Item 11", "description": "Description for C&A item 11", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw0f01605f/thumbnail_bellhop-glass.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "sachet", "price": "200.00"
-    },
-    {
-      "id": "candlelight-apothecary-12", "slug": "ca-item-12", "title": "C&A Item 12", "description": "Description for C&A item 12", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwd6474888/7Ua2XdZwee.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "tincture", "price": "210.00"
-    },
-    {
-      "id": "candlelight-apothecary-13", "slug": "ca-item-13", "title": "C&A Item 13", "description": "Description for C&A item 13", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw265dcf5a/thumbnail_spareparts.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "herb", "price": "220.00"
-    },
-    {
-      "id": "candlelight-apothecary-14", "slug": "ca-item-14", "title": "C&A Item 14", "description": "Description for C&A item 14", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw55f25104/thumbnail_bonjour.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "elixir", "price": "230.00"
-    },
-    {
-      "id": "candlelight-apothecary-15", "slug": "ca-item-15", "title": "C&A Item 15", "description": "Description for C&A item 15", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwcf195b8d/Voce%20di%20men%C3%B9%20-%20Gift%20Guide.png?sw=100&bgcolor=FFFFFF00", "imageHint": "potion", "price": "240.00"
-    },
-    {
-      "id": "candlelight-apothecary-16", "slug": "ca-item-16", "title": "C&A Item 16", "description": "Description for C&A item 16", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw4279a944/MicrosoftTeams-image%20(23).png?sw=480&bgcolor=FFFFFF00", "imageHint": "remedy", "price": "250.00"
-    },
-    {
-      "id": "sale-hero", "slug": "sale-hero", "description": "Hero image for Sale.", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw0dc637f0/rooms-living-room-flos-entrance-mobile_02.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "sale sign"
-    },
-    {
-      "id": "sale-1", "slug": "sale-item-1", "title": "Sale Item 1", "description": "Description for Sale item 1", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw9e40832d/thumbnail_bedroom.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "sale tag", "price": "100.00"
-    },
-    {
-      "id": "sale-2", "slug": "sale-item-2", "title": "Sale Item 2", "description": "Description for Sale item 2", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwe2ec5e3d/thumbnail_ding.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "discount", "price": "110.00"
-    },
-    {
-      "id": "sale-3", "slug": "sale-item-3", "title": "Sale Item 3", "description": "Description for Sale item 3", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw9d892ab3/thumbnail_kitchen.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "clearance", "price": "120.00"
-    },
-    {
-      "id": "sale-4", "slug": "sale-item-4", "title": "Sale Item 4", "description": "Description for Sale item 4", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwca54d1c7/thumbnail_workspace.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "offer", "price": "130.00"
-    },
-    {
-      "id": "sale-5", "slug": "sale-item-5", "title": "Sale Item 5", "description": "Description for Sale item 5", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dw15e5a836/thumbnail_room_outdoor.jpg?sw=100&bgcolor=FFFFFF", "imageHint": "bargain", "price": "140.00"
-    },
-    {
-      "id": "sale-6", "slug": "sale-item-6", "title": "Sale Item 6", "description": "Description for Sale item 6", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Sites-FLOS-storefront-EU/default/dwf950381e/Flos%20toio.jpg?sw=480&bgcolor=FFFFFF", "imageHint": "deal", "price": "150.00"
-    },
-    {
-      "id": "sale-7", "slug": "sale-item-7", "title": "Sale Item 7", "description": "Description for Sale item 7", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw55034b33/homepage/Hero_/Hero_desk_invitro.jpg?sw=1920&bgcolor=FFFFFF", "imageHint": "special", "price": "160.00"
-    },
-    {
-      "id": "sale-8", "slug": "sale-item-8", "title": "Sale Item 8", "description": "Description for Sale item 8", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw700a9232/homepage/Slider/slider_SELECTION-2.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "promotion", "price": "170.00"
-    },
-    {
-      "id": "sale-9", "slug": "sale-item-9", "title": "Sale Item 9", "description": "Description for Sale item 9", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwec270fdf/homepage/Slider/slider_SELECTION.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "reduction", "price": "180.00"
-    },
-    {
-      "id": "sale-10", "slug": "sale-item-10", "title": "Sale Item 10", "description": "Description for Sale item 10", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dwb6255b3f/homepage/Slider/slider_SELECTION-4.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "markdown", "price": "190.00"
-    },
-    {
-      "id": "sale-11", "slug": "sale-item-11", "title": "Sale Item 11", "description": "Description for Sale item 11", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dweb542b36/homepage/Slider/slider_SELECTION-3.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "savings", "price": "200.00"
-    },
-    {
-      "id": "sale-12", "slug": "sale-item-12", "title": "Sale Item 12", "description": "Description for Sale item 12", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw2766e427/homepage/Slider/slider_SELECTION-5.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "steal", "price": "210.00"
-    },
-    {
-      "id": "sale-13", "slug": "sale-item-13", "title": "Sale Item 13", "description": "Description for Sale item 13", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw27e09636/homepage/Slider/slider_SELECTION-1.jpg?sw=500&bgcolor=FFFFFF", "imageHint": "bargain", "price": "220.00"
-    },
-    {
-      "id": "sale-14", "slug": "sale-item-14", "title": "Sale Item 14", "description": "Description for Sale item 14", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw18c44a88/homepage/Hero_/Hero_HP_d_bonjour.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "deal", "price": "230.00"
-    },
-    {
-      "id": "sale-15", "slug": "sale-item-15", "title": "Sale Item 15", "description": "Description for Sale item 15", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw9d231c85/homepage/Slider%20Big/slider_big_ceramique.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "special", "price": "240.00"
-    },
-    {
-      "id": "sale-16", "slug": "sale-item-16", "title": "Sale Item 16", "description": "Description for Sale item 16", "imageUrl": "https://flos.com/dw/image/v2/BFXX_PRD/on/demandware.static/-/Library-Sites-FLOS-contentlib/default/dw162a2189/homepage/Slider%20Big/slider_big_bellhop-glass.jpg?sw=20&bgcolor=FFFFFF", "imageHint": "promotion", "price": "250.00"
     }
   ]
 }
