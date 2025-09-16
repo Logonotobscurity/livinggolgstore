@@ -4,8 +4,8 @@ import './globals.css';
 import './sun-banner.css';
 
 export const metadata: Metadata = {
-  title: 'Living Gold',
-  description: 'Luxury Interior Design',
+  title: 'About Living Gold — Luxury Lighting & Chandeliers (Nigeria)',
+  description: 'Living Gold curates and imports luxury lighting and chandeliers from ateliers around the world. Based in Nigeria, we deliver bespoke lighting solutions and trade services for designers, architects, and discerning homeowners.',
 };
 
 export default function RootLayout({
