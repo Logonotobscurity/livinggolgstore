@@ -17,7 +17,7 @@ export function RelatedProductCard({ product, className }: RelatedProductCardPro
     if (!price) return null;
     const priceNumber = parseFloat(price);
     if (isNaN(priceNumber)) return price;
-    return `$${priceNumber.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+    return `Est. ₦${priceNumber.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
   }
   
   return (

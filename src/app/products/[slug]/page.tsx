@@ -1,4 +1,5 @@
 
+
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -22,6 +23,12 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
   }
 
   const relatedProducts = PlaceHolderImages.filter(p => p.id.startsWith('lighting') && p.slug !== product.slug).slice(0, 4);
+  const formatPrice = (price?: string) => {
+    if (!price) return 'Contact for price';
+    const priceNumber = parseFloat(price);
+    if (isNaN(priceNumber)) return 'Contact for price';
+    return `Est. ₦${priceNumber.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
+  }
 
   return (
     <div className="flex flex-col min-h-screen bg-black text-white">
@@ -52,11 +59,11 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
               <span className="ml-3 text-sm text-gray-400">(12 Reviews)</span>
             </div>
 
-            <p className="text-3xl md:text-4xl font-bold text-primary mb-8">$199.99</p>
+            <p className="text-3xl md:text-4xl font-bold text-primary mb-8">{formatPrice(product.price)}</p>
 
-            <div className="flex items-center gap-4 mb-8">
-                <Button size="lg" className="flex-grow" showIcon>Add to Cart</Button>
-                <Button size="lg" variant="outline" className="w-auto aspect-square p-0">
+            <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
+                <Button size="lg" className="w-full sm:w-auto flex-grow" showIcon>Add to Cart</Button>
+                <Button size="lg" variant="outline" className="w-full sm:w-auto">
                     <Heart className="w-6 h-6" />
                 </Button>
             </div>
