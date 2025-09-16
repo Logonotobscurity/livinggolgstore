@@ -14,9 +14,21 @@ export default function Contact() {
             <div className="flex justify-center md:justify-start">
               <Socials />
             </div>
-            <div className="text-sm text-gray-400 space-y-2 mt-8">
-              <p><strong>Phone:</strong> <a href="tel:+17045551234" className="text-primary hover:underline">(704) 555-1234</a></p>
-              <p><strong>Email:</strong> <a href="mailto:hello@livinggold.com" className="text-primary hover:underline">hello@livinggold.com</a></p>
+            <div className="text-sm text-gray-400 space-y-4 mt-8">
+              <div>
+                <h4 className="font-bold text-white mb-2">Address</h4>
+                <p>Living Gold Lighting, Okpanam Road, Asaba, Delta State, Nigeria</p>
+              </div>
+              <div>
+                <h4 className="font-bold text-white mb-2">Phone</h4>
+                <p><a href="tel:+2347011131333" className="text-primary hover:underline">+234 701 113 1333</a></p>
+                <p><a href="tel:+2348064441141" className="text-primary hover:underline">+234 806 444 1141</a></p>
+                <p><a href="tel:+2348034291995" className="text-primary hover:underline">+234 803 429 1995</a> (Store)</p>
+              </div>
+               <div>
+                <h4 className="font-bold text-white mb-2">Email</h4>
+                <p><a href="mailto:hello@livinggold.com" className="text-primary hover:underline">hello@livinggold.com</a></p>
+              </div>
             </div>
           </div>
         </div>
