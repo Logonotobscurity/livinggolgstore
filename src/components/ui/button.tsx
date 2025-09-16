@@ -56,10 +56,6 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const color = variant === 'destructive' ? 'hsl(var(--destructive))' : 'hsl(var(--primary))';
     
     if (asChild) {
-      // When asChild is true, we can't add the icon wrapper here as it would violate
-      // the single child expectation of Slot. The child component needs to be structured correctly.
-      // A more robust solution might involve context or cloning the element with new props.
-      // For now, we assume the child will handle its own structure.
       return (
         <Comp
           className={cn(buttonVariants({ variant, size, className }))}

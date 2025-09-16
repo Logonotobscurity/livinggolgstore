@@ -109,6 +109,7 @@
     display: grid;
     place-items: center;
     overflow: hidden;
+    transition: color 0.3s ease-in-out;
   }
 
   .button:hover {
@@ -429,6 +430,7 @@
       border-top: 4px solid #e3e3e3
     }
   }
+
 
 
 
