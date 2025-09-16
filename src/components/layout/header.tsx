@@ -5,14 +5,16 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/co
 
 export default function Header() {
   const navLinks = [
-    { href: '/products/living-gold-finds', label: 'LIVING GOLD FINDS' },
-    { href: '/products/furnishings', label: 'FURNISHINGS' },
-    { href: '/products/lighting', label: 'LIGHTING' },
-    { href: '/products/tabletop', label: 'TABLETOP' },
-    { href: '/products/wall-decor', label: 'WALL DECOR' },
-    { href: '/products/accessories', label: 'ACCESSORIES' },
-    { href: '/products/candlelight-apothecary', label: 'CANDLELIGHT & APOTHECARY' },
-    { href: '/products/sale', label: 'SALE', className: 'text-red-500' },
+    { href: '/products/chandeliers-pendants', label: 'Chandeliers & Pendants' },
+    { href: '/products/table-lamps-portable-lights', label: 'Table Lamps & Portable Lights' },
+    { href: '/products/wall-sconces-vanity-lights', label: 'Wall Sconces & Vanity Lights' },
+    { href: '/products/outdoor-lighting', label: 'Outdoor Lighting' },
+    { href: '/products/ceiling-fans-with-lights', label: 'Ceiling Fans with Lights' },
+    { href: '/products/floor-lamps', label: 'Floor Lamps' },
+    { href: '/products/linear-suspension', label: 'Linear Suspension' },
+    { href: '/products/recessed-track-lighting', label: 'Recessed/Track Lighting' },
+    { href: '/products/specialty-lighting', label: 'Specialty Lighting' },
+    { href: '/products/room-settings', label: 'Room Settings', className: 'text-primary' },
   ];
 
   return (
@@ -106,12 +108,12 @@ export default function Header() {
       </div>
 
       <nav className="hidden md:flex justify-center items-center h-14">
-        <ul className="flex flex-wrap justify-center space-x-4 lg:space-x-10">
+        <ul className="flex flex-wrap justify-center space-x-4 lg:space-x-6">
           {navLinks.map((link) => (
              <li key={link.label}>
                 <Link 
                     href={link.href} 
-                    className={`text-xs lg:text-sm font-medium tracking-widest uppercase hover:text-primary transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1.5 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full ${link.className || ''}`}
+                    className={`text-xs lg:text-[11px] font-medium tracking-widest uppercase hover:text-primary transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1.5 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full ${link.className || ''}`}
                 >
                     {link.label}
                 </Link>
