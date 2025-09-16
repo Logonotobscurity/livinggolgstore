@@ -14,6 +14,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <div className="border-t border-primary/30" />
         <ProductCategories />
         <Lightscapes />
         <Lifestyle />
