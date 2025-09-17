@@ -15,12 +15,14 @@ import { useWishlist } from '@/context/wishlist-context';
 import ShareModal from '@/components/share-modal';
 import { useState } from 'react';
 import { ProductSupport } from '@/components/product-support';
+import { useToast } from '@/hooks/use-toast';
 
 export default function ProductPage({ params: { slug } }: { params: { slug: string } }) {
   const product = PlaceHolderImages.find((p) => p.slug === slug);
   const { addToCart } = useCart();
   const { toggleWishlist, isInWishlist } = useWishlist();
   const [isShareModalOpen, setShareModalOpen] = useState(false);
+  const { toast } = useToast();
 
   if (!product) {
     notFound();
@@ -43,9 +45,14 @@ export default function ProductPage({ params: { slug } }: { params: { slug: stri
       price: parseFloat(product.price || '0'),
       slug: product.slug,
     });
+    toast({
+      title: 'Added to Cart',
+      description: product.title,
+    });
   };
 
   const handleWishlistToggle = () => {
+    const wasInWishlist = isInWishlist(product.id);
     toggleWishlist({
       id: product.id,
       name: product.title || 'Product Name Not Available',
@@ -53,6 +60,10 @@ export default function ProductPage({ params: { slug } }: { params: { slug: stri
       image: product.imageUrl,
       price: parseFloat(product.price || '0'),
       slug: product.slug,
+    });
+    toast({
+      title: wasInWishlist ? 'Removed from Wishlist' : 'Added to Wishlist',
+      description: product.title,
     });
   };
 
