@@ -8,15 +8,12 @@ import { Icons } from '@/components/icons';
 import { useCart } from '@/context/cart-context';
 import { useWishlist } from '@/context/wishlist-context';
 import { NewMenuIcon } from '@/components/new-menu-icon';
-import { useWaitlist } from '@/context/waitlist-context';
 import NavMenu from './nav-menu';
 
 export default function Header() {
   const { totalItemsCount } = useCart();
   const { wishlistItems } = useWishlist();
-  const { waitlistItems } = useWaitlist();
   const wishlistItemCount = wishlistItems.length;
-  const waitlistItemCount = waitlistItems.length;
 
   return (
     <header className="sticky top-0 z-50 w-full bg-black text-white">
@@ -76,18 +73,6 @@ export default function Header() {
                 className="p-2 rounded-full hover:bg-accent block"
               >
                 <Icons.mail className="h-6 w-6" />
-            </Link>
-             <Link
-                href="/waitlist"
-                aria-label="Waitlist"
-                className="p-2 rounded-full hover:bg-accent block relative"
-              >
-                <Icons.clipboardList className="h-6 w-6" />
-                 {waitlistItemCount > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs rounded-full h-4 w-4 flex items-center justify-center">
-                    {waitlistItemCount}
-                  </span>
-                )}
             </Link>
             <Link
                 href="/wishlist"
