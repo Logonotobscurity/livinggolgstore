@@ -51,7 +51,7 @@ export default function WishlistPage() {
                                 <div className="relative w-full aspect-square mb-4">
                                     <Image src={item.image} alt={item.name} fill className="object-contain rounded-md" />
                                 </div>
-                                <h3 className="font-bold h-12">{item.name}</h3>
+                                <h3 className="font-headline text-base uppercase tracking-wider text-white h-12 flex items-center justify-center mb-2">{item.name}</h3>
                                 <p className="text-sm text-gray-400 mb-2">SKU: {item.sku}</p>
                                 <p className="font-semibold text-primary">{formatPrice(item.price)}</p>
                                 </Link>

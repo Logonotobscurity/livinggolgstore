@@ -53,9 +53,8 @@ export function CategoryCard({
               />
             </div>
           </div>
-          <h3 className="category-label text-xs md:text-sm font-medium tracking-[0.1em] md:tracking-[0.15em] uppercase text-yellow-300 relative transition-all duration-300 ease-in-out group-hover:text-primary group-hover:-translate-y-0.5 group-hover:text-shadow-[0_4px_8px_rgba(0,0,0,0.2)] group-focus-visible:text-primary group-focus-visible:-translate-y-0.5 group-focus-visible:text-shadow-[0_4px_8px_rgba(0,0,0,0.2)]">
+          <h3 className="font-headline text-base uppercase tracking-wider text-white h-10 flex items-center justify-center">
             {category.title}
-            <span className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 w-10 h-px bg-primary scale-x-0 group-hover:scale-x-100 group-focus-visible:scale-x-100 transition-transform duration-300 ease-in-out"></span>
           </h3>
         </>
       </Link>
