@@ -7,6 +7,7 @@ import './globals.css';
 import './sun-banner.css';
 import './socials.css';
 import './new-menu-icon.css';
+import { SessionReminder } from '@/components/session-reminder';
 
 export const metadata: Metadata = {
   title: 'About Living Gold — Luxury Lighting & Chandeliers (Nigeria)',
@@ -38,6 +39,7 @@ export default function RootLayout({
               <div>
                 {children}
                 <Toaster />
+                <SessionReminder />
               </div>
           </WishlistProvider>
         </CartProvider>
