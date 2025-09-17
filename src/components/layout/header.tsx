@@ -16,21 +16,21 @@ export default function Header() {
           <nav className="flex items-center space-x-4">
             <Link
               href="/about"
-              className="link-underline hover:text-primary transition-colors"
+              className="link-underline transition-colors"
             >
               About
             </Link>
             <span className="text-gray-500">|</span>
             <Link
               href="/design-studio"
-              className="link-underline hovertext-primary transition-colors"
+              className="link-underline transition-colors"
             >
               Design Studio
             </Link>
             <span className="text-gray-500">|</span>
             <Link
               href="/contact"
-              className="link-underline hovertext-primary transition-colors"
+              className="link-underline transition-colors"
             >
               Contact
             </Link>
@@ -71,7 +71,7 @@ export default function Header() {
                 <Icons.shoppingCart className="h-6 w-6" />
               </Link>
               <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs rounded-full h-4 w-4 flex items-center justify-center">
-                0
+                1
               </span>
             </div>
           </div>

@@ -1,4 +1,6 @@
 
+'use client';
+
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -8,15 +10,11 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { RelatedProductCard } from '@/components/related-product-card';
 import { cn } from '@/lib/utils';
-
-export async function generateStaticParams() {
-  return PlaceHolderImages.map((product) => ({
-    slug: product.slug,
-  }));
-}
+import { useState } from 'react';
 
 export default function ProductPage({ params }: { params: { slug: string } }) {
   const product = PlaceHolderImages.find((p) => p.slug === params.slug);
+  const [isFavorited, setIsFavorited] = useState(false);
 
   if (!product) {
     notFound();
@@ -28,6 +26,14 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
     const priceNumber = parseFloat(price);
     if (isNaN(priceNumber)) return 'Contact for price';
     return `Est. ₦${priceNumber.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
+  }
+
+  // This is a placeholder for a function that would generate static paths
+  // if this were a real application with dynamic routing.
+  async function generateStaticParams() {
+    return PlaceHolderImages.map((product) => ({
+      slug: product.slug,
+    }));
   }
 
   return (
@@ -49,7 +55,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
             <p className="text-lg md:text-xl text-gray-400 mb-6">{product.description}</p>
             
             <div className="flex items-center mb-6">
-              <div className="flex items-center text-yellow-500">
+              <div className="flex items-center">
                 <Icons.star className="w-5 h-5 fill-current" />
                 <Icons.star className="w-5 h-5 fill-current" />
                 <Icons.star className="w-5 h-5 fill-current" />
@@ -63,8 +69,15 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
             <div className="flex items-stretch gap-4 mb-8">
                 <Button variant="destructive" size="lg" className="flex-grow" showIcon>Add to Cart</Button>
-                <Button variant="outline" size="icon" aria-label="Add to wishlist" className="w-12 h-12">
-                    <Icons.heart className={cn("w-6 h-6")} />
+                <Button 
+                  variant="outline" 
+                  size="icon" 
+                  aria-label="Add to wishlist" 
+                  className="w-12 h-12"
+                  onClick={() => setIsFavorited(!isFavorited)}
+                  aria-pressed={isFavorited}
+                >
+                    <Icons.heart className={cn("w-6 h-6", { "fill-current text-primary": isFavorited })} />
                 </Button>
             </div>
 

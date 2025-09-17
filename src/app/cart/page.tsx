@@ -93,7 +93,7 @@ export default function CartPage() {
                                     <p>{formatPrice(item.price * item.quantity)}</p>
                                 </div>
                                 <div className="col-span-1 text-right">
-                                    <Button variant="ghost" size="icon" className="text-gray-400 hover:text-white" onClick={() => handleRemoveItem(item.id)}>
+                                    <Button variant="ghost" size="icon" onClick={() => handleRemoveItem(item.id)}>
                                         <Icons.trash className="h-5 w-5" />
                                     </Button>
                                 </div>
