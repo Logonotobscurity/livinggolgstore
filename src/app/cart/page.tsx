@@ -69,29 +69,35 @@ export default function CartPage() {
                     {/* Cart Items */}
                     <div className="space-y-8">
                         {cartItems.map(item => (
-                            <div key={item.id} className="grid grid-cols-12 items-center gap-4 border-b border-gray-700 pb-8">
-                                <div className="col-span-2">
-                                    <Image src={item.image} alt={item.name} width={80} height={80} className="rounded-md bg-secondary p-2" />
+                            <div key={item.id} className="grid grid-cols-4 md:grid-cols-12 items-center gap-4 border-b border-gray-700 pb-8">
+                                <div className="col-span-1">
+                                    <Image src={item.image} alt={item.name} width={80} height={80} className="rounded-md bg-secondary p-2 w-full aspect-square object-contain" />
                                 </div>
-                                <div className="col-span-6">
+                                <div className="col-span-3 md:col-span-6">
                                     <h3 className="font-bold">{item.name}</h3>
                                     <p className="text-sm text-gray-400">SKU: {item.sku}</p>
-                                    <button onClick={() => handleMoveToWishlist(item)} className="text-sm text-primary hover:underline mt-2">
-                                      Move to Wishlist
-                                    </button>
+                                    <div className="flex items-center mt-4 md:mt-2">
+                                      <button onClick={() => handleMoveToWishlist(item)} className="text-sm text-primary hover:underline">
+                                        Move to Wishlist
+                                      </button>
+                                      <span className="mx-2 text-gray-500">|</span>
+                                      <button onClick={() => removeFromCart(item.id)} className="text-sm text-destructive hover:underline">
+                                          Remove
+                                      </button>
+                                    </div>
                                 </div>
-                                <div className="col-span-3 flex items-center gap-2">
-                                    <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => handleQuantityChange(item.id, item.quantity - 1)}>
-                                        <Icons.minus className="h-4 w-4" />
-                                    </Button>
-                                    <Input type="text" readOnly value={item.quantity} className="w-12 text-center bg-transparent" />
-                                    <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => handleQuantityChange(item.id, item.quantity + 1)}>
-                                        <Icons.plus className="h-4 w-4" />
-                                    </Button>
-                                </div>
-                                <div className="col-span-1 text-right">
-                                    <Button variant="ghost" size="icon" onClick={() => removeFromCart(item.id)}>
-                                        <Icons.trash className="h-5 w-5" />
+                                <div className="col-span-4 md:col-span-5 flex items-center justify-between gap-2 border-t border-gray-800 md:border-none pt-4 md:pt-0">
+                                    <div className="flex items-center gap-2">
+                                      <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => handleQuantityChange(item.id, item.quantity - 1)}>
+                                          <Icons.minus className="h-4 w-4" />
+                                      </Button>
+                                      <Input type="text" readOnly value={item.quantity} className="w-12 text-center bg-transparent" />
+                                      <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => handleQuantityChange(item.id, item.quantity + 1)}>
+                                          <Icons.plus className="h-4 w-4" />
+                                      </Button>
+                                    </div>
+                                    <Button variant="ghost" size="icon" onClick={() => removeFromCart(item.id)} className="md:hidden">
+                                        <Icons.trash className="h-5 w-5 text-destructive" />
                                     </Button>
                                 </div>
                             </div>
@@ -111,7 +117,7 @@ export default function CartPage() {
                             </div>
                         </div>
 
-                        <div className="mt-8 flex justify-end gap-4">
+                        <div className="mt-8 flex flex-col sm:flex-row justify-end gap-4">
                             <Button variant="outline" asChild>
                                 <Link href="/">Continue Shopping</Link>
                             </Button>
