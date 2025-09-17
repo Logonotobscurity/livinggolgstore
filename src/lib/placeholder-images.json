@@ -538,19 +538,19 @@
       "imageHint": "floor lamp"
     },
     {
-      "id": "lightscape-1",
-      "slug": "outdoor-patio-dusk",
-      "title": "Patio at Dusk",
-      "description": "Beautifully lit outdoor patio area at dusk.",
-      "imageUrl": "https://images.lumens.com/is/image/Lumens/uu126021_alt09?$Lumens.com-PRP-large$",
-      "imageHint": "outdoor lighting"
+        "id": "lightscape-1",
+        "slug": "outdoor-patio-dusk",
+        "title": "Patio at Dusk",
+        "description": "Beautifully lit outdoor patio area at dusk.",
+        "imageUrl": "https://images.unsplash.com/photo-1595407660626-db35dcd16609?w=1200&auto=format&fit=crop",
+        "imageHint": "outdoor lighting"
     },
     {
         "id": "lightscape-2",
         "slug": "garden-pathway-lights",
         "title": "Garden Pathway",
         "description": "A winding garden path illuminated by modern bollard lights.",
-        "imageUrl": "https://picsum.photos/seed/lightscape2/800/600",
+        "imageUrl": "https://images.unsplash.com/photo-1476180814856-a36609db0493?w=1200&auto=format&fit=crop",
         "imageHint": "garden lights"
     },
     {
@@ -558,7 +558,7 @@
         "slug": "poolside-lounge-lighting",
         "title": "Poolside Lounge",
         "description": "A serene poolside lounge area with subtle, integrated lighting.",
-        "imageUrl": "https://picsum.photos/seed/lightscape3/800/600",
+        "imageUrl": "https://images.unsplash.com/photo-1718969604981-de826f44ce15?w=1200&auto=format&fit=crop",
         "imageHint": "pool lighting"
     },
     {

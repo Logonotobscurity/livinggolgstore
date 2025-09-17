@@ -5,39 +5,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
-import { useEffect, useRef, useState } from 'react';
 
 export default function Lightscapes() {
   const lightscapeImages = PlaceHolderImages.filter((img) =>
     img.id.startsWith('lightscape-')
   );
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [activeCard, setActiveCard] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const container = containerRef.current;
-      if (!container) return;
-
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
-      const cards = Array.from(
-        container.querySelectorAll('.lightscape-card')
-      ) as HTMLElement[];
-
-      let currentCard = 0;
-      for (let i = 0; i < cards.length; i++) {
-        if (scrollPosition >= cards[i].offsetTop) {
-          currentCard = i;
-        }
-      }
-      setActiveCard(currentCard);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll(); 
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   if (!lightscapeImages.length) return null;
 
@@ -64,38 +36,32 @@ export default function Lightscapes() {
             </div>
           </div>
 
-          <div ref={containerRef} className="grid grid-cols-1 gap-16">
+          <div>
             {lightscapeImages.map((image, index) => (
               <div
                 key={image.id}
-                className={cn(
-                  'lightscape-card relative w-full aspect-[4/3] rounded-lg overflow-hidden transition-transform duration-500 ease-in-out',
-                  {
-                    'scale-100': activeCard === index,
-                    'scale-90 opacity-70': activeCard !== index,
-                  }
-                )}
-                style={{
-                  transform:
-                    activeCard > index
-                      ? `translateY(-${(activeCard - index) * 2}rem) scale(${
-                          1 - (activeCard - index) * 0.05
-                        })`
-                      : '',
-                }}
+                className="md:sticky w-full h-screen flex items-center justify-center"
+                style={{ top: `${index * 2}rem` }}
               >
-                <Image
-                  src={image.imageUrl}
-                  alt={image.description}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  data-ai-hint={image.imageHint}
-                />
-                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                 <div className="absolute bottom-0 left-0 p-6">
-                    <h3 className="text-white text-lg font-bold">{image.title}</h3>
-                 </div>
+                <div
+                  className="relative w-[85%] aspect-[4/3] rounded-lg overflow-hidden transition-transform duration-300 ease-in-out"
+                   style={{ transform: `scale(${1 + index * 0.05})` }}
+                >
+                  <Image
+                    src={image.imageUrl}
+                    alt={image.description}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    data-ai-hint={image.imageHint}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 p-6">
+                    <h3 className="text-white text-lg font-bold">
+                      {image.title}
+                    </h3>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
