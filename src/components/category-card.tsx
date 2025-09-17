@@ -31,13 +31,13 @@ export function CategoryCard({
     >
       <Link
         href={`/products/${category.slug}`}
-        className="group block"
+        className="group block focus:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-lg"
         tabIndex={0}
         role="button"
         aria-label={`Browse ${category.title} collection`}
       >
         <>
-          <div className="product-frame w-full aspect-square border-3 border-gray-700/50 bg-transparent flex justify-center items-center mb-4 md:mb-8 p-2 md:p-4 relative overflow-hidden backdrop-blur-sm transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:border-primary group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.2),0_0_0_1px_rgba(201,169,97,0.2),inset_0_1px_0_rgba(255,255,255,0.1)]">
+          <div className="product-frame w-full aspect-square border-3 border-gray-700/50 bg-transparent flex justify-center items-center mb-4 md:mb-8 p-2 md:p-4 relative overflow-hidden backdrop-blur-sm transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:border-primary group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.2),0_0_0_1px_rgba(201,169,97,0.2),inset_0_1px_0_rgba(255,255,255,0.1)] group-focus-visible:border-primary group-focus-visible:shadow-[0_20px_40px_rgba(0,0,0,0.2),0_0_0_1px_rgba(201,169,97,0.2),inset_0_1px_0_rgba(255,255,255,0.1)]">
             <div className="inner-frame w-full h-full bg-transparent flex justify-center items-center rounded-sm relative overflow-hidden">
               <Image
                 src={category.imageUrl}
@@ -46,16 +46,16 @@ export function CategoryCard({
                 height={300}
                 priority={priority}
                 className={cn(
-                  'product-image object-contain transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] filter drop-shadow-md group-hover:scale-105 group-hover:[transform:scale(1.05)_rotateY(5deg)] group-hover:drop-shadow-lg',
+                  'product-image object-contain transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] filter drop-shadow-md group-hover:scale-105 group-hover:[transform:scale(1.05)_rotateY(5deg)] group-hover:drop-shadow-lg group-focus-visible:scale-105 group-focus-visible:[transform:scale(1.05)_rotateY(5deg)] group-focus-visible:drop-shadow-lg',
                   imageClassName ?? 'w-full h-full p-2 sm:p-6'
                 )}
                 data-ai-hint={category.imageHint}
               />
             </div>
           </div>
-          <h3 className="category-label text-xs md:text-sm font-medium tracking-[0.1em] md:tracking-[0.15em] uppercase text-yellow-300 relative transition-all duration-300 ease-in-out group-hover:text-primary group-hover:-translate-y-0.5 group-hover:text-shadow-[0_4px_8px_rgba(0,0,0,0.2)]">
+          <h3 className="category-label text-xs md:text-sm font-medium tracking-[0.1em] md:tracking-[0.15em] uppercase text-yellow-300 relative transition-all duration-300 ease-in-out group-hover:text-primary group-hover:-translate-y-0.5 group-hover:text-shadow-[0_4px_8px_rgba(0,0,0,0.2)] group-focus-visible:text-primary group-focus-visible:-translate-y-0.5 group-focus-visible:text-shadow-[0_4px_8px_rgba(0,0,0,0.2)]">
             {category.title}
-            <span className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 w-10 h-px bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></span>
+            <span className="absolute bottom-[-4px] left-1/2 -translate-x-1/2 w-10 h-px bg-primary scale-x-0 group-hover:scale-x-100 group-focus-visible:scale-x-100 transition-transform duration-300 ease-in-out"></span>
           </h3>
         </>
       </Link>

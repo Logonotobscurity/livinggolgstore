@@ -64,7 +64,7 @@ export default function Header() {
           </div>
 
           <div className="flex items-center space-x-2 md:space-x-4">
-            <button aria-label="Search" className="hidden sm:inline-flex p-2 rounded-full hover:bg-accent">
+            <button aria-label="Search" className="p-2 rounded-full hover:bg-accent">
               <Icons.search className="h-6 w-6" />
             </button>
              <Link
@@ -100,6 +100,9 @@ export default function Header() {
                 </span>
               )}
             </div>
+            <Link href="/account" aria-label="Account" className="p-2 rounded-full hover:bg-accent">
+              <Icons.user className="h-6 w-6" />
+            </Link>
           </div>
         </div>
       </div>
@@ -107,11 +110,6 @@ export default function Header() {
         <div className="container mx-auto px-6 flex justify-center items-center h-14 relative max-w-7xl">
           <div className="flex-grow flex justify-center">
             <NavMenu />
-          </div>
-          <div className="absolute right-6">
-             <button aria-label="Account" className="p-2 rounded-full hover:bg-accent">
-              <Icons.user className="h-6 w-6" />
-            </button>
           </div>
         </div>
       </div>

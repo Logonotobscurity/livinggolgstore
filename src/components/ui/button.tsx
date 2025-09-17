@@ -3,6 +3,7 @@ import * as React from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
+import { AnimatedIcon } from '../animated-icon';
 import { Icons } from '../icons';
 
 const buttonVariants = cva(
@@ -53,44 +54,58 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref
   ) => {
+    const Comp = asChild ? Slot : 'button';
+    const iconColorClass =
+      variant === 'default' ||
+      variant === 'destructive' ||
+      variant === 'secondary'
+        ? 'bg-primary-foreground text-primary'
+        : 'bg-primary text-primary-foreground';
+
     if (asChild) {
       return (
         <Slot
-          className={cn(buttonVariants({ variant, size, className }))}
+          className={cn(buttonVariants({ variant, size, className }), 'group', 'gap-2.5')}
           ref={ref}
           {...props}
         >
-          {children}
+          {React.isValidElement(children) ? 
+            React.cloneElement(children, {
+              ...children.props,
+              className: cn('flex items-center gap-2.5', children.props.className),
+              children: (
+                <>
+                  {children.props.children}
+                  {showIcon && size !== 'icon' && (
+                    <AnimatedIcon
+                      icon={<Icons.arrow className="w-3 h-3" />}
+                      className={iconColorClass}
+                    />
+                  )}
+                </>
+              )
+            }) : null}
         </Slot>
-      );
+      )
     }
 
     return (
-      <button
+      <Comp
         className={cn(buttonVariants({ variant, size, className }), 'group', 'gap-2.5')}
         ref={ref}
         {...props}
       >
         {children}
         {showIcon && size !== 'icon' && (
-          <div className={cn(
-            "relative grid place-items-center w-6 h-6 rounded-full",
-            {
-                "bg-primary-foreground text-primary": variant === 'default' || variant === 'destructive' || variant === 'secondary',
-                "bg-primary text-primary-foreground": variant === 'outline' || variant === 'ghost' || variant === 'link'
-            }
-            )}>
-             <div className="grid place-content-center transition-all w-full h-full group-hover:transform group-hover:-translate-y-5 group-hover:translate-x-5">
-                <Icons.arrow className='w-3 h-3' />
-                <Icons.arrow className='absolute w-3 h-3 transform -translate-x-5 translate-y-5' />
-            </div>
-          </div>
+          <AnimatedIcon
+            icon={<Icons.arrow className="w-3 h-3" />}
+            className={iconColorClass}
+          />
         )}
-      </button>
+      </Comp>
     );
   }
 );
 Button.displayName = 'Button';
 
 export { Button, buttonVariants };
-
