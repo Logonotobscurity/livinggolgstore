@@ -45,11 +45,12 @@ export default function Lifestyle() {
         >
             <CarouselContent className="-ml-4">
             {categories.map((category, index) => (
-                <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/6 pl-4">
+                <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6 pl-4">
                     <CategoryCard
                       category={category}
                       animationDelay={`${index * 0.1}s`}
                       className="w-full"
+                      imageClassName="w-full h-full p-2 sm:p-6"
                     />
                 </CarouselItem>
             ))}
