@@ -89,7 +89,7 @@ export default function Header() {
             <div className="relative">
               <Link
                 href="/cart"
-                aria-label="Cart"
+                aria-label="Shopping Cart"
                 className="p-2 rounded-full hover:bg-accent block"
               >
                 <Icons.shoppingCart className="h-6 w-6" />
