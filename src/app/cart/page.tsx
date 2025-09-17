@@ -36,7 +36,6 @@ const initialCartItems: CartItem[] = [
 export default function CartPage() {
   const [cartItems, setCartItems] = useState<CartItem[]>(initialCartItems);
   const { toggleWishlist } = useWishlist();
-  const { addToCart } = useCart();
 
   const handleQuantityChange = (id: string, newQuantity: number) => {
     if (newQuantity < 1) return;
@@ -59,11 +58,7 @@ export default function CartPage() {
     handleRemoveItem(item.id);
   };
 
-  const subtotal = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
-
-  const formatPrice = (price: number) => {
-    return `Est. ₦${price.toLocaleString('en-US')}`;
-  }
+  const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   const breadcrumb = [
     { text: 'Home', href: '/' },
@@ -74,7 +69,7 @@ export default function CartPage() {
     <CmsLayout breadcrumb={breadcrumb}>
       <div className="cms-page text-white">
         <div className="text-wrapper text-center mb-16">
-          <h1 className="mb-4 text-[50px]">Your Shopping Cart</h1>
+          <h1 className="mb-4 text-[50px]">Your Quote Request</h1>
         </div>
         
         <div className="max-w-4xl mx-auto">
@@ -94,7 +89,7 @@ export default function CartPage() {
                                 <div className="col-span-2">
                                     <Image src={item.image} alt={item.name} width={80} height={80} className="rounded-md bg-secondary p-2" />
                                 </div>
-                                <div className="col-span-5">
+                                <div className="col-span-6">
                                     <h3 className="font-bold">{item.name}</h3>
                                     <p className="text-sm text-gray-400">SKU: {item.sku}</p>
                                     <button onClick={() => handleMoveToWishlist(item)} className="text-sm text-primary hover:underline mt-2">
@@ -111,9 +106,6 @@ export default function CartPage() {
                                     </Button>
                                 </div>
                                 <div className="col-span-1 text-right">
-                                    <p>{formatPrice(item.price * item.quantity)}</p>
-                                </div>
-                                <div className="col-span-1 text-right">
                                     <Button variant="ghost" size="icon" onClick={() => handleRemoveItem(item.id)}>
                                         <Icons.trash className="h-5 w-5" />
                                     </Button>
@@ -122,24 +114,16 @@ export default function CartPage() {
                         ))}
                     </div>
 
-                    {/* Coupon and Subtotal */}
+                    {/* Summary */}
                     <div className="mt-12 text-right">
                         <div className="max-w-sm ml-auto space-y-4">
-                            <div className="flex justify-between">
-                                <span>Subtotal</span>
-                                <span>{formatPrice(subtotal)}</span>
+                            <div className="flex justify-between font-bold text-lg">
+                                <span>Total Items:</span>
+                                <span>{totalItems}</span>
                             </div>
                             <div className="flex justify-between text-sm text-gray-400">
-                                <span>Shipping & Taxes</span>
-                                <span>Calculated at checkout</span>
-                            </div>
-                            <div className="flex items-center gap-2 pt-4">
-                                <Input placeholder="Coupon Code" className="bg-transparent" />
-                                <Button variant="outline">Apply</Button>
-                            </div>
-                            <div className="border-t border-gray-700 pt-4 mt-4 flex justify-between font-bold text-lg">
-                                <span>Total</span>
-                                <span>{formatPrice(subtotal)}</span>
+                                <span>Shipping</span>
+                                <span>Contact us for details</span>
                             </div>
                         </div>
 
@@ -147,8 +131,8 @@ export default function CartPage() {
                             <Button variant="outline" asChild>
                                 <Link href="/">Continue Shopping</Link>
                             </Button>
-                            <Button variant="default" size="lg" showIcon>
-                                Proceed to Checkout
+                            <Button variant="default" size="lg" asChild showIcon>
+                               <Link href="/contact">Request Quote</Link>
                             </Button>
                         </div>
                     </div>
