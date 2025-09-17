@@ -16,15 +16,15 @@ export default function ContactPage() {
 
   return (
     <CmsLayout breadcrumb={breadcrumb}>
-      <div className="cms-page text-white container mx-auto px-4">
-        <div className="text-center mb-16">
+      <div className="cms-page text-white">
+        <div className="text-center mb-16 px-4">
           <h1 className="mb-4 text-4xl md:text-5xl">Contact Us</h1>
           <p className="text-base md:text-lg max-w-2xl mx-auto">
             We're here to help. Whether you have a question about our products, need design advice, or want to discuss a project, our team is ready to assist you.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start max-w-5xl mx-auto px-4">
             <div>
                  <ContactForm />
             </div>
@@ -62,7 +62,7 @@ export default function ContactPage() {
             <hr className="section-divider" />
         </div>
 
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto px-4">
             <h2 className="font-headline text-3xl font-bold text-center mb-12">Customer Service Hub</h2>
             <div className="grid md:grid-cols-2 gap-16">
               <div>

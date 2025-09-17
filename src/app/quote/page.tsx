@@ -21,7 +21,7 @@ export default function QuotePage() {
   if (cartItems.length === 0) {
     return (
         <CmsLayout breadcrumb={breadcrumb}>
-             <div className="text-center py-16 text-white">
+             <div className="text-center py-16 text-white px-4">
                 <h1 className="text-4xl font-headline mb-4">Your Cart is Empty</h1>
                 <p className="text-xl mb-8">Add items to your cart to request a quote.</p>
                 <Button variant="outline" asChild>
