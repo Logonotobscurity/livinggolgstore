@@ -1,9 +1,8 @@
 
 import Link from "next/link";
-import { Icons } from "@/components/icons";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { LivingGoldLogo } from "../logo";
+import { FooterLivingGold } from "../logo";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -13,11 +12,9 @@ export default function Footer() {
     <footer className="text-white pt-16 md:pt-24 pb-8">
       <div className="container mx-auto px-6">
         
-        <div className="flex justify-center mb-16 md:mb-24">
-            <LivingGoldLogo className="h-auto w-full max-w-lg" />
-        </div>
+        <FooterLivingGold className="w-full max-w-[1600px] mx-auto" />
 
-        <div className="border-t border-primary/30 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6">
+        <div className="border-t border-primary/30 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6 mt-16">
           <p className="text-xs text-gray-400 order-2 md:order-1">
             &copy; {currentYear} Living Gold. All rights reserved.
           </p>
