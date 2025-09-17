@@ -1,4 +1,3 @@
-
 // Contains three standalone React components that return different SVG variants of the LIVING GOLD logo.
 // 1) LivingGoldLogo - two-line logo (desktop/footer) - default
 // 2) LivingGoldWordmark - single-line wordmark for headers/navigation
