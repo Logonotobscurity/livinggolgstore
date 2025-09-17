@@ -25,7 +25,7 @@ export default function Home() {
         <About />
         <InstagramFeed />
         <Contact />
-        <section className="bg-secondary text-white py-20 md:py-24">
+        <section className="text-white py-20 md:py-24">
           <div className="container mx-auto px-6">
             <div className="max-w-sm mx-auto text-center">
               <h3 className="text-lg font-bold mb-6">
