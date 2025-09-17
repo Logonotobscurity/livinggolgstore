@@ -4,7 +4,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Footer from '@/components/layout/footer';
 import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
-import { ChevronRight } from 'lucide-react';
+import { Icons } from '@/components/icons';
 
 export default function FloorLampsPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('floor-lamps-'));
@@ -28,9 +28,9 @@ export default function FloorLampsPage() {
             <div className="relative z-10 container mx-auto px-6">
               <nav className="flex justify-center items-center text-sm mb-4">
                 <Link href="/" className="hover:text-primary">Home</Link>
-                <ChevronRight className="h-4 w-4 mx-1" />
+                <Icons.chevronRight className="h-4 w-4 mx-1" />
                 <span className="text-gray-400">Collections</span>
-                <ChevronRight className="h-4 w-4 mx-1" />
+                <Icons.chevronRight className="h-4 w-4 mx-1" />
                 <span className="text-gray-300">Floor Lamps</span>
               </nav>
               <h1 className="font-headline text-5xl md:text-7xl font-bold">

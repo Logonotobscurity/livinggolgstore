@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Icons } from "@/components/icons";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
@@ -24,7 +24,7 @@ export default function Footer() {
                 className="bg-secondary border-muted-foreground border-r-0 rounded-r-none flex-1 placeholder:text-gray-400"
               />
               <Button type="submit" size="icon" className="rounded-l-none bg-primary hover:bg-yellow-600">
-                <ArrowRight className="h-5 w-5 text-black" />
+                <Icons.arrowRight className="h-5 w-5 text-black" />
               </Button>
             </form>
             <p className="text-xs text-gray-400">

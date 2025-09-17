@@ -9,35 +9,30 @@ import {
   SheetHeader,
   SheetTitle,
 } from '@/components/ui/sheet';
-import {
-    Lightbulb,
-    Lamp,
-    LampCeiling,
-    LampWallUp,
-  } from 'lucide-react';
+import { Icons } from '@/components/icons';
 
 const ceilingLights = [
-    { title: 'Chandeliers', href: '/products/chandeliers-pendants', icon: Lightbulb },
-    { title: 'Pendant Lights', href: '/products/chandeliers-pendants', icon: Lightbulb },
-    { title: 'Flush & Semi-Flushmounts', href: '/products/ceiling-lights', icon: LampCeiling },
-    { title: 'Linear Suspension', href: '/products/linear-suspension', icon: Lightbulb },
-    { title: 'Recessed Lighting', href: '/products/recessed-track-lighting', icon: Lightbulb },
-    { title: 'Track & Monorail', href: '/products/recessed-track-lighting', icon: Lightbulb },
+    { title: 'Chandeliers', href: '/products/chandeliers-pendants', icon: Icons.lightbulb },
+    { title: 'Pendant Lights', href: '/products/chandeliers-pendants', icon: Icons.lightbulb },
+    { title: 'Flush & Semi-Flushmounts', href: '/products/ceiling-lights', icon: Icons.lampCeiling },
+    { title: 'Linear Suspension', href: '/products/linear-suspension', icon: Icons.lightbulb },
+    { title: 'Recessed Lighting', href: '/products/recessed-track-lighting', icon: Icons.lightbulb },
+    { title: 'Track & Monorail', href: '/products/recessed-track-lighting', icon: Icons.lightbulb },
 ];
   
 const wallLights = [
-    { title: 'Wall Sconces', href: '/products/wall-sconces-vanity-lights', icon: LampWallUp },
-    { title: 'Bath & Vanity Lights', href: '/products/wall-sconces-vanity-lights', icon: LampWallUp },
-    { title: 'Picture Lights', href: '/products/specialty-lighting', icon: LampWallUp },
-    { title: 'Undercabinet Lights', href: '/products/specialty-lighting', icon: LampWallUp },
-    { title: 'Lighted Mirrors', href: '/products/specialty-lighting', icon: LampWallUp },
+    { title: 'Wall Sconces', href: '/products/wall-sconces-vanity-lights', icon: Icons.lampWallUp },
+    { title: 'Bath & Vanity Lights', href: '/products/wall-sconces-vanity-lights', icon: Icons.lampWallUp },
+    { title: 'Picture Lights', href: '/products/specialty-lighting', icon: Icons.lampWallUp },
+    { title: 'Undercabinet Lights', href: '/products/specialty-lighting', icon: Icons.lampWallUp },
+    { title: 'Lighted Mirrors', href: '/products/specialty-lighting', icon: Icons.lampWallUp },
 ];
 
 const lamps = [
-    { title: 'Floor Lamps', href: '/products/floor-lamps', icon: Lamp },
-    { title: 'Table Lamps', href: '/products/table-lamps-portable-lights', icon: Lamp },
-    { title: 'Desk Lamps', href: '/products/table-lamps-portable-lights', icon: Lamp },
-    { title: 'Cordless Lamps', href: '/products/table-lamps-portable-lights', icon: Lamp },
+    { title: 'Floor Lamps', href: '/products/floor-lamps', icon: Icons.lamp },
+    { title: 'Table Lamps', href: '/products/table-lamps-portable-lights', icon: Icons.lamp },
+    { title: 'Desk Lamps', href: '/products/table-lamps-portable-lights', icon: Icons.lamp },
+    { title: 'Cordless Lamps', href: '/products/table-lamps-portable-lights', icon: Icons.lamp },
 ];
 
 export default function MobileNavMenu() {

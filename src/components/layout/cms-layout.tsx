@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import Link from 'next/link';
-import { ChevronRight } from 'lucide-react';
+import { Icons } from '@/components/icons';
 
 interface CmsLayoutProps {
   children: ReactNode;
@@ -28,7 +28,7 @@ export default function CmsLayout({ children, breadcrumb }: CmsLayoutProps) {
                       <span className="text-gray-300">{item.text}</span>
                     )}
                     {index < breadcrumb.length - 1 && (
-                      <ChevronRight className="h-4 w-4 mx-1" />
+                      <Icons.chevronRight className="h-4 w-4 mx-1" />
                     )}
                   </li>
                 ))}

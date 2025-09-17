@@ -5,7 +5,7 @@ import { useState } from "react";
 import CmsLayout from "@/components/layout/cms-layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Minus, Plus, Trash2 } from "lucide-react";
+import { Icons } from "@/components/icons";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -82,11 +82,11 @@ export default function CartPage() {
                                 </div>
                                 <div className="col-span-3 flex items-center gap-2">
                                     <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => handleQuantityChange(item.id, item.quantity - 1)}>
-                                        <Minus className="h-4 w-4" />
+                                        <Icons.minus className="h-4 w-4" />
                                     </Button>
                                     <Input type="text" readOnly value={item.quantity} className="w-12 text-center bg-transparent" />
                                     <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => handleQuantityChange(item.id, item.quantity + 1)}>
-                                        <Plus className="h-4 w-4" />
+                                        <Icons.plus className="h-4 w-4" />
                                     </Button>
                                 </div>
                                 <div className="col-span-1 text-right">
@@ -94,7 +94,7 @@ export default function CartPage() {
                                 </div>
                                 <div className="col-span-1 text-right">
                                     <Button variant="ghost" size="icon" className="text-gray-400 hover:text-white" onClick={() => handleRemoveItem(item.id)}>
-                                        <Trash2 className="h-5 w-5" />
+                                        <Icons.trash className="h-5 w-5" />
                                     </Button>
                                 </div>
                             </div>

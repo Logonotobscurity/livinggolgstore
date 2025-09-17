@@ -4,7 +4,7 @@ import { useState, useTransition } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Loader2 } from 'lucide-react';
+import { Icons } from '@/components/icons';
 
 import { submitContactForm } from '@/app/actions';
 import { useToast } from '@/hooks/use-toast';
@@ -123,7 +123,7 @@ export function ContactForm() {
               showIcon={!isPending}
             >
               {isPending ? (
-                <Loader2 className="h-4 w-4 animate-spin" />
+                <Icons.loader className="h-4 w-4 animate-spin" />
               ) : (
                 'Submit'
               )}

@@ -1,13 +1,13 @@
 
-
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
-import { Heart, Star } from 'lucide-react';
+import { Icons } from '@/components/icons';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { RelatedProductCard } from '@/components/related-product-card';
+import { cn } from '@/lib/utils';
 
 export async function generateStaticParams() {
   return PlaceHolderImages.map((product) => ({
@@ -50,21 +50,21 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
             
             <div className="flex items-center mb-6">
               <div className="flex items-center text-yellow-500">
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 fill-current" />
-                <Star className="w-5 h-5 text-gray-600 fill-current" />
+                <Icons.star className="w-5 h-5 fill-current" />
+                <Icons.star className="w-5 h-5 fill-current" />
+                <Icons.star className="w-5 h-5 fill-current" />
+                <Icons.star className="w-5 h-5 fill-current" />
+                <Icons.star className="w-5 h-5 text-gray-600 fill-current" />
               </div>
               <span className="ml-3 text-sm text-gray-400">(12 Reviews)</span>
             </div>
 
             <p className="text-3xl md:text-4xl font-bold text-primary mb-8">{formatPrice(product.price)}</p>
 
-            <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
-                <Button size="lg" className="w-full sm:w-auto flex-grow" showIcon variant="destructive">Add to Cart</Button>
-                <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                    <Heart className="w-6 h-6" />
+            <div className="flex items-stretch gap-4 mb-8">
+                <Button variant="destructive" size="lg" className="flex-grow" showIcon>Add to Cart</Button>
+                <Button variant="outline" size="icon" aria-label="Add to wishlist" className="w-12 h-12">
+                    <Icons.heart className={cn("w-6 h-6")} />
                 </Button>
             </div>
 
