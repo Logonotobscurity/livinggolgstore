@@ -40,6 +40,7 @@ export default function ProductPage({ params: { slug } }: { params: { slug: stri
       sku: product.id.toUpperCase(),
       image: product.imageUrl,
       price: parseFloat(product.price || '0'),
+      slug: product.slug,
     });
   };
 
