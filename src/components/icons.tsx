@@ -140,5 +140,22 @@ export const Icons = {
   ),
   mail: (props: IconProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-  )
+  ),
+  whatsapp: (props: IconProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      {...props}
+    >
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2z" />
+      <path d="M16.51 13.66c-.27-.14-1.59-.78-1.84-.87s-.43-.14-.61.14-.69.87-.85 1.04-.31.2-.58.07-.95-.36-1.81-1.12-1.42-1.25-1.59-1.47-.02-.34.12-.45.27-.31.4-.51.18-.27.27-.45.04-.33-.02-.47s-.61-1.47-.83-2.01-.44-.46-.61-.46-.36 0-.54 0-.43.07-.66.36-.89.87-.89 2.13s.92 2.47 1.04 2.64.95 1.5 2.31 2.05c1.36.55 1.81.7 2.14.89.48.28.91.23 1.25.14.39-.1.87-.36 1-.7.13-.34.13-.65.09-.79s-.14-.23-.27-.37z" />
+    </svg>
+  ),
 };

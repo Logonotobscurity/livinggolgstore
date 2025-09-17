@@ -21,29 +21,13 @@ type CartItem = {
   slug: string;
 };
 
-const initialCartItems: CartItem[] = [
-  {
-    id: "item-1",
-    name: "Roll & Hill Modo 3 Sided Chandelier",
-    sku: "CHANDELIERS-PENDANTS-1",
-    slug: "roll-and-hill-modo-chandelier",
-    image: "https://img.ydesigngroup.com/9JWOMRAM/at/nqmq8crfg7m5pgth8x42f/RollAndHill_Modo3SidedChandelier_BlackSmoke-188x188-site.png",
-    price: 750000,
-    quantity: 1,
-  }
-];
-
 export default function CartPage() {
-  const [cartItems, setCartItems] = useState<CartItem[]>(initialCartItems);
+  const { cartItems, updateItemQuantity, removeFromCart } = useCart();
   const { toggleWishlist } = useWishlist();
 
   const handleQuantityChange = (id: string, newQuantity: number) => {
     if (newQuantity < 1) return;
-    setCartItems(cartItems.map(item => item.id === id ? { ...item, quantity: newQuantity } : item));
-  };
-
-  const handleRemoveItem = (id: string) => {
-    setCartItems(cartItems.filter(item => item.id !== id));
+    updateItemQuantity(id, newQuantity);
   };
 
   const handleMoveToWishlist = (item: CartItem) => {
@@ -55,7 +39,7 @@ export default function CartPage() {
       price: item.price,
       slug: item.slug
     });
-    handleRemoveItem(item.id);
+    removeFromCart(item.id);
   };
 
   const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
@@ -106,7 +90,7 @@ export default function CartPage() {
                                     </Button>
                                 </div>
                                 <div className="col-span-1 text-right">
-                                    <Button variant="ghost" size="icon" onClick={() => handleRemoveItem(item.id)}>
+                                    <Button variant="ghost" size="icon" onClick={() => removeFromCart(item.id)}>
                                         <Icons.trash className="h-5 w-5" />
                                     </Button>
                                 </div>
@@ -132,7 +116,7 @@ export default function CartPage() {
                                 <Link href="/">Continue Shopping</Link>
                             </Button>
                             <Button variant="default" size="lg" asChild showIcon>
-                               <Link href="/contact">Request Quote</Link>
+                               <Link href="/quote">Request Quote</Link>
                             </Button>
                         </div>
                     </div>
