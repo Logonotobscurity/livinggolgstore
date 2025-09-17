@@ -22,7 +22,7 @@ export default function Header() {
     <>
       <header className="sticky top-0 z-50 w-full bg-black text-white">
         <div className="bg-secondary text-xs">
-          <div className="container mx-auto px-6 h-10 flex justify-center md:justify-between items-center max-w-7xl">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-10 flex justify-center md:justify-between items-center max-w-7xl">
             <p className="font-light hidden md:block">
               Explore one-of-a-kind items from around the world
             </p>
@@ -44,11 +44,11 @@ export default function Header() {
           </div>
         </div>
         <div className="border-b border-primary/30">
-          <div className="container mx-auto px-6 h-24 md:h-20 flex justify-between items-center max-w-7xl">
-            <div className="flex items-center justify-start w-1/3 md:w-auto">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center max-w-7xl">
+            <div className="flex items-center justify-start md:hidden">
               <Sheet>
                 <SheetTrigger asChild>
-                  <button aria-label="Open menu" className="md:hidden p-2 -ml-2">
+                  <button aria-label="Open menu" className="p-2 -ml-2">
                     <Icons.menu className="h-6 w-6" />
                   </button>
                 </SheetTrigger>
@@ -61,12 +61,12 @@ export default function Header() {
             <div className="flex-1 text-center md:text-left">
               <Link href="/">
                 <LivingGoldWordmark className="hidden md:block h-12 w-auto text-white" />
-                <LivingGoldLogoMobile className="md:hidden h-20 w-auto mx-auto text-white" />
+                <LivingGoldLogoMobile className="md:hidden h-16 w-auto mx-auto text-white" />
                 <span className="sr-only">LIVING GOLD</span>
               </Link>
             </div>
 
-            <div className="flex items-center justify-end space-x-1 md:space-x-2 w-1/3 md:w-auto">
+            <div className="flex items-center justify-end space-x-1 md:space-x-2">
               <button 
                 aria-label="Search" 
                 className="p-2 rounded-full hover:bg-accent"
@@ -84,7 +84,7 @@ export default function Header() {
               <Link
                   href="/wishlist"
                   aria-label="Wishlist"
-                  className="p-2 rounded-full hover:bg-accent hidden md:block relative"
+                  className="p-2 rounded-full hover:bg-accent relative"
                 >
                   <Icons.heart className="h-5 w-5" />
                   {wishlistItemCount > 0 && (
