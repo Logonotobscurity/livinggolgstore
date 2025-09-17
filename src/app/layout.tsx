@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/toaster';
 import { CartProvider } from '@/context/cart-context';
 import { WishlistProvider } from '@/context/wishlist-context';
+import { WaitlistProvider } from '@/context/waitlist-context';
 import './globals.css';
 import './sun-banner.css';
 import './socials.css';
@@ -35,10 +36,12 @@ export default function RootLayout({
       <body>
         <CartProvider>
           <WishlistProvider>
-            <div>
-              {children}
-              <Toaster />
-            </div>
+            <WaitlistProvider>
+              <div>
+                {children}
+                <Toaster />
+              </div>
+            </WaitlistProvider>
           </WishlistProvider>
         </CartProvider>
       </body>

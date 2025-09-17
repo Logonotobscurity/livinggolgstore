@@ -3,16 +3,20 @@
 
 import Link from 'next/link';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import NavMenu from './nav-menu';
 import MobileNavMenu from './mobile-nav-menu';
 import { Icons } from '@/components/icons';
 import { useCart } from '@/context/cart-context';
 import { useWishlist } from '@/context/wishlist-context';
+import { NewMenuIcon } from '@/components/new-menu-icon';
+import { useWaitlist } from '@/context/waitlist-context';
+import NavMenu from './nav-menu';
 
 export default function Header() {
   const { totalItemsCount } = useCart();
   const { wishlistItems } = useWishlist();
+  const { waitlistItems } = useWaitlist();
   const wishlistItemCount = wishlistItems.length;
+  const waitlistItemCount = waitlistItems.length;
 
   return (
     <header className="sticky top-0 z-50 w-full bg-black text-white">
@@ -43,8 +47,8 @@ export default function Header() {
           <div className="md:hidden">
             <Sheet>
               <SheetTrigger asChild>
-                <button aria-label="Open menu">
-                  <Icons.menu className="h-6 w-6" />
+                 <button aria-label="Open menu">
+                  <NewMenuIcon />
                 </button>
               </SheetTrigger>
               <SheetContent side="left" className="bg-black w-3/4 p-0">
@@ -63,20 +67,32 @@ export default function Header() {
           </div>
 
           <div className="flex items-center space-x-2 md:space-x-4">
-            <button aria-label="Search" className="hidden sm:inline-flex p-2 rounded-full hover:bg-accent transition-colors">
+            <button aria-label="Search" className="hidden sm:inline-flex p-2 rounded-full hover:bg-accent">
               <Icons.search className="h-6 w-6" />
             </button>
              <Link
                 href="/contact"
                 aria-label="Contact"
-                className="p-2 rounded-full hover:bg-accent transition-colors block"
+                className="p-2 rounded-full hover:bg-accent block"
               >
                 <Icons.mail className="h-6 w-6" />
+            </Link>
+             <Link
+                href="/waitlist"
+                aria-label="Waitlist"
+                className="p-2 rounded-full hover:bg-accent block relative"
+              >
+                <Icons.clipboardList className="h-6 w-6" />
+                 {waitlistItemCount > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs rounded-full h-4 w-4 flex items-center justify-center">
+                    {waitlistItemCount}
+                  </span>
+                )}
             </Link>
             <Link
                 href="/wishlist"
                 aria-label="Wishlist"
-                className="p-2 rounded-full hover:bg-accent transition-colors block relative"
+                className="p-2 rounded-full hover:bg-accent block relative"
               >
                 <Icons.heart className="h-6 w-6" />
                  {wishlistItemCount > 0 && (
@@ -89,7 +105,7 @@ export default function Header() {
               <Link
                 href="/cart"
                 aria-label="Cart"
-                className="p-2 rounded-full hover:bg-accent transition-colors block"
+                className="p-2 rounded-full hover:bg-accent block"
               >
                 <Icons.shoppingCart className="h-6 w-6" />
               </Link>
@@ -108,7 +124,7 @@ export default function Header() {
             <NavMenu />
           </div>
           <div className="absolute right-6">
-             <button aria-label="Account" className="p-2 rounded-full hover:bg-accent transition-colors">
+             <button aria-label="Account" className="p-2 rounded-full hover:bg-accent">
               <Icons.user className="h-6 w-6" />
             </button>
           </div>
@@ -117,5 +133,3 @@ export default function Header() {
     </header>
   );
 }
-
-    
