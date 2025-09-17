@@ -1,5 +1,8 @@
+
 import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/toaster';
+import { CartProvider } from '@/context/cart-context';
+import { WishlistProvider } from '@/context/wishlist-context';
 import './globals.css';
 import './sun-banner.css';
 import './socials.css';
@@ -30,8 +33,14 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {children}
-        <Toaster />
+        <CartProvider>
+          <WishlistProvider>
+            <div>
+              {children}
+              <Toaster />
+            </div>
+          </WishlistProvider>
+        </CartProvider>
       </body>
     </html>
   );

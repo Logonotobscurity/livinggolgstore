@@ -19,7 +19,11 @@ export default function InstagramFeed() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 max-w-7xl mx-auto">
           {instaPosts.slice(0, 8).map((post) => (
-            <Link href="#" key={post.id} className="group relative aspect-square block rounded-lg overflow-hidden">
+            <Link
+              href="#"
+              key={post.id}
+              className="group relative aspect-square block rounded-lg overflow-hidden"
+            >
               <Image
                 src={post.imageUrl}
                 alt={post.description}

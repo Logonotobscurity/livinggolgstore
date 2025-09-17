@@ -1,5 +1,4 @@
 
-
 'use client';
 
 import { notFound } from 'next/navigation';
@@ -11,11 +10,16 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import { RelatedProductCard } from '@/components/related-product-card';
 import { cn } from '@/lib/utils';
+import { useCart } from '@/context/cart-context';
+import { useWishlist } from '@/context/wishlist-context';
+import ShareModal from '@/components/share-modal';
 import { useState } from 'react';
 
-export default function ProductPage({ params }: { params: { slug: string } }) {
-  const product = PlaceHolderImages.find((p) => p.slug === params.slug);
-  const [isFavorited, setIsFavorited] = useState(false);
+export default function ProductPage({ params: { slug } }: { params: { slug: string } }) {
+  const product = PlaceHolderImages.find((p) => p.slug === slug);
+  const { addToCart } = useCart();
+  const { toggleWishlist, isInWishlist } = useWishlist();
+  const [isShareModalOpen, setShareModalOpen] = useState(false);
 
   if (!product) {
     notFound();
@@ -29,13 +33,27 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
     return `Est. ₦${priceNumber.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
   }
 
-  // This is a placeholder for a function that would generate static paths
-  // if this were a real application with dynamic routing.
-  async function generateStaticParams() {
-    return PlaceHolderImages.map((product) => ({
-      slug: product.slug,
-    }));
-  }
+  const handleAddToCart = () => {
+    addToCart({
+      id: product.id,
+      name: product.title || 'Product Name Not Available',
+      sku: product.id.toUpperCase(),
+      image: product.imageUrl,
+      price: parseFloat(product.price || '0'),
+    });
+  };
+
+  const handleWishlistToggle = () => {
+    toggleWishlist({
+      id: product.id,
+      name: product.title || 'Product Name Not Available',
+      sku: product.id.toUpperCase(),
+      image: product.imageUrl,
+      price: parseFloat(product.price || '0'),
+    });
+  };
+
+  const isWishlisted = isInWishlist(product.id);
 
   return (
     <div className="flex flex-col min-h-screen bg-black text-white">
@@ -61,7 +79,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                 <Icons.star className="w-5 h-5 fill-current" />
                 <Icons.star className="w-5 h-5 fill-current" />
                 <Icons.star className="w-5 h-5 fill-current" />
-                <Icons.star className="w-5 h-5 fill-current text-gray-600" />
+                <Icons.star className="w-5 h-5" />
               </div>
               <span className="ml-3 text-sm">(12 Reviews)</span>
             </div>
@@ -69,16 +87,24 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
             <p className="text-3xl md:text-4xl font-bold text-primary mb-8">{formatPrice(product.price)}</p>
 
             <div className="flex items-stretch gap-4 mb-8">
-                <Button variant="destructive" size="lg" className="flex-grow" showIcon>Add to Cart</Button>
+                <Button variant="destructive" size="lg" className="flex-grow" onClick={handleAddToCart} showIcon>Add to Cart</Button>
                 <Button 
                   variant="outline" 
                   size="icon" 
                   aria-label="Add to wishlist" 
                   className="w-12 h-12"
-                  onClick={() => setIsFavorited(!isFavorited)}
-                  aria-pressed={isFavorited}
+                  onClick={handleWishlistToggle}
                 >
-                    <Icons.heart className={cn("w-6 h-6", { "fill-current": isFavorited })} />
+                    <Icons.heart className={cn("w-6 h-6", { "fill-current text-primary": isWishlisted })} />
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="icon" 
+                  aria-label="Share this product"
+                  className="w-12 h-12"
+                  onClick={() => setShareModalOpen(true)}
+                >
+                    <Icons.share className="w-6 h-6" />
                 </Button>
             </div>
 
@@ -107,8 +133,12 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
       </main>
       <Footer />
+      <ShareModal 
+        isOpen={isShareModalOpen} 
+        onClose={() => setShareModalOpen(false)} 
+        shareUrl={typeof window !== 'undefined' ? window.location.href : ''} 
+        shareTitle={product.title || 'Product Name Not Available'} 
+      />
     </div>
   );
 }
-
-    

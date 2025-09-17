@@ -23,26 +23,28 @@ export function RelatedProductCard({ product, className }: RelatedProductCardPro
   return (
     <div className={cn("text-left", className)}>
       <Link href={`/products/${product.slug}`} className="group block">
-        <div className="w-full aspect-square bg-transparent border border-primary/20 p-6 flex items-center justify-center transition-colors duration-300 group-hover:border-primary">
-          <Image
-            src={product.imageUrl}
-            alt={product.description}
-            width={300}
-            height={300}
-            className="object-contain w-full h-full"
-          />
-        </div>
-        <div className="mt-4">
-          {product.price && (
-             <p className="text-sm text-gray-400 mb-1">{formatPrice(product.price)}</p>
-          )}
-          <h3 className="font-headline text-base uppercase tracking-wider text-white">
-            {product.title}
-          </h3>
-          <Button variant="outline" className="mt-4 w-full" showIcon>
-            View product
-          </Button>
-        </div>
+        <>
+          <div className="w-full aspect-square bg-transparent border border-primary/20 p-6 flex items-center justify-center transition-colors duration-300 group-hover:border-primary">
+            <Image
+              src={product.imageUrl}
+              alt={product.description}
+              width={300}
+              height={300}
+              className="object-contain w-full h-full"
+            />
+          </div>
+          <div className="mt-4">
+            {product.price && (
+               <p className="text-sm text-gray-400 mb-1">{formatPrice(product.price)}</p>
+            )}
+            <h3 className="font-headline text-base uppercase tracking-wider text-white">
+              {product.title}
+            </h3>
+            <Button variant="outline" className="mt-4 w-full" showIcon>
+              View product
+            </Button>
+          </div>
+        </>
       </Link>
     </div>
   );

@@ -38,52 +38,61 @@ const lamps = [
 export default function MobileNavMenu() {
     return (
         <>
-        <SheetHeader>
-            <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
-        </SheetHeader>
-        <div className="flex flex-col space-y-2 p-6 pt-10">
-            <Accordion type="single" collapsible className="w-full">
-                <AccordionItem value="ceiling">
-                    <AccordionTrigger className="text-lg font-medium tracking-wider uppercase">Ceiling Lights</AccordionTrigger>
-                    <AccordionContent className="pl-4">
-                        <ul className="space-y-4 mt-2">
-                            {ceilingLights.map((item) => (
-                                <li key={item.title}><Link href={item.href} className="flex items-center text-base hover:text-primary"><item.icon className="h-4 w-4 mr-3" />{item.title}</Link></li>
-                            ))}
-                        </ul>
-                    </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="wall">
-                    <AccordionTrigger className="text-lg font-medium tracking-wider uppercase">Wall Lights</AccordionTrigger>
-                    <AccordionContent className="pl-4">
-                        <ul className="space-y-4 mt-2">
-                            {wallLights.map((item) => (
-                                <li key={item.title}><Link href={item.href} className="flex items-center text-base hover:text-primary"><item.icon className="h-4 w-4 mr-3" />{item.title}</Link></li>
-                            ))}
-                        </ul>
-                    </AccordionContent>
-                </AccordionItem>
-                 <AccordionItem value="lamps">
-                    <AccordionTrigger className="text-lg font-medium tracking-wider uppercase">Lamps</AccordionTrigger>
-                    <AccordionContent className="pl-4">
-                        <ul className="space-y-4 mt-2">
-                            {lamps.map((item) => (
-                                <li key={item.title}><Link href={item.href} className="flex items-center text-base hover:text-primary"><item.icon className="h-4 w-4 mr-3" />{item.title}</Link></li>
-                            ))}
-                        </ul>
-                    </AccordionContent>
-                </AccordionItem>
-            </Accordion>
-             <Link href="/products/accessories" className="text-lg font-medium tracking-wider uppercase hover:text-primary transition-colors py-4">
-                Accessories
-            </Link>
-             <Link href="/products/outdoor-lighting" className="text-lg font-medium tracking-wider uppercase hover:text-primary transition-colors py-4">
-                Outdoor
-            </Link>
-             <Link href="/products/room-settings" className="text-lg font-medium tracking-wider uppercase hover:text-primary transition-colors py-4">
-                Room
-            </Link>
-        </div>
+            <SheetHeader>
+                <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
+            </SheetHeader>
+            <div className="flex flex-col space-y-2 p-6 pt-10">
+                <Accordion type="single" collapsible className="w-full">
+                    <AccordionItem value="ceiling">
+                        <AccordionTrigger className="text-lg font-medium tracking-wider uppercase">Ceiling Lights</AccordionTrigger>
+                        <AccordionContent className="pl-4">
+                            <ul className="space-y-4 mt-2">
+                                {ceilingLights.map((item) => (
+                                    <li key={item.title}><Link
+                                        href={item.href}
+                                        className="flex items-center text-base hover:text-primary"
+                                        legacyBehavior><item.icon className="h-4 w-4 mr-3" />{item.title}</Link></li>
+                                ))}
+                            </ul>
+                        </AccordionContent>
+                    </AccordionItem>
+                    <AccordionItem value="wall">
+                        <AccordionTrigger className="text-lg font-medium tracking-wider uppercase">Wall Lights</AccordionTrigger>
+                        <AccordionContent className="pl-4">
+                            <ul className="space-y-4 mt-2">
+                                {wallLights.map((item) => (
+                                    <li key={item.title}><Link
+                                        href={item.href}
+                                        className="flex items-center text-base hover:text-primary"
+                                        legacyBehavior><item.icon className="h-4 w-4 mr-3" />{item.title}</Link></li>
+                                ))}
+                            </ul>
+                        </AccordionContent>
+                    </AccordionItem>
+                     <AccordionItem value="lamps">
+                        <AccordionTrigger className="text-lg font-medium tracking-wider uppercase">Lamps</AccordionTrigger>
+                        <AccordionContent className="pl-4">
+                            <ul className="space-y-4 mt-2">
+                                {lamps.map((item) => (
+                                    <li key={item.title}><Link
+                                        href={item.href}
+                                        className="flex items-center text-base hover:text-primary"
+                                        legacyBehavior><item.icon className="h-4 w-4 mr-3" />{item.title}</Link></li>
+                                ))}
+                            </ul>
+                        </AccordionContent>
+                    </AccordionItem>
+                </Accordion>
+                 <Link href="/products/accessories" className="text-lg font-medium tracking-wider uppercase hover:text-primary transition-colors py-4">
+                    Accessories
+                </Link>
+                 <Link href="/products/outdoor-lighting" className="text-lg font-medium tracking-wider uppercase hover:text-primary transition-colors py-4">
+                    Outdoor
+                </Link>
+                 <Link href="/products/room-settings" className="text-lg font-medium tracking-wider uppercase hover:text-primary transition-colors py-4">
+                    Room
+                </Link>
+            </div>
         </>
-    )
+    );
 }

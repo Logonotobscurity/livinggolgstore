@@ -30,6 +30,7 @@ export default function ProductCategories() {
               animationDelay={`${index * 0.05}s`}
               className="w-full"
               imageClassName="w-full h-full p-2 sm:p-6"
+              priority={index < 2}
             />
           ))}
         </div>
