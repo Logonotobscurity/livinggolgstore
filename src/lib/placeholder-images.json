@@ -538,11 +538,28 @@
       "imageHint": "floor lamp"
     },
     {
-      "id": "lightscape-outdoor",
-      "slug": "outdoor-lighting",
+      "id": "lightscape-1",
+      "slug": "outdoor-patio-dusk",
+      "title": "Patio at Dusk",
       "description": "Beautifully lit outdoor patio area at dusk.",
       "imageUrl": "https://images.lumens.com/is/image/Lumens/uu126021_alt09?$Lumens.com-PRP-large$",
       "imageHint": "outdoor lighting"
+    },
+    {
+        "id": "lightscape-2",
+        "slug": "garden-pathway-lights",
+        "title": "Garden Pathway",
+        "description": "A winding garden path illuminated by modern bollard lights.",
+        "imageUrl": "https://picsum.photos/seed/lightscape2/800/600",
+        "imageHint": "garden lights"
+    },
+    {
+        "id": "lightscape-3",
+        "slug": "poolside-lounge-lighting",
+        "title": "Poolside Lounge",
+        "description": "A serene poolside lounge area with subtle, integrated lighting.",
+        "imageUrl": "https://picsum.photos/seed/lightscape3/800/600",
+        "imageHint": "pool lighting"
     },
     {
       "id": "lifestyle-decorative-objects",
@@ -690,5 +707,3 @@
     }
   ]
 }
-
-    
