@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/icons";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { LivingGoldLogo, LivingGoldLogoMobile } from "../logo";
+import { LivingGoldLogo } from "../logo";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -14,20 +14,13 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white pt-16 md:pt-24 pb-8">
       <div className="container mx-auto px-6">
-        {/* Mobile Logo */}
-        <div className="md:hidden mb-12">
-            <LivingGoldLogoMobile className="h-24 w-auto mx-auto" />
+        
+        <div className="flex justify-center mb-12">
+            <LivingGoldLogo className="h-auto w-full max-w-sm" />
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 mb-16">
-          
-          {/* Desktop Logo */}
-          <div className="hidden md:block md:col-span-4">
-            <LivingGoldLogo className="h-auto w-full max-w-xs" />
-          </div>
-
-          <div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
-            <div className="sm:col-span-2 lg:col-span-1 max-w-sm">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 max-w-4xl mx-auto mb-16">
+          <div className="max-w-sm mx-auto md:mx-0 text-center md:text-left">
               <h3 className="text-lg font-bold mb-6">
                 Join our community and enjoy 10% off your first Living Gold order
               </h3>
@@ -50,27 +43,15 @@ export default function Footer() {
               </p>
             </div>
 
-            <div>
+            <div className="text-center md:text-left mx-auto">
               <h4 className="font-bold mb-6">Customer Services</h4>
               <ul className="space-y-4 text-sm text-gray-400">
                 <li><Link href="#" className="hover:text-primary">Help Center & FAQs</Link></li>
                 <li><Link href="#" className="hover:text-primary">Delivery & Returns</Link></li>
                 <li><Link href="#" className="hover:text-primary">Store Locator</Link></li>
                 <li><Link href="/contact" className="hover:text-primary">Contact Us</Link></li>
-                <li><Link href="#" className="hover:text-primary">GB | EN</Link></li>
               </ul>
             </div>
-
-            <div>
-              <h4 className="font-bold mb-6">About Us</h4>
-              <ul className="space-y-4 text-sm text-gray-400">
-                 <li><Link href="/about" className="hover:text-primary">Our Story</Link></li>
-                <li><Link href="#" className="hover:text-primary">Press Contact</Link></li>
-                <li><Link href="#" className="hover:text-primary">Trade Program</Link></li>
-                <li><Link href="#" className="hover:text-primary">Legal</Link></li>
-              </ul>
-            </div>
-          </div>
         </div>
 
         <div className="border-t border-primary/30 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6">
