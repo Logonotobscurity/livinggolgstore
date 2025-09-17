@@ -1,4 +1,5 @@
 
+
 'use client';
 
 import { notFound } from 'next/navigation';
@@ -52,7 +53,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           </div>
           <div className="md:pt-8">
             <h1 className="font-headline text-3xl md:text-4xl font-bold mb-4">{product.title}</h1>
-            <p className="text-lg md:text-xl text-gray-400 mb-6">{product.description}</p>
+            <p className="text-lg md:text-xl mb-6">{product.description}</p>
             
             <div className="flex items-center mb-6">
               <div className="flex items-center">
@@ -60,9 +61,9 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                 <Icons.star className="w-5 h-5 fill-current" />
                 <Icons.star className="w-5 h-5 fill-current" />
                 <Icons.star className="w-5 h-5 fill-current" />
-                <Icons.star className="w-5 h-5 text-gray-600 fill-current" />
+                <Icons.star className="w-5 h-5 fill-current text-gray-600" />
               </div>
-              <span className="ml-3 text-sm text-gray-400">(12 Reviews)</span>
+              <span className="ml-3 text-sm">(12 Reviews)</span>
             </div>
 
             <p className="text-3xl md:text-4xl font-bold text-primary mb-8">{formatPrice(product.price)}</p>
@@ -77,15 +78,15 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                   onClick={() => setIsFavorited(!isFavorited)}
                   aria-pressed={isFavorited}
                 >
-                    <Icons.heart className={cn("w-6 h-6", { "fill-current text-primary": isFavorited })} />
+                    <Icons.heart className={cn("w-6 h-6", { "fill-current": isFavorited })} />
                 </Button>
             </div>
 
-            <p className="text-gray-300 leading-relaxed">
+            <p className="leading-relaxed">
               An exquisite piece that combines timeless elegance with modern design. Perfect for creating a focal point in any room, this {product.title?.toLowerCase()} offers both functionality and unparalleled style. Crafted from the finest materials.
             </p>
 
-             <div className="mt-8 text-sm text-gray-400">
+             <div className="mt-8 text-sm">
                 <p><span className="font-semibold">Category:</span> Lighting</p>
                 <p><span className="font-semibold">SKU:</span> {product.id.toUpperCase()}</p>
              </div>
@@ -109,3 +110,5 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
     </div>
   );
 }
+
+    
