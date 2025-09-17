@@ -84,7 +84,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
                   )}
                 </>
               )
-            }) : null}
+            }) : children}
         </Slot>
       )
     }
