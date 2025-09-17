@@ -9,12 +9,12 @@ export default function Footer() {
   const paymentIcons = PlaceHolderImages.filter(img => img.id.startsWith('payment-'));
 
   return (
-    <footer className="text-white pt-16 md:pt-24 pb-8">
+    <footer className="text-white pt-24 md:pt-24 pb-8">
       <div className="container mx-auto px-6">
         
         <FooterLivingGold className="w-full max-w-[1600px] mx-auto" />
 
-        <div className="border-t border-primary/30 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6 mt-16">
+        <div className="border-t border-primary/30 pt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6 mt-16 md:mt-24">
           <p className="text-xs text-gray-400 order-2 md:order-1">
             &copy; {currentYear} Living Gold. All rights reserved.
           </p>

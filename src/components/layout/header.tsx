@@ -44,7 +44,7 @@ export default function Header() {
           </div>
         </div>
         <div className="border-b border-primary/30">
-          <div className="container mx-auto px-6 h-20 flex justify-between items-center max-w-7xl">
+          <div className="container mx-auto px-6 h-24 md:h-20 flex justify-between items-center max-w-7xl">
             <div className="flex items-center justify-start w-1/3 md:w-auto">
               <Sheet>
                 <SheetTrigger asChild>
@@ -61,7 +61,7 @@ export default function Header() {
             <div className="flex-1 text-center md:text-left">
               <Link href="/">
                 <LivingGoldWordmark className="hidden md:block h-12 w-auto text-white" />
-                <LivingGoldLogoMobile className="md:hidden h-14 w-auto mx-auto text-white" />
+                <LivingGoldLogoMobile className="md:hidden h-16 w-auto mx-auto text-white" />
                 <span className="sr-only">LIVING GOLD</span>
               </Link>
             </div>
