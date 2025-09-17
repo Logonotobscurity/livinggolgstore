@@ -13,7 +13,7 @@ interface LogoProps extends React.SVGProps<SVGSVGElement> {
 export function LivingGoldLogo({ className, title = 'LIVING GOLD', ...props }: LogoProps) {
   return (
     <svg
-      viewBox="0 0 1200 220"
+      viewBox="0 0 1200 320"
       preserveAspectRatio="xMidYMid meet"
       className={cn('h-auto w-full', className)}
       role="img"
@@ -42,15 +42,15 @@ export function LivingGoldLogo({ className, title = 'LIVING GOLD', ...props }: L
       </defs>
 
       <g transform="translate(0,12)">
-        <rect x="40" y="18" rx="80" ry="80" width="1120" height="160" fill="currentColor" opacity="0.1" />
+        <rect x="40" y="18" rx="80" ry="80" width="1120" height="280" fill="currentColor" opacity="0.1" />
       </g>
 
       <g fontFamily="Georgia, 'Times New Roman', serif" textAnchor="middle">
-        <text x="600" y="88" fontSize="68" fontWeight="700" letterSpacing="6" fill="url(#goldGrad1)" stroke="rgba(0,0,0,0.18)" strokeWidth="2">LIVING</text>
-        <text x="600" y="160" fontSize="118" fontWeight="800" letterSpacing="10" fill="url(#goldGrad1)" stroke="rgba(0,0,0,0.2)" strokeWidth="3">GOLD</text>
-        <rect x="0" y="0" width="1200" height="220" fill="url(#stripes1)" opacity="0.12" />
-        <path d="M420 120 C520 50, 680 50, 780 120 L780 140 C680 70, 520 70, 420 140 Z" fill="url(#shineGrad1)" opacity="0.9" />
-        <line x1="290" x2="910" y1="182" y2="182" stroke="#ffd57a" strokeWidth="3" opacity="0.7" />
+        <text x="600" y="130" fontSize="118" fontWeight="700" letterSpacing="6" fill="url(#goldGrad1)" stroke="rgba(0,0,0,0.18)" strokeWidth="2">LIVING</text>
+        <text x="600" y="250" fontSize="168" fontWeight="800" letterSpacing="10" fill="url(#goldGrad1)" stroke="rgba(0,0,0,0.2)" strokeWidth="3">GOLD</text>
+        <rect x="0" y="0" width="1200" height="320" fill="url(#stripes1)" opacity="0.12" />
+        <path d="M420 180 C520 110, 680 110, 780 180 L780 200 C680 130, 520 130, 420 200 Z" fill="url(#shineGrad1)" opacity="0.9" />
+        <line x1="220" x2="980" y1="282" y2="282" stroke="#ffd57a" strokeWidth="4" opacity="0.7" />
       </g>
     </svg>
   );
