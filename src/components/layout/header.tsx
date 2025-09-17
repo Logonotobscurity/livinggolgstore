@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -6,9 +7,12 @@ import NavMenu from './nav-menu';
 import MobileNavMenu from './mobile-nav-menu';
 import { Icons } from '@/components/icons';
 import { useCart } from '@/context/cart-context';
+import { useWishlist } from '@/context/wishlist-context';
 
 export default function Header() {
   const { totalItemsCount } = useCart();
+  const { wishlistItems } = useWishlist();
+  const wishlistItemCount = wishlistItems.length;
 
   return (
     <header className="sticky top-0 z-50 w-full bg-black text-white">
@@ -30,13 +34,6 @@ export default function Header() {
               className="link-underline transition-colors"
             >
               Design Studio
-            </Link>
-            <span className="text-gray-500">|</span>
-            <Link
-              href="/contact"
-              className="link-underline transition-colors"
-            >
-              Contact
             </Link>
           </nav>
         </div>
@@ -69,6 +66,25 @@ export default function Header() {
             <button aria-label="Search" className="hidden sm:inline-flex p-2 rounded-full hover:bg-accent transition-colors">
               <Icons.search className="h-6 w-6" />
             </button>
+             <Link
+                href="/contact"
+                aria-label="Contact"
+                className="p-2 rounded-full hover:bg-accent transition-colors block"
+              >
+                <Icons.mail className="h-6 w-6" />
+            </Link>
+            <Link
+                href="/wishlist"
+                aria-label="Wishlist"
+                className="p-2 rounded-full hover:bg-accent transition-colors block relative"
+              >
+                <Icons.heart className="h-6 w-6" />
+                 {wishlistItemCount > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs rounded-full h-4 w-4 flex items-center justify-center">
+                    {wishlistItemCount}
+                  </span>
+                )}
+            </Link>
             <div className="relative">
               <Link
                 href="/cart"
@@ -101,3 +117,5 @@ export default function Header() {
     </header>
   );
 }
+
+    
