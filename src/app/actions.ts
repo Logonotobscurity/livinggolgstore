@@ -31,3 +31,28 @@ export async function submitContactForm(data: unknown) {
     message: "Thank you for your message! We will be in touch shortly.",
   };
 }
+
+const subscriptionFormSchema = z.object({
+  email: z.string().email({ message: 'Please enter a valid email address.' }),
+  phone: z.string().min(10, { message: 'Please enter a valid phone number.' }).optional(),
+});
+
+export async function submitSubscriptionForm(data: unknown) {
+  const validatedFields = subscriptionFormSchema.safeParse(data);
+
+  if (!validatedFields.success) {
+    const firstError = Object.values(validatedFields.error.flatten().fieldErrors)[0]?.[0];
+    return {
+      success: false,
+      message: firstError || 'Invalid data provided. Please check the form.',
+    };
+  }
+  
+  console.log("Subscription data received:", validatedFields.data);
+  await new Promise(resolve => setTimeout(resolve, 1000));
+
+  return {
+    success: true,
+    message: "Thank you for subscribing! Your 10% discount will be applied at checkout.",
+  };
+}
