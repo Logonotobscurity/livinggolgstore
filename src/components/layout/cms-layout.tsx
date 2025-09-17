@@ -36,7 +36,7 @@ export default function CmsLayout({ children, breadcrumb }: CmsLayoutProps) {
             </div>
           </div>
         )}
-        <div className="py-16 md:py-24">
+        <div className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
           {children}
         </div>
       </main>
