@@ -10,6 +10,7 @@ import { Button } from './ui/button';
 import { Icons } from './icons';
 import { useWishlist } from '@/context/wishlist-context';
 import ShareModal from './share-modal';
+import { useToast } from '@/hooks/use-toast';
 
 interface CategoryCardProps {
   product: ImagePlaceholder;
@@ -28,12 +29,16 @@ export function CategoryCard({
 }: CategoryCardProps) {
   const { toggleWishlist, isInWishlist } = useWishlist();
   const [isShareModalOpen, setShareModalOpen] = useState(false);
+  const { toast } = useToast();
 
   const isWishlisted = isInWishlist(product.id);
 
   const handleWishlistToggle = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
+
+    const wasInWishlist = isInWishlist(product.id);
+    
     toggleWishlist({
       id: product.id,
       name: product.title || 'Product Name Not Available',
@@ -41,6 +46,11 @@ export function CategoryCard({
       image: product.imageUrl,
       price: parseFloat(product.price || '0'),
       slug: product.slug,
+    });
+
+    toast({
+      title: wasInWishlist ? 'Removed from Wishlist' : 'Added to Wishlist',
+      description: product.title,
     });
   };
   
