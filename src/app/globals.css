@@ -111,8 +111,8 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   
   .cms-page .default-content-wrapper p {
@@ -129,7 +129,7 @@
   }
   
   .cms-page .text-wrapper {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     width: 100%;
     max-width: 768px;
     margin: 0 auto 64px;
@@ -215,12 +215,15 @@
       display: none;
     }
   
-    body.cms-page-body .cms-page .default-content-wrapper {
-      margin-bottom: 32px
+    .cms-page .default-content-wrapper {
+      margin-bottom: 32px;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   
     .cms-page .text-wrapper, .cms-page .text-wrapper:has(.mb-32), .cms-page .text-wrapper:has(.section-divider) {
       margin-bottom: 32px;
+      padding: 0 1rem;
     }
   
     .cms-page .text-wrapper:has(.address-section) {

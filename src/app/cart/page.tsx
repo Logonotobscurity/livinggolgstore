@@ -52,8 +52,8 @@ export default function CartPage() {
   return (
     <CmsLayout breadcrumb={breadcrumb}>
       <div className="cms-page text-white">
-        <div className="text-wrapper text-center mb-16">
-          <h1 className="mb-4 text-[50px]">Your Quote Request</h1>
+        <div className="text-wrapper text-center mb-12 px-4">
+          <h1 className="mb-4 text-4xl md:text-5xl">Your Quote Request</h1>
         </div>
         
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,13 +69,13 @@ export default function CartPage() {
                     {/* Cart Items */}
                     <div className="space-y-8">
                         {cartItems.map(item => (
-                            <div key={item.id} className="grid grid-cols-4 items-start gap-4 border-b border-gray-700 pb-8 md:grid-cols-12 md:items-center">
-                                <div className="col-span-1 md:col-span-1">
-                                    <Image src={item.image} alt={item.name} width={80} height={80} className="rounded-md bg-secondary p-2 w-full aspect-square object-contain" />
+                            <div key={item.id} className="grid grid-cols-1 sm:grid-cols-12 items-start gap-4 sm:gap-6 border-b border-gray-700 pb-8">
+                                <div className="sm:col-span-2">
+                                    <Image src={item.image} alt={item.name} width={100} height={100} className="rounded-md bg-secondary p-2 w-full max-w-[120px] sm:max-w-full aspect-square object-contain" />
                                 </div>
-                                <div className="col-span-3 md:col-span-6">
-                                    <h3 className="font-bold">{item.name}</h3>
-                                    <p className="text-sm text-gray-400">SKU: {item.sku}</p>
+                                <div className="sm:col-span-6 flex flex-col justify-center h-full">
+                                    <h3 className="font-bold text-lg">{item.name}</h3>
+                                    <p className="text-sm text-gray-400 mt-1">SKU: {item.sku}</p>
                                     <div className="flex items-center mt-4 text-xs sm:text-sm">
                                       <button onClick={() => handleMoveToWishlist(item)} className="text-primary hover:underline">
                                         Move to Wishlist
@@ -86,7 +86,7 @@ export default function CartPage() {
                                       </button>
                                     </div>
                                 </div>
-                                <div className="col-span-4 md:col-span-5 flex items-center justify-between gap-2 border-t border-gray-800 pt-4 mt-4 md:border-none md:pt-0 md:mt-0">
+                                <div className="sm:col-span-4 flex items-center justify-between sm:justify-end gap-2 pt-4 mt-4 border-t border-gray-800 sm:border-none sm:pt-0 sm:mt-0 w-full">
                                     <div className="flex items-center gap-1 sm:gap-2">
                                       <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => handleQuantityChange(item.id, item.quantity - 1)}>
                                           <Icons.minus className="h-4 w-4" />
@@ -96,9 +96,6 @@ export default function CartPage() {
                                           <Icons.plus className="h-4 w-4" />
                                       </Button>
                                     </div>
-                                    <Button variant="ghost" size="icon" onClick={() => removeFromCart(item.id)} className="md:hidden">
-                                        <Icons.trash className="h-5 w-5 text-destructive" />
-                                    </Button>
                                 </div>
                             </div>
                         ))}

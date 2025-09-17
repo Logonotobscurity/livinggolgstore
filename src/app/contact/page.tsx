@@ -1,3 +1,4 @@
+
 import CmsLayout from "@/components/layout/cms-layout";
 import { ContactForm } from "@/components/contact-form";
 import Link from "next/link";
@@ -24,8 +25,8 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start max-w-5xl mx-auto px-4">
-            <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start max-w-5xl mx-auto px-4">
+            <div className="w-full">
                  <ContactForm />
             </div>
             <div className="space-y-12 text-gray-300">
@@ -64,7 +65,7 @@ export default function ContactPage() {
 
         <div className="max-w-5xl mx-auto px-4">
             <h2 className="font-headline text-3xl font-bold text-center mb-12">Customer Service Hub</h2>
-            <div className="grid md:grid-cols-2 gap-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
               <div>
                 <h3 className="font-bold text-xl text-primary mb-6">Frequently Asked Questions</h3>
                 <Accordion type="single" collapsible className="w-full">

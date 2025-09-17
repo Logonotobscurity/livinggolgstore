@@ -30,11 +30,11 @@ export default function WishlistPage() {
   return (
     <CmsLayout breadcrumb={breadcrumb}>
       <div className="cms-page text-white">
-        <div className="text-wrapper text-center mb-16">
-          <h1 className="mb-4 text-[50px]">Your Wishlist</h1>
+        <div className="text-wrapper text-center mb-12 px-4">
+          <h1 className="mb-4 text-4xl md:text-5xl">Your Wishlist</h1>
         </div>
         
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             {wishlistItems.length === 0 ? (
                 <div className="text-center py-16">
                     <p className="text-xl mb-8">Your wishlist is empty.</p>
@@ -58,7 +58,7 @@ export default function WishlistPage() {
                                 <Button 
                                     variant="destructive" 
                                     size="icon"
-                                    className="absolute top-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity"
+                                    className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity"
                                     onClick={() => toggleWishlist(item)}
                                 >
                                     <Icons.trash className="h-5 w-5" />

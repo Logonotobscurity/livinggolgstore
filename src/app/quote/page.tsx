@@ -34,11 +34,11 @@ export default function QuotePage() {
 
   return (
     <CmsLayout breadcrumb={breadcrumb}>
-        <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start max-w-6xl mx-auto px-4 text-white">
-            <div className="order-2 md:order-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start max-w-6xl mx-auto px-4 text-white">
+            <div className="order-2 md:order-1 w-full">
                 <CheckoutForm />
             </div>
-            <div className="order-1 md:order-2 space-y-8">
+            <div className="order-1 md:order-2 space-y-8 w-full">
                  <h2 className="font-headline text-2xl font-bold text-white mb-6">
                     Order Summary ({totalItemsCount} items)
                 </h2>

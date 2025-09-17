@@ -73,7 +73,7 @@ export default function ProductPage({ params: { slug } }: { params: { slug: stri
     <div className="flex flex-col min-h-screen bg-black text-white">
       <Header />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
-        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
           <div className="w-full flex justify-center items-center p-4 sm:p-8 bg-secondary rounded-lg aspect-square">
             <Image
               src={product.imageUrl}
@@ -83,24 +83,24 @@ export default function ProductPage({ params: { slug } }: { params: { slug: stri
               className="object-contain w-full h-full"
             />
           </div>
-          <div className="md:pt-8">
+          <div className="md:py-8">
             <h1 className="font-headline text-3xl md:text-4xl font-bold mb-4">{product.title}</h1>
-            <p className="text-lg md:text-xl mb-6">{product.description}</p>
+            <p className="text-lg md:text-xl mb-6 text-gray-300">{product.description}</p>
             
             <div className="flex items-center mb-6">
-              <div className="flex items-center">
+              <div className="flex items-center text-primary">
                 <Icons.star className="w-5 h-5 fill-current" />
                 <Icons.star className="w-5 h-5 fill-current" />
                 <Icons.star className="w-5 h-5 fill-current" />
                 <Icons.star className="w-5 h-5 fill-current" />
-                <Icons.star className="w-5 h-5" />
+                <Icons.star className="w-5 h-5 fill-gray-600" />
               </div>
-              <span className="ml-3 text-sm">(12 Reviews)</span>
+              <span className="ml-3 text-sm text-gray-400">(12 Reviews)</span>
             </div>
 
             <p className="text-3xl md:text-4xl font-bold text-primary mb-8">{formatPrice(product.price)}</p>
 
-            <div className="flex items-stretch gap-4 mb-8">
+            <div className="flex items-stretch gap-2 sm:gap-4 mb-8">
                 <Button variant="destructive" size="lg" className="flex-grow" onClick={handleAddToCart} showIcon>Add to Cart</Button>
                 <Button 
                   variant="outline" 
@@ -122,13 +122,13 @@ export default function ProductPage({ params: { slug } }: { params: { slug: stri
                 </Button>
             </div>
 
-            <p className="leading-relaxed">
+            <p className="leading-relaxed text-gray-300">
               An exquisite piece that combines timeless elegance with modern design. Perfect for creating a focal point in any room, this {product.title?.toLowerCase()} offers both functionality and unparalleled style. Crafted from the finest materials.
             </p>
 
-             <div className="mt-8 text-sm">
-                <p><span className="font-semibold">Category:</span> Lighting</p>
-                <p><span className="font-semibold">SKU:</span> {product.id.toUpperCase()}</p>
+             <div className="mt-8 text-sm text-gray-400 space-y-1">
+                <p><span className="font-semibold text-gray-200">Category:</span> Lighting</p>
+                <p><span className="font-semibold text-gray-200">SKU:</span> {product.id.toUpperCase()}</p>
              </div>
           </div>
         </div>

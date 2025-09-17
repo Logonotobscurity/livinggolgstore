@@ -1,3 +1,4 @@
+
 import CmsLayout from "@/components/layout/cms-layout";
 import Image from "next/image";
 
@@ -10,7 +11,7 @@ export default function AboutPage() {
   return (
     <CmsLayout breadcrumb={breadcrumb}>
       <div className="cms-page text-white">
-        <div className="text-wrapper text-center mb-16">
+        <div className="text-wrapper text-center mb-16 px-4">
           <h1 className="mb-4 text-4xl md:text-5xl">About Us</h1>
           <p className="text-base md:text-lg max-w-2xl mx-auto">Since 2013, Living Gold has imported and curated exquisite lighting from around the world, transforming interiors across Nigeria through exceptional design and considered service.</p>
         </div>
