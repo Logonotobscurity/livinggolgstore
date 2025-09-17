@@ -9,6 +9,7 @@ import { Icons } from "@/components/icons";
 import Image from "next/image";
 import Link from "next/link";
 import { useWishlist } from "@/context/wishlist-context";
+import { useCart } from "@/context/cart-context";
 
 type CartItem = {
   id: string;
@@ -35,6 +36,7 @@ const initialCartItems: CartItem[] = [
 export default function CartPage() {
   const [cartItems, setCartItems] = useState<CartItem[]>(initialCartItems);
   const { toggleWishlist } = useWishlist();
+  const { addToCart } = useCart();
 
   const handleQuantityChange = (id: string, newQuantity: number) => {
     if (newQuantity < 1) return;
