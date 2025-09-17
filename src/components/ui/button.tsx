@@ -53,6 +53,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ) => {
     const Comp = asChild ? Slot : 'button';
     const color = variant === 'destructive' ? 'hsl(var(--destructive))' : 'hsl(var(--primary))';
+    const iconColor = variant === 'destructive' || variant === 'default' ? 'hsl(var(--primary-foreground))' : 'hsl(var(--primary))';
     
     if (asChild) {
       return (
@@ -75,7 +76,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       >
         {children}
         {showIcon && size !== 'icon' && (
-          <div className="button__icon-wrapper">
+          <div className="button__icon-wrapper" style={{'--clr': iconColor} as React.CSSProperties}>
              <div className="button__icon-svg-wrapper">
                 <svg
                 width='15'

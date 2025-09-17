@@ -4,6 +4,7 @@ import NavMenu from './nav-menu';
 import MobileNavMenu from './mobile-nav-menu';
 import { Icons } from '@/components/icons';
 import { NewMenuIcon } from '../new-menu-icon';
+import { ShoppingCart } from 'lucide-react';
 
 export default function Header() {
   return (
@@ -68,7 +69,7 @@ export default function Header() {
             </button>
             <div className="relative">
               <Link href="/cart" aria-label="Cart" className="p-2 rounded-full hover:bg-accent transition-colors block">
-                <Icons.shoppingCart className="h-6 w-6" />
+                <ShoppingCart className="h-6 w-6" />
               </Link>
               <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-xs rounded-full h-4 w-4 flex items-center justify-center">
                 0
