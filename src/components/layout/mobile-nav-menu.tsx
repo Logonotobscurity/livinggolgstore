@@ -74,9 +74,9 @@ export default function MobileNavMenu() {
                         <Icons.mail className="h-5 w-5 mr-4" />
                         <span>Contact</span>
                     </Link>
-                    <Link href="/account" className="flex items-center text-lg hover:text-primary">
+                    <Link href="/signup" className="flex items-center text-lg hover:text-primary">
                         <Icons.user className="h-5 w-5 mr-4" />
-                        <span>Account</span>
+                        <span>Sign Up</span>
                     </Link>
                 </div>
             </div>

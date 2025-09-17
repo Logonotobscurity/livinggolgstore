@@ -105,7 +105,7 @@ export default function Header() {
                     </span>
                   )}
               </Link>
-              <Link href="/account" aria-label="Account" className="p-2 rounded-full hover:bg-accent hidden md:block">
+              <Link href="/signup" aria-label="Account" className="p-2 rounded-full hover:bg-accent hidden md:block">
                 <Icons.user className="h-5 w-5" />
               </Link>
             </div>
