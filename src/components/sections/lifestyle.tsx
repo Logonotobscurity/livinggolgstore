@@ -44,10 +44,10 @@ export default function Lifestyle() {
             className="w-full"
         >
             <CarouselContent className="-ml-4">
-            {categories.map((category, index) => (
+            {categories.map((product, index) => (
                 <CarouselItem key={index} className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6 pl-4">
                     <CategoryCard
-                      category={category}
+                      product={product}
                       animationDelay={`${index * 0.1}s`}
                       className="w-full"
                       imageClassName="w-full h-full p-2 sm:p-6"

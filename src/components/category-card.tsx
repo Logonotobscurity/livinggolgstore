@@ -1,10 +1,18 @@
+
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 import { cn } from '@/lib/utils';
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
+import { Button } from './ui/button';
+import { Icons } from './icons';
+import { useWishlist } from '@/context/wishlist-context';
+import ShareModal from './share-modal';
 
 interface CategoryCardProps {
-  category: ImagePlaceholder;
+  product: ImagePlaceholder;
   className?: string;
   animationDelay?: string;
   imageClassName?: string;
@@ -12,12 +20,40 @@ interface CategoryCardProps {
 }
 
 export function CategoryCard({
-  category,
+  product,
   className,
   animationDelay,
   imageClassName,
   priority,
 }: CategoryCardProps) {
+  const { toggleWishlist, isInWishlist } = useWishlist();
+  const [isShareModalOpen, setShareModalOpen] = useState(false);
+
+  const isWishlisted = isInWishlist(product.id);
+
+  const handleWishlistToggle = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleWishlist({
+      id: product.id,
+      name: product.title || 'Product Name Not Available',
+      sku: product.id.toUpperCase(),
+      image: product.imageUrl,
+      price: parseFloat(product.price || '0'),
+      slug: product.slug,
+    });
+  };
+  
+  const handleShareClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setShareModalOpen(true);
+  };
+  
+  const productUrl = typeof window !== 'undefined' 
+    ? `${window.location.origin}/products/${product.slug}` 
+    : '';
+
   return (
     <div
       className={cn(
@@ -30,18 +66,38 @@ export function CategoryCard({
       }}
     >
       <Link
-        href={`/products/${category.slug}`}
+        href={`/products/${product.slug}`}
         className="group block focus:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-lg"
         tabIndex={0}
         role="button"
-        aria-label={`Browse ${category.title} collection`}
+        aria-label={`Browse ${product.title} collection`}
       >
         <>
           <div className="product-frame w-full aspect-square border-3 border-gray-700/50 bg-transparent flex justify-center items-center mb-4 md:mb-8 p-2 md:p-4 relative overflow-hidden backdrop-blur-sm transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:border-primary group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.2),0_0_0_1px_rgba(201,169,97,0.2),inset_0_1px_0_rgba(255,255,255,0.1)] group-focus-visible:border-primary group-focus-visible:shadow-[0_20px_40px_rgba(0,0,0,0.2),0_0_0_1px_rgba(201,169,97,0.2),inset_0_1px_0_rgba(255,255,255,0.1)]">
+            <div className="absolute top-2 right-2 z-10 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <Button 
+                  variant="outline" 
+                  size="icon" 
+                  aria-label="Add to wishlist" 
+                  className="w-8 h-8 bg-black/50 hover:bg-black"
+                  onClick={handleWishlistToggle}
+                >
+                    <Icons.heart className={cn("w-4 h-4", { "fill-current text-primary": isWishlisted })} />
+                </Button>
+                <Button 
+                  variant="outline" 
+                  size="icon" 
+                  aria-label="Share this product"
+                  className="w-8 h-8 bg-black/50 hover:bg-black"
+                  onClick={handleShareClick}
+                >
+                    <Icons.share className="w-4 h-4" />
+                </Button>
+            </div>
             <div className="inner-frame w-full h-full bg-transparent flex justify-center items-center rounded-sm relative overflow-hidden">
               <Image
-                src={category.imageUrl}
-                alt={category.description}
+                src={product.imageUrl}
+                alt={product.description}
                 width={300}
                 height={300}
                 priority={priority}
@@ -49,15 +105,21 @@ export function CategoryCard({
                   'product-image object-contain transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] filter drop-shadow-md group-hover:scale-105 group-hover:[transform:scale(1.05)_rotateY(5deg)] group-hover:drop-shadow-lg group-focus-visible:scale-105 group-focus-visible:[transform:scale(1.05)_rotateY(5deg)] group-focus-visible:drop-shadow-lg',
                   imageClassName ?? 'w-full h-full p-2 sm:p-6'
                 )}
-                data-ai-hint={category.imageHint}
+                data-ai-hint={product.imageHint}
               />
             </div>
           </div>
           <h3 className="font-headline text-base uppercase tracking-wider text-white h-10 flex items-center justify-center">
-            {category.title}
+            {product.title}
           </h3>
         </>
       </Link>
+      <ShareModal 
+        isOpen={isShareModalOpen} 
+        onClose={() => setShareModalOpen(false)} 
+        shareUrl={productUrl}
+        shareTitle={product.title || 'Check out this product'} 
+      />
     </div>
   );
 }

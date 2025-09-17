@@ -46,8 +46,8 @@ export default function OutdoorLightingPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-12">
               {products.map((product, index) => (
                 <CategoryCard 
-                  key={product.id} _
-                  category={product} 
+                  key={product.id} 
+                  product={product} 
                   animationDelay={`${index * 0.05}s`}
                   imageClassName="w-full h-full p-2 sm:p-6"
                 />

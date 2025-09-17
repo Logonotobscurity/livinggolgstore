@@ -23,10 +23,10 @@ export default function ProductCategories() {
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4 md:gap-x-8 gap-y-8 md:gap-y-16 max-w-7xl mx-auto">
-          {categories.map((category, index) => (
+          {categories.map((product, index) => (
             <CategoryCard
-              key={category.id}
-              category={category}
+              key={product.id}
+              product={product}
               animationDelay={`${index * 0.05}s`}
               className="w-full"
               imageClassName="w-full h-full p-2 sm:p-6"
