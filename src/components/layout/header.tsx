@@ -10,6 +10,7 @@ import { useCart } from '@/context/cart-context';
 import { useWishlist } from '@/context/wishlist-context';
 import NavMenu from './nav-menu';
 import SearchModal from '../search-modal';
+import { LivingGoldLogoMobile, LivingGoldWordmark } from '../logo';
 
 export default function Header() {
   const { totalItemsCount } = useCart();
@@ -58,11 +59,10 @@ export default function Header() {
             </div>
 
             <div className="flex-1 text-center md:text-left">
-              <Link
-                href="/"
-                className="font-headline text-xl md:text-2xl font-bold tracking-[0.2em] uppercase"
-              >
-                LIVING GOLD
+              <Link href="/">
+                <LivingGoldWordmark className="hidden md:block h-12 w-auto text-white" />
+                <LivingGoldLogoMobile className="md:hidden h-14 w-auto mx-auto text-white" />
+                <span className="sr-only">LIVING GOLD</span>
               </Link>
             </div>
 
