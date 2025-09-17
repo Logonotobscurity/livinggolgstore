@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Icons } from '@/components/icons';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogClose } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
 
@@ -23,9 +23,12 @@ const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, shareUrl, shar
           url: shareUrl,
         });
         onClose();
-      } catch (error) {
+      } catch (error: any) {
+        // Do not show an error if the user cancels the share sheet
+        if (error.name === 'AbortError') {
+          return;
+        }
         console.error('Error sharing:', error);
-        // Only show error if navigator.share exists but fails
         toast({
             variant: 'destructive',
             title: 'Could not share',
@@ -33,7 +36,6 @@ const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, shareUrl, shar
         })
       }
     } else {
-      // Fallback for browsers that do not support the Web Share API
       handleCopy();
     }
   };
@@ -71,6 +73,9 @@ const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, shareUrl, shar
                     <span>Copy Link</span>
                 </Button>
             </div>
+             <DialogClose asChild>
+                <Button variant="ghost" className="mt-4 w-full">Close</Button>
+            </DialogClose>
         </DialogContent>
     </Dialog>
   );
