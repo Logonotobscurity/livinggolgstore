@@ -52,7 +52,6 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-gray-400">
               <li><Link href="#" className="hover:text-primary">Terms & Conditions</Link></li>
               <li><Link href="#" className="hover:text-primary">Privacy Policy</Link></li>
-              <li><Link href="#" className="hover:text-primary">Klarna</Link></li>
             </ul>
           </div>
 
@@ -62,12 +61,6 @@ export default function Footer() {
               <li><Link href="#" className="hover:text-primary">Professionals Shop</Link></li>
               <li><Link href="#" className="hover:text-primary">Press Contact</Link></li>
               <li><Link href="#" className="hover:text-primary">Trade Program</Link></li>
-            </ul>
-            <h4 className="font-bold mb-6 mt-10 text-primary">Social</h4>
-            <ul className="space-y-4 text-sm text-gray-400">
-              <li><Link href="#" className="hover:text-primary">Instagram</Link></li>
-              <li><Link href="#" className="hover:text-primary">YouTube</Link></li>
-              <li><Link href="#" className="hover:text-primary">Pinterest</Link></li>
             </ul>
           </div>
         </div>
