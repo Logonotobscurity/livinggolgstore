@@ -5,6 +5,7 @@ import Footer from '@/components/layout/footer';
 import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
+import { ProductSupport } from '@/components/product-support';
 
 export default function ChandeliersPendantsPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('chandeliers-pendants-'));
@@ -54,6 +55,7 @@ export default function ChandeliersPendantsPage() {
             </div>
           </div>
         </section>
+        <ProductSupport />
       </main>
       <Footer />
     </div>

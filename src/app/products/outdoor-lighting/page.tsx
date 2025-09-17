@@ -5,6 +5,7 @@ import Footer from '@/components/layout/footer';
 import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
+import { ProductSupport } from '@/components/product-support';
 
 export default function OutdoorLightingPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('outdoor-lighting-'));
@@ -45,7 +46,7 @@ export default function OutdoorLightingPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-12">
               {products.map((product, index) => (
                 <CategoryCard 
-                  key={product.id} 
+                  key={product.id} _
                   category={product} 
                   animationDelay={`${index * 0.05}s`}
                   imageClassName="w-full h-full p-2 sm:p-6"
@@ -54,6 +55,7 @@ export default function OutdoorLightingPage() {
             </div>
           </div>
         </section>
+        <ProductSupport />
       </main>
       <Footer />
     </div>

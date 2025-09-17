@@ -5,6 +5,7 @@ import Footer from '@/components/layout/footer';
 import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
+import { ProductSupport } from '@/components/product-support';
 
 export default function SpecialtyLightingPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('specialty-lighting-'));
@@ -54,6 +55,7 @@ export default function SpecialtyLightingPage() {
             </div>
           </div>
         </section>
+        <ProductSupport />
       </main>
       <Footer />
     </div>

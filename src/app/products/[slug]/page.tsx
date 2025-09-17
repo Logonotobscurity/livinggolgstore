@@ -14,6 +14,7 @@ import { useCart } from '@/context/cart-context';
 import { useWishlist } from '@/context/wishlist-context';
 import ShareModal from '@/components/share-modal';
 import { useState } from 'react';
+import { ProductSupport } from '@/components/product-support';
 
 export default function ProductPage({ params: { slug } }: { params: { slug: string } }) {
   const product = PlaceHolderImages.find((p) => p.slug === slug);
@@ -132,6 +133,8 @@ export default function ProductPage({ params: { slug } }: { params: { slug: stri
                 ))}
             </div>
         </div>
+
+        <ProductSupport />
 
       </main>
       <Footer />
