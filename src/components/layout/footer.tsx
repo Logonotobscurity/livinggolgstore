@@ -9,7 +9,7 @@ export default function Footer() {
   const paymentIcons = PlaceHolderImages.filter(img => img.id.startsWith('payment-'));
 
   return (
-    <footer className="text-white pt-24 md:pt-24 pb-8">
+    <footer className="text-white pt-32 md:pt-24 pb-8">
       <div className="container mx-auto px-6">
         
         <FooterLivingGold className="w-full max-w-[1600px] mx-auto" />

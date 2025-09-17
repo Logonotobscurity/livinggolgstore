@@ -61,7 +61,7 @@ export default function Header() {
             <div className="flex-1 text-center md:text-left">
               <Link href="/">
                 <LivingGoldWordmark className="hidden md:block h-12 w-auto text-white" />
-                <LivingGoldLogoMobile className="md:hidden h-16 w-auto mx-auto text-white" />
+                <LivingGoldLogoMobile className="md:hidden h-20 w-auto mx-auto text-white" />
                 <span className="sr-only">LIVING GOLD</span>
               </Link>
             </div>
