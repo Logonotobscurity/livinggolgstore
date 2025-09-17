@@ -8,6 +8,7 @@ interface WishlistItem {
   sku: string;
   image: string;
   price: number;
+  slug: string;
 }
 
 interface WishlistContextType {

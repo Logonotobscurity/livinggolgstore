@@ -40,7 +40,7 @@ export default function WishlistPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                     {wishlistItems.map(item => (
                         <div key={item.id} className="border border-gray-800 rounded-lg p-4 flex flex-col items-center text-center relative group">
-                            <Link href={`/products/${item.sku.toLowerCase()}`} className="w-full">
+                            <Link href={`/products/${item.slug}`} className="w-full">
                               <div className="relative w-full aspect-square mb-4">
                                   <Image src={item.image} alt={item.name} fill className="object-contain rounded-md" />
                               </div>
