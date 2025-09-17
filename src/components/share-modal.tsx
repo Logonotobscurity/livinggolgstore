@@ -25,6 +25,7 @@ const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, shareUrl, shar
         onClose();
       } catch (error) {
         console.error('Error sharing:', error);
+        // Only show error if navigator.share exists but fails
         toast({
             variant: 'destructive',
             title: 'Could not share',
