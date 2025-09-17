@@ -8,7 +8,6 @@ import { Icons } from '@/components/icons';
 import { useCart } from '@/context/cart-context';
 import { useWishlist } from '@/context/wishlist-context';
 import NavMenu from './nav-menu';
-import { NewMenuIcon } from '../new-menu-icon';
 
 export default function Header() {
   const { totalItemsCount } = useCart();
@@ -45,7 +44,7 @@ export default function Header() {
             <Sheet>
               <SheetTrigger asChild>
                  <button aria-label="Open menu">
-                  <NewMenuIcon />
+                  <Icons.menu className="h-6 w-6" />
                 </button>
               </SheetTrigger>
               <SheetContent side="left" className="bg-black w-3/4 p-0">

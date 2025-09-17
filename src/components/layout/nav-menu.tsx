@@ -1,3 +1,4 @@
+
 'use client';
 
 import * as React from 'react';
@@ -11,151 +12,52 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
-import { Icons } from '@/components/icons';
+import { sitemap } from '@/lib/sitemap';
+import type { NavItem } from '@/lib/sitemap';
 import { cn } from '@/lib/utils';
 
-const ceilingLights: { title: string; href: string; icon: React.ElementType }[] =
-  [
-    {
-      title: 'Chandeliers',
-      href: '/products/chandeliers-pendants',
-      icon: Icons.lightbulb,
-    },
-    {
-      title: 'Pendant Lights',
-      href: '/products/chandeliers-pendants',
-      icon: Icons.lightbulb,
-    },
-    {
-      title: 'Flush & Semi-Flushmounts',
-      href: '/products/ceiling-lights',
-      icon: Icons.lampCeiling,
-    },
-    {
-      title: 'Linear Suspension',
-      href: '/products/linear-suspension',
-      icon: Icons.lightbulb,
-    },
-    {
-      title: 'Recessed Lighting',
-      href: '/products/recessed-track-lighting',
-      icon: Icons.lightbulb,
-    },
-    {
-      title: 'Track & Monorail',
-      href: '/products/recessed-track-lighting',
-      icon: Icons.lightbulb,
-    },
-  ];
-
-const wallLights: { title: string; href: string; icon: React.ElementType }[] = [
-  {
-    title: 'Wall Sconces',
-    href: '/products/wall-sconces-vanity-lights',
-    icon: Icons.lampWallUp,
-  },
-  {
-    title: 'Bath & Vanity Lights',
-    href: '/products/wall-sconces-vanity-lights',
-    icon: Icons.lampWallUp,
-  },
-  { title: 'Picture Lights', href: '/products/specialty-lighting', icon: Icons.lampWallUp },
-  {
-    title: 'Undercabinet Lights',
-    href: '/products/specialty-lighting',
-    icon: Icons.lampWallUp,
-  },
-  { title: 'Lighted Mirrors', href: '/products/specialty-lighting', icon: Icons.lampWallUp },
-];
-
-const lamps: { title: string; href: string; icon: React.ElementType }[] = [
-  { title: 'Floor Lamps', href: '/products/floor-lamps', icon: Icons.lamp },
-  { title: 'Table Lamps', href: '/products/table-lamps-portable-lights', icon: Icons.lamp },
-  { title: 'Desk Lamps', href: '/products/table-lamps-portable-lights', icon: Icons.lamp },
-  { title: 'Cordless Lamps', href: '/products/table-lamps-portable-lights', icon: Icons.lamp },
-];
-
 export default function NavMenu() {
+  const menuItems = sitemap;
+
   return (
     <NavigationMenu>
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Ceiling Lights</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {ceilingLights.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  <component.icon className="h-4 w-4 mr-2" />
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Wall Lights</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {wallLights.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  <component.icon className="h-4 w-4 mr-2" />
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Lamps</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {lamps.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  <component.icon className="h-4 w-4 mr-2" />
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/products/accessories" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Accessories
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-         <NavigationMenuItem>
-          <Link href="/products/outdoor-lighting" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Outdoor
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-         <NavigationMenuItem>
-          <Link href="/products/room-settings" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Room
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
+        {menuItems.map((item) => (
+          <NavigationMenuItem key={item.title}>
+            {item.items ? (
+              <>
+                <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                    {item.items.map((component) => (
+                      <ListItem
+                        key={component.title}
+                        title={component.title}
+                        href={component.href}
+                      >
+                        {component.icon && <component.icon className="h-4 w-4 mr-2" />}
+                      </ListItem>
+                    ))}
+                  </ul>
+                </NavigationMenuContent>
+              </>
+            ) : (
+              <Link href={item.href} legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  {item.title}
+                </NavigationMenuLink>
+              </Link>
+            )}
+          </NavigationMenuItem>
+        ))}
       </NavigationMenuList>
     </NavigationMenu>
   );
 }
 
 const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<typeof Link>
+  React.ElementRef<'a'>,
+  React.ComponentPropsWithoutRef<typeof Link> & { title: string }
 >(({ className, title, children, href, ...props }, ref) => {
   return (
     <li>
@@ -168,10 +70,10 @@ const ListItem = React.forwardRef<
             className
           )}
           {...props}
-          >
-            <div className="text-sm font-medium leading-none flex items-center">
-                {children} {title}
-            </div>
+        >
+          <div className="text-sm font-medium leading-none flex items-center">
+            {children} {title}
+          </div>
         </Link>
       </NavigationMenuLink>
     </li>
