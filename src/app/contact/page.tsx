@@ -1,5 +1,7 @@
+
 import CmsLayout from "@/components/layout/cms-layout";
 import { ContactForm } from "@/components/contact-form";
+import Link from "next/link";
 
 export default function ContactPage() {
   const breadcrumb = [
@@ -21,30 +23,42 @@ export default function ContactPage() {
             <div>
                  <ContactForm />
             </div>
-            <div className="space-y-8 text-gray-300">
+            <div className="space-y-12 text-gray-300">
+                <div className="space-y-8">
+                    <div>
+                        <h3 className="font-bold text-xl text-primary mb-4">Visit Our Showroom</h3>
+                        <p className="leading-relaxed">
+                            Living Gold Lighting,<br />
+                            Okpanam Road, Asaba,<br />
+                            Delta State, Nigeria
+                        </p>
+                    </div>
+                    <div>
+                        <h3 className="font-bold text-xl text-primary mb-4">Call Us</h3>
+                        <p><a href="tel:+2347011131333" className="hover:text-white">+234 701 113 1333</a></p>
+                        <p><a href="tel:+2348064441141" className="hover:text-white">+234 806 444 1141</a></p>
+                        <p><a href="tel:+2348034291995" className="hover:text-white">+234 803 429 1995</a> (Store)</p>
+                    </div>
+                     <div>
+                        <h3 className="font-bold text-xl text-primary mb-4">Email Us</h3>
+                        <p><a href="mailto:hello@livinggold.com" className="hover:text-white">hello@livinggold.com</a></p>
+                    </div>
+                     <div>
+                        <h3 className="font-bold text-xl text-primary mb-4">Business Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+
                 <div>
-                    <h3 className="font-bold text-xl text-primary mb-4">Visit Our Showroom</h3>
-                    <p className="leading-relaxed">
-                        Living Gold Lighting,<br />
-                        Okpanam Road, Asaba,<br />
-                        Delta State, Nigeria
-                    </p>
-                </div>
-                <div>
-                    <h3 className="font-bold text-xl text-primary mb-4">Call Us</h3>
-                    <p><a href="tel:+2347011131333" className="hover:text-white">+234 701 113 1333</a></p>
-                    <p><a href="tel:+2348064441141" className="hover:text-white">+234 806 444 1141</a></p>
-                    <p><a href="tel:+2348034291995" className="hover:text-white">+234 803 429 1995</a> (Store)</p>
-                </div>
-                 <div>
-                    <h3 className="font-bold text-xl text-primary mb-4">Email Us</h3>
-                    <p><a href="mailto:hello@livinggold.com" className="hover:text-white">hello@livinggold.com</a></p>
-                </div>
-                 <div>
-                    <h3 className="font-bold text-xl text-primary mb-4">Business Hours</h3>
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p>Saturday: 10:00 AM - 4:00 PM</p>
-                    <p>Sunday: Closed</p>
+                    <h3 className="font-bold text-xl text-primary mb-4">Customer Services</h3>
+                    <ul className="space-y-4 text-sm">
+                      <li><Link href="#" className="hover:text-white">Help Center & FAQs</Link></li>
+                      <li><Link href="#" className="hover:text-white">Delivery & Returns</Link></li>
+                      <li><Link href="#" className="hover:text-white">Store Locator</Link></li>
+                      <li><Link href="/contact" className="hover:text-white">Contact Us</Link></li>
+                    </ul>
                 </div>
             </div>
         </div>
