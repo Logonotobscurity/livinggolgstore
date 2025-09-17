@@ -12,14 +12,14 @@ export default function Footer() {
   const paymentIcons = PlaceHolderImages.filter(img => img.id.startsWith('payment-'));
 
   return (
-    <footer className="bg-black text-white pt-16 md:pt-24 pb-8">
+    <footer className="text-white pt-16 md:pt-24 pb-8">
       <div className="container mx-auto px-6">
         
-        <div className="flex justify-center mb-12">
-            <LivingGoldLogo className="h-auto w-full max-w-sm" />
+        <div className="flex justify-center mb-16 md:mb-24">
+            <LivingGoldLogo className="h-auto w-full max-w-lg" />
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 max-w-4xl mx-auto mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 max-w-4xl mx-auto mb-16 md:mb-24">
           <div className="max-w-sm mx-auto md:mx-0 text-center md:text-left">
               <h3 className="text-lg font-bold mb-6">
                 Join our community and enjoy 10% off your first Living Gold order
