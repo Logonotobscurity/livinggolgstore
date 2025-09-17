@@ -1,10 +1,15 @@
+'use client';
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { SunBanner } from '@/components/sun-banner';
+import { useResponsive } from '@/hooks/use-responsive';
 
 export default function Hero() {
+  const { isMobile } = useResponsive();
+
   return (
-    <section className="relative w-full h-[550px] md:h-[650px] flex items-center justify-center overflow-hidden">
+    <section className={`relative w-full ${isMobile ? 'h-[550px]' : 'h-[650px]'} flex items-center justify-center overflow-hidden`}>
       <div className="absolute inset-0">
         <SunBanner />
       </div>
@@ -14,7 +19,7 @@ export default function Hero() {
             <p className="text-sm font-medium tracking-widest uppercase text-primary mb-4">
                 FOR THOSE WHO SEEK
             </p>
-            <h1 className="font-headline text-5xl sm:text-6xl md:text-7xl font-bold leading-tight text-white mb-10 text-shadow-lg">
+            <h1 className={`font-headline ${isMobile ? 'text-5xl' : 'text-7xl'} font-bold leading-tight text-white mb-10 text-shadow-lg`}>
                 RARE, UNUSUAL, AND EXQUISITE FINDS
             </h1>
             <Button asChild size="lg" showIcon>
