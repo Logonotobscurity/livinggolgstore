@@ -7,8 +7,8 @@ import MobileNavMenu from './mobile-nav-menu';
 import { Icons } from '@/components/icons';
 import { useCart } from '@/context/cart-context';
 import { useWishlist } from '@/context/wishlist-context';
-import { NewMenuIcon } from '@/components/new-menu-icon';
 import NavMenu from './nav-menu';
+import { NewMenuIcon } from '../new-menu-icon';
 
 export default function Header() {
   const { totalItemsCount } = useCart();
