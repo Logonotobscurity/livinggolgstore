@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Icons } from "@/components/icons";
 import Image from "next/image";
 import Link from "next/link";
+import { useWishlist } from "@/context/wishlist-context";
 
 type CartItem = {
   id: string;
@@ -16,6 +17,7 @@ type CartItem = {
   image: string;
   price: number;
   quantity: number;
+  slug: string;
 };
 
 const initialCartItems: CartItem[] = [
@@ -23,6 +25,7 @@ const initialCartItems: CartItem[] = [
     id: "item-1",
     name: "Roll & Hill Modo 3 Sided Chandelier",
     sku: "CHANDELIERS-PENDANTS-1",
+    slug: "roll-and-hill-modo-chandelier",
     image: "https://img.ydesigngroup.com/9JWOMRAM/at/nqmq8crfg7m5pgth8x42f/RollAndHill_Modo3SidedChandelier_BlackSmoke-188x188-site.png",
     price: 750000,
     quantity: 1,
@@ -31,6 +34,7 @@ const initialCartItems: CartItem[] = [
 
 export default function CartPage() {
   const [cartItems, setCartItems] = useState<CartItem[]>(initialCartItems);
+  const { toggleWishlist } = useWishlist();
 
   const handleQuantityChange = (id: string, newQuantity: number) => {
     if (newQuantity < 1) return;
@@ -39,6 +43,18 @@ export default function CartPage() {
 
   const handleRemoveItem = (id: string) => {
     setCartItems(cartItems.filter(item => item.id !== id));
+  };
+
+  const handleMoveToWishlist = (item: CartItem) => {
+    toggleWishlist({
+      id: item.id,
+      name: item.name,
+      sku: item.sku,
+      image: item.image,
+      price: item.price,
+      slug: item.slug
+    });
+    handleRemoveItem(item.id);
   };
 
   const subtotal = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
@@ -79,6 +95,9 @@ export default function CartPage() {
                                 <div className="col-span-5">
                                     <h3 className="font-bold">{item.name}</h3>
                                     <p className="text-sm text-gray-400">SKU: {item.sku}</p>
+                                    <button onClick={() => handleMoveToWishlist(item)} className="text-sm text-primary hover:underline mt-2">
+                                      Move to Wishlist
+                                    </button>
                                 </div>
                                 <div className="col-span-3 flex items-center gap-2">
                                     <Button variant="ghost" size="icon" className="h-8 w-8" onClick={() => handleQuantityChange(item.id, item.quantity - 1)}>

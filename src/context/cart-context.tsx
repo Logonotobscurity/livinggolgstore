@@ -9,11 +9,13 @@ interface CartItem {
   image: string;
   price: number;
   quantity: number;
+  slug: string;
 }
 
 interface CartContextType {
   cartItems: CartItem[];
   addToCart: (item: Omit<CartItem, 'quantity'>) => void;
+  removeFromCart: (id: string) => void;
   totalItemsCount: number;
 }
 
@@ -33,10 +35,15 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     });
   };
 
+  const removeFromCart = (id: string) => {
+    setCartItems(prevItems => prevItems.filter(item => item.id !== id));
+  };
+
+
   const totalItemsCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, totalItemsCount }}>
+    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, totalItemsCount }}>
       {children}
     </CartContext.Provider>
   );
