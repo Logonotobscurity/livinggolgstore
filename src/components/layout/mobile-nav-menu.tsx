@@ -12,6 +12,8 @@ import {
 } from '@/components/ui/sheet';
 import { sitemap } from '@/lib/sitemap';
 import type { NavItem } from '@/lib/sitemap';
+import { Icons } from '../icons';
+import { Separator } from '../ui/separator';
 
 function renderNavItem(item: NavItem) {
     if (item.items) {
@@ -55,14 +57,29 @@ export default function MobileNavMenu() {
             <SheetHeader>
                 <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
             </SheetHeader>
-            <div className="flex flex-col space-y-2 p-6 pt-10">
-                <Accordion type="single" collapsible className="w-full">
-                    {sitemap.filter(item => !!item.items).map(renderNavItem)}
-                </Accordion>
-                {sitemap.filter(item => !item.items).map(renderNavItem)}
+            <div className="flex flex-col h-full">
+                <div className="flex-grow space-y-2 p-6 pt-10 overflow-y-auto">
+                    <Accordion type="single" collapsible className="w-full">
+                        {sitemap.filter(item => !!item.items).map(renderNavItem)}
+                    </Accordion>
+                    {sitemap.filter(item => !item.items).map(renderNavItem)}
+                </div>
+                <Separator className="my-4" />
+                 <div className="p-6 pt-0 space-y-4">
+                    <Link href="/wishlist" className="flex items-center text-lg hover:text-primary">
+                        <Icons.heart className="h-5 w-5 mr-4" />
+                        <span>Wishlist</span>
+                    </Link>
+                    <Link href="/contact" className="flex items-center text-lg hover:text-primary">
+                        <Icons.mail className="h-5 w-5 mr-4" />
+                        <span>Contact</span>
+                    </Link>
+                    <Link href="/account" className="flex items-center text-lg hover:text-primary">
+                        <Icons.user className="h-5 w-5 mr-4" />
+                        <span>Account</span>
+                    </Link>
+                </div>
             </div>
         </>
     );
 }
-
-    

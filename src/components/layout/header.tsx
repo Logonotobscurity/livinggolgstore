@@ -53,7 +53,7 @@ export default function Header() {
             </Sheet>
           </div>
 
-          <div className="flex-1 text-center">
+          <div className="flex-1 text-center md:text-left">
             <Link
               href="/"
               className="font-headline text-xl md:text-2xl font-bold tracking-[0.2em] uppercase"
@@ -63,20 +63,20 @@ export default function Header() {
           </div>
 
           <div className="flex items-center justify-end space-x-1 md:space-x-2 w-1/3 md:w-auto">
-            <button aria-label="Search" className="p-2 rounded-full hover:bg-accent">
+            <button aria-label="Search" className="p-2 rounded-full hover:bg-accent hidden md:block">
               <Icons.search className="h-5 w-5" />
             </button>
              <Link
                 href="/contact"
                 aria-label="Contact"
-                className="p-2 rounded-full hover:bg-accent block"
+                className="p-2 rounded-full hover:bg-accent hidden md:block"
               >
                 <Icons.mail className="h-5 w-5" />
             </Link>
             <Link
                 href="/wishlist"
                 aria-label="Wishlist"
-                className="p-2 rounded-full hover:bg-accent block relative"
+                className="p-2 rounded-full hover:bg-accent hidden md:block relative"
               >
                 <Icons.heart className="h-5 w-5" />
                  {wishlistItemCount > 0 && (
