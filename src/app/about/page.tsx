@@ -1,8 +1,11 @@
+'use client';
 
 import CmsLayout from "@/components/layout/cms-layout";
 import Image from "next/image";
+import { useResponsive } from "@/hooks/use-responsive";
 
 export default function AboutPage() {
+  const { isMobile } = useResponsive();
   const breadcrumb = [
     { text: 'Home', href: '/' },
     { text: 'About' }
@@ -12,8 +15,8 @@ export default function AboutPage() {
     <CmsLayout breadcrumb={breadcrumb}>
       <div className="cms-page text-white">
         <div className="text-wrapper text-center mb-16 px-4">
-          <h1 className="mb-4 text-4xl md:text-5xl">About Us</h1>
-          <p className="text-base md:text-lg max-w-2xl mx-auto">Since 2013, Living Gold has imported and curated exquisite lighting from around the world, transforming interiors across Nigeria through exceptional design and considered service.</p>
+          <h1 className={`mb-4 ${isMobile ? 'text-4xl' : 'text-5xl'}`}>About Us</h1>
+          <p className={`${isMobile ? 'text-base' : 'text-lg'} max-w-2xl mx-auto`}>Since 2013, Living Gold has imported and curated exquisite lighting from around the world, transforming interiors across Nigeria through exceptional design and considered service.</p>
         </div>
 
         <div className="default-content-wrapper">

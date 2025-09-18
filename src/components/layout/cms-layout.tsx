@@ -1,8 +1,11 @@
+'use client';
+
 import { ReactNode } from 'react';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import Link from 'next/link';
 import { Icons } from '@/components/icons';
+import { useResponsive } from '@/hooks/use-responsive';
 
 interface CmsLayoutProps {
   children: ReactNode;
@@ -10,6 +13,8 @@ interface CmsLayoutProps {
 }
 
 export default function CmsLayout({ children, breadcrumb }: CmsLayoutProps) {
+  const { isMobile } = useResponsive();
+
   return (
     <div className="flex flex-col min-h-screen bg-black cms-page-body with-breadcrumb">
       <Header />
@@ -36,7 +41,7 @@ export default function CmsLayout({ children, breadcrumb }: CmsLayoutProps) {
             </div>
           </div>
         )}
-        <div className="py-16 md:py-24">
+        <div className={isMobile ? 'py-16' : 'py-24'}>
           {children}
         </div>
       </main>

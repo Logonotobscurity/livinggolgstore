@@ -1,3 +1,4 @@
+'use client';
 
 import CmsLayout from "@/components/layout/cms-layout";
 import { ContactForm } from "@/components/contact-form";
@@ -8,8 +9,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useResponsive } from "@/hooks/use-responsive";
 
 export default function ContactPage() {
+  const { isMobile } = useResponsive();
   const breadcrumb = [
     { text: 'Home', href: '/' },
     { text: 'Contact' }
@@ -19,13 +22,13 @@ export default function ContactPage() {
     <CmsLayout breadcrumb={breadcrumb}>
       <div className="cms-page text-white">
         <div className="text-center mb-16 px-4">
-          <h1 className="mb-4 text-4xl md:text-5xl">Contact Us</h1>
-          <p className="text-base md:text-lg max-w-2xl mx-auto">
+          <h1 className={`mb-4 ${isMobile ? 'text-4xl' : 'text-5xl'}`}>Contact Us</h1>
+          <p className={`${isMobile ? 'text-base' : 'text-lg'} max-w-2xl mx-auto`}>
             We're here to help. Whether you have a question about our products, need design advice, or want to discuss a project, our team is ready to assist you.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start max-w-5xl mx-auto px-4">
+        <div className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} ${isMobile ? 'gap-16' : 'gap-24'} items-start max-w-5xl mx-auto px-4`}>
             <div className="w-full">
                  <ContactForm />
             </div>
@@ -65,7 +68,7 @@ export default function ContactPage() {
 
         <div className="max-w-5xl mx-auto px-4">
             <h2 className="font-headline text-3xl font-bold text-center mb-12">Customer Service Hub</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} gap-16`}>
               <div>
                 <h3 className="font-bold text-xl text-primary mb-6">Frequently Asked Questions</h3>
                 <Accordion type="single" collapsible className="w-full">
