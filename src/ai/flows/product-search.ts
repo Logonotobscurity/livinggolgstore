@@ -92,7 +92,7 @@ User Query: {{{query}}}
 Available Products (pre-filtered for relevance):
 ---
 {{#each products}}
-- ID: {{this.id}}, Slug: {{this.slug}}, Title: {{this.title}}, Description: {{this.description}}
+- ID: {{this.id}}, Title: {{this.title}}, Description: {{this.description}}
 {{/each}}
 ---
 `,
