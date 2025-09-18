@@ -9,8 +9,8 @@ import { ProductSupport } from '@/components/product-support';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Shop Lighting Accessories',
-  description: 'Find essential lighting accessories at Living Gold, including downrods, remotes, and specialty bulbs to complete your lighting setup.',
+  title: 'Luxury Light Spare Parts & Accessories in Nigeria',
+  description: 'Find essential Nigeria luxury lights spare parts at Living Gold, including downrods, remotes, and specialty bulbs to complete your lighting setup.',
 };
 
 export default function AccessoriesPage() {

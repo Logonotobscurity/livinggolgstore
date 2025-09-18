@@ -9,8 +9,8 @@ import { ProductSupport } from '@/components/product-support';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Shop Chandeliers & Pendants',
-  description: 'Browse an exquisite collection of luxury chandeliers and modern pendant lights. Find the perfect statement piece for your home at Living Gold Nigeria.',
+  title: 'Nigeria Luxury Chandeliers Store & Pendants | Living Gold',
+  description: 'Browse an exquisite collection of luxury chandeliers and modern pendant lights from the leading Nigeria luxury chandeliers store. Find the perfect statement piece for your home.',
 };
 
 export default function ChandeliersPendantsPage() {

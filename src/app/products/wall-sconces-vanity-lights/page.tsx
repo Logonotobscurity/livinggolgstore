@@ -9,8 +9,8 @@ import { ProductSupport } from '@/components/product-support';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Shop Wall Sconces & Vanity Lights',
-  description: 'Explore a collection of stylish wall sconces and modern vanity lights, perfect for bathrooms, hallways, and accent lighting.',
+  title: 'Wall Sconces & Luxury Toilet & Vanity Lights in Nigeria',
+  description: 'Explore a collection of stylish wall sconces and modern vanity lights. Find the perfect luxury light for your bathroom or toilet.',
 };
 
 export default function WallSconcesPage() {

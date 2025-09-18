@@ -12,11 +12,11 @@ import SubscriptionModal from '@/components/subscription-modal';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Living Gold: Luxury Lighting & Chandeliers in Nigeria',
+    default: 'Living Gold: Top Luxury Lighting & Chandeliers Store in Nigeria',
     template: '%s | Living Gold Nigeria',
   },
-  description: 'Living Gold curates and imports luxury lighting, chandeliers, and exquisite home decor from global artisans. Based in Asaba, Nigeria, we serve discerning homeowners, designers, and architects.',
-  keywords: ['luxury lighting Nigeria', 'chandeliers in Nigeria', 'designer lighting Asaba', 'Living Gold', 'home decor Nigeria', 'interior design Nigeria'],
+  description: 'Living Gold is the top selling luxury lights seller in Nigeria, based in Asaba and serving Lagos and beyond. We curate and import luxury lighting, chandeliers, and exquisite home decor from global artisans.',
+  keywords: ['luxury lighting Nigeria', 'chandeliers in Nigeria', 'designer lighting Asaba', 'Living Gold', 'home decor Nigeria', 'interior design Nigeria', 'top selling luxury lights seller in Nigeria', 'Lagos', 'Asaba'],
 };
 
 const jsonLd = {
@@ -34,7 +34,7 @@ const jsonLd = {
   url: 'https://www.livinggold.com',
   logo: 'https://www.livinggold.com/logo.png', // Placeholder URL
   image: 'https://www.livinggold.com/showroom.jpg', // Placeholder URL
-  description: 'Curators of luxury lighting, chandeliers, and exquisite home decor from global artisans, based in Nigeria.',
+  description: 'Top selling luxury lights seller in Nigeria, curating luxury lighting, chandeliers, and exquisite home decor from global artisans, based in Asaba.',
   priceRange: '$$$',
   openingHours: 'Mo-Fr 09:00-18:00, Sa 10:00-16:00',
   '@id': 'https://www.livinggold.com',

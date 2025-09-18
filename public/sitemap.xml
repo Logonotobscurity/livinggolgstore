@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.livinggold.com</loc>
+    <loc>https://www.livinggold.com/</loc>
     <lastmod>2024-01-01</lastmod>
-    <priority>1.0</priority>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://www.livinggold.com/about</loc>
+    <lastmod>2024-01-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.livinggold.com/contact</loc>
+    <lastmod>2024-01-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.livinggold.com/products/chandeliers-pendants</loc>
+    <lastmod>2024-01-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.livinggold.com/products/wall-sconces-vanity-lights</loc>
+    <lastmod>2024-01-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.livinggold.com/products/outdoor-lighting</loc>
+    <lastmod>2024-01-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.livinggold.com/products/accessories</loc>
+    <lastmod>2024-01-01</lastmod>
+    <priority>0.80</priority>
   </url>
 </urlset>

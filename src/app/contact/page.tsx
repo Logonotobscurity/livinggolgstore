@@ -13,8 +13,8 @@ import { useResponsive } from "@/hooks/use-responsive";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Us',
-  description: 'Get in touch with Living Gold. Visit our showroom in Asaba, Nigeria, call us, or send an email. We are here to help with your luxury lighting needs.',
+  title: 'Contact Us | Living Gold Nigeria',
+  description: 'Get in touch with Living Gold. Visit our showroom in Asaba, Nigeria, call us, or send an email. We are here to help with your luxury lighting needs in Lagos, Asaba, and across the country.',
 };
 
 export default function ContactPage() {

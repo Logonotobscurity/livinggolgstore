@@ -9,8 +9,8 @@ import { ProductSupport } from '@/components/product-support';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Shop Outdoor & Landscape Lighting',
-  description: 'Illuminate your outdoor spaces with our collection of durable and stylish outdoor lighting, including wall sconces, path lights, and chandeliers.',
+  title: 'Outdoor Luxury Lights & Landscape Lighting in Nigeria',
+  description: 'Illuminate your outdoor spaces with our collection of durable and stylish outdoor luxury lights, including wall sconces, path lights, and chandeliers for Nigerian homes.',
 };
 
 export default function OutdoorLightingPage() {
