@@ -6,6 +6,12 @@ import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Shop Chandeliers & Pendants',
+  description: 'Browse an exquisite collection of luxury chandeliers and modern pendant lights. Find the perfect statement piece for your home at Living Gold Nigeria.',
+};
 
 export default function ChandeliersPendantsPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('chandeliers-pendants-'));

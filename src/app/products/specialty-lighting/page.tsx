@@ -6,6 +6,12 @@ import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Shop Specialty Lighting',
+  description: 'Find unique specialty lighting solutions, including picture lights, undercabinet lighting, and lighted mirrors at Living Gold Nigeria.',
+};
 
 export default function SpecialtyLightingPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('specialty-lighting-'));

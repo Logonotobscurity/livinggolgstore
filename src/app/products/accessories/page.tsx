@@ -6,6 +6,12 @@ import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Shop Lighting Accessories',
+  description: 'Find essential lighting accessories at Living Gold, including downrods, remotes, and specialty bulbs to complete your lighting setup.',
+};
 
 export default function AccessoriesPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('accessories-') && p.id !== 'accessories-hero');

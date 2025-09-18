@@ -6,6 +6,12 @@ import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Inspirational Room Settings',
+  description: 'Get inspired by our curated room settings. See how Living Gold\'s luxury lighting can transform living rooms, kitchens, bedrooms, and more.',
+};
 
 export default function RoomSettingsPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('room-settings-'));

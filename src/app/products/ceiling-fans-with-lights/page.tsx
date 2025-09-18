@@ -6,6 +6,12 @@ import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Shop Ceiling Fans with Lights',
+  description: 'Explore a collection of elegant and modern ceiling fans with integrated lights. Find the perfect fixture for any room at Living Gold Nigeria.',
+};
 
 export default function CeilingFansPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('ceiling-fans-'));

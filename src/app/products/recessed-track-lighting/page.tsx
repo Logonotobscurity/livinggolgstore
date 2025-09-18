@@ -6,6 +6,12 @@ import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Shop Recessed & Accent Lighting',
+  description: 'Discover modern recessed lighting, track lights, and accent lights to create focused, layered illumination in any room.',
+};
 
 export default function RecessedTrackLightingPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('recessed-lighting-'));

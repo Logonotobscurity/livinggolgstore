@@ -6,6 +6,12 @@ import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Shop Ceiling Lights & Flushmounts',
+  description: 'Discover a wide range of ceiling lights, from modern flushmounts to elegant semi-flushmounts. Shop luxury lighting at Living Gold Nigeria.',
+};
 
 export default function CeilingLightsPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('ceiling-lights-'));

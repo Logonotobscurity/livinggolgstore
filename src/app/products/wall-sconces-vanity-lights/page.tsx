@@ -6,6 +6,12 @@ import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Shop Wall Sconces & Vanity Lights',
+  description: 'Explore a collection of stylish wall sconces and modern vanity lights, perfect for bathrooms, hallways, and accent lighting.',
+};
 
 export default function WallSconcesPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('wall-sconces-'));

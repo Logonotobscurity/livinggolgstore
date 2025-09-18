@@ -6,6 +6,12 @@ import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Shop Linear Suspension Lighting',
+  description: 'Explore elegant linear suspension lights, perfect for dining rooms, kitchen islands, and commercial spaces. Find modern designs at Living Gold Nigeria.',
+};
 
 export default function LinearSuspensionPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('linear-suspension-'));

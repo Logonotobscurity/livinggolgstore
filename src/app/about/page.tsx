@@ -3,6 +3,12 @@
 import CmsLayout from "@/components/layout/cms-layout";
 import Image from "next/image";
 import { useResponsive } from "@/hooks/use-responsive";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description: 'Learn the story of Living Gold, curators and importers of fine lighting and chandeliers, bringing global craftsmanship to Nigerian homes and projects since 2013.',
+};
 
 export default function AboutPage() {
   const { isMobile } = useResponsive();

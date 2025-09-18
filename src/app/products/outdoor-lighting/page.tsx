@@ -6,6 +6,12 @@ import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Shop Outdoor & Landscape Lighting',
+  description: 'Illuminate your outdoor spaces with our collection of durable and stylish outdoor lighting, including wall sconces, path lights, and chandeliers.',
+};
 
 export default function OutdoorLightingPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('outdoor-lighting-'));

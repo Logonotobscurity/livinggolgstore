@@ -6,6 +6,12 @@ import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Shop Floor Lamps',
+  description: 'Discover modern and contemporary floor lamps to illuminate any space. Shop designer floor lamps at Living Gold Nigeria.',
+};
 
 export default function FloorLampsPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('floor-lamps-'));

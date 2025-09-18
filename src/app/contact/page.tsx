@@ -10,6 +10,12 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useResponsive } from "@/hooks/use-responsive";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact Us',
+  description: 'Get in touch with Living Gold. Visit our showroom in Asaba, Nigeria, call us, or send an email. We are here to help with your luxury lighting needs.',
+};
 
 export default function ContactPage() {
   const { isMobile } = useResponsive();

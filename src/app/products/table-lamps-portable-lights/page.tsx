@@ -6,6 +6,12 @@ import Header from '@/components/layout/header';
 import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Shop Table Lamps & Portable Lights',
+  description: 'Brighten your space with our curated collection of designer table lamps, desk lamps, and rechargeable portable lights.',
+};
 
 export default function TableLampsPage() {
   const products = PlaceHolderImages.filter(p => p.id.startsWith('table-lamps-'));
