@@ -17,23 +17,23 @@ export default function Contact() {
             <ContactForm />
           </div>
           <div className="text-center md:text-left">
-            <h3 className="text-base font-bold mb-6">FOLLOW US</h3>
+            <h2 className="text-base font-bold mb-6">FOLLOW US</h2>
             <div className="flex justify-center md:justify-start">
               <Socials />
             </div>
             <div className="text-sm text-gray-400 space-y-4 mt-8">
               <div>
-                <h4 className="font-bold text-white mb-2">Address</h4>
+                <h3 className="font-bold text-white mb-2">Address</h3>
                 <p>Living Gold Lighting, Okpanam Road, Asaba, Delta State, Nigeria</p>
               </div>
               <div>
-                <h4 className="font-bold text-white mb-2">Phone</h4>
+                <h3 className="font-bold text-white mb-2">Phone</h3>
                 <p><a href="tel:+2347011131333" className="text-primary hover:underline">+234 701 113 1333</a></p>
                 <p><a href="tel:+2348064441141" className="text-primary hover:underline">+234 806 444 1141</a></p>
                 <p><a href="tel:+2348034291995" className="text-primary hover:underline">+234 803 429 1995</a> (Store)</p>
               </div>
                <div>
-                <h4 className="font-bold text-white mb-2">Email</h4>
+                <h3 className="font-bold text-white mb-2">Email</h3>
                 <p><a href="mailto:hello@livinggold.com" className="text-primary hover:underline">hello@livinggold.com</a></p>
               </div>
             </div>

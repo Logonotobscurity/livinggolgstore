@@ -44,9 +44,9 @@ export default function About() {
     <section className="bg-secondary text-white py-20 md:py-32 overflow-hidden">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="text-center md:text-left mb-16 md:mb-24">
-          <p className="text-base md:text-lg font-medium tracking-[0.2em] uppercase text-primary mb-6">
+          <h2 className="text-base md:text-lg font-medium tracking-[0.2em] uppercase text-primary mb-6">
             CURATORS OF THE EXCEPTIONAL
-          </p>
+          </h2>
           <p className="text-xl md:text-2xl max-w-4xl mx-auto md:mx-0 leading-loose">
             Since 2013, Living Gold has been a bridge to the world's finest lighting artisans. We import and curate exquisite chandeliers, fixtures, and bespoke pieces for discerning clients across Nigeria, transforming spaces with the power of exceptional design.
           </p>

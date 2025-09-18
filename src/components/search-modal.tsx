@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useTransition } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import {
@@ -11,8 +11,9 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
-import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
+import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { Icons } from './icons';
+import { productSearch } from '@/ai/flows/product-search';
 
 interface SearchModalProps {
   isOpen: boolean;
@@ -22,15 +23,14 @@ interface SearchModalProps {
 export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<ImagePlaceholder[]>([]);
+  const [isPending, startTransition] = useTransition();
 
   useEffect(() => {
-    if (searchQuery.trim().length > 1) {
-      const results = PlaceHolderImages.filter(
-        (item) =>
-          item.title?.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          item.description.toLowerCase().includes(searchQuery.toLowerCase())
-      );
-      setSearchResults(results);
+    if (searchQuery.trim().length > 2) {
+      startTransition(async () => {
+        const response = await productSearch({ query: searchQuery });
+        setSearchResults(response.results);
+      });
     } else {
       setSearchResults([]);
     }
@@ -60,14 +60,15 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
             <Icons.search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
             <Input
               type="search"
-              placeholder="Search for chandeliers, lamps, etc."
+              placeholder="e.g., 'a modern light for my kitchen island'"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="bg-background border-muted-foreground w-full pl-10 text-base"
             />
+             {isPending && <Icons.loader className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 animate-spin" />}
           </div>
           <div className="mt-6 max-h-[60vh] overflow-y-auto">
-            {searchResults.length > 0 ? (
+            {searchResults.length > 0 && !isPending && (
               <ul className="space-y-4">
                 {searchResults.map((item) => (
                   <li key={item.id}>
@@ -91,22 +92,25 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   </li>
                 ))}
               </ul>
-            ) : (
-              searchQuery.length > 1 && (
+            )}
+            {!isPending && searchQuery.length > 2 && searchResults.length === 0 && (
                 <p className="text-center text-gray-400 py-8">
                   No results found for "{searchQuery}"
                 </p>
-              )
             )}
-             {searchQuery.length <= 1 && (
+             {!isPending && searchQuery.length <= 2 && (
                 <p className="text-center text-gray-400 py-8">
-                  Enter a search term to find products.
+                  Describe what you're looking for.
                 </p>
               )}
+             {isPending && (
+                 <div className="flex justify-center items-center py-8">
+                    <Icons.loader className="h-8 w-8 animate-spin" />
+                 </div>
+             )}
           </div>
         </div>
       </DialogContent>
     </Dialog>
   );
 }
-

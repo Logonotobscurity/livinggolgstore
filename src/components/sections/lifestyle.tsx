@@ -28,13 +28,13 @@ export default function Lifestyle() {
 
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
         <div className="text-center mb-12 md:mb-20">
-          <p className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-10">
+          <h2 className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-10">
             SHOP BY CATEGORY
-          </p>
-          <h2 className="font-headline text-3xl md:text-5xl lg:text-7xl font-light uppercase text-white relative pb-6">
+          </h2>
+          <h3 className="font-headline text-3xl md:text-5xl lg:text-7xl font-light uppercase text-white relative pb-6">
             ONE PIECE CAN INFORM AN ENTIRE HOME
              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-20 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent"></span>
-          </h2>
+          </h3>
         </div>
         <Carousel
             opts={{
