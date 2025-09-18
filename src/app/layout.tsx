@@ -11,9 +11,35 @@ import { SessionReminder } from '@/components/session-reminder';
 import SubscriptionModal from '@/components/subscription-modal';
 
 export const metadata: Metadata = {
-  title: 'About Living Gold — Luxury Lighting & Chandeliers (Nigeria)',
-  description: 'Living Gold curates and imports luxury lighting and chandeliers from ateliers around the world. Based in Nigeria, we deliver bespoke lighting solutions and trade services for designers, architects, and discerning homeowners.',
+  title: {
+    default: 'Living Gold: Luxury Lighting & Chandeliers in Nigeria',
+    template: '%s | Living Gold Nigeria',
+  },
+  description: 'Living Gold curates and imports luxury lighting, chandeliers, and exquisite home decor from global artisans. Based in Asaba, Nigeria, we serve discerning homeowners, designers, and architects.',
+  keywords: ['luxury lighting Nigeria', 'chandeliers in Nigeria', 'designer lighting Asaba', 'Living Gold', 'home decor Nigeria', 'interior design Nigeria'],
 };
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Living Gold',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Okpanam Road',
+    addressLocality: 'Asaba',
+    addressRegion: 'Delta State',
+    countryName: 'Nigeria',
+  },
+  telephone: '+2347011131333',
+  url: 'https://www.livinggold.com',
+  logo: 'https://www.livinggold.com/logo.png', // Placeholder URL
+  image: 'https://www.livinggold.com/showroom.jpg', // Placeholder URL
+  description: 'Curators of luxury lighting, chandeliers, and exquisite home decor from global artisans, based in Nigeria.',
+  priceRange: '$$$',
+  openingHours: 'Mo-Fr 09:00-18:00, Sa 10:00-16:00',
+  '@id': 'https://www.livinggold.com',
+};
+
 
 export default function RootLayout({
   children,
@@ -23,6 +49,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
