@@ -34,7 +34,7 @@ export default function TradesAndServices() {
           </div>
           <div className={`relative w-full aspect-[4/5] rounded-lg overflow-hidden ${isMobile ? 'order-1' : 'order-2'}`}>
             <Image
-              src="https://picsum.photos/seed/trades-services/800/1000"
+              src="https://www.visualcomfort.com/media_1f08f2f154f0e09244ce92d51285bfa59a0838640.jpg"
               alt="An architect reviewing blueprints in a modern design office."
               fill
               className="object-cover"

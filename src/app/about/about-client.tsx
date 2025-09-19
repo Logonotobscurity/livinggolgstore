@@ -21,7 +21,7 @@ export default function AboutClient() {
 
         <div className="default-content-wrapper">
           <Image 
-            src="https://picsum.photos/seed/about-hero/1200/800"
+            src="https://www.visualcomfort.com/media_15301f7f1a1767bae048266bf4ea27bd8169b7990.jpg"
             alt="Dining room lit by a Living Gold chandelier — warm layered light."
             width={1200}
             height={800}
@@ -83,7 +83,7 @@ export default function AboutClient() {
 
         <div className="default-content-wrapper">
           <Image 
-            src="https://picsum.photos/seed/about-artisan/1200/600"
+            src="https://www.visualcomfort.com/media_19cb8a76069a338b66ef4bed91feea669edc52b20.jpg"
             alt="Artisan shaping a blown-glass light by hand."
             width={1200}
             height={600}
@@ -109,7 +109,7 @@ export default function AboutClient() {
         
         <div className="default-content-wrapper">
           <Image 
-            src="https://picsum.photos/seed/about-showroom/1200/800"
+            src="https://www.visualcomfort.com/media_1575cd4e8cf1f1cda95217ef51dd52e31c9c6ee33.jpg"
             alt="Living Gold studio vignette with layered lighting."
             width={1200}
             height={800}
