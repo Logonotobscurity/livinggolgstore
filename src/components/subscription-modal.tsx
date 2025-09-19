@@ -27,6 +27,7 @@ import {
   FormMessage,
 } from '@/components/ui/form';
 import { cn } from '@/lib/utils';
+import { LivingGoldWordmark } from './logo';
 
 const subscriptionFormSchema = z.object({
   email: z.string().email({ message: 'Please enter a valid email address.' }),
@@ -116,6 +117,7 @@ export default function SubscriptionModal() {
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="bg-secondary text-white max-w-md p-8 sm:p-10">
           <DialogHeader className="text-center">
+            <LivingGoldWordmark className="h-12 w-auto mx-auto mb-4 text-primary" />
             <DialogTitle className="font-headline text-5xl font-bold text-primary mb-4">
               10% Off
             </DialogTitle>
@@ -152,7 +154,7 @@ export default function SubscriptionModal() {
                     <FormControl>
                       <Input
                         type="tel"
-                        placeholder="Phone Number (Optional)"
+                        placeholder="Phone Number"
                         {...field}
                         className="bg-background border-gray-600 text-white placeholder:text-gray-400 focus:border-primary"
                       />
