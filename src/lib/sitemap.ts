@@ -11,16 +11,11 @@ export interface NavItem {
 
 export const sitemap: NavItem[] = [
   {
-    title: "Ceiling Lights",
+    title: "Ceiling",
     href: "/products/ceiling-lights",
     items: [
       {
-        title: "Chandeliers",
-        href: "/products/chandeliers-pendants",
-        icon: Icons.lightbulb,
-      },
-      {
-        title: "Pendant Lights",
+        title: "Chandeliers & Pendants",
         href: "/products/chandeliers-pendants",
         icon: Icons.lightbulb,
       },
@@ -34,20 +29,20 @@ export const sitemap: NavItem[] = [
         href: "/products/linear-suspension",
         icon: Icons.lightbulb,
       },
-      {
-        title: "Recessed Lighting",
-        href: "/products/recessed-track-lighting",
+       {
+        title: "Ceiling Fans with Lights",
+        href: "/products/ceiling-fans-with-lights",
         icon: Icons.lightbulb,
       },
       {
-        title: "Track & Monorail",
+        title: "Recessed & Accent Lighting",
         href: "/products/recessed-track-lighting",
         icon: Icons.lightbulb,
       },
     ],
   },
   {
-    title: "Wall Lights",
+    title: "Wall",
     href: "/products/wall-sconces-vanity-lights",
     items: [
       {
@@ -61,17 +56,7 @@ export const sitemap: NavItem[] = [
         icon: Icons.lampWallUp,
       },
       {
-        title: "Picture Lights",
-        href: "/products/specialty-lighting",
-        icon: Icons.lampWallUp,
-      },
-      {
-        title: "Undercabinet Lights",
-        href: "/products/specialty-lighting",
-        icon: Icons.lampWallUp,
-      },
-      {
-        title: "Lighted Mirrors",
+        title: "Specialty Lighting",
         href: "/products/specialty-lighting",
         icon: Icons.lampWallUp,
       },
@@ -83,17 +68,7 @@ export const sitemap: NavItem[] = [
     items: [
       { title: "Floor Lamps", href: "/products/floor-lamps", icon: Icons.lamp },
       {
-        title: "Table Lamps",
-        href: "/products/table-lamps-portable-lights",
-        icon: Icons.lamp,
-      },
-      {
-        title: "Desk Lamps",
-        href: "/products/table-lamps-portable-lights",
-        icon: Icons.lamp,
-      },
-      {
-        title: "Cordless Lamps",
+        title: "Table & Desk Lamps",
         href: "/products/table-lamps-portable-lights",
         icon: Icons.lamp,
       },
@@ -112,5 +87,3 @@ export const sitemap: NavItem[] = [
     href: "/products/room-settings",
   },
 ];
-
-    
