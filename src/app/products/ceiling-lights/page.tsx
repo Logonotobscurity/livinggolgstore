@@ -10,13 +10,17 @@ import type { Metadata } from 'next';
 import { ReusableBackground } from '@/components/reusable-background';
 
 export const metadata: Metadata = {
-  title: 'Shop Ceiling Lights & Flushmounts',
-  description: 'Discover a wide range of ceiling lights, from modern flushmounts to elegant semi-flushmounts. Shop luxury lighting at Living Gold Nigeria.',
+  title: 'Shop Ceiling Lights, Chandeliers & Pendants',
+  description: 'Discover a wide range of ceiling lights, from modern flushmounts to elegant chandeliers and pendants. Shop luxury lighting at Living Gold Nigeria.',
 };
 
 export default function CeilingLightsPage() {
-  const products = PlaceHolderImages.filter(p => p.id.startsWith('ceiling-lights-'));
-  const heroImage = PlaceHolderImages.find(p => p.id === 'room-settings-5');
+  const products = PlaceHolderImages.filter(p => 
+    p.id.startsWith('ceiling-lights-') || 
+    p.id.startsWith('chandeliers-pendants-') || 
+    p.id.startsWith('linear-suspension-')
+  );
+  const heroImage = PlaceHolderImages.find(p => p.id === 'room-settings-1');
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-white">
@@ -37,12 +41,12 @@ export default function CeilingLightsPage() {
               <nav className="flex justify-center items-center text-sm mb-4">
                 <Link href="/" className="hover:text-primary">Home</Link>
                 <Icons.chevronRight className="h-4 w-4 mx-1" />
-                <span className="text-gray-400">Collections</span>
+                <Link href="/products/ceiling-lights" className="hover:text-primary">Lighting</Link>
                 <Icons.chevronRight className="h-4 w-4 mx-1" />
                 <span className="text-gray-300">Ceiling Lights</span>
               </nav>
               <h1 className="font-headline text-5xl md:text-7xl font-bold">
-                CEILING LIGHTS & FLUSHMOUNTS
+                CEILING LIGHTING
               </h1>
             </div>
           </section>

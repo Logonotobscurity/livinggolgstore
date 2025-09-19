@@ -17,51 +17,37 @@ export const sitemap: NavItem[] = [
         title: "Ceiling Lights",
         href: "/products/ceiling-lights",
         icon: Icons.lampCeiling,
-      },
-      {
-        title: "Chandeliers & Pendants",
-        href: "/products/chandeliers-pendants",
-        icon: Icons.lampCeiling,
-      },
-      {
-        title: "Linear Suspension",
-        href: "/products/linear-suspension",
-        icon: Icons.lampCeiling,
+        description: "Chandeliers, Pendants, Flushmounts",
       },
       {
         title: "Wall Lights",
         href: "/products/wall-sconces-vanity-lights",
         icon: Icons.lampWallUp,
+        description: "Sconces, Vanity Lights, Picture Lights",
       },
       { 
         title: "Lamps", 
-        href: "/products/table-lamps-portable-lights", 
-        icon: Icons.lamp 
-      },
-      {
-        title: "Floor Lamps",
-        href: "/products/floor-lamps",
+        href: "/products/lamps", 
         icon: Icons.lamp,
-      },
-       {
-        title: "Ceiling Fans with Lights",
-        href: "/products/ceiling-fans-with-lights",
-        icon: Icons.lightbulb,
+        description: "Table, Floor, and Desk Lamps" 
       },
       {
         title: "Outdoor",
         href: "/products/outdoor-lighting",
         icon: Icons.lightbulb,
+        description: "Weather-resistant lighting for any exterior space.",
       },
        {
-        title: "Recessed & Accent",
-        href: "/products/recessed-track-lighting",
+        title: "Architectural",
+        href: "/products/architectural-lighting",
         icon: Icons.lightbulb,
+        description: "Recessed, Track, and Specialty Lighting",
       },
-      {
-        title: "Specialty",
-        href: "/products/specialty-lighting",
+       {
+        title: "Ceiling Fans",
+        href: "/products/ceiling-fans-with-lights",
         icon: Icons.lightbulb,
+        description: "Stylish fans with integrated lighting.",
       },
     ],
   },
@@ -70,7 +56,11 @@ export const sitemap: NavItem[] = [
     href: "/products/accessories",
   },
   {
-    title: "Room",
+    title: "Rooms",
     href: "/products/room-settings",
+  },
+  {
+    title: "Design Studio",
+    href: "/design-studio",
   },
 ];

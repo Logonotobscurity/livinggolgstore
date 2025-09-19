@@ -8,6 +8,7 @@ import Footer from '@/components/layout/footer';
 import ProductCategories from '@/components/sections/product-categories';
 import Lightscapes from '@/components/sections/lightscapes';
 import Newsletter from '@/components/sections/newsletter';
+import TradesAndServices from '@/components/sections/trades-and-services';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           <hr className="section-divider" />
         </div>
         <Lifestyle />
+        <TradesAndServices />
         <About />
         <InstagramFeed />
         <div className="text-wrapper">

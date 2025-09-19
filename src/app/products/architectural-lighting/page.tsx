@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -10,13 +11,13 @@ import type { Metadata } from 'next';
 import { ReusableBackground } from '@/components/reusable-background';
 
 export const metadata: Metadata = {
-  title: 'Shop Table Lamps & Portable Lights',
-  description: 'Brighten your space with our curated collection of designer table lamps, desk lamps, and rechargeable portable lights.',
+  title: 'Shop Architectural Lighting',
+  description: 'Discover modern recessed lighting, track lights, and specialty accent lights to create focused, layered illumination in any room.',
 };
 
-export default function TableLampsPage() {
-  const products = PlaceHolderImages.filter(p => p.id.startsWith('table-lamps-'));
-  const heroImage = PlaceHolderImages.find(p => p.id === 'room-settings-2');
+export default function ArchitecturalLightingPage() {
+  const products = PlaceHolderImages.filter(p => p.id.startsWith('recessed-lighting-') || p.id.startsWith('specialty-lighting-'));
+  const heroImage = products.length > 0 ? products[0] : PlaceHolderImages.find(p => p.id === 'lightscape-3');
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-white">
@@ -37,12 +38,12 @@ export default function TableLampsPage() {
               <nav className="flex justify-center items-center text-sm mb-4">
                 <Link href="/" className="hover:text-primary">Home</Link>
                 <Icons.chevronRight className="h-4 w-4 mx-1" />
-                <span className="text-gray-400">Collections</span>
+                <Link href="/products/ceiling-lights" className="hover:text-primary">Lighting</Link>
                 <Icons.chevronRight className="h-4 w-4 mx-1" />
-                <span className="text-gray-300">Table Lamps & Portable Lights</span>
+                <span className="text-gray-300">Architectural Lighting</span>
               </nav>
               <h1 className="font-headline text-4xl md:text-6xl font-bold">
-                TABLE LAMPS & PORTABLE LIGHTS
+                ARCHITECTURAL LIGHTING
               </h1>
             </div>
           </section>

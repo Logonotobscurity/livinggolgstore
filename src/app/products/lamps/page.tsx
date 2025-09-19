@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -10,13 +11,13 @@ import type { Metadata } from 'next';
 import { ReusableBackground } from '@/components/reusable-background';
 
 export const metadata: Metadata = {
-  title: 'Shop Recessed & Accent Lighting',
-  description: 'Discover modern recessed lighting, track lights, and accent lights to create focused, layered illumination in any room.',
+  title: 'Shop Table & Floor Lamps',
+  description: 'Brighten your space with our curated collection of designer table lamps, floor lamps, and rechargeable portable lights.',
 };
 
-export default function RecessedTrackLightingPage() {
-  const products = PlaceHolderImages.filter(p => p.id.startsWith('recessed-lighting-'));
-  const heroImage = products[0];
+export default function LampsPage() {
+  const products = PlaceHolderImages.filter(p => p.id.startsWith('table-lamps-') || p.id.startsWith('floor-lamps-'));
+  const heroImage = PlaceHolderImages.find(p => p.id === 'room-settings-2');
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-white">
@@ -37,12 +38,12 @@ export default function RecessedTrackLightingPage() {
               <nav className="flex justify-center items-center text-sm mb-4">
                 <Link href="/" className="hover:text-primary">Home</Link>
                 <Icons.chevronRight className="h-4 w-4 mx-1" />
-                <span className="text-gray-400">Collections</span>
+                <Link href="/products/ceiling-lights" className="hover:text-primary">Lighting</Link>
                 <Icons.chevronRight className="h-4 w-4 mx-1" />
-                <span className="text-gray-300">Recessed & Accent Lighting</span>
+                <span className="text-gray-300">Lamps</span>
               </nav>
               <h1 className="font-headline text-4xl md:text-6xl font-bold">
-                RECESSED & ACCENT LIGHTING
+                TABLE & FLOOR LAMPS
               </h1>
             </div>
           </section>
