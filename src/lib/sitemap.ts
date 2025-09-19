@@ -14,14 +14,14 @@ export const sitemap: NavItem[] = [
     title: "Lighting",
     href: "/products/ceiling-lights",
     items: [
-      {
-        title: "Ceiling Fittings",
-        href: "/products/ceiling-lights",
+       {
+        title: "Chandeliers & Pendants",
+        href: "/products/chandeliers-pendants",
         icon: Icons.lampCeiling,
       },
       {
-        title: "Chandeliers & Pendants",
-        href: "/products/chandeliers-pendants",
+        title: "Ceiling Fittings",
+        href: "/products/ceiling-lights",
         icon: Icons.lampCeiling,
       },
       {
@@ -30,6 +30,11 @@ export const sitemap: NavItem[] = [
         icon: Icons.lampCeiling,
       },
       {
+        title: "Wall Lights",
+        href: "/products/wall-sconces-vanity-lights",
+        icon: Icons.lampWallUp,
+      },
+       {
         title: "Outdoor Lighting",
         href: "/products/outdoor-lighting",
         icon: Icons.lightbulb,
@@ -44,17 +49,16 @@ export const sitemap: NavItem[] = [
   {
     title: "Lamps",
     href: "/products/lamps",
+    icon: Icons.lamp,
     items: [
       { 
         title: "Table & Portable Lights", 
         href: "/products/lamps", 
-        icon: Icons.lamp,
         description: "Versatile lamps for any surface." 
       },
       { 
         title: "Floor Lamps", 
         href: "/products/lamps", 
-        icon: Icons.lamp,
         description: "Elegant floor-standing lights." 
       },
     ]
@@ -77,11 +81,7 @@ export const sitemap: NavItem[] = [
     ],
   },
   {
-    title: "Rooms",
-    href: "/products/room-settings",
-  },
-  {
-    title: "Design Studio",
-    href: "/design-studio",
+    title: "Inspiration & Services",
+    href: "/inspiration-services",
   },
 ];
