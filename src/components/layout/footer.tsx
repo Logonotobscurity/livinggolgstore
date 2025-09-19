@@ -17,6 +17,10 @@ export default function Footer() {
         
         <FooterLivingGold className="w-full max-w-4xl mx-auto" />
 
+        <p className="text-center max-w-xl mx-auto mt-8 text-gray-300 text-sm">
+          Curators of exquisite lighting and decor from global artisans, bringing timeless elegance to Nigerian homes.
+        </p>
+
         <div className={`border-t border-primary/30 pt-8 flex ${isMobile ? 'flex-col' : 'flex-row'} justify-between items-center ${isMobile ? 'text-center' : 'text-left'} gap-6 mt-16`}>
           <p className={`text-xs text-gray-400 ${isMobile ? 'order-2' : 'order-1'}`}>
             &copy; {currentYear} Living Gold. All rights reserved.
