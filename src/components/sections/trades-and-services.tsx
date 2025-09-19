@@ -27,8 +27,8 @@ export default function TradesAndServices() {
               Let us be your trusted partner in delivering exceptional quality and design for your next project.
             </p>
             <Button asChild size="lg" showIcon>
-              <Link href="/design-studio">
-                Explore The Design Studio
+              <Link href="/inspiration-services">
+                Explore Inspiration & Services
               </Link>
             </Button>
           </div>
