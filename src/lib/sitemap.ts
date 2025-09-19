@@ -14,18 +14,39 @@ export const sitemap: NavItem[] = [
     href: "/products/ceiling-lights", // Default to a major category
     items: [
       {
-        title: "Ceiling",
+        title: "Ceiling Lights",
         href: "/products/ceiling-lights",
         icon: Icons.lampCeiling,
       },
       {
-        title: "Wall",
+        title: "Chandeliers & Pendants",
+        href: "/products/chandeliers-pendants",
+        icon: Icons.lampCeiling,
+      },
+      {
+        title: "Linear Suspension",
+        href: "/products/linear-suspension",
+        icon: Icons.lampCeiling,
+      },
+      {
+        title: "Wall Lights",
         href: "/products/wall-sconces-vanity-lights",
         icon: Icons.lampWallUp,
       },
-      { title: "Lamps", 
+      { 
+        title: "Lamps", 
         href: "/products/table-lamps-portable-lights", 
         icon: Icons.lamp 
+      },
+      {
+        title: "Floor Lamps",
+        href: "/products/floor-lamps",
+        icon: Icons.lamp,
+      },
+       {
+        title: "Ceiling Fans with Lights",
+        href: "/products/ceiling-fans-with-lights",
+        icon: Icons.lightbulb,
       },
       {
         title: "Outdoor",
