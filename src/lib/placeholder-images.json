@@ -78,7 +78,7 @@
       "slug": "lodes-cono-di-luce-pendant",
       "title": "Cono di Luce Mini Pendant",
       "description": "LODES Cono di Luce LED Mini Pendant in small gold.",
-      "imageUrl": "https://www.visualcomfort.com/us/media_1f5ee0ed5ce48e29fc834c033d85ac1cf209335fb.png",
+      "imageUrl": "https://www.visualcomfort.com/media_1f5ee0ed5ce48e29fc834c033d85ac1cf209335fb.png",
       "imageHint": "gold pendant"
     },
     {
@@ -414,7 +414,7 @@
       "slug": "casablanca-remote",
       "title": "Handheld Remote",
       "description": "Casablanca Fan Company Casablanca Handheld Remote.",
-      "imageUrl": "https://www.visualcomfort.com/us/media_1d7526370753c091fbe83d5f65809dbfb9393ad09.png",
+      "imageUrl": "https://www.visualcomfort.com/media_1d7526370753c091fbe83d5f65809dbfb9393ad09.png",
       "imageHint": "fan remote"
     },
     {
@@ -704,6 +704,150 @@
       "description": "Instagram post 8",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/wrmfn4r52rqx5rxbnn9w9wj/LU_May_2024_Huxe_Bath_Bars_Kasson_LED_Vanity_Light_site-188x188-site.png?auto=webp&format=png",
       "imageHint": "luxury interior"
+    },
+    {
+      "id": "lighting-ceiling-1",
+      "slug": "lighting-ceiling-pendant-1",
+      "title": "Pendant Light",
+      "description": "A beautiful pendant light.",
+      "imageUrl": "https://picsum.photos/seed/101/600/400",
+      "imageHint": "pendant light",
+      "price": "350"
+    },
+    {
+      "id": "lighting-ceiling-2",
+      "slug": "lighting-ceiling-chandelier-1",
+      "title": "Chandelier",
+      "description": "An elegant chandelier.",
+      "imageUrl": "https://picsum.photos/seed/102/600/400",
+      "imageHint": "elegant chandelier",
+      "price": "780"
+    },
+    {
+      "id": "lighting-wall-1",
+      "slug": "lighting-wall-sconce-1",
+      "title": "Wall Sconce",
+      "description": "A modern wall sconce.",
+      "imageUrl": "https://picsum.photos/seed/103/600/400",
+      "imageHint": "modern sconce",
+      "price": "120"
+    },
+    {
+      "id": "lighting-wall-2",
+      "slug": "lighting-wall-vanity-1",
+      "title": "Vanity Light",
+      "description": "A stylish vanity light.",
+      "imageUrl": "https://picsum.photos/seed/104/600/400",
+      "imageHint": "vanity light",
+      "price": "250"
+    },
+    {
+      "id": "lighting-lamps-1",
+      "slug": "lighting-lamps-table-1",
+      "title": "Table Lamp",
+      "description": "A classic table lamp.",
+      "imageUrl": "https://picsum.photos/seed/105/600/400",
+      "imageHint": "classic lamp",
+      "price": "95"
+    },
+    {
+      "id": "lighting-lamps-2",
+      "slug": "lighting-lamps-floor-1",
+      "title": "Floor Lamp",
+      "description": "A minimalist floor lamp.",
+      "imageUrl": "https://picsum.photos/seed/106/600/400",
+      "imageHint": "minimalist lamp",
+      "price": "180"
+    },
+    {
+      "id": "lighting-outdoor-1",
+      "slug": "lighting-outdoor-path-1",
+      "title": "Path Light",
+      "description": "A durable outdoor path light.",
+      "imageUrl": "https://picsum.photos/seed/107/600/400",
+      "imageHint": "path light",
+      "price": "60"
+    },
+    {
+      "id": "lighting-outdoor-2",
+      "slug": "lighting-outdoor-wall-1",
+      "title": "Outdoor Wall Light",
+      "description": "A weather-resistant outdoor wall light.",
+      "imageUrl": "https://picsum.photos/seed/108/600/400",
+      "imageHint": "outdoor light",
+      "price": "110"
+    },
+    {
+      "id": "rooms-living-1",
+      "slug": "rooms-living-room-1",
+      "title": "Cozy Living Room",
+      "description": "A cozy living room setup.",
+      "imageUrl": "https://picsum.photos/seed/109/600/400",
+      "imageHint": "cozy living room"
+    },
+    {
+      "id": "rooms-bedroom-1",
+      "slug": "rooms-bedroom-1",
+      "title": "Modern Bedroom",
+      "description": "A modern bedroom with stylish lighting.",
+      "imageUrl": "https://picsum.photos/seed/110/600/400",
+      "imageHint": "modern bedroom"
+    },
+    {
+      "id": "rooms-kitchen-1",
+      "slug": "rooms-kitchen-1",
+      "title": "Bright Kitchen",
+      "description": "A bright and airy kitchen.",
+      "imageUrl": "https://picsum.photos/seed/111/600/400",
+      "imageHint": "bright kitchen"
+    },
+    {
+      "id": "design-studio-1",
+      "slug": "design-studio-consultation-1",
+      "title": "Design Consultation",
+      "description": "A photo representing a design consultation.",
+      "imageUrl": "https://picsum.photos/seed/112/600/400",
+      "imageHint": "design consultation"
+    },
+    {
+      "id": "design-studio-2",
+      "slug": "design-studio-moodboard-1",
+      "title": "Lighting Moodboard",
+      "description": "A moodboard with lighting fixtures.",
+      "imageUrl": "https://picsum.photos/seed/113/600/400",
+      "imageHint": "lighting moodboard"
+    },
+    {
+      "id": "accessories-piping",
+      "slug": "accessories-piping",
+      "title": "Piping",
+      "description": "Electrical conduit piping.",
+      "imageUrl": "https://picsum.photos/seed/114/600/400",
+      "imageHint": "electrical piping"
+    },
+    {
+      "id": "accessories-gum",
+      "slug": "accessories-gum",
+      "title": "Gum",
+      "description": "Adhesive gum for fittings.",
+      "imageUrl": "https://picsum.photos/seed/115/600/400",
+      "imageHint": "adhesive gum"
+    },
+    {
+      "id": "accessories-conduit-wire",
+      "slug": "accessories-conduit-wire",
+      "title": "Conduit Wire",
+      "description": "Wiring for conduit systems.",
+      "imageUrl": "https://picsum.photos/seed/116/600/400",
+      "imageHint": "conduit wire"
+    },
+    {
+      "id": "accessories-surface-wire",
+      "slug": "accessories-surface-wire",
+      "title": "Surface Wire",
+      "description": "Wiring for surface mounting.",
+      "imageUrl": "https://picsum.photos/seed/117/600/400",
+      "imageHint": "surface wire"
     }
   ]
 }
