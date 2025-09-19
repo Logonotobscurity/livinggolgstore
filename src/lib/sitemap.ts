@@ -14,46 +14,66 @@ export const sitemap: NavItem[] = [
     href: "/products/ceiling-lights",
     items: [
       {
-        title: "Ceiling Lights",
+        title: "Ceiling Fittings",
         href: "/products/ceiling-lights",
         icon: Icons.lampCeiling,
-        description: "Chandeliers, Pendants, Flushmounts",
+        description: "Flushmounts and other ceiling fixtures.",
       },
       {
-        title: "Wall Lights",
-        href: "/products/wall-sconces-vanity-lights",
-        icon: Icons.lampWallUp,
-        description: "Sconces, Vanity Lights, Picture Lights",
-      },
-      { 
-        title: "Lamps", 
-        href: "/products/lamps", 
-        icon: Icons.lamp,
-        description: "Table, Floor, and Desk Lamps" 
+        title: "Chandeliers & Pendants",
+        href: "/products/chandeliers-pendants",
+        icon: Icons.lampCeiling,
+        description: "Statement pieces for any room.",
       },
       {
-        title: "Outdoor Lighting",
-        href: "/products/outdoor-lighting",
-        icon: Icons.lightbulb,
-        description: "Weather-resistant lighting for any exterior space.",
-      },
-       {
-        title: "Architectural Lighting",
-        href: "/products/architectural-lighting",
-        icon: Icons.lightbulb,
-        description: "Recessed, Track, and Specialty Lighting",
-      },
-       {
-        title: "Ceiling Fans with Lights",
-        href: "/products/ceiling-fans-with-lights",
-        icon: Icons.lightbulb,
-        description: "Stylish fans with integrated lighting.",
+        title: "Linear Suspension",
+        href: "/products/linear-suspension",
+        icon: Icons.lampCeiling,
+        description: "Modern, linear lighting solutions.",
       },
     ],
   },
   {
+    title: "Lamps",
+    href: "/products/lamps",
+    items: [
+      { 
+        title: "Table & Portable Lights", 
+        href: "/products/lamps", 
+        icon: Icons.lamp,
+        description: "Versatile lamps for any surface." 
+      },
+      { 
+        title: "Floor Lamps", 
+        href: "/products/lamps", 
+        icon: Icons.lamp,
+        description: "Elegant floor-standing lights." 
+      },
+    ]
+  },
+  {
+    title: "Outdoor Lighting",
+    href: "/products/outdoor-lighting",
+  },
+  {
+    title: "Architectural Lighting",
+    href: "/products/architectural-lighting",
+  },
+  {
     title: "Accessories",
     href: "/products/accessories",
+    items: [
+      {
+        title: "Conduit Material (Piping, Gum)",
+        href: "/products/accessories",
+        description: "Essential materials for electrical installation.",
+      },
+      {
+        title: "Casting Wiring (Conduit & Surface)",
+        href: "/products/accessories",
+        description: "Wiring for all types of installations.",
+      },
+    ],
   },
   {
     title: "Rooms",
