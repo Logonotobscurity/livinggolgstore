@@ -1,10 +1,10 @@
-
 'use client';
 
 import CmsLayout from "@/components/layout/cms-layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { useResponsive } from "@/hooks/use-responsive";
 
 const colors = [
   { name: 'Background', var: 'hsl(var(--background))', text: 'hsl(var(--foreground))' },
@@ -22,6 +22,7 @@ const colors = [
 ];
 
 export default function StyleGuidePage() {
+  const { isMobile, isTablet } = useResponsive();
   const breadcrumb = [
     { text: 'Home', href: '/' },
     { text: 'Style Guide' }
@@ -30,12 +31,12 @@ export default function StyleGuidePage() {
   return (
     <CmsLayout breadcrumb={breadcrumb}>
       <div className="container mx-auto px-4 text-white">
-        <h1 className="font-headline text-5xl font-bold mb-12">Style Guide</h1>
+        <h1 className={`font-headline ${isMobile ? 'text-4xl' : 'text-5xl'} font-bold mb-12`}>Style Guide</h1>
 
         {/* Colors Section */}
         <section className="mb-16">
           <h2 className="font-headline text-3xl font-bold mb-8 border-b border-primary/30 pb-4">Colors</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className={`grid ${isMobile ? 'grid-cols-2' : isTablet ? 'grid-cols-3' : 'grid-cols-4'} gap-4`}>
             {colors.map((color) => (
               <div key={color.name} className="rounded-lg border border-border overflow-hidden">
                 <div style={{ backgroundColor: color.var }} className="h-24 w-full"></div>
@@ -54,19 +55,19 @@ export default function StyleGuidePage() {
           <div className="space-y-6">
             <div>
               <p className="text-sm text-muted-foreground mb-1">Headline (Playfair Display)</p>
-              <h1 className="font-headline text-7xl font-bold">H1 Headline</h1>
+              <h1 className={`font-headline ${isMobile ? 'text-5xl' : 'text-7xl'} font-bold`}>H1 Headline</h1>
             </div>
             <div>
               <p className="text-sm text-muted-foreground mb-1">Headline (Playfair Display)</p>
-              <h2 className="font-headline text-5xl font-bold">H2 Headline</h2>
+              <h2 className={`font-headline ${isMobile ? 'text-4xl' : 'text-5xl'} font-bold`}>H2 Headline</h2>
             </div>
             <div>
               <p className="text-sm text-muted-foreground mb-1">Headline (Playfair Display)</p>
-              <h3 className="font-headline text-3xl font-bold">H3 Headline</h3>
+              <h3 className={`font-headline ${isMobile ? 'text-2xl' : 'text-3xl'} font-bold`}>H3 Headline</h3>
             </div>
             <div>
               <p className="text-sm text-muted-foreground mb-1">Body (Inter)</p>
-              <p className="text-lg">This is a paragraph of body text (text-lg). It's used for introductory paragraphs or stand-out text. The quick brown fox jumps over the lazy dog.</p>
+              <p className={`${isMobile ? 'text-base' : 'text-lg'}`}>This is a paragraph of body text (text-lg). It's used for introductory paragraphs or stand-out text. The quick brown fox jumps over the lazy dog.</p>
             </div>
              <div>
               <p className="text-sm text-muted-foreground mb-1">Body (Inter)</p>
@@ -110,7 +111,7 @@ export default function StyleGuidePage() {
             {/* Cards */}
              <div>
               <h3 className="text-xl font-semibold mb-6">Cards</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} gap-8`}>
                 <Card>
                   <CardHeader>
                     <CardTitle>Card Title</CardTitle>

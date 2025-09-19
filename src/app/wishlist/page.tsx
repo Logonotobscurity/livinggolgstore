@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useWishlist } from "@/context/wishlist-context";
@@ -8,10 +7,12 @@ import { Icons } from "@/components/icons";
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/context/cart-context";
+import { useResponsive } from "@/hooks/use-responsive";
 
 export default function WishlistPage() {
   const { wishlistItems, toggleWishlist } = useWishlist();
   const { addToCart } = useCart();
+  const { isMobile, isTablet } = useResponsive();
 
   const handleAddToCart = (item: any) => {
     addToCart(item);
@@ -31,7 +32,7 @@ export default function WishlistPage() {
     <CmsLayout breadcrumb={breadcrumb}>
       <div className="cms-page text-white">
         <div className="text-wrapper text-center mb-12 px-4">
-          <h1 className="mb-4 text-4xl md:text-5xl">Your Wishlist</h1>
+          <h1 className={`mb-4 ${isMobile ? 'text-4xl' : 'text-5xl'}`}>Your Wishlist</h1>
         </div>
         
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,7 +44,7 @@ export default function WishlistPage() {
                     </Button>
                 </div>
             ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div className={`grid ${isMobile ? 'grid-cols-1' : isTablet ? 'grid-cols-2' : 'grid-cols-3'} gap-8`}>
                     {wishlistItems.map(item => (
                         <div key={item.id} className="border border-gray-800 rounded-lg p-4 flex flex-col text-center group">
                             <div className="relative">
