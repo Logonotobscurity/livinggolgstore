@@ -65,6 +65,7 @@ export default function OutdoorLightingPage() {
           </section>
           <ProductSupport />
         </ReusableBackground>
+        <div className="my-12 md:my-16" />
       </main>
       <Footer />
     </div>
