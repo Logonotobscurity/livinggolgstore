@@ -1,3 +1,4 @@
+
 import { Icons } from "@/components/icons";
 
 export interface NavItem {
@@ -52,13 +53,15 @@ export const sitemap: NavItem[] = [
     href: "/products/accessories",
     items: [
       {
-        title: "Conduit Material",
+        title: "Conduit material",
         href: "/products/accessories",
+        icon: Icons.lightbulb,
         description: "Piping, Gum",
       },
       {
-        title: "Casting Wiring",
+        title: "Casting wiring",
         href: "/products/accessories",
+        icon: Icons.lightbulb,
         description: "Conduit & surface wire",
       },
     ],
