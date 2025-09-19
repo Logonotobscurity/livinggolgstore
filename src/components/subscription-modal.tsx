@@ -46,26 +46,31 @@ export default function SubscriptionModal() {
   const [isPending, startTransition] = useTransition();
 
   useEffect(() => {
+    // This entire effect should only run on the client
+    if (typeof window === 'undefined') return;
+
     const hasBeenDismissed = localStorage.getItem(MODAL_DISMISSED_KEY);
     const hasBeenDeclined = localStorage.getItem(MODAL_DECLINED_KEY);
 
     if (hasBeenDeclined) {
       setIsDeclined(true);
-      return; // Don't set up timers or scroll listeners if declined
+      return; // If declined, just show the sticky button. Don't open modal.
     }
 
     if (!hasBeenDismissed) {
       const handleScroll = () => {
+        // Show after scrolling 25% of the page
         if (window.scrollY > document.documentElement.scrollHeight * 0.25) {
           setIsOpen(true);
           window.removeEventListener('scroll', handleScroll);
         }
       };
 
+      // Show after 5 seconds
       const timer = setTimeout(() => {
         setIsOpen(true);
         window.removeEventListener('scroll', handleScroll);
-      }, 5000);
+      }, 5000); 
 
       window.addEventListener('scroll', handleScroll, { passive: true });
 
@@ -93,7 +98,8 @@ export default function SubscriptionModal() {
           description: result.message,
         });
         localStorage.setItem(MODAL_DISMISSED_KEY, 'true');
-        localStorage.removeItem(MODAL_DECLINED_KEY);
+        // If they subscribe, they are no longer "declined"
+        localStorage.removeItem(MODAL_DECLINED_KEY); 
         setIsOpen(false);
         setIsDeclined(false);
       } else {
@@ -196,7 +202,7 @@ export default function SubscriptionModal() {
       <div
         className={cn(
           'fixed bottom-4 right-4 z-50 transition-transform duration-300 ease-in-out',
-          isDeclined && !isOpen ? 'translate-x-0' : 'translate-x-[200%]'
+          isDeclined && !isOpen ? 'translate-y-0' : 'translate-y-[200%]'
         )}
       >
         <Button
