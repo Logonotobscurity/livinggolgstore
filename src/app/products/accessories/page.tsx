@@ -7,6 +7,7 @@ import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
 import type { Metadata } from 'next';
+import { ReusableBackground } from '@/components/reusable-background';
 
 export const metadata: Metadata = {
   title: 'Luxury Light Spare Parts & Accessories in Nigeria',
@@ -18,7 +19,7 @@ export default function AccessoriesPage() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'accessories-hero');
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#1a1a1a] text-white">
+    <div className="flex flex-col min-h-screen bg-background text-white">
       <Header />
       <main className="flex-grow">
         {heroImage && (
@@ -47,21 +48,23 @@ export default function AccessoriesPage() {
           </section>
         )}
 
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-6 max-w-7xl">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-12">
-              {products.map((product, index) => (
-                <CategoryCard 
-                  key={product.id} 
-                  product={product} 
-                  animationDelay={`${index * 0.05}s`}
-                  imageClassName="w-full h-full p-2 sm:p-6"
-                />
-              ))}
+        <ReusableBackground>
+          <section className="py-16 md:py-24">
+            <div className="container mx-auto px-6 max-w-7xl">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-12">
+                {products.map((product, index) => (
+                  <CategoryCard 
+                    key={product.id} 
+                    product={product} 
+                    animationDelay={`${index * 0.05}s`}
+                    imageClassName="w-full h-full p-2 sm:p-6"
+                  />
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-        <ProductSupport />
+          </section>
+          <ProductSupport />
+        </ReusableBackground>
       </main>
       <Footer />
     </div>
