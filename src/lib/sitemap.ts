@@ -10,6 +10,10 @@ export interface NavItem {
 
 export const sitemap: NavItem[] = [
   {
+    title: "Chandeliers & Pendants",
+    href: "/products/chandeliers-pendants",
+  },
+  {
     title: "Lighting",
     href: "/products/ceiling-lights",
     items: [
@@ -17,19 +21,11 @@ export const sitemap: NavItem[] = [
         title: "Ceiling Fittings",
         href: "/products/ceiling-lights",
         icon: Icons.lampCeiling,
-        description: "Flushmounts and other ceiling fixtures.",
-      },
-      {
-        title: "Chandeliers & Pendants",
-        href: "/products/chandeliers-pendants",
-        icon: Icons.lampCeiling,
-        description: "Statement pieces for any room.",
       },
       {
         title: "Linear Suspension",
         href: "/products/linear-suspension",
         icon: Icons.lampCeiling,
-        description: "Modern, linear lighting solutions.",
       },
     ],
   },
@@ -52,28 +48,28 @@ export const sitemap: NavItem[] = [
     ]
   },
   {
+    title: "Accessories",
+    href: "/products/accessories",
+    items: [
+      {
+        title: "Conduit Material",
+        href: "/products/accessories",
+        description: "Piping, Gum",
+      },
+      {
+        title: "Casting Wiring",
+        href: "/products/accessories",
+        description: "Conduit & surface wire",
+      },
+    ],
+  },
+  {
     title: "Outdoor Lighting",
     href: "/products/outdoor-lighting",
   },
   {
     title: "Architectural Lighting",
     href: "/products/architectural-lighting",
-  },
-  {
-    title: "Accessories",
-    href: "/products/accessories",
-    items: [
-      {
-        title: "Conduit Material (Piping, Gum)",
-        href: "/products/accessories",
-        description: "Essential materials for electrical installation.",
-      },
-      {
-        title: "Casting Wiring (Conduit & Surface)",
-        href: "/products/accessories",
-        description: "Wiring for all types of installations.",
-      },
-    ],
   },
   {
     title: "Rooms",
