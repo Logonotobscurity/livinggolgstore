@@ -51,6 +51,7 @@ export default function SubscriptionModal() {
 
     if (hasBeenDeclined) {
       setIsDeclined(true);
+      return; // Don't set up timers or scroll listeners if declined
     }
 
     if (!hasBeenDismissed) {
