@@ -11,7 +11,7 @@ export interface NavItem {
 export const sitemap: NavItem[] = [
   {
     title: "Lighting",
-    href: "/products/ceiling-lights", // Default to a major category
+    href: "/products/ceiling-lights",
     items: [
       {
         title: "Ceiling Lights",
@@ -32,19 +32,19 @@ export const sitemap: NavItem[] = [
         description: "Table, Floor, and Desk Lamps" 
       },
       {
-        title: "Outdoor",
+        title: "Outdoor Lighting",
         href: "/products/outdoor-lighting",
         icon: Icons.lightbulb,
         description: "Weather-resistant lighting for any exterior space.",
       },
        {
-        title: "Architectural",
+        title: "Architectural Lighting",
         href: "/products/architectural-lighting",
         icon: Icons.lightbulb,
         description: "Recessed, Track, and Specialty Lighting",
       },
        {
-        title: "Ceiling Fans",
+        title: "Ceiling Fans with Lights",
         href: "/products/ceiling-fans-with-lights",
         icon: Icons.lightbulb,
         description: "Stylish fans with integrated lighting.",
