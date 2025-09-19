@@ -7,6 +7,7 @@ import Header from '@/components/layout/header';
 import { ProductSupport } from '@/components/product-support';
 import type { Metadata } from 'next';
 import { ReusableBackground } from '@/components/reusable-background';
+import { Icons } from '@/components/icons';
 
 export const metadata: Metadata = {
   title: 'Inspirational Room Settings',
