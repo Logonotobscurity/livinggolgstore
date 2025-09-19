@@ -23,7 +23,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'https.visualcomfort.com',
         hostname: 'picsum.photos',
         port: '',
         pathname: '/**',
@@ -55,6 +55,12 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'img.ydesigngroup.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.visualcomfort.com',
         port: '',
         pathname: '/**',
       },
