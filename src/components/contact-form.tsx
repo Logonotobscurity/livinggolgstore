@@ -116,7 +116,7 @@ export function ContactForm() {
               </FormItem>
             )}
           />
-          <div className="flex justify-center">
+          <div className="flex justify-center pt-2">
             <Button
               type="submit"
               disabled={isPending}
