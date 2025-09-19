@@ -11,10 +11,6 @@ export interface NavItem {
 
 export const sitemap: NavItem[] = [
   {
-    title: "Chandeliers & Pendants",
-    href: "/products/chandeliers-pendants",
-  },
-  {
     title: "Lighting",
     href: "/products/ceiling-lights",
     items: [
@@ -24,9 +20,24 @@ export const sitemap: NavItem[] = [
         icon: Icons.lampCeiling,
       },
       {
+        title: "Chandeliers & Pendants",
+        href: "/products/chandeliers-pendants",
+        icon: Icons.lampCeiling,
+      },
+      {
         title: "Linear Suspension",
         href: "/products/linear-suspension",
         icon: Icons.lampCeiling,
+      },
+      {
+        title: "Outdoor Lighting",
+        href: "/products/outdoor-lighting",
+        icon: Icons.lightbulb,
+      },
+      {
+        title: "Architectural Lighting",
+        href: "/products/architectural-lighting",
+        icon: Icons.lightbulb,
       },
     ],
   },
@@ -51,28 +62,19 @@ export const sitemap: NavItem[] = [
   {
     title: "Accessories",
     href: "/products/accessories",
+    icon: Icons.lightbulb,
     items: [
       {
         title: "Conduit material",
         href: "/products/accessories",
-        icon: Icons.lightbulb,
         description: "Piping, Gum",
       },
       {
         title: "Casting wiring",
         href: "/products/accessories",
-        icon: Icons.lightbulb,
         description: "Conduit & surface wire",
       },
     ],
-  },
-  {
-    title: "Outdoor Lighting",
-    href: "/products/outdoor-lighting",
-  },
-  {
-    title: "Architectural Lighting",
-    href: "/products/architectural-lighting",
   },
   {
     title: "Rooms",
