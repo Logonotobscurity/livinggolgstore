@@ -148,6 +148,9 @@ export default function ProductPage({ params: { slug } }: { params: { slug: stri
         <ProductSupport />
 
       </main>
+      <div className="text-wrapper">
+          <hr className="section-divider" />
+      </div>
       <Footer />
       <ShareModal 
         isOpen={isShareModalOpen} 

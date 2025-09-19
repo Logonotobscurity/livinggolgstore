@@ -67,6 +67,9 @@ export default function RecessedTrackLightingPage() {
         </ReusableBackground>
         <div className="my-24 md:my-32" />
       </main>
+      <div className="text-wrapper">
+          <hr className="section-divider" />
+      </div>
       <Footer />
     </div>
   );
