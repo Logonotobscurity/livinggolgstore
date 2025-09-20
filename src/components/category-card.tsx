@@ -84,7 +84,7 @@ export function CategoryCard({
         aria-label={`Browse ${product.title} collection`}
       >
         <>
-          <div className="product-frame w-full aspect-square border-3 border-gray-700/50 bg-transparent flex justify-center items-center mb-4 md:mb-8 p-2 md:p-4 relative overflow-hidden backdrop-blur-sm transition-all duration-400 ease-in-out-quad group-hover:border-primary group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.2),0_0_0_1px_rgba(201,169,97,0.2),inset_0_1px_0_rgba(255,255,255,0.1)] group-focus-visible:border-primary group-focus-visible:shadow-[0_20px_40px_rgba(0,0,0,0.2),0_0_0_1px_rgba(201,169,97,0.2),inset_0_1px_0_rgba(255,255,255,0.1)] group-hover:-translate-y-2 group-hover:scale-105 group-focus-visible:-translate-y-2 group-focus-visible:scale-105">
+          <div className="product-frame w-full aspect-square border-3 border-gray-700/50 bg-transparent flex justify-center items-center p-2 md:p-4 relative overflow-hidden backdrop-blur-sm transition-all duration-400 ease-in-out-quad group-hover:border-primary group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.2),0_0_0_1px_rgba(201,169,97,0.2),inset_0_1px_0_rgba(255,255,255,0.1)] group-focus-visible:border-primary group-focus-visible:shadow-[0_20px_40px_rgba(0,0,0,0.2),0_0_0_1px_rgba(201,169,97,0.2),inset_0_1px_0_rgba(255,255,255,0.1)] group-hover:-translate-y-2 group-hover:scale-105 group-focus-visible:-translate-y-2 group-focus-visible:scale-105">
             <div className="absolute top-2 right-2 z-10 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <Button 
                   variant="outline" 

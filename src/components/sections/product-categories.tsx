@@ -18,8 +18,8 @@ export default function ProductCategories() {
 
   return (
       <section className="py-20 md:py-32">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="text-left mb-12 md:mb-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-left mb-12">
             <h2 className="font-headline text-3xl md:text-5xl font-bold text-foreground">
               Explore Our Products
             </h2>

@@ -122,7 +122,7 @@ export default function SubscriptionModal() {
   return (
     <>
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="bg-secondary text-foreground max-w-md p-8 sm:p-10">
+        <DialogContent className="bg-secondary text-foreground max-w-md p-6 sm:p-8">
           <DialogHeader className="text-center">
             <LivingGoldWordmark className="h-12 w-auto mx-auto mb-4 text-primary" />
             <DialogTitle className="font-headline text-5xl font-bold text-primary mb-4">
