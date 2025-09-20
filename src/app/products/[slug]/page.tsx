@@ -70,7 +70,7 @@ export default function ProductPage({ params: { slug } }: { params: { slug: stri
   const isWishlisted = isInWishlist(product.id);
 
   return (
-    <div className="flex flex-col min-h-screen bg-black text-white">
+    <div className="flex flex-col min-h-screen bg-background text-foreground">
       <Header />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
@@ -85,7 +85,7 @@ export default function ProductPage({ params: { slug } }: { params: { slug: stri
           </div>
           <div className="md:py-8">
             <h1 className="font-headline text-3xl md:text-4xl font-bold mb-4">{product.title}</h1>
-            <p className="text-lg md:text-xl mb-6 text-gray-300">{product.description}</p>
+            <p className="text-lg md:text-xl mb-6 text-muted-foreground">{product.description}</p>
             
             <div className="flex items-center mb-6">
               <div className="flex items-center text-primary">
@@ -95,7 +95,7 @@ export default function ProductPage({ params: { slug } }: { params: { slug: stri
                 <Icons.star className="w-5 h-5 fill-current" />
                 <Icons.star className="w-5 h-5 fill-gray-600" />
               </div>
-              <span className="ml-3 text-sm text-gray-400">(12 Reviews)</span>
+              <span className="ml-3 text-sm text-muted-foreground">(12 Reviews)</span>
             </div>
 
             <p className="text-3xl md:text-4xl font-bold text-primary mb-8">{formatPrice(product.price)}</p>
@@ -122,13 +122,13 @@ export default function ProductPage({ params: { slug } }: { params: { slug: stri
                 </Button>
             </div>
 
-            <p className="leading-relaxed text-gray-300">
+            <p className="leading-relaxed text-muted-foreground">
               An exquisite piece that combines timeless elegance with modern design. Perfect for creating a focal point in any room, this {product.title?.toLowerCase()} offers both functionality and unparalleled style. Crafted from the finest materials.
             </p>
 
-             <div className="mt-8 text-sm text-gray-400 space-y-1">
-                <p><span className="font-semibold text-gray-200">Category:</span> Lighting</p>
-                <p><span className="font-semibold text-gray-200">SKU:</span> {product.id.toUpperCase()}</p>
+             <div className="mt-8 text-sm text-muted-foreground space-y-1">
+                <p><span className="font-semibold text-foreground">Category:</span> Lighting</p>
+                <p><span className="font-semibold text-foreground">SKU:</span> {product.id.toUpperCase()}</p>
              </div>
           </div>
         </div>
