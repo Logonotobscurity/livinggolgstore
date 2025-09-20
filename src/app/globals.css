@@ -79,8 +79,22 @@
   }
 
   .section-divider {
-    @apply w-96 h-px mx-auto my-16 bg-gradient-to-r from-transparent via-primary to-transparent;
-    box-shadow: 0 0 10px 1px hsl(var(--primary) / 0.5);
+    @apply w-96 h-px mx-auto my-16 bg-primary;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  .animate-bounce {
+    animation: bounce 1s infinite;
   }
 }
 
@@ -276,4 +290,5 @@
 
 
     
+
 
