@@ -29,7 +29,7 @@ const testimonials = [
 
 const TestimonialCard = ({ body, author }: { body: string, author: string }) => {
   return (
-    <blockquote className="bg-black/50 border border-primary rounded-lg p-6 md:p-8 w-[90vw] max-w-[450px] shrink-0">
+    <blockquote className="bg-background/50 border border-primary rounded-lg p-6 md:p-8 w-[90vw] max-w-[450px] shrink-0">
       <p className="text-sm italic leading-normal mb-4">"{body}"</p>
       <footer className="text-xs font-medium text-primary/80">— {author}</footer>
     </blockquote>
@@ -41,7 +41,7 @@ export default function About() {
   const secondColumn = testimonials.slice(3, 6);
 
   return (
-    <section className="bg-secondary text-white py-20 md:py-32 overflow-hidden">
+    <section className="bg-secondary text-foreground py-20 md:py-32 overflow-hidden">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="text-center md:text-left mb-16 md:mb-24">
           <h2 className="text-base md:text-lg font-medium tracking-[0.2em] uppercase text-primary mb-6">
