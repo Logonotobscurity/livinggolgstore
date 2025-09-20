@@ -12,7 +12,7 @@ export default function Newsletter() {
 
   return (
     <section className={`text-foreground ${isMobile ? 'py-16' : 'py-24'}`}>
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-sm mx-auto text-center">
           <h3 className="text-xl font-bold mb-6">
             Join our community and enjoy 10% off your first Living Gold order

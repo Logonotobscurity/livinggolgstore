@@ -23,7 +23,7 @@ export default function Lightscapes() {
 
   return (
     <section className="text-foreground py-20 md:py-0">
-      <div className="container mx-auto max-w-7xl px-6">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-center">
           
           {/* Static Text Content Column */}

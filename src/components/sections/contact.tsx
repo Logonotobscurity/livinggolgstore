@@ -11,7 +11,7 @@ import Link from 'next/link';
 export default function Contact() {
   return (
     <section id="contact" className="text-foreground py-20 md:py-32">
-      <div className="container mx-auto px-6 max-w-5xl">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start">
           <div className="w-full">
             <ContactForm />

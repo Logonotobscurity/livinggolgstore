@@ -23,7 +23,7 @@ export default function Lifestyle() {
 
   return (
       <section className="text-foreground py-24 md:py-32 overflow-hidden">
-        <div className="container mx-auto px-6 max-w-7xl relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
           <div className="text-center mb-12 md:mb-20">
             <h2 className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-10">
               SHOP BY CATEGORY

@@ -11,7 +11,7 @@ export default function TradesAndServices() {
 
   return (
     <section className="py-20 md:py-32">
-      <div className="container mx-auto px-6 max-w-7xl">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} gap-12 md:gap-20 items-center`}>
           <div className={`${isMobile ? 'order-2 text-center' : 'order-1 text-left'}`}>
             <h2 className="text-base md:text-lg font-medium tracking-[0.2em] uppercase text-primary mb-6">

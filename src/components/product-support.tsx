@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 export function ProductSupport() {
   return (
-    <div className="container mx-auto px-6 max-w-5xl my-24 md:my-32">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl my-24 md:my-32">
         <div className="border-t border-primary/30 my-24" />
 
         <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start">

@@ -33,7 +33,7 @@ export default function LinearSuspensionPage() {
               priority
             />
             <div className="absolute inset-0 bg-black/60" />
-            <div className="relative z-10 container mx-auto px-6">
+            <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
               <nav className="flex justify-center items-center text-sm mb-4">
                 <Link href="/" className="hover:text-primary">Home</Link>
                 <Icons.chevronRight className="h-4 w-4 mx-1" />
@@ -49,7 +49,7 @@ export default function LinearSuspensionPage() {
         )}
 
           <section className="py-16 md:py-24">
-            <div className="container mx-auto px-6 max-w-7xl">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-12">
                 {products.map((product, index) => (
                   <CategoryCard 

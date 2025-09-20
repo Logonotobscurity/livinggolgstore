@@ -42,7 +42,7 @@ export default function About() {
 
   return (
     <section className="text-foreground py-20 md:py-32 overflow-hidden">
-      <div className="container mx-auto px-6 max-w-7xl">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="text-center md:text-left mb-16 md:mb-24">
           <h2 className="text-base md:text-lg font-medium tracking-[0.2em] uppercase text-primary mb-6">
             CURATORS OF THE EXCEPTIONAL
