@@ -11,9 +11,7 @@ import Link from 'next/link';
 export function ProductSupport() {
   return (
     <div className="container mx-auto px-6 max-w-5xl my-24 md:my-32">
-        <div className="text-wrapper mt-24">
-            <hr className="section-divider" />
-        </div>
+        <div className="border-t border-primary/30 my-24" />
 
         <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start">
             <div className="w-full">

@@ -79,7 +79,7 @@
   }
 
   .section-divider {
-    @apply w-96 h-px mx-auto my-16 bg-primary;
+    @apply w-full h-px my-16 bg-primary;
   }
 
   @keyframes bounce {

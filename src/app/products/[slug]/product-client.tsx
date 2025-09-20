@@ -146,9 +146,7 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
         <ProductSupport />
 
       </main>
-      <div className="text-wrapper">
-          <hr className="section-divider" />
-      </div>
+      <div className="border-t border-primary/30" />
       <Footer />
       <ShareModal 
         isOpen={isShareModalOpen} 

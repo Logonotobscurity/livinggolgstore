@@ -40,9 +40,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="text-wrapper mt-24">
-            <hr className="section-divider" />
-        </div>
+        <div className="border-t border-primary/30 my-24" />
 
         <div className="max-w-5xl mx-auto px-4">
             <h2 className="font-headline text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>

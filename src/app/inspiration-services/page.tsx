@@ -76,9 +76,7 @@ export default function InspirationServicesPage() {
             </div>
         </section>
 
-        <div className="text-wrapper">
-          <hr className="section-divider" />
-        </div>
+        <div className="border-t border-primary/30 my-16" />
 
         {/* Design Studio Services */}
         <div className="text-wrapper align-left">
@@ -111,9 +109,7 @@ export default function InspirationServicesPage() {
             </div>
         </div>
 
-        <div className="text-wrapper">
-          <hr className="section-divider" />
-        </div>
+        <div className="border-t border-primary/30 my-16" />
 
         {/* Contact Form */}
         <div className="max-w-md mx-auto px-4">

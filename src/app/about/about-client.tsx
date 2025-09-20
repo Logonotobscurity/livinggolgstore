@@ -42,9 +42,7 @@ export default function AboutClient() {
           </div>
         </div>
 
-        <div className="text-wrapper">
-          <hr className="section-divider" />
-        </div>
+        <div className="border-t border-primary/30 my-16" />
 
         <div className="text-wrapper align-left">
           <h3>Our Philosophy</h3>
@@ -56,9 +54,7 @@ export default function AboutClient() {
           </p>
         </div>
 
-        <div className="text-wrapper">
-          <hr className="section-divider" />
-        </div>
+        <div className="border-t border-primary/30 my-16" />
 
         <div className="text-wrapper align-left">
             <h3>What Guides Us — Our Pillars</h3>
