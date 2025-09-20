@@ -22,10 +22,7 @@ export default function Lifestyle() {
   const categories = PlaceHolderImages.filter(img => lifestyleCategories.includes(img.id));
 
   return (
-    <section className="relative bg-gradient-to-br from-background to-secondary text-foreground py-24 md:py-32 overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-[radial-gradient(circle_at_20%_80%,_rgba(201,169,97,0.08)_0%,_transparent_50%),radial-gradient(circle_at_80%_20%,_rgba(201,169,97,0.08)_0%,_transparent_50%)]"></div>
-       <div className="absolute inset-0 bg-[linear-gradient(90deg,_transparent_0%,_rgba(201,169,97,0.02)_50%,_transparent_100%),linear-gradient(0deg,_rgba(0,0,0,0.1)_0%,_transparent_30%)] pointer-events-none"></div>
-
+    <section className="bg-background text-foreground py-24 md:py-32 overflow-hidden">
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
         <div className="text-center mb-12 md:mb-20">
           <h2 className="text-sm font-medium tracking-[0.2em] uppercase text-primary mb-10">
