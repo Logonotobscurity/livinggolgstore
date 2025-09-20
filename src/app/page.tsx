@@ -19,16 +19,12 @@ export default function Home() {
         <div className="border-t border-primary/30" />
         <ProductCategories />
         <Lightscapes />
-        <div className="text-wrapper">
-          <hr className="section-divider" />
-        </div>
+        <div className="border-t border-primary/30" />
         <Lifestyle />
         <TradesAndServices />
         <About />
         <InstagramFeed />
-        <div className="text-wrapper">
-          <hr className="section-divider" />
-        </div>
+        <div className="border-t border-primary/30" />
         <Contact />
         <Newsletter />
       </main>
