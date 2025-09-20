@@ -30,8 +30,8 @@ const testimonials = [
 const TestimonialCard = ({ body, author }: { body: string, author: string }) => {
   return (
     <blockquote className="bg-background/50 border border-primary rounded-lg p-6 md:p-8 w-[90vw] max-w-[450px] shrink-0">
-      <p className="text-sm italic leading-normal mb-4">"{body}"</p>
-      <footer className="text-xs font-medium text-primary/80">— {author}</footer>
+      <p className="text-base italic leading-relaxed mb-4">"{body}"</p>
+      <footer className="text-sm font-medium text-primary/80">— {author}</footer>
     </blockquote>
   );
 };
@@ -47,7 +47,7 @@ export default function About() {
           <h2 className="text-base md:text-lg font-medium tracking-[0.2em] uppercase text-primary mb-6">
             CURATORS OF THE EXCEPTIONAL
           </h2>
-          <p className="text-xl md:text-2xl max-w-4xl mx-auto md:mx-0 leading-loose">
+          <p className="text-2xl md:text-3xl max-w-4xl mx-auto md:mx-0 leading-loose">
             Since 2013, Living Gold has been a bridge to the world's finest lighting artisans. We import and curate exquisite chandeliers, fixtures, and bespoke pieces for discerning clients across Nigeria, transforming spaces with the power of exceptional design.
           </p>
         </div>
@@ -85,8 +85,8 @@ export default function About() {
           </Marquee>
         </div>
         
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-secondary to-transparent"></div>
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-secondary to-transparent"></div>
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-transparent to-transparent"></div>
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-transparent to-transparent"></div>
       </div>
     </section>
   );

@@ -1,3 +1,4 @@
+
 'use client';
 
 import { Input } from '@/components/ui/input';
@@ -13,7 +14,7 @@ export default function Newsletter() {
     <section className={`text-foreground ${isMobile ? 'py-16' : 'py-24'}`}>
       <div className="container mx-auto px-6">
         <div className="max-w-sm mx-auto text-center">
-          <h3 className="text-lg font-bold mb-6">
+          <h3 className="text-xl font-bold mb-6">
             Join our community and enjoy 10% off your first Living Gold order
           </h3>
           <form className="flex mb-6">

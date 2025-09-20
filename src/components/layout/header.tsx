@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <>
       <header className="sticky top-0 z-50 w-full bg-background/80 text-foreground backdrop-blur-sm">
-        <div className="bg-secondary/50 text-xs">
+        <div className="bg-secondary/50 text-sm">
           <div className={`container mx-auto px-4 sm:px-6 lg:px-8 h-10 flex items-center max-w-7xl ${isMobile ? 'justify-center' : 'justify-between'}`}>
             {!isMobile && (
               <p className="font-light">
@@ -35,7 +35,7 @@ export default function Header() {
               <Link href="/about" className="link-underline transition-colors">
                 About
               </Link>
-              <span className="text-gray-500">|</span>
+              <span className="text-muted-foreground">|</span>
               <Link href="/inspiration-services" className="link-underline transition-colors">
                 Inspiration & Services
               </Link>

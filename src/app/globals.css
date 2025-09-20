@@ -93,9 +93,9 @@
   }
 
   body.cms-page-body .with-breadcrumb .breadcrumb-wrapper .breadcrumb {
-    background-color: #191414;
+    background-color: transparent;
     padding: 30px 0 20px;
-    border-top: 1px solid #37372e;
+    border-top: 1px solid hsl(var(--border) / 0.5);
   }
   
   body.cms-page-body .with-breadcrumb .breadcrumb-wrapper .breadcrumb ul > li {
@@ -148,8 +148,8 @@
   }
   
   .cms-page .text-wrapper p {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 1rem;
+    line-height: 1.75rem;
   }
   
   .cms-page .text-wrapper .left-border p {
@@ -157,8 +157,8 @@
   }
   
   .cms-page .text-wrapper .align-left p:last-of-type {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 1rem;
+    line-height: 1.75rem;
   }
 
   .cms-page h1, .cms-page .text-wrapper .align-left h1 {
@@ -173,7 +173,7 @@
   }
   
   .cms-page .text-wrapper .left-border {
-    border-left: 1px solid #454545;
+    border-left: 1px solid hsl(var(--border));
   }
   
   .cms-page .text-wrapper .left-border h2 {

@@ -31,7 +31,7 @@ export default function Footer() {
         
         <FooterLivingGold className="w-full max-w-4xl mx-auto" />
 
-        <p className="text-center max-w-xl mx-auto mt-8 text-muted-foreground text-sm">
+        <p className="text-center max-w-xl mx-auto mt-8 text-muted-foreground text-base">
           Curators of exquisite lighting and decor from global artisans, bringing timeless elegance to Nigerian homes.
         </p>
 
