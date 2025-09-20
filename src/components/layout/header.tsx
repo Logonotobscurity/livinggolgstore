@@ -44,7 +44,7 @@ export default function Header() {
           </div>
         </div>
         <div className="border-b border-primary/30">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center max-w-7xl">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex justify-between items-center max-w-7xl">
             <div className="flex-1 flex justify-start items-center">
                 {isMobile && (
                 <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -67,7 +67,7 @@ export default function Header() {
 
             <div className={`flex-1 flex justify-center`}>
               <Link href="/" className="flex items-center">
-                <LivingGoldWordmark className="h-10 md:h-12 w-auto" />
+                <LivingGoldWordmark className="h-9 md:h-12 w-auto" />
                 <span className="sr-only">LIVING GOLD</span>
               </Link>
             </div>
