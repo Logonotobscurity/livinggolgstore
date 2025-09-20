@@ -48,7 +48,7 @@ export default function InspirationServicesPage() {
 
         {/* Room Settings Grid */}
         <section className="py-16 md:py-24">
-            <div className="container mx-auto px-6 max-w-7xl">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Room Inspiration</h2>
                     <p className="text-lg text-muted-foreground mt-2">See how our lighting transforms spaces.</p>

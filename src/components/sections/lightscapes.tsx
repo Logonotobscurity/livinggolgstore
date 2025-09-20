@@ -50,26 +50,39 @@ export default function Lightscapes() {
 
           {/* Scrolling/Stacked Image Content Column */}
           <div>
-            {/* Mobile View: Simple Vertical Stack */}
-            <div className="md:hidden space-y-8 mt-12">
-               {lightscapeImages.map((image) => (
-                <div key={image.id} className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
-                  <Image
-                    src={image.imageUrl}
-                    alt={image.description}
-                    fill
-                    className="object-cover"
-                    sizes="100vw"
-                    data-ai-hint={image.imageHint}
-                  />
-                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 p-6">
-                    <h3 className="text-white text-lg font-bold">
-                      {image.title}
-                    </h3>
-                  </div>
-                </div>
-              ))}
+            {/* Mobile View: Carousel */}
+            <div className="md:hidden mt-12">
+               <Carousel
+                opts={{
+                  align: 'start',
+                  loop: true,
+                }}
+                className="w-full"
+              >
+                <CarouselContent>
+                  {lightscapeImages.map((image) => (
+                    <CarouselItem key={image.id}>
+                      <div className="relative w-full aspect-[4/3] rounded-lg overflow-hidden">
+                        <Image
+                          src={image.imageUrl}
+                          alt={image.description}
+                          fill
+                          className="object-cover"
+                          sizes="100vw"
+                          data-ai-hint={image.imageHint}
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                        <div className="absolute bottom-0 left-0 p-6">
+                          <h3 className="text-white text-lg font-bold">
+                            {image.title}
+                          </h3>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselProgress />
+              </Carousel>
             </div>
 
             {/* Desktop View: Sticky Stacking Effect */}
