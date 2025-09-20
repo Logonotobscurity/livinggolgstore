@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from 'next/image';
@@ -31,7 +32,7 @@ export default function Lightscapes() {
               <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6 text-foreground">
                 Lightscapes
               </h2>
-              <p className="text-base md:text-lg leading-relaxed mb-8 text-gray-300">
+              <p className="text-base md:text-lg leading-relaxed mb-8 text-muted-foreground">
                 The Outdoor collection is the result of a strong dialogue
                 between environment and architecture. This new lighting concept
                 conveys the harmony between elegant aesthetics and outdoor

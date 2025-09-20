@@ -1,5 +1,6 @@
 
 
+
 .section-banner-sun {
   height: 300px;
   width: 300px;
@@ -34,21 +35,21 @@
   0%,
   100% {
     box-shadow:
-      0px 0px 80px 40px RGBA(255, 174, 0, 0.7),
-      0px 0px 150px 80px RGBA(255, 174, 0, 0.5),
-      -5px 0px 10px 1px #ffc96b inset,
-      15px 2px 40px 20px #d4a017 inset,
-      -24px -2px 50px 25px #ffb84d inset,
-      150px 0px 80px 35px #c55f00aa inset;
-  }
-  50% {
-    box-shadow:
       0px 0px 100px 60px RGBA(255, 174, 0, 0.8),
       0px 0px 180px 110px RGBA(255, 174, 0, 0.6),
       -5px 0px 20px 5px #ffc96b inset,
       15px 2px 60px 30px #d4a017 inset,
       -24px -2px 70px 35px #ffb84d inset,
       150px 0px 100px 45px #c55f00aa inset;
+  }
+  50% {
+    box-shadow:
+      0px 0px 80px 40px RGBA(255, 174, 0, 0.7),
+      0px 0px 150px 80px RGBA(255, 174, 0, 0.5),
+      -5px 0px 10px 1px #ffc96b inset,
+      15px 2px 40px 20px #d4a017 inset,
+      -24px -2px 50px 25px #ffb84d inset,
+      150px 0px 80px 35px #c55f00aa inset;
   }
 }
 .curved-corner-star {
@@ -196,4 +197,5 @@
 }
 
     
+
 

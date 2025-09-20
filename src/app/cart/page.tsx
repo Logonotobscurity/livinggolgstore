@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useCart } from "@/context/cart-context";
@@ -59,7 +60,7 @@ export default function CartPage() {
             </div>
             <div className="flex-grow">
               <h3 className="font-bold text-base">{item.name}</h3>
-              <p className="text-sm text-gray-400 mt-1">SKU: {item.sku}</p>
+              <p className="text-sm text-muted-foreground mt-1">SKU: {item.sku}</p>
             </div>
           </div>
           <div className="flex items-center justify-between">
@@ -76,7 +77,7 @@ export default function CartPage() {
                 <button onClick={() => handleMoveToWishlist(item)} className="text-primary hover:underline">
                   Move to Wishlist
                 </button>
-                <span className="mx-2 text-gray-500">|</span>
+                <span className="mx-2 text-muted-foreground">|</span>
                 <button onClick={() => removeFromCart(item.id)} className="text-destructive hover:underline">
                     Remove
                 </button>
@@ -93,12 +94,12 @@ export default function CartPage() {
           </div>
           <div className="col-span-6">
               <h3 className="font-bold text-lg">{item.name}</h3>
-              <p className="text-sm text-gray-400 mt-1">SKU: {item.sku}</p>
+              <p className="text-sm text-muted-foreground mt-1">SKU: {item.sku}</p>
               <div className="flex items-center mt-4 text-sm">
                 <button onClick={() => handleMoveToWishlist(item)} className="text-primary hover:underline">
                   Move to Wishlist
                 </button>
-                <span className="mx-2 text-gray-500">|</span>
+                <span className="mx-2 text-muted-foreground">|</span>
                 <button onClick={() => removeFromCart(item.id)} className="text-destructive hover:underline">
                     Remove
                 </button>
@@ -144,12 +145,12 @@ export default function CartPage() {
                                 </div>
                                 <div className="sm:col-span-6 flex flex-col justify-center h-full">
                                     <h3 className="font-bold text-lg">{item.name}</h3>
-                                    <p className="text-sm text-gray-400 mt-1">SKU: {item.sku}</p>
+                                    <p className="text-sm text-muted-foreground mt-1">SKU: {item.sku}</p>
                                     <div className="flex items-center mt-4 text-xs sm:text-sm">
                                       <button onClick={() => handleMoveToWishlist(item)} className="text-primary hover:underline">
                                         Move to Wishlist
                                       </button>
-                                      <span className="mx-2 text-gray-500">|</span>
+                                      <span className="mx-2 text-muted-foreground">|</span>
                                       <button onClick={() => removeFromCart(item.id)} className="text-destructive hover:underline">
                                           Remove
                                       </button>

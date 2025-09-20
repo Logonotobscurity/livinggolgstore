@@ -37,7 +37,7 @@ export default function CeilingFansPage() {
               <nav className="flex justify-center items-center text-sm mb-4">
                 <Link href="/" className="hover:text-primary">Home</Link>
                 <Icons.chevronRight className="h-4 w-4 mx-1" />
-                <span className="text-gray-400">Collections</span>
+                <span className="text-muted-foreground">Collections</span>
                 <Icons.chevronRight className="h-4 w-4 mx-1" />
                 <span className="text-gray-300">Ceiling Fans with Lights</span>
               </nav>
@@ -63,7 +63,7 @@ export default function CeilingFansPage() {
             </div>
           </section>
           <ProductSupport />
-        <div className="my-24 md:my-32" />
+        <div className="border-t border-primary/30 my-24" />
       </main>
       <div className="border-t border-primary/30" />
       <Footer />

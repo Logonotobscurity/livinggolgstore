@@ -91,7 +91,7 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
                 <Icons.star className="w-5 h-5 fill-current" />
                 <Icons.star className="w-5 h-5 fill-current" />
                 <Icons.star className="w-5 h-5 fill-current" />
-                <Icons.star className="w-5 h-5 fill-gray-600" />
+                <Icons.star className="w-5 h-5 fill-muted-foreground/50" />
               </div>
               <span className="ml-3 text-sm text-muted-foreground">(12 Reviews)</span>
             </div>
@@ -130,6 +130,8 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
              </div>
           </div>
         </div>
+
+        <div className="border-t border-primary/30 my-24" />
 
         <div className="mt-20 md:mt-24">
             <h2 className="font-headline text-2xl md:text-3xl font-bold text-left mb-12 uppercase">You May Also Like</h2>
