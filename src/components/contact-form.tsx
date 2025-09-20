@@ -61,7 +61,7 @@ export function ContactForm() {
 
   return (
     <div className="max-w-md mx-auto">
-      <h2 className="font-headline text-2xl font-bold text-white text-center mb-12">
+      <h2 className="font-headline text-2xl font-bold text-foreground text-center mb-12">
         DROP US A LINE
       </h2>
       <Form {...form}>
