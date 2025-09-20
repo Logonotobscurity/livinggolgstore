@@ -1,7 +1,6 @@
 // Contains three standalone React components that return different SVG variants of the LIVING GOLD logo.
 // 1) LivingGoldLogo - two-line logo (desktop/footer)
 // 2) LivingGoldWordmark - single-line wordmark for headers/navigation
-// 3) LivingGoldLogoMobile - compact/mobile-optimized stacked mark
 import React from 'react';
 import { cn } from '@/lib/utils';
 
@@ -60,28 +59,6 @@ export function LivingGoldWordmark({ className, title = "LIVING GOLD", ...props 
       <g fontFamily="Georgia, 'Times New Roman', serif" textAnchor="middle">
         <text x="500" y="90" fontSize="120" fontWeight="800" letterSpacing="6" fill="url(#goldGrad2)" stroke="rgba(0,0,0,0.22)" strokeWidth="3">LIVING GOLD</text>
         <path d="M220 95 C340 40, 660 40, 780 95" fill="url(#shineGrad2)" opacity="0.9" />
-      </g>
-    </svg>
-  );
-}
-
-export function LivingGoldLogoMobile({ className, title = "LIVING GOLD", ...props }: LogoProps) {
-  return (
-    <svg viewBox="0 0 220 220" preserveAspectRatio="xMidYMid meet" className={cn("mx-auto", className)} role="img" aria-labelledby="lgMobileTitle lgMobileDesc" {...props}>
-      <title id="lgMobileTitle">{title}</title>
-      <desc id="lgMobileDesc">LIVING GOLD mobile stacked logo (no background)</desc>
-      <defs>
-        <linearGradient id="goldGrad3" x1="0" x2="1" y1="0" y2="0">
-          <stop offset="0%" stopColor="#f6d365" />
-          <stop offset="35%" stopColor="#f3c241" />
-          <stop offset="65%" stopColor="#d4a017" />
-          <stop offset="100%" stopColor="#b8860b" />
-        </linearGradient>
-      </defs>
-
-      <g fontFamily="Georgia, 'Times New Roman', serif" textAnchor="middle">
-        <text x="110" y="70" fontSize="44" fontWeight="700" letterSpacing="3" fill="url(#goldGrad3)" stroke="rgba(0,0,0,0.16)" strokeWidth="1.5">LIVING</text>
-        <text x="110" y="140" fontSize="68" fontWeight="800" letterSpacing="6" fill="url(#goldGrad3)" stroke="rgba(0,0,0,0.18)" strokeWidth="2">GOLD</text>
       </g>
     </svg>
   );

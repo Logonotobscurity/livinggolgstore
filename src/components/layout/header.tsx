@@ -10,7 +10,7 @@ import { useCart } from '@/context/cart-context';
 import { useWishlist } from '@/context/wishlist-context';
 import NavMenu from './nav-menu';
 import SearchModal from '../search-modal';
-import { LivingGoldLogoMobile, LivingGoldWordmark } from '../logo';
+import { LivingGoldWordmark } from '../logo';
 import { useResponsive } from '@/hooks/use-responsive';
 import { ThemeToggle } from '../theme-toggle';
 
@@ -19,7 +19,7 @@ export default function Header() {
   const { wishlistItems } = useWishlist();
   const wishlistItemCount = wishlistItems.length;
   const [isSearchModalOpen, setSearchModalOpen] = useState(false);
-  const { isMobile, isDesktop } = useResponsive();
+  const { isMobile } = useResponsive();
 
   return (
     <>
@@ -59,13 +59,9 @@ export default function Header() {
               </div>
             )}
 
-            <div className={`flex-1 ${isMobile ? 'text-center' : 'text-left'}`}>
-              <Link href="/">
-                {!isMobile ? (
-                  <LivingGoldWordmark className="h-12 w-auto" />
-                ) : (
-                  <LivingGoldLogoMobile className="h-20 w-auto mx-auto" />
-                )}
+            <div className={`flex-1 flex ${isMobile ? 'justify-center' : 'justify-start'}`}>
+              <Link href="/" className="flex items-center">
+                <LivingGoldWordmark className="h-10 md:h-12 w-auto" />
                 <span className="sr-only">LIVING GOLD</span>
               </Link>
             </div>
