@@ -18,7 +18,7 @@ import { Separator } from '../ui/separator';
 function renderNavItem(item: NavItem) {
     if (item.items) {
         return (
-            <AccordionItem key={item.title} value={item.title.toLowerCase()}>
+            <AccordionItem key={item.title} value={item.title.toLowerCase()} className="border-border">
                 <AccordionTrigger className="text-lg font-medium tracking-wider uppercase">{item.title}</AccordionTrigger>
                 <AccordionContent className="pl-4">
                     <ul className="space-y-4 mt-2">
@@ -43,7 +43,7 @@ function renderNavItem(item: NavItem) {
         <Link 
             key={item.title} 
             href={item.href} 
-            className="block text-lg font-medium tracking-wider uppercase hover:text-primary transition-colors py-4 border-b border-gray-800"
+            className="block text-lg font-medium tracking-wider uppercase hover:text-primary transition-colors py-4 border-b border-border"
         >
             {item.title}
         </Link>
@@ -64,7 +64,7 @@ export default function MobileNavMenu() {
                     </Accordion>
                     {sitemap.filter(item => !item.items).map(renderNavItem)}
                 </div>
-                <Separator className="my-4" />
+                <Separator className="my-4 bg-border" />
                  <div className="p-6 pt-0 space-y-4">
                     <Link href="/wishlist" className="flex items-center text-lg hover:text-primary">
                         <Icons.heart className="h-5 w-5 mr-4" />

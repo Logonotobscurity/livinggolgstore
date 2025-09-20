@@ -9,6 +9,7 @@ import './socials.css';
 import './new-menu-icon.css';
 import { SessionReminder } from '@/components/session-reminder';
 import SubscriptionModal from '@/components/subscription-modal';
+import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
   title: {
@@ -47,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
@@ -65,16 +66,23 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <CartProvider>
-          <WishlistProvider>
-              <div>
-                {children}
-                <Toaster />
-                <SessionReminder />
-                <SubscriptionModal />
-              </div>
-          </WishlistProvider>
-        </CartProvider>
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+        >
+          <CartProvider>
+            <WishlistProvider>
+                <div>
+                  {children}
+                  <Toaster />
+                  <SessionReminder />
+                  <SubscriptionModal />
+                </div>
+            </WishlistProvider>
+          </CartProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

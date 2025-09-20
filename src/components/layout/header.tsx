@@ -11,6 +11,7 @@ import NavMenu from './nav-menu';
 import SearchModal from '../search-modal';
 import { LivingGoldLogoMobile, LivingGoldWordmark } from '../logo';
 import { useResponsive } from '@/hooks/use-responsive';
+import { ThemeToggle } from '../theme-toggle';
 
 export default function Header() {
   const { totalItemsCount } = useCart();
@@ -21,7 +22,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full bg-black text-white">
+      <header className="sticky top-0 z-50 w-full bg-background text-foreground">
         <div className="bg-secondary text-xs">
           <div className={`container mx-auto px-4 sm:px-6 lg:px-8 h-10 flex items-center max-w-7xl ${isMobile ? 'justify-center' : 'justify-between'}`}>
             {!isMobile && (
@@ -40,7 +41,7 @@ export default function Header() {
             </nav>
           </div>
         </div>
-        <div className="border-b border-primary/30">
+        <div className="border-b border-border">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center max-w-7xl">
             {isMobile && (
               <div className="flex items-center justify-start">
@@ -50,7 +51,7 @@ export default function Header() {
                       <Icons.menu className="h-6 w-6" />
                     </button>
                   </SheetTrigger>
-                  <SheetContent side="left" className="bg-black w-3/4 p-0">
+                  <SheetContent side="left" className="bg-background w-3/4 p-0">
                     <MobileNavMenu />
                   </SheetContent>
                 </Sheet>
@@ -60,9 +61,9 @@ export default function Header() {
             <div className={`flex-1 ${isMobile ? 'text-center' : 'text-left'}`}>
               <Link href="/">
                 {!isMobile ? (
-                  <LivingGoldWordmark className="h-12 w-auto text-white" />
+                  <LivingGoldWordmark className="h-12 w-auto" />
                 ) : (
-                  <LivingGoldLogoMobile className="h-16 w-auto mx-auto text-white" />
+                  <LivingGoldLogoMobile className="h-16 w-auto mx-auto" />
                 )}
                 <span className="sr-only">LIVING GOLD</span>
               </Link>
@@ -76,6 +77,7 @@ export default function Header() {
               >
                 <Icons.search className="h-5 w-5" />
               </button>
+               <ThemeToggle />
               {!isMobile && (
                 <>
                   <Link href="/contact" aria-label="Contact" className="p-2 rounded-full hover:bg-accent">
@@ -108,7 +110,7 @@ export default function Header() {
           </div>
         </div>
         {!isMobile && (
-          <div className="border-b border-primary/30">
+          <div className="border-b border-border">
             <div className="container mx-auto px-6 flex justify-center items-center h-14 relative max-w-7xl">
               <div className="flex-grow flex justify-center">
                 <NavMenu />
