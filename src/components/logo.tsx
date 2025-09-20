@@ -11,9 +11,9 @@ interface LogoProps extends React.SVGProps<SVGSVGElement> {
 
 export function LivingGoldLogo({ className, title = "LIVING GOLD", ...props }: LogoProps) {
   return (
-    <svg viewBox="0 0 1200 280" preserveAspectRatio="xMidYMid meet" className={className} role="img" aria-labelledby="lgTitle lgDesc" {...props}>
+    <svg viewBox="0 0 1200 200" preserveAspectRatio="xMidYMid meet" className={className} role="img" aria-labelledby="lgTitle lgDesc" {...props}>
       <title id="lgTitle">{title}</title>
-      <desc id="lgDesc">LIVING GOLD two-line logo (no background)</desc>
+      <desc id="lgDesc">LIVING GOLD single-line logo (no background)</desc>
       <defs>
         <linearGradient id="goldGrad1" x1="0" x2="1" y1="0" y2="0">
           <stop offset="0%" stopColor="#f6d365" />
@@ -27,18 +27,11 @@ export function LivingGoldLogo({ className, title = "LIVING GOLD", ...props }: L
           <stop offset="40%" stopColor="#ffffff" stopOpacity="0.15" />
           <stop offset="100%" stopColor="#ffffff" stopOpacity="0" />
         </linearGradient>
-
-        <pattern id="stripes1" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(25)">
-          <rect width="3" height="6" fill="#ffffff" fillOpacity="0.03" />
-        </pattern>
       </defs>
 
       <g fontFamily="Georgia, 'Times New Roman', serif" textAnchor="middle">
-        <text x="600" y="108" fontSize="92" fontWeight="700" letterSpacing="6" fill="url(#goldGrad1)" stroke="rgba(0,0,0,0.18)" strokeWidth="2">LIVING</text>
-        <text x="600" y="200" fontSize="190" fontWeight="800" letterSpacing="10" fill="url(#goldGrad1)" stroke="rgba(0,0,0,0.2)" strokeWidth="3">GOLD</text>
-        <rect x="0" y="0" width="1200" height="220" fill="url(#stripes1)" opacity="0.12" />
-        <path d="M420 160 C520 70, 680 70, 780 160 L780 180 C680 90, 520 90, 420 180 Z" fill="url(#shineGrad1)" opacity="0.9" />
-        <line x1="240" x2="960" y1="230" y2="230" stroke="#ffd57a" strokeWidth="3" opacity="0.7" />
+        <text x="50%" y="50%" dy=".3em" fontSize="150" fontWeight="800" letterSpacing="8" fill="url(#goldGrad1)" stroke="rgba(0,0,0,0.22)" strokeWidth="3">LIVING GOLD</text>
+        <path d="M150 140 C350 50, 850 50, 1050 140" fill="url(#shineGrad1)" opacity="0.9" />
       </g>
     </svg>
   );
@@ -74,7 +67,7 @@ export function LivingGoldWordmark({ className, title = "LIVING GOLD", ...props 
 
 export function LivingGoldLogoMobile({ className, title = "LIVING GOLD", ...props }: LogoProps) {
   return (
-    <svg viewBox="0 0 420 220" preserveAspectRatio="xMidYMid meet" className={className} role="img" aria-labelledby="lgMobileTitle lgMobileDesc" {...props}>
+    <svg viewBox="0 0 420 220" preserveAspectRatio="xMidYMid meet" className={cn("mx-auto", className)} role="img" aria-labelledby="lgMobileTitle lgMobileDesc" {...props}>
       <title id="lgMobileTitle">{title}</title>
       <desc id="lgMobileDesc">LIVING GOLD mobile stacked logo (no background)</desc>
       <defs>
