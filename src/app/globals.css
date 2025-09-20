@@ -53,7 +53,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
   }
    .link-underline {
       @apply relative inline-block;
@@ -276,3 +276,4 @@
 
 
     
+

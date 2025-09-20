@@ -4,13 +4,14 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { SunBanner } from '@/components/sun-banner';
 import { useResponsive } from '@/hooks/use-responsive';
+import { Icons } from '@/components/icons';
 
 export default function Hero() {
   const { isMobile } = useResponsive();
 
   return (
-    <section className={`relative w-full ${isMobile ? 'h-[550px]' : 'h-[650px]'} flex items-center justify-center overflow-hidden`}>
-      <div className="absolute inset-0">
+    <section className={`relative w-full ${isMobile ? 'h-svh' : 'h-[650px]'} flex items-center justify-center overflow-hidden`}>
+      <div className="absolute inset-0 ">
         <SunBanner />
       </div>
       
@@ -29,6 +30,13 @@ export default function Hero() {
             </Button>
         </div>
       </div>
+
+      {isMobile && (
+         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 animate-bounce">
+            <span className="text-xs text-foreground font-light tracking-widest">SCROLL FOR MORE</span>
+            <Icons.chevronRight className="w-5 h-5 -rotate-90 transform text-foreground" />
+        </div>
+      )}
     </section>
   );
 }
