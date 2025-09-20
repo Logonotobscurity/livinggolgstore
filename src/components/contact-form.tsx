@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useTransition } from 'react';
@@ -8,16 +9,13 @@ import { Icons } from '@/components/icons';
 
 import { submitContactForm } from '@/app/actions';
 import { useToast } from '@/hooks/use-toast';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
-  FormMessage,
 } from '@/components/ui/form';
+import { cn } from '@/lib/utils';
 
 const contactFormSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -61,76 +59,58 @@ export function ContactForm() {
 
   return (
     <div className="max-w-md mx-auto">
-      <h2 className="font-headline text-2xl font-bold text-foreground text-center mb-12">
-        DROP US A LINE
-      </h2>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-          <FormField
-            control={form.control}
-            name="name"
-            render={({ field }) => (
-              <FormItem>
-                <FormControl>
-                  <Input
-                    placeholder="Your Name"
-                    {...field}
-                    className="bg-transparent border-input text-foreground placeholder:text-muted-foreground focus:border-primary"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormControl>
-                  <Input
-                    type="email"
-                    placeholder="Your Email"
-                    {...field}
-                    className="bg-transparent border-input text-foreground placeholder:text-muted-foreground focus:border-primary"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="message"
-            render={({ field }) => (
-              <FormItem>
-                <FormControl>
-                  <Textarea
-                    placeholder="Your Message"
-                    rows={5}
-                    {...field}
-                    className="bg-transparent border-input text-foreground placeholder:text-muted-foreground focus:border-primary"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <div className="flex justify-center pt-2">
-            <Button
-              type="submit"
-              disabled={isPending}
-              showIcon={!isPending}
-            >
-              {isPending ? (
-                <Icons.loader className="h-4 w-4 animate-spin" />
-              ) : (
-                'Submit'
-              )}
-            </Button>
-          </div>
+        <form onSubmit={form.handleSubmit(onSubmit)}>
+           <div className={cn("neumorphic-card w-full")}>
+              <a className="neumorphic-title text-center">Drop us a line</a>
+              <FormField
+                control={form.control}
+                name="name"
+                render={({ field }) => (
+                  <FormItem className="neumorphic-input-box">
+                    <FormControl>
+                      <input type="text" {...field} required />
+                    </FormControl>
+                    <span>Your Name</span>
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem className="neumorphic-input-box">
+                    <FormControl>
+                       <input type="email" {...field} required />
+                    </FormControl>
+                     <span>Your Email</span>
+                  </FormItem>
+                )}
+              />
+               <FormField
+                control={form.control}
+                name="message"
+                render={({ field }) => (
+                  <FormItem className="neumorphic-input-box">
+                    <FormControl>
+                      <input type="text" {...field} required />
+                    </FormControl>
+                     <span>Your Message</span>
+                  </FormItem>
+                )}
+              />
+              <button type="submit" disabled={isPending} className="neumorphic-button">
+                {isPending ? (
+                  <Icons.loader className="h-4 w-4 animate-spin mx-auto" />
+                ) : (
+                  'Submit'
+                )}
+              </button>
+           </div>
         </form>
       </Form>
     </div>
   );
 }
+
+    

@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState, useTransition } from 'react';
@@ -8,16 +9,13 @@ import { Icons } from '@/components/icons';
 
 import { submitSignUpForm } from '@/app/actions';
 import { useToast } from '@/hooks/use-toast';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
-  FormLabel,
-  FormMessage,
 } from '@/components/ui/form';
+import { cn } from '@/lib/utils';
 
 const signUpFormSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -62,73 +60,61 @@ export function SignUpForm() {
   return (
     <div className="max-w-md mx-auto">
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-          <FormField
-            control={form.control}
-            name="name"
-            render={({ field }) => (
-              <FormItem>
-                 <FormLabel>Name</FormLabel>
-                <FormControl>
-                  <Input
-                    {...field}
-                    className="bg-transparent border-input text-foreground placeholder:text-muted-foreground focus:border-primary"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Email</FormLabel>
-                <FormControl>
-                  <Input
-                    type="email"
-                    {...field}
-                    className="bg-transparent border-input text-foreground placeholder:text-muted-foreground focus:border-primary"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-           <FormField
-            control={form.control}
-            name="phone"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Phone Number</FormLabel>
-                <FormControl>
-                  <Input
-                    type="tel"
-                    {...field}
-                    className="bg-transparent border-input text-foreground placeholder:text-muted-foreground focus:border-primary"
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <div className="flex justify-center pt-4">
-            <Button
+        <form onSubmit={form.handleSubmit(onSubmit)}>
+          <div className={cn("neumorphic-card w-full")}>
+            <a className="neumorphic-title text-center">Create Account</a>
+            <FormField
+              control={form.control}
+              name="name"
+              render={({ field }) => (
+                <FormItem className="neumorphic-input-box">
+                  <FormControl>
+                    <input type="text" {...field} required />
+                  </FormControl>
+                  <span>Name</span>
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem className="neumorphic-input-box">
+                  <FormControl>
+                    <input type="email" {...field} required />
+                  </FormControl>
+                  <span>Email</span>
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="phone"
+              render={({ field }) => (
+                <FormItem className="neumorphic-input-box">
+                  <FormControl>
+                    <input type="tel" {...field} required />
+                  </FormControl>
+                  <span>Phone Number</span>
+                </FormItem>
+              )}
+            />
+            <button
               type="submit"
               disabled={isPending}
-              showIcon={!isPending}
-              size="lg"
+              className="neumorphic-button"
             >
               {isPending ? (
-                <Icons.loader className="h-4 w-4 animate-spin" />
+                <Icons.loader className="h-4 w-4 animate-spin mx-auto" />
               ) : (
-                'Create Account'
+                'Sign Up'
               )}
-            </Button>
+            </button>
           </div>
         </form>
       </Form>
     </div>
   );
 }
+
+    
