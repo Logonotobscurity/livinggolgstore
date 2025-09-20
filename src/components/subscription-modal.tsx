@@ -125,15 +125,15 @@ export default function SubscriptionModal() {
         <DialogContent className="bg-secondary text-foreground max-w-md p-6 sm:p-8">
           <DialogHeader className="text-center">
             <LivingGoldWordmark className="h-12 w-auto mx-auto mb-4 text-primary" />
-            <DialogTitle className="font-headline text-5xl font-bold text-primary mb-4">
+            <DialogTitle className="font-headline text-4xl font-bold text-primary mb-2">
               10% Off
             </DialogTitle>
-            <DialogDescription className="text-base text-muted-foreground">
+            <DialogDescription className="text-sm text-muted-foreground">
               Sign up for LIVING GOLD email + texts to save 10% on your order.
             </DialogDescription>
           </DialogHeader>
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 mt-6">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 mt-4">
               <FormField
                 control={form.control}
                 name="email"
@@ -173,7 +173,7 @@ export default function SubscriptionModal() {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full mt-4"
+                className="w-full !mt-6"
                 disabled={isPending}
               >
                 {isPending ? (

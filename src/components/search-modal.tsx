@@ -51,11 +51,11 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="bg-secondary text-foreground max-w-lg p-0">
-        <DialogHeader className="p-6 pb-0">
-          <DialogTitle className="text-2xl font-headline">Search Products</DialogTitle>
+      <DialogContent className="bg-secondary text-foreground p-0">
+        <DialogHeader className="p-4 pb-0">
+          <DialogTitle className="text-xl font-headline">Search Products</DialogTitle>
         </DialogHeader>
-        <div className="p-6 pt-2">
+        <div className="p-4 pt-2">
           <div className="relative">
             <Icons.search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
             <Input
