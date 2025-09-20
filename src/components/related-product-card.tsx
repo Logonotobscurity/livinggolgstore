@@ -35,9 +35,9 @@ export function RelatedProductCard({ product, className }: RelatedProductCardPro
           </div>
           <div className="mt-4">
             {product.price && (
-               <p className="text-sm text-gray-400 mb-1">{formatPrice(product.price)}</p>
+               <p className="text-sm text-muted-foreground mb-1">{formatPrice(product.price)}</p>
             )}
-            <h3 className="font-headline text-base uppercase tracking-wider text-white">
+            <h3 className="font-headline text-base uppercase tracking-wider text-foreground">
               {product.title}
             </h3>
             <Button variant="outline" className="mt-4 w-full" showIcon>

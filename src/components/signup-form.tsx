@@ -72,7 +72,7 @@ export function SignUpForm() {
                 <FormControl>
                   <Input
                     {...field}
-                    className="bg-transparent border-gray-600 text-white placeholder:text-gray-400 focus:border-primary"
+                    className="bg-transparent border-input text-foreground placeholder:text-muted-foreground focus:border-primary"
                   />
                 </FormControl>
                 <FormMessage />
@@ -89,7 +89,7 @@ export function SignUpForm() {
                   <Input
                     type="email"
                     {...field}
-                    className="bg-transparent border-gray-600 text-white placeholder:text-gray-400 focus:border-primary"
+                    className="bg-transparent border-input text-foreground placeholder:text-muted-foreground focus:border-primary"
                   />
                 </FormControl>
                 <FormMessage />
@@ -106,7 +106,7 @@ export function SignUpForm() {
                   <Input
                     type="tel"
                     {...field}
-                    className="bg-transparent border-gray-600 text-white placeholder:text-gray-400 focus:border-primary"
+                    className="bg-transparent border-input text-foreground placeholder:text-muted-foreground focus:border-primary"
                   />
                 </FormControl>
                 <FormMessage />

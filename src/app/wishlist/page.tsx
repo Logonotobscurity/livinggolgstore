@@ -46,7 +46,7 @@ export default function WishlistPage() {
             ) : (
                 <div className={`grid ${isMobile ? 'grid-cols-1' : isTablet ? 'grid-cols-2' : 'grid-cols-3'} gap-8`}>
                     {wishlistItems.map(item => (
-                        <div key={item.id} className="border border-gray-800 rounded-lg p-4 flex flex-col text-center group">
+                        <div key={item.id} className="border border-border rounded-lg p-4 flex flex-col text-center group">
                             <div className="relative">
                                 <Link href={`/products/${item.slug}`} className="w-full">
                                 <div className="relative w-full aspect-square mb-4">

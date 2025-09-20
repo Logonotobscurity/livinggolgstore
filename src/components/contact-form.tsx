@@ -75,7 +75,7 @@ export function ContactForm() {
                   <Input
                     placeholder="Your Name"
                     {...field}
-                    className="bg-transparent border-gray-600 text-white placeholder:text-gray-400 focus:border-primary"
+                    className="bg-transparent border-input text-foreground placeholder:text-muted-foreground focus:border-primary"
                   />
                 </FormControl>
                 <FormMessage />
@@ -92,7 +92,7 @@ export function ContactForm() {
                     type="email"
                     placeholder="Your Email"
                     {...field}
-                    className="bg-transparent border-gray-600 text-white placeholder:text-gray-400 focus:border-primary"
+                    className="bg-transparent border-input text-foreground placeholder:text-muted-foreground focus:border-primary"
                   />
                 </FormControl>
                 <FormMessage />
@@ -109,7 +109,7 @@ export function ContactForm() {
                     placeholder="Your Message"
                     rows={5}
                     {...field}
-                    className="bg-transparent border-gray-600 text-white placeholder:text-gray-400 focus:border-primary"
+                    className="bg-transparent border-input text-foreground placeholder:text-muted-foreground focus:border-primary"
                   />
                 </FormControl>
                 <FormMessage />
