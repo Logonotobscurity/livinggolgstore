@@ -13,13 +13,13 @@ export default function Hero() {
       <div className="absolute inset-0">
         <SunBanner />
       </div>
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-background/40" />
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl text-center mx-auto">
             <p className="text-sm font-medium tracking-widest uppercase text-primary mb-4">
                 FOR THOSE WHO SEEK
             </p>
-            <h1 className={`font-headline ${isMobile ? 'text-5xl' : 'text-7xl'} font-bold leading-tight text-white mb-10 text-shadow-lg`}>
+            <h1 className={`font-headline ${isMobile ? 'text-5xl' : 'text-7xl'} font-bold leading-tight text-foreground mb-10 text-shadow-lg`}>
                 RARE, UNUSUAL, AND EXQUISITE FINDS
             </h1>
             <Button asChild size="lg" showIcon>
