@@ -10,6 +10,7 @@ import { Icons } from './icons';
 import { useWishlist } from '@/context/wishlist-context';
 import ShareModal from './share-modal';
 import { useToast } from '@/hooks/use-toast';
+import { NewCtaButton } from './new-cta-button';
 
 interface CategoryCardProps {
   product: ImagePlaceholder;
@@ -118,9 +119,12 @@ export function CategoryCard({
               />
             </div>
           </div>
-          <h3 className="font-headline text-base uppercase tracking-wider text-foreground h-10 flex items-center justify-center">
+          <h3 className="font-headline text-base uppercase tracking-wider text-foreground flex items-center justify-center">
             {product.title}
           </h3>
+          <NewCtaButton>
+              Explore
+          </NewCtaButton>
         </>
       </Link>
       <ShareModal 
