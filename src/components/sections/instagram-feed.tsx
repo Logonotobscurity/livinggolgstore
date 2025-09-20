@@ -9,10 +9,10 @@ export default function InstagramFeed() {
 
   return (
     <section id="portfolio" className="text-foreground py-20 md:py-32">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
-          <h2 className="font-headline text-3xl md:text-5xl font-bold tracking-tight text-primary mb-8">
-            @LIVINGGOLDINTERIORS
+          <h2 className="font-headline text-2xl md:text-4xl font-bold tracking-tight text-primary mb-8">
+            LIVINGGOLD
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-base leading-normal">
             Follow us on Instagram to be the first to see our latest finds, decorative accessories, design ideas and projects.
