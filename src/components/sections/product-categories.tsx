@@ -1,3 +1,4 @@
+
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CategoryCard } from '@/components/category-card';
 
@@ -7,6 +8,10 @@ export default function ProductCategories() {
     'lighting-wall',
     'lighting-table',
     'lighting-floor',
+    'outdoor-lighting-2',
+    'ceiling-fans-2',
+    'accessories-hero',
+    'room-settings-hero'
   ];
 
   const categories = PlaceHolderImages.filter(img => productCategories.includes(img.id));
@@ -30,7 +35,7 @@ export default function ProductCategories() {
                 animationDelay={`${index * 0.05}s`}
                 className="w-full"
                 imageClassName="w-full h-full p-2 sm:p-6"
-                priority={index < 2}
+                priority={index < 4}
               />
             ))}
           </div>
