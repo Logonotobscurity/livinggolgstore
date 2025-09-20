@@ -7,6 +7,7 @@ import './globals.css';
 import './sun-banner.css';
 import './socials.css';
 import './new-menu-icon.css';
+import './new-cta-button.css';
 import { SessionReminder } from '@/components/session-reminder';
 import SubscriptionModal from '@/components/subscription-modal';
 import { ThemeProvider } from '@/components/theme-provider';

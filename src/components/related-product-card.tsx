@@ -6,6 +6,7 @@ import Link from 'next/link';
 import type { ImagePlaceholder } from '@/lib/placeholder-images';
 import { Button } from './ui/button';
 import { cn } from '@/lib/utils';
+import { NewCtaButton } from './new-cta-button';
 
 interface RelatedProductCardProps {
   product: ImagePlaceholder;
@@ -40,9 +41,9 @@ export function RelatedProductCard({ product, className }: RelatedProductCardPro
             <h3 className="font-headline text-base uppercase tracking-wider text-foreground">
               {product.title}
             </h3>
-            <Button variant="outline" className="mt-4 w-full" showIcon>
+            <NewCtaButton>
               View product
-            </Button>
+            </NewCtaButton>
           </div>
         </>
       </Link>

@@ -1,0 +1,58 @@
+
+.new-cta-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.new-cta-button span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.new-cta-button svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.new-cta-button:hover svg {
+  transform: translateX(0);
+}
+
+.new-cta-button:active svg {
+  transform: scale(0.9);
+}
+
+.new-cta-button .hover-underline-animation {
+  position: relative;
+  color: hsl(var(--foreground));
+  padding-bottom: 20px;
+}
+
+.new-cta-button .hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(var(--primary));
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.new-cta-button:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.new-cta-button svg path {
+    fill: hsl(var(--primary));
+}
