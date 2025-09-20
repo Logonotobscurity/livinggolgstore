@@ -39,7 +39,7 @@ export default function OutdoorLightingPage() {
                 <Icons.chevronRight className="h-4 w-4 mx-1" />
                 <span className="text-muted-foreground">Collections</span>
                 <Icons.chevronRight className="h-4 w-4 mx-1" />
-                <span className="text-gray-300">Outdoor & Landscape Lighting</span>
+                <span className="text-foreground">Outdoor & Landscape Lighting</span>
               </nav>
               <h1 className="font-headline text-4xl md:text-6xl font-bold">
                 OUTDOOR & LANDSCAPE LIGHTING

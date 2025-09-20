@@ -39,7 +39,7 @@ export default function CeilingFansPage() {
                 <Icons.chevronRight className="h-4 w-4 mx-1" />
                 <span className="text-muted-foreground">Collections</span>
                 <Icons.chevronRight className="h-4 w-4 mx-1" />
-                <span className="text-gray-300">Ceiling Fans with Lights</span>
+                <span className="text-foreground">Ceiling Fans with Lights</span>
               </nav>
               <h1 className="font-headline text-4xl md:text-6xl font-bold">
                 CEILING FANS WITH LIGHTS

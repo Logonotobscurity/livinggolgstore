@@ -1,3 +1,4 @@
+
 'use client';
 
 import CmsLayout from "@/components/layout/cms-layout";
@@ -30,7 +31,7 @@ export default function StyleGuidePage() {
 
   return (
     <CmsLayout breadcrumb={breadcrumb}>
-      <div className="container mx-auto px-4 text-white">
+      <div className="container mx-auto px-4 text-foreground">
         <h1 className={`font-headline ${isMobile ? 'text-4xl' : 'text-5xl'} font-bold mb-12`}>Style Guide</h1>
 
         {/* Colors Section */}

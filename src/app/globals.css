@@ -279,13 +279,7 @@
     }
   }
   
-  @media (min-width: 1024px), print {
-    .page-wrapper {
-      border-top: 4px solid #e3e3e3
-    }
-  }
-
-.loadingspinner {
+  .loadingspinner {
   --square: 26px;
   --offset: 30px;
   --duration: 2.4s;
