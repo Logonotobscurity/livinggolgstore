@@ -10,20 +10,20 @@ export default function TradesAndServices() {
   const { isMobile } = useResponsive();
 
   return (
-    <section className="bg-secondary text-white py-20 md:py-32">
+    <section className="bg-secondary py-20 md:py-32">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} gap-12 md:gap-20 items-center`}>
           <div className={`${isMobile ? 'order-2' : 'order-1'}`}>
             <h2 className="text-base md:text-lg font-medium tracking-[0.2em] uppercase text-primary mb-6">
               FOR TRADE PROFESSIONALS
             </h2>
-            <h3 className="font-headline text-3xl md:text-5xl font-bold mb-6">
+            <h3 className="font-headline text-3xl md:text-5xl font-bold text-foreground mb-6">
               Partners in Craftsmanship
             </h3>
-            <p className="text-base md:text-lg leading-relaxed mb-8 text-gray-300">
+            <p className="text-base md:text-lg leading-relaxed mb-8 text-muted-foreground">
               We collaborate with architects, interior designers, and developers to bring ambitious visions to life. Our trade program offers exclusive access to our collections, dedicated support, and sourcing for technical materials like specialized wiring, conduit, and transformers.
             </p>
-            <p className="text-base md:text-lg leading-relaxed mb-10 text-gray-300">
+            <p className="text-base md:text-lg leading-relaxed mb-10 text-muted-foreground">
               Let us be your trusted partner in delivering exceptional quality and design for your next project.
             </p>
             <Button asChild size="lg" showIcon>
