@@ -19,7 +19,7 @@ export default function LampsPage() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'room-settings-2');
 
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground">
+    <div className="flex flex-col min-h-screen bg-transparent text-foreground">
       <Header />
       <main className="flex-grow">
         {heroImage && (

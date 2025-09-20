@@ -30,7 +30,7 @@ export default function WishlistPage() {
 
   return (
     <CmsLayout breadcrumb={breadcrumb}>
-      <div className="cms-page text-white">
+      <div className="cms-page text-foreground">
         <div className="text-wrapper text-center mb-12 px-4">
           <h1 className={`mb-4 ${isMobile ? 'text-4xl' : 'text-5xl'}`}>Your Wishlist</h1>
         </div>
@@ -52,8 +52,8 @@ export default function WishlistPage() {
                                 <div className="relative w-full aspect-square mb-4">
                                     <Image src={item.image} alt={item.name} fill className="object-contain rounded-md" />
                                 </div>
-                                <h3 className="font-headline text-base uppercase tracking-wider text-white h-12 flex items-center justify-center mb-2">{item.name}</h3>
-                                <p className="text-sm text-gray-400 mb-2">SKU: {item.sku}</p>
+                                <h3 className="font-headline text-base uppercase tracking-wider text-foreground h-12 flex items-center justify-center mb-2">{item.name}</h3>
+                                <p className="text-sm text-muted-foreground mb-2">SKU: {item.sku}</p>
                                 <p className="font-semibold text-primary">{formatPrice(item.price)}</p>
                                 </Link>
                                 <Button 

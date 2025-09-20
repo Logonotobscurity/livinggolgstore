@@ -70,7 +70,7 @@ export default function ProductPage({ params: { slug } }: { params: { slug: stri
   const isWishlisted = isInWishlist(product.id);
 
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground">
+    <div className="flex flex-col min-h-screen bg-transparent text-foreground">
       <Header />
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">

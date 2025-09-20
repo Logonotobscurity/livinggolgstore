@@ -19,7 +19,7 @@ export default function ChandeliersPendantsPage() {
   const heroImage = products.length > 0 ? products[0] : PlaceHolderImages.find(p => p.id === 'room-settings-1');
 
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground">
+    <div className="flex flex-col min-h-screen bg-transparent text-foreground">
       <Header />
       <main className="flex-grow">
         {heroImage && (

@@ -1,3 +1,4 @@
+
 'use client';
 
 import { ReactNode } from 'react';
@@ -16,7 +17,7 @@ export default function CmsLayout({ children, breadcrumb }: CmsLayoutProps) {
   const { isMobile } = useResponsive();
 
   return (
-    <div className="flex flex-col min-h-screen bg-black cms-page-body with-breadcrumb">
+    <div className="flex flex-col min-h-screen bg-transparent cms-page-body with-breadcrumb">
       <Header />
       <main className="flex-grow">
         {breadcrumb && (
