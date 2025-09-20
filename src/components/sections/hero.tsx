@@ -28,15 +28,14 @@ export default function Hero() {
                 Shop Living Gold Finds
               </Link>
             </Button>
+            {isMobile && (
+              <div className="z-10 flex flex-col items-center gap-2 animate-bounce mt-16">
+                  <span className="text-xs text-foreground font-light tracking-widest">SCROLL FOR MORE</span>
+                  <Icons.chevronRight className="w-5 h-5 -rotate-90 transform text-foreground" />
+              </div>
+            )}
         </div>
       </div>
-
-      {isMobile && (
-         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 animate-bounce">
-            <span className="text-xs text-foreground font-light tracking-widest">SCROLL FOR MORE</span>
-            <Icons.chevronRight className="w-5 h-5 -rotate-90 transform text-foreground" />
-        </div>
-      )}
     </section>
   );
 }
