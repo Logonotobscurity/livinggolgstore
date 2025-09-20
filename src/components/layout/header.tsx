@@ -22,8 +22,8 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full bg-background text-foreground">
-        <div className="bg-secondary text-xs">
+      <header className="sticky top-0 z-50 w-full bg-background/80 text-foreground backdrop-blur-sm">
+        <div className="bg-secondary/50 text-xs">
           <div className={`container mx-auto px-4 sm:px-6 lg:px-8 h-10 flex items-center max-w-7xl ${isMobile ? 'justify-center' : 'justify-between'}`}>
             {!isMobile && (
               <p className="font-light">
@@ -41,7 +41,7 @@ export default function Header() {
             </nav>
           </div>
         </div>
-        <div className="border-b border-border">
+        <div className="border-b border-primary/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center max-w-7xl">
             {isMobile && (
               <div className="flex items-center justify-start">
@@ -110,7 +110,7 @@ export default function Header() {
           </div>
         </div>
         {!isMobile && (
-          <div className="border-b border-border">
+          <div className="border-b border-primary/30">
             <div className="container mx-auto px-6 flex justify-center items-center h-14 relative max-w-7xl">
               <div className="flex-grow flex justify-center">
                 <NavMenu />
