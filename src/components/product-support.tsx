@@ -1,3 +1,4 @@
+
 import { ContactForm } from '@/components/contact-form';
 import {
   Accordion,
@@ -17,10 +18,10 @@ export function ProductSupport() {
         <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start">
             <div className="w-full">
                 <div className="max-w-md mx-auto">
-                    <h2 className="font-headline text-2xl font-bold text-white text-center mb-12">
+                    <h2 className="font-headline text-2xl font-bold text-foreground text-center mb-12">
                         HAVE A QUESTION?
                     </h2>
-                     <p className="text-center text-gray-400 mb-8">
+                     <p className="text-center text-muted-foreground mb-8">
                         Our experts are here to help. From product details to design advice, we're ready to assist you.
                      </p>
                      <ContactForm />

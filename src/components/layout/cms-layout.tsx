@@ -17,13 +17,13 @@ export default function CmsLayout({ children, breadcrumb }: CmsLayoutProps) {
   const { isMobile } = useResponsive();
 
   return (
-    <div className="flex flex-col min-h-screen bg-transparent cms-page-body with-breadcrumb">
+    <div className="flex flex-col min-h-screen cms-page-body with-breadcrumb">
       <Header />
       <main className="flex-grow">
         {breadcrumb && (
           <div className="breadcrumb-wrapper">
             <div className="breadcrumb container mx-auto px-6">
-              <ul className="flex items-center text-sm text-gray-400">
+              <ul className="flex items-center text-sm text-muted-foreground">
                 {breadcrumb.map((item, index) => (
                   <li key={index} className="flex items-center">
                     {item.href ? (
@@ -31,7 +31,7 @@ export default function CmsLayout({ children, breadcrumb }: CmsLayoutProps) {
                         {item.text}
                       </Link>
                     ) : (
-                      <span className="text-gray-300">{item.text}</span>
+                      <span className="text-foreground">{item.text}</span>
                     )}
                     {index < breadcrumb.length - 1 && (
                       <Icons.chevronRight className="h-4 w-4 mx-1" />

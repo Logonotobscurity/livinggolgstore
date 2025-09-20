@@ -1,3 +1,4 @@
+
 'use client';
 
 import CmsLayout from "@/components/layout/cms-layout";
@@ -20,7 +21,7 @@ export default function ContactClient() {
 
   return (
     <CmsLayout breadcrumb={breadcrumb}>
-      <div className="cms-page text-white">
+      <div className="cms-page text-foreground">
         <div className="text-center mb-16 px-4">
           <h1 className={`mb-4 ${isMobile ? 'text-4xl' : 'text-5xl'}`}>Contact Us</h1>
           <p className={`${isMobile ? 'text-base' : 'text-lg'} max-w-2xl mx-auto`}>
@@ -32,7 +33,7 @@ export default function ContactClient() {
             <div className="w-full">
                  <ContactForm />
             </div>
-            <div className="space-y-12 text-gray-300">
+            <div className="space-y-12 text-muted-foreground">
                 <div className="space-y-8">
                     <div>
                         <h3 className="font-bold text-xl text-primary mb-4">Visit Our Showroom</h3>
@@ -44,13 +45,13 @@ export default function ContactClient() {
                     </div>
                     <div>
                         <h3 className="font-bold text-xl text-primary mb-4">Call Us</h3>
-                        <p><a href="tel:+2347011131333" className="hover:text-white">+234 701 113 1333</a></p>
-                        <p><a href="tel:+2348064441141" className="hover:text-white">+234 806 444 1141</a></p>
-                        <p><a href="tel:+2348034291995" className="hover:text-white">+234 803 429 1995</a> (Store)</p>
+                        <p><a href="tel:+2347011131333" className="hover:text-foreground">+234 701 113 1333</a></p>
+                        <p><a href="tel:+2348064441141" className="hover:text-foreground">+234 806 444 1141</a></p>
+                        <p><a href="tel:+2348034291995" className="hover:text-foreground">+234 803 429 1995</a> (Store)</p>
                     </div>
                      <div>
                         <h3 className="font-bold text-xl text-primary mb-4">Email Us</h3>
-                        <p><a href="mailto:hello@livinggold.com" className="hover:text-white">hello@livinggold.com</a></p>
+                        <p><a href="mailto:hello@livinggold.com" className="hover:text-foreground">hello@livinggold.com</a></p>
                     </div>
                      <div>
                         <h3 className="font-bold text-xl text-primary mb-4">Business Hours</h3>
@@ -100,7 +101,7 @@ export default function ContactClient() {
               </div>
               <div>
                   <h3 className="font-bold text-xl text-primary mb-6">Delivery &amp; Returns</h3>
-                  <div className="space-y-4 text-sm text-gray-300">
+                  <div className="space-y-4 text-sm text-muted-foreground">
                     <p>
                       <strong>Delivery:</strong> Standard delivery within Nigeria takes 3-7 business days. For projects in other African countries, lead times will be provided with your quote. All orders are fully insured and trackable.
                     </p>

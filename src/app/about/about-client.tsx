@@ -1,3 +1,4 @@
+
 'use client';
 
 import CmsLayout from "@/components/layout/cms-layout";
@@ -13,7 +14,7 @@ export default function AboutClient() {
 
   return (
     <CmsLayout breadcrumb={breadcrumb}>
-      <div className="cms-page text-white">
+      <div className="cms-page text-foreground">
         <div className="text-wrapper text-center mb-16 px-4">
           <h1 className={`mb-4 ${isMobile ? 'text-4xl' : 'text-5xl'}`}>About Us</h1>
           <p className={`${isMobile ? 'text-base' : 'text-lg'} max-w-2xl mx-auto`}>Since 2013, Living Gold has imported and curated exquisite lighting from around the world, transforming interiors across Nigeria through exceptional design and considered service.</p>
@@ -97,7 +98,7 @@ export default function AboutClient() {
             Our sourcing is intentional. We work with blown-glass masters, heritage metalworkers, and boutique studios that value time-honoured techniques. Each supplier is vetted for provenance, material stewardship, and the ability to meet bespoke requests.
           </p>
           <p className="font-bold mt-6">For clients, this means:</p>
-            <ul className="list-disc list-inside space-y-2 mt-4 text-gray-300">
+            <ul className="list-disc list-inside space-y-2 mt-4 text-muted-foreground">
                 <li>Documented provenance and make details for every fixture</li>
                 <li>Clear technical specs (voltages, IP ratings, mounting requirements) adapted to local installations</li>
                 <li>Optional bespoke finishes and limited-edition runs when available</li>
@@ -123,7 +124,7 @@ export default function AboutClient() {
             Visiting our studio or working with our team is a curated experience. We present lighting in real contexts — dining vignettes, sitting rooms, and stair wells — so you see scale, warmth, and proportion.
           </p>
           <p className="font-bold mt-6">Services we provide:</p>
-            <ul className="list-disc list-inside space-y-2 mt-4 text-gray-300">
+            <ul className="list-disc list-inside space-y-2 mt-4 text-muted-foreground">
                 <li>In-studio consultations and material-led presentations</li>
                 <li>On-site surveys and technical specifications for architects and contractors</li>
                 <li>Trade support and priority sourcing for designers and hospitality projects</li>

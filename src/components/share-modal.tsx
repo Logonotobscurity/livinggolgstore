@@ -59,7 +59,7 @@ const ShareModal: React.FC<ShareModalProps> = ({ isOpen, onClose, shareUrl, shar
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-        <DialogContent className="bg-secondary text-white max-w-sm p-8">
+        <DialogContent className="bg-secondary text-foreground max-w-sm p-8">
             <DialogHeader>
                 <DialogTitle className="text-2xl font-headline text-center mb-6">Share This Product</DialogTitle>
             </DialogHeader>

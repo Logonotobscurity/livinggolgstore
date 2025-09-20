@@ -84,7 +84,7 @@ Please provide a quote for the items listed above.
     <div className="w-full">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-          <h2 className="font-headline text-2xl font-bold text-white mb-6">
+          <h2 className="font-headline text-2xl font-bold text-foreground mb-6">
             Checkout Information
           </h2>
           <div className="grid grid-cols-2 gap-4">

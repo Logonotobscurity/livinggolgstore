@@ -122,13 +122,13 @@ export default function SubscriptionModal() {
   return (
     <>
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="bg-secondary text-white max-w-md p-8 sm:p-10">
+        <DialogContent className="bg-secondary text-foreground max-w-md p-8 sm:p-10">
           <DialogHeader className="text-center">
             <LivingGoldWordmark className="h-12 w-auto mx-auto mb-4 text-primary" />
             <DialogTitle className="font-headline text-5xl font-bold text-primary mb-4">
               10% Off
             </DialogTitle>
-            <DialogDescription className="text-base text-gray-300">
+            <DialogDescription className="text-base text-muted-foreground">
               Sign up for LIVING GOLD email + texts to save 10% on your order.
             </DialogDescription>
           </DialogHeader>
@@ -145,7 +145,7 @@ export default function SubscriptionModal() {
                         type="email"
                         placeholder="Email Address"
                         {...field}
-                        className="bg-background border-gray-600 text-white placeholder:text-gray-400 focus:border-primary"
+                        className="bg-background border-border text-foreground placeholder:text-muted-foreground focus:border-primary"
                       />
                     </FormControl>
                     <FormMessage />
@@ -163,7 +163,7 @@ export default function SubscriptionModal() {
                         type="tel"
                         placeholder="Phone Number"
                         {...field}
-                        className="bg-background border-gray-600 text-white placeholder:text-gray-400 focus:border-primary"
+                        className="bg-background border-border text-foreground placeholder:text-muted-foreground focus:border-primary"
                       />
                     </FormControl>
                     <FormMessage />
@@ -187,12 +187,12 @@ export default function SubscriptionModal() {
           <DialogFooter className="mt-4 flex-col sm:flex-col sm:space-x-0">
             <Button
               variant="link"
-              className="text-gray-400 hover:text-white"
+              className="text-muted-foreground hover:text-foreground"
               onClick={handleDecline}
             >
               Decline Offer
             </Button>
-            <p className="text-xs text-gray-500 text-center mt-4">
+            <p className="text-xs text-muted-foreground/80 text-center mt-4">
               *Some brands are excluded, see qualifying designs.
             </p>
           </DialogFooter>

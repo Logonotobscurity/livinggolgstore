@@ -23,8 +23,8 @@ export default function QuotePage() {
     return (
         <CmsLayout breadcrumb={breadcrumb}>
              <div className="text-center py-16 text-white px-4">
-                <h1 className={`${isMobile ? 'text-3xl' : 'text-4xl'} font-headline mb-4`}>Your Cart is Empty</h1>
-                <p className={`${isMobile ? 'text-lg' : 'text-xl'} mb-8`}>Add items to your cart to request a quote.</p>
+                <h1 className="text-4xl font-headline mb-4">Your Cart is Empty</h1>
+                <p className="text-xl mb-8">Add items to your cart to request a quote.</p>
                 <Button variant="outline" asChild>
                     <Link href="/">Continue Shopping</Link>
                 </Button>
@@ -35,11 +35,11 @@ export default function QuotePage() {
 
   return (
     <CmsLayout breadcrumb={breadcrumb}>
-        <div className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} gap-16 items-start max-w-6xl mx-auto px-4 text-white`}>
-            <div className={`${isMobile ? 'order-2' : 'order-1'} w-full`}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start max-w-6xl mx-auto px-4 text-white">
+            <div className="order-2 md:order-1 w-full">
                 <CheckoutForm />
             </div>
-            <div className={`${isMobile ? 'order-1' : 'order-2'} space-y-8 w-full`}>
+            <div className="order-1 md:order-2 space-y-8 w-full">
                  <h2 className="font-headline text-2xl font-bold text-white mb-6">
                     Order Summary ({totalItemsCount} items)
                 </h2>
@@ -54,13 +54,13 @@ export default function QuotePage() {
                             </div>
                             <div className="flex-1">
                                 <h3 className="font-semibold text-base">{item.name}</h3>
-                                <p className="text-sm text-gray-400">SKU: {item.sku}</p>
+                                <p className="text-sm text-muted-foreground">SKU: {item.sku}</p>
                             </div>
                         </div>
                     ))}
                 </div>
                 <Separator />
-                 <div className="text-sm text-gray-400">
+                 <div className="text-sm text-muted-foreground">
                     <p>Submitting this request will generate a pre-filled WhatsApp message. You will have a chance to review the message before sending.</p>
                     <p className="mt-4">A sales representative will contact you shortly after you send the message to provide a full quote including shipping and availability.</p>
                 </div>

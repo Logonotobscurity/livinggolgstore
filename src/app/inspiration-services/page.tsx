@@ -24,7 +24,7 @@ export default function InspirationServicesPage() {
 
   return (
     <CmsLayout breadcrumb={breadcrumb}>
-      <div className="cms-page text-white">
+      <div className="cms-page text-foreground">
         <div className="text-wrapper text-center mb-16 px-4">
           <h1 className="mb-4 text-4xl md:text-5xl">Inspiration & Services</h1>
           <p className="text-base md:text-lg max-w-3xl mx-auto">
@@ -51,7 +51,7 @@ export default function InspirationServicesPage() {
             <div className="container mx-auto px-6 max-w-7xl">
                 <div className="text-center mb-12">
                     <h2 className="font-headline text-3xl md:text-4xl font-bold">Room Inspiration</h2>
-                    <p className="text-lg text-gray-300 mt-2">See how our lighting transforms spaces.</p>
+                    <p className="text-lg text-muted-foreground mt-2">See how our lighting transforms spaces.</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-12">
                 {products.map((product, index) => (
@@ -93,8 +93,8 @@ export default function InspirationServicesPage() {
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4 mb-16">
             <div className="border border-primary/20 p-8 rounded-lg bg-secondary/50">
                 <h3 className="font-headline text-2xl text-primary mb-4">For Homeowners</h3>
-                <p className="text-gray-300 mb-4">Whether you're building a new home or renovating a single room, our team can help you select the perfect fixtures. We provide personalized recommendations based on your style, budget, and functional needs.</p>
-                <ul className="list-disc list-inside space-y-2 text-gray-400 text-sm">
+                <p className="text-muted-foreground mb-4">Whether you're building a new home or renovating a single room, our team can help you select the perfect fixtures. We provide personalized recommendations based on your style, budget, and functional needs.</p>
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground text-sm">
                     <li>Personal shopping & fixture selection</li>
                     <li>Room-by-room lighting plans</li>
                     <li>Energy-efficient & smart home integration</li>
@@ -102,8 +102,8 @@ export default function InspirationServicesPage() {
             </div>
              <div className="border border-primary/20 p-8 rounded-lg bg-secondary/50">
                 <h3 className="font-headline text-2xl text-primary mb-4">For Trade Professionals</h3>
-                <p className="text-gray-300 mb-4">We partner with architects, interior designers, and contractors to provide comprehensive lighting solutions for residential and commercial projects. Access our trade program for exclusive pricing and support.</p>
-                 <ul className="list-disc list-inside space-y-2 text-gray-400 text-sm">
+                <p className="text-muted-foreground mb-4">We partner with architects, interior designers, and contractors to provide comprehensive lighting solutions for residential and commercial projects. Access our trade program for exclusive pricing and support.</p>
+                 <ul className="list-disc list-inside space-y-2 text-muted-foreground text-sm">
                     <li>Project-based lighting specification</li>
                     <li>Bespoke & custom fixture sourcing</li>
                     <li>Technical support & local compliance</li>
@@ -117,7 +117,7 @@ export default function InspirationServicesPage() {
 
         {/* Contact Form */}
         <div className="max-w-md mx-auto px-4">
-             <h2 className="font-headline text-2xl font-bold text-white text-center mb-12">
+             <h2 className="font-headline text-2xl font-bold text-foreground text-center mb-12">
                 Book a Consultation
              </h2>
              <ContactForm />

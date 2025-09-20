@@ -51,19 +51,19 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="bg-secondary text-white max-w-lg p-0">
+      <DialogContent className="bg-secondary text-foreground max-w-lg p-0">
         <DialogHeader className="p-6 pb-0">
           <DialogTitle className="text-2xl font-headline">Search Products</DialogTitle>
         </DialogHeader>
         <div className="p-6 pt-2">
           <div className="relative">
-            <Icons.search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
+            <Icons.search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
             <Input
               type="search"
               placeholder="e.g., 'a modern light for my kitchen island'"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="bg-background border-muted-foreground w-full pl-10 text-base"
+              className="bg-background border-border w-full pl-10 text-base"
             />
              {isPending && <Icons.loader className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 animate-spin" />}
           </div>
@@ -86,7 +86,7 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
                       />
                       <div className="flex-1">
                         <p className="font-semibold">{item.title}</p>
-                        <p className="text-sm text-gray-400 truncate">{item.description}</p>
+                        <p className="text-sm text-muted-foreground truncate">{item.description}</p>
                       </div>
                     </Link>
                   </li>
@@ -94,12 +94,12 @@ export default function SearchModal({ isOpen, onClose }: SearchModalProps) {
               </ul>
             )}
             {!isPending && searchQuery.length > 2 && searchResults.length === 0 && (
-                <p className="text-center text-gray-400 py-8">
+                <p className="text-center text-muted-foreground py-8">
                   No results found for "{searchQuery}"
                 </p>
             )}
              {!isPending && searchQuery.length <= 2 && (
-                <p className="text-center text-gray-400 py-8">
+                <p className="text-center text-muted-foreground py-8">
                   Describe what you're looking for.
                 </p>
               )}
