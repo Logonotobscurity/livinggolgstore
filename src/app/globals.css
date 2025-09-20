@@ -547,7 +547,7 @@
 }
 
 .neumorphic-card {
-  @apply flex justify-center items-center min-h-[350px] w-[300px] flex-col gap-[35px] bg-card rounded-lg;
+  @apply flex justify-center items-center min-h-[350px] flex-col gap-[35px] bg-card rounded-lg p-4;
   box-shadow: 16px 16px 32px hsl(var(--muted)),
         -16px -16px 32px hsl(var(--background));
 }
@@ -558,13 +558,13 @@
 }
 
 .neumorphic-input-box {
-  @apply relative w-[250px];
+  @apply relative w-full;
 }
 
 .neumorphic-input-box input {
   @apply w-full p-[10px] outline-none border-none text-foreground text-base bg-transparent transition-all duration-100;
-  border-left: 2px solid hsl(var(--foreground));
-  border-bottom: 2px solid hsl(var(--foreground));
+  border-left: 2px solid hsl(var(--primary));
+  border-bottom: 2px solid hsl(var(--primary));
   border-bottom-left-radius: 8px;
 }
 
@@ -593,7 +593,7 @@
 
 .neumorphic-button {
   @apply h-[45px] w-[100px] rounded-md border-2 cursor-pointer bg-transparent transition-all duration-500 uppercase text-xs tracking-[2px] mb-4;
-  border-color: hsl(var(--foreground));
+  border-color: hsl(var(--primary));
   color: hsl(var(--foreground));
 }
 
@@ -611,5 +611,7 @@
 
 
 
+
+    
 
     
