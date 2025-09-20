@@ -96,6 +96,22 @@
   .animate-bounce {
     animation: bounce 1s infinite;
   }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background-color: hsl(var(--muted) / 0.5);
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--primary));
+    border-radius: 10px;
+    border: 2px solid hsl(var(--background));
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--primary) / 0.8);
+  }
 }
 
 .slider__status-bar {
@@ -605,6 +621,8 @@
 
 
 
+
+    
 
     
 

@@ -135,7 +135,7 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
 
         <div className="mt-20 md:mt-24">
             <h2 className="font-headline text-2xl md:text-3xl font-bold text-left mb-12 uppercase">You May Also Like</h2>
-            <div className="flex gap-8 overflow-x-auto pb-4 -mx-4 px-4">
+            <div className="custom-scrollbar flex gap-8 overflow-x-auto pb-4 -mx-4 px-4">
                 {relatedProducts.map((related) => (
                      <div key={related.id} className="flex-shrink-0 w-3/4 sm:w-2/5 md:w-1/3 lg:w-1/4">
                         <RelatedProductCard product={related} />
@@ -158,3 +158,5 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
     </div>
   );
 }
+
+    
