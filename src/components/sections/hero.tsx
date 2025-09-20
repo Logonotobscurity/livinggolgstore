@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <SunBanner />
       </div>
-      <div className="absolute inset-0 bg-background/40" />
+      
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl text-center mx-auto">
             <p className="text-sm font-medium tracking-widest uppercase text-primary mb-4">
