@@ -2,9 +2,11 @@
 .section-banner-sun {
   height: 300px;
   width: 300px;
-  position: relative;
-  transition: left 0.3s linear;
-  bottom: 0px;
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  left: auto;
+  bottom: auto;
   border-radius: 50%;
   animation:
     sunRotate 30s linear 0s infinite,
@@ -15,16 +17,6 @@
     15px 2px 40px 20px #d4a017 inset,
     -24px -2px 50px 25px #ffb84d inset,
     150px 0px 80px 35px #c55f00aa inset;
-}
-
-@media (max-width: 768px) {
-  .section-banner-sun {
-    position: absolute;
-    top: -150px;
-    right: -150px;
-    left: auto;
-    bottom: auto;
-  }
 }
 
 @keyframes sunRotate {
