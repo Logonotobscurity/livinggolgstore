@@ -25,7 +25,7 @@ export function ProductSupport() {
                      <ContactForm />
                 </div>
             </div>
-            <div className="max-w-5xl mx-auto px-4">
+            <div>
                 <h2 className="font-headline text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="item-1">

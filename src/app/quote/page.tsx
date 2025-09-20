@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useCart } from "@/context/cart-context";
@@ -22,7 +23,7 @@ export default function QuotePage() {
   if (cartItems.length === 0) {
     return (
         <CmsLayout breadcrumb={breadcrumb}>
-             <div className="text-center py-16 text-white px-4">
+             <div className="text-center py-16 text-foreground px-4">
                 <h1 className="text-4xl font-headline mb-4">Your Cart is Empty</h1>
                 <p className="text-xl mb-8">Add items to your cart to request a quote.</p>
                 <Button variant="outline" asChild>
@@ -35,12 +36,13 @@ export default function QuotePage() {
 
   return (
     <CmsLayout breadcrumb={breadcrumb}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start max-w-6xl mx-auto px-4 text-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start max-w-6xl mx-auto text-foreground">
             <div className="order-2 md:order-1 w-full">
                 <CheckoutForm />
             </div>
             <div className="order-1 md:order-2 space-y-8 w-full">
-                 <h2 className="font-headline text-2xl font-bold text-white mb-6">
+                 <h2 className="font-headline text-2xl font-bold text-foreground mb-6">
                     Order Summary ({totalItemsCount} items)
                 </h2>
                 <div className="space-y-6 max-h-[60vh] overflow-y-auto pr-4">
@@ -66,6 +68,7 @@ export default function QuotePage() {
                 </div>
             </div>
         </div>
+      </div>
     </CmsLayout>
   );
 }

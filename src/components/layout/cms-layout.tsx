@@ -22,7 +22,7 @@ export default function CmsLayout({ children, breadcrumb }: CmsLayoutProps) {
       <main className="flex-grow">
         {breadcrumb && (
           <div className="breadcrumb-wrapper">
-            <div className="breadcrumb container mx-auto px-6">
+            <div className="breadcrumb container mx-auto px-4 sm:px-6 lg:px-8">
               <ul className="flex items-center text-sm text-muted-foreground">
                 {breadcrumb.map((item, index) => (
                   <li key={index} className="flex items-center">
