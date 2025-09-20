@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full bg-background/80 text-foreground backdrop-blur-sm">
+      <header className="sticky top-0 z-50 w-full bg-background/95 text-foreground backdrop-blur-sm">
         <div className="bg-secondary/50 text-sm">
           <div className={`container mx-auto px-4 sm:px-6 lg:px-8 h-10 flex items-center max-w-7xl ${isMobile ? 'justify-center' : 'justify-between'}`}>
             {!isMobile && (

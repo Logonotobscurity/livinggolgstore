@@ -67,7 +67,7 @@ export function LivingGoldWordmark({ className, title = "LIVING GOLD", ...props 
 
 export function LivingGoldLogoMobile({ className, title = "LIVING GOLD", ...props }: LogoProps) {
   return (
-    <svg viewBox="0 0 420 220" preserveAspectRatio="xMidYMid meet" className={cn("mx-auto", className)} role="img" aria-labelledby="lgMobileTitle lgMobileDesc" {...props}>
+    <svg viewBox="0 0 220 220" preserveAspectRatio="xMidYMid meet" className={cn("mx-auto", className)} role="img" aria-labelledby="lgMobileTitle lgMobileDesc" {...props}>
       <title id="lgMobileTitle">{title}</title>
       <desc id="lgMobileDesc">LIVING GOLD mobile stacked logo (no background)</desc>
       <defs>
@@ -80,8 +80,8 @@ export function LivingGoldLogoMobile({ className, title = "LIVING GOLD", ...prop
       </defs>
 
       <g fontFamily="Georgia, 'Times New Roman', serif" textAnchor="middle">
-        <text x="210" y="70" fontSize="44" fontWeight="700" letterSpacing="3" fill="url(#goldGrad3)" stroke="rgba(0,0,0,0.16)" strokeWidth="1.5">LIVING</text>
-        <text x="210" y="140" fontSize="68" fontWeight="800" letterSpacing="6" fill="url(#goldGrad3)" stroke="rgba(0,0,0,0.18)" strokeWidth="2">GOLD</text>
+        <text x="110" y="70" fontSize="44" fontWeight="700" letterSpacing="3" fill="url(#goldGrad3)" stroke="rgba(0,0,0,0.16)" strokeWidth="1.5">LIVING</text>
+        <text x="110" y="140" fontSize="68" fontWeight="800" letterSpacing="6" fill="url(#goldGrad3)" stroke="rgba(0,0,0,0.18)" strokeWidth="2">GOLD</text>
       </g>
     </svg>
   );
