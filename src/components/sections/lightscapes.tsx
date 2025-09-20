@@ -21,7 +21,7 @@ export default function Lightscapes() {
   if (!lightscapeImages.length) return null;
 
   return (
-    <section className="bg-black text-white py-20 md:py-0">
+    <section className="bg-background text-foreground py-20 md:py-0">
       <div className="container mx-auto max-w-7xl px-6">
         <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-center">
           

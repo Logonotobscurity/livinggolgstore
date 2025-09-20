@@ -10,7 +10,7 @@ export default function TradesAndServices() {
   const { isMobile } = useResponsive();
 
   return (
-    <section className="bg-secondary py-20 md:py-32">
+    <section className="py-20 md:py-32">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} gap-12 md:gap-20 items-center`}>
           <div className={`${isMobile ? 'order-2' : 'order-1'}`}>
