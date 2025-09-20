@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from 'next/image';
@@ -123,7 +124,7 @@ export function CategoryCard({
             {product.title}
           </h3>
           <NewCtaButton>
-              Explore
+              Shop now
           </NewCtaButton>
         </>
       </Link>
