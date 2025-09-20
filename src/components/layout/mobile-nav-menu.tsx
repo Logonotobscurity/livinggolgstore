@@ -14,6 +14,12 @@ import { sitemap } from '@/lib/sitemap';
 import type { NavItem } from '@/lib/sitemap';
 import { Icons } from '../icons';
 import { Separator } from '../ui/separator';
+import { Button } from '../ui/button';
+import { ThemeToggle } from '../theme-toggle';
+
+interface MobileNavMenuProps {
+    onSearchClick: () => void;
+}
 
 function renderNavItem(item: NavItem) {
     if (item.items) {
@@ -51,7 +57,7 @@ function renderNavItem(item: NavItem) {
 }
 
 
-export default function MobileNavMenu() {
+export default function MobileNavMenu({ onSearchClick }: MobileNavMenuProps) {
     return (
         <>
             <SheetHeader>
@@ -66,6 +72,10 @@ export default function MobileNavMenu() {
                 </div>
                 <Separator className="my-4 bg-border" />
                  <div className="p-6 pt-0 space-y-4">
+                    <Button variant="ghost" onClick={onSearchClick} className="flex items-center justify-start text-lg p-0 h-auto hover:text-primary">
+                        <Icons.search className="h-5 w-5 mr-4" />
+                        <span>Search</span>
+                    </Button>
                     <Link href="/wishlist" className="flex items-center text-lg hover:text-primary">
                         <Icons.heart className="h-5 w-5 mr-4" />
                         <span>Wishlist</span>
@@ -78,6 +88,10 @@ export default function MobileNavMenu() {
                         <Icons.user className="h-5 w-5 mr-4" />
                         <span>Sign Up</span>
                     </Link>
+                    <div className="flex items-center text-lg">
+                        <ThemeToggle />
+                        <span className="ml-2">Theme</span>
+                    </div>
                 </div>
             </div>
         </>

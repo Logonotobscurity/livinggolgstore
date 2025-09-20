@@ -19,6 +19,7 @@ export default function Header() {
   const { wishlistItems } = useWishlist();
   const wishlistItemCount = wishlistItems.length;
   const [isSearchModalOpen, setSearchModalOpen] = useState(false);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { isMobile } = useResponsive();
 
   return (
@@ -44,29 +45,34 @@ export default function Header() {
         </div>
         <div className="border-b border-primary/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center max-w-7xl">
-            {isMobile && (
-              <div className="flex items-center justify-start">
-                <Sheet>
-                  <SheetTrigger asChild>
-                    <button aria-label="Open menu" className="p-2 -ml-2">
-                      <Icons.menu className="h-6 w-6" />
-                    </button>
-                  </SheetTrigger>
-                  <SheetContent side="left" className="bg-background w-3/4 p-0">
-                    <MobileNavMenu />
-                  </SheetContent>
+            <div className="flex-1 flex justify-start items-center">
+                {isMobile && (
+                <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+                    <SheetTrigger asChild>
+                        <button aria-label="Open menu" className="p-2 -ml-2">
+                        <Icons.menu className="h-6 w-6" />
+                        </button>
+                    </SheetTrigger>
+                    <SheetContent side="left" className="bg-background w-3/4 p-0">
+                        <MobileNavMenu 
+                            onSearchClick={() => {
+                                setMobileMenuOpen(false);
+                                setSearchModalOpen(true);
+                            }}
+                        />
+                    </SheetContent>
                 </Sheet>
-              </div>
-            )}
+                )}
+            </div>
 
-            <div className={`flex-1 flex ${isMobile ? 'justify-center' : 'justify-start'}`}>
+            <div className={`flex-1 flex justify-center`}>
               <Link href="/" className="flex items-center">
                 <LivingGoldWordmark className="h-10 md:h-12 w-auto" />
                 <span className="sr-only">LIVING GOLD</span>
               </Link>
             </div>
 
-            <div className={`flex items-center justify-end ${isMobile ? 'space-x-1' : 'space-x-2'}`}>
+            <div className={`flex-1 flex items-center justify-end ${isMobile ? 'space-x-1' : 'space-x-2'}`}>
               {!isMobile && (
                 <>
                   <button
