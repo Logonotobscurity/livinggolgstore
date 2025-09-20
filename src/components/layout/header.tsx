@@ -67,16 +67,16 @@ export default function Header() {
             </div>
 
             <div className={`flex items-center justify-end ${isMobile ? 'space-x-1' : 'space-x-2'}`}>
-              <button
-                aria-label="Search"
-                className="p-2 rounded-full hover:bg-accent"
-                onClick={() => setSearchModalOpen(true)}
-              >
-                <Icons.search className="h-5 w-5" />
-              </button>
-               <ThemeToggle />
               {!isMobile && (
                 <>
+                  <button
+                    aria-label="Search"
+                    className="p-2 rounded-full hover:bg-accent"
+                    onClick={() => setSearchModalOpen(true)}
+                  >
+                    <Icons.search className="h-5 w-5" />
+                  </button>
+                  <ThemeToggle />
                   <Link href="/contact" aria-label="Contact" className="p-2 rounded-full hover:bg-accent">
                     <Icons.mail className="h-5 w-5" />
                   </Link>
