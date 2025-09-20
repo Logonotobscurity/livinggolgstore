@@ -1,4 +1,3 @@
-
 'use client';
 
 import Image from 'next/image';
@@ -119,7 +118,7 @@ export function CategoryCard({
               />
             </div>
           </div>
-          <h3 className="font-headline text-base uppercase tracking-wider text-white h-10 flex items-center justify-center">
+          <h3 className="font-headline text-base uppercase tracking-wider text-foreground h-10 flex items-center justify-center">
             {product.title}
           </h3>
         </>
