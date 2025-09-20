@@ -1,6 +1,5 @@
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CategoryCard } from '@/components/category-card';
-import { ReusableBackground } from '../reusable-background';
 
 export default function ProductCategories() {
   const productCategories = [
@@ -13,7 +12,6 @@ export default function ProductCategories() {
   const categories = PlaceHolderImages.filter(img => productCategories.includes(img.id));
 
   return (
-    <ReusableBackground>
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-left mb-12 md:mb-20">
@@ -38,6 +36,5 @@ export default function ProductCategories() {
           </div>
         </div>
       </section>
-    </ReusableBackground>
   );
 }

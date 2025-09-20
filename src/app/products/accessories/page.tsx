@@ -8,7 +8,6 @@ import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
 import type { Metadata } from 'next';
-import { ReusableBackground } from '@/components/reusable-background';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
@@ -21,7 +20,7 @@ export default function AccessoriesPage() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'accessories-hero');
 
   return (
-    <div className="flex flex-col min-h-screen bg-background text-white">
+    <div className="flex flex-col min-h-screen bg-background text-foreground">
       <Header />
       <main className="flex-grow">
         {heroImage && (
@@ -48,7 +47,6 @@ export default function AccessoriesPage() {
           </section>
         )}
 
-        <ReusableBackground>
           <section className="py-16 md:py-24">
             <div className="container mx-auto px-6 max-w-7xl">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-12">
@@ -67,7 +65,7 @@ export default function AccessoriesPage() {
           <section className="py-16 md:py-24 border-t border-primary/10">
             <div className="container mx-auto px-6 max-w-4xl text-center">
               <h2 className="font-headline text-3xl md:text-4xl font-bold mb-6">Trade & Technical Supplies</h2>
-              <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
                 For our trade partners, we provide access to essential installation materials. We stock high-quality conduit, surface and casting wiring, and specialized transformers to ensure every project meets the highest standards of safety and execution.
               </p>
               <Button asChild variant="outline">
@@ -77,7 +75,6 @@ export default function AccessoriesPage() {
           </section>
           
           <ProductSupport />
-        </ReusableBackground>
         <div className="my-24 md:my-32" />
       </main>
       <div className="text-wrapper">

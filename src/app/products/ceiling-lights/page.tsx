@@ -8,7 +8,6 @@ import { CategoryCard } from '@/components/category-card';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
 import type { Metadata } from 'next';
-import { ReusableBackground } from '@/components/reusable-background';
 
 export const metadata: Metadata = {
   title: 'Shop Ceiling Lights, Chandeliers & Pendants',
@@ -24,7 +23,7 @@ export default function CeilingLightsPage() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'room-settings-1');
 
   return (
-    <div className="flex flex-col min-h-screen bg-background text-white">
+    <div className="flex flex-col min-h-screen bg-background text-foreground">
       <Header />
       <main className="flex-grow">
         {heroImage && (
@@ -53,7 +52,6 @@ export default function CeilingLightsPage() {
           </section>
         )}
 
-        <ReusableBackground>
           <section className="py-16 md:py-24">
             <div className="container mx-auto px-6 max-w-7xl">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-12">
@@ -69,7 +67,6 @@ export default function CeilingLightsPage() {
             </div>
           </section>
           <ProductSupport />
-        </ReusableBackground>
         <div className="my-24 md:my-32" />
       </main>
       <div className="text-wrapper">
