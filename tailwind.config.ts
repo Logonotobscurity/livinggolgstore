@@ -121,6 +121,9 @@ export default {
         'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
         revealCard: 'revealCard 0.8s cubic-bezier(0.4,0,0.2,1) forwards',
       },
+      transitionTimingFunction: {
+        'in-out-quad': 'cubic-bezier(0.4, 0, 0.2, 1)',
+      }
     },
   },
   plugins: [require('tailwindcss-animate')],
