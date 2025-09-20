@@ -21,14 +21,14 @@ export default function Lightscapes() {
   if (!lightscapeImages.length) return null;
 
   return (
-    <section className="bg-background text-foreground py-20 md:py-0">
+    <section className="text-foreground py-20 md:py-0">
       <div className="container mx-auto max-w-7xl px-6">
         <div className="grid md:grid-cols-2 gap-12 md:gap-24 items-center">
           
           {/* Static Text Content Column */}
           <div className="md:sticky md:top-0 md:h-screen md:flex md:items-center">
-            <div className="max-w-md">
-              <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6">
+            <div className="max-w-md mx-auto text-center md:text-left">
+              <h2 className="font-headline text-4xl md:text-5xl font-bold mb-6 text-foreground">
                 Lightscapes
               </h2>
               <p className="text-base md:text-lg leading-relaxed mb-8 text-gray-300">
@@ -37,11 +37,13 @@ export default function Lightscapes() {
                 conveys the harmony between elegant aesthetics and outdoor
                 space, where the creations come to life in natural light.
               </p>
-              <Button asChild size="lg" variant="outline" showIcon>
-                <Link href="/products/outdoor-lighting">
-                  The Outdoor Collection
-                </Link>
-              </Button>
+              <div className="flex justify-center md:justify-start">
+                  <Button asChild size="lg" variant="outline" showIcon>
+                    <Link href="/products/outdoor-lighting">
+                      The Outdoor Collection
+                    </Link>
+                  </Button>
+              </div>
             </div>
           </div>
 

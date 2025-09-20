@@ -13,7 +13,7 @@ export default function TradesAndServices() {
     <section className="py-20 md:py-32">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} gap-12 md:gap-20 items-center`}>
-          <div className={`${isMobile ? 'order-2' : 'order-1'}`}>
+          <div className={`${isMobile ? 'order-2 text-center' : 'order-1 text-left'}`}>
             <h2 className="text-base md:text-lg font-medium tracking-[0.2em] uppercase text-primary mb-6">
               FOR TRADE PROFESSIONALS
             </h2>
@@ -26,11 +26,13 @@ export default function TradesAndServices() {
             <p className="text-base md:text-lg leading-relaxed mb-10 text-muted-foreground">
               Let us be your trusted partner in delivering exceptional quality and design for your next project.
             </p>
-            <Button asChild size="lg" showIcon>
-              <Link href="/inspiration-services">
-                Explore Inspiration & Services
-              </Link>
-            </Button>
+            <div className="flex justify-center md:justify-start">
+                <Button asChild size="lg" showIcon>
+                <Link href="/inspiration-services">
+                    Explore Inspiration & Services
+                </Link>
+                </Button>
+            </div>
           </div>
           <div className={`relative w-full aspect-[4/5] rounded-lg overflow-hidden ${isMobile ? 'order-1' : 'order-2'}`}>
             <Image

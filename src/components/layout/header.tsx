@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -63,7 +64,7 @@ export default function Header() {
                 {!isMobile ? (
                   <LivingGoldWordmark className="h-12 w-auto" />
                 ) : (
-                  <LivingGoldLogoMobile className="h-16 w-auto mx-auto" />
+                  <LivingGoldLogoMobile className="h-20 w-auto mx-auto" />
                 )}
                 <span className="sr-only">LIVING GOLD</span>
               </Link>
