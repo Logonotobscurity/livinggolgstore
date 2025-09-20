@@ -18,7 +18,7 @@ export default function Hero() {
       
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl text-center mx-auto">
-            <p className="text-base font-bold tracking-widest uppercase text-primary mb-4">
+            <p className="text-lg font-bold tracking-widest uppercase text-primary mb-4">
                 FOR THOSE WHO SEEK
             </p>
             <h1 className={`font-headline ${isMobile ? 'text-5xl' : 'text-7xl'} font-bold leading-tight text-foreground mb-10 text-shadow-lg`}>
