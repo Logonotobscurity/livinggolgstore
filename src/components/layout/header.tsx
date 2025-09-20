@@ -32,19 +32,22 @@ export default function Header() {
                 Explore one-of-a-kind items from around the world
               </p>
             )}
-            <nav className="flex items-center space-x-4">
-              <Link href="/about" className="link-underline transition-colors">
-                About
-              </Link>
-              <span className="text-muted-foreground">|</span>
-              <Link href="/inspiration-services" className="link-underline transition-colors">
-                Inspiration & Services
-              </Link>
-            </nav>
+            <div className="flex items-center gap-4">
+              <nav className="flex items-center space-x-4">
+                <Link href="/about" className="link-underline transition-colors">
+                  About
+                </Link>
+                <span className="text-muted-foreground">|</span>
+                <Link href="/inspiration-services" className="link-underline transition-colors">
+                  Inspiration & Services
+                </Link>
+              </nav>
+              {!isMobile && <ThemeToggle />}
+            </div>
           </div>
         </div>
         <div className="border-b border-primary/30">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-16 md:h-20 flex justify-between items-center max-w-7xl">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center max-w-7xl">
             <div className="flex-1 flex justify-start items-center">
                 {isMobile && (
                 <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -82,7 +85,6 @@ export default function Header() {
                   >
                     <Icons.search className="h-5 w-5" />
                   </button>
-                  <ThemeToggle />
                   <Link href="/contact" aria-label="Contact" className="p-2 rounded-full hover:bg-accent">
                     <Icons.mail className="h-5 w-5" />
                   </Link>
