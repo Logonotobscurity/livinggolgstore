@@ -3,6 +3,7 @@
 import * as React from "react"
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
+import { useResponsive } from "@/hooks/use-responsive"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -11,9 +12,32 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { cn } from "@/lib/utils"
 
 export function ThemeToggle() {
-  const { setTheme } = useTheme()
+  const { theme, setTheme } = useTheme()
+  const { isMobile } = useResponsive()
+  const [mounted, setMounted] = React.useState(false)
+
+  React.useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    // Avoid hydration mismatch
+    return null
+  }
+  
+  if (isMobile) {
+    return (
+        <input 
+            className="l" 
+            type="checkbox"
+            checked={theme === 'dark'}
+            onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')} 
+        />
+    )
+  }
 
   return (
     <DropdownMenu>

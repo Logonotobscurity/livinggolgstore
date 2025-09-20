@@ -88,9 +88,12 @@ export default function MobileNavMenu({ onSearchClick }: MobileNavMenuProps) {
                         <Icons.user className="h-5 w-5 mr-4" />
                         <span>Sign Up</span>
                     </Link>
-                    <div className="flex items-center text-lg">
+                    <div className="flex items-center justify-between text-lg">
+                        <div className="flex items-center">
+                            <Icons.sun className="h-5 w-5 mr-4" />
+                            <span>Theme</span>
+                        </div>
                         <ThemeToggle />
-                        <span className="ml-2">Theme</span>
                     </div>
                 </div>
             </div>
