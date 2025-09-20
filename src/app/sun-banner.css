@@ -17,6 +17,16 @@
     150px 0px 80px 35px #c55f00aa inset;
 }
 
+@media (max-width: 768px) {
+  .section-banner-sun {
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    left: auto;
+    bottom: auto;
+  }
+}
+
 @keyframes sunRotate {
   0% {
     background-position: 0 0;
