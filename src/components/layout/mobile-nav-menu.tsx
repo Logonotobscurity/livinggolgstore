@@ -72,19 +72,19 @@ export default function MobileNavMenu({ onSearchClick }: MobileNavMenuProps) {
                 </div>
                 <Separator className="my-4 bg-primary/30" />
                  <div className="p-6 pt-0 space-y-4">
-                    <Button variant="ghost" onClick={onSearchClick} className="flex items-center justify-start text-lg p-0 h-auto hover:text-primary">
+                    <Button variant="ghost" onClick={onSearchClick} className="flex items-center justify-start text-lg p-0 h-auto hover:text-primary" aria-label="Search">
                         <Icons.search className="h-5 w-5 mr-4" />
                         <span>Search</span>
                     </Button>
-                    <Link href="/wishlist" className="flex items-center text-lg hover:text-primary">
+                    <Link href="/wishlist" className="flex items-center text-lg hover:text-primary" aria-label="Wishlist">
                         <Icons.heart className="h-5 w-5 mr-4" />
                         <span>Wishlist</span>
                     </Link>
-                    <Link href="/contact" className="flex items-center text-lg hover:text-primary">
+                    <Link href="/contact" className="flex items-center text-lg hover:text-primary" aria-label="Contact">
                         <Icons.mail className="h-5 w-5 mr-4" />
                         <span>Contact</span>
                     </Link>
-                    <Link href="/signup" className="flex items-center text-lg hover:text-primary">
+                    <Link href="/signup" className="flex items-center text-lg hover:text-primary" aria-label="Sign Up">
                         <Icons.user className="h-5 w-5 mr-4" />
                         <span>Sign Up</span>
                     </Link>

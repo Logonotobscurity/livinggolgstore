@@ -133,7 +133,7 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
                 <Button 
                   variant="outline" 
                   size="icon" 
-                  aria-label="Add to wishlist" 
+                  aria-label={isWishlisted ? "Remove from wishlist" : "Add to wishlist"}
                   className="w-12 h-12"
                   onClick={handleWishlistToggle}
                 >

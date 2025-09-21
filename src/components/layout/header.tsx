@@ -38,7 +38,7 @@ export default function Header() {
                   About
                 </Link>
                 <span className="text-muted-foreground">|</span>
-                <Link href="/inspiration-services" className="link-underline transition-colors">
+                <Link href="/design-studio" className="link-underline transition-colors">
                   Design Studio
                 </Link>
               </nav>
@@ -97,7 +97,7 @@ export default function Header() {
                   <Link href="/wishlist" aria-label="Wishlist" className="p-2 rounded-full hover:bg-accent relative">
                     <Icons.heart className="h-5 w-5" />
                     {wishlistItemCount > 0 && (
-                      <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-[10px] rounded-full h-4 w-4 flex items-center justify-center">
+                      <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-[10px] rounded-full h-4 w-4 flex items-center justify-center" aria-label={`${wishlistItemCount} items in wishlist`}>
                         {wishlistItemCount}
                       </span>
                     )}
@@ -107,7 +107,7 @@ export default function Header() {
               <Link href="/cart" aria-label="Shopping Cart" className="p-2 rounded-full hover:bg-accent block relative">
                 <Icons.shoppingCart className="h-5 w-5" />
                 {totalItemsCount > 0 && (
-                  <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-[10px] rounded-full h-4 w-4 flex items-center justify-center">
+                  <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-[10px] rounded-full h-4 w-4 flex items-center justify-center" aria-label={`${totalItemsCount} items in cart`}>
                     {totalItemsCount}
                   </span>
                 )}
