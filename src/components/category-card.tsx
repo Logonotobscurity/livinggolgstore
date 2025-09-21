@@ -124,17 +124,9 @@ export function CategoryCard({
             <h3 className="font-headline text-base uppercase tracking-wider text-foreground flex items-center justify-center h-12">
               {product.title}
             </h3>
-            {product.subItems ? (
-              <ul className="text-xs text-muted-foreground space-y-1 mt-3 text-center">
-                {product.subItems.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
-            ) : (
-              <NewCtaButton>
-                Browse collection
-              </NewCtaButton>
-            )}
+            <NewCtaButton>
+              Browse collection
+            </NewCtaButton>
           </div>
         </>
       </Link>

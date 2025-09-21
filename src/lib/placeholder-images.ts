@@ -8,7 +8,6 @@ export type ImagePlaceholder = {
   imageHint: string;
   title?: string;
   price?: string;
-  subItems?: string[];
 };
 
 export const PlaceHolderImages: ImagePlaceholder[] = data.placeholderImages;

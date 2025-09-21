@@ -69,14 +69,34 @@ export const sitemap: NavItem[] = [
     icon: Icons.lightbulb,
     items: [
       {
-        title: "Conduit material",
+        title: "Downrods",
         href: "/products/accessories",
-        description: "Piping, Gum",
+        description: "Extend your ceiling fans.",
       },
       {
-        title: "Casting wiring",
+        title: "Remotes & Controls",
         href: "/products/accessories",
-        description: "Conduit & surface wire",
+        description: "Control your lighting with ease.",
+      },
+      {
+        title: "LED Bulbs",
+        href: "/products/architectural-lighting",
+        description: "Energy-efficient and stylish bulbs.",
+      },
+      {
+        title: "Dimmers & Outlets",
+        href: "/products/architectural-lighting",
+        description: "Complete your electrical setup.",
+      },
+      {
+        title: "Exhaust Fans",
+        href: "/products/accessories",
+        description: "For bathrooms and utility rooms.",
+      },
+      {
+        title: "See All Accessories",
+        href: "/products/accessories",
+        description: "Browse our full range.",
       },
     ],
   },
