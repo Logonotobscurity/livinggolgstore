@@ -8,6 +8,7 @@ import { Icons } from '@/components/icons';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
 import { generateReviewSuggestion } from '@/ai/flows/generate-review-suggestion';
+import { addReview } from '@/lib/reviews';
 
 interface ProductReviewFormProps {
   productName: string;
@@ -18,6 +19,7 @@ export function ProductReviewForm({ productName }: ProductReviewFormProps) {
   const [reviewText, setReviewText] = useState('');
   const [suggestion, setSuggestion] = useState('');
   const [isPending, startTransition] = useTransition();
+  const [isSubmitting, startSubmitting] = useTransition();
   const { toast } = useToast();
 
   const handleSuggestion = () => {
@@ -56,14 +58,24 @@ export function ProductReviewForm({ productName }: ProductReviewFormProps) {
       });
       return;
     }
-    // TODO: Actually submit the review
-    toast({
-      title: 'Review Submitted!',
-      description: 'Thank you for your feedback.',
+
+    startSubmitting(async () => {
+      await addReview({
+        author: 'Anonymous', // In a real app, this would be the logged-in user
+        body: reviewText,
+        rating: rating,
+        productName: productName,
+      });
+
+      toast({
+        title: 'Review Submitted!',
+        description: 'Thank you for your feedback.',
+      });
+
+      setRating(0);
+      setReviewText('');
+      setSuggestion('');
     });
-    setRating(0);
-    setReviewText('');
-    setSuggestion('');
   };
 
   return (
@@ -130,8 +142,12 @@ export function ProductReviewForm({ productName }: ProductReviewFormProps) {
       )}
 
       <div className="text-center pt-4">
-        <Button type="submit" size="lg">
-          Submit Review
+        <Button type="submit" size="lg" disabled={isSubmitting}>
+           {isSubmitting ? (
+              <Icons.loader className="w-4 h-4 mr-2 animate-spin" />
+            ) : (
+              'Submit Review'
+            )}
         </Button>
       </div>
     </form>

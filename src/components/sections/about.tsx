@@ -1,31 +1,5 @@
 import Marquee from '@/components/ui/marquee';
-
-const testimonials = [
-  {
-    body: "Living Gold's collection is a treasure trove of unique finds. I always discover something extraordinary that elevates my design projects to the next level. Truly a designer's dream.",
-    author: 'A. Adewusi, Interior Designer',
-  },
-  {
-    body: 'The quality and craftsmanship of the pieces from Living Gold are unparalleled. Each item tells a story and brings a sense of history and soul into the home.',
-    author: 'K. Bello, Homeowner',
-  },
-  {
-    body: "From grand chandeliers to the smallest decorative objects, Living Gold's curation is impeccable. It's my first stop for sourcing items that make a statement.",
-    author: 'F. Okoro, Architect',
-  },
-  {
-    body: 'Working with the Living Gold team was a seamless experience. Their expertise in lighting design and commitment to service made all the difference on our project.',
-    author: 'L. Adeyemi, Property Developer',
-  },
-  {
-    body: 'The bespoke chandelier we commissioned is the centerpiece of our hotel lobby. Living Gold delivered a work of art that is both timeless and breathtaking.',
-    author: 'General Manager, The Lagos Continental',
-  },
-  {
-    body: 'I appreciate the attention to detail and the clear communication throughout the import process. Living Gold makes sourcing luxury international lighting effortless.',
-    author: 'T. Ibrahim, Procurement Manager',
-  },
-];
+import { getReviews } from '@/lib/reviews';
 
 const TestimonialCard = ({ body, author }: { body: string, author: string }) => {
   return (
@@ -36,9 +10,11 @@ const TestimonialCard = ({ body, author }: { body: string, author: string }) => 
   );
 };
 
-export default function About() {
-  const firstColumn = testimonials.slice(0, 3);
-  const secondColumn = testimonials.slice(3, 6);
+export default async function About() {
+  const testimonials = await getReviews();
+  
+  const firstColumn = testimonials.slice(0, Math.ceil(testimonials.length / 2));
+  const secondColumn = testimonials.slice(Math.ceil(testimonials.length / 2));
 
   return (
     <section className="text-foreground py-20 md:py-32 overflow-hidden">
