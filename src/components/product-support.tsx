@@ -16,7 +16,7 @@ export function ProductSupport() {
         <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start">
             <div className="w-full">
                 <div className="max-w-md mx-auto">
-                    <h2 className="font-headline text-2xl font-bold text-foreground text-center mb-12">
+                    <h2 className="font-headline text-2xl font-bold text-foreground text-center mb-4">
                         HAVE A QUESTION?
                     </h2>
                      <p className="text-center text-muted-foreground mb-8">
@@ -43,7 +43,7 @@ export function ProductSupport() {
                   <AccordionItem value="item-3">
                     <AccordionTrigger>Can I get help with lighting design for my project?</AccordionTrigger>
                     <AccordionContent>
-                      Absolutely. Our design experts are available for consultations. We can help you with everything from selecting a single fixture to creating a complete lighting plan for your home or commercial project. Visit our <Link href="/inspiration-services" className="text-primary hover:underline">Inspiration &amp; Services page</Link> or <Link href="/contact" className="text-primary hover:underline">contact us</Link> to schedule a consultation.
+                      Absolutely. Our design experts are available for consultations. We can help you with everything from selecting a single fixture to creating a complete lighting plan for your home or commercial project. Visit our <Link href="/design-studio" className="text-primary hover:underline">Design Studio page</Link> or <Link href="/contact" className="text-primary hover:underline">contact us</Link> to schedule a consultation.
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="item-4">

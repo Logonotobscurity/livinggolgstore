@@ -1,30 +1,29 @@
 
 'use client';
 
-import { useState, useTransition } from 'react';
+import { useTransition } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Icons } from '@/components/icons';
-
 import { submitContactForm } from '@/app/actions';
 import { useToast } from '@/hooks/use-toast';
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-} from '@/components/ui/form';
-import { cn } from '@/lib/utils';
+import { NeumorphicForm } from './neumorphic-form';
 
 const contactFormSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
   email: z.string().email({ message: 'Please enter a valid email address.' }),
-  message: z.string().min(10, { message: 'Message must be at least 10 characters.' }),
+  message: z
+    .string()
+    .min(10, { message: 'Message must be at least 10 characters.' }),
 });
 
 type ContactFormValues = z.infer<typeof contactFormSchema>;
+
+const formFields = [
+  { name: 'name', label: 'Your Name', type: 'text' },
+  { name: 'email', label: 'Your Email', type: 'email' },
+  { name: 'message', label: 'Your Message', type: 'text' },
+];
 
 export function ContactForm() {
   const { toast } = useToast();
@@ -59,57 +58,13 @@ export function ContactForm() {
   };
 
   return (
-    <div className="max-w-md mx-auto">
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)}>
-           <div className={cn("neumorphic-card w-full")}>
-              <a className="neumorphic-title text-center">Drop us a line</a>
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem className="neumorphic-input-box">
-                    <FormControl>
-                      <input type="text" {...field} required id="contact-name" />
-                    </FormControl>
-                    <FormLabel htmlFor="contact-name">Your Name</FormLabel>
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem className="neumorphic-input-box">
-                    <FormControl>
-                       <input type="email" {...field} required id="contact-email"/>
-                    </FormControl>
-                     <FormLabel htmlFor="contact-email">Your Email</FormLabel>
-                  </FormItem>
-                )}
-              />
-               <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem className="neumorphic-input-box">
-                    <FormControl>
-                      <input type="text" {...field} required id="contact-message"/>
-                    </FormControl>
-                     <FormLabel htmlFor="contact-message">Your Message</FormLabel>
-                  </FormItem>
-                )}
-              />
-              <button type="submit" disabled={isPending} className="neumorphic-button">
-                {isPending ? (
-                  <Icons.loader className="h-4 w-4 animate-spin mx-auto" />
-                ) : (
-                  'Submit'
-                )}
-              </button>
-           </div>
-        </form>
-      </Form>
-    </div>
+    <NeumorphicForm
+      form={form}
+      onSubmit={onSubmit}
+      fields={formFields}
+      title="Drop us a line"
+      buttonText="Submit"
+      isPending={isPending}
+    />
   );
 }

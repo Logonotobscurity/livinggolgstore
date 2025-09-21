@@ -85,7 +85,7 @@ export default function DesignStudioPage() {
         </div>
         
         <div className="text-center my-16">
-            <Button asChild size="lg">
+            <Button asChild size="lg" showIcon>
                 <Link href="/projects">View Our Projects</Link>
             </Button>
         </div>
