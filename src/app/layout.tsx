@@ -13,6 +13,7 @@ import './text-animations.css';
 import { SessionReminder } from '@/components/session-reminder';
 import SubscriptionModal from '@/components/subscription-modal';
 import { ThemeProvider } from '@/components/theme-provider';
+import { ClientOnly } from '@/components/client-only';
 
 export const metadata: Metadata = {
   title: {
@@ -84,8 +85,10 @@ export default function RootLayout({
                     {children}
                   </div>
                   <Toaster />
-                  <SessionReminder />
-                  <SubscriptionModal />
+                  <ClientOnly>
+                    <SessionReminder />
+                    <SubscriptionModal />
+                  </ClientOnly>
                 </div>
             </WishlistProvider>
           </CartProvider>
