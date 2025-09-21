@@ -12,7 +12,7 @@ export interface NavItem {
 export const sitemap: NavItem[] = [
   {
     title: "Lighting",
-    href: "/products/ceiling-lights",
+    href: "/products/lighting",
     items: [
        {
         title: "Chandeliers & Pendants",
@@ -21,7 +21,7 @@ export const sitemap: NavItem[] = [
       },
       {
         title: "Ceiling Fittings",
-        href: "/products/ceiling-lights",
+        href: "/products/lighting",
         icon: Icons.lampCeiling,
       },
       {
@@ -31,7 +31,7 @@ export const sitemap: NavItem[] = [
       },
       {
         title: "Wall Lights",
-        href: "/products/wall-sconces-vanity-lights",
+        href: "/products/wall-lights",
         icon: Icons.lampWallUp,
       },
        {
