@@ -18,13 +18,15 @@ export default function Hero() {
       
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl text-center mx-auto">
-            <p className="text-lg font-bold tracking-widest uppercase text-primary mb-4">
+            <p className="text-lg font-bold tracking-widest uppercase text-primary mb-4 animate-fade-in-up">
                 FOR THOSE WHO SEEK
             </p>
             <h1 className={`font-headline ${isMobile ? 'text-5xl' : 'text-7xl'} font-bold leading-tight text-foreground mb-10 text-shadow-lg`}>
-                RARE, UNUSUAL, AND EXQUISITE FINDS
+                <span className="animated-word">RARE,</span>
+                <span className="animated-word">UNUSUAL,</span>
+                <span className="animated-word">AND EXQUISITE FINDS</span>
             </h1>
-            <Button asChild size="lg" showIcon>
+            <Button asChild size="lg" showIcon className="animate-fade-in-up" style={{ animationDelay: '1.2s', animationFillMode: 'backwards' }}>
               <Link href="/products/room-settings">
                 Shop Living Gold Finds
               </Link>
