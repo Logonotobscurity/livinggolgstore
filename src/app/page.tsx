@@ -1,3 +1,4 @@
+
 import Header from '@/components/layout/header';
 import Hero from '@/components/sections/hero';
 import About from '@/components/sections/about';
@@ -16,17 +17,33 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
-        <div className="border-t border-primary/30" />
-        <ProductCategories />
-        <Lightscapes />
-        <div className="border-t border-primary/30" />
-        <Lifestyle />
-        <TradesAndServices />
-        <About />
-        <InstagramFeed />
-        <div className="border-t border-primary/30" />
-        <Contact />
-        <Newsletter />
+        <section aria-labelledby="product-categories-heading">
+          <div className="border-t border-primary/30" />
+          <ProductCategories />
+        </section>
+        <section aria-labelledby="lightscapes-heading">
+          <Lightscapes />
+        </section>
+        <section aria-labelledby="lifestyle-heading">
+          <div className="border-t border-primary/30" />
+          <Lifestyle />
+        </section>
+        <section aria-labelledby="trades-services-heading">
+          <TradesAndServices />
+        </section>
+        <section aria-labelledby="about-heading">
+          <About />
+        </section>
+        <section aria-labelledby="instagram-feed-heading">
+          <InstagramFeed />
+        </section>
+        <section aria-labelledby="contact-heading">
+          <div className="border-t border-primary/30" />
+          <Contact />
+        </section>
+        <section aria-labelledby="newsletter-heading">
+          <Newsletter />
+        </section>
       </main>
       <Footer />
     </div>

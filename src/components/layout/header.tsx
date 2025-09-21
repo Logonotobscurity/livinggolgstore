@@ -69,7 +69,7 @@ export default function Header() {
             </div>
 
             <div className={`flex-1 flex justify-center`}>
-              <Link href="/" className="flex items-center">
+              <Link href="/" aria-label="LIVING GOLD Home">
                 <LivingGoldWordmark className="h-9 md:h-12 w-auto" />
                 <span className="sr-only">LIVING GOLD</span>
               </Link>

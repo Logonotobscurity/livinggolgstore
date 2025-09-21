@@ -578,14 +578,14 @@
   border-bottom-left-radius: 8px;
 }
 
-.neumorphic-input-box span {
+.neumorphic-input-box label {
   @apply mt-[5px] absolute left-0 p-[10px] pointer-events-none text-xs text-foreground uppercase transition-all duration-500 tracking-[3px] rounded-lg;
   transform: translateY(-4px);
   margin-left: 10px;
 }
 
-.neumorphic-input-box:has(input:valid) span,
-.neumorphic-input-box:has(input:focus) span {
+.neumorphic-input-box:has(input:valid) label,
+.neumorphic-input-box:has(input:focus) label {
   transform: translateX(113px) translateY(-15px);
   font-size: 0.8em;
   padding: 5px 10px;
@@ -612,19 +612,3 @@
   color: hsl(var(--primary-foreground));
   border-color: hsl(var(--primary));
 }
-    
-
-
-
-    
-
-
-
-
-
-    
-
-    
-
-    
-

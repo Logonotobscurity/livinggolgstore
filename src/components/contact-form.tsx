@@ -14,6 +14,7 @@ import {
   FormControl,
   FormField,
   FormItem,
+  FormLabel,
 } from '@/components/ui/form';
 import { cn } from '@/lib/utils';
 
@@ -69,9 +70,9 @@ export function ContactForm() {
                 render={({ field }) => (
                   <FormItem className="neumorphic-input-box">
                     <FormControl>
-                      <input type="text" {...field} required />
+                      <input type="text" {...field} required id="contact-name" />
                     </FormControl>
-                    <span>Your Name</span>
+                    <FormLabel htmlFor="contact-name">Your Name</FormLabel>
                   </FormItem>
                 )}
               />
@@ -81,9 +82,9 @@ export function ContactForm() {
                 render={({ field }) => (
                   <FormItem className="neumorphic-input-box">
                     <FormControl>
-                       <input type="email" {...field} required />
+                       <input type="email" {...field} required id="contact-email"/>
                     </FormControl>
-                     <span>Your Email</span>
+                     <FormLabel htmlFor="contact-email">Your Email</FormLabel>
                   </FormItem>
                 )}
               />
@@ -93,9 +94,9 @@ export function ContactForm() {
                 render={({ field }) => (
                   <FormItem className="neumorphic-input-box">
                     <FormControl>
-                      <input type="text" {...field} required />
+                      <input type="text" {...field} required id="contact-message"/>
                     </FormControl>
-                     <span>Your Message</span>
+                     <FormLabel htmlFor="contact-message">Your Message</FormLabel>
                   </FormItem>
                 )}
               />
@@ -112,7 +113,3 @@ export function ContactForm() {
     </div>
   );
 }
-
-    
-
-    

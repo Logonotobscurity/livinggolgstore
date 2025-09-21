@@ -157,11 +157,11 @@ export default function SubscriptionModal() {
                 name="phone"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="sr-only">Phone Number</FormLabel>
+                    <FormLabel className="sr-only">Phone Number (Optional)</FormLabel>
                     <FormControl>
                       <Input
                         type="tel"
-                        placeholder="Phone Number"
+                        placeholder="Phone Number (Optional)"
                         {...field}
                         className="bg-background border-border text-foreground placeholder:text-muted-foreground focus:border-primary"
                       />
