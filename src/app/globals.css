@@ -584,8 +584,8 @@
   margin-left: 10px;
 }
 
-.neumorphic-input-box input:valid~span,
-.neumorphic-input-box input:focus~span {
+.neumorphic-input-box:has(input:valid) span,
+.neumorphic-input-box:has(input:focus) span {
   transform: translateX(113px) translateY(-15px);
   font-size: 0.8em;
   padding: 5px 10px;
@@ -595,8 +595,8 @@
   border: 2px;
 }
 
-.neumorphic-input-box input:valid,
-.neumorphic-input-box input:focus {
+.neumorphic-input-box:has(input:valid) input,
+.neumorphic-input-box:has(input:focus) input {
   border: 2px solid hsl(var(--primary));
   border-radius: 8px;
 }
@@ -627,3 +627,4 @@
     
 
     
+
