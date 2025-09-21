@@ -15,6 +15,7 @@ import ShareModal from '@/components/share-modal';
 import { useState } from 'react';
 import { ProductSupport } from '@/components/product-support';
 import { useToast } from '@/hooks/use-toast';
+import { ProductReviewForm } from '@/components/product-review-form';
 
 interface ProductClientProps {
     product: ImagePlaceholder;
@@ -143,6 +144,17 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
                 ))}
             </div>
         </div>
+
+        <div className="border-t border-primary/30 my-24" />
+
+        <section id="reviews" aria-labelledby="reviews-heading">
+          <div className="max-w-3xl mx-auto">
+            <h2 id="reviews-heading" className="font-headline text-2xl md:text-3xl font-bold text-center mb-12 uppercase">
+              Write a Review
+            </h2>
+            <ProductReviewForm productName={product.title || 'this product'} />
+          </div>
+        </section>
 
         <ProductSupport />
 

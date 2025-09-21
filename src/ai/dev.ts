@@ -4,3 +4,4 @@ config();
 import '@/ai/flows/enhance-hover-animations.ts';
 import '@/ai/flows/enhance-image.ts';
 import '@/ai/flows/product-search.ts';
+import '@/ai/flows/generate-review-suggestion.ts';
