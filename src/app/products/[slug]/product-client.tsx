@@ -61,7 +61,7 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
       slug: product.slug,
     });
     toast({
-      title: 'Added to Cart',
+      title: 'Added to Quote Cart',
       description: product.title,
     });
   };
@@ -129,7 +129,7 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
             <p className="text-3xl md:text-4xl font-bold text-primary mb-8">{formatPrice(product.price)}</p>
 
             <div className="flex items-stretch gap-2 sm:gap-4 mb-8">
-                <Button variant="destructive" size="lg" className="flex-grow" onClick={handleAddToCart} showIcon>Add to Cart</Button>
+                <Button variant="destructive" size="lg" className="flex-grow" onClick={handleAddToCart} showIcon>Add to Quote Cart</Button>
                 <Button 
                   variant="outline" 
                   size="icon" 

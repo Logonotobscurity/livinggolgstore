@@ -89,7 +89,7 @@ export function CategoryCard({
                 <Button 
                   variant="outline" 
                   size="icon" 
-                  aria-label="Add to wishlist" 
+                  aria-label={isWishlisted ? "Remove from wishlist" : "Add to wishlist"}
                   className="w-8 h-8 bg-black/50 hover:bg-black"
                   onClick={handleWishlistToggle}
                 >
@@ -125,7 +125,7 @@ export function CategoryCard({
               {product.title}
             </h3>
             <NewCtaButton>
-                Shop now
+                Browse collection
             </NewCtaButton>
           </div>
         </>

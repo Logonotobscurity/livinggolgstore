@@ -104,7 +104,7 @@ export default function Header() {
                   </Link>
                 </>
               )}
-              <Link href="/cart" aria-label="Shopping Cart" className="p-2 rounded-full hover:bg-accent block relative">
+              <Link href="/cart" aria-label="Quote Cart" className="p-2 rounded-full hover:bg-accent block relative">
                 <Icons.shoppingCart className="h-5 w-5" />
                 {totalItemsCount > 0 && (
                   <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-[10px] rounded-full h-4 w-4 flex items-center justify-center" aria-label={`${totalItemsCount} items in cart`}>

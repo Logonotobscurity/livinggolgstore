@@ -42,7 +42,7 @@ export function RelatedProductCard({ product, className }: RelatedProductCardPro
               {product.title}
             </h3>
             <NewCtaButton>
-              View product
+              View Product
             </NewCtaButton>
           </div>
         </>

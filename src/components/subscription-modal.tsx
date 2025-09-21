@@ -13,6 +13,7 @@ import {
   DialogDescription,
   DialogFooter,
 } from '@/components/ui/dialog';
+import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerFooter } from '@/components/ui/drawer';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
@@ -28,6 +29,7 @@ import {
 } from '@/components/ui/form';
 import { cn } from '@/lib/utils';
 import { LivingGoldWordmark } from './logo';
+import { useResponsive } from '@/hooks/use-responsive';
 
 const subscriptionFormSchema = z.object({
   email: z.string().email({ message: 'Please enter a valid email address.' }),
@@ -44,9 +46,9 @@ export default function SubscriptionModal() {
   const [isDeclined, setIsDeclined] = useState(false);
   const { toast } = useToast();
   const [isPending, startTransition] = useTransition();
+  const { isMobile } = useResponsive();
 
   useEffect(() => {
-    // This entire effect should only run on the client
     if (typeof window === 'undefined') return;
 
     const hasBeenDismissed = localStorage.getItem(MODAL_DISMISSED_KEY);
@@ -54,19 +56,17 @@ export default function SubscriptionModal() {
 
     if (hasBeenDeclined) {
       setIsDeclined(true);
-      return; // If declined, just show the sticky button. Don't open modal.
+      return;
     }
 
     if (!hasBeenDismissed) {
       const handleScroll = () => {
-        // Show after scrolling 25% of the page
         if (window.scrollY > document.documentElement.scrollHeight * 0.25) {
           setIsOpen(true);
           window.removeEventListener('scroll', handleScroll);
         }
       };
 
-      // Show after 5 seconds
       const timer = setTimeout(() => {
         setIsOpen(true);
         window.removeEventListener('scroll', handleScroll);
@@ -98,7 +98,6 @@ export default function SubscriptionModal() {
           description: result.message,
         });
         localStorage.setItem(MODAL_DISMISSED_KEY, 'true');
-        // If they subscribe, they are no longer "declined"
         localStorage.removeItem(MODAL_DECLINED_KEY); 
         setIsOpen(false);
         setIsDeclined(false);
@@ -119,72 +118,100 @@ export default function SubscriptionModal() {
     setIsOpen(false);
   };
 
-  return (
+  const FormContent = () => (
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 px-4 sm:px-0">
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="sr-only">Email Address</FormLabel>
+              <FormControl>
+                <Input
+                  type="email"
+                  placeholder="Email Address"
+                  {...field}
+                  className="bg-background border-border text-foreground placeholder:text-muted-foreground focus:border-primary"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="phone"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel className="sr-only">Phone Number (Optional)</FormLabel>
+              <FormControl>
+                <Input
+                  type="tel"
+                  placeholder="Phone Number (Optional)"
+                  {...field}
+                  className="bg-background border-border text-foreground placeholder:text-muted-foreground focus:border-primary"
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Button
+          type="submit"
+          size="lg"
+          className="w-full !mt-6"
+          disabled={isPending}
+        >
+          {isPending ? (
+            <Icons.loader className="h-4 w-4 animate-spin" />
+          ) : (
+            'Continue'
+          )}
+        </Button>
+      </form>
+    </Form>
+  );
+
+  const renderContent = (isDrawer: boolean) => (
     <>
-      <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="bg-secondary text-foreground w-[90vw] rounded-lg sm:max-w-md p-6 sm:p-8">
-          <DialogHeader className="text-center">
+      {isDrawer ? (
+        <DrawerHeader className="text-center">
             <LivingGoldWordmark className="h-12 w-auto mx-auto mb-4 text-primary" />
-            <DialogTitle className="font-headline text-3xl sm:text-4xl font-bold text-primary mb-2">
-              10% Off
-            </DialogTitle>
+            <DrawerTitle className="font-headline text-3xl font-bold text-primary mb-2">10% Off</DrawerTitle>
+            <DrawerDescription className="text-sm text-muted-foreground">
+                Sign up for LIVING GOLD email + texts to save 10% on your order.
+            </DrawerDescription>
+        </DrawerHeader>
+      ) : (
+        <DialogHeader className="text-center">
+            <LivingGoldWordmark className="h-12 w-auto mx-auto mb-4 text-primary" />
+            <DialogTitle className="font-headline text-3xl sm:text-4xl font-bold text-primary mb-2">10% Off</DialogTitle>
             <DialogDescription className="text-sm text-muted-foreground">
-              Sign up for LIVING GOLD email + texts to save 10% on your order.
+                Sign up for LIVING GOLD email + texts to save 10% on your order.
             </DialogDescription>
-          </DialogHeader>
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 mt-4">
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="sr-only">Email Address</FormLabel>
-                    <FormControl>
-                      <Input
-                        type="email"
-                        placeholder="Email Address"
-                        {...field}
-                        className="bg-background border-border text-foreground placeholder:text-muted-foreground focus:border-primary"
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="phone"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="sr-only">Phone Number (Optional)</FormLabel>
-                    <FormControl>
-                      <Input
-                        type="tel"
-                        placeholder="Phone Number (Optional)"
-                        {...field}
-                        className="bg-background border-border text-foreground placeholder:text-muted-foreground focus:border-primary"
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <Button
-                type="submit"
-                size="lg"
-                className="w-full !mt-6"
-                disabled={isPending}
-              >
-                {isPending ? (
-                  <Icons.loader className="h-4 w-4 animate-spin" />
-                ) : (
-                  'Continue'
-                )}
-              </Button>
-            </form>
-          </Form>
-          <DialogFooter className="mt-4 flex-col sm:flex-col sm:space-x-0">
+        </DialogHeader>
+      )}
+
+      <div className="mt-4">
+        <FormContent />
+      </div>
+
+      {isDrawer ? (
+        <DrawerFooter className="pt-4">
+            <Button
+              variant="link"
+              className="text-muted-foreground hover:text-foreground"
+              onClick={handleDecline}
+            >
+              Decline Offer
+            </Button>
+            <p className="text-xs text-muted-foreground/80 text-center">
+              *Some brands are excluded, see qualifying designs.
+            </p>
+        </DrawerFooter>
+      ) : (
+        <DialogFooter className="mt-4 flex-col sm:flex-col sm:space-x-0">
             <Button
               variant="link"
               className="text-muted-foreground hover:text-foreground"
@@ -195,9 +222,26 @@ export default function SubscriptionModal() {
             <p className="text-xs text-muted-foreground/80 text-center mt-4">
               *Some brands are excluded, see qualifying designs.
             </p>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
+        </DialogFooter>
+      )}
+    </>
+  );
+
+  return (
+    <>
+      {isMobile ? (
+        <Drawer open={isOpen} onOpenChange={setIsOpen}>
+          <DrawerContent className="bg-secondary text-foreground p-4">
+            {renderContent(true)}
+          </DrawerContent>
+        </Drawer>
+      ) : (
+        <Dialog open={isOpen} onOpenChange={setIsOpen}>
+          <DialogContent className="bg-secondary text-foreground w-[90vw] rounded-lg sm:max-w-md p-6 sm:p-8">
+            {renderContent(false)}
+          </DialogContent>
+        </Dialog>
+      )}
       
       <div
         className={cn(
