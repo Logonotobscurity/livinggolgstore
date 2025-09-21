@@ -27,7 +27,7 @@ export default function Hero() {
                 <span className="animated-word">AND EXQUISITE FINDS</span>
             </h1>
             <Button asChild size="lg" showIcon className="animate-fade-in-up" style={{ animationDelay: '1.2s', animationFillMode: 'backwards' }}>
-              <Link href="/products/room-settings">
+              <Link href="/inspiration-services">
                 Shop Living Gold Finds
               </Link>
             </Button>
