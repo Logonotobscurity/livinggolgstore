@@ -12,10 +12,11 @@ import { cn } from '@/lib/utils';
 import { useCart } from '@/context/cart-context';
 import { useWishlist } from '@/context/wishlist-context';
 import ShareModal from '@/components/share-modal';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ProductSupport } from '@/components/product-support';
 import { useToast } from '@/hooks/use-toast';
 import { ProductReviewForm } from '@/components/product-review-form';
+import { getAverageRating } from '@/lib/reviews';
 
 interface ProductClientProps {
     product: ImagePlaceholder;
@@ -26,7 +27,22 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
   const { addToCart } = useCart();
   const { toggleWishlist, isInWishlist } = useWishlist();
   const [isShareModalOpen, setShareModalOpen] = useState(false);
+  const [ratingInfo, setRatingInfo] = useState({ average: 4.5, count: 12 });
   const { toast } = useToast();
+
+  useEffect(() => {
+    const fetchRating = async () => {
+      const newRatingInfo = await getAverageRating(product.title || 'this product');
+      setRatingInfo(newRatingInfo);
+    };
+    fetchRating();
+  }, [product.title]);
+
+  const handleReviewSubmit = async () => {
+    // Re-fetch the average rating after a review is submitted
+    const newRatingInfo = await getAverageRating(product.title || 'this product');
+    setRatingInfo(newRatingInfo);
+  };
 
   const formatPrice = (price?: string) => {
     if (!price) return 'Contact for price';
@@ -67,6 +83,23 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
   };
 
   const isWishlisted = isInWishlist(product.id);
+  
+  const renderStars = () => {
+    const stars = [];
+    const roundedAverage = Math.round(ratingInfo.average);
+    for (let i = 1; i <= 5; i++) {
+      stars.push(
+        <Icons.star
+          key={i}
+          className={cn(
+            'w-5 h-5',
+            i <= roundedAverage ? 'fill-current text-primary' : 'fill-muted-foreground/50 text-muted-foreground/50'
+          )}
+        />
+      );
+    }
+    return stars;
+  };
 
   return (
     <div className="flex flex-col min-h-screen bg-transparent text-foreground">
@@ -88,13 +121,9 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
             
             <div className="flex items-center mb-6">
               <div className="flex items-center text-primary">
-                <Icons.star className="w-5 h-5 fill-current" />
-                <Icons.star className="w-5 h-5 fill-current" />
-                <Icons.star className="w-5 h-5 fill-current" />
-                <Icons.star className="w-5 h-5 fill-current" />
-                <Icons.star className="w-5 h-5 fill-muted-foreground/50" />
+                {renderStars()}
               </div>
-              <span className="ml-3 text-sm text-muted-foreground">(12 Reviews)</span>
+              <span className="ml-3 text-sm text-muted-foreground">({ratingInfo.count} Reviews)</span>
             </div>
 
             <p className="text-3xl md:text-4xl font-bold text-primary mb-8">{formatPrice(product.price)}</p>
@@ -152,7 +181,10 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
             <h2 id="reviews-heading" className="font-headline text-2xl md:text-3xl font-bold text-center mb-12 uppercase">
               Write a Review
             </h2>
-            <ProductReviewForm productName={product.title || 'this product'} />
+            <ProductReviewForm 
+              productName={product.title || 'this product'}
+              onReviewSubmit={handleReviewSubmit}
+            />
           </div>
         </section>
 

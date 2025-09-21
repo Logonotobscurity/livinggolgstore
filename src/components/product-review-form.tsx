@@ -12,11 +12,12 @@ import { addReview } from '@/lib/reviews';
 
 interface ProductReviewFormProps {
   productName: string;
+  onReviewSubmit?: () => void;
 }
 
 type SuggestionTone = 'eloquent' | 'concise' | 'enthusiastic';
 
-export function ProductReviewForm({ productName }: ProductReviewFormProps) {
+export function ProductReviewForm({ productName, onReviewSubmit }: ProductReviewFormProps) {
   const [rating, setRating] = useState(0);
   const [reviewText, setReviewText] = useState('');
   const [suggestion, setSuggestion] = useState('');
@@ -86,6 +87,8 @@ export function ProductReviewForm({ productName }: ProductReviewFormProps) {
         title: 'Review Submitted!',
         description: 'Thank you for your feedback.',
       });
+      
+      onReviewSubmit?.();
 
       setRating(0);
       setReviewText('');

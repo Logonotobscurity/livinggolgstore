@@ -19,7 +19,7 @@ const reviews: Review[] = [
   {
     body: 'The quality and craftsmanship of the pieces from Living Gold are unparalleled. Each item tells a story and brings a sense of history and soul into the home.',
     author: 'K. Bello, Homeowner',
-    rating: 5,
+    rating: 4,
     productName: 'General'
   },
   {
@@ -43,7 +43,7 @@ const reviews: Review[] = [
   {
     body: 'I appreciate the attention to detail and the clear communication throughout the import process. Living Gold makes sourcing luxury international lighting effortless.',
     author: 'T. Ibrahim, Procurement Manager',
-    rating: 5,
+    rating: 4,
     productName: 'General'
   },
 ];
@@ -57,6 +57,40 @@ export async function getReviews(): Promise<Review[]> {
   await new Promise(resolve => setTimeout(resolve, 100));
   return reviews;
 }
+
+/**
+ * MOCK: Retrieves all reviews for a specific product.
+ */
+export async function getReviewsByProduct(productName: string): Promise<Review[]> {
+  // Simulate network delay
+  await new Promise(resolve => setTimeout(resolve, 50));
+  return reviews.filter(r => r.productName === productName);
+}
+
+
+/**
+ * MOCK: Calculates the average rating for a product.
+ */
+export async function getAverageRating(productName: string): Promise<{ average: number; count: number }> {
+    const productReviews = await getReviewsByProduct(productName);
+    
+    // Add some baseline reviews for products that don't have any yet
+    const baseReviews = [4, 5, 4, 5, 5, 4, 3, 5, 4, 5, 5, 4];
+    const allRatings = [...baseReviews, ...productReviews.map(r => r.rating)];
+
+    if (allRatings.length === 0) {
+        return { average: 4.5, count: 12 };
+    }
+
+    const sum = allRatings.reduce((acc, rating) => acc + rating, 0);
+    const average = sum / allRatings.length;
+    
+    return {
+        average: Math.round(average * 10) / 10, // Round to one decimal place
+        count: allRatings.length
+    };
+}
+
 
 /**
  * MOCK: Adds a new review to the "database".
