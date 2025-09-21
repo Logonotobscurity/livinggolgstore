@@ -72,31 +72,31 @@ export const sitemap: NavItem[] = [
     items: [
       {
         title: "Downrods",
-        href: "/products/accessories",
+        href: "/products/fanimation-downrod",
         icon: Icons.plus,
         description: "Extend your ceiling fans.",
       },
       {
         title: "Remotes & Controls",
-        href: "/products/accessories",
+        href: "/products/casablanca-remote",
         icon: Icons.radio,
         description: "Control your lighting with ease.",
       },
       {
         title: "LED Bulbs",
-        href: "/products/architectural-lighting",
+        href: "/products/buster-punch-led-bulb",
         icon: Icons.lightbulb,
         description: "Energy-efficient and stylish bulbs.",
       },
       {
         title: "Dimmers & Outlets",
-        href: "/products/architectural-lighting",
+        href: "/products/buster-punch-dimmer",
         icon: Icons.toggleRight,
         description: "Complete your electrical setup.",
       },
       {
         title: "Exhaust Fans",
-        href: "/products/accessories",
+        href: "/products/aero-pure-exhaust-fan",
         icon: Icons.fan,
         description: "For bathrooms and utility rooms.",
       },
