@@ -71,7 +71,7 @@ export default function WishlistPage() {
                                 className="mt-4 w-full"
                                 onClick={() => handleAddToCart(item)}
                               >
-                                Add to Cart
+                                Add to Quote Cart
                               </Button>
                         </div>
                     ))}

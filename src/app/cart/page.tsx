@@ -62,7 +62,7 @@ export default function CartPage() {
                 <div className="text-center py-16">
                     <p className="text-xl mb-8">Your cart is empty.</p>
                     <Button variant="outline" asChild>
-                        <Link href="/">Continue Shopping</Link>
+                        <Link href="/">Discover Our Collections</Link>
                     </Button>
                 </div>
             ) : (

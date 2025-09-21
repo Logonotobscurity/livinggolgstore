@@ -20,7 +20,7 @@ export default function Newsletter() {
           <form className="flex mb-6">
             <Input
               type="email"
-              placeholder="Enter your email"
+              placeholder="Your email address..."
               className="bg-background border-muted-foreground border-r-0 rounded-r-none flex-1 placeholder:text-muted-foreground"
             />
             <Button type="submit" size="icon" className="rounded-l-none bg-primary hover:bg-yellow-600">
