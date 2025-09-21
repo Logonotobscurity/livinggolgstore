@@ -439,7 +439,8 @@
       "title": "Accessories",
       "description": "A collection of lighting accessories.",
       "imageUrl": "https://www.visualcomfort.com/us/media_143eb42f1a41f910ddc5fd7a05ca03c47c3decf3e.png",
-      "imageHint": "lighting accessories"
+      "imageHint": "lighting accessories",
+      "subItems": ["Downrods", "Remotes", "Desk Fans", "Exhaust Fans"]
     },
     {
       "id": "linear-suspension-hero",
