@@ -53,12 +53,14 @@ export const sitemap: NavItem[] = [
     items: [
       { 
         title: "Table & Portable Lights", 
-        href: "/products/lamps", 
+        href: "/products/lamps",
+        icon: Icons.lamp,
         description: "Versatile lamps for any surface." 
       },
       { 
         title: "Floor Lamps", 
-        href: "/products/lamps", 
+        href: "/products/lamps",
+        icon: Icons.lamp,
         description: "Elegant floor-standing lights." 
       },
     ]
@@ -71,38 +73,44 @@ export const sitemap: NavItem[] = [
       {
         title: "Downrods",
         href: "/products/accessories",
+        icon: Icons.plus,
         description: "Extend your ceiling fans.",
       },
       {
         title: "Remotes & Controls",
         href: "/products/accessories",
+        icon: Icons.radio,
         description: "Control your lighting with ease.",
       },
       {
         title: "LED Bulbs",
         href: "/products/architectural-lighting",
+        icon: Icons.lightbulb,
         description: "Energy-efficient and stylish bulbs.",
       },
       {
         title: "Dimmers & Outlets",
         href: "/products/architectural-lighting",
+        icon: Icons.toggleRight,
         description: "Complete your electrical setup.",
       },
       {
         title: "Exhaust Fans",
         href: "/products/accessories",
+        icon: Icons.fan,
         description: "For bathrooms and utility rooms.",
       },
       {
         title: "See All Accessories",
         href: "/products/accessories",
+        icon: Icons.arrowRight,
         description: "Browse our full range.",
       },
     ],
   },
   {
     title: "Design Studio",
-    href: "/inspiration-services",
+    href: "/design-studio",
   },
   {
     title: "Projects",

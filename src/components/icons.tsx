@@ -161,4 +161,13 @@ export const Icons = {
   sun: (props: IconProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
   ),
+  radio: (props: IconProps) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" {...props}><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/><path d="M7.8 16.2c-2.1-2.1-2.1-5.6 0-7.8"/><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8c2.1 2.1 2.1 5.6 0 7.8"/><path d="M19.1 4.9C23 8.8 23 15.2 19.1 19.1"/></svg>
+  ),
+  toggleRight: (props: IconProps) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" {...props}><rect width="20" height="12" x="2" y="6" rx="6" ry="6"/><circle cx="16" cy="12" r="2"/></svg>
+  ),
+  fan: (props: IconProps) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" {...props}><path d="M10.12 4.01a1.5 1.5 0 0 0-2.24 0L3.33 8.56A1.5 1.5 0 0 0 4.4 11h15.2a1.5 1.5 0 0 0 1.07-2.44Z"/><path d="M13.88 19.99a1.5 1.5 0 0 0 2.24 0l4.55-4.55a1.5 1.5 0 0 0-1.07-2.44H4.4a1.5 1.5 0 0 0-1.07 2.44Z"/><path d="M12 12v.01"/></svg>
+  ),
 };
