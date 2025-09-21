@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import CmsLayout from '@/components/layout/cms-layout';
 import Image from 'next/image';

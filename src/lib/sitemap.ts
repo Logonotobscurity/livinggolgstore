@@ -82,7 +82,7 @@ export const sitemap: NavItem[] = [
   },
   {
     title: "Design Studio",
-    href: "/design-studio",
+    href: "/inspiration-services",
   },
   {
     title: "Projects",

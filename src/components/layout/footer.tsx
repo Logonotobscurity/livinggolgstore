@@ -16,7 +16,7 @@ export default function Footer() {
   const shopLinks = sitemap.slice(0, 3);
   const companyLinks = [
     { title: 'About Us', href: '/about' },
-    { title: 'Design Studio', href: '/design-studio' },
+    { title: 'Design Studio', href: '/inspiration-services' },
     { title: 'Projects', href: '/projects' },
     { title: 'Contact Us', href: '/contact' },
   ];

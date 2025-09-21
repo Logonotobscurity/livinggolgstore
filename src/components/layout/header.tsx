@@ -38,7 +38,7 @@ export default function Header() {
                   About
                 </Link>
                 <span className="text-muted-foreground">|</span>
-                <Link href="/design-studio" className="link-underline transition-colors">
+                <Link href="/inspiration-services" className="link-underline transition-colors">
                   Design Studio
                 </Link>
               </nav>
