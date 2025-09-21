@@ -36,7 +36,7 @@ export default function Footer() {
         </p>
 
         <div className="border-t border-primary/30 mt-16 pt-12">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 {/* Shop Links */}
                 <div className="col-span-1">
                     <h3 className="font-bold text-primary mb-4">SHOP</h3>
@@ -68,7 +68,7 @@ export default function Footer() {
                 </div>
 
                 {/* Contact Us */}
-                <div className="col-span-2 md:col-span-3 lg:col-span-2">
+                <div className="col-span-1">
                     <h3 className="font-bold text-primary mb-4">CONTACT US</h3>
                      <div className="text-sm text-muted-foreground space-y-3">
                         <p>Living Gold Lighting,<br />Okpanam Road, Asaba,<br />Delta State, Nigeria</p>
