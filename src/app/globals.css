@@ -53,7 +53,7 @@
     @apply border-border;
   }
   body {
-    @apply text-foreground;
+    @apply text-foreground bg-background text-lg font-medium;
   }
    .link-underline {
       @apply relative inline-block;
@@ -178,8 +178,9 @@
   }
   
   .cms-page .text-wrapper p {
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.75rem;
+    font-weight: 500;
   }
   
   .cms-page .text-wrapper .left-border p {
@@ -187,8 +188,9 @@
   }
   
   .cms-page .text-wrapper .align-left p:last-of-type {
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.75rem;
+    font-weight: 500;
   }
 
   .cms-page h1, .cms-page .text-wrapper .align-left h1 {
