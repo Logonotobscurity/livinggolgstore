@@ -56,13 +56,19 @@ export default function Header() {
                         <Icons.menu className="h-6 w-6" />
                         </button>
                     </SheetTrigger>
-                    <SheetContent side="left" className="bg-background w-3/4 p-0">
-                        <MobileNavMenu 
-                            onSearchClick={() => {
-                                setMobileMenuOpen(false);
-                                setSearchModalOpen(true);
-                            }}
-                        />
+                    <SheetContent side="left" className="bg-transparent w-3/4 p-0">
+                        <div className="relative h-full bg-background/95 backdrop-blur-sm">
+                            <div className="absolute top-0 left-0 right-0 bottom-0 bg-[radial-gradient(circle_at_20%_80%,_rgba(201,169,97,0.08)_0%,_transparent_50%),radial-gradient(circle_at_80%_20%,_rgba(201,169,97,0.08)_0%,_transparent_50%)]"></div>
+                            <div className="absolute inset-0 bg-[linear-gradient(90deg,_transparent_0%,_rgba(201,169,97,0.02)_50%,_transparent_100%),linear-gradient(0deg,_rgba(0,0,0,0.1)_0%,_transparent_30%)] pointer-events-none"></div>
+                            <div className="relative h-full">
+                                <MobileNavMenu 
+                                    onSearchClick={() => {
+                                        setMobileMenuOpen(false);
+                                        setSearchModalOpen(true);
+                                    }}
+                                />
+                            </div>
+                        </div>
                     </SheetContent>
                 </Sheet>
                 )}
@@ -70,7 +76,7 @@ export default function Header() {
 
             <div className={`flex-1 flex justify-center`}>
               <Link href="/" aria-label="LIVING GOLD Home">
-                <LivingGoldWordmark className="h-9 md:h-12 w-auto" />
+                <LivingGoldWordmark className="h-9 w-auto" />
                 <span className="sr-only">LIVING GOLD</span>
               </Link>
             </div>
