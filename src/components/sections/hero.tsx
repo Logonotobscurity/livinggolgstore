@@ -27,7 +27,7 @@ export default function Hero() {
                 <span className="animated-word">AND EXQUISITE FINDS</span>
             </h1>
             <Button asChild size="lg" showIcon className="animate-fade-in-up" style={{ animationDelay: '1.2s' }}>
-              <Link href="/inspiration-services">
+              <Link href="/projects">
                 Shop Living Gold Finds
               </Link>
             </Button>

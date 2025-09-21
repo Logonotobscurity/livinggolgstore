@@ -28,8 +28,8 @@ export default function TradesAndServices() {
             </p>
             <div className="flex justify-center md:justify-start">
                 <Button asChild size="lg" showIcon>
-                <Link href="/inspiration-services">
-                    Explore Inspiration & Services
+                <Link href="/design-studio">
+                    Explore Our Services
                 </Link>
                 </Button>
             </div>

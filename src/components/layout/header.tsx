@@ -38,8 +38,8 @@ export default function Header() {
                   About
                 </Link>
                 <span className="text-muted-foreground">|</span>
-                <Link href="/inspiration-services" className="link-underline transition-colors">
-                  Inspiration & Services
+                <Link href="/design-studio" className="link-underline transition-colors">
+                  Design Studio
                 </Link>
               </nav>
               {!isMobile && <ThemeToggle />}
