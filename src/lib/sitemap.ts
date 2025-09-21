@@ -71,32 +71,32 @@ export const sitemap: NavItem[] = [
     icon: Icons.lightbulb,
     items: [
       {
-        title: "Downrods",
-        href: "/products/fanimation-downrod",
-        icon: Icons.plus,
-        description: "Extend your ceiling fans.",
+        title: "Ceiling Fans",
+        href: "/products/fans",
+        icon: Icons.fan,
+        description: "Stylish and functional ceiling fans.",
+      },
+      {
+        title: "Architectural Lighting",
+        href: "/products/architectural",
+        icon: Icons.lightbulb,
+        description: "Recessed, track, and specialty lights.",
       },
       {
         title: "Remotes & Controls",
-        href: "/products/casablanca-remote",
+        href: "/products/accessories",
         icon: Icons.radio,
         description: "Control your lighting with ease.",
       },
       {
-        title: "LED Bulbs",
-        href: "/products/buster-punch-led-bulb",
-        icon: Icons.lightbulb,
-        description: "Energy-efficient and stylish bulbs.",
-      },
-      {
-        title: "Dimmers & Outlets",
-        href: "/products/buster-punch-dimmer",
+        title: "Specialty Bulbs & Dimmers",
+        href: "/products/accessories",
         icon: Icons.toggleRight,
         description: "Complete your electrical setup.",
       },
       {
         title: "Exhaust Fans",
-        href: "/products/aero-pure-exhaust-fan",
+        href: "/products/accessories",
         icon: Icons.fan,
         description: "For bathrooms and utility rooms.",
       },
@@ -117,3 +117,5 @@ export const sitemap: NavItem[] = [
     href: "/projects",
   },
 ];
+
+    

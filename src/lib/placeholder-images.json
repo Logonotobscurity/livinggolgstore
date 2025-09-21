@@ -5,7 +5,7 @@
       "id": "chandeliers-pendants-1",
       "slug": "roll-and-hill-modo-chandelier",
       "title": "Modo 3 Sided Chandelier",
-      "category": "lighting",
+      "category": "chandeliers-pendants",
       "description": "Roll & Hill Modo 3 Sided Chandelier in Black with Smoke glass.",
       "imageUrl": "https://www.visualcomfort.com/us/media_1ca5cfae13c33d1604e6137eac66229699a61570d.png",
       "imageHint": "modern chandelier"
@@ -14,7 +14,7 @@
       "id": "chandeliers-pendants-2",
       "slug": "visual-comfort-spur-chandelier",
       "title": "Spur LED Chandelier",
-      "category": "lighting",
+      "category": "chandeliers-pendants",
       "description": "Visual Comfort Modern Spur LED Chandelier in black.",
       "imageUrl": "https://www.visualcomfort.com/us/media_1bb8fa785cb9857124437ac5971761441894d09f1.png",
       "imageHint": "LED chandelier"
@@ -23,7 +23,7 @@
       "id": "chandeliers-pendants-3",
       "slug": "101-copenhagen-stingray-chandelier",
       "title": "Stingray Chandelier",
-      "category": "lighting",
+      "category": "chandeliers-pendants",
       "description": "101 Copenhagen Stingray Chandelier, an artistic centerpiece.",
       "imageUrl": "https://www.visualcomfort.com/us/media_1d7526370753c091fbe83d5f65809dbfb9393ad09.png",
       "imageHint": "artistic chandelier"
@@ -32,7 +32,7 @@
       "id": "chandeliers-pendants-4",
       "slug": "luceplan-j-us-chandelier",
       "title": "J-US LED Chandelier",
-      "category": "lighting",
+      "category": "chandeliers-pendants",
       "description": "Luceplan J-US LED Chandelier with 18 arms.",
       "imageUrl": "https://www.visualcomfort.com/us/media_106d184e2dc419de0c2ee5a84b34e3f6baa4cad6e.png",
       "imageHint": "large chandelier"
@@ -41,7 +41,7 @@
       "id": "chandeliers-pendants-5",
       "slug": "louis-poulsen-ph-5-pendant",
       "title": "PH 5 Pendant Light",
-      "category": "lighting",
+      "category": "chandeliers-pendants",
       "description": "Louis Poulsen PH 5 Pendant Light in Monochrome Black.",
       "imageUrl": "https://www.visualcomfort.com/us/media_1ae2bb81e1e494e580143f405c278b8cd74dc0125.png",
       "imageHint": "pendant light"
@@ -50,7 +50,7 @@
       "id": "chandeliers-pendants-6",
       "slug": "lodes-random-stick-suspension",
       "title": "Random Stick Linear Suspension",
-      "category": "lighting",
+      "category": "linear-suspension",
       "description": "LODES Random Stick LED Linear Suspension in Black Chrome.",
       "imageUrl": "https://www.visualcomfort.com/us/nav-collections/media_144f8b356188349cf1ce23efda0f5d2a01bf7b5f1.png",
       "imageHint": "linear suspension"
@@ -59,7 +59,7 @@
       "id": "chandeliers-pendants-7",
       "slug": "matthew-mccormick-cascadia-pendant",
       "title": "Cascadia LED Mini Pendant",
-      "category": "lighting",
+      "category": "chandeliers-pendants",
       "description": "Matthew McCormick Studio Cascadia LED Mini Pendant.",
       "imageUrl": "https://www.visualcomfort.com/us/nav-collections/media_158e7f372c3d350de41fcbb79e15d3d013f8c8a3d.png",
       "imageHint": "mini pendant"
@@ -68,7 +68,7 @@
       "id": "chandeliers-pendants-8",
       "slug": "hubbardton-forge-snaps-pendant",
       "title": "SNAPS Large LED Pendant",
-      "category": "lighting",
+      "category": "chandeliers-pendants",
       "description": "Hubbardton Forge SNAPS Large LED Pendant in white and brass.",
       "imageUrl": "https://www.visualcomfort.com/us/nav-collections/media_1fa1ff33be224dd4cee9026289c8d977397c42839.png",
       "imageHint": "LED pendant"
@@ -77,7 +77,7 @@
       "id": "chandeliers-pendants-9",
       "slug": "kuzco-kona-outdoor-pendant",
       "title": "Kona Outdoor Pendant",
-      "category": "lighting",
+      "category": "outdoor",
       "description": "Kuzco Lighting Kona Outdoor Pendant.",
       "imageUrl": "https://www.visualcomfort.com/us/nav-collections/media_1cc6eee09ef4acf2403bb1dbca9d51a961d7fa921.png",
       "imageHint": "outdoor pendant"
@@ -86,7 +86,7 @@
       "id": "chandeliers-pendants-10",
       "slug": "lodes-cono-di-luce-pendant",
       "title": "Cono di Luce Mini Pendant",
-      "category": "lighting",
+      "category": "chandeliers-pendants",
       "description": "LODES Cono di Luce LED Mini Pendant in small gold.",
       "imageUrl": "https://www.visualcomfort.com/media_1f5ee0ed5ce48e29fc834c033d85ac1cf209335fb.png",
       "imageHint": "gold pendant"
@@ -95,7 +95,7 @@
       "id": "chandeliers-pendants-11",
       "slug": "flos-ic-s-pendant",
       "title": "IC S Pendant Light",
-      "category": "lighting",
+      "category": "chandeliers-pendants",
       "description": "FLOS IC S Pendant Light, a modern classic.",
       "imageUrl": "https://www.visualcomfort.com/us/nav-collections/media_1ab41c0bb7ac598d3ec008224fc154ed8cd0f0205.png",
       "imageHint": "modern pendant"
@@ -140,7 +140,7 @@
       "id": "table-lamps-5",
       "slug": "santa-cole-cestita-alubat-lamp",
       "title": "Cestita Alubat Outdoor Lamp",
-      "category": "lamps",
+      "category": "outdoor",
       "description": "Santa & Cole Cestita Alubat LED Outdoor Table Lamp in Black.",
       "imageUrl": "https://www.visualcomfort.com/us/media_1d6716718f545b3a1772283aeb6267cb8ee4908d0.png",
       "imageHint": "outdoor lamp"
@@ -149,7 +149,7 @@
       "id": "table-lamps-6",
       "slug": "houe-light-no1-lamp",
       "title": "Light No.1 Portable Outdoor Lamp",
-      "category": "lamps",
+      "category": "outdoor",
       "description": "Houe Light No.1 Portable Outdoor Lamp in black.",
       "imageUrl": "https://www.visualcomfort.com/us/media_1f3a24db30cc8f1c5e7601c8c108a5fb042745ef3.png",
       "imageHint": "portable lamp"
@@ -221,7 +221,7 @@
       "id": "wall-sconces-5",
       "slug": "flos-ic-outdoor-sconce",
       "title": "IC Outdoor Wall Sconce",
-      "category": "wall",
+      "category": "outdoor",
       "description": "FLOS IC Outdoor Wall Sconce in black.",
       "imageUrl": "https://z2photorankmedia-a.akamaihd.net/media/9/q/4/9q4qd75/normal.jpg",
       "imageHint": "outdoor sconce"
@@ -230,7 +230,7 @@
       "id": "wall-sconces-6",
       "slug": "alder-ore-faraday-sconce",
       "title": "Faraday Outdoor Wall Sconce",
-      "category": "wall",
+      "category": "outdoor",
       "description": "Alder & Ore Faraday Outdoor Wall Sconce in black.",
       "imageUrl": "https://www.visualcomfort.com/us/nav-collections/media_144f8b356188349cf1ce23efda0f5d2a01bf7b5f1.png",
       "imageHint": "outdoor wall light"
@@ -392,7 +392,7 @@
       "id": "specialty-lighting-1",
       "slug": "buster-punch-led-bulb",
       "title": "Gold LED Bulb",
-      "category": "architectural",
+      "category": "accessories",
       "description": "Buster + Punch 5W A-Type Gold LED Bulb, turned on.",
       "imageUrl": "https://www.visualcomfort.com/us/media_19d5146ded7a10d640b1cd044549fb8b593b96cf2.png",
       "imageHint": "gold bulb"
@@ -401,7 +401,7 @@
       "id": "specialty-lighting-2",
       "slug": "buster-punch-dimmer",
       "title": "1-Gang Dimmer",
-      "category": "architectural",
+      "category": "accessories",
       "description": "Buster + Punch 1-Gang Dimmer in Black.",
       "imageUrl": "https://www.visualcomfort.com/media_15dcf65f7d661db39001af963ca4f5884cacf8b9e.png",
       "imageHint": "dimmer switch"
@@ -410,7 +410,7 @@
       "id": "specialty-lighting-3",
       "slug": "buster-punch-duplex-outlet",
       "title": "1-Gang Duplex Outlet",
-      "category": "architectural",
+      "category": "accessories",
       "description": "Buster + Punch 1-Gang Duplex Outlet in Black.",
       "imageUrl": "https://www.visualcomfort.com/media_1e120a3a0d582f383b64c7151ab4ff52d44367102.png",
       "imageHint": "duplex outlet"
@@ -419,7 +419,7 @@
       "id": "specialty-lighting-4",
       "slug": "huxe-fabria-led-mirror",
       "title": "Fabria LED Mirror",
-      "category": "architectural",
+      "category": "accessories",
       "description": "Huxe Fabria LED Mirror in Black.",
       "imageUrl": "https://www.visualcomfort.com/media_1b8d03b4a48dd3ea862fd5853996ca603e8abf279.png",
       "imageHint": "LED mirror"
@@ -499,10 +499,10 @@
     {
       "id": "linear-suspension-hero",
       "slug": "linear-suspension",
-      "category": "lighting",
+      "category": "linear-suspension",
       "title": "Nephele LED Linear Suspension",
       "description": "A collection of linear suspension lighting.",
-      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/6cnhgn4zj3mgtgjx2k8hkm4/Corbett_Lighting_Nephele_LED_Linear_Suspension-188x188-site.png",
+      "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/6cnhgn4zj3mgtgjx2k8hkm4/Corbett_Lighting_Nephele_LED_Linear_Suspension-188x188-site.png?auto=webp&format=png",
       "imageHint": "linear lighting"
     },
     {
@@ -816,19 +816,21 @@
       "slug": "outdoor",
       "title": "Outdoor Luxury Lights & Landscape Lighting in Nigeria",
       "description": "Illuminate your outdoor spaces with our collection of durable and stylish outdoor luxury lights, including wall sconces, path lights, and chandeliers for Nigerian homes.",
-      "heroImage": "lightscape-outdoor"
+      "heroImage": "lightscape-2"
     },
     {
       "slug": "architectural",
       "title": "Shop Architectural Lighting",
       "description": "Discover modern recessed lighting, track lights, and specialty accent lights to create focused, layered illumination in any room.",
-      "heroImage": "lightscape-3"
+      "heroImage": "lightscape-3",
+      "parent": "accessories"
     },
     {
       "slug": "fans",
       "title": "Shop Ceiling Fans with Lights",
       "description": "Explore a collection of elegant and modern ceiling fans with integrated lights. Find the perfect fixture for any room at Living Gold Nigeria.",
-      "heroImage": "room-settings-4"
+      "heroImage": "room-settings-4",
+      "parent": "accessories"
     },
     {
       "slug": "accessories",
@@ -838,3 +840,5 @@
     }
   ]
 }
+
+    
