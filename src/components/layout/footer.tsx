@@ -44,9 +44,6 @@ export default function Footer() {
                         {shopLinks.map(item => (
                             <li key={item.title}><Link href={item.href} className="hover:text-foreground">{item.title}</Link></li>
                         ))}
-                         <li><Link href="/products/accessories" className="hover:text-foreground">Accessories</Link></li>
-                         <li><Link href="/products/outdoor-lighting" className="hover:text-foreground">Outdoor</Link></li>
-                         <li><Link href="/products/room-settings" className="hover:text-foreground">Room Settings</Link></li>
                     </ul>
                 </div>
 
