@@ -784,8 +784,7 @@
       "slug": "lighting",
       "title": "Shop Ceiling Lights, Chandeliers & Pendants",
       "description": "Discover a wide range of ceiling lights, from modern flushmounts to elegant chandeliers and pendants. Shop luxury lighting at Living Gold Nigeria.",
-      "heroImage": "room-settings-1",
-      "parent": "lighting"
+      "heroImage": "room-settings-1"
     },
     {
       "slug": "chandeliers-pendants",
@@ -802,46 +801,40 @@
       "parent": "lighting"
     },
     {
-      "slug": "wall-lights",
+      "slug": "wall",
       "title": "Wall Sconces & Luxury Toilet & Vanity Lights in Nigeria",
       "description": "Explore a collection of stylish wall sconces and modern vanity lights. Find the perfect luxury light for your bathroom or toilet.",
-      "heroImage": "room-settings-6",
-      "parent": "wall"
+      "heroImage": "room-settings-6"
     },
     {
       "slug": "lamps",
       "title": "Shop Table & Floor Lamps",
       "description": "Brighten your space with our curated collection of designer table lamps, floor lamps, and rechargeable portable lights.",
-      "heroImage": "room-settings-2",
-      "parent": "lamps"
+      "heroImage": "room-settings-2"
     },
     {
-      "slug": "outdoor-lighting",
+      "slug": "outdoor",
       "title": "Outdoor Luxury Lights & Landscape Lighting in Nigeria",
       "description": "Illuminate your outdoor spaces with our collection of durable and stylish outdoor luxury lights, including wall sconces, path lights, and chandeliers for Nigerian homes.",
-      "heroImage": "lightscape-outdoor",
-      "parent": "outdoor"
+      "heroImage": "lightscape-outdoor"
     },
     {
-      "slug": "architectural-lighting",
+      "slug": "architectural",
       "title": "Shop Architectural Lighting",
       "description": "Discover modern recessed lighting, track lights, and specialty accent lights to create focused, layered illumination in any room.",
-      "heroImage": "lightscape-3",
-      "parent": "architectural"
+      "heroImage": "lightscape-3"
     },
     {
-      "slug": "ceiling-fans",
+      "slug": "fans",
       "title": "Shop Ceiling Fans with Lights",
       "description": "Explore a collection of elegant and modern ceiling fans with integrated lights. Find the perfect fixture for any room at Living Gold Nigeria.",
-      "heroImage": "room-settings-4",
-      "parent": "fans"
+      "heroImage": "room-settings-4"
     },
     {
       "slug": "accessories",
       "title": "Luxury Light Spare Parts & Accessories in Nigeria",
       "description": "Find essential Nigeria luxury lights spare parts at Living Gold, including downrods, remotes, and specialty bulbs to complete your lighting setup.",
-      "heroImage": "accessories-hero",
-      "parent": "accessories"
+      "heroImage": "accessories-hero"
     }
   ]
 }

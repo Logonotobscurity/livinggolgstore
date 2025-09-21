@@ -155,7 +155,7 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
             </p>
 
              <div className="mt-8 text-sm text-muted-foreground space-y-1">
-                <p><span className="font-semibold text-foreground">Category:</span> Lighting</p>
+                <p><span className="font-semibold text-foreground">Category:</span> {product.category}</p>
                 <p><span className="font-semibold text-foreground">SKU:</span> {product.id.toUpperCase()}</p>
              </div>
           </div>

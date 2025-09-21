@@ -40,7 +40,7 @@ export default function CategoryPage({ params }: { params: { category: string } 
     notFound();
   }
 
-  const products = PlaceHolderImages.filter(p => p.category === category.parent);
+  const products = PlaceHolderImages.filter(p => p.category === category.slug);
   const heroImage = PlaceHolderImages.find(p => p.id === category.heroImage);
 
   return (

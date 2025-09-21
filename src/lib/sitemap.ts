@@ -31,17 +31,17 @@ export const sitemap: NavItem[] = [
       },
       {
         title: "Wall Lights",
-        href: "/products/wall-lights",
+        href: "/products/wall",
         icon: Icons.lampWallUp,
       },
        {
         title: "Outdoor Lighting",
-        href: "/products/outdoor-lighting",
+        href: "/products/outdoor",
         icon: Icons.lightbulb,
       },
       {
         title: "Architectural Lighting",
-        href: "/products/architectural-lighting",
+        href: "/products/architectural",
         icon: Icons.lightbulb,
       },
     ],

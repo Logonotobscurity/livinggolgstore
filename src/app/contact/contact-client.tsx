@@ -86,7 +86,7 @@ export default function ContactClient() {
                   <AccordionItem value="item-3">
                     <AccordionTrigger>Can I get help with lighting design for my project?</AccordionTrigger>
                     <AccordionContent>
-                      Absolutely. Our design experts are available for consultations. We can help you with everything from selecting a single fixture to creating a complete lighting plan for your home or commercial project. Visit our <Link href="/design-studio" className="text-primary hover:underline">Design Studio page</Link> or <Link href="/contact" className="text-primary hover:underline">contact us</Link> to schedule a consultation.
+                      Absolutely. Our design experts are available for consultations. We can help you with everything from selecting a single fixture to creating a complete lighting plan for your home or commercial project. Visit our <Link href="/inspiration-services" className="text-primary hover:underline">Design Studio page</Link> or <Link href="/contact" className="text-primary hover:underline">contact us</Link> to schedule a consultation.
                     </AccordionContent>
                   </AccordionItem>
                    <AccordionItem value="item-4">
