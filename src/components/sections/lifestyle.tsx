@@ -1,3 +1,4 @@
+
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CategoryCard } from '@/components/category-card';
 import {
