@@ -14,23 +14,33 @@ interface ProductReviewFormProps {
   productName: string;
 }
 
+type SuggestionTone = 'eloquent' | 'concise' | 'enthusiastic';
+
 export function ProductReviewForm({ productName }: ProductReviewFormProps) {
   const [rating, setRating] = useState(0);
   const [reviewText, setReviewText] = useState('');
   const [suggestion, setSuggestion] = useState('');
-  const [isPending, startTransition] = useTransition();
+  const [isGenerating, startGenerating] = useTransition();
   const [isSubmitting, startSubmitting] = useTransition();
+  const [activeTone, setActiveTone] = useState<SuggestionTone | null>(null);
   const { toast } = useToast();
 
-  const handleSuggestion = () => {
+  const handleSuggestion = (tone?: SuggestionTone) => {
     if (reviewText.trim().length < 5) return;
+    
+    if (tone) {
+      setActiveTone(tone);
+    } else {
+      setActiveTone(null);
+    }
 
-    startTransition(async () => {
-      setSuggestion('');
+    startGenerating(async () => {
       const response = await generateReviewSuggestion({
         productName,
         userText: reviewText,
+        ...(tone && { tone }),
       });
+
       if (response.suggestion) {
         setSuggestion(response.suggestion);
       } else {
@@ -40,11 +50,16 @@ export function ProductReviewForm({ productName }: ProductReviewFormProps) {
           description: 'The AI could not generate a suggestion at this time. Please try again.',
         });
       }
+      setActiveTone(null);
     });
   };
 
   const handleUseSuggestion = () => {
     setReviewText(suggestion);
+    setSuggestion('');
+  };
+  
+  const handleClearSuggestion = () => {
     setSuggestion('');
   };
 
@@ -77,6 +92,22 @@ export function ProductReviewForm({ productName }: ProductReviewFormProps) {
       setSuggestion('');
     });
   };
+
+  const ToneButton = ({ tone, label }: { tone: SuggestionTone; label: string }) => (
+    <Button
+      type="button"
+      size="sm"
+      variant="outline"
+      className="text-xs h-8"
+      onClick={() => handleSuggestion(tone)}
+      disabled={isGenerating}
+    >
+      {isGenerating && activeTone === tone ? (
+        <Icons.loader className="w-4 h-4 mr-2 animate-spin" />
+      ) : null}
+      {label}
+    </Button>
+  );
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
@@ -120,10 +151,10 @@ export function ProductReviewForm({ productName }: ProductReviewFormProps) {
         <Button
           type="button"
           variant="outline"
-          onClick={handleSuggestion}
-          disabled={isPending || reviewText.trim().length < 5}
+          onClick={() => handleSuggestion()}
+          disabled={isGenerating || reviewText.trim().length < 5}
         >
-          {isPending ? (
+          {isGenerating && !activeTone ? (
             <Icons.loader className="w-4 h-4 mr-2 animate-spin" />
           ) : (
             <Icons.lightbulb className="w-4 h-4 mr-2" />
@@ -134,10 +165,25 @@ export function ProductReviewForm({ productName }: ProductReviewFormProps) {
 
       {suggestion && (
         <div className="p-4 bg-secondary rounded-lg border border-primary/20 space-y-4">
-          <p className="text-sm italic text-muted-foreground">{suggestion}</p>
-          <Button type="button" size="sm" onClick={handleUseSuggestion}>
-            Use this suggestion
-          </Button>
+            <div className="flex justify-between items-start">
+              <p className="text-sm italic text-muted-foreground pr-4">{suggestion}</p>
+              <Button type="button" variant="ghost" size="icon" className="h-6 w-6 shrink-0" onClick={handleClearSuggestion}>
+                  <Icons.close className="w-4 h-4" />
+              </Button>
+            </div>
+
+            <div className="border-t border-primary/20 pt-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <ToneButton tone="eloquent" label="More Eloquent" />
+                  <ToneButton tone="concise" label="More Concise" />
+                  <ToneButton tone="enthusiastic" label="More Enthusiastic" />
+                </div>
+                <Button type="button" size="sm" onClick={handleUseSuggestion}>
+                    Use this
+                </Button>
+              </div>
+            </div>
         </div>
       )}
 

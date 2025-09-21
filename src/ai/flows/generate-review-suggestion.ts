@@ -16,6 +16,9 @@ const GenerateReviewSuggestionInputSchema = z.object({
   userText: z
     .string()
     .describe('The initial, brief text the user has written.'),
+  tone: z
+    .optional(z.enum(['eloquent', 'concise', 'enthusiastic']))
+    .describe('The desired tone for the review suggestion.'),
 });
 export type GenerateReviewSuggestionInput = z.infer<
   typeof GenerateReviewSuggestionInputSchema
@@ -51,6 +54,10 @@ Focus on aspects that other customers would find useful, such as:
 - The ambiance or quality of the light it produces.
 
 Do not use overly exaggerated language. Keep it elegant and helpful.
+
+{{#if tone}}
+Please refine the suggestion to be more {{tone}}.
+{{/if}}
 
 Example:
 Product: "Modo 3 Sided Chandelier"
