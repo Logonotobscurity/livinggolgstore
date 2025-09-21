@@ -120,12 +120,14 @@ export function CategoryCard({
               />
             </div>
           </div>
-          <h3 className="font-headline text-base uppercase tracking-wider text-foreground flex items-center justify-center">
-            {product.title}
-          </h3>
-          <NewCtaButton>
-              Shop now
-          </NewCtaButton>
+          <div className="flex flex-col items-center">
+            <h3 className="font-headline text-base uppercase tracking-wider text-foreground flex items-center justify-center h-12">
+              {product.title}
+            </h3>
+            <NewCtaButton>
+                Shop now
+            </NewCtaButton>
+          </div>
         </>
       </Link>
       <ShareModal 

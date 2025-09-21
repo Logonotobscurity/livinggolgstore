@@ -36,9 +36,9 @@ export default function Footer() {
         </p>
 
         <div className="border-t border-primary/30 mt-16 pt-12">
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
                 {/* Shop Links */}
-                <div className="col-span-2 md:col-span-1">
+                <div className="col-span-1">
                     <h3 className="font-bold text-primary mb-4">SHOP</h3>
                     <ul className="space-y-3 text-sm text-muted-foreground">
                         {shopLinks.map(item => (
@@ -51,7 +51,7 @@ export default function Footer() {
                 </div>
 
                 {/* Company Links */}
-                <div>
+                <div className="col-span-1">
                     <h3 className="font-bold text-primary mb-4">OUR COMPANY</h3>
                     <ul className="space-y-3 text-sm text-muted-foreground">
                          {companyLinks.map(item => (
@@ -61,7 +61,7 @@ export default function Footer() {
                 </div>
 
                 {/* Customer Service */}
-                <div>
+                <div className="col-span-1">
                     <h3 className="font-bold text-primary mb-4">CUSTOMER SERVICE</h3>
                     <ul className="space-y-3 text-sm text-muted-foreground">
                         {customerServiceLinks.map(item => (
@@ -71,7 +71,7 @@ export default function Footer() {
                 </div>
 
                 {/* Contact Us */}
-                <div className="col-span-2 md:col-span-2 lg:col-span-1">
+                <div className="col-span-2 md:col-span-3 lg:col-span-2">
                     <h3 className="font-bold text-primary mb-4">CONTACT US</h3>
                      <div className="text-sm text-muted-foreground space-y-3">
                         <p>Living Gold Lighting,<br />Okpanam Road, Asaba,<br />Delta State, Nigeria</p>
