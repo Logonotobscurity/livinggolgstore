@@ -168,21 +168,25 @@ export function ProductReviewForm({ productName, onReviewSubmit }: ProductReview
 
       {suggestion && (
         <div className="p-4 bg-secondary rounded-lg border border-primary/20 space-y-4">
-            <div className="flex justify-between items-start">
-              <p className="text-sm italic text-muted-foreground pr-4">{suggestion}</p>
-              <Button type="button" variant="ghost" size="icon" className="h-6 w-6 shrink-0" onClick={handleClearSuggestion}>
+            <div className="flex justify-between items-start gap-4">
+              <div>
+                <p className="text-xs text-muted-foreground mb-2">Refine your review with AI. Your original text is safe.</p>
+                <p className="text-sm italic">{suggestion}</p>
+              </div>
+              <Button type="button" variant="ghost" size="icon" className="h-6 w-6 shrink-0" onClick={handleClearSuggestion} aria-label="Close suggestion">
                   <Icons.close className="w-4 h-4" />
               </Button>
             </div>
 
             <div className="border-t border-primary/20 pt-4">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="flex items-center gap-2 flex-wrap justify-center">
                   <ToneButton tone="eloquent" label="More Eloquent" />
                   <ToneButton tone="concise" label="More Concise" />
                   <ToneButton tone="enthusiastic" label="More Enthusiastic" />
+                  <span className="text-xs text-muted-foreground/80">(Uses GenAI)</span>
                 </div>
-                <Button type="button" size="sm" onClick={handleUseSuggestion}>
+                <Button type="button" size="sm" onClick={handleUseSuggestion} className="shrink-0">
                     Use this
                 </Button>
               </div>
