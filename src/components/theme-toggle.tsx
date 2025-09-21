@@ -12,8 +12,8 @@ export function ThemeToggle() {
   }, [])
 
   if (!mounted) {
-    // Avoid hydration mismatch by returning a placeholder or null on the server.
-    return <div style={{ width: '3em', height: '1.5em' }} />
+    // Avoid hydration mismatch by returning null on the server.
+    return null
   }
   
   return (
