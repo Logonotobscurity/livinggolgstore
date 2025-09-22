@@ -552,17 +552,3 @@
     opacity: 1;
   }
 }
-
-
-.product-card-container {
-  perspective: 1000px;
-}
-
-.product-card {
-  transition: transform 0.5s;
-  transform-style: preserve-3d;
-}
-
-.product-card-container:hover .product-card {
-  transform: rotateY(var(--rotate-y, 0)) rotateX(var(--rotate-x, 0));
-}

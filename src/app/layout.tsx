@@ -11,6 +11,7 @@ import './new-cta-button.css';
 import './theme-toggle.css';
 import './text-animations.css';
 import './forms.css';
+import './product-card.css';
 import './ambient-player.css';
 import { SessionReminder } from '@/components/session-reminder';
 import SubscriptionModal from '@/components/subscription-modal';
