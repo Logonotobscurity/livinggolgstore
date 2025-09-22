@@ -40,7 +40,7 @@ export default function Hero() {
             )}
         </div>
       </div>
-      <AmbientPlayer src="/ambient-sound.mp3" />
+      <AmbientPlayer src="https://cdn.pixabay.com/audio/2022/08/03/audio_51f089693c.mp3" />
     </section>
   );
 }
