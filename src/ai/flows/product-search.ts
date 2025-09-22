@@ -12,7 +12,7 @@
 import { ai } from '@/ai/genkit';
 import { z } from 'genkit';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { TfIdf, PorterStemmer } from 'natural';
+import { TfIdf } from 'natural';
 
 const ProductSearchInputSchema = z.object({
   query: z.string().describe('The user\'s search query.'),
