@@ -1,7 +1,7 @@
 
 'use client';
 
-import { ReactNode } from 'react';
+import { ReactNode, useEffect } from 'react';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import Link from 'next/link';
@@ -16,8 +16,15 @@ interface CmsLayoutProps {
 export default function CmsLayout({ children, breadcrumb }: CmsLayoutProps) {
   const { isMobile } = useResponsive();
 
+  useEffect(() => {
+    document.body.classList.add('cms-page-body', 'with-breadcrumb');
+    return () => {
+      document.body.classList.remove('cms-page-body', 'with-breadcrumb');
+    };
+  }, []);
+
   return (
-    <div className="flex flex-col min-h-screen cms-page-body with-breadcrumb">
+    <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
         {breadcrumb && (
