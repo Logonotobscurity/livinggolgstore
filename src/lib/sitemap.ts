@@ -12,54 +12,49 @@ export interface NavItem {
 export const sitemap: NavItem[] = [
   {
     title: "Lighting",
-    href: "/products/lighting",
+    href: "/products?category=lighting",
     items: [
        {
         title: "Chandeliers & Pendants",
-        href: "/products/chandeliers-pendants",
+        href: "/products?category=chandeliers-pendants",
         icon: Icons.lampCeiling,
       },
       {
         title: "Ceiling Fittings",
-        href: "/products/lighting",
+        href: "/products?category=lighting",
         icon: Icons.lampCeiling,
       },
       {
         title: "Linear Suspension",
-        href: "/products/linear-suspension",
+        href: "/products?category=linear-suspension",
         icon: Icons.lampCeiling,
       },
       {
         title: "Wall Lights",
-        href: "/products/wall",
+        href: "/products?category=wall",
         icon: Icons.lampWallUp,
       },
        {
         title: "Outdoor Lighting",
-        href: "/products/outdoor",
-        icon: Icons.lightbulb,
-      },
-      {
-        title: "Architectural Lighting",
-        href: "/products/architectural",
+        href: "/products?category=outdoor",
         icon: Icons.lightbulb,
       },
     ],
   },
   {
     title: "Lamps",
-    href: "/products/lamps",
+    href: "/products?category=lamps",
     icon: Icons.lamp,
     items: [
       { 
         title: "Table & Portable Lights", 
-        href: "/products/lamps",
+        href: "/products?category=lamps",
         icon: Icons.lamp,
         description: "Versatile lamps for any surface." 
       },
       { 
         title: "Floor Lamps", 
-        href: "/products/lamps",
+        href: "/products?category=lamps",
         icon: Icons.lamp,
         description: "Elegant floor-standing lights." 
       },
@@ -67,42 +62,30 @@ export const sitemap: NavItem[] = [
   },
   {
     title: "Accessories",
-    href: "/products/accessories",
+    href: "/products?category=accessories",
     icon: Icons.lightbulb,
     items: [
       {
         title: "Ceiling Fans",
-        href: "/products/fans",
+        href: "/products?category=fans",
         icon: Icons.fan,
         description: "Stylish and functional ceiling fans.",
       },
       {
         title: "Architectural Lighting",
-        href: "/products/architectural",
+        href: "/products?category=architectural",
         icon: Icons.lightbulb,
         description: "Recessed, track, and specialty lights.",
       },
       {
-        title: "Remotes & Controls",
-        href: "/products/casablanca-remote",
-        icon: Icons.radio,
-        description: "Control your lighting with ease.",
-      },
-      {
         title: "Specialty Bulbs & Dimmers",
-        href: "/products/specialty-lighting",
+        href: "/products?category=specialty-lighting",
         icon: Icons.toggleRight,
         description: "Complete your electrical setup.",
       },
       {
-        title: "Exhaust Fans",
-        href: "/products/aero-pure-exhaust-fan",
-        icon: Icons.fan,
-        description: "For bathrooms and utility rooms.",
-      },
-      {
         title: "See All Accessories",
-        href: "/products/accessories",
+        href: "/products?category=accessories",
         icon: Icons.arrowRight,
         description: "Browse our full range.",
       },

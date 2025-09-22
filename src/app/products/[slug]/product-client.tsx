@@ -17,13 +17,16 @@ import { ProductSupport } from '@/components/product-support';
 import { useToast } from '@/hooks/use-toast';
 import { ProductReviewForm } from '@/components/product-review-form';
 import { getAverageRating } from '@/lib/reviews';
+import Link from 'next/link';
+import CmsLayout from '@/components/layout/cms-layout';
 
 interface ProductClientProps {
     product: ImagePlaceholder;
     relatedProducts: ImagePlaceholder[];
+    breadcrumb: { text: string; href?: string }[];
 }
 
-export default function ProductClient({ product, relatedProducts }: ProductClientProps) {
+export default function ProductClient({ product, relatedProducts, breadcrumb }: ProductClientProps) {
   const { addToCart } = useCart();
   const { toggleWishlist, isInWishlist } = useWishlist();
   const [isShareModalOpen, setShareModalOpen] = useState(false);
@@ -102,8 +105,7 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-transparent text-foreground">
-      <Header />
+    <CmsLayout breadcrumb={breadcrumb}>
       <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
           <div className="w-full flex justify-center items-center p-4 sm:p-8 bg-secondary rounded-lg aspect-square">
@@ -191,14 +193,12 @@ export default function ProductClient({ product, relatedProducts }: ProductClien
         <ProductSupport />
 
       </main>
-      <div className="border-t border-primary/30" />
-      <Footer />
       <ShareModal 
         isOpen={isShareModalOpen} 
         onClose={() => setShareModalOpen(false)} 
         shareUrl={typeof window !== 'undefined' ? window.location.href : ''} 
         shareTitle={product.title || 'Product Name Not Available'} 
       />
-    </div>
+    </CmsLayout>
   );
 }

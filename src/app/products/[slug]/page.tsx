@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
 import type { Metadata, ResolvingMetadata } from 'next';
 import ProductClient from './product-client';
+import { ProductCategories } from '@/lib/placeholder-images';
 
 type Props = {
   params: { slug: string }
@@ -49,11 +50,26 @@ function getProductBySlug(slug: string): ImagePlaceholder | undefined {
 
 export default function ProductPage({ params: { slug } }: { params: { slug: string } }) {
   const product = getProductBySlug(slug);
-  const relatedProducts = PlaceHolderImages.filter(p => p.id.startsWith('lighting') && p.slug !== slug).slice(0, 4);
-
+  
   if (!product) {
     notFound();
   }
+  
+  const relatedProducts = PlaceHolderImages.filter(p => p.category === product.category && p.slug !== slug).slice(0, 4);
 
-  return <ProductClient product={product} relatedProducts={relatedProducts} />;
+  const breadcrumb = [
+    { text: 'Home', href: '/' },
+    { text: 'Products', href: '/products' },
+  ];
+
+  if (product.category) {
+    const categoryInfo = ProductCategories.find(c => c.slug === product.category);
+    if (categoryInfo) {
+      breadcrumb.push({ text: categoryInfo.title, href: `/products?category=${categoryInfo.slug}` });
+    }
+  }
+
+  breadcrumb.push({ text: product.title || 'Detail' });
+
+  return <ProductClient product={product} relatedProducts={relatedProducts} breadcrumb={breadcrumb} />;
 }
