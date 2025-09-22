@@ -12,6 +12,7 @@
 import { ai } from '@/ai/genkit';
 import { z } from 'genkit';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { TfIdf, PorterStemmer } from 'natural';
 
 const ProductSearchInputSchema = z.object({
   query: z.string().describe('The user\'s search query.'),
@@ -43,28 +44,42 @@ const allProducts = PlaceHolderImages.map(p => ({
 }));
 
 /**
- * Simulates a retrieval step from a vector database.
- * In a real-world scenario, this would involve embedding the query and
- * performing a similarity search against a vector index of products.
- * Here, we use a simple keyword match to pre-filter relevant documents.
+ * Simulates a retrieval step from a vector database using NLP.
+ * This function uses TF-IDF to rank products based on the user's query.
  */
 function retrieveRelevantProducts(query: string, count: number = 20) {
-    const queryWords = query.toLowerCase().split(/\s+/).filter(w => w.length > 2);
-    if (queryWords.length === 0) {
-        return allProducts.slice(0, count); // Return a default set if query is too generic
-    }
-
-    const relevant = allProducts.filter(product => {
-        const productText = `${product.title?.toLowerCase()} ${product.description.toLowerCase()}`;
-        return queryWords.some(word => productText.includes(word));
-    });
-
-    // If keyword search yields too few results, fall back to a larger default set.
-    if (relevant.length < 5) {
+    if (!query.trim()) {
         return allProducts.slice(0, count);
     }
     
-    return relevant.slice(0, count);
+    const tfidf = new TfIdf();
+    
+    // Add product documents to the model
+    allProducts.forEach((product, index) => {
+        const text = `${product.title?.toLowerCase()} ${product.description.toLowerCase()}`;
+        tfidf.addDocument(text, index);
+    });
+
+    // Get the scores for the query
+    const scores: { index: number; value: number }[] = [];
+    tfidf.tfidfs(query.toLowerCase(), (i, measure) => {
+        scores.push({ index: i, value: measure });
+    });
+
+    // Sort by score in descending order
+    scores.sort((a, b) => b.value - a.value);
+
+    // Get the top matching products, filtering out zero-score results
+    const relevant = scores
+        .filter(score => score.value > 0)
+        .slice(0, count)
+        .map(score => allProducts[score.index]);
+    
+    if (relevant.length < 5) {
+        return allProducts.slice(0, count);
+    }
+
+    return relevant;
 }
 
 
@@ -106,7 +121,7 @@ const productSearchFlow = ai.defineFlow(
   },
   async (input) => {
 
-    // 1. Retrieval Step (Simulated)
+    // 1. Retrieval Step (NLP-enhanced)
     const relevantProducts = retrieveRelevantProducts(input.query);
 
     // 2. Generation/Ranking Step
