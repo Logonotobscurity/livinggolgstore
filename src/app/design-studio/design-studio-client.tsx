@@ -85,10 +85,13 @@ export default function DesignStudioClient() {
         </div>
 
         {/* Introduction Text */}
-        <div className="text-wrapper text-center my-16 md:my-24">
-          <p className={`${isMobile ? 'text-base' : 'text-lg'} max-w-3xl mx-auto text-muted-foreground`}>
-            Living Gold is more than a store; we are a partner in design. Our Design Studio offers a suite of bespoke services for homeowners, architects, and interior designers, providing unparalleled access to global craftsmanship and technical expertise.
-          </p>
+        <div className="text-wrapper my-16 md:my-24">
+          <div className="grid md:grid-cols-2">
+            <div></div>
+            <p className={`${isMobile ? 'text-base' : 'text-lg'} text-muted-foreground`}>
+              Living Gold is more than a store; we are a partner in design. Our Design Studio offers a suite of bespoke services for homeowners, architects, and interior designers, providing unparalleled access to global craftsmanship and technical expertise.
+            </p>
+          </div>
         </div>
         
         <div className="border-t border-primary/30 my-16" />
@@ -178,3 +181,5 @@ export default function DesignStudioClient() {
     </CmsLayout>
   );
 }
+
+    
