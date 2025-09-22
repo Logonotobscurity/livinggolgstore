@@ -84,13 +84,35 @@ export default function DesignStudioClient() {
             </div>
         </div>
 
-        {/* Introduction Text */}
-        <div className="text-wrapper my-16 md:my-24">
-          <div className="grid md:grid-cols-2">
-            <div></div>
-            <p className={`${isMobile ? 'text-base' : 'text-lg'} text-muted-foreground`}>
-              Living Gold is more than a store; we are a partner in design. Our Design Studio offers a suite of bespoke services for homeowners, architects, and interior designers, providing unparalleled access to global craftsmanship and technical expertise.
-            </p>
+        {/* Introduction Split Section */}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 my-16 md:my-32">
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+              <div className="max-w-md">
+                <h2 className="font-headline text-3xl md:text-4xl font-bold mb-6">A Partnership in Design</h2>
+                <p className="text-lg text-muted-foreground">
+                  Living Gold is more than a store; we are a partner in design. Our Design Studio offers a suite of bespoke services for homeowners, architects, and interior designers, providing unparalleled access to global craftsmanship and technical expertise.
+                </p>
+              </div>
+              <div className="grid grid-cols-2 gap-4 h-[400px]">
+                  <div className="relative rounded-lg overflow-hidden mt-12">
+                      <Image 
+                          src="https://www.visualcomfort.com/media_15301f7f1a1767bae048266bf4ea27bd8169b7990.jpg" 
+                          alt="Elegant dining room with chandelier"
+                          fill
+                          className="object-cover"
+                          data-ai-hint="elegant dining room"
+                      />
+                  </div>
+                  <div className="relative rounded-lg overflow-hidden mb-12">
+                      <Image 
+                          src="https://www.visualcomfort.com/media_19cb8a76069a338b66ef4bed91feea669edc52b20.jpg"
+                          alt="Artisan glass blower"
+                          fill
+                          className="object-cover"
+                          data-ai-hint="artisan glass"
+                      />
+                  </div>
+              </div>
           </div>
         </div>
         
@@ -181,5 +203,3 @@ export default function DesignStudioClient() {
     </CmsLayout>
   );
 }
-
-    
