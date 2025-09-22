@@ -200,7 +200,7 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
 
         <div className="mt-20 md:mt-24">
             <h2 className="font-headline text-2xl md:text-3xl font-bold text-center mb-12 uppercase">You May Also Like</h2>
-            <div className="custom-scrollbar grid grid-flow-col auto-cols-max gap-8 overflow-x-auto pb-4 -mx-4 px-4 justify-center">
+            <div className="custom-scrollbar grid grid-flow-col auto-cols-max gap-8 overflow-x-auto py-8 -mx-4 px-4 justify-center">
                 {relatedProducts.map((related, index) => (
                      <div key={related.id} className="w-[280px] product-card-container">
                         <CategoryCard 
