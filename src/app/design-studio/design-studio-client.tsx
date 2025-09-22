@@ -93,23 +93,25 @@ export default function DesignStudioClient() {
                   Living Gold is more than a store; we are a partner in design. Our Design Studio offers a suite of bespoke services for homeowners, architects, and interior designers, providing unparalleled access to global craftsmanship and technical expertise.
                 </p>
               </div>
-              <div className="grid grid-cols-2 gap-4 h-[400px]">
-                  <div className="relative rounded-lg overflow-hidden mt-12">
+              <div className="grid grid-cols-2 gap-4">
+                  <div className="relative aspect-[3/4] rounded-lg overflow-hidden mt-8 md:mt-12">
                       <Image 
                           src="https://www.visualcomfort.com/media_15301f7f1a1767bae048266bf4ea27bd8169b7990.jpg" 
                           alt="Elegant dining room with chandelier"
                           fill
                           className="object-cover"
                           data-ai-hint="elegant dining room"
+                          sizes="(max-width: 768px) 50vw, 25vw"
                       />
                   </div>
-                  <div className="relative rounded-lg overflow-hidden mb-12">
+                  <div className="relative aspect-[3/4] rounded-lg overflow-hidden mb-8 md:mb-12">
                       <Image 
                           src="https://www.visualcomfort.com/media_19cb8a76069a338b66ef4bed91feea669edc52b20.jpg"
                           alt="Artisan glass blower"
                           fill
                           className="object-cover"
                           data-ai-hint="artisan glass"
+                           sizes="(max-width: 768px) 50vw, 25vw"
                       />
                   </div>
               </div>
