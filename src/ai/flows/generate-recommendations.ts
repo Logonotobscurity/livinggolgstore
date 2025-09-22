@@ -11,6 +11,7 @@
 import { ai } from '@/ai/genkit';
 import { z } from 'genkit';
 import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
+import { JaroWinklerDistance, TfIdf } from 'natural';
 
 const GenerateRecommendationsInputSchema = z.object({
   productId: z.string().describe("The ID of the product to base recommendations on."),
@@ -41,33 +42,6 @@ export async function generateRecommendations(
   return generateRecommendationsFlow(input);
 }
 
-
-const prompt = ai.definePrompt({
-  name: 'generateRecommendationsPrompt',
-  input: { schema: z.object({
-      sourceProduct: RecommendedProductSchema.omit({ reason: true }),
-      candidateProducts: z.array(RecommendedProductSchema.omit({ reason: true })),
-  }) },
-  output: { schema: GenerateRecommendationsOutputSchema },
-  prompt: `You are a helpful and stylish interior design assistant for "Living Gold", a luxury lighting store. Your goal is to help customers discover products they'll love.
-
-A customer is currently viewing the following product:
-- Source Product: {{sourceProduct.title}}
-- Description: {{sourceProduct.description}}
-
-Based on this, select up to 4 of the most relevant products from the list of candidates below. For each recommendation, provide a short, compelling reason why the customer might like it, connecting it to the source product's style, function, or aesthetic.
-
-Candidate Products:
----
-{{#each candidateProducts}}
-- ID: {{this.id}}, Title: {{this.title}}, Description: {{this.description}}
-{{/each}}
----
-
-Return a ranked list of the best recommendations with your reasons.`,
-});
-
-
 const generateRecommendationsFlow = ai.defineFlow(
   {
     name: 'generateRecommendationsFlow',
@@ -80,34 +54,46 @@ const generateRecommendationsFlow = ai.defineFlow(
       return { recommendations: [] };
     }
 
-    // 1. Retrieval Step: Find candidate products from the same category.
-    const candidateProducts = PlaceHolderImages.filter(
-        p => p.category === sourceProduct.category && p.id !== sourceProduct.id
-    ).slice(0, 10); // Limit candidates to reduce tokens and improve performance.
+    const candidateProducts = PlaceHolderImages.filter(p => p.id !== sourceProduct.id);
 
-    if (candidateProducts.length === 0) {
-      return { recommendations: [] };
-    }
-
-    // 2. Generation/Ranking Step: Use the LLM to select and rank the best recommendations.
-    const { output } = await prompt({ 
-        sourceProduct: sourceProduct, 
-        candidateProducts: candidateProducts 
-    });
+    // 1. Calculate TF-IDF for description similarity
+    const tfidf = new TfIdf();
+    tfidf.addDocument(sourceProduct.description);
+    candidateProducts.forEach(p => tfidf.addDocument(p.description));
     
-    if (!output) {
-      return { recommendations: [] };
-    }
+    // 2. Score and rank candidates
+    const scoredProducts = candidateProducts.map((candidate, index) => {
+        let score = 0;
 
-    // 3. Hydrate the results with full product data for the UI
-    const hydratedResults = output.recommendations.map(result => {
-        const fullProduct = PlaceHolderImages.find(p => p.id === result.id);
+        // Score 1: Category match (highest weight)
+        if (candidate.category === sourceProduct.category) {
+            score += 1.0;
+        }
+
+        // Score 2: Title similarity (Jaro-Winkler distance)
+        const titleSimilarity = JaroWinklerDistance(sourceProduct.title || '', candidate.title || '', {});
+        score += titleSimilarity * 0.5;
+
+        // Score 3: Description similarity (TF-IDF)
+        const descriptionSimilarity = tfidf.tfidf(sourceProduct.description, index + 1);
+        score += descriptionSimilarity * 0.2;
+
         return {
-            ...(fullProduct || {}),
-            ...result
+            ...candidate,
+            score
         };
-    }).filter(Boolean);
+    });
 
-    return { recommendations: hydratedResults as any[] };
+    // 3. Sort by score and take top 4
+    const sortedProducts = scoredProducts.sort((a, b) => b.score - a.score);
+    const top4 = sortedProducts.slice(0, 4);
+
+    // 4. Format for output
+    const recommendations = top4.map(product => ({
+      ...product,
+      reason: "Similar product"
+    }));
+
+    return { recommendations };
   }
 );
