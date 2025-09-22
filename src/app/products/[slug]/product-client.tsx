@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { type ImagePlaceholder } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Icons } from '@/components/icons';
-import { RelatedProductCard } from '@/components/related-product-card';
+import { CategoryCard } from '@/components/category-card';
 import { cn } from '@/lib/utils';
 import { useCart } from '@/context/cart-context';
 import { useWishlist } from '@/context/wishlist-context';
@@ -201,9 +201,13 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
         <div className="mt-20 md:mt-24">
             <h2 className="font-headline text-2xl md:text-3xl font-bold text-center mb-12 uppercase">You May Also Like</h2>
             <div className="custom-scrollbar grid grid-flow-col auto-cols-max gap-8 overflow-x-auto pb-4 -mx-4 px-4 justify-center">
-                {relatedProducts.map((related) => (
-                     <div key={related.id} className="w-[280px]">
-                        <RelatedProductCard product={related} />
+                {relatedProducts.map((related, index) => (
+                     <div key={related.id} className="w-[280px] product-card-container">
+                        <CategoryCard 
+                          product={related} 
+                          animationDelay={`${index * 0.05}s`}
+                          imageClassName="w-full h-full p-2 sm:p-6"
+                        />
                      </div>
                 ))}
             </div>
