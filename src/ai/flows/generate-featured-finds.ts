@@ -10,6 +10,7 @@
 import { ai } from '@/ai/genkit';
 import { z } from 'genkit';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import _ from 'lodash';
 
 const FeaturedProductSchema = z.object({
   id: z.string(),
@@ -34,32 +35,26 @@ export async function generateFeaturedFinds(): Promise<GenerateFeaturedFindsOutp
   return generateFeaturedFindsFlow();
 }
 
-const allProductsForPrompt = PlaceHolderImages.map(p => ({
-    id: p.id,
-    slug: p.slug,
-    title: p.title,
-    description: p.description,
-    category: p.category,
-}));
-
-const prompt = ai.definePrompt({
-    name: 'generateFeaturedFindsPrompt',
-    output: { schema: GenerateFeaturedFindsOutputSchema },
+const reasonPrompt = ai.definePrompt({
+    name: 'generateFeaturedReasonPrompt',
+    input: { schema: z.object({
+        title: z.string(),
+        description: z.string(),
+        category: z.string().optional(),
+    })},
+    output: { schema: z.object({ reason: z.string() }) },
     prompt: `You are an expert curator for "Living Gold", a luxury lighting and decor store in Nigeria.
-Your task is to select exactly 4 diverse and visually interesting products to feature on the homepage. You must also write a short, catchy headline for the section.
+Your task is to write a single, compelling, one-sentence reason why the following product is a "featured find" for the homepage.
 
-- Select a diverse mix of products. Do not pick more than one from the same category.
-- For each product, write a compelling, one-sentence reason why it's a "featured find".
-- The reasons should be exciting and entice users to click. Example: "A true masterpiece of hand-blown glass that commands attention." or "The perfect blend of vintage charm and modern engineering."
+The reason should be exciting, concise (around 15 words), and entice users to click.
+Example: "A true masterpiece of hand-blown glass that commands attention."
 
-Here is the list of all available products:
----
-{{#each products}}
-- ID: {{this.id}}, Title: {{this.title}}, Description: {{this.description}}, Category: {{this.category}}
-{{/each}}
----
+Product Details:
+- Title: {{title}}
+- Description: {{description}}
+- Category: {{category}}
 
-Generate the headline and the 4 featured products now.`,
+Generate the compelling reason now.`,
 });
 
 
@@ -70,29 +65,51 @@ const generateFeaturedFindsFlow = ai.defineFlow(
   },
   async () => {
     
-    const { output } = await prompt({ products: allProductsForPrompt });
+    // 1. Shuffle products to ensure variety on each run
+    const shuffledProducts = _.shuffle(PlaceHolderImages);
 
-    if (!output?.products) {
-      // Fallback in case AI fails
-      return {
-        heading: "Curator's Picks",
-        products: PlaceHolderImages.slice(0, 4).map(p => ({...p, reason: "A fantastic choice for any home."}))
-      };
+    // 2. Select 4 diverse products programmatically
+    const selectedProducts = [];
+    const usedCategories = new Set<string>();
+    for (const product of shuffledProducts) {
+        if (selectedProducts.length >= 4) break;
+        if (product.category && !usedCategories.has(product.category)) {
+            selectedProducts.push(product);
+            usedCategories.add(product.category);
+        }
+    }
+
+    // Fallback if diversification logic fails to find 4 unique categories
+    if (selectedProducts.length < 4) {
+        const fallback = shuffledProducts.slice(0, 4 - selectedProducts.length);
+        selectedProducts.push(...fallback);
     }
     
-    // Hydrate the results with full product data for the UI
-    const hydratedProducts = output.products.map(result => {
-        const fullProduct = PlaceHolderImages.find(p => p.id === result.id);
-        if (!fullProduct) return null; // Should not happen if AI returns valid IDs
-        return {
-            ...fullProduct,
-            reason: result.reason,
-        };
-    }).filter(Boolean) as GenerateFeaturedFindsOutput['products'];
+    // 3. Generate AI-powered reasons for each selected product
+    const productsWithReasons = await Promise.all(selectedProducts.map(async (product) => {
+        try {
+            const { output } = await reasonPrompt({
+                title: product.title || 'Untitled Product',
+                description: product.description,
+                category: product.category,
+            });
+            return {
+                ...product,
+                reason: output?.reason || "A fantastic choice for any modern home."
+            };
+        } catch (error) {
+            console.error(`Failed to generate reason for ${product.id}`, error);
+            return {
+                ...product,
+                reason: "An elegant and sophisticated choice for your space."
+            };
+        }
+    }));
+
 
     return { 
-        heading: output.heading,
-        products: hydratedProducts
+        heading: "Curator's Featured Finds",
+        products: productsWithReasons as any,
     };
   }
 );
