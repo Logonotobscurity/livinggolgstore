@@ -10,6 +10,7 @@ import ProductCategories from '@/components/sections/product-categories';
 import Lightscapes from '@/components/sections/lightscapes';
 import Newsletter from '@/components/sections/newsletter';
 import TradesAndServices from '@/components/sections/trades-and-services';
+import FeaturedFinds from '@/components/sections/featured-finds';
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
         <section aria-labelledby="product-categories-heading">
           <div className="border-t border-primary/30" />
           <ProductCategories />
+        </section>
+        <section aria-labelledby="featured-finds-heading">
+          <FeaturedFinds />
         </section>
         <section aria-labelledby="lightscapes-heading">
           <Lightscapes />
