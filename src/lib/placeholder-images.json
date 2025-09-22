@@ -183,7 +183,7 @@
     },
     {
       "id": "wall-sconces-1",
-      "slug": "wall-sconces-vanity-lights",
+      "slug": "marset-caramel-sconce",
       "title": "Caramel LED Wall Sconce",
       "category": "wall",
       "description": "Marset Caramel LED Wall Sconce with Disk.",
@@ -291,7 +291,7 @@
     },
     {
       "id": "floor-lamps-1",
-      "slug": "floor-lamps",
+      "slug": "foscarini-twiggy-floor-lamp",
       "title": "Twiggy Floor Lamp",
       "category": "lamps",
       "description": "Foscarini Twiggy Floor Lamp in Black.",
@@ -392,7 +392,7 @@
       "id": "specialty-lighting-1",
       "slug": "buster-punch-led-bulb",
       "title": "Gold LED Bulb",
-      "category": "accessories",
+      "category": "specialty-lighting",
       "description": "Buster + Punch 5W A-Type Gold LED Bulb, turned on.",
       "imageUrl": "https://www.visualcomfort.com/us/media_19d5146ded7a10d640b1cd044549fb8b593b96cf2.png",
       "imageHint": "gold bulb"
@@ -401,7 +401,7 @@
       "id": "specialty-lighting-2",
       "slug": "buster-punch-dimmer",
       "title": "1-Gang Dimmer",
-      "category": "accessories",
+      "category": "specialty-lighting",
       "description": "Buster + Punch 1-Gang Dimmer in Black.",
       "imageUrl": "https://www.visualcomfort.com/media_15dcf65f7d661db39001af963ca4f5884cacf8b9e.png",
       "imageHint": "dimmer switch"
@@ -410,7 +410,7 @@
       "id": "specialty-lighting-3",
       "slug": "buster-punch-duplex-outlet",
       "title": "1-Gang Duplex Outlet",
-      "category": "accessories",
+      "category": "specialty-lighting",
       "description": "Buster + Punch 1-Gang Duplex Outlet in Black.",
       "imageUrl": "https://www.visualcomfort.com/media_1e120a3a0d582f383b64c7151ab4ff52d44367102.png",
       "imageHint": "duplex outlet"
@@ -419,7 +419,7 @@
       "id": "specialty-lighting-4",
       "slug": "huxe-fabria-led-mirror",
       "title": "Fabria LED Mirror",
-      "category": "accessories",
+      "category": "specialty-lighting",
       "description": "Huxe Fabria LED Mirror in Black.",
       "imageUrl": "https://www.visualcomfort.com/media_1b8d03b4a48dd3ea862fd5853996ca603e8abf279.png",
       "imageHint": "LED mirror"
@@ -833,6 +833,13 @@
       "parent": "accessories"
     },
     {
+      "slug": "specialty-lighting",
+      "title": "Specialty Bulbs, Dimmers & Outlets",
+      "description": "Find essential finishing touches, including designer LED bulbs, dimmer switches, and premium electrical outlets.",
+      "heroImage": "specialty-lighting-1",
+      "parent": "accessories"
+    },
+    {
       "slug": "accessories",
       "title": "Luxury Light Spare Parts & Accessories in Nigeria",
       "description": "Find essential Nigeria luxury lights spare parts at Living Gold, including downrods, remotes, and specialty bulbs to complete your lighting setup.",
@@ -840,5 +847,3 @@
     }
   ]
 }
-
-    

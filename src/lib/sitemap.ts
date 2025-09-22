@@ -84,19 +84,19 @@ export const sitemap: NavItem[] = [
       },
       {
         title: "Remotes & Controls",
-        href: "/products/accessories",
+        href: "/products/casablanca-remote",
         icon: Icons.radio,
         description: "Control your lighting with ease.",
       },
       {
         title: "Specialty Bulbs & Dimmers",
-        href: "/products/accessories",
+        href: "/products/specialty-lighting",
         icon: Icons.toggleRight,
         description: "Complete your electrical setup.",
       },
       {
         title: "Exhaust Fans",
-        href: "/products/accessories",
+        href: "/products/aero-pure-exhaust-fan",
         icon: Icons.fan,
         description: "For bathrooms and utility rooms.",
       },
@@ -117,5 +117,3 @@ export const sitemap: NavItem[] = [
     href: "/projects",
   },
 ];
-
-    
