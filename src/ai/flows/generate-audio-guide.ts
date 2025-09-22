@@ -5,8 +5,8 @@
  */
 
 import { ai } from '@/ai/genkit';
+import { toWav } from '@/lib/wav-utils';
 import { z } from 'genkit';
-import wav from 'wav';
 
 const GenerateAudioGuideInputSchema = z.object({
   guideText: z.string().describe('The text to be converted to speech.'),
@@ -26,33 +26,6 @@ export async function generateAudioGuide(
   input: GenerateAudioGuideInput
 ): Promise<GenerateAudioGuideOutput> {
   return generateAudioGuideFlow(input);
-}
-
-async function toWav(
-  pcmData: Buffer,
-  channels = 1,
-  rate = 24000,
-  sampleWidth = 2
-): Promise<string> {
-  return new Promise((resolve, reject) => {
-    const writer = new wav.Writer({
-      channels,
-      sampleRate: rate,
-      bitDepth: sampleWidth * 8,
-    });
-
-    const bufs: any[] = [];
-    writer.on('error', reject);
-    writer.on('data', function (d) {
-      bufs.push(d);
-    });
-    writer.on('end', function () {
-      resolve(Buffer.concat(bufs).toString('base64'));
-    });
-
-    writer.write(pcmData);
-    writer.end();
-  });
 }
 
 const generateAudioGuideFlow = ai.defineFlow(
@@ -90,3 +63,5 @@ const generateAudioGuideFlow = ai.defineFlow(
     };
   }
 );
+
+    
