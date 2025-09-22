@@ -42,6 +42,44 @@ export async function generateRecommendations(
   return generateRecommendationsFlow(input);
 }
 
+
+const reasonPrompt = ai.definePrompt({
+    name: 'generateRecommendationReasonPrompt',
+    input: { schema: z.object({
+        sourceProduct: z.object({
+            title: z.string(),
+            description: z.string(),
+            category: z.string().optional(),
+        }),
+        candidateProduct: z.object({
+            title: z.string(),
+            description: z.string(),
+            category: z.string().optional(),
+        })
+    })},
+    output: { schema: z.object({ reason: z.string() }) },
+    prompt: `You are a helpful shopping assistant for a luxury lighting store.
+Your task is to generate a very short, compelling reason (about 10-15 words) why a customer might like a "candidate product" given that they are currently looking at a "source product".
+
+Focus on a key similarity or a compelling difference. Examples:
+- "Offers a similar modern aesthetic in a table lamp form."
+- "If you like the gold finish, this is a bolder statement piece."
+- "A more minimalist take on the classic chandelier design."
+
+Source Product:
+- Title: {{sourceProduct.title}}
+- Description: {{sourceProduct.description}}
+- Category: {{sourceProduct.category}}
+
+Candidate Product:
+- Title: {{candidateProduct.title}}
+- Description: {{candidateProduct.description}}
+- Category: {{candidateProduct.category}}
+
+Generate the reason now.`
+});
+
+
 const generateRecommendationsFlow = ai.defineFlow(
   {
     name: 'generateRecommendationsFlow',
@@ -75,8 +113,15 @@ const generateRecommendationsFlow = ai.defineFlow(
         score += titleSimilarity * 0.5;
 
         // Score 3: Description similarity (TF-IDF)
-        const descriptionSimilarity = tfidf.tfidf(sourceProduct.description, index + 1);
-        score += descriptionSimilarity * 0.2;
+        // Note: tfidf.tfidf expects the document index (i) not the term
+        let descriptionSimilarity = 0;
+        const sourceTerms = sourceProduct.description.split(' ');
+        tfidf.tfidfs(sourceTerms, (i, measure) => {
+             if (i === index + 1) {
+                descriptionSimilarity += measure;
+            }
+        });
+        score += descriptionSimilarity * 0.01; // Lower weight for description
 
         return {
             ...candidate,
@@ -88,12 +133,27 @@ const generateRecommendationsFlow = ai.defineFlow(
     const sortedProducts = scoredProducts.sort((a, b) => b.score - a.score);
     const top4 = sortedProducts.slice(0, 4);
 
-    // 4. Format for output
-    const recommendations = top4.map(product => ({
-      ...product,
-      reason: "Similar product"
+    // 4. Generate AI reasons for each of the top 4
+    const recommendationsWithReasons = await Promise.all(top4.map(async (product) => {
+        const { output } = await reasonPrompt({
+            sourceProduct: {
+                title: sourceProduct.title || '',
+                description: sourceProduct.description,
+                category: sourceProduct.category
+            },
+            candidateProduct: {
+                title: product.title || '',
+                description: product.description,
+                category: product.category
+            }
+        });
+        return {
+            ...product,
+            reason: output?.reason || "A great alternative for your space."
+        };
     }));
 
-    return { recommendations };
+
+    return { recommendations: recommendationsWithReasons };
   }
 );
