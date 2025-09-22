@@ -15,10 +15,20 @@ export interface Review {
     createdAt?: Date;
 }
 
+const mockReviews: Review[] = [
+    { author: 'Amaka N.', body: "The quality is immediately apparent. It has become a stunning centerpiece in our dining room.", rating: 5, productName: "Modo 3 Sided Chandelier" },
+    { author: 'Tunde A.', body: "Excellent build quality and gives off a beautiful, warm light. Very happy with my purchase for our Lagos home.", rating: 5, productName: "Spur LED Chandelier" },
+    { author: 'Fatima B.', body: "This is a true work of art. It transformed our entryway in Asaba. The craftsmanship is exceptional.", rating: 5, productName: "Stingray Chandelier" },
+    { author: 'David O.', body: "Installation was straightforward and the result is breathtaking. It's the jewel of our new home.", rating: 4, productName: "J-US LED Chandelier" },
+    { author: 'Aisha I.', body: "A design classic. The soft, diffused light is perfect for our minimalist living room. Worth every naira.", rating: 5, productName: "PH 5 Pendant Light" },
+    { author: 'Chinedu E.', body: "Sleek, modern, and very effective over our kitchen island. It provides great task lighting without being harsh.", rating: 4, productName: "Random Stick Linear Suspension" },
+];
+
+
 const reviewsCollection = collection(db, 'reviews');
 
 /**
- * Retrieves all reviews from Firestore.
+ * Retrieves all reviews from Firestore, falling back to mock data.
  */
 export async function getReviews(): Promise<Review[]> {
   try {
@@ -27,10 +37,15 @@ export async function getReviews(): Promise<Review[]> {
     snapshot.forEach(doc => {
       reviews.push({ id: doc.id, ...doc.data() } as Review & { id: string });
     });
-    return reviews.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+    
+    if (reviews.length === 0) {
+        return mockReviews;
+    }
+
+    return reviews.sort((a, b) => (new Date(b.createdAt as any).getTime() || 0) - (new Date(a.createdAt as any).getTime() || 0));
   } catch (error) {
     console.error("Error fetching reviews: ", error);
-    return [];
+    return mockReviews;
   }
 }
 
@@ -45,10 +60,14 @@ export async function getReviewsByProduct(productName: string): Promise<Review[]
     snapshot.forEach(doc => {
       reviews.push({ id: doc.id, ...doc.data() } as Review & { id: string });
     });
-    return reviews.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+
+    const filteredMockReviews = mockReviews.filter(r => r.productName === productName);
+    const combined = [...filteredMockReviews, ...reviews];
+
+    return combined.sort((a, b) => (new Date(b.createdAt as any).getTime() || 0) - (new Date(a.createdAt as any).getTime() || 0));
   } catch (error) {
     console.error(`Error fetching reviews for ${productName}: `, error);
-    return [];
+    return mockReviews.filter(r => r.productName === productName);
   }
 }
 
@@ -59,14 +78,17 @@ export async function getReviewsByProduct(productName: string): Promise<Review[]
 export async function getAverageRating(productName: string): Promise<{ average: number; count: number }> {
     const productReviews = await getReviewsByProduct(productName);
     
-    // Add some baseline reviews for products that don't have any yet
-    const baseReviews = [4, 5, 4, 5, 5, 4, 3, 5, 4, 5, 5, 4];
-    const allRatings = [...baseReviews, ...productReviews.map(r => r.rating)];
-
-    if (allRatings.length === 0) {
-        return { average: 4.5, count: 12 };
+    if (productReviews.length === 0) {
+        // Fallback for products with no reviews at all
+        const baseReviews = [4, 5, 4, 5, 5, 4, 3, 5, 4, 5, 5, 4];
+         const sum = baseReviews.reduce((acc, rating) => acc + rating, 0);
+        return { 
+            average: Math.round((sum / baseReviews.length) * 10) / 10,
+            count: baseReviews.length 
+        };
     }
 
+    const allRatings = productReviews.map(r => r.rating);
     const sum = allRatings.reduce((acc, rating) => acc + rating, 0);
     const average = sum / allRatings.length;
     
