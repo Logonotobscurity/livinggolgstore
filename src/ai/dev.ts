@@ -6,4 +6,3 @@ import '@/ai/flows/enhance-image.ts';
 import '@/ai/flows/product-search.ts';
 import '@/ai/flows/generate-review-suggestion.ts';
 import '@/ai/flows/generate-installation-guide.ts';
-import '@/ai/flows/generate-audio-guide.ts';

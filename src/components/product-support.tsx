@@ -15,7 +15,6 @@ import {
   generateInstallationGuide,
   type GenerateInstallationGuideOutput,
 } from '@/ai/flows/generate-installation-guide';
-import { generateAudioGuide } from '@/ai/flows/generate-audio-guide';
 import { useToast } from '@/hooks/use-toast';
 
 interface ProductSupportProps {
@@ -24,29 +23,11 @@ interface ProductSupportProps {
 
 function InstallationGuide({
   guide,
-  audioUri,
-  isGeneratingAudio,
 }: {
   guide: GenerateInstallationGuideOutput;
-  audioUri: string | null;
-  isGeneratingAudio: boolean;
 }) {
   return (
     <div className="space-y-8 mt-8 text-sm">
-      {isGeneratingAudio && (
-         <div className="flex items-center justify-center text-muted-foreground gap-2">
-            <Icons.loader className="w-4 h-4 animate-spin" />
-            <span>Generating audio guide...</span>
-        </div>
-      )}
-      {audioUri && (
-        <div>
-          <audio controls src={audioUri} className="w-full">
-            Your browser does not support the audio element.
-          </audio>
-        </div>
-      )}
-
       <div>
         <h4 className="font-bold text-base text-primary mb-3">Tools Required</h4>
         <ul className="list-disc list-inside space-y-1 text-muted-foreground">
@@ -86,29 +67,17 @@ function InstallationGuide({
 
 export function ProductSupport({ productName }: ProductSupportProps) {
   const [isGenerating, startGenerating] = useTransition();
-  const [isGeneratingAudio, startGeneratingAudio] = useTransition();
   const [guide, setGuide] =
     useState<GenerateInstallationGuideOutput | null>(null);
-  const [audioUri, setAudioUri] = useState<string | null>(null);
   const { toast } = useToast();
 
   const handleGenerateGuide = () => {
     startGenerating(async () => {
       setGuide(null);
-      setAudioUri(null);
 
       const result = await generateInstallationGuide({ productName });
       if (result) {
         setGuide(result);
-        
-        startGeneratingAudio(async () => {
-            const guideText = result.steps.map(s => `${s.title}. ${s.description}`).join('\n');
-            const audioResult = await generateAudioGuide({ guideText });
-            if (audioResult.audioUri) {
-                setAudioUri(audioResult.audioUri);
-            }
-        });
-
       } else {
         toast({
           variant: 'destructive',
@@ -140,7 +109,7 @@ export function ProductSupport({ productName }: ProductSupportProps) {
                 <div className="text-sm text-muted-foreground mb-6">
                   <p>
                     Need help with installation? Our AI can generate a
-                    customized, step-by-step guide for this product, complete with an audio version.
+                    customized, step-by-step guide for this product.
                   </p>
                 </div>
                 <Button onClick={handleGenerateGuide} disabled={isGenerating}>
@@ -158,7 +127,7 @@ export function ProductSupport({ productName }: ProductSupportProps) {
                   </div>
                 )}
 
-                {guide && <InstallationGuide guide={guide} audioUri={audioUri} isGeneratingAudio={isGeneratingAudio} />}
+                {guide && <InstallationGuide guide={guide} />}
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-1">

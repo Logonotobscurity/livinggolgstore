@@ -1,35 +1,14 @@
 
 'use client';
 
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { SunBanner } from '@/components/sun-banner';
 import { useResponsive } from '@/hooks/use-responsive';
 import { Icons } from '@/components/icons';
-import { AmbientPlayer } from '../ambient-player';
-import { generateAudioGuide } from '@/ai/flows/generate-audio-guide';
 
 export default function Hero() {
   const { isMobile } = useResponsive();
-  const [audioSrc, setAudioSrc] = useState<string | null>(null);
-  const [isLoadingAudio, setIsLoadingAudio] = useState(true);
-
-  useEffect(() => {
-    const generateAudio = async () => {
-      try {
-        const response = await generateAudioGuide({ guideText: "Welcome to Living Gold" });
-        if (response.audioUri) {
-          setAudioSrc(response.audioUri);
-        }
-      } catch (error) {
-        console.error("Failed to generate welcome audio:", error);
-      } finally {
-        setIsLoadingAudio(false);
-      }
-    };
-    generateAudio();
-  }, []);
 
   return (
     <section className={`relative w-full ${isMobile ? 'h-svh' : 'h-[650px]'} flex items-center justify-center overflow-hidden`}>
@@ -60,7 +39,6 @@ export default function Hero() {
             )}
         </div>
       </div>
-      <AmbientPlayer src={audioSrc} isLoading={isLoadingAudio} />
     </section>
   );
 }
