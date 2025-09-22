@@ -170,4 +170,15 @@ export const Icons = {
   fan: (props: IconProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M10.12 4.01a1.5 1.5 0 0 0-2.24 0L3.33 8.56A1.5 1.5 0 0 0 4.4 11h15.2a1.5 1.5 0 0 0 1.07-2.44Z"/><path d="M13.88 19.99a1.5 1.5 0 0 0 2.24 0l4.55-4.55a1.5 1.5 0 0 0-1.07-2.44H4.4a1.5 1.5 0 0 0-1.07 2.44Z"/><path d="M12 12v.01"/></svg>
   ),
+  play: (props: IconProps) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <polygon points="5 3 19 12 5 21 5 3" />
+    </svg>
+  ),
+  pause: (props: IconProps) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <rect x="6" y="4" width="4" height="16" />
+      <rect x="14" y="4" width="4" height="16" />
+    </svg>
+  ),
 };

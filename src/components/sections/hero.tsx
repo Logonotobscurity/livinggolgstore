@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { SunBanner } from '@/components/sun-banner';
 import { useResponsive } from '@/hooks/use-responsive';
 import { Icons } from '@/components/icons';
+import { AmbientPlayer } from '../ambient-player';
 
 export default function Hero() {
   const { isMobile } = useResponsive();
@@ -39,6 +40,7 @@ export default function Hero() {
             )}
         </div>
       </div>
+      <AmbientPlayer src="/ambient-sound.mp3" />
     </section>
   );
 }
