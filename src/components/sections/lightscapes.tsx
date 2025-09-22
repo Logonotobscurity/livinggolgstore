@@ -40,7 +40,7 @@ export default function Lightscapes() {
               </p>
               <div className="flex justify-center md:justify-start">
                   <Button asChild size="lg" variant="outline" showIcon>
-                    <Link href="/products/outdoor-lighting">
+                    <Link href="/products?category=outdoor-lighting">
                       The Outdoor Collection
                     </Link>
                   </Button>

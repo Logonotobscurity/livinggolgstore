@@ -17,11 +17,14 @@ export default function CmsLayout({ children, breadcrumb }: CmsLayoutProps) {
   const { isMobile } = useResponsive();
 
   useEffect(() => {
-    document.body.classList.add('cms-page-body', 'with-breadcrumb');
+    document.body.classList.add('cms-page-body');
+    if (breadcrumb) {
+      document.body.classList.add('with-breadcrumb');
+    }
     return () => {
       document.body.classList.remove('cms-page-body', 'with-breadcrumb');
     };
-  }, []);
+  }, [breadcrumb]);
 
   return (
     <div className="flex flex-col min-h-screen">

@@ -101,7 +101,7 @@ export default function DesignStudioClient() {
                           fill
                           className="object-cover"
                           data-ai-hint="elegant dining room"
-                          sizes="(max-width: 768px) 50vw, 25vw"
+                           sizes="(max-width: 768px) 50vw, 25vw"
                       />
                   </div>
                   <div className="relative aspect-[3/4] rounded-lg overflow-hidden mb-8 md:mb-12">

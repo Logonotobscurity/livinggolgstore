@@ -1,3 +1,4 @@
+
 import CmsLayout from "@/components/layout/cms-layout";
 import { SignUpForm } from "@/components/signup-form";
 
