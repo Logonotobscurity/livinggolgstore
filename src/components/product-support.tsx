@@ -10,9 +10,7 @@ import Link from 'next/link';
 
 export function ProductSupport() {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl my-24 md:my-32">
-        <div className="border-t border-primary/30 my-24" />
-
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start">
             <div className="w-full">
                 <div className="max-w-md mx-auto">
@@ -26,7 +24,7 @@ export function ProductSupport() {
                 </div>
             </div>
             <div>
-                <h2 className="font-headline text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+                <h2 className="font-headline text-2xl font-bold text-center mb-12">Frequently Asked Questions</h2>
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="item-1">
                     <AccordionTrigger>Do you deliver outside of Asaba and Lagos?</AccordionTrigger>

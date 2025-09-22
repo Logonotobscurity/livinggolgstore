@@ -5,8 +5,6 @@ import Image from 'next/image';
 import { type ImagePlaceholder } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Icons } from '@/components/icons';
-import Header from '@/components/layout/header';
-import Footer from '@/components/layout/footer';
 import { RelatedProductCard } from '@/components/related-product-card';
 import { cn } from '@/lib/utils';
 import { useCart } from '@/context/cart-context';
@@ -17,8 +15,8 @@ import { ProductSupport } from '@/components/product-support';
 import { useToast } from '@/hooks/use-toast';
 import { ProductReviewForm } from '@/components/product-review-form';
 import { getAverageRating } from '@/lib/reviews';
-import Link from 'next/link';
 import CmsLayout from '@/components/layout/cms-layout';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 interface ProductClientProps {
     product: ImagePlaceholder;
@@ -119,19 +117,18 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
           </div>
           <div className="md:py-8">
             <h1 className="font-headline text-3xl md:text-4xl font-bold mb-4">{product.title}</h1>
-            <p className="text-lg md:text-xl mb-6 text-muted-foreground">{product.description}</p>
             
             <div className="flex items-center mb-6">
               <div className="flex items-center text-primary">
                 {renderStars()}
               </div>
-              <span className="ml-3 text-sm text-muted-foreground">({ratingInfo.count} Reviews)</span>
+              <a href="#reviews" className="ml-3 text-sm text-muted-foreground hover:underline">({ratingInfo.count} Reviews)</a>
             </div>
 
             <p className="text-3xl md:text-4xl font-bold text-primary mb-8">{formatPrice(product.price)}</p>
 
             <div className="flex items-stretch gap-2 sm:gap-4 mb-8">
-                <Button variant="destructive" size="lg" className="flex-grow" onClick={handleAddToCart} showIcon>Add to Quote Cart</Button>
+                <Button variant="default" size="lg" className="flex-grow" onClick={handleAddToCart} showIcon>Add to Quote Cart</Button>
                 <Button 
                   variant="outline" 
                   size="icon" 
@@ -151,46 +148,66 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
                     <Icons.share className="w-6 h-6" />
                 </Button>
             </div>
-
-            <p className="leading-relaxed text-muted-foreground">
-              An exquisite piece that combines timeless elegance with modern design. Perfect for creating a focal point in any room, this {product.title?.toLowerCase()} offers both functionality and unparalleled style. Crafted from the finest materials.
-            </p>
-
-             <div className="mt-8 text-sm text-muted-foreground space-y-1">
-                <p><span className="font-semibold text-foreground">Category:</span> {product.category}</p>
-                <p><span className="font-semibold text-foreground">SKU:</span> {product.id.toUpperCase()}</p>
-             </div>
+            
+            <p className="text-lg md:text-xl mb-6 text-muted-foreground">{product.description}</p>
           </div>
         </div>
 
-        <div className="border-t border-primary/30 my-24" />
+        <div className="border-t border-primary/30 my-16 md:my-24" />
+
+        <Tabs defaultValue="details" className="w-full">
+          <TabsList className="grid w-full grid-cols-3 max-w-2xl mx-auto">
+            <TabsTrigger value="details">Details & Specifications</TabsTrigger>
+            <TabsTrigger value="reviews">Reviews</TabsTrigger>
+            <TabsTrigger value="support">Support & FAQ</TabsTrigger>
+          </TabsList>
+
+          <TabsContent value="details" className="py-10">
+              <div className="max-w-3xl mx-auto space-y-6 text-muted-foreground">
+                <p className="leading-relaxed">
+                  An exquisite piece that combines timeless elegance with modern design. Perfect for creating a focal point in any room, this {product.title?.toLowerCase()} offers both functionality and unparalleled style. Crafted from the finest materials.
+                </p>
+                <div className="text-sm space-y-2 border-t border-border pt-6">
+                    <p><span className="font-semibold text-foreground w-32 inline-block">Category:</span> {product.category}</p>
+                    <p><span className="font-semibold text-foreground w-32 inline-block">SKU:</span> {product.id.toUpperCase()}</p>
+                    <p><span className="font-semibold text-foreground w-32 inline-block">Materials:</span> Metal, Glass, Fabric</p>
+                    <p><span className="font-semibold text-foreground w-32 inline-block">Dimensions:</span> Varies by selection</p>
+                    <p><span className="font-semibold text-foreground w-32 inline-block">Voltage:</span> 220-240V compatible</p>
+                </div>
+              </div>
+          </TabsContent>
+
+          <TabsContent value="reviews" className="py-10" id="reviews">
+             <section aria-labelledby="reviews-heading">
+              <div className="max-w-3xl mx-auto">
+                <h2 id="reviews-heading" className="font-headline text-2xl md:text-3xl font-bold text-center mb-12 uppercase">
+                  Write a Review
+                </h2>
+                <ProductReviewForm 
+                  productName={product.title || 'this product'}
+                  onReviewSubmit={handleReviewSubmit}
+                />
+              </div>
+            </section>
+          </TabsContent>
+
+          <TabsContent value="support" className="py-10">
+            <ProductSupport />
+          </TabsContent>
+        </Tabs>
+        
+        <div className="border-t border-primary/30 my-16 md:my-24" />
 
         <div className="mt-20 md:mt-24">
-            <h2 className="font-headline text-2xl md:text-3xl font-bold text-left mb-12 uppercase">You May Also Like</h2>
-            <div className="custom-scrollbar flex gap-8 overflow-x-auto pb-4 -mx-4 px-4">
+            <h2 className="font-headline text-2xl md:text-3xl font-bold text-center mb-12 uppercase">You May Also Like</h2>
+            <div className="custom-scrollbar grid grid-flow-col auto-cols-max gap-8 overflow-x-auto pb-4 -mx-4 px-4 justify-center">
                 {relatedProducts.map((related) => (
-                     <div key={related.id} className="min-w-[45%] md:min-w-[40%] lg:w-1/4 flex-shrink-0">
+                     <div key={related.id} className="w-[280px]">
                         <RelatedProductCard product={related} />
                      </div>
                 ))}
             </div>
         </div>
-
-        <div className="border-t border-primary/30 my-24" />
-
-        <section id="reviews" aria-labelledby="reviews-heading">
-          <div className="max-w-3xl mx-auto">
-            <h2 id="reviews-heading" className="font-headline text-2xl md:text-3xl font-bold text-center mb-12 uppercase">
-              Write a Review
-            </h2>
-            <ProductReviewForm 
-              productName={product.title || 'this product'}
-              onReviewSubmit={handleReviewSubmit}
-            />
-          </div>
-        </section>
-
-        <ProductSupport />
 
       </main>
       <ShareModal 
