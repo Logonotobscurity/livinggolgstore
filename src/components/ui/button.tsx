@@ -63,19 +63,20 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         : 'bg-primary text-primary-foreground';
 
     if (asChild) {
-      return (
+      const child = React.Children.only(children);
+       return (
         <Slot
           className={cn(buttonVariants({ variant, size, className }), 'group', 'gap-2.5')}
           ref={ref}
           {...props}
         >
-          {React.isValidElement(children) ? 
-            React.cloneElement(children, {
-              ...children.props,
-              className: cn('flex items-center gap-2.5', children.props.className),
+          {React.isValidElement(child) ? 
+            React.cloneElement(child, {
+              ...child.props,
+              className: cn('flex items-center gap-2.5', child.props.className),
               children: (
                 <>
-                  {children.props.children}
+                  {child.props.children}
                   {showIcon && size !== 'icon' && (
                     <AnimatedIcon
                       icon={<Icons.arrow className="w-3 h-3" />}

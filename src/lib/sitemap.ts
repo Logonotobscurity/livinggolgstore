@@ -35,30 +35,16 @@ export const sitemap: NavItem[] = [
         icon: Icons.lampWallUp,
       },
        {
+        title: "Table & Floor Lamps", 
+        href: "/products?category=lamps",
+        icon: Icons.lamp,
+      },
+       {
         title: "Outdoor Lighting",
         href: "/products?category=outdoor",
         icon: Icons.lightbulb,
       },
     ],
-  },
-  {
-    title: "Lamps",
-    href: "/products?category=lamps",
-    icon: Icons.lamp,
-    items: [
-      { 
-        title: "Table & Portable Lights", 
-        href: "/products?category=lamps",
-        icon: Icons.lamp,
-        description: "Versatile lamps for any surface." 
-      },
-      { 
-        title: "Floor Lamps", 
-        href: "/products?category=lamps",
-        icon: Icons.lamp,
-        description: "Elegant floor-standing lights." 
-      },
-    ]
   },
   {
     title: "Accessories",

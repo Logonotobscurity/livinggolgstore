@@ -139,8 +139,7 @@ Please provide a quote for the items listed above.
               </FormItem>
             )}
           />
-           <Separator className="!my-8" />
-           <h2 className="font-headline text-2xl font-bold text-foreground mb-6">
+           <h2 className="font-headline text-2xl font-bold text-foreground mb-6 pt-6 border-t border-border">
             Delivery Address
           </h2>
           <FormField
