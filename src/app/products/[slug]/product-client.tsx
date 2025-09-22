@@ -19,31 +19,44 @@ import CmsLayout from '@/components/layout/cms-layout';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { VirtualStaging } from '@/components/virtual-staging';
 import { generateRecommendations, type GenerateRecommendationsOutput } from '@/ai/flows/generate-recommendations';
+import { Switch } from '@/components/ui/switch';
+import { Label } from '@/components/ui/label';
 
 interface ProductClientProps {
     product: ImagePlaceholder;
-    relatedProducts: ImagePlaceholder[]; // Kept as a fallback
+    relatedProducts: ImagePlaceholder[]; 
     breadcrumb: { text: string; href?: string }[];
 }
 
-function Recommendations({ products }: { products: GenerateRecommendationsOutput['recommendations'] }) {
+function Recommendations({ 
+  products, 
+  isAiEnabled 
+}: { 
+  products: GenerateRecommendationsOutput['recommendations'] | ImagePlaceholder[], 
+  isAiEnabled: boolean 
+}) {
     if (products.length === 0) {
         return <p className="text-center text-muted-foreground">No recommendations available at this time.</p>;
     }
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-8 gap-y-12">
-            {products.map((rec, index) => (
-                <div key={rec.id} className="flex flex-col">
-                    <CategoryCard
-                        product={rec}
-                        animationDelay={`${index * 0.05}s`}
-                        imageClassName="w-full h-full p-2 sm:p-6"
-                    />
-                    <div className="mt-4 text-center p-2 bg-secondary rounded-b-lg flex-grow">
-                        <p className="text-xs text-muted-foreground italic">"{rec.reason}"</p>
+            {products.map((rec, index) => {
+                 const isAiRec = 'reason' in rec;
+                 return (
+                    <div key={rec.id} className="flex flex-col">
+                        <CategoryCard
+                            product={rec}
+                            animationDelay={`${index * 0.05}s`}
+                            imageClassName="w-full h-full p-2 sm:p-6"
+                        />
+                        {isAiEnabled && isAiRec && (
+                             <div className="mt-4 text-center p-2 bg-secondary rounded-b-lg flex-grow">
+                                <p className="text-xs text-muted-foreground italic">"{rec.reason}"</p>
+                            </div>
+                        )}
                     </div>
-                </div>
-            ))}
+                );
+            })}
         </div>
     );
 }
@@ -55,6 +68,7 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
   const [isShareModalOpen, setShareModalOpen] = useState(false);
   const [ratingInfo, setRatingInfo] = useState({ average: 4.5, count: 12 });
   const [recommendations, setRecommendations] = useState<GenerateRecommendationsOutput['recommendations']>([]);
+  const [isAiRecsEnabled, setIsAiRecsEnabled] = useState(false);
   const [isGeneratingRecs, startGeneratingRecs] = useTransition();
   const { toast } = useToast();
 
@@ -64,13 +78,17 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
       setRatingInfo(newRatingInfo);
     };
     fetchRating();
-    
-    startGeneratingRecs(async () => {
-        const recs = await generateRecommendations({ productId: product.id });
-        setRecommendations(recs.recommendations);
-    });
+  }, [product.title]);
 
-  }, [product.id, product.title]);
+  const handleAiToggle = (enabled: boolean) => {
+    setIsAiRecsEnabled(enabled);
+    if (enabled && recommendations.length === 0) {
+        startGeneratingRecs(async () => {
+            const recs = await generateRecommendations({ productId: product.id });
+            setRecommendations(recs.recommendations);
+        });
+    }
+  }
 
   const handleReviewSubmit = async () => {
     // Re-fetch the average rating after a review is submitted
@@ -239,14 +257,21 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
         <div className="border-t border-primary/30 my-16 md:my-24" />
 
         <div className="mt-20 md:mt-24">
-            <h2 className="font-headline text-2xl md:text-3xl font-bold text-center mb-4 uppercase">You May Also Like</h2>
-            <p className="text-center text-sm text-muted-foreground mb-12">(AI-Powered Recommendations)</p>
+            <div className="text-center mb-12">
+              <h2 className="font-headline text-2xl md:text-3xl font-bold uppercase">You May Also Like</h2>
+              <div className="flex items-center justify-center gap-2 mt-4">
+                  <Label htmlFor="ai-recs-toggle" className="text-sm text-muted-foreground">✨ AI-Enhanced</Label>
+                  <Switch id="ai-recs-toggle" checked={isAiRecsEnabled} onCheckedChange={handleAiToggle} />
+              </div>
+            </div>
+
             {isGeneratingRecs ? (
-                 <div className="flex justify-center items-center py-8">
-                    <Icons.loader className="h-8 w-8 animate-spin" />
+                 <div className="flex flex-col justify-center items-center text-center py-8 text-muted-foreground">
+                    <Icons.loader className="h-8 w-8 animate-spin mb-4" />
+                    <p>AI is analyzing recommendations...</p>
                  </div>
             ) : (
-                <Recommendations products={recommendations} />
+                <Recommendations products={isAiRecsEnabled ? recommendations : relatedProducts} isAiEnabled={isAiRecsEnabled} />
             )}
         </div>
 
@@ -260,3 +285,5 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
     </CmsLayout>
   );
 }
+
+    
