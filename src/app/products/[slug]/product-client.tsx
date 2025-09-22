@@ -10,7 +10,7 @@ import { cn } from '@/lib/utils';
 import { useCart } from '@/context/cart-context';
 import { useWishlist } from '@/context/wishlist-context';
 import ShareModal from '@/components/share-modal';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useTransition } from 'react';
 import { ProductSupport } from '@/components/product-support';
 import { useToast } from '@/hooks/use-toast';
 import { ProductReviewForm } from '@/components/product-review-form';
@@ -18,18 +18,44 @@ import { getAverageRating } from '@/lib/reviews';
 import CmsLayout from '@/components/layout/cms-layout';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { VirtualStaging } from '@/components/virtual-staging';
+import { generateRecommendations, type GenerateRecommendationsOutput } from '@/ai/flows/generate-recommendations';
 
 interface ProductClientProps {
     product: ImagePlaceholder;
-    relatedProducts: ImagePlaceholder[];
+    relatedProducts: ImagePlaceholder[]; // Kept as a fallback
     breadcrumb: { text: string; href?: string }[];
 }
+
+function Recommendations({ products }: { products: GenerateRecommendationsOutput['recommendations'] }) {
+    if (products.length === 0) {
+        return <p className="text-center text-muted-foreground">No recommendations available at this time.</p>;
+    }
+    return (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-8 gap-y-12">
+            {products.map((rec, index) => (
+                <div key={rec.id} className="flex flex-col">
+                    <CategoryCard
+                        product={rec}
+                        animationDelay={`${index * 0.05}s`}
+                        imageClassName="w-full h-full p-2 sm:p-6"
+                    />
+                    <div className="mt-4 text-center p-2 bg-secondary rounded-b-lg flex-grow">
+                        <p className="text-xs text-muted-foreground italic">"{rec.reason}"</p>
+                    </div>
+                </div>
+            ))}
+        </div>
+    );
+}
+
 
 export default function ProductClient({ product, relatedProducts, breadcrumb }: ProductClientProps) {
   const { addToCart } = useCart();
   const { toggleWishlist, isInWishlist } = useWishlist();
   const [isShareModalOpen, setShareModalOpen] = useState(false);
   const [ratingInfo, setRatingInfo] = useState({ average: 4.5, count: 12 });
+  const [recommendations, setRecommendations] = useState<GenerateRecommendationsOutput['recommendations']>([]);
+  const [isGeneratingRecs, startGeneratingRecs] = useTransition();
   const { toast } = useToast();
 
   useEffect(() => {
@@ -38,7 +64,13 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
       setRatingInfo(newRatingInfo);
     };
     fetchRating();
-  }, [product.title]);
+    
+    startGeneratingRecs(async () => {
+        const recs = await generateRecommendations({ productId: product.id });
+        setRecommendations(recs.recommendations);
+    });
+
+  }, [product.id, product.title]);
 
   const handleReviewSubmit = async () => {
     // Re-fetch the average rating after a review is submitted
@@ -207,18 +239,15 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
         <div className="border-t border-primary/30 my-16 md:my-24" />
 
         <div className="mt-20 md:mt-24">
-            <h2 className="font-headline text-2xl md:text-3xl font-bold text-center mb-12 uppercase">You May Also Like</h2>
-            <div className="custom-scrollbar grid grid-flow-col auto-cols-max gap-8 overflow-x-auto py-8 -mx-4 px-4 justify-center">
-                {relatedProducts.map((related, index) => (
-                     <div key={related.id} className="w-[280px] product-card-container">
-                        <CategoryCard 
-                          product={related} 
-                          animationDelay={`${index * 0.05}s`}
-                          imageClassName="w-full h-full p-2 sm:p-6"
-                        />
-                     </div>
-                ))}
-            </div>
+            <h2 className="font-headline text-2xl md:text-3xl font-bold text-center mb-4 uppercase">You May Also Like</h2>
+            <p className="text-center text-sm text-muted-foreground mb-12">(AI-Powered Recommendations)</p>
+            {isGeneratingRecs ? (
+                 <div className="flex justify-center items-center py-8">
+                    <Icons.loader className="h-8 w-8 animate-spin" />
+                 </div>
+            ) : (
+                <Recommendations products={recommendations} />
+            )}
         </div>
 
       </main>
