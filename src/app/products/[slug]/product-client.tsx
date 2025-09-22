@@ -192,7 +192,7 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
           </TabsContent>
 
           <TabsContent value="support" className="py-10">
-            <ProductSupport />
+            <ProductSupport productName={product.title || 'this product'} />
           </TabsContent>
         </Tabs>
         
