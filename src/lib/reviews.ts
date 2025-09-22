@@ -1,6 +1,6 @@
-// This is a mock database service.
-// In a real application, this would be replaced by a database connection.
 
+import { db } from './firebase';
+import { collection, addDoc, getDocs, query, where } from 'firebase/firestore';
 import { analyzeReviewSentiment } from "@/ai/flows/analyze-review-sentiment";
 
 export interface Review {
@@ -12,70 +12,49 @@ export interface Review {
         sentiment: 'positive' | 'negative' | 'neutral';
         score: number;
     };
+    createdAt?: Date;
 }
 
-// Start with a base set of testimonials
-const reviews: Review[] = [
-  {
-    body: "Living Gold's collection is a treasure trove of unique finds. I always discover something extraordinary that elevates my design projects to the next level. Truly a designer's dream.",
-    author: 'A. Adewusi, Interior Designer',
-    rating: 5,
-    productName: 'General'
-  },
-  {
-    body: 'The quality and craftsmanship of the pieces from Living Gold are unparalleled. Each item tells a story and brings a sense of history and soul into the home.',
-    author: 'K. Bello, Homeowner',
-    rating: 4,
-    productName: 'General'
-  },
-  {
-    body: "From grand chandeliers to the smallest decorative objects, Living Gold's curation is impeccable. It's my first stop for sourcing items that make a statement.",
-    author: 'F. Okoro, Architect',
-    rating: 5,
-    productName: 'General'
-  },
-  {
-    body: 'Working with the Living Gold team was a seamless experience. Their expertise in lighting design and commitment to service made all the difference on our project.',
-    author: 'L. Adeyemi, Property Developer',
-    rating: 5,
-    productName: 'General'
-  },
-  {
-    body: 'The bespoke chandelier we commissioned is the centerpiece of our hotel lobby. Living Gold delivered a work of art that is both timeless and breathtaking.',
-    author: 'General Manager, The Lagos Continental',
-    rating: 5,
-    productName: 'General'
-  },
-  {
-    body: 'I appreciate the attention to detail and the clear communication throughout the import process. Living Gold makes sourcing luxury international lighting effortless.',
-    author: 'T. Ibrahim, Procurement Manager',
-    rating: 4,
-    productName: 'General'
-  },
-];
+const reviewsCollection = collection(db, 'reviews');
 
 /**
- * MOCK: Retrieves all reviews from the "database".
- * In a real app, this would fetch from a database.
+ * Retrieves all reviews from Firestore.
  */
 export async function getReviews(): Promise<Review[]> {
-  // Simulate network delay
-  await new Promise(resolve => setTimeout(resolve, 100));
-  return reviews;
+  try {
+    const snapshot = await getDocs(reviewsCollection);
+    const reviews: Review[] = [];
+    snapshot.forEach(doc => {
+      reviews.push({ id: doc.id, ...doc.data() } as Review & { id: string });
+    });
+    return reviews.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+  } catch (error) {
+    console.error("Error fetching reviews: ", error);
+    return [];
+  }
 }
 
 /**
- * MOCK: Retrieves all reviews for a specific product.
+ * Retrieves all reviews for a specific product from Firestore.
  */
 export async function getReviewsByProduct(productName: string): Promise<Review[]> {
-  // Simulate network delay
-  await new Promise(resolve => setTimeout(resolve, 50));
-  return reviews.filter(r => r.productName === productName);
+  try {
+    const q = query(reviewsCollection, where("productName", "==", productName));
+    const snapshot = await getDocs(q);
+    const reviews: Review[] = [];
+    snapshot.forEach(doc => {
+      reviews.push({ id: doc.id, ...doc.data() } as Review & { id: string });
+    });
+    return reviews.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
+  } catch (error) {
+    console.error(`Error fetching reviews for ${productName}: `, error);
+    return [];
+  }
 }
 
 
 /**
- * MOCK: Calculates the average rating for a product.
+ * Calculates the average rating for a product from Firestore.
  */
 export async function getAverageRating(productName: string): Promise<{ average: number; count: number }> {
     const productReviews = await getReviewsByProduct(productName);
@@ -99,22 +78,23 @@ export async function getAverageRating(productName: string): Promise<{ average: 
 
 
 /**
- * MOCK: Adds a new review to the "database" after analyzing its sentiment.
- * In a real app, this would write to a database.
+ * Adds a new review to Firestore after analyzing its sentiment.
  */
-export async function addReview(review: Omit<Review, 'aiAnalysis'>): Promise<void> {
-  // Simulate network delay
-  await new Promise(resolve => setTimeout(resolve, 500));
-  
-  // Analyze sentiment before saving
-  const aiAnalysis = await analyzeReviewSentiment({ text: review.body });
-  const enrichedReview: Review = { ...review, aiAnalysis };
+export async function addReview(review: Omit<Review, 'aiAnalysis' | 'createdAt'>): Promise<void> {
+  try {
+    // Analyze sentiment before saving
+    const aiAnalysis = await analyzeReviewSentiment({ text: review.body });
+    const enrichedReview: Review = { 
+        ...review, 
+        aiAnalysis,
+        createdAt: new Date(),
+    };
 
-  // Add to the beginning of the array to show newest first
-  reviews.unshift(enrichedReview); 
-  
-  console.log('--- Mock Review Added with AI Analysis ---');
-  console.log(enrichedReview);
-  console.log('--- Current Reviews ---');
-  console.log(reviews);
+    await addDoc(reviewsCollection, enrichedReview);
+
+    console.log('--- Firestore Review Added with AI Analysis ---');
+    console.log(enrichedReview);
+  } catch (error) {
+      console.error("Error adding review: ", error);
+  }
 }
