@@ -1,11 +1,17 @@
 // This is a mock database service.
 // In a real application, this would be replaced by a database connection.
 
+import { analyzeReviewSentiment } from "@/ai/flows/analyze-review-sentiment";
+
 export interface Review {
     author: string;
     body: string;
     rating: number;
     productName: string;
+    aiAnalysis?: {
+        sentiment: 'positive' | 'negative' | 'neutral';
+        score: number;
+    };
 }
 
 // Start with a base set of testimonials
@@ -93,18 +99,22 @@ export async function getAverageRating(productName: string): Promise<{ average: 
 
 
 /**
- * MOCK: Adds a new review to the "database".
+ * MOCK: Adds a new review to the "database" after analyzing its sentiment.
  * In a real app, this would write to a database.
  */
-export async function addReview(review: Review): Promise<void> {
+export async function addReview(review: Omit<Review, 'aiAnalysis'>): Promise<void> {
   // Simulate network delay
   await new Promise(resolve => setTimeout(resolve, 500));
   
+  // Analyze sentiment before saving
+  const aiAnalysis = await analyzeReviewSentiment({ text: review.body });
+  const enrichedReview: Review = { ...review, aiAnalysis };
+
   // Add to the beginning of the array to show newest first
-  reviews.unshift(review); 
+  reviews.unshift(enrichedReview); 
   
-  console.log('--- Mock Review Added ---');
-  console.log(review);
+  console.log('--- Mock Review Added with AI Analysis ---');
+  console.log(enrichedReview);
   console.log('--- Current Reviews ---');
   console.log(reviews);
 }

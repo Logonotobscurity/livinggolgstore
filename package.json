@@ -48,6 +48,7 @@
     "genkit": "^1.14.1",
     "lodash": "^4.17.21",
     "lucide-react": "^0.475.0",
+    "natural": "^7.0.0",
     "next": "15.3.3",
     "next-cloudinary": "^6.8.0",
     "next-themes": "^0.3.0",
@@ -64,6 +65,7 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.17.4",
+    "@types/natural": "^5.1.5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
