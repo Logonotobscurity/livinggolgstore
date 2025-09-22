@@ -157,11 +157,10 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
         <div className="border-t border-primary/30 my-16 md:my-24" />
 
         <Tabs defaultValue="details" className="w-full">
-          <TabsList className="grid w-full grid-cols-4 max-w-3xl mx-auto">
+          <TabsList className="grid w-full grid-cols-3 max-w-2xl mx-auto">
             <TabsTrigger value="details">Details & Specs</TabsTrigger>
             <TabsTrigger value="staging">Virtual Staging</TabsTrigger>
             <TabsTrigger value="reviews">Reviews</TabsTrigger>
-            <TabsTrigger value="support">Support & FAQ</TabsTrigger>
           </TabsList>
 
           <TabsContent value="details" className="py-10">
@@ -199,11 +198,11 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
               </div>
             </section>
           </TabsContent>
-
-          <TabsContent value="support" className="py-10">
-            <ProductSupport productName={product.title || 'this product'} />
-          </TabsContent>
         </Tabs>
+        
+        <div className="border-t border-primary/30 my-16 md:my-24" />
+
+        <ProductSupport productName={product.title || 'this product'} />
         
         <div className="border-t border-primary/30 my-16 md:my-24" />
 

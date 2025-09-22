@@ -26,7 +26,6 @@ const checkoutFormSchema = z.object({
   address: z.string().min(5, { message: 'Please enter a valid address.' }),
   city: z.string().min(2, { message: 'Please enter a valid city.' }),
   state: z.string().min(2, { message: 'Please enter a valid state.' }),
-  zip: z.string().min(5, { message: 'Please enter a valid ZIP code.' }),
 });
 
 type CheckoutFormValues = z.infer<typeof checkoutFormSchema>;
@@ -46,7 +45,6 @@ export function CheckoutForm() {
       address: '',
       city: '',
       state: '',
-      zip: '',
     },
   });
 
@@ -60,7 +58,7 @@ export function CheckoutForm() {
 Name: ${values.firstName} ${values.lastName}
 Email: ${values.email}
 Phone: ${values.phone}
-Address: ${values.address}, ${values.city}, ${values.state} ${values.zip}
+Address: ${values.address}, ${values.city}, ${values.state}
 
 *Order Summary:*
 ${orderSummary}
@@ -85,7 +83,7 @@ Please provide a quote for the items listed above.
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <h2 className="font-headline text-2xl font-bold text-foreground mb-6">
-            Checkout Information
+            Contact Information
           </h2>
           <div className="grid grid-cols-2 gap-4">
             <FormField
@@ -141,6 +139,10 @@ Please provide a quote for the items listed above.
               </FormItem>
             )}
           />
+           <Separator className="!my-8" />
+           <h2 className="font-headline text-2xl font-bold text-foreground mb-6">
+            Delivery Address
+          </h2>
           <FormField
             control={form.control}
             name="address"
@@ -154,7 +156,7 @@ Please provide a quote for the items listed above.
               </FormItem>
             )}
           />
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 gap-4">
             <FormField
               control={form.control}
               name="city"
@@ -174,19 +176,6 @@ Please provide a quote for the items listed above.
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>State</FormLabel>
-                  <FormControl>
-                    <Input {...field} className="bg-background"/>
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-             <FormField
-              control={form.control}
-              name="zip"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>ZIP Code</FormLabel>
                   <FormControl>
                     <Input {...field} className="bg-background"/>
                   </FormControl>

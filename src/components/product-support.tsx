@@ -2,7 +2,6 @@
 'use client';
 
 import { useState, useTransition } from 'react';
-import { ContactForm } from '@/components/contact-form';
 import {
   Accordion,
   AccordionContent,
@@ -122,26 +121,17 @@ export function ProductSupport({ productName }: ProductSupportProps) {
   };
 
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-      <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-start">
-        <div className="w-full">
-          <div className="max-w-md mx-auto">
-            <h2 className="font-headline text-2xl font-bold text-foreground text-center mb-4">
-              HAVE A QUESTION?
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+        <div className="text-center">
+            <h2 className="font-headline text-2xl md:text-3xl font-bold mb-4">
+                Support & Information
             </h2>
-            <p className="text-center text-muted-foreground mb-8">
-              Our experts are here to help. From product details to design
-              advice, we're ready to assist you.
+             <p className="text-sm text-muted-foreground max-w-xl mx-auto">
+                Find answers to common questions or generate a virtual installation guide for this product.
             </p>
-            <ContactForm />
-          </div>
         </div>
-        <div>
-          <h2 className="font-headline text-2xl font-bold text-center mb-6">
-            Support & Information
-          </h2>
 
-          <Accordion type="single" collapsible className="w-full" defaultValue="guide">
+        <Accordion type="single" collapsible className="w-full mt-8">
             <AccordionItem value="guide">
               <AccordionTrigger className="text-lg">
                 Virtual Installation Guide
@@ -226,28 +216,12 @@ export function ProductSupport({ productName }: ProductSupportProps) {
                 to schedule a consultation.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-4">
-              <AccordionTrigger>
-                Are your imported lights compatible with Nigerian electrical
-                standards?
-              </AccordionTrigger>
-              <AccordionContent>
-                Yes, this is a critical part of our service. All our
-                internationally sourced lighting fixtures are professionally
-                inspected and adapted to meet local electrical and safety
-                standards for Nigeria (230V, 50Hz). We ensure all mounting
-                hardware and technical specifications are suitable for local
-                installation, guaranteeing safety and performance.
-              </AccordionContent>
-            </AccordionItem>
           </Accordion>
           <div className="text-center mt-8">
             <Link href="/contact" className="text-primary hover:underline">
-              See more FAQs
+              See more FAQs or Contact Us
             </Link>
           </div>
-        </div>
-      </div>
     </div>
   );
 }
