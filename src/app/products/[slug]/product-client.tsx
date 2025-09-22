@@ -17,6 +17,7 @@ import { ProductReviewForm } from '@/components/product-review-form';
 import { getAverageRating } from '@/lib/reviews';
 import CmsLayout from '@/components/layout/cms-layout';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { VirtualStaging } from '@/components/virtual-staging';
 
 interface ProductClientProps {
     product: ImagePlaceholder;
@@ -156,8 +157,9 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
         <div className="border-t border-primary/30 my-16 md:my-24" />
 
         <Tabs defaultValue="details" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 max-w-2xl mx-auto">
-            <TabsTrigger value="details">Details & Specifications</TabsTrigger>
+          <TabsList className="grid w-full grid-cols-4 max-w-3xl mx-auto">
+            <TabsTrigger value="details">Details & Specs</TabsTrigger>
+            <TabsTrigger value="staging">Virtual Staging</TabsTrigger>
             <TabsTrigger value="reviews">Reviews</TabsTrigger>
             <TabsTrigger value="support">Support & FAQ</TabsTrigger>
           </TabsList>
@@ -175,6 +177,13 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
                     <p><span className="font-semibold text-foreground w-32 inline-block">Voltage:</span> 220-240V compatible</p>
                 </div>
               </div>
+          </TabsContent>
+          
+          <TabsContent value="staging" className="py-10">
+            <VirtualStaging 
+              productName={product.title || ''}
+              imageUrl={product.imageUrl}
+            />
           </TabsContent>
 
           <TabsContent value="reviews" className="py-10" id="reviews">
