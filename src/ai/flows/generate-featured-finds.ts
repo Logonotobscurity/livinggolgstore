@@ -1,3 +1,4 @@
+
 'use server';
 
 /**
@@ -9,7 +10,8 @@
 
 import { ai } from '@/ai/genkit';
 import { z } from 'genkit';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { PlaceHolderImages, ImagePlaceholder } from '@/lib/placeholder-images';
+import { getAverageRating } from '@/lib/reviews';
 import _ from 'lodash';
 
 const FeaturedProductSchema = z.object({
@@ -25,7 +27,7 @@ const FeaturedProductSchema = z.object({
 });
 
 const GenerateFeaturedFindsOutputSchema = z.object({
-  heading: z.string().describe("A short, catchy headline for the featured products section."),
+  heading: z.string().describe("A short, catchy headline for the featured products section (e.g., 'Today's AI-Curated Picks')."),
   products: z.array(FeaturedProductSchema),
 });
 export type GenerateFeaturedFindsOutput = z.infer<typeof GenerateFeaturedFindsOutputSchema>;
@@ -34,6 +36,22 @@ export type GenerateFeaturedFindsOutput = z.infer<typeof GenerateFeaturedFindsOu
 export async function generateFeaturedFinds(): Promise<GenerateFeaturedFindsOutput> {
   return generateFeaturedFindsFlow();
 }
+
+const headlinePrompt = ai.definePrompt({
+    name: 'generateFeaturedHeadlinePrompt',
+    output: { schema: z.object({ heading: z.string() }) },
+    prompt: `You are the voice of an AI-powered curation engine for "Living Gold", a luxury lighting store.
+Your task is to generate a single, short, and exciting headline (5-7 words) for the "Featured Finds" section.
+The headline should convey that the products were intelligently selected based on trends, popularity, and top ratings.
+
+Examples:
+- "Revealed: Today's Top-Rated Treasures"
+- "AI-Curated Finds, Trending Now"
+- "The Hottest Styles, Chosen by Our AI"
+
+Generate the headline now.`,
+});
+
 
 const reasonPrompt = ai.definePrompt({
     name: 'generateFeaturedReasonPrompt',
@@ -65,26 +83,39 @@ const generateFeaturedFindsFlow = ai.defineFlow(
   },
   async () => {
     
-    // 1. Shuffle products to ensure variety on each run
-    const shuffledProducts = _.shuffle(PlaceHolderImages);
+    // 1. Fetch ratings and calculate a "popularity score" for all products
+    const ratedProducts = await Promise.all(
+      PlaceHolderImages.map(async (product) => {
+        const ratingInfo = await getAverageRating(product.title || product.id);
+        // Simple scoring: average rating * log(number of reviews + 1) to balance quality and popularity
+        const score = ratingInfo.average * Math.log(ratingInfo.count + 1);
+        return { ...product, score };
+      })
+    );
 
-    // 2. Select 4 diverse products programmatically
-    const selectedProducts = [];
+    // 2. Select 4 diverse, high-scoring products
+    const shuffledProducts = _.shuffle(ratedProducts); // Shuffle to add variety among high-scorers
+    const selectedProducts: (ImagePlaceholder & { score: number })[] = [];
     const usedCategories = new Set<string>();
-    for (const product of shuffledProducts) {
-        if (selectedProducts.length >= 4) break;
-        if (product.category && !usedCategories.has(product.category)) {
-            selectedProducts.push(product);
-            usedCategories.add(product.category);
-        }
-    }
 
-    // Fallback if diversification logic fails to find 4 unique categories
-    if (selectedProducts.length < 4) {
-        const fallback = shuffledProducts.slice(0, 4 - selectedProducts.length);
-        selectedProducts.push(...fallback);
+    // Prioritize high-scoring products with unique categories
+    shuffledProducts.sort((a, b) => b.score - a.score);
+
+    for (const product of shuffledProducts) {
+      if (selectedProducts.length >= 4) break;
+      if (product.category && !usedCategories.has(product.category)) {
+        selectedProducts.push(product);
+        usedCategories.add(product.category);
+      }
     }
     
+    // Fallback if we can't find 4 unique categories
+    if (selectedProducts.length < 4) {
+      const needed = 4 - selectedProducts.length;
+      const fallbackCandidates = shuffledProducts.filter(p => !selectedProducts.find(sp => sp.id === p.id));
+      selectedProducts.push(...fallbackCandidates.slice(0, needed));
+    }
+
     // 3. Generate AI-powered reasons for each selected product
     const productsWithReasons = await Promise.all(selectedProducts.map(async (product) => {
         try {
@@ -105,10 +136,21 @@ const generateFeaturedFindsFlow = ai.defineFlow(
             };
         }
     }));
+    
+    // 4. Generate a dynamic, "genius" headline
+    let heading = "Curator's Featured Finds";
+    try {
+        const { output } = await headlinePrompt();
+        if (output?.heading) {
+            heading = output.heading;
+        }
+    } catch (error) {
+        console.error('Failed to generate headline', error);
+    }
 
 
     return { 
-        heading: "Curator's Featured Finds",
+        heading: heading,
         products: productsWithReasons as any,
     };
   }

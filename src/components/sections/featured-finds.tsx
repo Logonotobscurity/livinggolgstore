@@ -14,6 +14,7 @@ export default function FeaturedFinds() {
     const [isRevealed, setIsRevealed] = useState(false);
 
     const handleReveal = () => {
+        if (isRevealed) return;
         startTransition(async () => {
             const result = await generateFeaturedFinds();
             setData(result);
@@ -25,17 +26,19 @@ export default function FeaturedFinds() {
         return (
             <section className="py-20 md:py-32 bg-secondary/30">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12 md:mb-16">
+                    <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
                         <h2 className="font-headline text-3xl md:text-5xl font-bold text-foreground">
-                            Curator's Featured Finds
+                            Let Our AI Be Your Guide
                         </h2>
-                        <p className="text-muted-foreground mt-2">Click the button to reveal today's AI-curated selections.</p>
+                        <p className="text-muted-foreground mt-4 text-lg">
+                           Our AI assistant analyzes our collection for top-rated items, trending styles, and hidden gems. Click the button to reveal today's most recommended products, curated just for you.
+                        </p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 md:gap-x-8 gap-y-8 md:gap-y-16">
                         {Array.from({ length: 4 }).map((_, index) => (
-                            <Card key={index} className="aspect-square flex items-center justify-center bg-background/50">
+                            <Card key={index} className="aspect-square flex items-center justify-center bg-background/50 border-dashed border-2">
                                 <CardContent className="p-0">
-                                    <Icons.helpCircle className="w-16 h-16 text-muted-foreground/50" />
+                                    <Icons.helpCircle className="w-16 h-16 text-muted-foreground/30" />
                                 </CardContent>
                             </Card>
                         ))}
@@ -45,7 +48,7 @@ export default function FeaturedFinds() {
                             {isPending ? (
                                 <>
                                     <Icons.loader className="h-5 w-5 animate-spin mr-2" />
-                                    Revealing...
+                                    Analyzing...
                                 </>
                             ) : (
                                 "Reveal Today's Finds"
@@ -57,13 +60,13 @@ export default function FeaturedFinds() {
         );
     }
     
-    if (isPending) {
+    if (isPending && !data) {
          return (
             <section className="py-20 md:py-32 bg-secondary/30">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <div className="flex flex-col justify-center items-center text-center py-8 text-muted-foreground">
                         <Icons.loader className="h-8 w-8 animate-spin mb-4" />
-                        <p>AI is curating featured finds...</p>
+                        <p>Our AI curator is analyzing the collection...</p>
                     </div>
                 </div>
             </section>
