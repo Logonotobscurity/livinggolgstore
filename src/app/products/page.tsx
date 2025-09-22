@@ -1,4 +1,5 @@
 
+
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -61,13 +62,13 @@ export default function ProductsPage({ searchParams }: ProductsPageProps) {
     const breadcrumb = [
       { text: 'Home', href: '/' },
       { text: 'Products', href: '/products' },
-      { text: category.title }
+      { text: category.title.replace(/Shop|in Nigeria|Luxury Light Spare Parts & Accessories/gi, '').trim() }
     ];
 
     return (
       <CmsLayout breadcrumb={breadcrumb}>
         {heroImage && (
-          <section className="relative h-64 md:h-80 flex items-center justify-center text-center text-white overflow-hidden -mt-16 md:-mt-24">
+          <section className="relative flex items-center justify-center text-center text-white overflow-hidden -mt-16 md:-mt-24 py-20 md:py-28">
             <Image
               src={heroImage.imageUrl}
               alt={heroImage.description}
@@ -78,10 +79,10 @@ export default function ProductsPage({ searchParams }: ProductsPageProps) {
             />
             <div className="absolute inset-0 bg-black/60" />
             <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-              <h1 className="font-headline text-5xl md:text-7xl font-bold uppercase">
+              <h1 className="font-headline text-4xl md:text-6xl font-bold uppercase">
                 {category.title.replace(/Shop|in Nigeria|Luxury Light Spare Parts & Accessories/gi, '').trim()}
               </h1>
-              <p className="mt-4 text-lg max-w-2xl mx-auto text-gray-200">{category.description}</p>
+              <p className="mt-4 text-base md:text-lg max-w-2xl mx-auto text-gray-200">{category.description}</p>
             </div>
           </section>
         )}
@@ -115,7 +116,7 @@ export default function ProductsPage({ searchParams }: ProductsPageProps) {
           </section>
         )}
         
-        <ProductSupport />
+        <ProductSupport productName={category.title} />
         <div className="my-24 md:my-32" />
       </CmsLayout>
     );

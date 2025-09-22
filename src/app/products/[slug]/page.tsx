@@ -1,4 +1,5 @@
 
+
 import { notFound } from 'next/navigation';
 import { PlaceHolderImages, type ImagePlaceholder } from '@/lib/placeholder-images';
 import type { Metadata, ResolvingMetadata } from 'next';
@@ -65,7 +66,7 @@ export default function ProductPage({ params: { slug } }: { params: { slug: stri
   if (product.category) {
     const categoryInfo = ProductCategories.find(c => c.slug === product.category);
     if (categoryInfo) {
-      breadcrumb.push({ text: categoryInfo.title, href: `/products?category=${categoryInfo.slug}` });
+      breadcrumb.push({ text: categoryInfo.title.replace(/Shop|in Nigeria|Luxury Light Spare Parts & Accessories/gi, '').trim(), href: `/products?category=${categoryInfo.slug}` });
     }
   }
 
