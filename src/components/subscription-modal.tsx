@@ -245,7 +245,7 @@ export default function SubscriptionModal() {
       
       <div
         className={cn(
-          'fixed bottom-4 right-4 z-50 transition-transform duration-300 ease-in-out',
+          'fixed bottom-4 left-4 z-50 transition-transform duration-300 ease-in-out',
           isDeclined && !isOpen ? 'translate-y-0' : 'translate-y-[200%]'
         )}
       >
