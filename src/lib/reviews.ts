@@ -1,6 +1,6 @@
 
 import { db } from './firebase';
-import { collection, addDoc, getDocs, query, where } from 'firebase/firestore';
+import { collection, addDoc, getDocs, query, where, orderBy } from 'firebase/firestore';
 import { analyzeReviewSentiment } from "@/ai/flows/analyze-review-sentiment";
 
 export interface Review {
@@ -32,7 +32,8 @@ const reviewsCollection = collection(db, 'reviews');
  */
 export async function getReviews(): Promise<Review[]> {
   try {
-    const snapshot = await getDocs(reviewsCollection);
+    const q = query(reviewsCollection, orderBy("createdAt", "desc"));
+    const snapshot = await getDocs(q);
     const reviews: Review[] = [];
     snapshot.forEach(doc => {
       reviews.push({ id: doc.id, ...doc.data() } as Review & { id: string });
@@ -42,7 +43,7 @@ export async function getReviews(): Promise<Review[]> {
         return mockReviews;
     }
 
-    return reviews.sort((a, b) => (new Date(b.createdAt as any).getTime() || 0) - (new Date(a.createdAt as any).getTime() || 0));
+    return reviews;
   } catch (error) {
     console.error("Error fetching reviews: ", error);
     return mockReviews;
@@ -54,17 +55,18 @@ export async function getReviews(): Promise<Review[]> {
  */
 export async function getReviewsByProduct(productName: string): Promise<Review[]> {
   try {
-    const q = query(reviewsCollection, where("productName", "==", productName));
+    const q = query(reviewsCollection, where("productName", "==", productName), orderBy("createdAt", "desc"));
     const snapshot = await getDocs(q);
     const reviews: Review[] = [];
     snapshot.forEach(doc => {
       reviews.push({ id: doc.id, ...doc.data() } as Review & { id: string });
     });
 
-    const filteredMockReviews = mockReviews.filter(r => r.productName === productName);
-    const combined = [...filteredMockReviews, ...reviews];
-
-    return combined.sort((a, b) => (new Date(b.createdAt as any).getTime() || 0) - (new Date(a.createdAt as any).getTime() || 0));
+    if (reviews.length === 0) {
+      return mockReviews.filter(r => r.productName === productName);
+    }
+    
+    return reviews;
   } catch (error) {
     console.error(`Error fetching reviews for ${productName}: `, error);
     return mockReviews.filter(r => r.productName === productName);
