@@ -1,0 +1,80 @@
+
+.speed-dial-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 50;
+}
+
+.speed-dial-button,
+.speed-dial-item button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25), 0 0 0 2px hsl(var(--background)), 0 0 0 4px hsl(var(--primary));
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s;
+}
+
+.speed-dial-button:hover {
+    transform: scale(1.1);
+}
+
+.speed-dial-icon-container {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.speed-dial-container[data-state="open"] .speed-dial-icon-container {
+    transform: rotate(45deg);
+}
+
+.speed-dial-menu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+}
+
+.speed-dial-item {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.speed-dial-item button {
+    width: 50px;
+    height: 50px;
+    background: hsl(var(--secondary));
+    color: hsl(var(--secondary-foreground));
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.speed-dial-container[data-state="open"] .speed-dial-menu {
+    pointer-events: auto;
+}
+
+.speed-dial-container[data-state="open"] .speed-dial-item:nth-child(1) {
+    transform: translateY(-70px);
+}
+.speed-dial-container[data-state="open"] .speed-dial-item:nth-child(2) {
+    transform: translateY(-130px);
+}
+.speed-dial-container[data-state="open"] .speed-dial-item:nth-child(3) {
+    transform: translateY(-190px);
+}
+.speed-dial-container[data-state="open"] .speed-dial-item:nth-child(4) {
+    transform: translateY(-250px);
+}

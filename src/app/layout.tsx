@@ -11,11 +11,12 @@ import './new-cta-button.css';
 import './theme-toggle.css';
 import './text-animations.css';
 import './ai-widget.css';
+import './speed-dial.css';
 import { SessionReminder } from '@/components/session-reminder';
 import SubscriptionModal from '@/components/subscription-modal';
 import { ThemeProvider } from '@/components/theme-provider';
 import { ClientOnly } from '@/components/client-only';
-import AIConsultantWidget from '@/components/ai-consultant-widget';
+import SpeedDialWidget from '@/components/speed-dial-widget';
 
 export const metadata: Metadata = {
   title: {
@@ -90,7 +91,7 @@ export default function RootLayout({
                   <ClientOnly>
                     <SessionReminder />
                     <SubscriptionModal />
-                    <AIConsultantWidget />
+                    <SpeedDialWidget />
                   </ClientOnly>
                 </div>
             </WishlistProvider>

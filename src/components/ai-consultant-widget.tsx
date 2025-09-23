@@ -33,7 +33,7 @@ export default function AIConsultantWidget() {
               <Icons.lightbulb className="h-8 w-8 ai-widget-icon" />
             </button>
           </TooltipTrigger>
-          <TooltipContent side="right">
+          <TooltipContent>
               <p>AI Lighting Consultant</p>
           </TooltipContent>
         </Tooltip>
