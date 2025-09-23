@@ -11,7 +11,7 @@ import './new-cta-button.css';
 import './theme-toggle.css';
 import './text-animations.css';
 import './speed-dial.css';
-import './svg-masked-image.css';
+
 import { SessionReminder } from '@/components/session-reminder';
 import SubscriptionModal from '@/components/subscription-modal';
 import { ThemeProvider } from '@/components/theme-provider';

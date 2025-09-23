@@ -1,17 +1,17 @@
-
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { SunBanner } from '@/components/sun-banner';
 import { useResponsive } from '@/hooks/use-responsive';
 import { Icons } from '@/components/icons';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { SvgMaskedImage } from '../svg-masked-image';
 
 export default function Hero() {
   const { isMobile } = useResponsive();
   const heroImage = PlaceHolderImages.find(p => p.id === 'room-settings-1');
+  const aboutPageImage = "https://www.visualcomfort.com/media_15301f7f1a1767bae048266bf4ea27bd8169b7990.jpg";
 
   return (
     <section className={`relative w-full ${isMobile ? 'h-auto py-24' : 'h-[650px]'} flex items-center justify-center overflow-hidden`}>
@@ -44,15 +44,16 @@ export default function Hero() {
             </div>
 
             <div className={`relative ${isMobile ? 'hidden' : 'flex'} items-center justify-center`}>
-                {heroImage && (
-                    <div className="relative w-96 h-96 svg-masked-image-container">
-                        <SvgMaskedImage 
-                            imageUrl={heroImage.imageUrl} 
-                            alt={heroImage.description} 
-                            shape="splash"
-                        />
-                    </div>
-                )}
+                <div className="relative w-[450px] h-[450px] rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 p-4 shadow-2xl">
+                     <Image
+                        src={aboutPageImage}
+                        alt="Dining room lit by a Living Gold chandelier"
+                        fill
+                        className="object-cover rounded-md"
+                        priority
+                        data-ai-hint="chandelier dining room"
+                     />
+                </div>
             </div>
         </div>
       </div>
