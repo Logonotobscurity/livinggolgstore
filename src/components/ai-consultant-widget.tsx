@@ -21,7 +21,7 @@ export default function AIConsultantWidget() {
     <>
       <Button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-50 h-16 w-16 rounded-full shadow-2xl"
+        className="fixed bottom-6 left-6 z-50 h-16 w-16 rounded-full shadow-2xl"
         aria-label="Open AI Lighting Consultant"
       >
         <Icons.lightbulb className="h-8 w-8" />
