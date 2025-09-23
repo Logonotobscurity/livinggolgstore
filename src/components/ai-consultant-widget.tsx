@@ -17,8 +17,6 @@ export default function AIConsultantWidget() {
     <AIConsultant onResults={() => setIsOpen(false)} />
   );
   
-  const tooltipText = "AI Lighting Consultant";
-
   return (
     <>
       <TooltipProvider>
@@ -35,21 +33,8 @@ export default function AIConsultantWidget() {
               <Icons.lightbulb className="h-8 w-8 ai-widget-icon" />
             </button>
           </TooltipTrigger>
-          <TooltipContent side="right" className="arc-tooltip-content">
-              <p className="arc-text">
-                {tooltipText.split("").map((char, i) => (
-                    <span
-                        key={i}
-                        style={
-                          {
-                            '--transform-rotate': `${i * 8 - (tooltipText.length - 1) * 4}deg`,
-                          } as React.CSSProperties
-                        }
-                    >
-                        {char}
-                    </span>
-                ))}
-              </p>
+          <TooltipContent side="right">
+              <p>AI Lighting Consultant</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>

@@ -11,7 +11,6 @@ import './new-cta-button.css';
 import './theme-toggle.css';
 import './text-animations.css';
 import './ai-widget.css';
-import './arc-tooltip.css';
 import { SessionReminder } from '@/components/session-reminder';
 import SubscriptionModal from '@/components/subscription-modal';
 import { ThemeProvider } from '@/components/theme-provider';
