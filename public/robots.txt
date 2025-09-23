@@ -1,4 +1,65 @@
-User-agent: *
-Allow: /
+# robots.txt for livinggolgstore (Netlify)
+# Served from Next.js public/ so it appears at /. Update as needed.
 
-Sitemap: https://www.livinggold.com/sitemap.xml
+Sitemap: https://livinggolgstore.netlify.app/sitemap.xml
+
+# Default rules for all crawlers
+User-agent: *
+Allow: /assets/
+Allow: /static/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /api/private/
+Disallow: /api/internal/
+Disallow: /cart
+Disallow: /checkout
+Disallow: /account
+Disallow: /orders
+Disallow: /user
+Disallow: /login
+Disallow: /logout
+Disallow: /search
+Disallow: /tmp/
+Disallow: /test/
+Disallow: /.netlify/
+Disallow: /.netlify/functions/
+# Reduce duplicate crawling from common tracking/query params (supported by major engines)
+Disallow: /*?*session*
+Disallow: /*?*token*
+Disallow: /*?*utm_*
+# Some engines respect this; Google ignores, Bing/Yandex may respect
+Crawl-delay: 5
+
+# Opt-out of AI training where supported
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /admin/
+Disallow: /api/
+Disallow: /account
+Disallow: /orders
+Disallow: /cart
+Disallow: /checkout
+
+User-agent: OAI-SearchBot
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
