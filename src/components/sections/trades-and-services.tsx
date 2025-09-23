@@ -5,12 +5,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { useResponsive } from '@/hooks/use-responsive';
+import { AIConsultant } from '../ai-consultant';
+import { Card, CardContent } from '../ui/card';
 
 export default function TradesAndServices() {
   const { isMobile } = useResponsive();
 
   return (
-    <section className="py-20 md:py-32">
+    <section className="py-20 md:py-32 bg-secondary/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className={`grid ${isMobile ? 'grid-cols-1' : 'grid-cols-2'} gap-12 md:gap-20 items-center`}>
           <div className={`${isMobile ? 'order-2 text-center' : 'order-1 text-left'}`}>
@@ -18,19 +20,21 @@ export default function TradesAndServices() {
               FOR TRADE PROFESSIONALS
             </h2>
             <h3 className="font-headline text-3xl md:text-5xl font-bold text-foreground mb-6">
-              Partners in Craftsmanship
+              Instant AI-Powered Recommendations
             </h3>
             <p className="text-base md:text-lg leading-relaxed mb-8 text-muted-foreground">
-              We collaborate with architects, interior designers, and developers to bring ambitious visions to life. Our trade program offers exclusive access to our collections, dedicated support, and sourcing for technical materials like specialized wiring, conduit, and transformers.
+              Architects, designers, and developers—accelerate your creative process. Use our AI consultant to find the perfect lighting fixtures for your project based on style, room type, and lighting category.
             </p>
-            <p className="text-base md:text-lg leading-relaxed mb-10 text-muted-foreground">
-              Let us be your trusted partner in delivering exceptional quality and design for your next project.
-            </p>
-            <div className="flex justify-center md:justify-start">
-                <Button asChild size="lg" showIcon>
-                <Link href="/design-studio">
-                    Explore Our Services
-                </Link>
+             <Card className="bg-background/70 backdrop-blur-sm">
+                <CardContent className="p-0">
+                    <AIConsultant />
+                </CardContent>
+            </Card>
+            <div className="mt-8 text-center">
+                 <Button asChild size="sm" variant="link">
+                    <Link href="/design-studio">
+                        Or, Explore Our Full Suite of Services
+                    </Link>
                 </Button>
             </div>
           </div>
