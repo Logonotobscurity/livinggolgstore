@@ -10,3 +10,4 @@ import '@/ai/flows/generate-installation-guide.ts';
 import '@/ai/flows/analyze-review-sentiment.ts';
 import '@/ai/flows/generate-recommendations.ts';
 import '@/ai/flows/generate-featured-finds.ts';
+import '@/ai/flows/generate-audio-guide.ts';
