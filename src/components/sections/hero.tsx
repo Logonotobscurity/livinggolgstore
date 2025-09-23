@@ -17,15 +17,18 @@ export default function Hero() {
       </div>
       
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl text-center mx-auto">
-            <p className="text-lg font-bold tracking-widest uppercase text-primary mb-4 animate-fade-in-up">
+        <div className="max-w-3xl text-center md:text-left mx-auto md:mx-0">
+            <p className="text-lg font-bold tracking-widest uppercase text-primary mb-4 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                 FOR THOSE WHO SEEK
             </p>
-            <h1 className={`font-headline ${isMobile ? 'text-5xl' : 'text-7xl'} font-bold leading-tight text-foreground mb-10 text-shadow-lg`}>
+            <h1 className={`font-headline ${isMobile ? 'text-5xl' : 'text-7xl'} font-bold leading-tight text-foreground mb-6 text-shadow-lg`}>
                 <span className="animated-word">RARE,</span>
                 <span className="animated-word">UNUSUAL,</span>
-                <span className="animated-word">AND EXQUISITE FINDS</span>
+                <span className="animated-word">& EXQUISITE FINDS</span>
             </h1>
+            <p className="text-lg text-muted-foreground mb-10 max-w-xl animate-fade-in-up" style={{ animationDelay: '1.0s' }}>
+                Say hello to Living Gold, the design-led platform created to help you showcase your work and uncover new opportunities.
+            </p>
             <Button asChild size="lg" showIcon className="animate-fade-in-up" style={{ animationDelay: '1.2s' }}>
               <Link href="/projects">
                 Explore Our Projects
