@@ -15,6 +15,7 @@ import { SessionReminder } from '@/components/session-reminder';
 import SubscriptionModal from '@/components/subscription-modal';
 import { ThemeProvider } from '@/components/theme-provider';
 import { ClientOnly } from '@/components/client-only';
+import AIConsultantWidget from '@/components/ai-consultant-widget';
 
 export const metadata: Metadata = {
   title: {
@@ -89,6 +90,7 @@ export default function RootLayout({
                   <ClientOnly>
                     <SessionReminder />
                     <SubscriptionModal />
+                    <AIConsultantWidget />
                   </ClientOnly>
                 </div>
             </WishlistProvider>
