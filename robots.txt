@@ -3,7 +3,7 @@
 # This file restricts sensitive areas, rate-limits aggressive bots,
 # and explicitly opts out of certain AI training crawlers.
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://livinggolgstore.netlify.app/sitemap.xml
 
 # Default rules for all crawlers
 User-agent: *
@@ -26,6 +26,8 @@ Disallow: /logout
 Disallow: /search
 Disallow: /tmp/
 Disallow: /test/
+Disallow: /.netlify/
+Disallow: /.netlify/functions/
 # Reduce duplicate crawling from common tracking/query params (supported by major engines)
 Disallow: /*?*session*
 Disallow: /*?*token*

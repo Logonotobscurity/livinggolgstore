@@ -3,8 +3,8 @@
 
 version: 1.0
 last_updated: 2025-09-23
-site: https://example.com
-contact: https://example.com/contact
+site: https://livinggolgstore.netlify.app
+contact: https://livinggolgstore.netlify.app/contact
 
 # High-level usage policy
 policy:
