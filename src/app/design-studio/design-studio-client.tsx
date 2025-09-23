@@ -52,28 +52,32 @@ export default function DesignStudioClient() {
       <div className="cms-page text-foreground">
 
         {/* Hero Section */}
-        <section className={`relative flex items-center justify-center text-center bg-secondary/20 ${isMobile ? 'min-h-[60vh] py-16' : 'min-h-[70vh]'}`}>
-            <div className="absolute inset-0">
-                <Image 
-                    src="https://www.visualcomfort.com/media_15301f7f1a1767bae048266bf4ea27bd8169b7990.jpg"
-                    alt="A beautifully lit, modern living room showcasing luxury lighting design."
+        <section className="bg-secondary/30">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid md:grid-cols-2 items-center gap-8 md:gap-16 min-h-[70vh] py-16 md:py-0">
+              <div className="relative w-full h-[60vh] md:h-[calc(70vh-4rem)] rounded-lg overflow-hidden order-last md:order-first">
+                 <Image 
+                    src="https://www.visualcomfort.com/media_1f08f2f154f0e09244ce92d51285bfa59a0838640.jpg"
+                    alt="An architect reviewing blueprints in a modern design office."
                     fill
-                    className="object-cover opacity-30"
-                    data-ai-hint="luxury living room"
+                    className="object-cover"
+                    data-ai-hint="architect blueprints"
                     priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background" />
-            </div>
-            <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+              </div>
+              <div className="text-center md:text-left">
                 <h1 className="font-headline text-4xl md:text-6xl font-bold mb-6">Take your design to new heights.</h1>
-                <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
+                <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl mx-auto md:mx-0">
                     Welcome to the Living Gold Design Studio, where we partner with you to bring your vision to light, from concept to completion.
                 </p>
                 <Button asChild size="lg" showIcon>
                     <Link href="/contact">Book a Consultation</Link>
                 </Button>
+              </div>
             </div>
+          </div>
         </section>
+
 
         {/* Services Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
