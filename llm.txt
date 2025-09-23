@@ -1,0 +1,46 @@
+# llm.txt — AI/LLM crawling and usage policy (non-standard, voluntary)
+# Update site/contact values and adjust policies to your needs.
+
+version: 1.0
+last_updated: 2025-09-23
+site: https://example.com
+contact: https://example.com/contact
+
+# High-level usage policy
+policy:
+  indexing: allow           # Allow AI to crawl for retrieval/search
+  summarization: allow      # Allow summarization of public pages
+  training: disallow        # Disallow using content for model training
+  fine_tuning: disallow     # Disallow fine-tuning on content
+  attribution_required: true
+  cache_ttl: 7d             # Suggested max caching period for AI agents
+
+# Geographic intent (best-effort, agent-compliance only)
+geo:
+  allow_regions: [US, CA, GB, EU, AU, NZ]
+  disallow_regions: [CN, RU, KP, IR]
+
+# Agent-specific rules (complements robots.txt)
+user_agents:
+  GPTBot:
+    allow: ["/", "/public/"]
+    disallow: ["/admin/", "/api/", "/account", "/orders", "/cart", "/checkout"]
+  OAI-SearchBot:
+    allow: ["/"]
+    disallow: ["/admin/", "/api/"]
+  Google-Extended:
+    disallow: ["/"]
+  ClaudeBot:
+    disallow: ["/"]
+  PerplexityBot:
+    disallow: ["/"]
+  CCBot:
+    disallow: ["/"]
+  Applebot-Extended:
+    disallow: ["/"]
+  Meta-ExternalAgent:
+    disallow: ["/"]
+
+notes:
+  - This file is not a formal standard; compliance is voluntary.
+  - robots.txt remains authoritative for crawl permissions. This file clarifies AI usage rights.
