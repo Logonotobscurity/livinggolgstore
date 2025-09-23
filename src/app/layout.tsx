@@ -10,7 +10,6 @@ import './new-menu-icon.css';
 import './new-cta-button.css';
 import './theme-toggle.css';
 import './text-animations.css';
-import './ai-widget.css';
 import './speed-dial.css';
 import { SessionReminder } from '@/components/session-reminder';
 import SubscriptionModal from '@/components/subscription-modal';

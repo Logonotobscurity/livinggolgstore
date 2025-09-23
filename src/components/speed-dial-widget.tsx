@@ -8,8 +8,6 @@ import { Drawer, DrawerContent } from '@/components/ui/drawer';
 import { AIConsultant } from '@/components/ai-consultant';
 import { Icons } from './icons';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import { cn } from '@/lib/utils';
-import Link from 'next/link';
 
 type SpeedDialAction = {
   id: string;
@@ -43,12 +41,9 @@ export default function SpeedDialWidget() {
       label: 'Contact Support',
       icon: <Icons.helpCircle className="h-6 w-6" />,
       action: () => {
-        // This requires Next.js navigation, which is a bit tricky from a non-component function
-        // For now, we'll use window location, but for a real app, use Next's router
         window.location.href = '/contact';
       },
     },
-    // The chatbot icon is included but has no action for now
     {
       id: 'chatbot',
       label: 'Chatbot (Coming Soon)',
@@ -79,10 +74,12 @@ export default function SpeedDialWidget() {
         <div
           className="speed-dial-container"
           data-state={isMenuOpen ? 'open' : 'closed'}
+          onMouseEnter={() => isMenuOpen && setIsMenuOpen(true)}
+          onMouseLeave={() => isMenuOpen && setIsMenuOpen(false)}
         >
           <ul className="speed-dial-menu">
-            {actions.map((action) => (
-              <li key={action.id} className="speed-dial-item">
+            {actions.map((action, index) => (
+              <li key={action.id} className="speed-dial-item" style={{ '--i': index } as React.CSSProperties}>
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <button
@@ -95,7 +92,7 @@ export default function SpeedDialWidget() {
                       {action.icon}
                     </button>
                   </TooltipTrigger>
-                  <TooltipContent side="left">
+                  <TooltipContent side={isMobile ? 'top' : 'left'}>
                     <p>{action.label}</p>
                   </TooltipContent>
                 </Tooltip>

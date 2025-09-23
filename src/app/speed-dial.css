@@ -8,8 +8,8 @@
 
 .speed-dial-button,
 .speed-dial-item button {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem; /* 60px */
+    height: 3.75rem; /* 60px */
     border-radius: 50%;
     background: hsl(var(--primary));
     color: hsl(var(--primary-foreground));
@@ -19,7 +19,7 @@
     cursor: pointer;
     border: none;
     box-shadow: 0 4px 20px rgba(0,0,0,0.25), 0 0 0 2px hsl(var(--background)), 0 0 0 4px hsl(var(--primary));
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .speed-dial-button:hover {
@@ -28,13 +28,13 @@
 
 .speed-dial-icon-container {
     position: relative;
-    width: 24px;
-    height: 24px;
+    width: 1.5rem; /* 24px */
+    height: 1.5rem; /* 24px */
     transition: transform 0.3s ease;
 }
 
-.speed-dial-container[data-state="open"] .speed-dial-icon-container {
-    transform: rotate(45deg);
+.speed-dial-container[data-state="open"] .speed-dial-button {
+    transform: scale(1.1) rotate(45deg);
 }
 
 .speed-dial-menu {
@@ -52,13 +52,14 @@
     bottom: 0;
     right: 0;
     transform: translate(0, 0) scale(0.5);
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
     opacity: 0;
+    transition-delay: calc(0.05s * (4 - var(--i))); /* Stagger close animation */
 }
 
 .speed-dial-item button {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem; /* 50px */
+    height: 3.125rem; /* 50px */
     background: hsl(var(--secondary));
     color: hsl(var(--secondary-foreground));
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
@@ -69,27 +70,21 @@
 }
 
 .speed-dial-container[data-state="open"] .speed-dial-item {
-    transform: translate(var(--tx, 0), var(--ty, 0)) scale(1);
     opacity: 1;
+    transition-delay: calc(0.05s * var(--i)); /* Stagger open animation */
 }
 
+/* Arc animation using calc and custom properties */
 .speed-dial-container[data-state="open"] .speed-dial-item:nth-child(1) {
-    --ty: -70px;
-    transition-delay: 0.0s;
+    transform: translateY(-4.5rem); /* Straight up */
 }
 .speed-dial-container[data-state="open"] .speed-dial-item:nth-child(2) {
-    --tx: -55px;
-    --ty: -125px;
-    transition-delay: 0.05s;
+    transform: translate(-3.5rem, -3.5rem); /* 45 degrees */
 }
 .speed-dial-container[data-state="open"] .speed-dial-item:nth-child(3) {
-    --tx: -125px;
-    --ty: -125px;
-    transition-delay: 0.1s;
+    transform: translateX(-4.5rem); /* Straight left */
 }
 .speed-dial-container[data-state="open"] .speed-dial-item:nth-child(4) {
-    --tx: -185px;
-    --ty: -55px;
-    transition-delay: 0.15s;
+    transform: translate(-3.5rem, 3.5rem); /* -45 degrees */
+    display: none; /* Hide for now as it's a future feature */
 }
-
