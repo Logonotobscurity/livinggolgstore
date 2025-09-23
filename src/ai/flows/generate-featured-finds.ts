@@ -40,9 +40,9 @@ export async function generateFeaturedFinds(): Promise<GenerateFeaturedFindsOutp
 const headlinePrompt = ai.definePrompt({
     name: 'generateFeaturedHeadlinePrompt',
     output: { schema: z.object({ heading: z.string() }) },
-    prompt: `You are the voice of an AI-powered curation engine for "Living Gold", a luxury lighting store.
+    prompt: `You are the voice of an AI-powered curation engine for "Living Gold", a luxury lighting store in Nigeria.
 Your task is to generate a single, short, and exciting headline (5-7 words) for the "Featured Finds" section.
-The headline should convey that the products were intelligently selected based on trends, popularity, and top ratings.
+The headline should sound confident and stylish, conveying that the products were intelligently selected based on trends, popularity, and top ratings.
 
 Examples:
 - "Revealed: Today's Top-Rated Treasures"
@@ -64,8 +64,8 @@ const reasonPrompt = ai.definePrompt({
     prompt: `You are an expert curator for "Living Gold", a luxury lighting and decor store in Nigeria.
 Your task is to write a single, compelling, one-sentence reason why the following product is a "featured find" for the homepage.
 
-The reason should be exciting, concise (around 15 words), and entice users to click.
-Example: "A true masterpiece of hand-blown glass that commands attention."
+The reason should be exciting, concise (around 15 words), and entice users to click. It should sound like it's coming from a knowledgeable local expert, not a robot.
+Example: "A true masterpiece of hand-blown glass that commands attention in any room."
 
 Product Details:
 - Title: {{title}}
