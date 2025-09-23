@@ -1,0 +1,63 @@
+
+.arc-tooltip-content {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.arc-text {
+  position: relative;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: hsl(var(--primary));
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.arc-text span {
+  position: absolute;
+  left: 50%;
+  transform-origin: 0 100px;
+  opacity: 0;
+  animation: arc-fade-in 0.5s ease-out forwards;
+}
+
+@keyframes arc-fade-in {
+  from {
+    opacity: 0;
+    transform: rotate(0deg) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(var(--transform-rotate)) translateY(0);
+  }
+}
+
+.arc-text span:nth-child(1) { animation-delay: 0.0s; }
+.arc-text span:nth-child(2) { animation-delay: 0.02s; }
+.arc-text span:nth-child(3) { animation-delay: 0.04s; }
+.arc-text span:nth-child(4) { animation-delay: 0.06s; }
+.arc-text span:nth-child(5) { animation-delay: 0.08s; }
+.arc-text span:nth-child(6) { animation-delay: 0.1s; }
+.arc-text span:nth-child(7) { animation-delay: 0.12s; }
+.arc-text span:nth-child(8) { animation-delay: 0.14s; }
+.arc-text span:nth-child(9) { animation-delay: 0.16s; }
+.arc-text span:nth-child(10) { animation-delay: 0.18s; }
+.arc-text span:nth-child(11) { animation-delay: 0.2s; }
+.arc-text span:nth-child(12) { animation-delay: 0.22s; }
+.arc-text span:nth-child(13) { animation-delay: 0.24s; }
+.arc-text span:nth-child(14) { animation-delay: 0.26s; }
+.arc-text span:nth-child(15) { animation-delay: 0.28s; }
+.arc-text span:nth-child(16) { animation-delay: 0.3s; }
+.arc-text span:nth-child(17) { animation-delay: 0.32s; }
+.arc-text span:nth-child(18) { animation-delay: 0.34s; }
+.arc-text span:nth-child(19) { animation-delay: 0.36s; }
+.arc-text span:nth-child(20) { animation-delay: 0.38s; }
+.arc-text span:nth-child(21) { animation-delay: 0.4s; }
+.arc-text span:nth-child(22) { animation-delay: 0.42s; }
+.arc-text span:nth-child(23) { animation-delay: 0.44s; }
+.arc-text span:nth-child(24) { animation-delay: 0.46s; }
+

@@ -2,12 +2,12 @@
 'use client';
 
 import { useState } from 'react';
-import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Drawer, DrawerContent } from '@/components/ui/drawer';
 import { AIConsultant } from '@/components/ai-consultant';
 import { Icons } from './icons';
 import { useResponsive } from '@/hooks/use-responsive';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
 export default function AIConsultantWidget() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,16 +16,41 @@ export default function AIConsultantWidget() {
   const renderContent = () => (
     <AIConsultant onResults={() => setIsOpen(false)} />
   );
+  
+  const tooltipText = "AI Lighting Consultant";
 
   return (
     <>
-      <Button
-        onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 left-6 z-50 h-16 w-16 rounded-full shadow-2xl"
-        aria-label="Open AI Lighting Consultant"
-      >
-        <Icons.lightbulb className="h-8 w-8" />
-      </Button>
+      <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <button
+              onClick={() => setIsOpen(true)}
+              className="ai-widget-button"
+              aria-label="Open AI Lighting Consultant"
+            >
+              <div className="ai-widget-button-pulse-ring"></div>
+              <div className="ai-widget-button-pulse-ring"></div>
+              <div className="ai-widget-button-pulse-ring"></div>
+              <Icons.lightbulb className="h-8 w-8 ai-widget-icon" />
+            </button>
+          </TooltipTrigger>
+          <TooltipContent side="right" className="arc-tooltip-content">
+              <p className="arc-text">
+                {tooltipText.split("").map((char, i) => (
+                    <span
+                        key={i}
+                        style={{
+                            transform: `rotate(${i * 8 - (tooltipText.length - 1) * 4}deg)`,
+                        }}
+                    >
+                        {char}
+                    </span>
+                ))}
+              </p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
 
       {isMobile ? (
         <Drawer open={isOpen} onOpenChange={setIsOpen}>
