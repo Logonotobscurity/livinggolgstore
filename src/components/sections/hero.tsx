@@ -26,9 +26,6 @@ export default function Hero() {
                 <span className="animated-word">UNUSUAL,</span>
                 <span className="animated-word">& EXQUISITE FINDS</span>
             </h1>
-            <p className="text-lg text-muted-foreground mb-10 max-w-xl animate-fade-in-up" style={{ animationDelay: '1.0s' }}>
-                Say hello to Living Gold, the design-led platform created to help you showcase your work and uncover new opportunities.
-            </p>
             <Button asChild size="lg" showIcon className="animate-fade-in-up" style={{ animationDelay: '1.2s' }}>
               <Link href="/projects">
                 Explore Our Projects
