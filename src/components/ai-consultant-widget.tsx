@@ -40,9 +40,11 @@ export default function AIConsultantWidget() {
                 {tooltipText.split("").map((char, i) => (
                     <span
                         key={i}
-                        style={{
-                            transform: `rotate(${i * 8 - (tooltipText.length - 1) * 4}deg)`,
-                        }}
+                        style={
+                          {
+                            '--transform-rotate': `${i * 8 - (tooltipText.length - 1) * 4}deg`,
+                          } as React.CSSProperties
+                        }
                     >
                         {char}
                     </span>
