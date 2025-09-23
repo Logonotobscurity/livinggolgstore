@@ -6,11 +6,9 @@ import { Button } from '@/components/ui/button';
 import { SunBanner } from '@/components/sun-banner';
 import { useResponsive } from '@/hooks/use-responsive';
 import { Icons } from '@/components/icons';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function Hero() {
   const { isMobile } = useResponsive();
-  const heroImage = PlaceHolderImages.find(p => p.id === 'room-settings-1');
   const aboutPageImage = "https://www.visualcomfort.com/media_15301f7f1a1767bae048266bf4ea27bd8169b7990.jpg";
 
   return (
