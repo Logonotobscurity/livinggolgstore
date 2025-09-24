@@ -56,13 +56,13 @@ export default function SpeedDialWidget() {
     isMobile ? (
       <Drawer open={isAiModalOpen} onOpenChange={setIsAiModalOpen}>
         <DrawerContent className="bg-secondary text-foreground p-4">
-          <AIConsultant onResults={() => setIsAiModalOpen(false)} />
+          <AIConsultant />
         </DrawerContent>
       </Drawer>
     ) : (
       <Dialog open={isAiModalOpen} onOpenChange={setIsAiModalOpen}>
         <DialogContent className="bg-secondary text-foreground max-w-2xl p-0">
-          <AIConsultant onResults={() => setIsAiModalOpen(false)} />
+          <AIConsultant />
         </DialogContent>
       </Dialog>
     )

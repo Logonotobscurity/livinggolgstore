@@ -5,16 +5,24 @@ import { useState } from 'react';
 import { Dialog, DialogContent } from '@/components/ui/dialog';
 import { Drawer, DrawerContent } from '@/components/ui/drawer';
 import { AIConsultant } from '@/components/ai-consultant';
+import { EnhancedAIConsultant } from '@/components/enhanced-ai-consultant';
 import { Icons } from './icons';
 import { useResponsive } from '@/hooks/use-responsive';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+
+// Feature flag - can be controlled via environment variable or user preference
+const USE_ENHANCED_AI = process.env.NEXT_PUBLIC_USE_ENHANCED_AI === 'true' || true;
 
 export default function AIConsultantWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const { isMobile } = useResponsive();
 
   const renderContent = () => (
-    <AIConsultant onResults={() => setIsOpen(false)} />
+    USE_ENHANCED_AI ? (
+      <EnhancedAIConsultant onResults={() => setIsOpen(false)} />
+    ) : (
+      <AIConsultant onResults={() => setIsOpen(false)} />
+    )
   );
   
   return (
