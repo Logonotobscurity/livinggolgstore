@@ -19,17 +19,17 @@ import EngagementOrchestrator from '@/components/engagement-orchestrator';
 export const metadata: Metadata = {
   metadataBase: new URL('https://livinggolgstore.netlify.app'),
   title: {
-    default: 'Living Gold: Top Luxury Lighting & Chandeliers Store in Nigeria',
+    default: 'Living Gold: Luxury Lighting & Chandeliers in Nigeria',
     template: '%s | Living Gold Nigeria',
   },
-  description: 'Nigeria\'s top luxury lighting store. Based in Asaba, Living Gold curates and imports exquisite chandeliers, fixtures, and home decor for discerning clients in Lagos and nationwide.',
+  description: 'Nigeria\'s top luxury lighting store. Based in Asaba, Living Gold curates and imports exquisite chandeliers and fixtures for discerning clients in Lagos and nationwide.',
   keywords: ['luxury lighting Nigeria', 'chandeliers in Nigeria', 'designer lighting Asaba', 'Living Gold', 'home decor Nigeria', 'interior design Nigeria', 'top selling luxury lights seller in Nigeria', 'Lagos', 'Asaba'],
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Living Gold: Top Luxury Lighting & Chandeliers Store in Nigeria',
-    description: 'Nigeria\'s top luxury lighting store. Based in Asaba, Living Gold curates and imports exquisite chandeliers, fixtures, and home decor for discerning clients in Lagos and nationwide.',
+    title: 'Living Gold: Luxury Lighting & Chandeliers in Nigeria',
+    description: 'Nigeria\'s top luxury lighting store. Based in Asaba, Living Gold curates and imports exquisite chandeliers and fixtures for discerning clients in Lagos and nationwide.',
     url: 'https://livinggolgstore.netlify.app',
     siteName: 'Living Gold Nigeria',
     images: [

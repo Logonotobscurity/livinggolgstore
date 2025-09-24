@@ -1,9 +1,10 @@
+
 import type { Metadata } from 'next';
 import CmsLayout from '@/components/layout/cms-layout';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Living Gold Nigeria',
-  description: 'How we collect, use, and protect your information when you interact with Living Gold.',
+  description: 'Read the official Living Gold privacy policy. Learn how we collect, use, and protect your personal information when you use our website and services.',
 };
 
 export default function PrivacyPolicyPage() {

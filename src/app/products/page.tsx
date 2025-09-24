@@ -1,5 +1,4 @@
 
-
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -32,8 +31,8 @@ export async function generateMetadata({ searchParams }: ProductsPageProps): Pro
   }
 
   return {
-    title: 'All Products',
-    description: 'Explore all product categories at Living Gold.',
+    title: 'All Products | Luxury Lighting Collections',
+    description: 'Explore all luxury lighting and decor collections at Living Gold. Browse chandeliers, wall sconces, lamps, and more for your project in Nigeria.',
   };
 }
 

@@ -1,9 +1,10 @@
+
 import type { Metadata } from 'next';
 import CmsLayout from '@/components/layout/cms-layout';
 
 export const metadata: Metadata = {
-  title: 'Shipping & Returns | Living Gold Nigeria',
-  description: 'Learn about delivery timelines, shipping coverage, and our returns policy for curated luxury lighting and decor.',
+  title: 'Shipping & Returns Policy | Living Gold Nigeria',
+  description: 'Review the official shipping and returns policy for Living Gold. Learn about delivery timelines, nationwide coverage in Nigeria, and our process for returns.',
 };
 
 export default function ShippingReturnsPage() {

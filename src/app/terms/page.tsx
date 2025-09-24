@@ -1,9 +1,10 @@
+
 import type { Metadata } from 'next';
 import CmsLayout from '@/components/layout/cms-layout';
 
 export const metadata: Metadata = {
   title: 'Terms & Conditions | Living Gold Nigeria',
-  description: 'The terms that govern your use of Living Gold’s website, products, and services.',
+  description: 'Review the official terms and conditions that govern your use of the Living Gold website, products, and professional design services in Nigeria.',
 };
 
 export default function TermsPage() {
