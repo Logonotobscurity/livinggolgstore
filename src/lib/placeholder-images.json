@@ -1,4 +1,3 @@
-
 {
   "placeholderImages": [
     {
@@ -8,7 +7,8 @@
       "category": "chandeliers-pendants",
       "description": "Roll & Hill Modo 3 Sided Chandelier in Black with Smoke glass.",
       "imageUrl": "https://www.visualcomfort.com/us/media_1ca5cfae13c33d1604e6137eac66229699a61570d.png",
-      "imageHint": "modern chandelier"
+      "imageHint": "modern chandelier",
+      "price": "850000"
     },
     {
       "id": "chandeliers-pendants-2",
@@ -17,7 +17,8 @@
       "category": "chandeliers-pendants",
       "description": "Visual Comfort Modern Spur LED Chandelier in black.",
       "imageUrl": "https://www.visualcomfort.com/us/media_1bb8fa785cb9857124437ac5971761441894d09f1.png",
-      "imageHint": "LED chandelier"
+      "imageHint": "LED chandelier",
+      "price": "975000"
     },
     {
       "id": "chandeliers-pendants-3",
@@ -26,7 +27,8 @@
       "category": "chandeliers-pendants",
       "description": "101 Copenhagen Stingray Chandelier, an artistic centerpiece.",
       "imageUrl": "https://www.visualcomfort.com/us/media_1d7526370753c091fbe83d5f65809dbfb9393ad09.png",
-      "imageHint": "artistic chandelier"
+      "imageHint": "artistic chandelier",
+      "price": "1200000"
     },
     {
       "id": "chandeliers-pendants-4",
@@ -35,7 +37,8 @@
       "category": "chandeliers-pendants",
       "description": "Luceplan J-US LED Chandelier with 18 arms.",
       "imageUrl": "https://www.visualcomfort.com/us/media_106d184e2dc419de0c2ee5a84b34e3f6baa4cad6e.png",
-      "imageHint": "large chandelier"
+      "imageHint": "large chandelier",
+      "price": "1500000"
     },
     {
       "id": "chandeliers-pendants-5",
@@ -44,7 +47,8 @@
       "category": "chandeliers-pendants",
       "description": "Louis Poulsen PH 5 Pendant Light in Monochrome Black.",
       "imageUrl": "https://www.visualcomfort.com/us/media_1ae2bb81e1e494e580143f405c278b8cd74dc0125.png",
-      "imageHint": "pendant light"
+      "imageHint": "pendant light",
+      "price": "250000"
     },
     {
       "id": "chandeliers-pendants-6",
@@ -53,7 +57,8 @@
       "category": "linear-suspension",
       "description": "LODES Random Stick LED Linear Suspension in Black Chrome.",
       "imageUrl": "https://www.visualcomfort.com/us/nav-collections/media_144f8b356188349cf1ce23efda0f5d2a01bf7b5f1.png",
-      "imageHint": "linear suspension"
+      "imageHint": "linear suspension",
+      "price": "550000"
     },
     {
       "id": "chandeliers-pendants-7",
@@ -62,7 +67,8 @@
       "category": "chandeliers-pendants",
       "description": "Matthew McCormick Studio Cascadia LED Mini Pendant.",
       "imageUrl": "https://www.visualcomfort.com/us/nav-collections/media_158e7f372c3d350de41fcbb79e15d3d013f8c8a3d.png",
-      "imageHint": "mini pendant"
+      "imageHint": "mini pendant",
+      "price": "180000"
     },
     {
       "id": "chandeliers-pendants-8",
@@ -71,7 +77,8 @@
       "category": "chandeliers-pendants",
       "description": "Hubbardton Forge SNAPS Large LED Pendant in white and brass.",
       "imageUrl": "https://www.visualcomfort.com/us/nav-collections/media_1fa1ff33be224dd4cee9026289c8d977397c42839.png",
-      "imageHint": "LED pendant"
+      "imageHint": "LED pendant",
+      "price": "720000"
     },
     {
       "id": "chandeliers-pendants-9",
@@ -80,7 +87,8 @@
       "category": "outdoor",
       "description": "Kuzco Lighting Kona Outdoor Pendant.",
       "imageUrl": "https://www.visualcomfort.com/us/nav-collections/media_1cc6eee09ef4acf2403bb1dbca9d51a961d7fa921.png",
-      "imageHint": "outdoor pendant"
+      "imageHint": "outdoor pendant",
+      "price": "195000"
     },
     {
       "id": "chandeliers-pendants-10",
@@ -89,7 +97,8 @@
       "category": "chandeliers-pendants",
       "description": "LODES Cono di Luce LED Mini Pendant in small gold.",
       "imageUrl": "https://www.visualcomfort.com/media_1f5ee0ed5ce48e29fc834c033d85ac1cf209335fb.png",
-      "imageHint": "gold pendant"
+      "imageHint": "gold pendant",
+      "price": "280000"
     },
     {
       "id": "chandeliers-pendants-11",
@@ -98,7 +107,8 @@
       "category": "chandeliers-pendants",
       "description": "FLOS IC S Pendant Light, a modern classic.",
       "imageUrl": "https://www.visualcomfort.com/us/nav-collections/media_1ab41c0bb7ac598d3ec008224fc154ed8cd0f0205.png",
-      "imageHint": "modern pendant"
+      "imageHint": "modern pendant",
+      "price": "310000"
     },
     {
       "id": "table-lamps-1",
@@ -107,7 +117,8 @@
       "category": "lamps",
       "description": "Audo Copenhagen Column Rechargeable Table Lamp.",
       "imageUrl": "https://www.visualcomfort.com/us/media_100f25863e069a9d4fd0a2aa35c09a59db5a1c789.png",
-      "imageHint": "rechargeable lamp"
+      "imageHint": "rechargeable lamp",
+      "price": "95000"
     },
     {
       "id": "table-lamps-2",
@@ -116,7 +127,8 @@
       "category": "lamps",
       "description": "FLOS Gatto Table Lamp, an iconic design.",
       "imageUrl": "https://www.visualcomfort.com/us/media_12352da57bd64e892f311ba810a13d359d9072d2d.png",
-      "imageHint": "iconic lamp"
+      "imageHint": "iconic lamp",
+      "price": "150000"
     },
     {
       "id": "table-lamps-3",
@@ -125,7 +137,8 @@
       "category": "lamps",
       "description": "Ferm LIVING Oyster Table Lamp with a unique design.",
       "imageUrl": "https://www.visualcomfort.com/us/media_103697f60e7f904a5022c512e1e3b239f1067b8e8.png",
-      "imageHint": "oyster lamp"
+      "imageHint": "oyster lamp",
+      "price": "125000"
     },
     {
       "id": "table-lamps-4",
@@ -134,7 +147,8 @@
       "category": "lamps",
       "description": "GUBI Multi-Lite Rechargeable LED Table Lamp in Black & Brass.",
       "imageUrl": "https://www.visualcomfort.com/us/media_1352b7976a382f6d80f8d70f4fe699ab1638e18cb.png",
-      "imageHint": "LED lamp"
+      "imageHint": "LED lamp",
+      "price": "110000"
     },
     {
       "id": "table-lamps-5",
@@ -143,7 +157,8 @@
       "category": "outdoor",
       "description": "Santa & Cole Cestita Alubat LED Outdoor Table Lamp in Black.",
       "imageUrl": "https://www.visualcomfort.com/us/media_1d6716718f545b3a1772283aeb6267cb8ee4908d0.png",
-      "imageHint": "outdoor lamp"
+      "imageHint": "outdoor lamp",
+      "price": "145000"
     },
     {
       "id": "table-lamps-6",
@@ -152,7 +167,8 @@
       "category": "outdoor",
       "description": "Houe Light No.1 Portable Outdoor Lamp in black.",
       "imageUrl": "https://www.visualcomfort.com/us/media_1f3a24db30cc8f1c5e7601c8c108a5fb042745ef3.png",
-      "imageHint": "portable lamp"
+      "imageHint": "portable lamp",
+      "price": "85000"
     },
     {
       "id": "table-lamps-7",
@@ -161,7 +177,8 @@
       "category": "lamps",
       "description": "Koncept Guy LED Table Lamp in black.",
       "imageUrl": "https://www.visualcomfort.com/media_15301f7f1a1767bae048266bf4ea27bd8169b7990.jpg",
-      "imageHint": "desk lamp"
+      "imageHint": "desk lamp",
+      "price": "75000"
     },
     {
       "id": "table-lamps-8",
@@ -170,7 +187,8 @@
       "category": "lamps",
       "description": "Louis Poulsen NJP LED Task Lamp in Black.",
       "imageUrl": "https://www.visualcomfort.com/media_19cb8a76069a338b66ef4bed91feea669edc52b20.jpg",
-      "imageHint": "task lamp"
+      "imageHint": "task lamp",
+      "price": "180000"
     },
     {
       "id": "table-lamps-9",
@@ -179,7 +197,8 @@
       "category": "lamps",
       "description": "Marset Dipping Light LED Portable Table Lamp in blue.",
       "imageUrl": "https://www.visualcomfort.com/media_1575cd4e8cf1f1cda95217ef51dd52e31c9c6ee33.jpg",
-      "imageHint": "colorful lamp"
+      "imageHint": "colorful lamp",
+      "price": "130000"
     },
     {
       "id": "wall-sconces-1",
@@ -188,7 +207,8 @@
       "category": "wall",
       "description": "Marset Caramel LED Wall Sconce with Disk.",
       "imageUrl": "https://www.visualcomfort.com/media_1f08f2f154f0e09244ce92d51285bfa59a0838640.jpg",
-      "imageHint": "wall sconce"
+      "imageHint": "wall sconce",
+      "price": "165000"
     },
     {
       "id": "wall-sconces-2",
@@ -197,7 +217,8 @@
       "category": "wall",
       "description": "Huxe Kasson LED Vanity Light.",
       "imageUrl": "https://www.visualcomfort.com/media_1637d2498d4d4b5abe80581c2afa5e572ddd78c7c.jpg",
-      "imageHint": "vanity light"
+      "imageHint": "vanity light",
+      "price": "210000"
     },
     {
       "id": "wall-sconces-3",
@@ -206,7 +227,8 @@
       "category": "wall",
       "description": "Hinkley Trigo LED Vanity Light in black.",
       "imageUrl": "https://www.visualcomfort.com/media_1988b3149951727f3773b6d1b1d8fdfdd2a10e01c.jpg",
-      "imageHint": "bathroom light"
+      "imageHint": "bathroom light",
+      "price": "190000"
     },
     {
       "id": "wall-sconces-4",
@@ -215,7 +237,8 @@
       "category": "wall",
       "description": "Visual Comfort Studio Kenyon Picture Light in Aged Iron.",
       "imageUrl": "https://www.visualcomfort.com/media_1b8d06fcda06ca737ca6c8b50c4ea44dd4c242cdd.png",
-      "imageHint": "picture light"
+      "imageHint": "picture light",
+      "price": "120000"
     },
     {
       "id": "wall-sconces-5",
@@ -224,7 +247,8 @@
       "category": "outdoor",
       "description": "FLOS IC Outdoor Wall Sconce in black.",
       "imageUrl": "https://z2photorankmedia-a.akamaihd.net/media/9/q/4/9q4qd75/normal.jpg",
-      "imageHint": "outdoor sconce"
+      "imageHint": "outdoor sconce",
+      "price": "280000"
     },
     {
       "id": "wall-sconces-6",
@@ -233,7 +257,8 @@
       "category": "outdoor",
       "description": "Alder & Ore Faraday Outdoor Wall Sconce in black.",
       "imageUrl": "https://www.visualcomfort.com/us/nav-collections/media_144f8b356188349cf1ce23efda0f5d2a01bf7b5f1.png",
-      "imageHint": "outdoor wall light"
+      "imageHint": "outdoor wall light",
+      "price": "150000"
     },
     {
       "id": "wall-sconces-7",
@@ -242,7 +267,8 @@
       "category": "wall",
       "description": "In Common With Arundel Mushroom Outdoor Wall Flushmount in Black.",
       "imageUrl": "https://www.visualcomfort.com/media_1675b1e172e04e4efe58d40d5ee1e3a312ce4a99c.jpg",
-      "imageHint": "flushmount"
+      "imageHint": "flushmount",
+      "price": "230000"
     },
     {
       "id": "outdoor-lighting-1",
@@ -251,7 +277,8 @@
       "category": "outdoor",
       "description": "Estiluz Bols Outdoor LED Tall Floor Lamp.",
       "imageUrl": "https://www.visualcomfort.com/media_1c139e672ea9d209e5a6a05b367ac6868acab5467.jpg",
-      "imageHint": "outdoor floor lamp"
+      "imageHint": "outdoor floor lamp",
+      "price": "320000"
     },
     {
       "id": "outdoor-lighting-2",
@@ -260,7 +287,8 @@
       "category": "outdoor",
       "description": "Kuzco Lighting Copenhagen LED Outdoor 3 Tier Chandelier.",
       "imageUrl": "https://www.visualcomfort.com/media_111b662bc21f1fecd098f0ba8c41f8521fda4761c.jpg",
-      "imageHint": "outdoor chandelier"
+      "imageHint": "outdoor chandelier",
+      "price": "1800000"
     },
     {
       "id": "outdoor-lighting-3",
@@ -269,7 +297,8 @@
       "category": "outdoor",
       "description": "Hinkley Atlantis LED Path Light in Satin Black.",
       "imageUrl": "https://www.visualcomfort.com/media_13f99e71350c1f43186784090ee0c7e00c36a364f.jpg",
-      "imageHint": "path light"
+      "imageHint": "path light",
+      "price": "45000"
     },
     {
       "id": "ceiling-lights-1",
@@ -278,7 +307,8 @@
       "category": "lighting",
       "description": "Kuzco Lighting Parker LED Flushmount.",
       "imageUrl": "https://www.visualcomfort.com/media_1f6e61c217f8bb3a3804678e212273878e3e7b65c.jpg",
-      "imageHint": "LED flushmount"
+      "imageHint": "LED flushmount",
+      "price": "180000"
     },
     {
       "id": "ceiling-lights-2",
@@ -287,7 +317,8 @@
       "category": "lighting",
       "description": "Astro Lighting Taiko 400 Flushmount in Matte Black.",
       "imageUrl": "https://www.visualcomfort.com/media_16e91c81ef92567d2ee51d9dafcc6d12213d136dc.jpg",
-      "imageHint": "black flushmount"
+      "imageHint": "black flushmount",
+      "price": "220000"
     },
     {
       "id": "floor-lamps-1",
@@ -296,7 +327,8 @@
       "category": "lamps",
       "description": "Foscarini Twiggy Floor Lamp in Black.",
       "imageUrl": "https://www.visualcomfort.com/media_13e9a42fa66b84ffff122fede996447cec16e3c86.jpg",
-      "imageHint": "arc floor lamp"
+      "imageHint": "arc floor lamp",
+      "price": "450000"
     },
     {
       "id": "floor-lamps-2",
@@ -305,7 +337,8 @@
       "category": "fans",
       "description": "Fanimation Fans Arden Floor Fan.",
       "imageUrl": "https://z3photorankmedia-a.akamaihd.net/media/g/f/f/gffjj75/normal.jpg",
-      "imageHint": "floor fan"
+      "imageHint": "floor fan",
+      "price": "150000"
     },
     {
       "id": "ceiling-fans-1",
@@ -314,7 +347,8 @@
       "category": "fans",
       "description": "Hinkley Swell Flush Illuminated LED Ceiling Fan in black.",
       "imageUrl": "https://z1photorankmedia-a.akamaihd.net/media/f/k/v/fkv4k85/normal.jpg",
-      "imageHint": "ceiling fan light"
+      "imageHint": "ceiling fan light",
+      "price": "280000"
     },
     {
       "id": "ceiling-fans-2",
@@ -323,7 +357,8 @@
       "category": "fans",
       "description": "Kichler Fit LED Ceiling Fan in Satin Black.",
       "imageUrl": "https://z2photorankmedia-a.akamaihd.net/media/b/r/f/brfjj75/normal.jpg",
-      "imageHint": "modern ceiling fan"
+      "imageHint": "modern ceiling fan",
+      "price": "230000"
     },
     {
       "id": "ceiling-fans-3",
@@ -332,7 +367,8 @@
       "category": "fans",
       "description": "Minka Aire Fans Roto Ceiling Fan in Coal.",
       "imageUrl": "https://z1photorankmedia-a.akamaihd.net/media/w/3/4/w34qd75/normal.jpg",
-      "imageHint": "industrial fan"
+      "imageHint": "industrial fan",
+      "price": "190000"
     },
     {
       "id": "ceiling-fans-4",
@@ -341,7 +377,8 @@
       "category": "fans",
       "description": "Hinkley Sculpt LED Ceiling Fan in Matte Black.",
       "imageUrl": "https://z2photorankmedia-a.akamaihd.net/media/g/9/4/g94qd75/normal.jpg",
-      "imageHint": "sleek ceiling fan"
+      "imageHint": "sleek ceiling fan",
+      "price": "320000"
     },
     {
       "id": "ceiling-fans-5",
@@ -350,7 +387,8 @@
       "category": "fans",
       "description": "Modern Fan Company ICAir 3 Ceiling Fan in Dark.",
       "imageUrl": "https://www.visualcomfort.com/media_16b6656e5905e79a8715bbd1b03114e1cff673a72.jpg",
-      "imageHint": "wood ceiling fan"
+      "imageHint": "wood ceiling fan",
+      "price": "410000"
     },
     {
       "id": "ceiling-fans-6",
@@ -359,7 +397,8 @@
       "category": "fans",
       "description": "Modern Forms Axis LED Flushmount Smart Fan in Matte Black.",
       "imageUrl": "https://www.visualcomfort.com/media_1000129f923d5de9cbda80d92278563904a11694a.jpg",
-      "imageHint": "smart fan"
+      "imageHint": "smart fan",
+      "price": "350000"
     },
     {
       "id": "ceiling-fans-7",
@@ -368,7 +407,8 @@
       "category": "fans",
       "description": "Atlas Fan Company Eliza-H Flushmount Ceiling Fan.",
       "imageUrl": "https://www.visualcomfort.com/media_133896fa8f220a355dfa934346a9d7b41f97ba1e3.jpg",
-      "imageHint": "minimalist fan"
+      "imageHint": "minimalist fan",
+      "price": "290000"
     },
     {
       "id": "ceiling-fans-8",
@@ -377,7 +417,8 @@
       "category": "fans",
       "description": "Big Ass Fans Haiku Coastal Marine Grade Outdoor Ceiling Fan in Matte Black.",
       "imageUrl": "https://www.visualcomfort.com/media_193d43a6821dc8843ca286596c3cf28a6530e4097.jpg",
-      "imageHint": "outdoor fan"
+      "imageHint": "outdoor fan",
+      "price": "850000"
     },
     {
       "id": "ceiling-fans-9",
@@ -386,7 +427,8 @@
       "category": "fans",
       "description": "ModernForms Morpheus Ceiling Fan.",
       "imageUrl": "https://www.visualcomfort.com/media_1265982206b7d6d19ff5bbd9a5f598f83e6f0ef4c.jpg",
-      "imageHint": "contemporary fan"
+      "imageHint": "contemporary fan",
+      "price": "480000"
     },
     {
       "id": "specialty-lighting-1",
@@ -395,7 +437,8 @@
       "category": "specialty-lighting",
       "description": "Buster + Punch 5W A-Type Gold LED Bulb, turned on.",
       "imageUrl": "https://www.visualcomfort.com/us/media_19d5146ded7a10d640b1cd044549fb8b593b96cf2.png",
-      "imageHint": "gold bulb"
+      "imageHint": "gold bulb",
+      "price": "15000"
     },
     {
       "id": "specialty-lighting-2",
@@ -404,7 +447,8 @@
       "category": "specialty-lighting",
       "description": "Buster + Punch 1-Gang Dimmer in Black.",
       "imageUrl": "https://www.visualcomfort.com/media_15dcf65f7d661db39001af963ca4f5884cacf8b9e.png",
-      "imageHint": "dimmer switch"
+      "imageHint": "dimmer switch",
+      "price": "25000"
     },
     {
       "id": "specialty-lighting-3",
@@ -413,7 +457,8 @@
       "category": "specialty-lighting",
       "description": "Buster + Punch 1-Gang Duplex Outlet in Black.",
       "imageUrl": "https://www.visualcomfort.com/media_1e120a3a0d582f383b64c7151ab4ff52d44367102.png",
-      "imageHint": "duplex outlet"
+      "imageHint": "duplex outlet",
+      "price": "22000"
     },
     {
       "id": "specialty-lighting-4",
@@ -422,7 +467,8 @@
       "category": "specialty-lighting",
       "description": "Huxe Fabria LED Mirror in Black.",
       "imageUrl": "https://www.visualcomfort.com/media_1b8d03b4a48dd3ea862fd5853996ca603e8abf279.png",
-      "imageHint": "LED mirror"
+      "imageHint": "LED mirror",
+      "price": "180000"
     },
     {
       "id": "recessed-lighting-1",
@@ -431,7 +477,8 @@
       "category": "architectural",
       "description": "WAC Lighting Ocularc 3-Inch LED Round Adjustable Trim in Black.",
       "imageUrl": "https://www.visualcomfort.com/us/media_14aabd155b5a5d9dd2c37f432de106c8d355ece09.png",
-      "imageHint": "recessed trim"
+      "imageHint": "recessed trim",
+      "price": "35000"
     },
     {
       "id": "recessed-lighting-2",
@@ -440,7 +487,8 @@
       "category": "architectural",
       "description": "WAC Lighting Edge-Lit LED HR-LED90 Button Light in Black.",
       "imageUrl": "https://www.visualcomfort.com/us/media_1308f2310abe807b92625d8db08ce460f8e5745e1.png",
-      "imageHint": "button light"
+      "imageHint": "button light",
+      "price": "18000"
     },
     {
       "id": "recessed-lighting-3",
@@ -449,7 +497,8 @@
       "category": "architectural",
       "description": "Astro Lighting Ascoli Track Light in Matte Black.",
       "imageUrl": "https://www.visualcomfort.com/us/media_14241b7e23bba4e587f5f630867d438b694acb56a.png",
-      "imageHint": "track light"
+      "imageHint": "track light",
+      "price": "48000"
     },
     {
       "id": "accessories-1",
@@ -458,7 +507,8 @@
       "category": "accessories",
       "description": "Fanimation Wet Listed Downrod.",
       "imageUrl": "https://www.visualcomfort.com/us/media_143eb42f1a41f910ddc5fd7a05ca03c47c3decf3e.png",
-      "imageHint": "fan downrod"
+      "imageHint": "fan downrod",
+      "price": "12000"
     },
     {
       "id": "accessories-2",
@@ -467,7 +517,8 @@
       "category": "accessories",
       "description": "Casablanca Fan Company Casablanca Handheld Remote.",
       "imageUrl": "https://www.visualcomfort.com/media_1d7526370753c091fbe83d5f65809dbfb9393ad09.png",
-      "imageHint": "fan remote"
+      "imageHint": "fan remote",
+      "price": "25000"
     },
     {
       "id": "accessories-3",
@@ -476,7 +527,8 @@
       "category": "accessories",
       "description": "Hunter Fans Classic D12 Portable Desk Fan in black.",
       "imageUrl": "https://www.visualcomfort.com/us/media_106d184e2dc419de0c2ee5a84b34e3f6baa4cad6e.png",
-      "imageHint": "desk fan"
+      "imageHint": "desk fan",
+      "price": "85000"
     },
     {
       "id": "accessories-4",
@@ -485,7 +537,8 @@
       "category": "accessories",
       "description": "Aero Pure Slim Fit Round Profile Quiet Bathroom Exhaust Fan in Farm House Black.",
       "imageUrl": "https://www.visualcomfort.com/us/media_142587be7541aff09894f532e63809fef4f8db46b.png",
-      "imageHint": "exhaust fan"
+      "imageHint": "exhaust fan",
+      "price": "65000"
     },
     {
       "id": "accessories-hero",
@@ -494,7 +547,8 @@
       "category": "accessories",
       "description": "A collection of lighting accessories.",
       "imageUrl": "https://www.visualcomfort.com/us/media_143eb42f1a41f910ddc5fd7a05ca03c47c3decf3e.png",
-      "imageHint": "lighting accessories"
+      "imageHint": "lighting accessories",
+      "price": "0"
     },
     {
       "id": "linear-suspension-hero",
@@ -503,7 +557,8 @@
       "title": "Nephele LED Linear Suspension",
       "description": "A collection of linear suspension lighting.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/6cnhgn4zj3mgtgjx2k8hkm4/Corbett_Lighting_Nephele_LED_Linear_Suspension-188x188-site.png?auto=webp&format=png",
-      "imageHint": "linear lighting"
+      "imageHint": "linear lighting",
+      "price": "680000"
     },
     {
       "id": "room-settings-hero",
@@ -512,7 +567,8 @@
       "title": "Room Settings",
       "description": "A collection of lifestyle images featuring our lighting.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5jc5nh7c766xpf3gqxrqbn3/LU_August_2024_Louis_Poulsen_Living_Room-site-480x400.png",
-      "imageHint": "living room"
+      "imageHint": "living room",
+      "price": "0"
     },
     {
       "id": "room-settings-1",
@@ -521,7 +577,8 @@
       "category": "inspiration",
       "description": "Living Room with Louis Poulsen Pendant",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5jc5nh7c766xpf3gqxrqbn3/LU_August_2024_Louis_Poulsen_Living_Room-site-480x400.png",
-      "imageHint": "living room"
+      "imageHint": "living room",
+      "price": "0"
     },
     {
       "id": "room-settings-2",
@@ -530,7 +587,8 @@
       "category": "inspiration",
       "description": "Innovator Wesley Moon Frame",
       "imageUrl": "https://img.lumens.com/9JWOMRAM/at/77g4hj8mtcwpkk6k7r24gbxn/LU_May_2024_Innovator_Wesley_Moon_Frame4_site-1650x1920-Site-3Wide.png",
-      "imageHint": "modern interior"
+      "imageHint": "modern interior",
+      "price": "0"
     },
     {
       "id": "room-settings-3",
@@ -539,7 +597,8 @@
       "category": "inspiration",
       "description": "Kitchen with Louis Poulsen Pendant",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/9hsj9ht3kkmnxfnx8f9n6598/LU_August_2024_Louis_Poulsen_Kitchen_Wide_Crop-site-188x188-site.png",
-      "imageHint": "kitchen lighting"
+      "imageHint": "kitchen lighting",
+      "price": "0"
     },
     {
       "id": "room-settings-4",
@@ -548,7 +607,8 @@
       "category": "inspiration",
       "description": "Kitchen with In Common With lighting",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/45rjbg4m6r3cn4fp73n2sxp/LU_September_2024_In_Common_With_Kitchen-site-188x188-site.png",
-      "imageHint": "kitchen lighting"
+      "imageHint": "kitchen lighting",
+      "price": "0"
     },
     {
       "id": "room-settings-5",
@@ -557,7 +617,8 @@
       "category": "inspiration",
       "description": "Lumens Design House Kitchen",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/rbhft5vg97ffpsfv7pkggcwm/LU_March_2024_-_Lumens_Design_House_-_Kitchen_site-188x188-site.png",
-      "imageHint": "kitchen design"
+      "imageHint": "kitchen design",
+      "price": "0"
     },
     {
       "id": "room-settings-6",
@@ -566,7 +627,8 @@
       "category": "inspiration",
       "description": "Lumens 2023 Bed & Bath Consumer",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/7vn5s5v9m9sw5krq9fn33qx4/Lumens_2023_Bed_Bath_Consumer_Bath_3q__site-188x188-site.png",
-      "imageHint": "bathroom design"
+      "imageHint": "bathroom design",
+      "price": "0"
     },
     {
       "id": "lighting-ceiling",
@@ -575,7 +637,8 @@
       "category": "lighting",
       "description": "Modern ceiling lighting.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/hmrm3wh3stxrgq7cq6hshsrq/KuzcoLighting_CopenhagenLEDOutdoor3TierChandelier-188x188-site.png?auto=webp&format=png",
-      "imageHint": "ceiling light"
+      "imageHint": "ceiling light",
+      "price": "950000"
     },
     {
       "id": "lighting-wall",
@@ -584,7 +647,8 @@
       "category": "wall",
       "description": "Elegant wall lighting.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/k53jns4m7bvcw5k9f579j75w/Marset-Caramel_LED_Wall_Sconce_with_Disk-188x188-site.png",
-      "imageHint": "wall sconce"
+      "imageHint": "wall sconce",
+      "price": "165000"
     },
     {
       "id": "lighting-table",
@@ -593,7 +657,8 @@
       "category": "lamps",
       "description": "Stylish table lamps.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/cxssgz78c9t4jgtrvpgrgvn8/Audo_Copenhagen_Column_Rechargeable_Table_Lamp-188x188-site.png",
-      "imageHint": "table lamp"
+      "imageHint": "table lamp",
+      "price": "95000"
     },
     {
       "id": "lighting-floor",
@@ -602,31 +667,35 @@
       "category": "lamps",
       "description": "Contemporary floor lamps.",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/r89ghgmqmftc8fbxqk7gv6/Foscarini_TwiggyFloorLamp_Black-188x188-site.png",
-      "imageHint": "floor lamp"
+      "imageHint": "floor lamp",
+      "price": "450000"
     },
     {
-        "id": "lightscape-1",
-        "slug": "insta-1",
-        "title": "Modern Kitchen",
-        "description": "Instagram post 1",
-        "imageUrl": "https://images.lumens.com/is/image/Lumens/uu126021_alt09?$Lumens.com-PRP-large$",
-        "imageHint": "modern kitchen"
+      "id": "lightscape-1",
+      "slug": "insta-1",
+      "title": "Modern Kitchen",
+      "description": "Instagram post 1",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/uu126021_alt09?$Lumens.com-PRP-large$",
+      "imageHint": "modern kitchen",
+      "price": "0"
     },
     {
-        "id": "lightscape-2",
-        "slug": "insta-2",
-        "title": "Elegant Bedroom",
-        "description": "Instagram post 2",
-        "imageUrl": "https://images.lumens.com/is/image/Lumens/OLUY16717_alt28?$Lumens.com-PRP-large$",
-        "imageHint": "elegant bedroom"
+      "id": "lightscape-2",
+      "slug": "insta-2",
+      "title": "Elegant Bedroom",
+      "description": "Instagram post 2",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/OLUY16717_alt28?$Lumens.com-PRP-large$",
+      "imageHint": "elegant bedroom",
+      "price": "0"
     },
     {
-        "id": "lightscape-3",
-        "slug": "insta-3",
-        "title": "Gold Decor",
-        "description": "Instagram post 3",
-        "imageUrl": "https://images.lumens.com/is/image/Lumens/DHDP555443?$Lumens.com-PRP-large$",
-        "imageHint": "gold decor"
+      "id": "lightscape-3",
+      "slug": "insta-3",
+      "title": "Gold Decor",
+      "description": "Instagram post 3",
+      "imageUrl": "https://images.lumens.com/is/image/Lumens/DHDP555443?$Lumens.com-PRP-large$",
+      "imageHint": "gold decor",
+      "price": "0"
     },
     {
       "id": "lifestyle-decorative-objects",
@@ -635,7 +704,8 @@
       "category": "lifestyle",
       "description": "Elegant decorative objects.",
       "imageUrl": "https://images.lumens.com/is/image/Lumens/LPLP86927_alt68?$Lumens.com-PRP-large$",
-      "imageHint": "ceramic vase"
+      "imageHint": "ceramic vase",
+      "price": "45000"
     },
     {
       "id": "lifestyle-vases-pots",
@@ -644,7 +714,8 @@
       "category": "lifestyle",
       "description": "Modern vases and pots.",
       "imageUrl": "https://images.lumens.com/is/image/Lumens/DCEP432198_alt09?$Lumens.com-PRP-large$",
-      "imageHint": "ceramic pot"
+      "imageHint": "ceramic pot",
+      "price": "65000"
     },
     {
       "id": "lifestyle-bowls-trays",
@@ -653,7 +724,8 @@
       "category": "lifestyle",
       "description": "Elegant bowls and trays.",
       "imageUrl": "https://images.lumens.com/is/image/Lumens/KCPP551335?$Lumens.com-PRP-large$",
-      "imageHint": "decorative bowl"
+      "imageHint": "decorative bowl",
+      "price": "35000"
     },
     {
       "id": "lifestyle-candles-matches",
@@ -662,7 +734,8 @@
       "category": "lifestyle",
       "description": "Luxury candles and matches.",
       "imageUrl": "https://images.lumens.com/is/image/Lumens/LFLP568571?$Lumens.com-PRP-large$",
-      "imageHint": "scented candle"
+      "imageHint": "scented candle",
+      "price": "25000"
     },
     {
       "id": "lifestyle-gifts",
@@ -671,7 +744,8 @@
       "category": "lifestyle",
       "description": "Curated gift items.",
       "imageUrl": "https://images.lumens.com/is/image/Lumens/SACP564122?$Lumens.com-PRP-large$",
-      "imageHint": "luxury gift"
+      "imageHint": "luxury gift",
+      "price": "75000"
     },
     {
       "id": "lifestyle-barware",
@@ -680,7 +754,8 @@
       "category": "lifestyle",
       "description": "Sophisticated barware.",
       "imageUrl": "https://images.lumens.com/is/image/Lumens/LPLP86927_alt68?$Lumens.com-PRP-large$",
-      "imageHint": "cocktail glass"
+      "imageHint": "cocktail glass",
+      "price": "55000"
     },
     {
       "id": "payment-visa",
@@ -688,7 +763,8 @@
       "title": "Visa",
       "description": "Visa payment method",
       "imageUrl": "https://www.visualcomfort.com/media/favicon/websites/1/favicon.png",
-      "imageHint": "visa card"
+      "imageHint": "visa card",
+      "price": "0"
     },
     {
       "id": "payment-mastercard",
@@ -696,7 +772,8 @@
       "title": "Mastercard",
       "description": "Mastercard payment method",
       "imageUrl": "https://www.visualcomfort.com/media/favicon/websites/1/favicon.png",
-      "imageHint": "mastercard card"
+      "imageHint": "mastercard card",
+      "price": "0"
     },
     {
       "id": "payment-paypal",
@@ -704,7 +781,8 @@
       "title": "PayPal",
       "description": "PayPal payment method",
       "imageUrl": "https://www.visualcomfort.com/media/favicon/websites/1/favicon.png",
-      "imageHint": "paypal logo"
+      "imageHint": "paypal logo",
+      "price": "0"
     },
     {
       "id": "payment-klarna",
@@ -712,7 +790,8 @@
       "title": "Klarna",
       "description": "Klarna payment method",
       "imageUrl": "https://www.visualcomfort.com/media/favicon/websites/1/favicon.png",
-      "imageHint": "klarna logo"
+      "imageHint": "klarna logo",
+      "price": "0"
     },
     {
       "id": "insta-1",
@@ -720,7 +799,8 @@
       "title": "Insta 1",
       "description": "Instagram post 1",
       "imageUrl": "https://images.lumens.com/is/image/Lumens/uu126021_alt09?$Lumens.com-PRP-large$",
-      "imageHint": "modern kitchen"
+      "imageHint": "modern kitchen",
+      "price": "0"
     },
     {
       "id": "insta-2",
@@ -728,7 +808,8 @@
       "title": "Insta 2",
       "description": "Instagram post 2",
       "imageUrl": "https://images.lumens.com/is/image/Lumens/OLUY16717_alt28?$Lumens.com-PRP-large$",
-      "imageHint": "elegant bedroom"
+      "imageHint": "elegant bedroom",
+      "price": "0"
     },
     {
       "id": "insta-3",
@@ -736,7 +817,8 @@
       "title": "Insta 3",
       "description": "Instagram post 3",
       "imageUrl": "https://images.lumens.com/is/image/Lumens/DHDP555443?$Lumens.com-PRP-large$",
-      "imageHint": "gold decor"
+      "imageHint": "gold decor",
+      "price": "0"
     },
     {
       "id": "insta-4",
@@ -744,7 +826,8 @@
       "title": "Insta 4",
       "description": "Instagram post 4",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/fj3zn55b5skg99k4rxv53n3/BDI_ModicaMobileFilePedestal_App2-188x188-site.png?auto=webp&format=png",
-      "imageHint": "chic bathroom"
+      "imageHint": "chic bathroom",
+      "price": "0"
     },
     {
       "id": "insta-5",
@@ -752,7 +835,8 @@
       "title": "Insta 5",
       "description": "Instagram post 5",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/4hvx2ssn4pmw6sm8kjvbhkq/Astro_Lighting-Ascoli_Track_Light-Matte_Black-3-1286117-188x188-site.png?auto=webp&format=png",
-      "imageHint": "velvet sofa"
+      "imageHint": "velvet sofa",
+      "price": "0"
     },
     {
       "id": "insta-6",
@@ -760,7 +844,8 @@
       "title": "Insta 6",
       "description": "Instagram post 6",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/5rc7s94bh8j3f3kmrp4jxb7/Kuzco_Lighting_Parker_LED_Flushmount-188x188-site.png?auto=webp&format=png",
-      "imageHint": "marble table"
+      "imageHint": "marble table",
+      "price": "0"
     },
     {
       "id": "insta-7",
@@ -768,7 +853,8 @@
       "title": "Insta 7",
       "description": "Instagram post 7",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/pr9pf75ktvfksm5jxbmf5c4/Buster_Punch_5W_A-Type_Gold_LED_Bulb_on-188x188-site.png?auto=webp&format=png",
-      "imageHint": "art deco lamp"
+      "imageHint": "art deco lamp",
+      "price": "0"
     },
     {
       "id": "insta-8",
@@ -776,7 +862,8 @@
       "title": "Insta 8",
       "description": "Instagram post 8",
       "imageUrl": "https://img.ydesigngroup.com/9JWOMRAM/at/wrmfn4r52rqx5rxbnn9w9wj/LU_May_2024_Huxe_Bath_Bars_Kasson_LED_Vanity_Light_site-188x188-site.png?auto=webp&format=png",
-      "imageHint": "luxury interior"
+      "imageHint": "luxury interior",
+      "price": "0"
     }
   ],
   "productCategories": [
