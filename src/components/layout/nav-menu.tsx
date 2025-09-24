@@ -42,11 +42,11 @@ export default function NavMenu() {
                 </NavigationMenuContent>
               </>
             ) : (
-              <Link href={item.href} legacyBehavior={false} passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                <Link href={item.href}>
                   {item.title}
-                </NavigationMenuLink>
-              </Link>
+                </Link>
+              </NavigationMenuLink>
             )}
           </NavigationMenuItem>
         ))}
