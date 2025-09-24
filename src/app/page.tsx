@@ -27,6 +27,7 @@ export default function Home() {
           <h2 id="featured-finds-heading" className="sr-only">AI-Curated Featured Finds</h2>
           <FeaturedFinds />
         </section>
+        <div className="border-t border-primary/30" />
         <section aria-labelledby="lightscapes-heading">
           <h2 id="lightscapes-heading" className="sr-only">Outdoor Lightscapes Collection</h2>
           <Lightscapes />
@@ -36,10 +37,12 @@ export default function Home() {
           <div className="border-t border-primary/30" />
           <Lifestyle />
         </section>
+        <div className="border-t border-primary/30" />
         <section aria-labelledby="trades-services-heading">
           <h2 id="trades-services-heading" className="sr-only">Services for Trade Professionals</h2>
           <TradesAndServices />
         </section>
+        <div className="border-t border-primary/30" />
         <section aria-labelledby="about-heading">
           <h2 id="about-heading" className="sr-only">About Living Gold and Client Testimonials</h2>
           <About />

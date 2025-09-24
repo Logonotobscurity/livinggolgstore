@@ -285,5 +285,3 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
     </CmsLayout>
   );
 }
-
-    
