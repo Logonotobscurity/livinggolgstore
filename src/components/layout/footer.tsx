@@ -94,7 +94,7 @@ export default function Footer() {
                 alt={icon.description} 
                 width={32} 
                 height={20}
-                className="opacity-70 hover:opacity-100 transition-opacity" 
+                className="opacity-70 hover:opacity-100 transition-opacity object-contain" 
               />
             ))}
           </div>

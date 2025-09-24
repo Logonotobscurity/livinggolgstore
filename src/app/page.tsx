@@ -24,37 +24,37 @@ export default function Home() {
           <ProductCategories />
         </section>
         <section aria-labelledby="featured-finds-heading">
-          <h2 id="featured-finds-heading" className="sr-only">Featured Finds</h2>
+          <h2 id="featured-finds-heading" className="sr-only">AI-Curated Featured Finds</h2>
           <FeaturedFinds />
         </section>
         <section aria-labelledby="lightscapes-heading">
-          <h2 id="lightscapes-heading" className="sr-only">Lightscapes</h2>
+          <h2 id="lightscapes-heading" className="sr-only">Outdoor Lightscapes Collection</h2>
           <Lightscapes />
         </section>
         <section aria-labelledby="lifestyle-heading">
-          <h2 id="lifestyle-heading" className="sr-only">Lifestyle</h2>
+          <h2 id="lifestyle-heading" className="sr-only">Shop Lifestyle and Decor by Category</h2>
           <div className="border-t border-primary/30" />
           <Lifestyle />
         </section>
         <section aria-labelledby="trades-services-heading">
-          <h2 id="trades-services-heading" className="sr-only">Trades &amp; Services</h2>
+          <h2 id="trades-services-heading" className="sr-only">Services for Trade Professionals</h2>
           <TradesAndServices />
         </section>
         <section aria-labelledby="about-heading">
-          <h2 id="about-heading" className="sr-only">About Living Gold</h2>
+          <h2 id="about-heading" className="sr-only">About Living Gold and Client Testimonials</h2>
           <About />
         </section>
         <section aria-labelledby="instagram-feed-heading">
-          <h2 id="instagram-feed-heading" className="sr-only">Instagram Feed</h2>
+          <h2 id="instagram-feed-heading" className="sr-only">Living Gold on Instagram</h2>
           <InstagramFeed />
         </section>
         <section aria-labelledby="contact-heading">
-          <h2 id="contact-heading" className="sr-only">Contact</h2>
+          <h2 id="contact-heading" className="sr-only">Contact Living Gold</h2>
           <div className="border-t border-primary/30" />
           <Contact />
         </section>
         <section aria-labelledby="newsletter-heading">
-          <h2 id="newsletter-heading" className="sr-only">Newsletter</h2>
+          <h2 id="newsletter-heading" className="sr-only">Newsletter Subscription</h2>
           <Newsletter />
         </section>
       </main>
