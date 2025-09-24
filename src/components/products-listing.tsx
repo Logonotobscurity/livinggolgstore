@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useMemo, useState } from "react";
@@ -76,6 +77,7 @@ export function ProductsListing({ products, placeholder }: { products: ImagePlac
             product={product}
             animationDelay={`${index * 0.05}s`}
             imageClassName="w-full h-full p-2 sm:p-6"
+            priority={index < 4}
           />
         ))}
       </div>

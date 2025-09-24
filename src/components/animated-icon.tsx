@@ -11,16 +11,17 @@ export function AnimatedIcon({ icon, className }: AnimatedIconProps) {
   return (
     <div
       className={cn(
-        'relative grid place-items-center w-6 h-6 rounded-full',
+        'relative grid h-6 w-6 place-items-center rounded-full',
         className
       )}
+      aria-hidden="true"
     >
-      <div className="grid place-content-center transition-all w-full h-full group-hover:transform group-hover:-translate-y-5 group-hover:translate-x-5 group-focus-visible:transform group-focus-visible:-translate-y-5 group-focus-visible:translate-x-5">
+      <div className="grid h-full w-full place-content-center transition-transform duration-300 ease-in-out group-hover:-translate-x-5 group-hover:translate-y-5">
         {icon}
-        <div className="absolute transform -translate-x-5 translate-y-5">
+      </div>
+      <div className="absolute grid h-full w-full place-content-center transition-transform duration-300 ease-in-out group-hover:translate-x-0 group-hover:translate-y-0 translate-x-5 -translate-y-5">
          {icon}
         </div>
-      </div>
     </div>
   );
 }
