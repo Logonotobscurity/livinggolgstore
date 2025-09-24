@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact Living Gold | Asaba Showroom & Nationwide Support',
     description: 'Reach our expert team for lighting consultations, project quotes, and customer support. Visit our showroom or contact us online.',
-    url: 'https://livinggold.com/contact',
+    url: 'https://livinggolgstore.netlify.app/contact',
     type: 'website',
   },
 };

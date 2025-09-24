@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Living Gold | Luxury Lighting Curators in Nigeria',
     description: 'Discover the philosophy and story behind Living Gold, Nigeria\'s premier source for luxury, imported lighting and chandeliers since 2013.',
-    url: 'https://livinggold.com/about',
+    url: 'https://livinggolgstore.netlify.app/about',
     images: [
       {
         url: 'https://www.visualcomfort.com/media_15301f7f1a1767bae048266bf4ea27bd8169b7990.jpg',

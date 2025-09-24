@@ -17,7 +17,7 @@ import { ClientOnly } from '@/components/client-only';
 import EngagementOrchestrator from '@/components/engagement-orchestrator';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://livinggold.com'),
+  metadataBase: new URL('https://livinggolgstore.netlify.app'),
   title: {
     default: 'Living Gold: Top Luxury Lighting & Chandeliers Store in Nigeria',
     template: '%s | Living Gold Nigeria',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Living Gold: Top Luxury Lighting & Chandeliers Store in Nigeria',
     description: 'Nigeria\'s top luxury lighting store. Based in Asaba, Living Gold curates and imports exquisite chandeliers, fixtures, and home decor for discerning clients in Lagos and nationwide.',
-    url: '/',
+    url: 'https://livinggolgstore.netlify.app',
     siteName: 'Living Gold Nigeria',
     images: [
       {
@@ -56,13 +56,13 @@ const jsonLd = {
     countryName: 'Nigeria',
   },
   telephone: '+2347011131333',
-  url: 'https://www.livinggold.com',
-  logo: 'https://www.livinggold.com/logo.png', // Placeholder URL
-  image: 'https://www.livinggold.com/showroom.jpg', // Placeholder URL
+  url: 'https://livinggolgstore.netlify.app',
+  logo: 'https://livinggolgstore.netlify.app/logo.png', // Placeholder URL
+  image: 'https://livinggolgstore.netlify.app/showroom.jpg', // Placeholder URL
   description: 'Top selling luxury lights seller in Nigeria, curating luxury lighting, chandeliers, and exquisite home decor from global artisans, based in Asaba.',
   priceRange: '$$$',
   openingHours: 'Mo-Fr 09:00-18:00, Sa 10:00-16:00',
-  '@id': 'https://www.livinggold.com',
+  '@id': 'https://livinggolgstore.netlify.app',
 };
 
 

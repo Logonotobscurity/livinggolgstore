@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Projects Portfolio | Living Gold Nigeria',
     description: 'A gallery of inspirational residential and commercial interiors featuring luxury lighting from Living Gold.',
-    url: 'https://livinggold.com/projects',
+    url: 'https://livinggolgstore.netlify.app/projects',
     type: 'website',
   },
 };
