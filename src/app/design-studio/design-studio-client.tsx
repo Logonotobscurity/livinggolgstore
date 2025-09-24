@@ -66,7 +66,7 @@ export default function DesignStudioClient() {
                 />
               </div>
               <div className="text-center md:text-left">
-                <h1 className="font-headline text-4xl md:text-6xl font-bold mb-6">Take your design to new heights.</h1>
+                <h1 className="font-headline text-4xl md:text-6xl font-bold mb-6">Expert Lighting Design & Consultation</h1>
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl mx-auto md:mx-0">
                     Welcome to the Living Gold Design Studio, where we partner with you to bring your vision to light, from concept to completion.
                 </p>
@@ -81,7 +81,7 @@ export default function DesignStudioClient() {
 
         {/* Services Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-            <h2 className="font-headline text-4xl md:text-5xl font-bold text-center mb-16 text-primary">Our Services</h2>
+            <h2 className="font-headline text-4xl md:text-5xl font-bold text-center mb-16 text-primary">Our Professional Design Services</h2>
             <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
                 {services.map(service => (
                     <div key={service.title} className="flex flex-col sm:flex-row items-start text-center sm:text-left gap-6">
@@ -140,6 +140,7 @@ export default function DesignStudioClient() {
                                     height={isTall ? 1000 : 500}
                                     className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                                     data-ai-hint={image.imageHint}
+                                    loading="lazy"
                                 />
                                 <div className="absolute inset-0 bg-black/40 flex items-end p-4 opacity-0 group-hover:opacity-100 transition-opacity">
                                     <p className="text-white text-sm font-semibold">{image.title}</p>
