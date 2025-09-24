@@ -47,20 +47,21 @@ export default function CartPage() {
 
   const breadcrumb = [
     { text: 'Home', href: '/' },
-    { text: 'Your Cart' }
+    { text: 'Quote Cart' }
   ];
 
   return (
     <CmsLayout breadcrumb={breadcrumb}>
       <div className="cms-page text-foreground">
         <div className="text-wrapper text-center mb-12 px-4">
-          <h1 className={`mb-4 ${isMobile ? 'text-4xl' : 'text-5xl'}`}>Your Quote Request</h1>
+          <h1 className={`mb-4 ${isMobile ? 'text-4xl' : 'text-5xl'}`}>Your Quote Cart</h1>
+          <p className="text-muted-foreground max-w-2xl mx-auto">Add items and request a quote via WhatsApp. You’ll review the message before sending.</p>
         </div>
         
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             {cartItems.length === 0 ? (
                 <div className="text-center py-16">
-                    <p className="text-xl mb-8">Your cart is empty.</p>
+                    <p className="text-xl mb-8">Your Quote Cart is empty.</p>
                     <Button variant="outline" asChild>
                         <Link href="/">Discover Our Collections</Link>
                     </Button>

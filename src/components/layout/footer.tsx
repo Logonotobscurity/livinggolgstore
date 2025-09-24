@@ -22,7 +22,7 @@ export default function Footer() {
   ];
   const customerServiceLinks = [
     { title: 'FAQs', href: '/contact' },
-    { title: 'Shipping & Returns', href: '/contact' },
+    { title: 'Shipping & Returns', href: '/policies/shipping-returns' },
     { title: 'My Account', href: '/signup' },
   ];
 

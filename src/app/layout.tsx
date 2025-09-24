@@ -12,11 +12,9 @@ import './theme-toggle.css';
 import './text-animations.css';
 import './speed-dial.css';
 
-import { SessionReminder } from '@/components/session-reminder';
-import SubscriptionModal from '@/components/subscription-modal';
 import { ThemeProvider } from '@/components/theme-provider';
 import { ClientOnly } from '@/components/client-only';
-import SpeedDialWidget from '@/components/speed-dial-widget';
+import EngagementOrchestrator from '@/components/engagement-orchestrator';
 
 export const metadata: Metadata = {
   title: {
@@ -89,9 +87,7 @@ export default function RootLayout({
                   </div>
                   <Toaster />
                   <ClientOnly>
-                    <SessionReminder />
-                    <SubscriptionModal />
-                    <SpeedDialWidget />
+                    <EngagementOrchestrator />
                   </ClientOnly>
                 </div>
             </WishlistProvider>

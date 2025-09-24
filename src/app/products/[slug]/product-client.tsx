@@ -199,7 +199,7 @@ export default function ProductClient({ product, relatedProducts, breadcrumb }: 
                     <Icons.share className="w-6 h-6" />
                 </Button>
             </div>
-            
+            <p className="text-sm text-muted-foreground -mt-4 mb-6">Add to Quote Cart to prepare a WhatsApp message. You can review it before sending.</p>
             <p className="text-lg md:text-xl mb-6 text-muted-foreground">{product.description}</p>
           </div>
         </div>

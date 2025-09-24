@@ -1,25 +1,42 @@
 
 .speed-dial-container {
     position: fixed;
-    bottom: 2rem;
+    bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px));
     right: 2rem;
     z-index: 50;
 }
 
-.speed-dial-button,
-.speed-dial-item button {
-    width: 3.75rem; /* 60px */
-    height: 3.75rem; /* 60px */
-    border-radius: 50%;
+.speed-dial-button {
+    position: relative;
+    overflow: visible;
+    min-height: 3rem;
+    height: 3rem;
+    padding: 0 0.875rem;
+    border-radius: 9999px;
     background: hsl(var(--primary));
     color: hsl(var(--primary-foreground));
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 0.375rem;
     cursor: pointer;
     border: none;
     box-shadow: 0 4px 20px rgba(0,0,0,0.25), 0 0 0 2px hsl(var(--background)), 0 0 0 4px hsl(var(--primary));
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.speed-dial-button::before {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 9999px;
+    border: 2px solid rgba(201,169,97,0.35);
+    opacity: 0;
+    transform: scale(0.9);
+}
+@keyframes ring {
+    0% { opacity: 0.45; transform: scale(0.9); }
+    100% { opacity: 0; transform: scale(1.2); }
 }
 
 .speed-dial-button:hover {
@@ -34,7 +51,10 @@
 }
 
 .speed-dial-container[data-state="open"] .speed-dial-button {
-    transform: scale(1.1) rotate(45deg);
+    transform: scale(1.06);
+}
+.speed-dial-container[data-state="open"] .speed-dial-button::before {
+    animation: ring 600ms ease-out 1;
 }
 
 .speed-dial-menu {
@@ -48,13 +68,17 @@
 }
 
 .speed-dial-item {
+    --y: 0;
     position: absolute;
     bottom: 0;
     right: 0;
-    transform: translate(0, 0) scale(0.5);
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
+    transform: translateY(0) scale(0.6);
     opacity: 0;
-    transition-delay: calc(0.05s * (4 - var(--i))); /* Stagger close animation */
+    pointer-events: none;
+}
+@keyframes pop {
+    0% { transform: translateY(0) scale(0.6); opacity: 0; }
+    100% { transform: translateY(var(--y)) scale(1); opacity: 1; }
 }
 
 .speed-dial-item button {
@@ -65,26 +89,42 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
+/* Accent variants */
+.speed-dial-item button[data-accent="whatsapp"] {
+    background: #25D366; /* WhatsApp green */
+    color: white;
+}
+.speed-dial-item button[data-accent="ai"] {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+}
+.speed-dial-item button[data-accent="support"] {
+    background: hsl(var(--secondary));
+    color: hsl(var(--secondary-foreground));
+}
+.speed-dial-item button[data-accent="chatbot"] {
+    background: linear-gradient(135deg, hsl(var(--secondary)) 0%, rgba(255,255,255,0.06) 100%);
+}
+
 .speed-dial-container[data-state="open"] .speed-dial-menu {
     pointer-events: auto;
 }
 
 .speed-dial-container[data-state="open"] .speed-dial-item {
-    opacity: 1;
-    transition-delay: calc(0.05s * var(--i)); /* Stagger open animation */
+    animation: pop 260ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: calc(0.06s * var(--i));
+    pointer-events: auto;
 }
 
-/* Arc animation using calc and custom properties */
-.speed-dial-container[data-state="open"] .speed-dial-item:nth-child(1) {
-    transform: translateY(-4.5rem); /* Straight up */
-}
-.speed-dial-container[data-state="open"] .speed-dial-item:nth-child(2) {
-    transform: translate(-3.5rem, -3.5rem); /* 45 degrees */
-}
-.speed-dial-container[data-state="open"] .speed-dial-item:nth-child(3) {
-    transform: translateX(-4.5rem); /* Straight left */
-}
-.speed-dial-container[data-state="open"] .speed-dial-item:nth-child(4) {
-    transform: translate(-3.5rem, 3.5rem); /* -45 degrees */
-    display: none; /* Hide for now as it's a future feature */
+/* Vertical stack positions */
+.speed-dial-item:nth-child(1) { --y: -4.5rem; }
+.speed-dial-item:nth-child(2) { --y: -9rem; }
+.speed-dial-item:nth-child(3) { --y: -13.5rem; }
+.speed-dial-item:nth-child(4) { --y: -18rem; display: none; }
+
+/* Tiny viewport: adjust spacing */
+@media (max-width: 360px) {
+  .speed-dial-item:nth-child(1) { --y: -3.5rem; }
+  .speed-dial-item:nth-child(2) { --y: -7rem; }
+  .speed-dial-item:nth-child(3) { --y: -10.5rem; }
 }

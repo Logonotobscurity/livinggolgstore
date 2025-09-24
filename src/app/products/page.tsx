@@ -5,7 +5,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { PlaceHolderImages, ProductCategories, ProductCategory } from '@/lib/placeholder-images';
 import CmsLayout from '@/components/layout/cms-layout';
-import { CategoryCard } from '@/components/category-card';
+import { ProductsListing } from '@/components/products-listing';
 import { Icons } from '@/components/icons';
 import { ProductSupport } from '@/components/product-support';
 import { Button } from '@/components/ui/button';
@@ -88,18 +88,7 @@ export default function ProductsPage({ searchParams }: ProductsPageProps) {
         )}
 
         <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-12">
-              {products.map((product, index) => (
-                <CategoryCard 
-                  key={product.id} 
-                  product={product} 
-                  animationDelay={`${index * 0.05}s`}
-                  imageClassName="w-full h-full p-2 sm:p-6"
-                />
-              ))}
-            </div>
-          </div>
+          <ProductsListing products={products} placeholder={`Search ${category.title.replace(/Shop|in Nigeria|Luxury Light Spare Parts & Accessories/gi, '').trim()}`} />
         </section>
 
         {category.slug === 'accessories' && (

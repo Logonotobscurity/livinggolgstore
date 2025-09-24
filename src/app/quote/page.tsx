@@ -16,7 +16,7 @@ export default function QuotePage() {
 
   const breadcrumb = [
     { text: 'Home', href: '/' },
-    { text: 'Cart', href: '/cart' },
+    { text: 'Quote Cart', href: '/cart' },
     { text: 'Request a Quote' }
   ];
 
@@ -24,8 +24,8 @@ export default function QuotePage() {
     return (
         <CmsLayout breadcrumb={breadcrumb}>
              <div className="text-center py-16 text-foreground px-4">
-                <h1 className="text-4xl font-headline mb-4">Your Cart is Empty</h1>
-                <p className="text-xl mb-8">Add items to your cart to request a quote.</p>
+                <h1 className="text-4xl font-headline mb-4">Your Quote Cart is Empty</h1>
+                <p className="text-xl mb-8">Add items to your Quote Cart to request a quote.</p>
                 <Button variant="outline" asChild>
                     <Link href="/">Continue Shopping</Link>
                 </Button>
