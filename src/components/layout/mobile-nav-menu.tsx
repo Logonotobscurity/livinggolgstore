@@ -32,7 +32,7 @@ function renderNavItem(item: NavItem) {
                             <li key={subItem.title}>
                                 <Link
                                     href={subItem.href}
-                                    className="flex items-center text-base hover:text-primary"
+                                    className="flex items-center text-base hover:text-primary rounded-md focus-visible:ring-2 focus-visible:ring-ring"
                                 >
                                     {subItem.icon && <subItem.icon className="h-4 w-4 mr-3" />}
                                     {subItem.title}
@@ -49,7 +49,7 @@ function renderNavItem(item: NavItem) {
         <Link 
             key={item.title} 
             href={item.href} 
-            className="block text-lg font-medium tracking-wider uppercase hover:text-primary transition-colors py-4 border-b border-primary/30"
+            className="block text-lg font-medium tracking-wider uppercase hover:text-primary transition-colors py-4 border-b border-primary/30 rounded-md focus-visible:ring-2 focus-visible:ring-ring"
         >
             {item.title}
         </Link>
@@ -72,19 +72,19 @@ export default function MobileNavMenu({ onSearchClick }: MobileNavMenuProps) {
                 </div>
                 <Separator className="my-4 bg-primary/30" />
                  <div className="p-6 pt-0 space-y-4">
-                    <Button variant="ghost" onClick={onSearchClick} className="flex items-center justify-start text-lg p-0 h-auto hover:text-primary" aria-label="Search">
+                    <Button variant="ghost" onClick={onSearchClick} className="flex items-center justify-start text-lg p-0 h-auto hover:text-primary rounded-md focus-visible:ring-2 focus-visible:ring-ring" aria-label="Search">
                         <Icons.search className="h-5 w-5 mr-4" />
                         <span>Search</span>
                     </Button>
-                    <Link href="/wishlist" className="flex items-center text-lg hover:text-primary" aria-label="Wishlist">
+                    <Link href="/wishlist" className="flex items-center text-lg hover:text-primary rounded-md focus-visible:ring-2 focus-visible:ring-ring" aria-label="Wishlist">
                         <Icons.heart className="h-5 w-5 mr-4" />
                         <span>Wishlist</span>
                     </Link>
-                    <Link href="/contact" className="flex items-center text-lg hover:text-primary" aria-label="Contact">
+                    <Link href="/contact" className="flex items-center text-lg hover:text-primary rounded-md focus-visible:ring-2 focus-visible:ring-ring" aria-label="Contact">
                         <Icons.mail className="h-5 w-5 mr-4" />
                         <span>Contact</span>
                     </Link>
-                    <Link href="/signup" className="flex items-center text-lg hover:text-primary" aria-label="Sign Up">
+                    <Link href="/signup" className="flex items-center text-lg hover:text-primary rounded-md focus-visible:ring-2 focus-visible:ring-ring" aria-label="Sign Up">
                         <Icons.user className="h-5 w-5 mr-4" />
                         <span>Sign Up</span>
                     </Link>

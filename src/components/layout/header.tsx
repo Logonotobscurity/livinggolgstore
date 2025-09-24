@@ -52,7 +52,7 @@ export default function Header() {
                 {isMobile && (
                 <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
                     <SheetTrigger asChild>
-                        <button aria-label="Open menu" className="p-2 -ml-2">
+                        <button aria-label="Open menu" className="p-2 -ml-2 rounded-full focus-visible:ring-2 focus-visible:ring-ring">
                         <Icons.menu className="h-6 w-6" />
                         </button>
                     </SheetTrigger>
@@ -86,15 +86,15 @@ export default function Header() {
                 <>
                   <button
                     aria-label="Search"
-                    className="p-2 rounded-full hover:bg-accent"
+                    className="p-2 rounded-full hover:bg-accent focus-visible:ring-2 focus-visible:ring-ring"
                     onClick={() => setSearchModalOpen(true)}
                   >
                     <Icons.search className="h-5 w-5" />
                   </button>
-                  <Link href="/contact" aria-label="Contact" className="p-2 rounded-full hover:bg-accent">
+                  <Link href="/contact" aria-label="Contact" className="p-2 rounded-full hover:bg-accent focus-visible:ring-2 focus-visible:ring-ring">
                     <Icons.mail className="h-5 w-5" />
                   </Link>
-                  <Link href="/wishlist" aria-label="Wishlist" className="p-2 rounded-full hover:bg-accent relative">
+                  <Link href="/wishlist" aria-label="Wishlist" className="p-2 rounded-full hover:bg-accent relative focus-visible:ring-2 focus-visible:ring-ring">
                     <Icons.heart className="h-5 w-5" />
                     {wishlistItemCount > 0 && (
                       <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-[10px] rounded-full h-4 w-4 flex items-center justify-center" aria-label={`${wishlistItemCount} items in wishlist`}>
@@ -104,7 +104,7 @@ export default function Header() {
                   </Link>
                 </>
               )}
-              <Link href="/cart" aria-label="Quote Cart" className="p-2 rounded-full hover:bg-accent block relative">
+              <Link href="/cart" aria-label="Quote Cart" className="p-2 rounded-full hover:bg-accent block relative focus-visible:ring-2 focus-visible:ring-ring">
                 <Icons.shoppingCart className="h-5 w-5" />
                 {totalItemsCount > 0 && (
                   <span className="absolute -top-1 -right-1 bg-primary text-primary-foreground text-[10px] rounded-full h-4 w-4 flex items-center justify-center" aria-label={`${totalItemsCount} items in cart`}>
@@ -113,7 +113,7 @@ export default function Header() {
                 )}
               </Link>
               {!isMobile && (
-                <Link href="/signup" aria-label="Account" className="p-2 rounded-full hover:bg-accent">
+                <Link href="/signup" aria-label="Account" className="p-2 rounded-full hover:bg-accent focus-visible:ring-2 focus-visible:ring-ring">
                   <Icons.user className="h-5 w-5" />
                 </Link>
               )}
@@ -122,7 +122,7 @@ export default function Header() {
         </div>
         {!isMobile && (
           <div className="border-b border-primary/30">
-            <div className="container mx-auto px-6 flex justify-center items-center h-14 relative max-w-7xl">
+            <div className="container mx-auto px-6 flex justify-center items-center relative max-w-7xl">
               <div className="flex-grow flex justify-center">
                 <NavMenu />
               </div>
