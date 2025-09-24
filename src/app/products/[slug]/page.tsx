@@ -7,7 +7,7 @@ import ProductClient from './product-client';
 import { ProductCategories } from '@/lib/placeholder-images';
 
 type Props = {
-  params: Promise<{ slug: string }>
+  params: { slug: string };
 }
 
 // Generate dynamic metadata for each product page
@@ -15,7 +15,7 @@ export async function generateMetadata(
   { params }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug } = params;
   const product = PlaceHolderImages.find((p) => p.slug === slug);
 
   if (!product) {
@@ -30,6 +30,9 @@ export async function generateMetadata(
   return {
     title: `${product.title} | Living Gold`,
     description: product.description,
+    alternates: {
+      canonical: `/products/${slug}`,
+    },
     openGraph: {
       title: product.title,
       description: product.description,
@@ -49,8 +52,8 @@ function getProductBySlug(slug: string): ImagePlaceholder | undefined {
     return PlaceHolderImages.find((p) => p.slug === slug);
 }
 
-export default async function ProductPage({ params }: Props) {
-  const { slug } = await params;
+export default async function ProductPage({ params }: { params: { slug: string }}) {
+  const { slug } = params;
   const product = getProductBySlug(slug);
   
   if (!product) {

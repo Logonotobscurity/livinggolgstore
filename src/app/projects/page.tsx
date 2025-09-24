@@ -5,8 +5,17 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export const metadata: Metadata = {
-  title: 'Projects | Living Gold Nigeria',
+  title: 'Projects Portfolio | Living Gold Nigeria',
   description: 'Explore a portfolio of our completed projects. See how our luxury lighting transforms residential and commercial spaces across Nigeria.',
+  alternates: {
+    canonical: '/projects',
+  },
+  openGraph: {
+    title: 'Projects Portfolio | Living Gold Nigeria',
+    description: 'A gallery of inspirational residential and commercial interiors featuring luxury lighting from Living Gold.',
+    url: 'https://livinggold.com/projects',
+    type: 'website',
+  },
 };
 
 export default function ProjectsPage() {
