@@ -2,10 +2,54 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Allow read/write access on all documents to any user signed in to the application
-    // WARNING: This is for development only - implement proper security for production
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && request.auth.token.admin == true;
+    }
+
+    function isOwnerUid(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+
+    // Publicly readable content (adjust collections to your data model)
+    match /products/{docId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    match /categories/{docId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    match /content/{docId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    // User profiles and user-owned subcollections
+    match /users/{uid} {
+      allow create: if isOwnerUid(uid);
+      allow read: if isOwnerUid(uid) || isAdmin();
+      allow update, delete: if isOwnerUid(uid) || isAdmin();
+
+      match /carts/{cartId} {
+        allow read, write: if isOwnerUid(uid) || isAdmin();
+      }
+
+      match /orders/{orderId} {
+        allow read: if isOwnerUid(uid) || isAdmin();
+        allow create: if isOwnerUid(uid);
+        allow update, delete: if isAdmin();
+      }
+    }
+
+    // Deny everything else by default
     match /{document=**} {
-      allow read, write: if request.time < timestamp.date(2025, 12, 31);
+      allow read, write: if false;
     }
   }
 }

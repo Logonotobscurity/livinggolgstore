@@ -1,5 +1,7 @@
-# robots.txt for livinggolgstore (Netlify)
-# Served from Next.js public/ so it appears at /. Update as needed.
+# robots.txt for livinggolgstore
+# Update the Sitemap URL to your real site domain (absolute URL).
+# This file restricts sensitive areas, rate-limits aggressive bots,
+# and explicitly opts out of certain AI training crawlers.
 
 Sitemap: https://livinggolgstore.netlify.app/sitemap.xml
 
