@@ -18,9 +18,9 @@ export function Socials() {
           <span></span>
           <span></span>
           <a href="#">
-            <Icons.twitter className="social-svg" />
+            <Icons.linkedin className="social-svg" />
           </a>
-          <div className="social-text">Twitter</div>
+          <div className="social-text">LinkedIn</div>
         </li>
         <li className="iso-pro">
           <span></span>
@@ -36,9 +36,9 @@ export function Socials() {
           <span></span>
           <span></span>
           <a href="#">
-            <Icons.tiktok className="social-svg" />
+            <Icons.youtube className="social-svg" />
           </a>
-          <div className="social-text">TikTok</div>
+          <div className="social-text">YouTube</div>
         </li>
       </ul>
     </div>
